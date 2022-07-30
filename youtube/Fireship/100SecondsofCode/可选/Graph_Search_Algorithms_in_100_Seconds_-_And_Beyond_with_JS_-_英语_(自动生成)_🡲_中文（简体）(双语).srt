@@ -1,0 +1,844 @@
+1
+00:00:00,000 --> 00:00:04,740
+a graph is a nonlinear data structure that contains nodes and edges a node or
+图是包含节点和边的非线性数据结构 节点或
+
+2
+00:00:04,740 --> 00:00:08,970
+vertex is just a single unique value while an edge represents a connection or
+顶点只是一个唯一值，而边表示其中
+
+3
+00:00:08,970 --> 00:00:12,599
+relationship between two of these nodes think of something like Instagram every
+两个节点之间的连接或关系想想 Instagram 之类的东西，
+
+4
+00:00:12,599 --> 00:00:16,710
+user is a node every time you follow a user you create a new edge connecting
+每次您关注某个用户时，每个用户都是一个节点用户，您创建一条将两个节点连接在一起的新边
+
+5
+00:00:16,710 --> 00:00:20,310
+two nodes together this is known as a directed graph because the relationship
+，这被称为有向图，因为关系以
+
+6
+00:00:20,310 --> 00:00:24,060
+flows one way the follower follows the following and not vice-versa
+一种方式流动，追随者遵循以下方式，而不是相反，
+
+7
+00:00:24,060 --> 00:00:27,900
+now consider facebook your edges in the graph are friendships this relationship
+现在考虑 facebook，您在图中的边是友谊这种关系
+
+8
+00:00:27,900 --> 00:00:31,740
+goes both ways which is known as an undirected graph graphs can also be
+是双向的，即 被称为无向图 图也可以
+
+9
+00:00:31,740 --> 00:00:35,190
+weighted which means the node has some additional data about the relationship
+加权，这意味着节点有一些关于关系的额外数据，
+
+10
+00:00:35,190 --> 00:00:39,570
+like the distance between two airports a node might also point to itself like an
+比如两个机场之间的距离，一个节点也可能指向自己，就像
+
+11
+00:00:39,570 --> 00:00:42,960
+airplane that takes off and comes back to land at the same airport this is
+一架起飞并返回同一个机场降落的飞机 被
+
+12
+00:00:42,960 --> 00:00:46,710
+known as a cycle graphs are used in many real-life software products and you'll
+称为循环图在许多现实生活中的软件产品中使用，您
+
+13
+00:00:46,710 --> 00:00:50,430
+often be asked to represent a graphic code in a technical interview one way to
+经常会被要求在 te 中表示图形代码 chnical interview 一种
+
+14
+00:00:50,430 --> 00:00:54,719
+represent a graph is with a 2d array or adjacency matrix create one row and one
+表示图形的方法是使用二维数组或邻接矩阵为每个节点创建一行和一
+
+15
+00:00:54,719 --> 00:00:59,250
+column for every node when two nodes have an edge or connection add a one at
+列当两个节点有边或连接时
+
+16
+00:00:59,250 --> 00:01:02,910
+the point they intersect this makes it fast and easy to look up a specific age
+在它们相交的点添加一个这样可以快速轻松地查找 一个特定的年龄
+
+17
+00:01:02,910 --> 00:01:07,680
+or to add a new edge but as a 2d array it takes quadratic space complexity and
+或添加一条新边，但作为一个二维数组
+
+18
+00:01:07,680 --> 00:01:11,520
+quadratic time to insert a new node into the graph an alternative approach is an
+，将一个新节点插入到图中需要二次空间复杂度和二次时间另一种方法是
+
+19
+00:01:11,520 --> 00:01:15,570
+adjacency list in this representation we start with a collection of nodes then
+在这种表示形式中的邻接列表我们从一组节点开始，然后是
+
+20
+00:01:15,570 --> 00:01:18,900
+each item has its own array of its neighbors this makes it faster to
+每个项目 有自己的邻居数组，这使得
+
+21
+00:01:18,900 --> 00:01:22,560
+iterate over a nodes edges and is more efficient with memory especially when
+迭代节点边缘的速度更快，并且内存效率更高，尤其是当
+
+22
+00:01:22,560 --> 00:01:26,340
+you have many nodes and few edges in your interview you'll likely need to
+你在面试中有很多节点和很少的边缘时，你可能需要
+
+23
+00:01:26,340 --> 00:01:30,150
+traverse your graph one option is a depth-first search start with any random
+遍历你的图一个选项是深度- 第一次搜索从任何随机
+
+24
+00:01:30,150 --> 00:01:33,930
+node go to its first child then its first child and do that for as long as
+节点开始转到它的第一个孩子然后是它的第一个孩子，并尽可能长时间地这样做，
+
+25
+00:01:33,930 --> 00:01:37,710
+you can when there are no more children backtrack to the last node and continue
+当没有更多的孩子时回溯到最后一个节点并继续
+
+26
+00:01:37,710 --> 00:01:41,130
+the process this algorithm is usually implemented with a recursive function
+这个过程 gorithm 通常用递归函数实现
+
+27
+00:01:41,130 --> 00:01:45,360
+another option is a breadth-first search from your starting node add all of the
+另一个选项是从起始节点开始的广度优先搜索将所有
+
+28
+00:01:45,360 --> 00:01:48,329
+direct children to a queue once they've been visited move on to the
+直接子节点添加到队列中，一旦他们被访问，就转移到
+
+29
+00:01:48,329 --> 00:01:51,750
+grandchildren and continue following this pattern and layers this has been
+孙子节点并继续遵循这个模式和层。
+
+30
+00:01:51,750 --> 00:01:55,200
+graphs in 100 seconds but hang out for a few minutes because now we're going to
+图表在 100 秒内完成，但要花几分钟时间，因为现在我们将
+
+31
+00:01:55,200 --> 00:01:58,740
+implement these algorithms in JavaScript if you're new here like and subscribe
+在 JavaScript 中实现这些算法，如果你是新来的，喜欢并订阅
+
+32
+00:01:58,740 --> 00:02:05,430
+hit the like button open your IDE and get ready to go beyond 100 seconds as a
+点击喜欢按钮打开你的 IDE 并准备好作为开发人员超过 100 秒
+
+33
+00:02:05,430 --> 00:02:08,759
+developer you'll come across all kinds of different real-life implementations
+你会遇到各种不同的现实生活中
+
+34
+00:02:08,759 --> 00:02:12,150
+of graphs I mentioned Facebook social graph at the beginning of the video and
+的图表实现，我在视频开头提到了 Facebook 社交图表，
+
+35
+00:02:12,150 --> 00:02:15,870
+they're commonly used for recommend engines like Yelp for example to connect
+它们通常用于推荐引擎，例如 Yelp，例如将
+
+36
+00:02:15,870 --> 00:02:19,830
+businesses to users to reviews or Netflix to connect the movies that you
+企业与用户连接到评论或Netflix 连接 您
+
+37
+00:02:19,830 --> 00:02:23,819
+watch two movies that you might want to watch in the future they're also used to
+观看的电影 您可能会在未来观看的两部电影它们还用于
+
+38
+00:02:23,819 --> 00:02:27,569
+represent Geographic data for example on Google Maps you can think of every
+表示地理数据，例如您可以想到的 Google 地图上的 e 非常
+
+39
+00:02:27,569 --> 00:02:31,319
+intersection as a node and then every Road and its distance as the edge
+交叉点作为节点，然后每条道路及其距离作为
+
+40
+00:02:31,319 --> 00:02:35,310
+connecting these two nodes over the next few minutes we'll implement a basic
+连接这两个节点的边在接下来的几分钟内，我们将
+
+41
+00:02:35,310 --> 00:02:39,510
+graph in JavaScript based on the flight connections between airports in this
+在 JavaScript 中基于机场之间的航班连接实现一个基本图，在这种
+
+42
+00:02:39,510 --> 00:02:43,049
+case every airport is a node and the edge represents whether or not you can
+情况下，每个机场都是一个节点，并且边缘表示您是否可以
+
+43
+00:02:43,049 --> 00:02:46,230
+fly from one Airport to another this edge could contain additional
+从一个机场飞往另一个机场此边缘可能包含其他
+
+44
+00:02:46,230 --> 00:02:49,950
+information like the kilometers between the two airports in which case that
+信息，例如两个机场之间的公里数，在这种情况下，这
+
+45
+00:02:49,950 --> 00:02:53,220
+would give us a weighted graph the routes between two airports could be
+将为我们提供加权图两个机场之间的路线可能是
+
+46
+00:02:53,220 --> 00:02:57,209
+one-way or two-way when they go one way we have a directed graph if they go both
+单向或双向 当它们单向运行时，我们有一个有向图 如果它们
+
+47
+00:02:57,209 --> 00:02:59,879
+ways it's an undirected graph for this demo
+双向运行，这是一个无向图 对于这个演示
+
+48
+00:02:59,879 --> 00:03:03,209
+we'll try to keep things simple we'll make an undirected graph assuming that
+我们将尽量保持简单 我们将制作一个无向图，假设
+
+49
+00:03:03,209 --> 00:03:06,720
+when an airplane has a route it can fly back and forth between the two airports
+当飞机有路线时它可以飞回并且 在两个机场
+
+50
+00:03:06,720 --> 00:03:10,319
+it'll be unweighted so the routes between the two airports won't carry any
+之间的第四次，它将被取消加权，因此两个机场之间的路线不会携带任何
+
+51
+00:03:10,319 --> 00:03:14,459
+additional data and we'll assume cycles are not possible the first thing we'll
+额外的数据，我们假设周期是不可能的，我们需要做的第一件事
+
+52
+00:03:14,459 --> 00:03:17,819
+need to do is represent our graphing code most programming interviews will
+是 r 展示我们的图形代码 大多数编程面试都会
+
+53
+00:03:17,819 --> 00:03:21,269
+have you write code in whatever language you prefer we'll be using Java Script
+让你用你喜欢的任何语言编写代码，我们将在这里使用 Java Script
+
+54
+00:03:21,269 --> 00:03:24,600
+here but the most important tip I can give you is to simply explain your
+，但我能给你的最重要的提示是简单地解释你的
+
+55
+00:03:24,600 --> 00:03:28,019
+thinking process as you're writing your code most technical interviewers are
+思维过程，因为你正在编写最具技术性的代码 面试官
+
+56
+00:03:28,019 --> 00:03:31,470
+trying to get some insight into your thinking process and care less if you
+试图深入了解您的思维过程，如果您
+
+57
+00:03:31,470 --> 00:03:34,739
+write perfectly formatted code let's go ahead and walk through a few examples
+编写格式完美的代码，则不在乎，让我们继续并通过一些示例，
+
+58
+00:03:34,739 --> 00:03:38,220
+you might get a question like this here's a list of airports and it was two
+您可能会遇到这样的问题这里有一个机场列表，现在有
+
+59
+00:03:38,220 --> 00:03:42,269
+routes connecting these airports now represent this data as a graph so given
+两条连接这些机场的路线将此数据表示为图形，因此给定
+
+60
+00:03:42,269 --> 00:03:46,829
+this data we can represent the graph in two ways a matrix or an adjacency list a
+此数据，我们可以用两种方式表示图形矩阵或邻接列表
+
+61
+00:03:46,829 --> 00:03:50,669
+matrix takes up more space but is generally easier to visualize and
+矩阵占用更多空间，但通常更易于可视化和
+
+62
+00:03:50,669 --> 00:03:53,730
+represent because it's just a two-dimensional array filled with ones
+表示，因为它只是一个填充了 1
+
+63
+00:03:53,730 --> 00:03:57,450
+and zeros now looking at this data I can see there are not very many routes
+和 零现在查看此数据，我可以看到
+
+64
+00:03:57,450 --> 00:04:01,739
+relative to the number of possible combinations between these airports that
+相对于这些机场之间可能的组合数量而言，路线并不多，这
+
+65
+00:04:01,739 --> 00:04:04,980
+means our matrix would be very sparse or in other words filled with a bunch of
+意味着我们的 矩阵将非常稀疏，或者换句话说，充满一堆
+
+66
+00:04:04,980 --> 00:04:09,060
+zeros and take up a lot of unnecessary space and it would be less efficient to
+零并占用大量不必要的空间，并且迭代和搜索效率会降低
+
+67
+00:04:09,060 --> 00:04:12,480
+iterate over and search through therefore I choose to represent my graph
+因此我选择将我的图表示
+
+68
+00:04:12,480 --> 00:04:16,979
+as an adjacency list we can implement an adjacency list as a set of key value
+为邻接列表，我们可以实现邻接列表作为一组键值
+
+69
+00:04:16,979 --> 00:04:21,479
+pairs where the key is the name of the airport or the node and the value is an
+对，其中键是机场或节点的名称，值
+
+70
+00:04:21,479 --> 00:04:24,900
+array of edges or the other airports that it's connected to we could
+是边数组或与之连接的其他机场，我们可以
+
+71
+00:04:24,900 --> 00:04:27,160
+implement this with a regular JavaScript object
+使用常规 JavaScript 对象来实现它，
+
+72
+00:04:27,160 --> 00:04:30,580
+but a better option might be a map when you're doing algorithm problems in
+但更好的选择 当你在 JavaScript 中做算法问题时，可能是
+
+73
+00:04:30,580 --> 00:04:34,600
+JavaScript a map tends to be a better option than a regular object it has some
+一个映射映射往往是比常规对象更好的选择它有一些
+
+74
+00:04:34,600 --> 00:04:38,080
+additional API methods that can be useful for problems like this and it
+额外的 API 方法可以用于解决此类问题，它
+
+75
+00:04:38,080 --> 00:04:41,170
+just behaves more like a regular dictionary or hash map that you'll find
+的行为更像是一个常规字典或哈希 你会
+
+76
+00:04:41,170 --> 00:04:45,100
+in other languages so the map is our graph and at this point it's empty the
+在其他语言中找到的地图，所以地图是我们的图表，此时它是空的，
+
+77
+00:04:45,100 --> 00:04:48,490
+first thing we'll do is define a function that can add a node to the map
+我们要做的第一件事是定义一个可以向地图添加节点的函数，
+
+78
+00:04:48,490 --> 00:04:52,420
+this function takes the airport code as its argument and then calls adjacency
+这个函数需要 airpor  t 代码作为它的参数，然后调用
+
+79
+00:04:52,420 --> 00:04:56,620
+list set on the airport and starts it off with an empty array and that's all
+在机场上设置的邻接列表并从一个空数组开始，这就是
+
+80
+00:04:56,620 --> 00:05:00,130
+it takes to represent a node on the graph to add an edge we need to update
+在图上表示一个节点以添加一条边所需
+
+81
+00:05:00,130 --> 00:05:03,970
+the entries for both the origin Airport and the destination first we'll grab the
+的全部内容，我们需要更新源机场的条目和 目的地首先我们将
+
+82
+00:05:03,970 --> 00:05:07,840
+entry for the origin Airport and then push the destination onto its list and
+获取起点机场的条目，然后将目的地推送到其列表中，
+
+83
+00:05:07,840 --> 00:05:11,410
+then we'll do the inverse of that by getting the destination and then pushing
+然后我们将通过获取目的地然后
+
+84
+00:05:11,410 --> 00:05:15,520
+the origin onto its list and that's our entire API for building a graph as an
+将起点推送到其列表来做相反的事情，这就是我们用于构建的整个 API 将图作为
+
+85
+00:05:15,520 --> 00:05:20,320
+adjacency list the next step is to use this API with our source data we can
+邻接列表 下一步是将此 API 与我们的源数据一起使用，我们可以
+
+86
+00:05:20,320 --> 00:05:23,830
+loop over the airport's with for each and for each one call the add node
+遍历机场的数据，对于每一个，一旦我们有了节点，我们就可以调用 add node
+
+87
+00:05:23,830 --> 00:05:27,880
+method to add a node to the graph once we have our nodes we can then loop over
+方法向图中添加一个节点然后
+
+88
+00:05:27,880 --> 00:05:32,110
+the routes and add an edge for each route in that array that function takes
+遍历路由并为该数组中的每个路由添加一条边，该函数接受
+
+89
+00:05:32,110 --> 00:05:36,250
+two arguments so I'm going to use the rest syntax here 2d structure them now
+两个参数，所以我将在这里使用其余语法 2d 构造它们现在
+
+90
+00:05:36,250 --> 00:05:39,460
+you can go ahead and console.log this graph by running it and ojs and you
+你可以继续并通过运行它和 ojs 来控制台记录这个图 你
+
+91
+00:05:39,460 --> 00:05:42,910
+should get an output that looks similar to this congratulations you just got
+应该 d 得到一个看起来类似于祝贺你刚刚
+
+92
+00:05:42,910 --> 00:05:45,580
+through the first part of the interview but that was the easy part
+通过面试的第一部分的输出，但这是很容易的部分，
+
+93
+00:05:45,580 --> 00:05:49,030
+now the interviewer wants you to implement an algorithm to figure out if
+现在面试官希望你实现一个算法来确定
+
+94
+00:05:49,030 --> 00:05:53,050
+there's a route between Phoenix and Bangkok and as you know from earlier in
+凤凰城和曼谷之间是否有一条路线，如你所知 从
+
+95
+00:05:53,050 --> 00:05:56,410
+the video there are two main ways we can approach this depth-first search or
+视频的前面开始，我们可以通过两种主要方法来处理这种深度优先搜索或
+
+96
+00:05:56,410 --> 00:06:01,240
+breadth-first search i think the easier one to understand is BFS you know in
+广度优先搜索，我认为更容易理解的是 BFS，您知道
+
+97
+00:06:01,240 --> 00:06:03,190
+order to search a graph you have to start somewhere
+为了搜索图表，在这种情况下您必须从某个地方开始
+
+98
+00:06:03,190 --> 00:06:06,700
+in this case we'll start with the phoenix node so we need a function that
+我们' 将从凤凰节点开始，因此我们
+
+99
+00:06:06,700 --> 00:06:10,450
+takes a starting node as its argument write that out on the whiteboard or as
+需要一个以起始节点为参数的函数，将其写在白板上或作为
+
+100
+00:06:10,450 --> 00:06:13,990
+pseudocode in whatever editing toy you're using for the interview from the
+伪代码在您用于采访的任何编辑玩具中从
+
+101
+00:06:13,990 --> 00:06:17,140
+starting node you want to visit all the children and see if any of them are
+您想要访问所有孩子的起始节点开始看看他们中的任何一个是否有
+
+102
+00:06:17,140 --> 00:06:21,370
+bankok if not you'll want to visit their children and do the same thing and then
+银行，如果不是，你会想拜访他们的孩子并做同样的事情，然后
+
+103
+00:06:21,370 --> 00:06:24,250
+you'll continue doing this in layers until you find the airport you're
+你会继续分层做这件事，直到你找到你正在寻找的机场
+
+104
+00:06:24,250 --> 00:06:27,970
+looking for we can represent this process as a queue which in JavaScript
+，我们可以代表 nt 这个过程作为一个队列，在 JavaScript
+
+105
+00:06:27,970 --> 00:06:32,230
+is just an array where the first item in is the first item out and of course the
+中只是一个数组，其中第一个项目是第一个退出的项目，当然
+
+106
+00:06:32,230 --> 00:06:35,650
+first item in your queue should be the starting node now while the queue has
+队列中的第一个项目现在应该是起始节点，而队列中有
+
+107
+00:06:35,650 --> 00:06:39,669
+items in it or the length is greater than 0 we'll grab the first item in the
+项目或长度更大大于 0 我们将使用 Raye shift 方法获取数组中的第一项，
+
+108
+00:06:39,669 --> 00:06:42,700
+array using the Raye shift method this method will
+该方法将
+
+109
+00:06:42,700 --> 00:06:46,000
+mutate the original array by removing the first item in it and then return
+通过删除其中的第一项来改变原始数组，然后将
+
+110
+00:06:46,000 --> 00:06:50,230
+that item to us here that we set as the airport variable our next step is to
+该项返回给我们，我们将其设置为机场变量，我们的下一步是 要
+
+111
+00:06:50,230 --> 00:06:53,890
+grab all the edges for this node in the graph we can do that by calling
+在图中获取该节点的所有边，我们可以通过调用
+
+112
+00:06:53,890 --> 00:06:58,120
+adjacency lists to get with that airport name as the key that'll give us all the
+邻接列表来获取该机场名称作为键，这将为我们
+
+113
+00:06:58,120 --> 00:07:01,930
+destinations for the airport where it's children so we can loop over them and
+提供其子机场的所有目的地，以便我们可以遍历它们并
+
+114
+00:07:01,930 --> 00:07:05,470
+add them to the queue as well we can also go ahead and log out if any of
+添加 如果这些机场中的任何一个是曼谷，我们也可以继续并注销
+
+115
+00:07:05,470 --> 00:07:09,520
+these airports are Bangkok the airport we're looking for now one major problem
+我们现在正在寻找的机场目前
+
+116
+00:07:09,520 --> 00:07:12,910
+with this code at the moment is that airports have many interconnected routes
+此代码的一个主要问题是机场有许多相互连接的路线
+
+117
+00:07:12,910 --> 00:07:16,390
+and that means our algorithm will be visiting the same nodes over and over
+，这意味着我们的算法 将一遍又一遍地访问相同的节点
+
+118
+00:07:16,390 --> 00:07:19,900
+again and in our case this creates an infinite loop because the queue is never
+，在我们的例子中，这会创建一个无限循环，因为队列永远不会
+
+119
+00:07:19,900 --> 00:07:23,440
+emptied we can avoid that by keeping track of the airports that we visited in
+被清空，我们可以通过跟踪我们过去访问过的机场来避免这种情况
+
+120
+00:07:23,440 --> 00:07:27,130
+the past an easy way to do that in JavaScript is with a set which is
+，在 JavaScript 中实现这一点的简单方法是 使用一个基本上是一个数组的集合，
+
+121
+00:07:27,130 --> 00:07:31,480
+basically an array but all the values in it are unique we set it up as an empty
+但其中的所有值都是
+
+122
+00:07:31,480 --> 00:07:34,720
+set when the function is first called then we can use it to set up some
+
+
+123
+00:07:34,720 --> 00:07:38,470
+conditional logic in our loop we will only in queue an item if it does not
+唯一的 item 如果它
+
+124
+00:07:38,470 --> 00:07:43,060
+have this destination a set has a has method where you can pass a value to see
+没有这个目的地，那么集合有一个 has方法，您可以在其中传递一个值以查看
+
+125
+00:07:43,060 --> 00:07:46,510
+if it exists currently in the set and then we'll mark the destination as
+它当前是否存在于集合中，然后我们将通过将目的地添加到集合中将其标记为已
+
+126
+00:07:46,510 --> 00:07:49,750
+visited by adding it to the set then we'll move the line of code that adds
+访问，然后我们将移动 将
+
+127
+00:07:49,750 --> 00:07:53,500
+this item to the queue inside of our condition here so an item only gets in
+这个项目添加到我们条件内的队列中的代码行，所以一个项目只有在
+
+128
+00:07:53,500 --> 00:07:56,860
+queued if it has not been visited already now let's go ahead and call our
+它还没有被访问过的情况下才会进入队列现在让我们继续
+
+129
+00:07:56,860 --> 00:08:00,610
+function using Phoenix as the starting node what you'll notice is that it goes
+使用 Phoenix 作为起始节点调用我们的函数你会注意到的是 它
+
+130
+00:08:00,610 --> 00:08:04,330
+through nine airports before it finally finds Bangkok it starts with all the
+通过九个airpo  rts 在它最终找到曼谷之前，它从
+
+131
+00:08:04,330 --> 00:08:08,320
+connections to Phoenix then all the connections to JFK then from Mexico City
+到凤凰城的所有连接开始，然后到肯尼迪国际机场的所有连接，然后从
+
+132
+00:08:08,320 --> 00:08:12,100
+it finds a route to Bangkok and then it also finds a second route through Lima
+墨西哥城找到一条到曼谷的路线，然后它还找到了第二条通过秘鲁利马的路线，
+
+133
+00:08:12,100 --> 00:08:15,729
+Peru so breadth-first search would be really good for finding all the possible
+所以广度优先搜索真的很好 找到所有可能的
+
+134
+00:08:15,729 --> 00:08:18,940
+routes to determine which one is the most efficient at this point your
+路线以确定目前哪一条最有效，您的
+
+135
+00:08:18,940 --> 00:08:23,500
+interviewer is super impressed but then he or she says our only concern is if a
+面试官印象非常深刻，但他或她说我们唯一关心的是是否
+
+136
+00:08:23,500 --> 00:08:27,130
+route from Phoenix to Bangkok exists we don't care if there are multiple routes
+存在从凤凰城到曼谷的路线，我们不在乎是否有多条路线
+
+137
+00:08:27,130 --> 00:08:30,700
+we don't care if it's the best route we just want to find a route as quickly as
+我们不在乎这是否是最佳路线 我们只想尽快找到路线
+
+138
+00:08:30,700 --> 00:08:32,710
+possible how can you traverse this graph more
+您如何更有效地遍历此图
+
+139
+00:08:32,710 --> 00:08:35,620
+efficiently to meet that need an approach that would be more efficient
+以满足该需求
+
+140
+00:08:35,620 --> 00:08:39,219
+for this particular requirement is a depth-first search instead of going
+对于此特定要求更有效的方法是深度优先搜索 而不是
+
+141
+00:08:39,219 --> 00:08:42,880
+through all the children or destinations for each Airport will go to its first
+遍历每个机场的所有孩子或目的地，而是去它的第一个
+
+142
+00:08:42,880 --> 00:08:46,750
+child and then to its first child and its first child and so on until we hit
+孩子，然后去它的第一个孩子和它的第一个孩子，依此类推，直到我们到达
+
+143
+00:08:46,750 --> 00:08:50,020
+Bangkok and if we don't find it will backtrack to the top of the graph and
+曼谷，如果我们不 发现它将回溯到图的顶部并
+
+144
+00:08:50,020 --> 00:08:53,530
+follow the same pattern in the last example we used a queue but in this
+遵循上一个示例中相同的模式，我们使用了一个队列，但在这个
+
+145
+00:08:53,530 --> 00:08:56,420
+example we're - use a recursive function or in other
+示例中，我们- 使用递归函数，或者
+
+146
+00:08:56,420 --> 00:08:59,960
+words a function that calls itself until it reaches some kind of stopping point
+换句话说，一个调用自身直到它到达某种类型的函数 停止点
+
+147
+00:08:59,960 --> 00:09:03,830
+this function will take a starting node as its first argument and then a set as
+这个函数将一个起始节点作为它的第一个参数，然后一个集合
+
+148
+00:09:03,830 --> 00:09:07,310
+a second argument that keeps track of the different cities that we visited
+作为第二个参数，它跟踪我们访问过的不同城市，
+
+149
+00:09:07,310 --> 00:09:11,240
+because again we don't want to visit the same node more than once from there
+因为我们不想从那里多次访问同一个节点，
+
+150
+00:09:11,240 --> 00:09:15,380
+we'll grab the edges or destinations from our adjacency list we'll loop over
+我们' 将从邻接列表中获取边缘或目的地，我们将
+
+151
+00:09:15,380 --> 00:09:18,350
+them just like we did before and when we find what we're looking for we'll just
+像以前一样循环遍历它们，当我们找到我们正在寻找的内容时，我们
+
+152
+00:09:18,350 --> 00:09:21,710
+return from the function now here's the interesting part if a node has not been
+将从函数中返回，如果节点还没有出现，这是有趣的部分
+
+153
+00:09:21,710 --> 00:09:25,250
+visited then we'll go ahead and call the same function or in other words call it
+访问然后我们将继续调用相同的函数，或者换句话说，
+
+154
+00:09:25,250 --> 00:09:28,970
+recursively with the current destination and the loop as well as our visited set
+使用当前目标和循环以及我们访问的集合递归调用它
+
+155
+00:09:28,970 --> 00:09:31,820
+that means this function call will be pushed to the top of the call stack
+，这意味着这个函数调用将被推到调用堆栈的顶部，
+
+156
+00:09:31,820 --> 00:09:35,360
+making the algorithm go deeper and deeper into the tree until it reaches a
+从而使 a 算法越来越深入树，直到它到达一个
+
+157
+00:09:35,360 --> 00:09:38,600
+stopping point and that means this function will continue calling itself
+停止点，这意味着这个函数将继续递归调用自己，
+
+158
+00:09:38,600 --> 00:09:42,260
+recursively until all the airports have been visited or until it finds Bangkok
+直到所有机场都被访问过，或者直到它
+
+159
+00:09:42,260 --> 00:09:46,220
+in this example it only takes three steps or three function calls to find
+在这个例子中找到曼谷，它只需要三个步骤或三个函数调用就可以找到
+
+160
+00:09:46,220 --> 00:09:49,940
+the route as opposed to eight in our previous algorithm but the interviewer
+这条路线与我们之前算法中的八条路线相反，但面试官
+
+161
+00:09:49,940 --> 00:09:53,570
+has one last question what is the time complexity of the algorithm that you
+还有最后一个问题，您刚刚实现的算法的时间复杂度是多少
+
+162
+00:09:53,570 --> 00:09:58,250
+just implemented as expressed in Big O notation for both breadth-first and
+，用 Big O表示法表示，用于广度优先和
+
+163
+00:09:58,250 --> 00:10:02,750
+depth-first search Big O is expressed as V Plus E which is the total number of
+深度优先搜索 Big O 表示为V Plus E 是
+
+164
+00:10:02,750 --> 00:10:06,860
+nodes or vertices plus the number of edges or in other words the time
+节点或顶点的总数加上边的数量，或者换句话说
+
+165
+00:10:06,860 --> 00:10:10,550
+performance of the algorithm will scale linear based on the number of nodes and
+，算法的时间性能将根据
+
+166
+00:10:10,550 --> 00:10:13,910
+edges that are added to the graph I'm gonna go ahead and wrap things up there
+添加到图中的节点和边的数量线性缩放我要继续 并把东西包装在那里，
+
+167
+00:10:13,910 --> 00:10:17,360
+but there are many other algorithms you can use to traverse a graph so if you
+但还有许多其他算法可以用来遍历图表，所以如果你
+
+168
+00:10:17,360 --> 00:10:20,720
+want to see more videos like this let me know in the comments thanks for watching
+想看更多这样的视频，请在评论中告诉我，谢谢你 atching 下期再见
+
+169
+00:10:20,720 --> 00:10:31,660
+and I will see you in the next [Music]
+[音乐]

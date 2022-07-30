@@ -1,0 +1,127 @@
+1
+00:00:00,030 --> 00:00:04,680
+view j/s it's a JavaScript framework for building front-end UIs in view you can
+
+2
+00:00:04,680 --> 00:00:07,680
+start simple and then progressively add in the tools and features that you need
+
+3
+00:00:07,680 --> 00:00:11,790
+to build a complex web application at its core it provides a way to build
+
+4
+00:00:11,790 --> 00:00:15,660
+components that encapsulate data or state in your JavaScript and then
+
+5
+00:00:15,660 --> 00:00:19,500
+connect that state reactively to a template in HTML we call these
+
+6
+00:00:19,500 --> 00:00:23,220
+components declarative views because the same data inputs will always produce the
+
+7
+00:00:23,220 --> 00:00:27,210
+same output in the visual UI when we declare data on this data object it
+
+8
+00:00:27,210 --> 00:00:30,960
+links or binds it to the HTML on the template above when the value of the
+
+9
+00:00:30,960 --> 00:00:34,440
+data changes the component will automatically rerender or in other words
+
+10
+00:00:34,440 --> 00:00:38,040
+it's reactive and the framework does a ton of work under the hood to make sure
+
+11
+00:00:38,040 --> 00:00:41,610
+that this process is performance across a huge component tree we can work with
+
+12
+00:00:41,610 --> 00:00:45,780
+this data in the template thanks to views HTML based template syntax we can
+
+13
+00:00:45,780 --> 00:00:50,219
+interpolate a value for expression using double braces and we also have a variety
+
+14
+00:00:50,219 --> 00:00:54,809
+of directives to control the behavior of the HTML based on the data we can use VF
+
+15
+00:00:54,809 --> 00:00:58,829
+to only render an element when the value on the right side is truthy and then we
+
+16
+00:00:58,829 --> 00:01:01,829
+might have a fallback element after that that's only rendered when the values
+
+17
+00:01:01,829 --> 00:01:06,390
+fall C with V else we can make the app interactive by listening to events using
+
+18
+00:01:06,390 --> 00:01:10,409
+the V on directive we can listen to an event on an element then run some code
+
+19
+00:01:10,409 --> 00:01:13,799
+to handle that event on the right side we can do that directly in the template
+
+20
+00:01:13,799 --> 00:01:18,090
+or define a custom method and the components methods object the method has
+
+21
+00:01:18,090 --> 00:01:21,540
+access to our reactive data and that means all we have to do is change the
+
+22
+00:01:21,540 --> 00:01:25,320
+value of the data and the component will automatically rerender and that's all it
+
+23
+00:01:25,320 --> 00:01:28,799
+takes to build an interactive reactive declarative UI component with view the
+
+24
+00:01:28,799 --> 00:01:32,460
+framework is loved by developers for the simplicity but also its ability to scale
+
+25
+00:01:32,460 --> 00:01:36,689
+up in complexity incrementally its plugin system allows you to easily drop
+
+26
+00:01:36,689 --> 00:01:40,920
+in things like a router state management firebase support and more and perhaps
+
+27
+00:01:40,920 --> 00:01:44,700
+best of all it's not sponsored by some mega corporation it's not pressured to
+
+28
+00:01:44,700 --> 00:01:47,520
+push out new releases all the time and does a great job listening to its
+
+29
+00:01:47,520 --> 00:01:51,299
+community this has been GU Jas and 100 seconds stay tuned for a full length
+
+30
+00:01:51,299 --> 00:01:54,780
+tutorial here on YouTube in the near future and check out my view firebase
+
+31
+00:01:54,780 --> 00:01:58,140
+course on fire ship if you're ready to start building a full stack app thanks
+
+32
+00:01:58,140 --> 00:02:02,090
+for watching and I will see you in the next one

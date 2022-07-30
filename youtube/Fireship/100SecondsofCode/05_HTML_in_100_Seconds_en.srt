@@ -1,0 +1,143 @@
+1
+00:00:00,080 --> 00:00:05,600
+hypertext markup language or html is a language that defines the structure of
+
+2
+00:00:05,600 --> 00:00:11,200
+content on a webpage development started in 1989 at cern by tim berners-lee who
+
+3
+00:00:11,200 --> 00:00:16,400
+had just invented the world's first web browser world wide web the origin of www
+
+4
+00:00:16,400 --> 00:00:20,320
+but he needed a publishing language to display content within it so he chose a
+
+5
+00:00:20,320 --> 00:00:24,720
+syntax based on the standard generalized markup language which uses opening and
+
+6
+00:00:24,720 --> 00:00:29,119
+closing tags to provide meaning to otherwise unorganized text like h4
+
+7
+00:00:29,119 --> 00:00:33,760
+heading p for paragraph and most importantly a for anchor to link to a
+
+8
+00:00:33,760 --> 00:00:36,640
+different web page the language underwent many changes during the
+
+9
+00:00:36,640 --> 00:00:41,120
+initial rise of the internet and was standardized as html5 in 2008 the
+
+10
+00:00:41,120 --> 00:00:45,680
+version we know and love today modern html contains tags to handle a variety
+
+11
+00:00:45,680 --> 00:00:50,399
+of different media types like video audio and canvas to draw custom graphics
+
+12
+00:00:50,399 --> 00:00:54,960
+on the fly the typical html element starts with an opening and closing tag
+
+13
+00:00:54,960 --> 00:00:58,879
+in the middle we have content which might be text or additional html
+
+14
+00:00:58,879 --> 00:01:03,199
+elements called children the opening tag may also have one or more attributes
+
+15
+00:01:03,199 --> 00:01:06,880
+which are key value pairs that can customize the appearance or behavior of
+
+16
+00:01:06,880 --> 00:01:12,000
+the element to build your first web page create a file named index.html this file
+
+17
+00:01:12,000 --> 00:01:16,560
+contains a hierarchy of nodes based on the document object model or dom a
+
+18
+00:01:16,560 --> 00:01:22,000
+webpage starts with an html tag and has exactly two children a head and a body
+
+19
+00:01:22,000 --> 00:01:25,840
+the head contains things that aren't directly shown in the webpage like a
+
+20
+00:01:25,840 --> 00:01:30,320
+title or a meta tag to give the page a description but notice how the meta
+
+21
+00:01:30,320 --> 00:01:34,560
+element has no closing tag closing tags are generally optional when an element
+
+22
+00:01:34,560 --> 00:01:38,880
+is fully self-contained the body contains the actual ui for the end user
+
+23
+00:01:38,880 --> 00:01:42,640
+we might start with an h1 heading followed by a paragraph of content to
+
+24
+00:01:42,640 --> 00:01:46,720
+add an image we use an image tag which you'll notice is self-closing then
+
+25
+00:01:46,720 --> 00:01:50,320
+define the source attribute as the file path to the image and you'll want to
+
+26
+00:01:50,320 --> 00:01:54,000
+give it an old description to make it accessible to robots and screen readers
+
+27
+00:01:54,000 --> 00:01:57,360
+what makes web pages revolutionary though is their ability to link to other
+
+28
+00:01:57,360 --> 00:02:01,280
+web pages on the information super highway use an anchor tag to create a
+
+29
+00:02:01,280 --> 00:02:05,439
+link then define the href attributes as the webpage that you want to navigate to
+
+30
+00:02:05,439 --> 00:02:09,920
+when clicked html also provides structural tags like division or div
+
+31
+00:02:09,920 --> 00:02:13,360
+which are often used to group elements together where they can be styled to
+
+32
+00:02:13,360 --> 00:02:17,200
+represent complex ui elements like navbars when you're happy with your code
+
+33
+00:02:17,200 --> 00:02:21,440
+grab the full file path to the html file and paste it into any web browser
+
+34
+00:02:21,440 --> 00:02:25,360
+congratulations you just built your first website this has been hypertext
+
+35
+00:02:25,360 --> 00:02:29,120
+markup language in 100 seconds hit the subscribe button so you don't miss the
+
+36
+00:02:29,120 --> 00:02:35,200
+upcoming sequels thanks for watching and i will see you in the next one

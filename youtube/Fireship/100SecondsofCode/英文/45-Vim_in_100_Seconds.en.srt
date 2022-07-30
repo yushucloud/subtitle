@@ -1,0 +1,1585 @@
+1
+00:00:00,160 --> 00:00:02,240
+them a text editor for writing code
+
+
+2
+00:00:02,240 --> 00:00:03,520
+where you navigate around the screen
+
+
+3
+00:00:03,520 --> 00:00:05,600
+with a keyboard instead of a mouse it's
+
+
+4
+00:00:05,600 --> 00:00:07,759
+based on the original unix text editor
+
+
+5
+00:00:07,759 --> 00:00:11,519
+vi which came about in 1976 then vi
+
+
+6
+00:00:11,519 --> 00:00:14,639
+improved or vim followed it in 1991 with
+
+
+7
+00:00:14,639 --> 00:00:16,640
+a bunch of improvements but why in the
+
+
+8
+00:00:16,640 --> 00:00:18,800
+age of modern ides would you ever want
+
+
+9
+00:00:18,800 --> 00:00:21,039
+to use a keyboard-based text editor when
+
+
+10
+00:00:21,039 --> 00:00:22,800
+you write code all day every day your
+
+
+11
+00:00:22,800 --> 00:00:24,320
+fingers should be glued to the keyboard
+
+
+12
+00:00:24,320 --> 00:00:26,160
+at all times every time you touch the
+
+
+13
+00:00:26,160 --> 00:00:28,160
+mouse your productivity declines
+
+
+14
+00:00:28,160 --> 00:00:29,599
+learning to code with them is like
+
+
+15
+00:00:29,599 --> 00:00:31,199
+learning to play an instrument it'll be
+
+
+16
+00:00:31,199 --> 00:00:33,360
+painful at first but that pain will lead
+
+
+17
+00:00:33,360 --> 00:00:35,120
+to more precise and productive code
+
+
+18
+00:00:35,120 --> 00:00:37,120
+editing in the future them runs in the
+
+
+19
+00:00:37,120 --> 00:00:38,879
+terminal and it's installed on almost
+
+
+20
+00:00:38,879 --> 00:00:40,559
+every machine and at some point you'll
+
+
+21
+00:00:40,559 --> 00:00:42,000
+likely find yourself accidentally
+
+
+22
+00:00:42,000 --> 00:00:47,200
+dropped into them with no way to escape
+
+
+23
+00:00:47,200 --> 00:00:48,800
+if you find yourself there you can quit
+
+
+24
+00:00:48,800 --> 00:00:50,960
+them by typing colonqueue that will
+
+
+25
+00:00:50,960 --> 00:00:52,960
+close an unmodified file or if it has
+
+
+26
+00:00:52,960 --> 00:00:55,120
+been modified you can use cubebang to
+
+
+27
+00:00:55,120 --> 00:00:58,239
+throw away your changes or wq to write
+
+
+28
+00:00:58,239 --> 00:01:00,160
+the changes and then quit now that we're
+
+
+29
+00:01:00,160 --> 00:01:02,719
+out let's use them to open up a file
+
+
+30
+00:01:02,719 --> 00:01:04,640
+currently we're in normal mode but we
+
+
+31
+00:01:04,640 --> 00:01:06,640
+can toggle between different modes like
+
+
+32
+00:01:06,640 --> 00:01:09,280
+insert visual and command line depending
+
+
+33
+00:01:09,280 --> 00:01:10,799
+on what we're trying to do we can move
+
+
+34
+00:01:10,799 --> 00:01:12,560
+around the text with the arrow keys or
+
+
+35
+00:01:12,560 --> 00:01:14,880
+the letters h j k l if we find a
+
+
+36
+00:01:14,880 --> 00:01:16,960
+character we want to delete we can hit x
+
+
+37
+00:01:16,960 --> 00:01:19,280
+or double d to quickly delete an entire
+
+
+38
+00:01:19,280 --> 00:01:22,080
+line if that was a mistake hit u to undo
+
+
+39
+00:01:22,080 --> 00:01:23,840
+it now currently the document is kind of
+
+
+40
+00:01:23,840 --> 00:01:25,920
+hard to read so let's add line numbers
+
+
+41
+00:01:25,920 --> 00:01:28,000
+by running colon set number and now we
+
+
+42
+00:01:28,000 --> 00:01:29,920
+can navigate to any line with colon
+
+
+43
+00:01:29,920 --> 00:01:31,520
+number now if we want to change some
+
+
+44
+00:01:31,520 --> 00:01:33,600
+text we need to go into insert mode by
+
+
+45
+00:01:33,600 --> 00:01:35,600
+hitting i and that frees up the keyboard
+
+
+46
+00:01:35,600 --> 00:01:37,680
+for us to type into the document once
+
+
+47
+00:01:37,680 --> 00:01:39,439
+we're done modifying our code we can hit
+
+
+48
+00:01:39,439 --> 00:01:41,920
+the escape key to go back to normal mode
+
+
+49
+00:01:41,920 --> 00:01:44,000
+but now like any good developer we need
+
+
+50
+00:01:44,000 --> 00:01:45,759
+to copy and paste some code in here from
+
+
+51
+00:01:45,759 --> 00:01:47,680
+stack overflow we can paste from the
+
+
+52
+00:01:47,680 --> 00:01:50,079
+system clipboard by entering plus p into
+
+
+53
+00:01:50,079 --> 00:01:51,600
+vim and now that our software is
+
+
+54
+00:01:51,600 --> 00:01:54,240
+complete we can hit colon w to save it
+
+
+55
+00:01:54,240 --> 00:01:56,320
+then run the program directly from bim
+
+
+56
+00:01:56,320 --> 00:01:58,159
+with colon bang followed by the shell
+
+
+57
+00:01:58,159 --> 00:02:00,320
+command we want to run congratulations
+
+
+58
+00:02:00,320 --> 00:02:02,399
+you're no longer a soy dev but a true
+
+
+59
+00:02:02,399 --> 00:02:04,479
+software engineer this has been vim in
+
+
+60
+00:02:04,479 --> 00:02:06,880
+100 seconds but stay tuned because you
+
+
+61
+00:02:06,880 --> 00:02:08,879
+don't need to ditch vs code to get the
+
+
+62
+00:02:08,879 --> 00:02:10,959
+benefits of vim that's why i invited a
+
+
+63
+00:02:10,959 --> 00:02:12,959
+true expert and the instructor of the
+
+
+64
+00:02:12,959 --> 00:02:15,440
+vim for vs code course joe previt to
+
+
+65
+00:02:15,440 --> 00:02:18,959
+take us beyond 100 seconds of them
+
+
+66
+00:02:18,959 --> 00:02:21,760
+hello everyone i'm joe and i will be
+
+
+67
+00:02:21,760 --> 00:02:24,959
+your guide as we go beyond 100 seconds
+
+
+68
+00:02:24,959 --> 00:02:27,520
+to discuss why you should learn vim and
+
+
+69
+00:02:27,520 --> 00:02:29,440
+how you can leverage it inside your
+
+
+70
+00:02:29,440 --> 00:02:32,800
+favorite editor vs code first let's talk
+
+
+71
+00:02:32,800 --> 00:02:35,360
+about why you should learn vim vim is an
+
+
+72
+00:02:35,360 --> 00:02:37,519
+evergreen skill meaning you can learn it
+
+
+73
+00:02:37,519 --> 00:02:39,200
+once and the knowledge will last with
+
+
+74
+00:02:39,200 --> 00:02:41,120
+you for the rest of your career it
+
+
+75
+00:02:41,120 --> 00:02:42,640
+allows you to work faster and more
+
+
+76
+00:02:42,640 --> 00:02:44,959
+efficiently within your editor here's a
+
+
+77
+00:02:44,959 --> 00:02:47,760
+side-by-side comparison on the left we
+
+
+78
+00:02:47,760 --> 00:02:50,319
+have editing with vim on the right we
+
+
+79
+00:02:50,319 --> 00:02:52,400
+have editing without vim
+
+
+80
+00:02:52,400 --> 00:02:54,800
+as you can see bim lets you do more from
+
+
+81
+00:02:54,800 --> 00:02:56,560
+the keyboard meaning you get to spend
+
+
+82
+00:02:56,560 --> 00:02:59,120
+less time editing and more time coding
+
+
+83
+00:02:59,120 --> 00:03:01,760
+now let's talk about how to set up vim
+
+
+84
+00:03:01,760 --> 00:03:05,440
+with vs code once you're inside vs code
+
+
+85
+00:03:05,440 --> 00:03:07,680
+head over to the extension panel
+
+
+86
+00:03:07,680 --> 00:03:09,760
+and search vim
+
+
+87
+00:03:09,760 --> 00:03:11,760
+you should see the first extension
+
+
+88
+00:03:11,760 --> 00:03:13,440
+called vim and to make sure it's the
+
+
+89
+00:03:13,440 --> 00:03:16,239
+right version double check that it's vs
+
+
+90
+00:03:16,239 --> 00:03:19,840
+code vim.vim and it should have around 2
+
+
+91
+00:03:19,840 --> 00:03:21,920
+million installations
+
+
+92
+00:03:21,920 --> 00:03:24,720
+go ahead and install this extension the
+
+
+93
+00:03:24,720 --> 00:03:26,159
+next thing we're going to do is set up
+
+
+94
+00:03:26,159 --> 00:03:27,360
+key repeat
+
+
+95
+00:03:27,360 --> 00:03:30,239
+so head over to google and look up vs
+
+
+96
+00:03:30,239 --> 00:03:32,959
+code vim github you should see the first
+
+
+97
+00:03:32,959 --> 00:03:35,200
+link which is a github repository called
+
+
+98
+00:03:35,200 --> 00:03:37,200
+vs code vim vim
+
+
+99
+00:03:37,200 --> 00:03:39,840
+there you're going to scroll down
+
+
+100
+00:03:39,840 --> 00:03:42,000
+to the installation section
+
+
+101
+00:03:42,000 --> 00:03:43,120
+in here
+
+
+102
+00:03:43,120 --> 00:03:45,280
+you'll see instructions for how to
+
+
+103
+00:03:45,280 --> 00:03:48,000
+enable key repeating
+
+
+104
+00:03:48,000 --> 00:03:50,879
+this is a handy thing to add especially
+
+
+105
+00:03:50,879 --> 00:03:52,799
+when you're new to vim because it'll
+
+
+106
+00:03:52,799 --> 00:03:55,840
+allow you to hit the key and it will
+
+
+107
+00:03:55,840 --> 00:03:56,879
+repeat
+
+
+108
+00:03:56,879 --> 00:03:58,640
+as in if you were to hit
+
+
+109
+00:03:58,640 --> 00:04:00,799
+j to move down
+
+
+110
+00:04:00,799 --> 00:04:04,319
+find your operating system i'm on mac
+
+
+111
+00:04:04,319 --> 00:04:08,400
+and then run this in your terminal
+
+
+112
+00:04:08,400 --> 00:04:10,400
+and now for the changes to take effect
+
+
+113
+00:04:10,400 --> 00:04:15,519
+you're going to want to restart vs code
+
+
+114
+00:04:15,519 --> 00:04:17,519
+to verify that it worked go ahead and
+
+
+115
+00:04:17,519 --> 00:04:20,079
+create a new file and now you should see
+
+
+116
+00:04:20,079 --> 00:04:22,320
+that your cursor is a little bit wider
+
+
+117
+00:04:22,320 --> 00:04:25,440
+go ahead and hit i this will put us in
+
+
+118
+00:04:25,440 --> 00:04:27,600
+insert mode and then hit return a bunch
+
+
+119
+00:04:27,600 --> 00:04:28,639
+of times
+
+
+120
+00:04:28,639 --> 00:04:30,240
+then hit escape
+
+
+121
+00:04:30,240 --> 00:04:33,440
+and now try hitting and holding k and
+
+
+122
+00:04:33,440 --> 00:04:35,520
+see if your cursor moves up
+
+
+123
+00:04:35,520 --> 00:04:37,520
+if it moves like this
+
+
+124
+00:04:37,520 --> 00:04:39,520
+pretty smooth then you've enabled key
+
+
+125
+00:04:39,520 --> 00:04:42,240
+repeating if it gets stuck then you may
+
+
+126
+00:04:42,240 --> 00:04:44,880
+want to try restarting vs code again or
+
+
+127
+00:04:44,880 --> 00:04:47,120
+revisiting the installation instructions
+
+
+128
+00:04:47,120 --> 00:04:49,600
+great now that we have our editor set up
+
+
+129
+00:04:49,600 --> 00:04:51,680
+i'd like to teach you a few different
+
+
+130
+00:04:51,680 --> 00:04:53,840
+commands in vim so we'll review some of
+
+
+131
+00:04:53,840 --> 00:04:55,440
+the ones that jeff mentioned earlier in
+
+
+132
+00:04:55,440 --> 00:04:57,040
+the video and then we'll also learn a
+
+
+133
+00:04:57,040 --> 00:04:59,919
+few new ones so inside vs code go ahead
+
+
+134
+00:04:59,919 --> 00:05:02,840
+and create a new file and save it as
+
+
+135
+00:05:02,840 --> 00:05:05,600
+hello.md now what i want you to do is
+
+
+136
+00:05:05,600 --> 00:05:07,680
+hit i to enter insert mode and hit
+
+
+137
+00:05:07,680 --> 00:05:09,919
+returns we add a few lines for us to
+
+
+138
+00:05:09,919 --> 00:05:11,919
+work with and then hit escape great so
+
+
+139
+00:05:11,919 --> 00:05:14,240
+the first commands that we're going to
+
+
+140
+00:05:14,240 --> 00:05:16,800
+talk about are for navigation and they
+
+
+141
+00:05:16,800 --> 00:05:19,520
+will be h j k and l
+
+
+142
+00:05:19,520 --> 00:05:21,680
+so right now we're in command mode so if
+
+
+143
+00:05:21,680 --> 00:05:24,880
+we hit k we'll start moving up if we hit
+
+
+144
+00:05:24,880 --> 00:05:26,800
+j we'll move down
+
+
+145
+00:05:26,800 --> 00:05:29,840
+so remember we just learned k for moving
+
+
+146
+00:05:29,840 --> 00:05:31,680
+up i like to think of it as kicking a
+
+
+147
+00:05:31,680 --> 00:05:34,000
+soccer ball up i'm kicking upwards on my
+
+
+148
+00:05:34,000 --> 00:05:36,880
+editor and j for jumping down use
+
+
+149
+00:05:36,880 --> 00:05:38,639
+whatever mnemonic comes to mind to help
+
+
+150
+00:05:38,639 --> 00:05:40,880
+you remember those
+
+
+151
+00:05:40,880 --> 00:05:44,240
+the next we'll talk about are h and l so
+
+
+152
+00:05:44,240 --> 00:05:47,199
+i'm going to write hello world here
+
+
+153
+00:05:47,199 --> 00:05:49,039
+and you can do the same so
+
+
+154
+00:05:49,039 --> 00:05:51,440
+again the way that i did that was i for
+
+
+155
+00:05:51,440 --> 00:05:55,039
+insert mode start typing hello world and
+
+
+156
+00:05:55,039 --> 00:05:57,199
+then when you're done hit escape and
+
+
+157
+00:05:57,199 --> 00:05:59,120
+you'll be back in command mode so the
+
+
+158
+00:05:59,120 --> 00:06:01,600
+first one we'll talk about is h so if
+
+
+159
+00:06:01,600 --> 00:06:03,520
+you hit h you'll start moving to the
+
+
+160
+00:06:03,520 --> 00:06:04,479
+left
+
+
+161
+00:06:04,479 --> 00:06:05,919
+as in you're moving to the beginning of
+
+
+162
+00:06:05,919 --> 00:06:06,960
+the line
+
+
+163
+00:06:06,960 --> 00:06:09,840
+also the h in hello world
+
+
+164
+00:06:09,840 --> 00:06:11,520
+now once we're there if we want to go
+
+
+165
+00:06:11,520 --> 00:06:14,080
+back right we start hitting l and that
+
+
+166
+00:06:14,080 --> 00:06:16,960
+will move us towards the ellen world so
+
+
+167
+00:06:16,960 --> 00:06:19,039
+again figure out a mnemonic that's going
+
+
+168
+00:06:19,039 --> 00:06:21,680
+to help you remember those for me
+
+
+169
+00:06:21,680 --> 00:06:23,680
+i like to think of h as in i'm going
+
+
+170
+00:06:23,680 --> 00:06:25,280
+home to the left
+
+
+171
+00:06:25,280 --> 00:06:26,560
+and then l
+
+
+172
+00:06:26,560 --> 00:06:28,319
+you would think that would be
+
+
+173
+00:06:28,319 --> 00:06:30,080
+l for left but it's actually the
+
+
+174
+00:06:30,080 --> 00:06:33,039
+opposite of that so l for right great so
+
+
+175
+00:06:33,039 --> 00:06:34,720
+now we're feeling comfortable with
+
+
+176
+00:06:34,720 --> 00:06:37,039
+navigating in vim again we're in command
+
+
+177
+00:06:37,039 --> 00:06:40,240
+mode we're moving up and down with j and
+
+
+178
+00:06:40,240 --> 00:06:40,960
+k
+
+
+179
+00:06:40,960 --> 00:06:43,680
+and left and right with h and l the
+
+
+180
+00:06:43,680 --> 00:06:45,199
+other thing to to remember is if you
+
+
+181
+00:06:45,199 --> 00:06:47,360
+take a look pause for a second look at
+
+
+182
+00:06:47,360 --> 00:06:49,199
+your keyboard see where the keys are on
+
+
+183
+00:06:49,199 --> 00:06:52,000
+your keyboard you should see the h
+
+
+184
+00:06:52,000 --> 00:06:54,479
+to the left of j and k so that also
+
+
+185
+00:06:54,479 --> 00:06:56,880
+helps me remember and then l
+
+
+186
+00:06:56,880 --> 00:06:58,960
+is to the right of j and k so it'll take
+
+
+187
+00:06:58,960 --> 00:07:01,759
+some time but once you got those down
+
+
+188
+00:07:01,759 --> 00:07:04,000
+you'll be able to navigate seamlessly
+
+
+189
+00:07:04,000 --> 00:07:06,479
+throughout your editor using vim so the
+
+
+190
+00:07:06,479 --> 00:07:08,160
+other thing i want to point out is you
+
+
+191
+00:07:08,160 --> 00:07:10,160
+still have access to your mouse so you
+
+
+192
+00:07:10,160 --> 00:07:12,080
+can click to move around
+
+
+193
+00:07:12,080 --> 00:07:13,680
+so there's no need to worry about
+
+
+194
+00:07:13,680 --> 00:07:15,759
+getting stuck in vim i'm sure you've
+
+
+195
+00:07:15,759 --> 00:07:17,840
+heard horror stories people not being
+
+
+196
+00:07:17,840 --> 00:07:20,639
+able to exit them luckily using them
+
+
+197
+00:07:20,639 --> 00:07:22,720
+inside of vs code we're really just
+
+
+198
+00:07:22,720 --> 00:07:25,120
+using the them key bindings so we don't
+
+
+199
+00:07:25,120 --> 00:07:27,039
+have to worry we can close a file we can
+
+
+200
+00:07:27,039 --> 00:07:28,400
+navigate
+
+
+201
+00:07:28,400 --> 00:07:31,520
+no need to to fear being stuck in vim
+
+
+202
+00:07:31,520 --> 00:07:33,199
+now the next thing i want to point out
+
+
+203
+00:07:33,199 --> 00:07:35,759
+is some editing commands so we will talk
+
+
+204
+00:07:35,759 --> 00:07:36,960
+about i
+
+
+205
+00:07:36,960 --> 00:07:38,160
+capital i
+
+
+206
+00:07:38,160 --> 00:07:39,120
+a
+
+
+207
+00:07:39,120 --> 00:07:42,560
+and capital a for editing in a line so
+
+
+208
+00:07:42,560 --> 00:07:43,919
+we're going to go back to our hello
+
+
+209
+00:07:43,919 --> 00:07:46,160
+world and you'll see right now the
+
+
+210
+00:07:46,160 --> 00:07:48,639
+cursor is at the end of the line if i
+
+
+211
+00:07:48,639 --> 00:07:51,520
+hit shift i or capital i it'll move me
+
+
+212
+00:07:51,520 --> 00:07:53,520
+in insert mode at the beginning so i
+
+
+213
+00:07:53,520 --> 00:07:55,120
+could write a word like
+
+
+214
+00:07:55,120 --> 00:07:56,160
+i don't know
+
+
+215
+00:07:56,160 --> 00:07:58,639
+joe and then if i hit escape i'm back in
+
+
+216
+00:07:58,639 --> 00:08:00,879
+command mode where i can move around
+
+
+217
+00:08:00,879 --> 00:08:02,080
+so you'll notice
+
+
+218
+00:08:02,080 --> 00:08:03,680
+the one thing that i want to point out
+
+
+219
+00:08:03,680 --> 00:08:07,039
+to a tip is a lot of vim users remap
+
+
+220
+00:08:07,039 --> 00:08:09,599
+their caps lock key to escape so instead
+
+
+221
+00:08:09,599 --> 00:08:10,319
+of
+
+
+222
+00:08:10,319 --> 00:08:12,080
+caps lock being caps lock when i hit the
+
+
+223
+00:08:12,080 --> 00:08:14,879
+key it actually is escape and so it's a
+
+
+224
+00:08:14,879 --> 00:08:16,639
+lot more accessible it's closer it's
+
+
+225
+00:08:16,639 --> 00:08:18,479
+right next to my pinky rather than
+
+
+226
+00:08:18,479 --> 00:08:20,240
+having to reach to the corner of the
+
+
+227
+00:08:20,240 --> 00:08:22,319
+keyboard and hit escape so that's one
+
+
+228
+00:08:22,319 --> 00:08:24,800
+thing i'd encourage you to look into
+
+
+229
+00:08:24,800 --> 00:08:27,120
+remapping your caps lock key to escape
+
+
+230
+00:08:27,120 --> 00:08:29,440
+if you're serious about learning vim so
+
+
+231
+00:08:29,440 --> 00:08:31,840
+we just covered capital i we know that
+
+
+232
+00:08:31,840 --> 00:08:33,279
+lowercase i
+
+
+233
+00:08:33,279 --> 00:08:35,839
+is insert mode right so now what i want
+
+
+234
+00:08:35,839 --> 00:08:37,760
+to talk about is lowercase a the thing
+
+
+235
+00:08:37,760 --> 00:08:39,680
+that you got to pay attention to here is
+
+
+236
+00:08:39,680 --> 00:08:40,959
+the cursor
+
+
+237
+00:08:40,959 --> 00:08:43,279
+right now it's on top of the exclamation
+
+
+238
+00:08:43,279 --> 00:08:46,000
+point so if i hit i it'll move to the
+
+
+239
+00:08:46,000 --> 00:08:49,200
+left and now if i go back now if i hit a
+
+
+240
+00:08:49,200 --> 00:08:52,320
+it'll enter into insert mode but after
+
+
+241
+00:08:52,320 --> 00:08:53,680
+the cursor
+
+
+242
+00:08:53,680 --> 00:08:55,440
+so like this
+
+
+243
+00:08:55,440 --> 00:08:58,320
+so again uh if we have like a number two
+
+
+244
+00:08:58,320 --> 00:09:00,800
+here and we want to add to the beginning
+
+
+245
+00:09:00,800 --> 00:09:03,600
+and make it 22 we'll hit i that'll let
+
+
+246
+00:09:03,600 --> 00:09:05,519
+us enter at the beginning and now if we
+
+
+247
+00:09:05,519 --> 00:09:07,760
+want to add to the end like say i wanted
+
+
+248
+00:09:07,760 --> 00:09:09,600
+to add a
+
+
+249
+00:09:09,600 --> 00:09:13,680
+period 22 so 22 22 then i can use
+
+
+250
+00:09:13,680 --> 00:09:16,000
+lowercase a so those are very handy when
+
+
+251
+00:09:16,000 --> 00:09:18,560
+you're inserting letters or making
+
+
+252
+00:09:18,560 --> 00:09:19,680
+changes
+
+
+253
+00:09:19,680 --> 00:09:22,080
+in a line now the next one that i want
+
+
+254
+00:09:22,080 --> 00:09:26,000
+to talk about is capital a and so this
+
+
+255
+00:09:26,000 --> 00:09:28,080
+is like appending to the end of the line
+
+
+256
+00:09:28,080 --> 00:09:30,399
+so you'll enter insert mode at the end
+
+
+257
+00:09:30,399 --> 00:09:32,240
+of a line so here i am and i want to add
+
+
+258
+00:09:32,240 --> 00:09:33,760
+more exclamation points at the end of
+
+
+259
+00:09:33,760 --> 00:09:36,480
+hello world so if i hit shift a it will
+
+
+260
+00:09:36,480 --> 00:09:38,160
+move the cursor to the end and it will
+
+
+261
+00:09:38,160 --> 00:09:40,800
+enter into insert mode so now that i can
+
+
+262
+00:09:40,800 --> 00:09:43,040
+enter a few exclamation points now if we
+
+
+263
+00:09:43,040 --> 00:09:44,640
+go back to the beginning
+
+
+264
+00:09:44,640 --> 00:09:47,279
+we can do shift i now we're insert mode
+
+
+265
+00:09:47,279 --> 00:09:49,519
+at the beginning of the line so as you
+
+
+266
+00:09:49,519 --> 00:09:50,399
+can see
+
+
+267
+00:09:50,399 --> 00:09:53,760
+the i capital i a capital a are very
+
+
+268
+00:09:53,760 --> 00:09:56,640
+handy for editing in a line
+
+
+269
+00:09:56,640 --> 00:09:57,440
+great
+
+
+270
+00:09:57,440 --> 00:09:59,519
+we've talked about navigation we've
+
+
+271
+00:09:59,519 --> 00:10:02,320
+talked about editing and align
+
+
+272
+00:10:02,320 --> 00:10:04,399
+now the last two that i want to talk
+
+
+273
+00:10:04,399 --> 00:10:07,600
+about are x and r and these are handy
+
+
+274
+00:10:07,600 --> 00:10:08,399
+for
+
+
+275
+00:10:08,399 --> 00:10:11,760
+making changes while in command mode if
+
+
+276
+00:10:11,760 --> 00:10:14,959
+we go back up right here and so i want
+
+
+277
+00:10:14,959 --> 00:10:16,480
+to get to the beginning of the sentence
+
+
+278
+00:10:16,480 --> 00:10:18,399
+so i'm going to hit shift i hit escape
+
+
+279
+00:10:18,399 --> 00:10:19,920
+because i want to be in command mode so
+
+
+280
+00:10:19,920 --> 00:10:22,640
+you'll see that i have four j's right i
+
+
+281
+00:10:22,640 --> 00:10:24,160
+don't really need all of those so what
+
+
+282
+00:10:24,160 --> 00:10:26,720
+we're going to do is actually use x to
+
+
+283
+00:10:26,720 --> 00:10:29,040
+delete those so x is kind of like x out
+
+
+284
+00:10:29,040 --> 00:10:31,360
+of character so i'll hit it three times
+
+
+285
+00:10:31,360 --> 00:10:34,079
+one two three and now i have one j which
+
+
+286
+00:10:34,079 --> 00:10:35,200
+is correct
+
+
+287
+00:10:35,200 --> 00:10:37,519
+so as you can see we're able to make
+
+
+288
+00:10:37,519 --> 00:10:40,480
+edits without leaving command mode so we
+
+
+289
+00:10:40,480 --> 00:10:42,079
+just talked about x for exiting out
+
+
+290
+00:10:42,079 --> 00:10:44,720
+characters now let's talk about r
+
+
+291
+00:10:44,720 --> 00:10:47,120
+for replacing characters so i'm going to
+
+
+292
+00:10:47,120 --> 00:10:49,040
+go to the h here and i want this to be
+
+
+293
+00:10:49,040 --> 00:10:52,720
+capital so i'll hit r and then shift h
+
+
+294
+00:10:52,720 --> 00:10:55,440
+which is just a a capital h and now it
+
+
+295
+00:10:55,440 --> 00:10:57,360
+will replace it and again i haven't left
+
+
+296
+00:10:57,360 --> 00:11:00,079
+command mode here let's do this for 22
+
+
+297
+00:11:00,079 --> 00:11:03,279
+22. let's change this to
+
+
+298
+00:11:03,279 --> 00:11:07,200
+uh 52 22 so we'll hit r and then five
+
+
+299
+00:11:07,200 --> 00:11:09,440
+and so basically what it does is it
+
+
+300
+00:11:09,440 --> 00:11:11,519
+replaces the character
+
+
+301
+00:11:11,519 --> 00:11:13,920
+under the cursor with the new character
+
+
+302
+00:11:13,920 --> 00:11:16,560
+that you type in so we've talked about
+
+
+303
+00:11:16,560 --> 00:11:19,200
+navigation with hjkl we've talked about
+
+
+304
+00:11:19,200 --> 00:11:22,720
+editing in line with i capital i a and
+
+
+305
+00:11:22,720 --> 00:11:24,240
+capital a and now i've talked about
+
+
+306
+00:11:24,240 --> 00:11:25,600
+making changes while in command mode
+
+
+307
+00:11:25,600 --> 00:11:28,240
+with x and r i hope you enjoyed that
+
+
+308
+00:11:28,240 --> 00:11:30,720
+brief introduction to them inside vs
+
+
+309
+00:11:30,720 --> 00:11:33,040
+code if you'd like to learn more head
+
+
+310
+00:11:33,040 --> 00:11:35,839
+over to vimfovsco.com
+
+
+311
+00:11:35,839 --> 00:11:38,480
+and check out my course it's got 100
+
+
+312
+00:11:38,480 --> 00:11:40,880
+exercises to help you learn how to use
+
+
+313
+00:11:40,880 --> 00:11:43,760
+vim inside vs code and we teach you 22
+
+
+314
+00:11:43,760 --> 00:11:45,120
+different commands
+
+
+315
+00:11:45,120 --> 00:11:47,200
+use the coupon code fireship for five
+
+
+316
+00:11:47,200 --> 00:11:49,680
+dollars off thanks for watching and i
+
+
+317
+00:11:49,680 --> 00:11:53,800
+will see you in the next one
+
+

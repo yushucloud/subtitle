@@ -1,0 +1,184 @@
+1
+00:00:00,000 --> 00:00:02,879
+[Music] cassandra a wide column store nosql
+[音乐]cassandra 一个广泛的列存储 nosql
+
+2
+00:00:02,879 --> 00:00:06,399
+database famous for its ability to distribute petabytes of data with
+数据库，以其以
+
+3
+00:00:06,399 --> 00:00:11,280
+unmatched reliability and performance it was created in 2008 by avinash lakshman
+无与伦比的可靠性和性能分发 PB 级数据的能力而闻名。它于 2008
+
+4
+00:00:11,280 --> 00:00:15,280
+who was responsible for scaling facebook's inbox search feature by 2010
+年由负责扩展facebook 收件箱搜索功能的 avinash lakshman 创建于 2010 年
+
+5
+00:00:15,280 --> 00:00:19,199
+it became a top-level apache project and today is used at scale by big companies
+它成为顶级 apache 项目和今天被苹果等大公司大规模使用，
+
+6
+00:00:19,199 --> 00:00:23,519
+like apple which manages a staggering 100 petabytes of data across hundreds of
+它管理着数
+
+7
+00:00:23,519 --> 00:00:27,279
+thousands of server instances it's a general purpose database with use cases
+十万个服务器实例中惊人的 100 PB 数据，它是一个通用数据库，包含
+
+8
+00:00:27,279 --> 00:00:31,439
+for e-commerce content management audit logging and everything in between each
+电子商务内容管理审计日志的用例以及每个实例之间的所有
+
+9
+00:00:31,439 --> 00:00:35,120
+instance of cassandra is called a node and typically stores about two terabytes
+内容 cassandra 被称为节点，通常存储大约 2 TB
+
+10
+00:00:35,120 --> 00:00:38,879
+of data what makes it special though is that nodes can be easily distributed to
+的数据，但它的特别之处在于节点可以轻松分布以
+
+11
+00:00:38,879 --> 00:00:43,040
+scale horizontally every node has the same read write capabilities of another
+水平扩展每个节点都具有与另一个节点相同的读写能力，
+
+12
+00:00:43,040 --> 00:00:46,559
+node but is responsible for its own partition of data nodes are grouped
+但负责自己的数据分区节点是
+
+13
+00:00:46,559 --> 00:00:50,640
+together in a cluster or ring and data is typically replicated on multiple
+在集群或环中组合在一起，数据通常在多个节点上复制
+
+14
+00:00:50,640 --> 00:00:54,879
+nodes which means no single point of failure and 100 uptime the data is
+w 这意味着没有单点故障和 100 次正常运行时间数据被
+
+15
+00:00:54,879 --> 00:00:58,399
+wrapped in a key space giving developers control over how it replicates in the
+包装在一个键空间中，使开发人员可以控制它如何在
+
+16
+00:00:58,399 --> 00:01:02,559
+cluster each key space contains one or more tables which represent tabular data
+集群中复制每个键空间包含一个或多个表，这些表代表
+
+17
+00:01:02,559 --> 00:01:06,159
+like you might find in a relational database however it's schema-less and
+您可能在关系数据库中找到的表格数据，但是它是 无模式并且
+
+18
+00:01:06,159 --> 00:01:09,840
+can handle unstructured data which developers can manage with the cassandra
+可以处理开发人员可以使用 cassandra
+
+19
+00:01:09,840 --> 00:01:13,840
+query language the easiest way to get started is by creating a free serverless
+查询语言管理的非结构化数据 最简单的入门方法是使用 astra 创建一个免费的无服务器
+
+20
+00:01:13,840 --> 00:01:17,360
+database with astra it deploys to the cloud of your choice then scales
+数据库，然后将其部署到您选择的云中，然后
+
+21
+00:01:17,360 --> 00:01:21,360
+automatically on demand first we'll need to define a key space which acts as a
+首先根据需要自动扩展要定义一个充当复制容器的密钥空间，
+
+22
+00:01:21,360 --> 00:01:25,040
+container for replication next we'll need to connect to the database which
+接下来我们需要连接到数据库，这
+
+23
+00:01:25,040 --> 00:01:29,360
+can be accomplished in a variety of ways it has sdks for major languages and a
+可以通过多种方式完成，它具有用于主要语言的 sdks 和一个
+
+24
+00:01:29,360 --> 00:01:34,400
+tool called stargate that makes data accessible via ras graphql and grpc or
+名为 stargate 的工具，该工具可以通过 ras graphql 访问数据和 grpc 或者
+
+25
+00:01:34,400 --> 00:01:39,520
+you can execute raw cql code which is a subset of sql create a table and include
+您可以执行作为 sql 子集的原始 cql 代码创建一个表并包含
+
+26
+00:01:39,520 --> 00:01:44,159
+a primary key to uniquely identify every row then each column will have its own
+一个主键来唯一标识每一行然后每一列 将有自己的
+
+27
+00:01:44,159 --> 00:01:48,560
+name and data type now add data to that table with the insert into statement
+名称和数据类型现在使用 insert into 语句将数据添加到该表
+
+28
+00:01:48,560 --> 00:01:52,560
+then you select to read data from the table it's also possible to use the
+然后您选择从表中读取数据也可以使用
+
+29
+00:01:52,560 --> 00:01:56,479
+where clause to filter and query the data but an index will be required on
+where 子句过滤和查询数据，但需要索引
+
+30
+00:01:56,479 --> 00:02:00,159
+the column on the surface this may look a lot like a relational database but it
+从表面上看，这可能看起来很像一个关系数据库，但它
+
+31
+00:02:00,159 --> 00:02:04,159
+doesn't support joins and that's by design instead of modeling data into
+不支持连接，这是设计使然，而不是将数据建模到
+
+32
+00:02:04,159 --> 00:02:08,560
+small normalized tables in cassandra it's denormalized to match the structure
+cassandra 中的小型规范化表中，它是非规范化的，以匹配
+
+33
+00:02:08,560 --> 00:02:12,560
+of known queries making reads much faster at scale and it's also possible
+已知查询的结构，从而使大规模读取速度更快，并且 也
+
+34
+00:02:12,560 --> 00:02:16,720
+to implement storage attached indexing to handle complex relational queries
+可以实现存储附加索引来处理复杂的关系查询
+
+35
+00:02:16,720 --> 00:02:20,239
+this has been cassandra in 100 seconds let me know if you want to see a full
+这已经 cassandra 在 100 秒内让我知道如果你想在评论中看到完整的
+
+36
+00:02:20,239 --> 00:02:23,920
+tutorial in the comments thanks for watching and i will see you in the next
+教程 感谢观看，我会在下
+
+37
+00:02:23,920 --> 00:02:26,920
+one
+一个

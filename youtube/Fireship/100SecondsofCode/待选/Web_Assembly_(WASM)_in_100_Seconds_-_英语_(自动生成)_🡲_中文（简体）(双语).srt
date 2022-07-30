@@ -1,0 +1,189 @@
+1
+00:00:00,560 --> 00:00:04,720
+web assembly write applications for the web and languages other than javascript
+Web 程序集为Web 和除 javascript 以外的其他语言编写应用程序
+
+2
+00:00:04,720 --> 00:00:09,120
+imagine a world where you could build software with c plus plus rust python go
+想象一个世界，您可以使用 c plus plus rust python go
+
+3
+00:00:09,120 --> 00:00:12,400
+or even cobalt then deliver that software to the end user in a web
+甚至钴构建软件，然后在 Web 浏览器中将该软件交付给最终用户，
+
+4
+00:00:12,400 --> 00:00:15,759
+browser without any installation and near native performance that world
+无需任何安装且接近本机性能 世界
+
+5
+00:00:15,759 --> 00:00:20,640
+became a reality in december 2019 when webassembly became an official w3c
+在 2019 年 12 月成为现实，当时 webassembly 成为官方 w3c
+
+6
+00:00:20,640 --> 00:00:22,960
+standard it includes a low-level language similar
+标准，它包括一种类似于汇编的低级语言
+
+7
+00:00:22,960 --> 00:00:25,359
+to assembly that can be represented with text
+，可以用文本表示，
+
+8
+00:00:25,359 --> 00:00:28,800
+then converted to a binary format that runs on all modern browsers
+然后转换为可在所有现代浏览器上运行的二进制格式，
+
+9
+00:00:28,800 --> 00:00:32,320
+however you won't actually write this code directly but rather use it as a
+但你实际上不会写这个直接编写代码，而是将其用作
+
+10
+00:00:32,320 --> 00:00:35,440
+compilation target for programs written in other languages
+以其他语言编写的程序的编译目标，
+
+11
+00:00:35,440 --> 00:00:38,559
+for example you might build a game with unity and c-sharp
+例如，您可以使用unity 和 c-sharp 构建游戏，
+
+12
+00:00:38,559 --> 00:00:41,920
+then compile it to webassembly where it can be delivered in the browser
+然后将其编译为 webassembly，然后可以在浏览器中交付
+
+13
+00:00:41,920 --> 00:00:45,200
+now it's important to note that it's not intended to replace javascript
+它现在重要的是要注意它不是打算替换
+
+14
+00:00:45,200 --> 00:00:48,640
+in fact the two work well together side by side figma for example
+javascript 实际上两者并肩工作很好figma 例如
+
+15
+00:00:48,640 --> 00:00:53,360
+uses react.js for its outer ui then on the inside you have a high performance c
+使用 react.js 作为其外部 ui 然后在内部，您拥有一个高性能的 c
+
+16
+00:00:53,360 --> 00:00:56,960
+plus plus design tool that feels just as fast as native software
+plus plus 设计工具，感觉与
+
+17
+00:00:56,960 --> 00:01:00,239
+as a developer there are many different ways you can build a webassembly app
+开发人员的本地软件一样快 有许多不同的方法可以构建一个 webassembly 应用程序
+
+18
+00:01:00,239 --> 00:01:04,000
+with many more under development one of the most popular tools is mscriptin
+，还有更多正在开发中的最流行的工具之一是 mscriptin
+
+19
+00:01:04,000 --> 00:01:07,760
+which can convert a c or c plus plus program to webassembly as
+，它可以 将 c或 c plus plus 程序转换为 webassembly，
+
+20
+00:01:07,760 --> 00:01:11,439
+it did by bringing autocad to the web which is a 30 year old codebase
+就像通过将 autocad 引入网络一样，这是一个有 30 年历史的代码库
+
+21
+00:01:11,439 --> 00:01:16,080
+no way one of the best ways to get started is with assembly script which is
+，最好的入门方法之一是使用汇编脚本，它是
+
+22
+00:01:16,080 --> 00:01:19,360
+a language that looks like typescript but compiles to webassembly we can
+一种看起来像 typescript但编译为的语言 webassembly 我们可以
+
+23
+00:01:19,360 --> 00:01:21,439
+easily start a new assembly script project
+
+
+24
+00:01:21,439 --> 00:01:25,280
+using node.js and npm then we'll write our first webassembly module
+使用 node.js 和 npm 轻松启动一个新的汇编脚本项目，然后我们将在 index ts 文件中编写我们的第一个 webassembly 模块
+
+25
+00:01:25,280 --> 00:01:29,759
+in the index ts file unlike javascript a dynamic interpreted language
+，这与 javascript 不同的是动态解释语言
+
+26
+00:01:29,759 --> 00:01:33,520
+webassembly is a static compiled language with strict type guarantees
+webassembly 是一种具有严格类型保证的静态编译语言，
+
+27
+00:01:33,520 --> 00:01:37,200
+for example our code can't use the any type when it comes to numbers
+例如我们的代码 不能使用任何类型的数字
+
+28
+00:01:37,200 --> 00:01:41,439
+we need to specify a 32-bit integer or a 64-bit floating point
+我们需要指定一个 32 位整数或64 位
+
+29
+00:01:41,439 --> 00:01:45,200
+in addition we can't use dynamic objects instead we use maps where we can
+浮点此外我们不能使用动态对象 相反，我们使用映射，
+
+30
+00:01:45,200 --> 00:01:48,479
+strongly type the key value pairs once we're happy with our code we can then
+一旦我们对代码感到满意，我们就可以强输入键值对，然后我们可以将其
+
+31
+00:01:48,479 --> 00:01:51,920
+compile it down to a binary which is a file that ends in
+编译成二进制文件，该文件是以 wasm 结尾的文件，
+
+32
+00:01:51,920 --> 00:01:56,000
+wasm we can now run this binary in the browser open an html page
+我们现在可以在浏览器中运行这个二进制文件打开一个 html 页面
+
+33
+00:01:56,000 --> 00:01:59,520
+and then use the webassembly api to instantiate streaming
+，然后使用 webassembly api实例化流，
+
+34
+00:01:59,520 --> 00:02:03,439
+simply fetch the binary and when the promise resolves do something with it
+只需获取二进制文件，当promise 解决时，用它做一些事情，
+
+35
+00:02:03,439 --> 00:02:07,439
+this has been webassembly in 100 seconds if you want to see a more in-depth video
+如果你想看到关于这个主题的更深入的视频
+
+36
+00:02:07,439 --> 00:02:09,599
+on this topic please let me know in the comments and
+，请在 100 秒内让我知道 评论并
+
+37
+00:02:09,599 --> 00:02:11,680
+make sure to subscribe and hit the like button
+确保订阅并点击喜欢按钮
+
+38
+00:02:11,680 --> 00:02:17,360
+thanks for watching and i will see you in the next one
+感谢观看，我会在下一个看到你

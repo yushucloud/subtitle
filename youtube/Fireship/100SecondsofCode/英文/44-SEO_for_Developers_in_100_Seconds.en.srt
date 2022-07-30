@@ -1,0 +1,2095 @@
+1
+00:00:00,240 --> 00:00:01,839
+the first rule of search engine
+
+
+2
+00:00:01,839 --> 00:00:03,120
+optimization is
+
+
+3
+00:00:03,120 --> 00:00:05,359
+create really good content the second
+
+
+4
+00:00:05,359 --> 00:00:08,080
+rule of search engine optimization is
+
+
+5
+00:00:08,080 --> 00:00:10,240
+create really good content if human
+
+
+6
+00:00:10,240 --> 00:00:11,759
+beings don't want to engage with your
+
+
+7
+00:00:11,759 --> 00:00:13,519
+content then google doesn't want to
+
+
+8
+00:00:13,519 --> 00:00:14,000
+either
+
+
+9
+00:00:14,000 --> 00:00:15,759
+we live in the age of machine learning
+
+
+10
+00:00:15,759 --> 00:00:17,520
+and quantum computing you can't just
+
+
+11
+00:00:17,520 --> 00:00:19,199
+stuff a bunch of keywords into a page
+
+
+12
+00:00:19,199 --> 00:00:20,320
+and expect to do well
+
+
+13
+00:00:20,320 --> 00:00:21,840
+when google first came about in the late
+
+
+14
+00:00:21,840 --> 00:00:23,920
+90s it was based on an algorithm called
+
+
+15
+00:00:23,920 --> 00:00:25,920
+pagerank which weighted relevance and
+
+
+16
+00:00:25,920 --> 00:00:26,720
+search ranking
+
+
+17
+00:00:26,720 --> 00:00:28,320
+based on the number of inbound links
+
+
+18
+00:00:28,320 --> 00:00:30,320
+that a site had people quickly learned
+
+
+19
+00:00:30,320 --> 00:00:31,760
+how to exploit the algorithm
+
+
+20
+00:00:31,760 --> 00:00:33,360
+by spamming backlinks all over the
+
+
+21
+00:00:33,360 --> 00:00:35,040
+internet to increase the site's page
+
+
+22
+00:00:35,040 --> 00:00:35,600
+rank
+
+
+23
+00:00:35,600 --> 00:00:37,360
+because a high ranking in google can
+
+
+24
+00:00:37,360 --> 00:00:39,040
+literally be worth millions of dollars
+
+
+25
+00:00:39,040 --> 00:00:41,440
+it brought us an entire industry of seo
+
+
+26
+00:00:41,440 --> 00:00:42,079
+experts
+
+
+27
+00:00:42,079 --> 00:00:43,520
+the good guys wear white hats the
+
+
+28
+00:00:43,520 --> 00:00:45,360
+hackers wear black hats but the most
+
+
+29
+00:00:45,360 --> 00:00:47,200
+effective ones wear grey hats but some
+
+
+30
+00:00:47,200 --> 00:00:47,520
+say
+
+
+31
+00:00:47,520 --> 00:00:49,200
+it's a dying industry y'all want to see
+
+
+32
+00:00:49,200 --> 00:00:51,039
+a dead body because it's becoming harder
+
+
+33
+00:00:51,039 --> 00:00:52,559
+and harder to manipulate google's
+
+
+34
+00:00:52,559 --> 00:00:53,280
+technology
+
+
+35
+00:00:53,280 --> 00:00:55,440
+there are over 200 factors that go into
+
+
+36
+00:00:55,440 --> 00:00:56,320
+a site's ranking
+
+
+37
+00:00:56,320 --> 00:00:57,760
+that are geared mostly towards how
+
+
+38
+00:00:57,760 --> 00:00:59,920
+useful a user found your site did they
+
+
+39
+00:00:59,920 --> 00:01:01,440
+immediately bounce by clicking the back
+
+
+40
+00:01:01,440 --> 00:01:01,840
+button
+
+
+41
+00:01:01,840 --> 00:01:03,520
+or did they dwell on the page for a long
+
+
+42
+00:01:03,520 --> 00:01:05,040
+time and click other links
+
+
+43
+00:01:05,040 --> 00:01:07,040
+absorbing all kinds of useful content
+
+
+44
+00:01:07,040 --> 00:01:08,240
+content is king
+
+
+45
+00:01:08,240 --> 00:01:10,880
+but the third rule of seo is to render
+
+
+46
+00:01:10,880 --> 00:01:13,600
+html that can be reliably understood by
+
+
+47
+00:01:13,600 --> 00:01:15,200
+bots your main content
+
+
+48
+00:01:15,200 --> 00:01:17,520
+goes inside the body tags when google
+
+
+49
+00:01:17,520 --> 00:01:18,400
+crawls your site
+
+
+50
+00:01:18,400 --> 00:01:20,799
+it will use semantic html elements to
+
+
+51
+00:01:20,799 --> 00:01:22,479
+understand the content on the page
+
+
+52
+00:01:22,479 --> 00:01:24,159
+you might put your main content in an
+
+
+53
+00:01:24,159 --> 00:01:26,080
+article tag then put your most important
+
+
+54
+00:01:26,080 --> 00:01:28,400
+keywords and headings or h tags to
+
+
+55
+00:01:28,400 --> 00:01:29,840
+signal what your page is about
+
+
+56
+00:01:29,840 --> 00:01:31,680
+furthermore your html should be
+
+
+57
+00:01:31,680 --> 00:01:33,759
+accessible use alt tags and images
+
+
+58
+00:01:33,759 --> 00:01:35,680
+and aria tags where needed to make your
+
+
+59
+00:01:35,680 --> 00:01:37,680
+site usable on assistive devices
+
+
+60
+00:01:37,680 --> 00:01:39,119
+in the head of the document we have
+
+
+61
+00:01:39,119 --> 00:01:41,200
+metadata that's not directly shown to
+
+
+62
+00:01:41,200 --> 00:01:42,079
+the end user
+
+
+63
+00:01:42,079 --> 00:01:44,079
+but bots can use this data to further
+
+
+64
+00:01:44,079 --> 00:01:45,680
+understand the page and format the
+
+
+65
+00:01:45,680 --> 00:01:47,360
+actual appearance of your search engine
+
+
+66
+00:01:47,360 --> 00:01:47,840
+listing
+
+
+67
+00:01:47,840 --> 00:01:49,920
+the fourth rule of seo is to get your
+
+
+68
+00:01:49,920 --> 00:01:52,159
+fully rendered html loaded fast
+
+
+69
+00:01:52,159 --> 00:01:54,240
+if you have megabytes of blocking images
+
+
+70
+00:01:54,240 --> 00:01:55,840
+styles and javascript
+
+
+71
+00:01:55,840 --> 00:01:58,000
+both users and bots will pass on your
+
+
+72
+00:01:58,000 --> 00:01:59,439
+site but going fast
+
+
+73
+00:01:59,439 --> 00:02:01,119
+is easier said than done that's why
+
+
+74
+00:02:01,119 --> 00:02:03,439
+today we're going beyond 100 seconds to
+
+
+75
+00:02:03,439 --> 00:02:04,960
+look at the many different strategies we
+
+
+76
+00:02:04,960 --> 00:02:07,680
+have to render html and how they impact
+
+
+77
+00:02:07,680 --> 00:02:09,679
+search engine optimization if you're new
+
+
+78
+00:02:09,679 --> 00:02:10,959
+here like and subscribe
+
+
+79
+00:02:10,959 --> 00:02:12,879
+and today i have a big announcement my
+
+
+80
+00:02:12,879 --> 00:02:14,800
+full next js firebase course
+
+
+81
+00:02:14,800 --> 00:02:16,560
+is now available if your goal is to
+
+
+82
+00:02:16,560 --> 00:02:18,239
+build a highly interactive web app
+
+
+83
+00:02:18,239 --> 00:02:19,760
+that is also fully search engine
+
+
+84
+00:02:19,760 --> 00:02:21,280
+friendly then you'll definitely want to
+
+
+85
+00:02:21,280 --> 00:02:22,319
+check out this course
+
+
+86
+00:02:22,319 --> 00:02:24,080
+now the four most important rules for
+
+
+87
+00:02:24,080 --> 00:02:25,599
+seo in my opinion
+
+
+88
+00:02:25,599 --> 00:02:27,360
+are create awesome content create
+
+
+89
+00:02:27,360 --> 00:02:29,280
+awesome content render properly
+
+
+90
+00:02:29,280 --> 00:02:30,560
+formatted html
+
+
+91
+00:02:30,560 --> 00:02:32,959
+and load your html quickly the first two
+
+
+92
+00:02:32,959 --> 00:02:34,319
+rules are very subjective
+
+
+93
+00:02:34,319 --> 00:02:36,560
+and depend entirely on your audience but
+
+
+94
+00:02:36,560 --> 00:02:37,440
+the general goal
+
+
+95
+00:02:37,440 --> 00:02:39,280
+is that when someone clicks on a link to
+
+
+96
+00:02:39,280 --> 00:02:41,040
+your site from a search engine ranking
+
+
+97
+00:02:41,040 --> 00:02:41,599
+page
+
+
+98
+00:02:41,599 --> 00:02:43,200
+they should engage with your site as
+
+
+99
+00:02:43,200 --> 00:02:45,280
+long as possible there are a few metrics
+
+
+100
+00:02:45,280 --> 00:02:47,040
+that you'll want to be aware of here
+
+
+101
+00:02:47,040 --> 00:02:48,800
+the first one is the click-through rate
+
+
+102
+00:02:48,800 --> 00:02:50,080
+or ctr
+
+
+103
+00:02:50,080 --> 00:02:52,319
+that defines how likely a user is to
+
+
+104
+00:02:52,319 --> 00:02:53,519
+click on your link
+
+
+105
+00:02:53,519 --> 00:02:55,120
+when displayed in a search engine
+
+
+106
+00:02:55,120 --> 00:02:56,720
+ranking page or serp
+
+
+107
+00:02:56,720 --> 00:02:58,640
+the higher the ctr the better and that
+
+
+108
+00:02:58,640 --> 00:03:00,319
+usually means you have a very relevant
+
+
+109
+00:03:00,319 --> 00:03:01,840
+title and description
+
+
+110
+00:03:01,840 --> 00:03:03,440
+now if a user clicks on your link and
+
+
+111
+00:03:03,440 --> 00:03:05,360
+then immediately clicks the back button
+
+
+112
+00:03:05,360 --> 00:03:06,959
+that's called a bounce and the higher
+
+
+113
+00:03:06,959 --> 00:03:08,879
+your bounce rate is the less likely your
+
+
+114
+00:03:08,879 --> 00:03:10,879
+site is to rank well in the long term
+
+
+115
+00:03:10,879 --> 00:03:12,400
+because apparently the content on the
+
+
+116
+00:03:12,400 --> 00:03:14,480
+page is not very relevant if the user
+
+
+117
+00:03:14,480 --> 00:03:15,599
+does stay on the page
+
+
+118
+00:03:15,599 --> 00:03:17,680
+google will keep track of the dwell time
+
+
+119
+00:03:17,680 --> 00:03:19,040
+which is the amount of time they spend
+
+
+120
+00:03:19,040 --> 00:03:20,800
+there before clicking back to the search
+
+
+121
+00:03:20,800 --> 00:03:21,360
+results
+
+
+122
+00:03:21,360 --> 00:03:23,760
+the longer the dwell time the better but
+
+
+123
+00:03:23,760 --> 00:03:25,280
+the best possible thing that can happen
+
+
+124
+00:03:25,280 --> 00:03:27,280
+is that the user never clicks back their
+
+
+125
+00:03:27,280 --> 00:03:28,480
+session will last forever
+
+
+126
+00:03:28,480 --> 00:03:29,840
+and they'll never need to go to another
+
+
+127
+00:03:29,840 --> 00:03:31,920
+website ever again that doesn't happen
+
+
+128
+00:03:31,920 --> 00:03:32,720
+very often
+
+
+129
+00:03:32,720 --> 00:03:34,720
+so what you keep track of is the average
+
+
+130
+00:03:34,720 --> 00:03:35,760
+session duration
+
+
+131
+00:03:35,760 --> 00:03:37,440
+and the average number of pages viewed
+
+
+132
+00:03:37,440 --> 00:03:39,519
+per session these are metrics that you
+
+
+133
+00:03:39,519 --> 00:03:40,879
+want to maximize
+
+
+134
+00:03:40,879 --> 00:03:42,640
+there's no absolute rule for creating
+
+
+135
+00:03:42,640 --> 00:03:44,000
+engaging content
+
+
+136
+00:03:44,000 --> 00:03:45,760
+but the first thing the user sees should
+
+
+137
+00:03:45,760 --> 00:03:47,760
+hook them in to want to read more
+
+
+138
+00:03:47,760 --> 00:03:49,360
+if you look at something like buzzfeed
+
+
+139
+00:03:49,360 --> 00:03:50,720
+all you have to do is put an animated
+
+
+140
+00:03:50,720 --> 00:03:52,720
+gif at the top then maybe a few more in
+
+
+141
+00:03:52,720 --> 00:03:53,360
+the body
+
+
+142
+00:03:53,360 --> 00:03:55,200
+and you should be good let's move on to
+
+
+143
+00:03:55,200 --> 00:03:56,640
+rule three where we talk about the
+
+
+144
+00:03:56,640 --> 00:03:58,640
+actual structure of the html
+
+
+145
+00:03:58,640 --> 00:04:01,280
+i'll be using my site fireship io as an
+
+
+146
+00:04:01,280 --> 00:04:02,000
+example
+
+
+147
+00:04:02,000 --> 00:04:04,080
+on a lesson or article page you can
+
+
+148
+00:04:04,080 --> 00:04:06,400
+right click and hit inspect element
+
+
+149
+00:04:06,400 --> 00:04:08,560
+or hit control shift i this will bring
+
+
+150
+00:04:08,560 --> 00:04:10,879
+up the elements tab in chrome devtools
+
+
+151
+00:04:10,879 --> 00:04:12,799
+showing you the fully rendered html
+
+
+152
+00:04:12,799 --> 00:04:14,319
+markup we have a head
+
+
+153
+00:04:14,319 --> 00:04:16,079
+and a body let's go ahead and open up
+
+
+154
+00:04:16,079 --> 00:04:17,919
+the body find the main element
+
+
+155
+00:04:17,919 --> 00:04:19,519
+then inside the main element you'll
+
+
+156
+00:04:19,519 --> 00:04:21,359
+notice we have an article an article
+
+
+157
+00:04:21,359 --> 00:04:23,040
+element has semantic meaning and
+
+
+158
+00:04:23,040 --> 00:04:24,400
+although it will never be seen by the
+
+
+159
+00:04:24,400 --> 00:04:26,320
+end user it tells the search engine
+
+
+160
+00:04:26,320 --> 00:04:28,800
+here is the main content of the page in
+
+
+161
+00:04:28,800 --> 00:04:29,360
+addition
+
+
+162
+00:04:29,360 --> 00:04:30,800
+you'll notice a couple of extra
+
+
+163
+00:04:30,800 --> 00:04:32,880
+attributes here one is item scope
+
+
+164
+00:04:32,880 --> 00:04:35,040
+and the other is an item type as a
+
+
+165
+00:04:35,040 --> 00:04:36,080
+schema.org
+
+
+166
+00:04:36,080 --> 00:04:37,919
+article now it's totally optional and
+
+
+167
+00:04:37,919 --> 00:04:39,040
+whether or not it will improve your
+
+
+168
+00:04:39,040 --> 00:04:40,880
+search engine ranking is debatable but
+
+
+169
+00:04:40,880 --> 00:04:42,000
+what schema.org
+
+
+170
+00:04:42,000 --> 00:04:44,160
+allows you to do is define a bunch of
+
+
+171
+00:04:44,160 --> 00:04:46,320
+metadata about the actual content on
+
+
+172
+00:04:46,320 --> 00:04:46,960
+your page
+
+
+173
+00:04:46,960 --> 00:04:48,880
+making it easier for search engines to
+
+
+174
+00:04:48,880 --> 00:04:50,720
+interpret it's especially powerful
+
+
+175
+00:04:50,720 --> 00:04:52,240
+if your content is something like a
+
+
+176
+00:04:52,240 --> 00:04:54,160
+recipe or a star review
+
+
+177
+00:04:54,160 --> 00:04:56,080
+because google can then take the schema
+
+
+178
+00:04:56,080 --> 00:04:58,479
+data and format it properly in a serp
+
+
+179
+00:04:58,479 --> 00:04:58,960
+page
+
+
+180
+00:04:58,960 --> 00:05:00,320
+now in this case we have a bunch of
+
+
+181
+00:05:00,320 --> 00:05:02,160
+metadata that make up an article
+
+
+182
+00:05:02,160 --> 00:05:03,759
+and one thing that is known to improve
+
+
+183
+00:05:03,759 --> 00:05:05,600
+search ranking is when an article is
+
+
+184
+00:05:05,600 --> 00:05:07,120
+written by a known author
+
+
+185
+00:05:07,120 --> 00:05:09,039
+further down the html tree here you'll
+
+
+186
+00:05:09,039 --> 00:05:10,960
+notice we have an item prop of author
+
+
+187
+00:05:10,960 --> 00:05:13,199
+which points to the authors page that
+
+
+188
+00:05:13,199 --> 00:05:15,840
+link goes to another page on fireship io
+
+
+189
+00:05:15,840 --> 00:05:18,000
+and on that page we also have an article
+
+
+190
+00:05:18,000 --> 00:05:20,320
+element this time with an item type of a
+
+
+191
+00:05:20,320 --> 00:05:21,360
+schema.org
+
+
+192
+00:05:21,360 --> 00:05:23,520
+author along with a bunch of links that
+
+
+193
+00:05:23,520 --> 00:05:25,280
+point to authoritative sites for that
+
+
+194
+00:05:25,280 --> 00:05:25,840
+author
+
+
+195
+00:05:25,840 --> 00:05:27,520
+outbound links on a page are really
+
+
+196
+00:05:27,520 --> 00:05:29,280
+important because they further signal
+
+
+197
+00:05:29,280 --> 00:05:30,560
+what the page is about
+
+
+198
+00:05:30,560 --> 00:05:32,400
+in this case google will first crawl the
+
+
+199
+00:05:32,400 --> 00:05:34,880
+article then crawl the authors page
+
+
+200
+00:05:34,880 --> 00:05:36,240
+then crawl these other sites to
+
+
+201
+00:05:36,240 --> 00:05:38,160
+understand who that author is a good
+
+
+202
+00:05:38,160 --> 00:05:38,800
+strategy
+
+
+203
+00:05:38,800 --> 00:05:40,800
+is to use outbound links to other really
+
+
+204
+00:05:40,800 --> 00:05:42,400
+good sites that are related to the
+
+
+205
+00:05:42,400 --> 00:05:44,080
+content on a given page
+
+
+206
+00:05:44,080 --> 00:05:46,400
+now in addition to schema.org there's
+
+
+207
+00:05:46,400 --> 00:05:48,080
+other ways you can add metadata to your
+
+
+208
+00:05:48,080 --> 00:05:48,880
+content
+
+
+209
+00:05:48,880 --> 00:05:50,880
+and this can be very important for seo
+
+
+210
+00:05:50,880 --> 00:05:52,560
+and also accessibility
+
+
+211
+00:05:52,560 --> 00:05:54,240
+one of the most fundamental techniques
+
+
+212
+00:05:54,240 --> 00:05:55,919
+is to add an alt attribute
+
+
+213
+00:05:55,919 --> 00:05:58,080
+to images which is basically just some
+
+
+214
+00:05:58,080 --> 00:05:59,840
+text that describes the image
+
+
+215
+00:05:59,840 --> 00:06:01,440
+this metadata can be used by search
+
+
+216
+00:06:01,440 --> 00:06:03,280
+engines and also by screen readers for
+
+
+217
+00:06:03,280 --> 00:06:04,479
+those with disabilities
+
+
+218
+00:06:04,479 --> 00:06:06,000
+for other elements that are a little
+
+
+219
+00:06:06,000 --> 00:06:08,160
+more complicated like a progress bar for
+
+
+220
+00:06:08,160 --> 00:06:09,039
+example
+
+
+221
+00:06:09,039 --> 00:06:11,199
+you can use aria attributes which stand
+
+
+222
+00:06:11,199 --> 00:06:12,479
+for accessible rich
+
+
+223
+00:06:12,479 --> 00:06:14,240
+internet applications and they help
+
+
+224
+00:06:14,240 --> 00:06:15,520
+provide additional meaning
+
+
+225
+00:06:15,520 --> 00:06:17,360
+to highly interactive widgets on the
+
+
+226
+00:06:17,360 --> 00:06:19,360
+page at this point we've only been
+
+
+227
+00:06:19,360 --> 00:06:21,039
+looking in the body of the document
+
+
+228
+00:06:21,039 --> 00:06:22,639
+but the head of the document contains
+
+
+229
+00:06:22,639 --> 00:06:24,319
+all kinds of useful metadata for
+
+
+230
+00:06:24,319 --> 00:06:26,560
+seo most importantly this is where you
+
+
+231
+00:06:26,560 --> 00:06:27,440
+have the title
+
+
+232
+00:06:27,440 --> 00:06:29,039
+you should choose your title carefully
+
+
+233
+00:06:29,039 --> 00:06:31,039
+because it's displayed in a cert page
+
+
+234
+00:06:31,039 --> 00:06:33,120
+and will ultimately control your ctr
+
+
+235
+00:06:33,120 --> 00:06:34,800
+rating in addition to the title
+
+
+236
+00:06:34,800 --> 00:06:36,880
+you may also want to have meta tags here
+
+
+237
+00:06:36,880 --> 00:06:38,960
+which define things like the description
+
+
+238
+00:06:38,960 --> 00:06:42,080
+featured image author canonical url and
+
+
+239
+00:06:42,080 --> 00:06:43,120
+stuff like that
+
+
+240
+00:06:43,120 --> 00:06:45,199
+these meta tags are also essential if
+
+
+241
+00:06:45,199 --> 00:06:46,880
+you want your content to be shared on
+
+
+242
+00:06:46,880 --> 00:06:48,560
+social media sites like twitter or
+
+
+243
+00:06:48,560 --> 00:06:49,280
+facebook
+
+
+244
+00:06:49,280 --> 00:06:50,880
+when you post a hyperlink in social
+
+
+245
+00:06:50,880 --> 00:06:53,199
+media it fetches that page and looks for
+
+
+246
+00:06:53,199 --> 00:06:55,360
+the meta tags to understand what image
+
+
+247
+00:06:55,360 --> 00:06:56,960
+and title to display there
+
+
+248
+00:06:56,960 --> 00:06:58,319
+if you want to see how your site's doing
+
+
+249
+00:06:58,319 --> 00:07:00,160
+right now you can post a link into the
+
+
+250
+00:07:00,160 --> 00:07:01,759
+twitter card validator and it will tell
+
+
+251
+00:07:01,759 --> 00:07:03,199
+you whether or not it can use your
+
+
+252
+00:07:03,199 --> 00:07:04,800
+current meta tags
+
+
+253
+00:07:04,800 --> 00:07:06,160
+so that gives you some things to think
+
+
+254
+00:07:06,160 --> 00:07:07,599
+about when it comes to the actual
+
+
+255
+00:07:07,599 --> 00:07:09,280
+structure of your html
+
+
+256
+00:07:09,280 --> 00:07:11,360
+but the bigger question is how do you
+
+
+257
+00:07:11,360 --> 00:07:13,440
+render that html or in other words
+
+
+258
+00:07:13,440 --> 00:07:14,880
+what part of your tech stack is
+
+
+259
+00:07:14,880 --> 00:07:17,039
+responsible for generating the actual
+
+
+260
+00:07:17,039 --> 00:07:20,080
+html markup that is received by a bot or
+
+
+261
+00:07:20,080 --> 00:07:20,800
+end user
+
+
+262
+00:07:20,800 --> 00:07:22,319
+there are three fundamental ways to
+
+
+263
+00:07:22,319 --> 00:07:24,639
+render html the first one we'll look at
+
+
+264
+00:07:24,639 --> 00:07:26,240
+is client-side rendering if you're
+
+
+265
+00:07:26,240 --> 00:07:27,599
+building an app with something like
+
+
+266
+00:07:27,599 --> 00:07:28,880
+react or angular
+
+
+267
+00:07:28,880 --> 00:07:30,560
+the default mode is client-side
+
+
+268
+00:07:30,560 --> 00:07:32,800
+rendering or a single page application
+
+
+269
+00:07:32,800 --> 00:07:34,880
+on the initial page load the user gets a
+
+
+270
+00:07:34,880 --> 00:07:37,120
+shell of html without any meaningful
+
+
+271
+00:07:37,120 --> 00:07:37,680
+content
+
+
+272
+00:07:37,680 --> 00:07:39,919
+the javascript code then bootstraps then
+
+
+273
+00:07:39,919 --> 00:07:41,840
+asynchronously fetches any additional
+
+
+274
+00:07:41,840 --> 00:07:43,360
+data needed for the ui
+
+
+275
+00:07:43,360 --> 00:07:44,639
+apps like this are great for
+
+
+276
+00:07:44,639 --> 00:07:46,400
+interactivity because it gives the end
+
+
+277
+00:07:46,400 --> 00:07:47,919
+user an app-like feel
+
+
+278
+00:07:47,919 --> 00:07:49,840
+similar to what you'd expect on ios or
+
+
+279
+00:07:49,840 --> 00:07:51,199
+android the problem
+
+
+280
+00:07:51,199 --> 00:07:53,360
+is that because the initial html is just
+
+
+281
+00:07:53,360 --> 00:07:55,599
+a shell search engines may have a hard
+
+
+282
+00:07:55,599 --> 00:07:56,000
+time
+
+
+283
+00:07:56,000 --> 00:07:58,160
+understanding and indexing it if you
+
+
+284
+00:07:58,160 --> 00:08:00,319
+take a link generated by javascript from
+
+
+285
+00:08:00,319 --> 00:08:01,759
+a single page application
+
+
+286
+00:08:01,759 --> 00:08:03,599
+and post it into twitter you'll only see
+
+
+287
+00:08:03,599 --> 00:08:05,360
+the initial shell you won't see any
+
+
+288
+00:08:05,360 --> 00:08:07,120
+additional meta tags that were generated
+
+
+289
+00:08:07,120 --> 00:08:09,199
+by javascript after the fact that's not
+
+
+290
+00:08:09,199 --> 00:08:09,680
+great for
+
+
+291
+00:08:09,680 --> 00:08:12,080
+social media but google as a search
+
+
+292
+00:08:12,080 --> 00:08:13,280
+engine is able to
+
+
+293
+00:08:13,280 --> 00:08:15,120
+index client rendered apps but the
+
+
+294
+00:08:15,120 --> 00:08:16,800
+reliability is questionable
+
+
+295
+00:08:16,800 --> 00:08:18,560
+and personally i wouldn't trust client
+
+
+296
+00:08:18,560 --> 00:08:20,879
+rendering if seo was a business critical
+
+
+297
+00:08:20,879 --> 00:08:21,680
+requirement
+
+
+298
+00:08:21,680 --> 00:08:24,400
+so another option is to pre-render or
+
+
+299
+00:08:24,400 --> 00:08:26,240
+statically generate html
+
+
+300
+00:08:26,240 --> 00:08:28,240
+in advance let's imagine your web app
+
+
+301
+00:08:28,240 --> 00:08:30,720
+has a hundred different routes or pages
+
+
+302
+00:08:30,720 --> 00:08:32,159
+instead of sending a shell down to the
+
+
+303
+00:08:32,159 --> 00:08:34,800
+user we could generate all the html for
+
+
+304
+00:08:34,800 --> 00:08:36,479
+those pages in advance
+
+
+305
+00:08:36,479 --> 00:08:38,080
+then upload the static files to a
+
+
+306
+00:08:38,080 --> 00:08:39,839
+storage bucket that could be cached on a
+
+
+307
+00:08:39,839 --> 00:08:40,880
+global cdn
+
+
+308
+00:08:40,880 --> 00:08:42,719
+so the first thing the user sees is
+
+
+309
+00:08:42,719 --> 00:08:44,159
+fully rendered content
+
+
+310
+00:08:44,159 --> 00:08:46,160
+then the javascript loads after that and
+
+
+311
+00:08:46,160 --> 00:08:47,839
+makes the page fully interactive
+
+
+312
+00:08:47,839 --> 00:08:49,920
+that's great for seo because bots get
+
+
+313
+00:08:49,920 --> 00:08:51,360
+fully rendered html
+
+
+314
+00:08:51,360 --> 00:08:52,720
+and they can easily interpret the
+
+
+315
+00:08:52,720 --> 00:08:54,720
+content on the page it's also highly
+
+
+316
+00:08:54,720 --> 00:08:55,360
+efficient
+
+
+317
+00:08:55,360 --> 00:08:56,800
+because if you're fetching data from a
+
+
+318
+00:08:56,800 --> 00:08:58,640
+database you only have to do that once
+
+
+319
+00:08:58,640 --> 00:09:00,160
+at build time then you can cache the
+
+
+320
+00:09:00,160 --> 00:09:01,279
+page on a cdn
+
+
+321
+00:09:01,279 --> 00:09:02,880
+and serve it to millions of people
+
+
+322
+00:09:02,880 --> 00:09:04,720
+without having to refetch your data
+
+
+323
+00:09:04,720 --> 00:09:06,399
+the trade-off with this approach though
+
+
+324
+00:09:06,399 --> 00:09:07,920
+is that the data in the pre-rendered
+
+
+325
+00:09:07,920 --> 00:09:09,760
+content can become stale which means
+
+
+326
+00:09:09,760 --> 00:09:11,200
+bots will be getting outdated
+
+
+327
+00:09:11,200 --> 00:09:13,200
+information until you rebuild and
+
+
+328
+00:09:13,200 --> 00:09:14,959
+redeploy the entire site
+
+
+329
+00:09:14,959 --> 00:09:16,480
+that's no big deal if you have a few
+
+
+330
+00:09:16,480 --> 00:09:18,000
+hundred pages that don't change very
+
+
+331
+00:09:18,000 --> 00:09:18,480
+often
+
+
+332
+00:09:18,480 --> 00:09:19,920
+but if you have millions of pages with
+
+
+333
+00:09:19,920 --> 00:09:21,600
+highly dynamic data then it doesn't
+
+
+334
+00:09:21,600 --> 00:09:22,720
+really scale
+
+
+335
+00:09:22,720 --> 00:09:24,399
+and that brings us to option number
+
+
+336
+00:09:24,399 --> 00:09:26,160
+three server side rendering
+
+
+337
+00:09:26,160 --> 00:09:27,920
+in this paradigm when the user makes a
+
+
+338
+00:09:27,920 --> 00:09:30,640
+request to a page the html is generated
+
+
+339
+00:09:30,640 --> 00:09:31,519
+on the server
+
+
+340
+00:09:31,519 --> 00:09:33,760
+this is also great for seo because bots
+
+
+341
+00:09:33,760 --> 00:09:35,920
+get fully rendered html on the initial
+
+
+342
+00:09:35,920 --> 00:09:36,640
+request
+
+
+343
+00:09:36,640 --> 00:09:38,480
+in addition the data will always be
+
+
+344
+00:09:38,480 --> 00:09:40,080
+fresh because you're making a new
+
+
+345
+00:09:40,080 --> 00:09:42,000
+request to the server each time
+
+
+346
+00:09:42,000 --> 00:09:43,519
+but the drawback here is that it's
+
+
+347
+00:09:43,519 --> 00:09:45,279
+generally less efficient you might be
+
+
+348
+00:09:45,279 --> 00:09:47,440
+fetching and rendering the same html
+
+
+349
+00:09:47,440 --> 00:09:49,519
+over and over again it is possible to do
+
+
+350
+00:09:49,519 --> 00:09:50,640
+server side caching
+
+
+351
+00:09:50,640 --> 00:09:52,399
+but that's not as efficient as edge
+
+
+352
+00:09:52,399 --> 00:09:53,839
+caching on a cdn
+
+
+353
+00:09:53,839 --> 00:09:55,760
+and will cost a lot more to operate at
+
+
+354
+00:09:55,760 --> 00:09:57,279
+scale and if things aren't cached
+
+
+355
+00:09:57,279 --> 00:09:58,000
+efficiently
+
+
+356
+00:09:58,000 --> 00:09:59,760
+that means a slower first time to
+
+
+357
+00:09:59,760 --> 00:10:01,839
+meaningful content which can negatively
+
+
+358
+00:10:01,839 --> 00:10:02,320
+impact
+
+
+359
+00:10:02,320 --> 00:10:04,640
+seo so basically between these three
+
+
+360
+00:10:04,640 --> 00:10:06,720
+methods we have a trade-off between data
+
+
+361
+00:10:06,720 --> 00:10:07,440
+freshness
+
+
+362
+00:10:07,440 --> 00:10:09,360
+performance and client-side
+
+
+363
+00:10:09,360 --> 00:10:11,200
+interactivity but what if there is a way
+
+
+364
+00:10:11,200 --> 00:10:13,200
+we could have our cake and eat it too
+
+
+365
+00:10:13,200 --> 00:10:15,360
+allow me to introduce you to incremental
+
+
+366
+00:10:15,360 --> 00:10:20,160
+static regeneration
+
+
+367
+00:10:20,160 --> 00:10:22,959
+this is the way this is a new form of
+
+
+368
+00:10:22,959 --> 00:10:24,800
+rendering available in the next js
+
+
+369
+00:10:24,800 --> 00:10:25,360
+framework
+
+
+370
+00:10:25,360 --> 00:10:27,120
+remember earlier i said the drawback
+
+
+371
+00:10:27,120 --> 00:10:29,040
+with static pages is that the data may
+
+
+372
+00:10:29,040 --> 00:10:31,200
+become stale and require a redeploy of
+
+
+373
+00:10:31,200 --> 00:10:32,880
+your site what isr does
+
+
+374
+00:10:32,880 --> 00:10:34,720
+is allow you to statically generate your
+
+
+375
+00:10:34,720 --> 00:10:37,279
+pages then rebuild and redeploy them on
+
+
+376
+00:10:37,279 --> 00:10:39,120
+the fly in the background as new
+
+
+377
+00:10:39,120 --> 00:10:40,959
+requests come into your site that means
+
+
+378
+00:10:40,959 --> 00:10:42,800
+you get all the performance benefits of
+
+
+379
+00:10:42,800 --> 00:10:43,760
+static pages
+
+
+380
+00:10:43,760 --> 00:10:45,519
+while ensuring that these pages always
+
+
+381
+00:10:45,519 --> 00:10:46,880
+contain fresh data
+
+
+382
+00:10:46,880 --> 00:10:48,399
+that eliminates all the trade-offs that
+
+
+383
+00:10:48,399 --> 00:10:50,160
+we've talked about but it's not without
+
+
+384
+00:10:50,160 --> 00:10:50,800
+a cost
+
+
+385
+00:10:50,800 --> 00:10:53,120
+deploying a static site is as easy as
+
+
+386
+00:10:53,120 --> 00:10:55,200
+uploading your files to a storage bucket
+
+
+387
+00:10:55,200 --> 00:10:57,279
+but incremental static regeneration
+
+
+388
+00:10:57,279 --> 00:10:59,440
+would require a more complex back-end
+
+
+389
+00:10:59,440 --> 00:11:00,480
+server deployment
+
+
+390
+00:11:00,480 --> 00:11:02,480
+for most of us that means paying for a
+
+
+391
+00:11:02,480 --> 00:11:03,600
+host that supports it
+
+
+392
+00:11:03,600 --> 00:11:05,760
+like versel but hosting anywhere else
+
+
+393
+00:11:05,760 --> 00:11:07,360
+will likely be much more painful
+
+
+394
+00:11:07,360 --> 00:11:09,040
+until more companies start adopting
+
+
+395
+00:11:09,040 --> 00:11:10,959
+these techniques now one very cool thing
+
+
+396
+00:11:10,959 --> 00:11:11,440
+going on
+
+
+397
+00:11:11,440 --> 00:11:13,120
+in the web development world right now
+
+
+398
+00:11:13,120 --> 00:11:14,640
+is that more frameworks like
+
+
+399
+00:11:14,640 --> 00:11:16,880
+next and angular are supporting hybrid
+
+
+400
+00:11:16,880 --> 00:11:18,560
+rendering that means you can implement
+
+
+401
+00:11:18,560 --> 00:11:20,399
+some routes as static pages
+
+
+402
+00:11:20,399 --> 00:11:21,920
+configure other routes to use full
+
+
+403
+00:11:21,920 --> 00:11:23,600
+server-side rendering while other routes
+
+
+404
+00:11:23,600 --> 00:11:25,120
+can be fully client rendered
+
+
+405
+00:11:25,120 --> 00:11:26,800
+so you're not pigeon-holed into just one
+
+
+406
+00:11:26,800 --> 00:11:28,399
+rendering technique you can pick and
+
+
+407
+00:11:28,399 --> 00:11:30,720
+choose what works best for a given page
+
+
+408
+00:11:30,720 --> 00:11:32,640
+and in my opinion that's the future of
+
+
+409
+00:11:32,640 --> 00:11:34,079
+full stack web development
+
+
+410
+00:11:34,079 --> 00:11:35,360
+i'm going to go ahead and wrap things up
+
+
+411
+00:11:35,360 --> 00:11:37,120
+there if you want to learn how to
+
+
+412
+00:11:37,120 --> 00:11:39,040
+implement a real hybrid rendered
+
+
+413
+00:11:39,040 --> 00:11:41,040
+application with next js consider
+
+
+414
+00:11:41,040 --> 00:11:43,440
+becoming a pro member at fireship io
+
+
+415
+00:11:43,440 --> 00:11:45,120
+you'll get access to the next course
+
+
+416
+00:11:45,120 --> 00:11:46,480
+along with a whole bunch of other pro
+
+
+417
+00:11:46,480 --> 00:11:47,279
+content
+
+
+418
+00:11:47,279 --> 00:11:49,120
+thanks for watching and i will see you
+
+
+419
+00:11:49,120 --> 00:11:52,880
+in the next one
+
+

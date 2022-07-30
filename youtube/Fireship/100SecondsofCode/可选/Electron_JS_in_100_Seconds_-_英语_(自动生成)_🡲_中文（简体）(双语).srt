@@ -1,0 +1,144 @@
+1
+00:00:00,000 --> 00:00:04,350
+electrons build native desktop apps for platforms like Mac OS and Windows using
+electrons 只使用 HTML CSS 和 JavaScript 为 Mac OS 和 Windows 等平台构建原生桌面应用程序
+
+2
+00:00:04,350 --> 00:00:09,240
+nothing but HTML CSS and JavaScript it's a tool behind many popular apps that you
+它是许多流行应用程序背后的工具
+
+3
+00:00:09,240 --> 00:00:13,019
+might be using today like the s code slack and discord just to name a few on
+
+
+4
+00:00:13,019 --> 00:00:16,350
+the front end you build UIs just like you would for a browser-based web app
+UI就像基于浏览器的 Web 应用程序一样
+
+5
+00:00:16,350 --> 00:00:19,980
+and you can bring along to our favorite frameworks but an electron you also have
+，您可以使用我们最喜欢的框架，但是您还可以
+
+6
+00:00:19,980 --> 00:00:23,550
+access to note J s and that means you can access low-level API s that you
+访问 note J 的电子，这意味着您可以访问
+
+7
+00:00:23,550 --> 00:00:27,150
+don't normally have access to in a sandbox browser like the file system
+通常没有的低级 API 在像文件系统电子这样的沙盒浏览器中访问
+
+8
+00:00:27,150 --> 00:00:30,720
+electron combines the front end and back end technologies and provides a bunch of
+结合了前端和后端技术，并提供了许多
+
+9
+00:00:30,720 --> 00:00:33,960
+other tools to work with native menus the system tray and so on
+其他工具来处理本机菜单系统托盘等等
+
+10
+00:00:33,960 --> 00:00:37,380
+let's go ahead and build a desktop app now run NPM in it in an empty directory
+让我们继续构建一个桌面应用程序现在在其中运行 NPM 在一个空目录
+
+11
+00:00:37,380 --> 00:00:41,700
+and install electron then create a main.js file and set that as the main
+中安装 electron 然后创建一个main.js 文件并将其设置
+
+12
+00:00:41,700 --> 00:00:45,989
+entry point into your app every electron app has exactly one main process running
+为您的应用程序的主要入口点 每个电子应用程序都有一个运行
+
+13
+00:00:45,989 --> 00:00:49,950
+it manages the lifecycle of your app and opens the windows that the end user will
+它的主进程它管理您的应用程序的生命周期并打开 wi 当您的主应用程序准备就绪时，最终用户将
+
+14
+00:00:49,950 --> 00:00:53,879
+see each window is its own independent render process running with the chromium
+看到每个窗口都是其自己的独立渲染进程，该渲染进程与 chromium Web 浏览器一起运行，
+
+15
+00:00:53,879 --> 00:00:57,690
+web browser when your main app is ready you can start a new render process by
+您可以通过实例化浏览器窗口来启动新的渲染进程，
+
+16
+00:00:57,690 --> 00:01:02,399
+instantiating a browser window until the window to load a regular HTML file it
+直到该窗口加载常规 HTML 文件。
+
+17
+00:01:02,399 --> 00:01:06,420
+will render the HTML CSS and JavaScript but do so in a native window and give
+渲染 HTML CSS 和 JavaScript，但在本机窗口中执行此操作并让
+
+18
+00:01:06,420 --> 00:01:10,290
+you access to low-level api is to build a true desktop experience create an
+您访问低级 API 是为了构建真正的桌面体验创建一个
+
+19
+00:01:10,290 --> 00:01:14,130
+index.html file and put whatever code you want inside of it but notice how i'm
+index.html 文件并将您想要的任何代码放入其中，但请注意我是如何
+
+20
+00:01:14,130 --> 00:01:17,820
+accessing note Global's directly in my HTML that's not something you can do in
+直接在我的 HTML 中访问 note Global，这
+
+21
+00:01:17,820 --> 00:01:21,479
+a normal web browser an electron gives you control over the operating system UI
+在普通 Web 浏览器中是无法做到
+
+22
+00:01:21,479 --> 00:01:25,560
+as well for example add your own icon and controls to the system tray with
+
+
+23
+00:01:25,560 --> 00:01:28,860
+just a few lines of code now after you build something awesome you can package
+的 在你构建了一些很棒的东西之后，你可以
+
+24
+00:01:28,860 --> 00:01:32,640
+it for multiple operating systems from a single codebase tools like electron
+从一个代码库中为多个操作系统打包它，像电子
+
+25
+00:01:32,640 --> 00:01:36,240
+packager or forage can handle the entire distribution process for you with a
+打包器或草料这样的工具可以为你处理整个分发过程
+
+26
+00:01:36,240 --> 00:01:40,290
+single command this has been electron in 100 seconds stay tuned for a full
+嗯，这已经是100 秒内的电子，请继续关注
+
+27
+00:01:40,290 --> 00:01:43,680
+electron project in a few days and make sure to hit the like button if you want
+几天后的完整电子项目，如果您
+
+28
+00:01:43,680 --> 00:01:47,009
+to see more short videos like this thanks for watching and I will see you
+想观看更多这样的短视频，请确保点击“赞”按钮，谢谢收看，我会
+
+29
+00:01:47,009 --> 00:01:50,640
+in the next one [Music]
+在下一个[ 音乐]

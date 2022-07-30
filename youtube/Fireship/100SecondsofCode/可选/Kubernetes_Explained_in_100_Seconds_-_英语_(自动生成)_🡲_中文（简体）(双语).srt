@@ -1,0 +1,194 @@
+1
+00:00:00,000 --> 00:00:03,679
+kubernetes a tool for managing and automating containerized workloads in
+kubernetes 一种用于在云中管理和自动化容器化工作负载的工具
+
+2
+00:00:03,679 --> 00:00:05,920
+the cloud imagine you have an orchestra think of
+想象你有一个管弦乐队 把
+
+3
+00:00:05,920 --> 00:00:08,320
+each individual musician as a docker container
+每个音乐家想象成一个 docker容器
+
+4
+00:00:08,320 --> 00:00:11,840
+to create beautiful music we need a conductor to manage the musicians and
+来创作优美的音乐 我们需要一个指挥来管理音乐家并
+
+5
+00:00:11,840 --> 00:00:14,639
+set the tempo now imagine the conductor as kubernetes
+设置节奏现在想象指挥是 kubernetes
+
+6
+00:00:14,639 --> 00:00:18,000
+and the orchestra as an app like robinhood when the markets are closed an
+和当市场关闭时，管弦乐队
+
+7
+00:00:18,000 --> 00:00:20,400
+app like robinhood isn't doing much but when they open it
+就像 robinhood 这样的应用程序 robinhood 这样的应用程序并没有做太多的事情，但是当它们打开时，它
+
+8
+00:00:20,400 --> 00:00:24,080
+needs to fulfill millions of trades for overpriced stocks like tesla and shopify
+需要为特斯拉和 shopify 等高价股票完成数百万笔
+
+9
+00:00:24,080 --> 00:00:27,439
+kubernetes is the tool that orchestrates the infrastructure to handle the
+交易 kubernetes 是协调基础设施以处理
+
+10
+00:00:27,439 --> 00:00:30,000
+changing workload it can scale containers across multiple
+不断变化的工具 工作负载 它可以在多
+
+11
+00:00:30,000 --> 00:00:33,760
+machines and if one fails it knows how to replace it with a new one a system
+台机器上扩展容器，如果其中一台出现故障，它知道如何用新的替换它
+
+12
+00:00:33,760 --> 00:00:36,079
+deployed on kubernetes is known as a cluster
+部署在 kubernetes 上的系统被称为集群
+
+13
+00:00:36,079 --> 00:00:39,680
+the brain of the operation is known as the control plane it exposes an api
+操作的大脑被称为控制平面 它公开了一个 API
+
+14
+00:00:39,680 --> 00:00:43,440
+server that can handle both internal and external requests to manage the cluster
+服务器，可以 处理内部和外部请求以管理集群
+
+15
+00:00:43,440 --> 00:00:45,920
+it also contains its own key value database called
+它还包含自己的键值数据库，称为
+
+16
+00:00:45,920 --> 00:00:49,120
+etcd used to store important information about running the cluster
+etcd 用于存储有关运行集群的重要信息
+
+17
+00:00:49,120 --> 00:00:52,239
+what it's managing is one or more worker machines called nodes
+它所管理的是一个或多个称为节点的工作机器，
+
+18
+00:00:52,239 --> 00:00:55,520
+when you hear node think of a machine each node is running something called a
+当您听到 node 想到一台机器时，每个节点都在运行一个叫做
+
+19
+00:00:55,520 --> 00:00:57,760
+cubelet which is a tiny application that runs on
+cubelet 的东西，它是一个运行在机器上的微型应用程序，
+
+20
+00:00:57,760 --> 00:01:01,120
+the machine to communicate back with the main control plane mother ship
+用于进行通信
+
+21
+00:01:01,120 --> 00:01:04,559
+inside of each node we have multiple pods which is the smallest deployable
+在每个节点内部都有主控制平面母舰，我们有多个pod，这是 Kubernetes 中最小的可部署
+
+22
+00:01:04,559 --> 00:01:07,360
+unit in kubernetes when you hear pod think of a pot of
+单元，当您听到 pod 想到随着工作负载增加而
+
+23
+00:01:07,360 --> 00:01:11,360
+whales or containers running together as the workload increases kubernetes can
+一起运行的一盆鲸鱼或容器时，kubernetes 可以
+
+24
+00:01:11,360 --> 00:01:14,880
+automatically scale horizontally by adding more nodes to the cluster
+通过添加更多节点来自动水平扩展
+
+25
+00:01:14,880 --> 00:01:17,759
+in the process it takes care of complicated things like networking
+在此过程中，它负责处理复杂的事情，例如网络
+
+26
+00:01:17,759 --> 00:01:20,320
+secret management persistent storage and so on
+秘密管理持久存储等
+
+27
+00:01:20,320 --> 00:01:23,600
+it's designed for high availability and one way it achieves that is by
+
+
+28
+00:01:23,600 --> 00:01:27,360
+maintaining a replica set which is just a set of running pods or containers
+
+
+29
+00:01:27,360 --> 00:01:30,159
+ready to go at any given time as a developer you
+作为开发人员，您可以在任何给定时间
+
+30
+00:01:30,159 --> 00:01:33,759
+define objects in yaml that describe the desired state of your cluster
+在 yaml 中定义描述所需统计信息的对象 例如，您的集群中的 e
+
+31
+00:01:33,759 --> 00:01:37,360
+for example we might have an nginx deployment that has a replica set with
+我们可能有一个 nginx部署，该部署在 spec 字段中有一个包含三个 pod 的副本集，
+
+32
+00:01:37,360 --> 00:01:39,920
+three pods in the spec field we can define exactly
+我们可以准确定义
+
+33
+00:01:39,920 --> 00:01:43,759
+how it should behave like its containers volumes ports and so on you can then
+它的行为方式，就像它的容器卷端口一样，然后您可以
+
+34
+00:01:43,759 --> 00:01:47,360
+take this configuration and use it to provision and scale containers
+采用此配置并将其用于
+
+35
+00:01:47,360 --> 00:01:50,479
+automatically and ensure that they're always up and running and healthy
+自动配置和扩展容器，并确保它们始终处于运行状态和健康状态，
+
+36
+00:01:50,479 --> 00:01:54,159
+this has been kubernetes in 100 seconds like and subscribe for more and you can
+这已经是 100 秒内的 kubernetes喜欢并订阅更多内容，您可以
+
+37
+00:01:54,159 --> 00:01:57,920
+support my work by sponsoring me on github or by becoming a pro member at
+通过在 github 上赞助我或成为
+
+38
+00:01:57,920 --> 00:02:01,680
+fireship io for even more content thanks for watching and i will see you
+fireship io 的专业会员来支持我的工作 更多内容感谢观看，我们
+
+39
+00:02:01,680 --> 00:02:08,000
+in the next one
+下期再见

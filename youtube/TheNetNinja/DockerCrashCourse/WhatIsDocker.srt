@@ -1,0 +1,529 @@
+1
+00:00:00,160 --> 00:00:03,850
+hey gang and welcome to your very first docker tutorial
+嘿，帮派，欢迎来到你的第一个docker 教程
+
+2
+00:00:03,850 --> 00:00:10,559
+[Music] so then i've been meaning to make a
+[音乐]所以我一直想做一个
+
+3
+00:00:10,559 --> 00:00:14,240
+docker tutorial for a while now but it always got sidelined because there was
+docker 教程有一段时间了，但它总是被搁置，因为
+
+4
+00:00:14,240 --> 00:00:18,320
+another series that i wanted to make first but now i've decided to bring it
+我想先制作另一个系列，但现在我已经 决定给
+
+5
+00:00:18,320 --> 00:00:22,080
+the attention it deserves and create a crash course all about it
+它应有的关注并创建一个关于它的速成课程，
+
+6
+00:00:22,080 --> 00:00:26,320
+so docker is one of those things that sometimes gets overlooked by new
+所以 docker 是新开发人员有时会忽略的东西之一，
+
+7
+00:00:26,320 --> 00:00:30,800
+developers because at first glance it's hard to understand why we might use it
+因为乍一看很难理解为什么我们会使用它，
+
+8
+00:00:30,800 --> 00:00:35,040
+but it's definitely worth investing your time into because it can make developing
+但绝对值得花时间 因为它
+
+9
+00:00:35,040 --> 00:00:39,680
+applications either on your own or in a team much easier to manage and the way
+可以使您自己或团队开发应用程序更容易管理，
+
+10
+00:00:39,680 --> 00:00:44,079
+it does that is by using what's known as containers to run applications in
+它的方式是使用所谓的容器
+
+11
+00:00:44,079 --> 00:00:49,600
+isolated environments on a computer like a node application for example or a
+在计算机上的隔离环境中运行应用程序，例如节点应用程序或
+
+12
+00:00:49,600 --> 00:00:54,239
+react application or a mongodb service or something else entirely like a python
+反应 应用程序或 mongodb 服务或其他完全类似于 python
+
+13
+00:00:54,239 --> 00:00:58,719
+application now we'll be talking more about containers later in the course but
+应用程序的东西现在我们将在课程后面更多地讨论容器，
+
+14
+00:00:58,719 --> 00:01:03,680
+the crux of it is this imagine if i was in a dev team and i was
+但关键是这个想象我 f 我在一个开发团队中，我
+
+15
+00:01:03,680 --> 00:01:08,880
+making an application in a node.js environment and that node.js version
+正在 node.js 环境中制作应用程序，
+
+16
+00:01:08,880 --> 00:01:13,600
+that i needed for the application was a very specific version that had a feature
+而我需要的应用程序的 node.js 版本是一个非常特定的版本，它具有
+
+17
+00:01:13,600 --> 00:01:18,320
+i needed to use now also imagine that i wanted to share the application with
+我现在需要使用的功能也想象我想要 与
+
+18
+00:01:18,320 --> 00:01:22,720
+another person on my team so that they can run it on their computer as well
+我团队中的另一个人共享应用程序，以便他们也可以在他们的计算机上运行它，
+
+19
+00:01:22,720 --> 00:01:26,720
+well before they do that they'd have to set up their development environment to
+然后他们必须设置他们的开发环境以
+
+20
+00:01:26,720 --> 00:01:31,439
+match mine to make sure the application runs correctly for example they'd have
+匹配我的，以确保应用程序正确运行，例如他们会 必须
+
+21
+00:01:31,439 --> 00:01:36,400
+to have the same version of node.js installed that the application needs to
+安装应用程序需要
+
+22
+00:01:36,400 --> 00:01:40,640
+run correctly they'd also need to install all the project dependencies and
+正确运行的相同版本的 node.js 他们还需要安装所有项目依赖项并
+
+23
+00:01:40,640 --> 00:01:44,079
+set up any configuration like environment variables to make sure
+设置任何配置（如环境变量）以确保
+
+24
+00:01:44,079 --> 00:01:48,079
+everything works the same way so there'd be a significant setup
+一切以相同的方式工作，所以会有 一个重要的设置
+
+25
+00:01:48,079 --> 00:01:50,960
+process just to get the application running on
+过程只是为了让应用程序在
+
+26
+00:01:50,960 --> 00:01:54,640
+another computer now imagine the same scenario but with
+另一台计算机上运行现在想象相同的场景，但有
+
+27
+00:01:54,640 --> 00:01:59,280
+multiple other applications as well all requiring their very own specific
+多个其他应用程序以及都需要它们自己的特定
+
+28
+00:01:59,280 --> 00:02:03,920
+environment setup and these applications might need to be run on multiple
+环境设置 并且这些应用程序可能需要在多台
+
+29
+00:02:03,920 --> 00:02:07,040
+different machines well that would mean a lot of setup
+不同的机器上运行，这意味着
+
+30
+00:02:07,040 --> 00:02:11,280
+every time we want to run a different application which requires a different
+每次我们想要运行不同的应用程序时都需要进行大量设置，
+
+31
+00:02:11,280 --> 00:02:16,400
+development environment even on our own machines because different applications
+即使在我们自己的机器上也需要不同的开发环境，因为不同的应用程序
+
+32
+00:02:16,400 --> 00:02:21,040
+might require different versions of node or python or php or something else and
+可能需要不同版本的节点或 python 或 php 或其他东西，
+
+33
+00:02:21,040 --> 00:02:24,239
+that's where docker and containers come into play
+这就是 docker 和容器发挥作用的地方，
+
+34
+00:02:24,239 --> 00:02:28,400
+so you can think of a container for now as like a box or a package that contains
+因此您现在可以将容器视为一个盒子或一个包，其中包含
+
+35
+00:02:28,400 --> 00:02:33,280
+everything our application needs to run so all the source code dependencies the
+我们的应用程序运行所需的所有内容，因此所有源代码都依赖于
+
+36
+00:02:33,280 --> 00:02:38,000
+correct runtime environment and versions etc and this container can run our
+正确的运行时环境和 版本等，这个容器可以运行我们的
+
+37
+00:02:38,000 --> 00:02:43,680
+application then in isolation away from any other processes on our computer so
+应用程序，然后与我们计算机上的任何其他进程隔离，因此在我们的计算机
+
+38
+00:02:43,680 --> 00:02:47,760
+it wouldn't matter what versions of node or python or anything else is installed
+上安装什么版本的 node 或 python 或其他任何东西都没有关系，
+
+39
+00:02:47,760 --> 00:02:52,560
+on our computer because everything the application needs to run is inside the
+因为应用程序需要运行的所有内容都在里面
+
+40
+00:02:52,560 --> 00:02:57,599
+container and then this makes it much easier for me or other people in my team
+容器，然后这使我或我团队中的其他人更
+
+41
+00:02:57,599 --> 00:03:01,760
+to run these different applications on our computers and we wouldn't need to
+容易运行这些不同的我们的计算机上的应用程序，我们不需要
+
+42
+00:03:01,760 --> 00:03:04,640
+worry about setting up different versions of anything or installing
+担心设置任何东西的不同版本或安装
+
+43
+00:03:04,640 --> 00:03:09,440
+dependencies because it's all in the container itself a predictable
+依赖项，因为它们都在容器本身中 一个可预测的
+
+44
+00:03:09,440 --> 00:03:14,159
+consistent and isolated environment the only thing that i or someone else
+一致和隔离的环境我或
+
+45
+00:03:14,159 --> 00:03:18,400
+running these containers will need on their computer is docker to manage those
+运行这些容器的其他人唯一需要的东西 计算机是 docker 来管理这些
+
+46
+00:03:18,400 --> 00:03:21,519
+containers and that's at the heart of what docker
+容器，这是 docker 的核心，
+
+47
+00:03:21,519 --> 00:03:25,280
+is all about it's a tool for managing containers
+它是一个管理容器的工具，
+
+48
+00:03:25,280 --> 00:03:29,599
+so again this is a simplified overview of what docker and containers are all
+所以这再次是对 docker 和容器的简化概述
+
+49
+00:03:29,599 --> 00:03:35,040
+about and we'll look at more detail into how they work later on and also how they
+，我们将更详细地了解它们是如何实现的 稍后工作，以及他们
+
+50
+00:03:35,040 --> 00:03:38,720
+can improve the deployment of applications to a server as well because
+如何改进应用程序到服务器的部署，
+
+51
+00:03:38,720 --> 00:03:42,879
+much in the same way that containers can be run on your own or somebody else's
+因为与容器可以在您自己或其他人的计算机上运行的方式相同，
+
+52
+00:03:42,879 --> 00:03:47,040
+computer they can also be pulled onto your production
+它们也可以被拉到您的生产
+
+53
+00:03:47,040 --> 00:03:50,480
+server and that way you don't need to configure the server because all the
+服务器上，这样您就不用 不需要配置服务器，因为所有
+
+54
+00:03:50,480 --> 00:03:54,319
+configuration and setup is in the container already now you might be
+配置和设置都已经在
+
+55
+00:03:54,319 --> 00:03:58,000
+thinking well what about virtual machines can't they solve the same
+容器中 t 虚拟机不能解决
+
+56
+00:03:58,000 --> 00:04:02,560
+problem that containers solve and yeah they can but there's some differences
+容器解决的相同问题，是的，它们可以解决问题，但是有些
+
+57
+00:04:02,560 --> 00:04:07,519
+which sometimes make containers a better option first of all each virtual machine
+差异有时会使容器成为更好的选择，首先
+
+58
+00:04:07,519 --> 00:04:12,319
+that you make runs its own fully blown operating system with its own kernel and
+，您制作的每个虚拟机都运行自己的完整操作系统和自己的内核，并且
+
+59
+00:04:12,319 --> 00:04:16,000
+that's running on top of your host computer's operating system whatever
+它运行在您的主机操作系统之上，无论
+
+60
+00:04:16,000 --> 00:04:19,280
+that might be but containers don't they share the host
+可能是什么，但容器不共享
+
+61
+00:04:19,280 --> 00:04:23,199
+computer's operating systems kernel and so they're more lightweight than virtual
+主机的操作系统内核，因此它们比虚拟机更轻量级
+
+62
+00:04:23,199 --> 00:04:27,360
+machines and less bloated it also means that they're typically quicker to start
+并且不那么臃肿，这也意味着它们通常更快
+
+63
+00:04:27,360 --> 00:04:30,800
+up and they use less memory on your computer
+启动并且它们在您的计算机上使用更少的内存
+
+64
+00:04:30,800 --> 00:04:35,600
+now containers do include a slimmed down version of a specific operating system
+现在容器确实包含特定操作系统的精简版本，
+
+65
+00:04:35,600 --> 00:04:39,919
+but they still use the host machine's kernel under the hood
+但它们仍然在引擎盖下使用主机的内核，
+
+66
+00:04:39,919 --> 00:04:44,479
+so essentially containers are much more lightweight and quicker than virtual
+因此基本上容器比虚拟机更轻量级和更快，
+
+67
+00:04:44,479 --> 00:04:48,639
+machines although both can solve the same problems and there will be times
+尽管两者都可以解决同样的问题，
+
+68
+00:04:48,639 --> 00:04:53,040
+when you'd prefer a virtual machine to a container so it's not a case of one is
+有时你更喜欢虚拟机而不是容器，所以它不是一个 一个
+
+69
+00:04:53,040 --> 00:04:56,960
+better than the other for everything but anyway now we have this kind of
+比另一个好，但无论如何，现在我们对
+
+70
+00:04:56,960 --> 00:05:00,560
+bird's eye view of what docker and containers are all about the next step
+docker 和容器的全部内容有了这种鸟瞰图，下一步
+
+71
+00:05:00,560 --> 00:05:04,400
+is to install docker and start using it we'll be doing that in the next lesson
+是安装 docker 并开始使用它，我们将在下一课中这样做
+
+72
+00:05:04,400 --> 00:05:08,720
+but first of all i just want to finish up this one with a few side points
+但首先我只是想用几个方面来结束这个，
+
+73
+00:05:08,720 --> 00:05:12,240
+so first of all before you start this course you should probably have a little
+所以首先在你开始这门课程之前，你可能应该有
+
+74
+00:05:12,240 --> 00:05:16,400
+bit of experience in web development in general maybe you've created node
+一点 web 开发的经验，也许你已经创建了节点
+
+75
+00:05:16,400 --> 00:05:19,840
+applications react sites or something like that nothing specific but you've
+应用程序反应站点或 类似的东西没有什么特别的，但是您
+
+76
+00:05:19,840 --> 00:05:24,160
+got a general understanding of web dev in this series my code examples are
+对本系列中的 Web 开发
+
+77
+00:05:24,160 --> 00:05:27,759
+mainly going to consist of node and javascript so it might be slightly
+有了大致的
+
+78
+00:05:27,759 --> 00:05:31,440
+beneficial if you know a little bit about those first of all
+
+
+79
+00:05:31,440 --> 00:05:36,000
+so how to make for example a simple node express app or how to use nodebomb but
+了解 例如，制作一个简单的 nodeexpress 应用程序或如何使用 nodebomb，
+
+80
+00:05:36,000 --> 00:05:39,680
+it's not absolutely essential i'm also going to be using docker with react
+但这并不是绝对必要的，我还将
+
+81
+00:05:39,680 --> 00:05:43,759
+later in the series but again you don't really need to know much about react to
+在本系列的后面使用docker 做出反应来
+
+82
+00:05:43,759 --> 00:05:47,120
+learn the docker side of things but i'm not going to pretend that it won't be
+学习 docker 方面的东西，但我不会
+
+83
+00:05:47,120 --> 00:05:50,400
+useful to know the basics now if you want to learn some of that first i've
+假装现在知道基础知识没有用，如果你想先学习一些基础知识，我
+
+84
+00:05:50,400 --> 00:05:54,560
+got loads of tutorials available all about node javascript react and much
+有很多关于 node javascript 的教程
+
+85
+00:05:54,560 --> 00:05:58,560
+more both on youtube at the net ninja pro site so i'm going to leave some of
+在 youtube 上的 net ninjapro 网站上做出反应等等，所以我将在视频下方留下一些
+
+86
+00:05:58,560 --> 00:06:02,319
+those links to those other courses down below the video
+指向其他课程的链接
+
+87
+00:06:02,319 --> 00:06:06,080
+i've also created course files for different lessons in this tutorial
+我还为本教程系列中的不同课程创建了课程文件，
+
+88
+00:06:06,080 --> 00:06:10,479
+series you can find them all at this repo docker crash course and i'll leave
+你可以找到它们 全部在这个repo docker 速成课程中，我
+
+89
+00:06:10,479 --> 00:06:14,960
+the link down below the video so if you want to see the code for a specific
+将把链接留在视频下方，所以如果你想查看特定
+
+90
+00:06:14,960 --> 00:06:19,840
+lesson for example lesson five you'd select the lesson five branch right here
+课程的代码，例如第五课，你可以在这里选择第五课分支
+
+91
+00:06:19,840 --> 00:06:24,160
+and then you'd see all of the code inside that branch now if you want to
+，然后你会看到现在该分支中的所有代码如果您想
+
+92
+00:06:24,160 --> 00:06:28,400
+download a specific lesson you select the lesson then go to this code button
+下载特定课程，请选择课程然后转到此代码按钮
+
+93
+00:06:28,400 --> 00:06:32,319
+and select download zip and that's going to download a zip folder of that
+并选择下载 zip，这将为您下载该特定课程的 zip 文件夹，
+
+94
+00:06:32,319 --> 00:06:36,560
+particular lesson for you so again this link to this repo is going to be down
+因此再次链接到此 回购将下跌 n
+
+95
+00:06:36,560 --> 00:06:40,639
+below the video so anyway that's your introduction to docker in the next
+在视频下方，所以无论如何这是您在下一课中对 docker 的介绍，
+
+96
+00:06:40,639 --> 00:06:44,560
+lesson we're going to go ahead and install docker on our computer
+
+
+97
+00:06:44,560 --> 00:06:48,000
+by the way if you want to watch this entire course now without youtube
+如果您现在想在没有 youtube 广告的情况下观看整个课程，我们将继续在我们
+
+98
+00:06:48,000 --> 00:06:52,720
+adverts you can do it's all up on the net ninja website netninja.dev you can
+的计算机上安装 dockernet ninja 网站 netninja.dev 您可以花
+
+99
+00:06:52,720 --> 00:06:56,880
+buy the course for two dollars to get instant access to all of it or you can
+2 美元购买课程以立即访问所有课程，或者您可以
+
+100
+00:06:56,880 --> 00:07:00,639
+sign up to net ninja pro and get instant access to all of my courses without
+注册 net ninja pro 并立即访问我的所有课程而无需
+
+101
+00:07:00,639 --> 00:07:06,319
+adverts as well as premium courses not found on youtube including my udemy ones
+广告以及未找到的高级课程 在 youtube 上，包括我的 udemy 的
+
+102
+00:07:06,319 --> 00:07:10,240
+that's nine dollars a month and you can get your first month half price when you
+，每月 9 美元，当您在这里使用此促销代码时，您可以获得第一个月的半价
+
+103
+00:07:10,240 --> 00:07:14,639
+use this promo code right here so i'm gonna leave this link down below in the
+，所以我将在视频说明下方留下这个链接
+
+104
+00:07:14,639 --> 00:07:18,319
+video description for you to sign up and i really hope you enjoyed this series
+供您注册，我真的 希望你喜欢这个系列
+
+105
+00:07:18,319 --> 00:07:21,919
+and please do not forget to share subscribe and like the videos that
+，请不要忘记分享订阅和
+
+106
+00:07:21,919 --> 00:07:27,599
+really helps a lot and i'm going to see you in the very next lesson
+喜欢真正有帮助的视频，我将在下一课见到你

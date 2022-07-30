@@ -1,0 +1,280 @@
+1
+00:00:00,030 --> 00:00:01,860
+sign-in with Apple was a feature
+
+
+2
+00:00:01,860 --> 00:00:04,080
+announced by Apple and 2019 and it
+
+
+3
+00:00:04,080 --> 00:00:06,060
+allows users to authenticate into a web
+
+
+4
+00:00:06,060 --> 00:00:08,040
+or mobile application using their Apple
+
+
+5
+00:00:08,040 --> 00:00:10,050
+ID it works just like other one-click
+
+
+6
+00:00:10,050 --> 00:00:11,759
+social sign-in methods like Google
+
+
+7
+00:00:11,759 --> 00:00:14,340
+Facebook Twitter etc to implement this
+
+
+8
+00:00:14,340 --> 00:00:16,020
+method in your firebase app you'll first
+
+
+9
+00:00:16,020 --> 00:00:17,400
+need to have an Apple Developer account
+
+
+10
+00:00:17,400 --> 00:00:19,800
+which will run you about $99 per year
+
+
+11
+00:00:19,800 --> 00:00:21,869
+now head over to your Apple developer
+
+
+12
+00:00:21,869 --> 00:00:24,210
+portal create a new app ID or update an
+
+
+13
+00:00:24,210 --> 00:00:26,250
+existing one to use the sign-in with
+
+
+14
+00:00:26,250 --> 00:00:28,109
+Apple capability from there you'll
+
+
+15
+00:00:28,109 --> 00:00:30,090
+create a new service ID and configure it
+
+
+16
+00:00:30,090 --> 00:00:32,099
+to work with your domain enter the
+
+
+17
+00:00:32,099 --> 00:00:34,110
+hosting URLs from your firebase project
+
+
+18
+00:00:34,110 --> 00:00:36,809
+then register the service ID now we need
+
+
+19
+00:00:36,809 --> 00:00:38,670
+to verify ownership of this domain with
+
+
+20
+00:00:38,670 --> 00:00:40,890
+Apple go back to the configuration for
+
+
+21
+00:00:40,890 --> 00:00:42,690
+the service ID you'll see the option to
+
+
+22
+00:00:42,690 --> 00:00:45,120
+download a file save that file under the
+
+
+23
+00:00:45,120 --> 00:00:46,829
+well-known directory in your public
+
+
+24
+00:00:46,829 --> 00:00:49,020
+hosting folder then upload this file to
+
+
+25
+00:00:49,020 --> 00:00:50,670
+firebase hosting by running firebase
+
+
+26
+00:00:50,670 --> 00:00:52,620
+deploy from the command line click
+
+
+27
+00:00:52,620 --> 00:00:54,300
+verify and you should get a green check
+
+
+28
+00:00:54,300 --> 00:00:56,219
+mark now the last thing we need is a
+
+
+29
+00:00:56,219 --> 00:00:58,199
+private key click on keys and then
+
+
+30
+00:00:58,199 --> 00:01:00,359
+generate a new one for Apple sign-in go
+
+
+31
+00:01:00,359 --> 00:01:01,530
+ahead and download this file somewhere
+
+
+32
+00:01:01,530 --> 00:01:03,629
+securely on your system then open it in
+
+
+33
+00:01:03,629 --> 00:01:05,369
+your editor at this point we can go to
+
+
+34
+00:01:05,369 --> 00:01:07,170
+the authentication tab on the firebase
+
+
+35
+00:01:07,170 --> 00:01:09,240
+console and click enable for Apple
+
+
+36
+00:01:09,240 --> 00:01:11,460
+sign-in enter your team ID as well as
+
+
+37
+00:01:11,460 --> 00:01:13,229
+the information from the private key and
+
+
+38
+00:01:13,229 --> 00:01:15,150
+now we just need to add a little bit of
+
+
+39
+00:01:15,150 --> 00:01:16,950
+JavaScript to our front-end app with
+
+
+40
+00:01:16,950 --> 00:01:18,210
+firebase initialized we'll make a
+
+
+41
+00:01:18,210 --> 00:01:20,100
+reference to auth then we'll define an
+
+
+42
+00:01:20,100 --> 00:01:22,229
+async function called sign in with Apple
+
+
+43
+00:01:22,229 --> 00:01:24,270
+it instantiates an auth provider for
+
+
+44
+00:01:24,270 --> 00:01:26,820
+apple calm then awaits the auth sign in
+
+
+45
+00:01:26,820 --> 00:01:28,590
+with pop-up method this prompts the user
+
+
+46
+00:01:28,590 --> 00:01:30,900
+to login with their Apple ID and when
+
+
+47
+00:01:30,900 --> 00:01:32,280
+they're done they'll be logged into the
+
+
+48
+00:01:32,280 --> 00:01:34,049
+firebase app and will have access to
+
+
+49
+00:01:34,049 --> 00:01:36,060
+their user data on the result this has
+
+
+50
+00:01:36,060 --> 00:01:38,130
+been Apple sign-in with firebase in 100
+
+
+51
+00:01:38,130 --> 00:01:39,869
+seconds and I realize that was super
+
+
+52
+00:01:39,869 --> 00:01:42,150
+fast so head over to fire ship IO to get
+
+
+53
+00:01:42,150 --> 00:01:43,890
+a full step-by-step breakdown of the
+
+
+54
+00:01:43,890 --> 00:01:45,780
+process thanks for watching make sure to
+
+
+55
+00:01:45,780 --> 00:01:47,850
+LIKE and subscribe and I will see you in
+
+
+56
+00:01:47,850 --> 00:01:50,360
+the next one
+
+

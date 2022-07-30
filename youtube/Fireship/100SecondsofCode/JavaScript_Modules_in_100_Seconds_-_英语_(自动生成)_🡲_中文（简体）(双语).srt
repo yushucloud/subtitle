@@ -1,0 +1,124 @@
+1
+00:00:00,030 --> 00:00:03,659
+let's say you have some JavaScript code that lives in a single file you can turn
+假设您有一些 JavaScript 代码存在于单个文件中，您可以
+
+2
+00:00:03,659 --> 00:00:07,799
+this code into a module by exporting it this allows other files to use an import
+通过将其导出将此代码转换为模块，这允许其他文件使用
+
+3
+00:00:07,799 --> 00:00:12,120
+statement to import this file as a dependency so a module is nothing more
+import 语句将此文件作为依赖项导入，因此模块只不过是
+
+4
+00:00:12,120 --> 00:00:15,900
+than a file that exports its own code this allows developers to organize code
+一个文件 导出自己的代码这允许开发人员
+
+5
+00:00:15,900 --> 00:00:19,140
+within their own projects or share code with the world through package managers
+在自己的项目中组织代码或通过
+
+6
+00:00:19,140 --> 00:00:23,550
+like NPM in modern front-end development it's most common to use es modules which
+现代前端开发中的 NPM 等包管理器与世界共享代码最常见的是使用 es 模块，该模块
+
+7
+00:00:23,550 --> 00:00:27,840
+became an official language feature in 2015 the syntax is also supported in
+在 2015 年成为官方语言功能语法也是 在
+
+8
+00:00:27,840 --> 00:00:32,579
+note 13 but traditionally the way to do this a node is with required Jas it's a
+注释 13 中支持，但传统上执行此操作的方法是使用 required Jas 节点，这是一个
+
+9
+00:00:32,579 --> 00:00:36,329
+similar idea but instead we use this require function to import a module
+类似的想法，但我们使用此require 函数来导入模块
+
+10
+00:00:36,329 --> 00:00:41,399
+require is more common now but the future is es modules a module can export
+require 现在更常见，但未来是 es modules 模块可以导出
+
+11
+00:00:41,399 --> 00:00:45,000
+its code in a variety of ways and this will affect the way the consumer imports
+其代码 多种方式，这将影响消费者导入
+
+12
+00:00:45,000 --> 00:00:50,129
+it a module can export a single default value multiple values or both if a
+它的方式模块可以导出单个默认值多个值或两者如果
+
+13
+00:00:50,129 --> 00:00:54,000
+module provides a default export it means the consumer can call import name
+模块提供默认导出它意味着 ns 消费者可以
+
+14
+00:00:54,000 --> 00:00:58,620
+from path the importing file can choose whatever name it wants but a module also
+从路径中调用导入名称 导入文件可以选择它想要的任何名称，但是模块
+
+15
+00:00:58,620 --> 00:01:02,430
+has the option to expose multiple exports from a single file you can
+还可以选择从单个文件公开多个导出，您可以
+
+16
+00:01:02,430 --> 00:01:07,170
+export them one by one or all together as a single export list on the other
+将它们一个一个导出或一起导出为单个导出列表
+
+17
+00:01:07,170 --> 00:01:11,520
+side the importer will use the exact name used in the module however it is
+另一方面，导入器将使用模块中使用的确切名称，但是
+
+18
+00:01:11,520 --> 00:01:15,869
+possible to rename an import using the as keyword a huge benefit of named
+可以使用 as 关键字重命名导入命名导出的一个巨大好处
+
+19
+00:01:15,869 --> 00:01:19,350
+exports is that they make the module tree shakable that means the consumer
+是它们使模块树可摇动，这意味着使用者
+
+20
+00:01:19,350 --> 00:01:23,340
+only imports the code they actually need resulting in smaller bundle sizes and
+只导入他们实际需要的代码导致更小的包大小和
+
+21
+00:01:23,340 --> 00:01:26,880
+better performance you can also combine the best of both worlds to give you a
+更好的性能你还可以结合两全其美，为你提供一个
+
+22
+00:01:26,880 --> 00:01:30,720
+hybrid syntax that looks like this it helps to have a cheat sheet my personal
+看起来像这样的混合语法它有助于有一个备忘单我个人
+
+23
+00:01:30,720 --> 00:01:34,110
+favorite is the one from Samantha Ming if you don't already follow her awesome
+最喜欢的是来自 Samantha Ming如果你还没有遵循 她
+
+24
+00:01:34,110 --> 00:01:37,890
+post on Twitter you definitely should be this has been yes modules and 100
+在 Twitter 上的精彩帖子你绝对应该是这个模块和 100
+
+25
+00:01:37,890 --> 00:01:42,829
+seconds thanks for watching and I will see you in the next one
+秒感谢观看，我会在下一个看到你

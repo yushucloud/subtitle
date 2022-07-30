@@ -1,0 +1,410 @@
+1
+00:00:00,799 --> 00:00:03,360
+redis an in-memory multi-model database
+
+
+2
+00:00:03,360 --> 00:00:05,759
+famous for its sub-millisecond latency
+
+
+3
+00:00:05,759 --> 00:00:08,480
+it was created in 2009 based on the idea
+
+
+4
+00:00:08,480 --> 00:00:11,280
+that a cache can also be a durable data
+
+
+5
+00:00:11,280 --> 00:00:11,679
+store
+
+
+6
+00:00:11,679 --> 00:00:13,360
+around this time apps like twitter were
+
+
+7
+00:00:13,360 --> 00:00:15,120
+growing exponentially and needed a way
+
+
+8
+00:00:15,120 --> 00:00:16,880
+to deliver data to their end users
+
+
+9
+00:00:16,880 --> 00:00:18,560
+faster than a relational database could
+
+
+10
+00:00:18,560 --> 00:00:19,039
+handle
+
+
+11
+00:00:19,039 --> 00:00:20,880
+redis which means remote dictionary
+
+
+12
+00:00:20,880 --> 00:00:22,720
+server was adopted by some of the most
+
+
+13
+00:00:22,720 --> 00:00:24,400
+heavily trafficked sites in the world
+
+
+14
+00:00:24,400 --> 00:00:26,160
+because it changed the database game by
+
+
+15
+00:00:26,160 --> 00:00:28,400
+creating a system where data is always
+
+
+16
+00:00:28,400 --> 00:00:30,560
+modified or read from the main computer
+
+
+17
+00:00:30,560 --> 00:00:31,039
+memory
+
+
+18
+00:00:31,039 --> 00:00:33,360
+as opposed to the much slower disk but
+
+
+19
+00:00:33,360 --> 00:00:34,239
+at the same time
+
+
+20
+00:00:34,239 --> 00:00:36,239
+it stores its data on the disk so it can
+
+
+21
+00:00:36,239 --> 00:00:37,280
+be reconstructed
+
+
+22
+00:00:37,280 --> 00:00:39,120
+as needed which means the database is
+
+
+23
+00:00:39,120 --> 00:00:40,879
+fully durable supporting things like
+
+
+24
+00:00:40,879 --> 00:00:43,120
+snapshots and backups every data point
+
+
+25
+00:00:43,120 --> 00:00:44,640
+in the database is a key
+
+
+26
+00:00:44,640 --> 00:00:46,640
+followed by one of many different data
+
+
+27
+00:00:46,640 --> 00:00:48,320
+structures like a string
+
+
+28
+00:00:48,320 --> 00:00:50,480
+list hash or stream so you can store
+
+
+29
+00:00:50,480 --> 00:00:52,239
+data naturally just like you would with
+
+
+30
+00:00:52,239 --> 00:00:53,760
+your favorite programming language as
+
+
+31
+00:00:53,760 --> 00:00:55,520
+opposed to squeezing it into a bunch of
+
+
+32
+00:00:55,520 --> 00:00:57,280
+tables or json documents
+
+
+33
+00:00:57,280 --> 00:00:59,039
+interacting with the database is handled
+
+
+34
+00:00:59,039 --> 00:01:00,640
+with a simple set of commands
+
+
+35
+00:01:00,640 --> 00:01:03,520
+like set followed by a key and value to
+
+
+36
+00:01:03,520 --> 00:01:04,320
+create data
+
+
+37
+00:01:04,320 --> 00:01:07,280
+then git followed by a key to read data
+
+
+38
+00:01:07,280 --> 00:01:08,000
+historically
+
+
+39
+00:01:08,000 --> 00:01:10,080
+redis has been described as a key value
+
+
+40
+00:01:10,080 --> 00:01:12,240
+store and is often used as a cache to
+
+
+41
+00:01:12,240 --> 00:01:14,159
+make relational databases faster at
+
+
+42
+00:01:14,159 --> 00:01:14,640
+scale
+
+
+43
+00:01:14,640 --> 00:01:16,240
+but here's where your mind is about to
+
+
+44
+00:01:16,240 --> 00:01:18,640
+be blown redis is perfectly suitable as
+
+
+45
+00:01:18,640 --> 00:01:19,840
+a primary database
+
+
+46
+00:01:19,840 --> 00:01:21,759
+and can dramatically reduce complexity
+
+
+47
+00:01:21,759 --> 00:01:23,680
+because making things go fast at scale
+
+
+48
+00:01:23,680 --> 00:01:25,439
+is the primary cause of complexity in
+
+
+49
+00:01:25,439 --> 00:01:27,680
+the first place with redis your database
+
+
+50
+00:01:27,680 --> 00:01:28,799
+is already fast
+
+
+51
+00:01:28,799 --> 00:01:31,280
+no need for a complex caching layer but
+
+
+52
+00:01:31,280 --> 00:01:32,240
+you might be wondering
+
+
+53
+00:01:32,240 --> 00:01:34,240
+how do i model complex relationships
+
+
+54
+00:01:34,240 --> 00:01:35,840
+today redis is what you would call
+
+
+55
+00:01:35,840 --> 00:01:38,000
+a multi-model database supporting a
+
+
+56
+00:01:38,000 --> 00:01:39,759
+variety of different database paradigms
+
+
+57
+00:01:39,759 --> 00:01:40,000
+with
+
+
+58
+00:01:40,000 --> 00:01:42,240
+add-on modules that you can opt into as
+
+
+59
+00:01:42,240 --> 00:01:43,680
+needed if your data contains
+
+
+60
+00:01:43,680 --> 00:01:45,600
+relationships bring in redis graph
+
+
+61
+00:01:45,600 --> 00:01:47,840
+and query it with cipher or use the json
+
+
+62
+00:01:47,840 --> 00:01:49,759
+module to structure your data as a
+
+
+63
+00:01:49,759 --> 00:01:50,640
+hierarchy
+
+
+64
+00:01:50,640 --> 00:01:52,799
+just like a document-oriented database
+
+
+65
+00:01:52,799 --> 00:01:54,000
+then use the search module
+
+
+66
+00:01:54,000 --> 00:01:55,920
+to turn your database into a full text
+
+
+67
+00:01:55,920 --> 00:01:57,680
+search engine and it even has modules
+
+
+68
+00:01:57,680 --> 00:02:00,000
+for ai workloads time series data
+
+
+69
+00:02:00,000 --> 00:02:01,840
+and more the quickest way to get started
+
+
+70
+00:02:01,840 --> 00:02:03,920
+is the free tier on redis enterprise
+
+
+71
+00:02:03,920 --> 00:02:05,680
+cloud that'll give you a free database
+
+
+72
+00:02:05,680 --> 00:02:07,280
+to play around with and you can attach
+
+
+73
+00:02:07,280 --> 00:02:09,039
+one extra module to it then you can
+
+
+74
+00:02:09,039 --> 00:02:11,200
+connect to it with the redis cli or with
+
+
+75
+00:02:11,200 --> 00:02:13,120
+the redis insight tool which contains an
+
+
+76
+00:02:13,120 --> 00:02:14,959
+interactive dashboard to manage your
+
+
+77
+00:02:14,959 --> 00:02:17,599
+data this has been redis in 100 seconds
+
+
+78
+00:02:17,599 --> 00:02:19,200
+but what do you guys think would you use
+
+
+79
+00:02:19,200 --> 00:02:21,120
+redis as your primary database let me
+
+
+80
+00:02:21,120 --> 00:02:22,080
+know why or why not
+
+
+81
+00:02:22,080 --> 00:02:23,760
+in the comments thanks for watching and
+
+
+82
+00:02:23,760 --> 00:02:27,680
+i will see you in the next one
+
+

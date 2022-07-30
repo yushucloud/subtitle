@@ -1,0 +1,204 @@
+1
+00:00:00,640 --> 00:00:04,799
+jquery by far the world's most popular javascript library being found on over
+jquery 是迄今为止世界上最受欢迎的javascript 库
+
+2
+00:00:04,799 --> 00:00:07,440
+80 percent of the world's top 1 million websites
+，在全球前 100 万个网站
+
+3
+00:00:07,440 --> 00:00:10,480
+that's more than four times the adoption of angular react and view
+中的 80% 以上都可以找到它的采用率是 Angular React 和 View
+
+4
+00:00:10,480 --> 00:00:14,880
+combined it was invented back in 2006 by john resig before most of today's junior
+组合的四倍多它是 2006 年由john resig 在当今大多数初级
+
+5
+00:00:14,880 --> 00:00:18,000
+developers were even born he originally wanted to call it jselect
+开发人员之前发明的 甚至出生时他最初想将其称为 jselect
+
+6
+00:00:18,000 --> 00:00:21,520
+but all the domains were taken the popularity of jquery is driven by a
+但所有域都被占用jquery 的流行是由
+
+7
+00:00:21,520 --> 00:00:23,519
+fundamental need in the web development market
+Web 开发市场的基本需求驱动
+
+8
+00:00:23,519 --> 00:00:27,039
+javascript is a total and we want to write less of it furthermore
+
+
+9
+00:00:27,039 --> 00:00:31,199
+back in o6 browsers had a bunch of interop issues jquery provided a single
+的 一堆互操作问题 jquery 提供了一个
+
+10
+00:00:31,199 --> 00:00:34,399
+api to handle the edge cases across multiple browsers
+api 来处理跨多个浏览
+
+11
+00:00:34,399 --> 00:00:37,680
+it's so good in fact that browser vendors of today have standardized many
+器的边缘情况，事实上，今天的浏览器供应商已经标准化
+
+12
+00:00:37,680 --> 00:00:40,239
+of its features and ship them as native apis
+了它的许多功能并将它们作为本机api 提供，
+
+13
+00:00:40,239 --> 00:00:43,520
+you can install it by finding the source code on the website right click to copy
+你可以通过找到源代码来安装它。网站右键单击以复制
+
+14
+00:00:43,520 --> 00:00:47,520
+it then open dreamweaver and find all of the html pages and paste it into a
+它，然后打开 Dreamweaver 并找到所有 html 页面并将其粘贴到
+
+15
+00:00:47,520 --> 00:00:51,440
+script tag on each one your javascript now has access to the mighty dollar sign
+您的每个 javascript n 上的脚本标记中ow 可以访问强大的美元符号
+
+16
+00:00:51,440 --> 00:00:53,840
+function it takes a selector as its argument like
+函数它需要一个选择器作为它的参数，
+
+17
+00:00:53,840 --> 00:00:57,199
+a tag name class or id it'll grab that html from the dom
+比如标签名称类或 id 它会从 dom 中获取该 html
+
+18
+00:00:57,199 --> 00:01:00,960
+allowing you to perform actions on it in the html we have a list of items and we
+允许您在 html 中对其执行操作我们有一个项目列表，我们
+
+19
+00:01:00,960 --> 00:01:04,320
+want to grab the first item in vanilla js we'd have to use this ridiculously
+想要获取 vanilla js 中的第一个项目，我们必须使用这
+
+20
+00:01:04,320 --> 00:01:07,360
+long line of code to do so in react we have to completely rewrite
+行可笑的长代码来实现，因此我们必须将代码完全重写
+
+21
+00:01:07,360 --> 00:01:10,320
+our code into a component and implement the confusing ref hook
+为一个组件，并使用 jquery 实现令人困惑的 ref 挂钩
+
+22
+00:01:10,320 --> 00:01:13,760
+with jquery we can use the dollar sign to grab all the list items and then call
+，我们可以使用美元符号获取所有列表项，然后
+
+23
+00:01:13,760 --> 00:01:16,960
+first to get the first one it's easy and readable if we want to
+首先调用以获取第一个，如果我们想要对其进行
+
+24
+00:01:16,960 --> 00:01:20,159
+animate it we can do that by simply chaining a method to it and we can chain
+动画处理，我们可以通过简单地将方法链接到它来做到这一点，我们可以将
+
+25
+00:01:20,159 --> 00:01:23,439
+more methods to it to register event listeners and all kinds of other fun
+更多方法链接到它以注册事件侦听器和所有
+
+26
+00:01:23,439 --> 00:01:25,520
+stuff declarative framework developers love to
+声明式框架开发人员喜欢在
+
+27
+00:01:25,520 --> 00:01:28,479
+fight each other about state management don't make me swing on you bro
+状态管理方面互相争斗的其他各种有趣的东西不要让我对你摇摆不定，
+
+28
+00:01:28,479 --> 00:01:31,680
+while jquery developers don't have this problem because there's no data layer to
+而 jquery 开发人员则没有这个问题，因为没有数据层需要
+
+29
+00:01:31,680 --> 00:01:33,840
+worry about instead you just start with an object
+担心，而是你只需从 o 开始 bject
+
+30
+00:01:33,840 --> 00:01:36,880
+shade methods to it and let the state manage itself when it comes time to
+shade 方法，并在扩展 jquery时让状态自行管理
+
+31
+00:01:36,880 --> 00:01:40,479
+extend jquery there's no need for insanely complex web pack bundling or
+不需要疯狂复杂的 web pack 捆绑或
+
+32
+00:01:40,479 --> 00:01:43,280
+npm packages you can just extend its prototype with a
+npm 包，您只需使用插件扩展其原型，
+
+33
+00:01:43,280 --> 00:01:46,320
+plugin and there's already a huge ecosystem of plugins to get things done
+并且已经有一个庞大的插件生态系统来获取东西
+
+34
+00:01:46,320 --> 00:01:48,479
+quickly as an added bonus once you've mastered
+一旦你掌握了
+
+35
+00:01:48,479 --> 00:01:52,079
+jquery you can jump into jquery mobile and start building native apps for
+jquery，你就可以快速完成jquery，你可以跳入jquery mobile并开始为
+
+36
+00:01:52,079 --> 00:01:55,119
+windows phone and blackberry developers of today sometimes make fun
+windows phone和blackberry开发人员构建本机应用程序有时会
+
+37
+00:01:55,119 --> 00:01:57,840
+of jquery but that's just the stuff you have to deal with when you're the king
+取笑jquery，但这只是你必须处理的事情
+
+38
+00:01:57,840 --> 00:02:01,040
+of javascript libraries this has been the legend of jquery in
+javascript 库之王这是 100 秒内 jquery 的传奇
+
+39
+00:02:01,040 --> 00:02:04,079
+100 seconds if you want to see more short videos like this hit the like
+如果你想看更多像这样的短视频点击喜欢
+
+40
+00:02:04,079 --> 00:02:06,960
+button and subscribe thanks for watching and i will see you
+按钮并订阅感谢观看，我会
+
+41
+00:02:06,960 --> 00:02:09,840
+in the next one
+在下一个

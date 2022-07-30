@@ -1,0 +1,345 @@
+1
+00:00:00,589 --> 00:00:02,820
+denim a brand new way to write
+
+
+2
+00:00:02,820 --> 00:00:04,799
+server-side JavaScript it solves many of
+
+
+3
+00:00:04,799 --> 00:00:06,600
+the same problems as nodejs and was even
+
+
+4
+00:00:06,600 --> 00:00:08,730
+created by the same guy like node it
+
+
+5
+00:00:08,730 --> 00:00:10,530
+uses the v8 JavaScript engine under the
+
+
+6
+00:00:10,530 --> 00:00:12,179
+hood but the rest of the runtime is
+
+
+7
+00:00:12,179 --> 00:00:14,370
+implemented in rust and typescript our
+
+
+8
+00:00:14,370 --> 00:00:16,139
+journey into denna land begins in a
+
+
+9
+00:00:16,139 --> 00:00:17,940
+single type script file in this file we
+
+
+10
+00:00:17,940 --> 00:00:19,439
+have access to all the types in the
+
+
+11
+00:00:19,439 --> 00:00:20,820
+runtime which means we can write
+
+
+12
+00:00:20,820 --> 00:00:22,170
+strongly typed code and get
+
+
+13
+00:00:22,170 --> 00:00:24,090
+documentation and intellisense directly
+
+
+14
+00:00:24,090 --> 00:00:26,070
+in the IDE without ever needing to touch
+
+
+15
+00:00:26,070 --> 00:00:28,320
+a TS config file the features in the
+
+
+16
+00:00:28,320 --> 00:00:30,150
+runtime can be accessed from this demo
+
+
+17
+00:00:30,150 --> 00:00:32,369
+namespace let's console.log the current
+
+
+18
+00:00:32,369 --> 00:00:34,350
+working directory of the filesystem we
+
+
+19
+00:00:34,350 --> 00:00:36,090
+can execute our script with demo run
+
+
+20
+00:00:36,090 --> 00:00:37,649
+from the command line but you'll notice
+
+
+21
+00:00:37,649 --> 00:00:38,969
+the throws an error and that's because
+
+
+22
+00:00:38,969 --> 00:00:41,129
+demo is secure by default you the
+
+
+23
+00:00:41,129 --> 00:00:42,870
+developer need to give permission to
+
+
+24
+00:00:42,870 --> 00:00:44,399
+perform different actions in the runtime
+
+
+25
+00:00:44,399 --> 00:00:46,739
+in this case we can use the allow read
+
+
+26
+00:00:46,739 --> 00:00:49,200
+flag to allow this operation security is
+
+
+27
+00:00:49,200 --> 00:00:50,700
+great but my favorite thing is how
+
+
+28
+00:00:50,700 --> 00:00:52,620
+everything asynchronous is promise based
+
+
+29
+00:00:52,620 --> 00:00:54,719
+we can make a network request using the
+
+
+30
+00:00:54,719 --> 00:00:56,280
+fetch API just like we would in the
+
+
+31
+00:00:56,280 --> 00:00:57,870
+browser and because it supports
+
+
+32
+00:00:57,870 --> 00:00:59,550
+top-level wait we don't even need an
+
+
+33
+00:00:59,550 --> 00:01:00,930
+async function here we can start
+
+
+34
+00:01:00,930 --> 00:01:02,699
+resolving promises without any extra
+
+
+35
+00:01:02,699 --> 00:01:04,559
+boilerplate code denno attempts to make
+
+
+36
+00:01:04,559 --> 00:01:06,060
+your code as browser compatible as
+
+
+37
+00:01:06,060 --> 00:01:08,010
+possible it contains a window object
+
+
+38
+00:01:08,010 --> 00:01:09,390
+with lifecycle events that you can
+
+
+39
+00:01:09,390 --> 00:01:11,250
+listen to allowing developers to more
+
+
+40
+00:01:11,250 --> 00:01:12,659
+easily write code that can interrupt
+
+
+41
+00:01:12,659 --> 00:01:14,880
+between browsers and servers not to
+
+
+42
+00:01:14,880 --> 00:01:16,860
+mention it can also execute web assembly
+
+
+43
+00:01:16,860 --> 00:01:18,689
+binaries but one thing that won't work
+
+
+44
+00:01:18,689 --> 00:01:21,030
+in demo are your NPM packages instead
+
+
+45
+00:01:21,030 --> 00:01:23,189
+you import packages using the modern yes
+
+
+46
+00:01:23,189 --> 00:01:25,350
+module syntax with remote modules being
+
+
+47
+00:01:25,350 --> 00:01:27,330
+referenced by their URL when you run
+
+
+48
+00:01:27,330 --> 00:01:28,799
+your script for the first time it will
+
+
+49
+00:01:28,799 --> 00:01:30,479
+download this code locally and cache it
+
+
+50
+00:01:30,479 --> 00:01:32,460
+there's no package JSON and code can be
+
+
+51
+00:01:32,460 --> 00:01:34,650
+referenced from any URL very similar to
+
+
+52
+00:01:34,650 --> 00:01:36,329
+how things work in the browser demo
+
+
+53
+00:01:36,329 --> 00:01:37,950
+provides a set of standard modules to
+
+
+54
+00:01:37,950 --> 00:01:40,110
+solve common use cases for example we
+
+
+55
+00:01:40,110 --> 00:01:42,600
+can import serve from the HTTP module we
+
+
+56
+00:01:42,600 --> 00:01:44,130
+can use it to create a server that's
+
+
+57
+00:01:44,130 --> 00:01:46,200
+treated as an async iterable we can then
+
+
+58
+00:01:46,200 --> 00:01:48,090
+await every request from the server and
+
+
+59
+00:01:48,090 --> 00:01:49,829
+respond to it accordingly and that's an
+
+
+60
+00:01:49,829 --> 00:01:51,509
+awesome starting point for a server-side
+
+
+61
+00:01:51,509 --> 00:01:54,180
+JavaScript app now then au 1.0 just hit
+
+
+62
+00:01:54,180 --> 00:01:55,950
+release candidate 1 so if you start
+
+
+63
+00:01:55,950 --> 00:01:56,670
+using it today
+
+
+64
+00:01:56,670 --> 00:01:58,560
+consider yourself an early adopter do
+
+
+65
+00:01:58,560 --> 00:01:59,520
+you think denno is the future of
+
+
+66
+00:01:59,520 --> 00:02:00,990
+server-side JavaScript let me know in
+
+
+67
+00:02:00,990 --> 00:02:02,490
+the comments below thanks for watching
+
+
+68
+00:02:02,490 --> 00:02:04,229
+hit the like button and I will see you
+
+
+69
+00:02:04,229 --> 00:02:06,799
+in the next one
+
+

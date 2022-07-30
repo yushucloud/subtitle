@@ -1,0 +1,385 @@
+1
+00:00:00,160 --> 00:00:02,879
+bash a command language interpreter for
+
+
+2
+00:00:02,879 --> 00:00:04,480
+interacting with a computer from the
+
+
+3
+00:00:04,480 --> 00:00:06,480
+command line it's also called a shell
+
+
+4
+00:00:06,480 --> 00:00:08,080
+because it surrounds the operating
+
+
+5
+00:00:08,080 --> 00:00:09,920
+system kernel to hide its intricate
+
+
+6
+00:00:09,920 --> 00:00:11,679
+details while allowing you the
+
+
+7
+00:00:11,679 --> 00:00:13,679
+programmer to do important stuff like
+
+
+8
+00:00:13,679 --> 00:00:16,160
+access data and write files by typing
+
+
+9
+00:00:16,160 --> 00:00:18,160
+simple commands this was a revolutionary
+
+
+10
+00:00:18,160 --> 00:00:19,600
+concept when it was developed in the
+
+
+11
+00:00:19,600 --> 00:00:21,600
+early 70s back when programmers were
+
+
+12
+00:00:21,600 --> 00:00:23,279
+still using punch cards the shell
+
+
+13
+00:00:23,279 --> 00:00:25,119
+concept evolved over the years with the
+
+
+14
+00:00:25,119 --> 00:00:26,640
+bourne shell being the most popular
+
+
+15
+00:00:26,640 --> 00:00:28,960
+version that is until 1989 when the
+
+
+16
+00:00:28,960 --> 00:00:31,359
+born-again shell or bash came about when
+
+
+17
+00:00:31,359 --> 00:00:33,200
+you open up the terminal on a unix
+
+
+18
+00:00:33,200 --> 00:00:35,600
+machine like mac os and most linux
+
+
+19
+00:00:35,600 --> 00:00:37,920
+distros the default shell is usually
+
+
+20
+00:00:37,920 --> 00:00:40,000
+bash it provides a prompt where you can
+
+
+21
+00:00:40,000 --> 00:00:41,440
+type a command which will then be
+
+
+22
+00:00:41,440 --> 00:00:43,520
+interpreted by the shell and executed on
+
+
+23
+00:00:43,520 --> 00:00:45,280
+the operating system to find out if
+
+
+24
+00:00:45,280 --> 00:00:47,440
+you're running bash type in which dollar
+
+
+25
+00:00:47,440 --> 00:00:49,200
+sign shell from the command line it's
+
+
+26
+00:00:49,200 --> 00:00:51,199
+like any other application that lives in
+
+
+27
+00:00:51,199 --> 00:00:53,600
+the binaries directory but bash is also
+
+
+28
+00:00:53,600 --> 00:00:55,360
+a programming language that allows us to
+
+
+29
+00:00:55,360 --> 00:00:57,199
+write scripts which means anything we
+
+
+30
+00:00:57,199 --> 00:00:58,960
+type manually into the command line can
+
+
+31
+00:00:58,960 --> 00:01:00,719
+be automated with code when you first
+
+
+32
+00:01:00,719 --> 00:01:02,480
+launch the shell it actually runs a
+
+
+33
+00:01:02,480 --> 00:01:04,479
+startup script that's defined in the
+
+
+34
+00:01:04,479 --> 00:01:07,200
+bash profile or bashrc file on your
+
+
+35
+00:01:07,200 --> 00:01:09,439
+system this allows you to customize the
+
+
+36
+00:01:09,439 --> 00:01:10,880
+behavior and appearance of the shell
+
+
+37
+00:01:10,880 --> 00:01:12,640
+whenever you start a new session you can
+
+
+38
+00:01:12,640 --> 00:01:14,720
+add your own custom bash scripts to any
+
+
+39
+00:01:14,720 --> 00:01:16,880
+project by creating a file that ends in
+
+
+40
+00:01:16,880 --> 00:01:19,600
+dot sh for no file extension at all the
+
+
+41
+00:01:19,600 --> 00:01:21,520
+first line in that file should always be
+
+
+42
+00:01:21,520 --> 00:01:23,439
+a shebang followed by the path to the
+
+
+43
+00:01:23,439 --> 00:01:25,119
+application that should run it below
+
+
+44
+00:01:25,119 --> 00:01:27,119
+that we can start writing commands like
+
+
+45
+00:01:27,119 --> 00:01:28,960
+echo to print something and they'll be
+
+
+46
+00:01:28,960 --> 00:01:30,880
+interpreted line by line to create a
+
+
+47
+00:01:30,880 --> 00:01:32,720
+variable type a name in all caps
+
+
+48
+00:01:32,720 --> 00:01:34,320
+followed by the equal sign then
+
+
+49
+00:01:34,320 --> 00:01:36,320
+reference it later in the script using a
+
+
+50
+00:01:36,320 --> 00:01:38,320
+dollar sign in front of the name now to
+
+
+51
+00:01:38,320 --> 00:01:40,320
+execute the script simply type the file
+
+
+52
+00:01:40,320 --> 00:01:42,640
+name into the shell that was easy but
+
+
+53
+00:01:42,640 --> 00:01:44,079
+what if we want to pass in some
+
+
+54
+00:01:44,079 --> 00:01:45,759
+arguments when we run the script
+
+
+55
+00:01:45,759 --> 00:01:47,600
+positional arguments will automatically
+
+
+56
+00:01:47,600 --> 00:01:50,320
+be assigned variable names of 1 2 3 and
+
+
+57
+00:01:50,320 --> 00:01:52,479
+so on now in other cases you may need
+
+
+58
+00:01:52,479 --> 00:01:54,479
+additional user input in the middle of a
+
+
+59
+00:01:54,479 --> 00:01:56,560
+script you can create loops in bash like
+
+
+60
+00:01:56,560 --> 00:01:58,640
+a do while loop here that will prompt
+
+
+61
+00:01:58,640 --> 00:02:00,719
+the user to continue the script on a yes
+
+
+62
+00:02:00,719 --> 00:02:03,200
+answer or exit on a no answer from there
+
+
+63
+00:02:03,200 --> 00:02:05,040
+we can implement conditional logic with
+
+
+64
+00:02:05,040 --> 00:02:06,880
+an if statement which will test if the
+
+
+65
+00:02:06,880 --> 00:02:08,959
+value on the left side is less than the
+
+
+66
+00:02:08,959 --> 00:02:11,440
+value on the right side if true then run
+
+
+67
+00:02:11,440 --> 00:02:13,440
+this command otherwise run the else
+
+
+68
+00:02:13,440 --> 00:02:15,440
+command another cool feature is that if
+
+
+69
+00:02:15,440 --> 00:02:17,360
+you have multiple long running processes
+
+
+70
+00:02:17,360 --> 00:02:18,879
+you can run them in parallel in the
+
+
+71
+00:02:18,879 --> 00:02:21,200
+background by adding an ampersand after
+
+
+72
+00:02:21,200 --> 00:02:22,959
+the command this has been bash the
+
+
+73
+00:02:22,959 --> 00:02:25,360
+born-again shell in 100 seconds if you
+
+
+74
+00:02:25,360 --> 00:02:26,879
+want to see more short videos like this
+
+
+75
+00:02:26,879 --> 00:02:28,560
+make sure to hit the like button and
+
+
+76
+00:02:28,560 --> 00:02:30,720
+subscribe thanks for watching and i will
+
+
+77
+00:02:30,720 --> 00:02:34,599
+see you in the next one
+
+

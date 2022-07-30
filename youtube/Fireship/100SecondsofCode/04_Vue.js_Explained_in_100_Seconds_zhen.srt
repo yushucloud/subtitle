@@ -1,0 +1,150 @@
+1
+00:00:00,030 --> 00:00:04,680
+Vue js it's a JavaScript framework for building front-end UIs in view you can
+Vue js是一个用于构建前后端UI的 JavaScript 框架，
+
+
+2
+00:00:04,680 --> 00:00:07,680
+start simple and then progressively add in the tools and features that you need
+从简单开始逐步添加构建复杂程序所需的工具和功能
+
+3
+00:00:07,680 --> 00:00:12,790
+to build a complex web application at its core it provides a way to build
+它提供了一种通过JavaScript中的数据或状态来构建封装组件的方法
+
+4
+00:00:12,790 --> 00:00:15,660
+components that encapsulate data or state in your JavaScript and then
+将该状态响应式地连接到HTML模板中
+
+5
+00:00:15,660 --> 00:00:19,500
+connect that state reactively to a template in HTML we call these
+我们将这些组件称为声明式视图
+
+6
+00:00:19,500 --> 00:00:23,220
+components declarative views because the same data inputs will always produce the
+当我们在它链接或绑定的数据对象上声明数据时
+
+7
+00:00:23,220 --> 00:00:27,210
+same output in the visual UI when we declare data on this data object it
+相同的数据输入将始终在可视化UI中产生相同的输出
+
+8
+00:00:27,210 --> 00:00:30,960
+links or binds it to the HTML on the template above when the value of the
+当数据的值发生变化时组件将自动重新渲染
+
+9
+00:00:30,960 --> 00:00:34,440
+data changes the component will automatically rerender or in other words
+换句话说它是响应式的
+
+10
+00:00:34,440 --> 00:00:38,040
+it's reactive and the framework does a ton of work under the hood to make sure
+并且框架在后台做了大量工作以确保这个过程
+
+11
+00:00:38,040 --> 00:00:41,610
+that this process is performance across a huge component tree we can work with
+在数量众多的组件树中高效可靠的运行
+
+12
+00:00:41,610 --> 00:00:45,780
+this data in the template thanks to views HTML based template syntax we can
+由于视图基于HTML模板，我们可以在模板中处理这些数据
+
+13
+00:00:45,780 --> 00:00:50,219
+interpolate a value for expression using double braces and we also have a variety
+可以使用双括号为表达式插入一个值
+
+14
+00:00:50,219 --> 00:00:54,809
+of directives to control the behavior of the HTML based on the data we can use v-if
+也有多种指令根据数据来控制HTML的行为
+
+15
+00:00:54,809 --> 00:00:58,829
+to only render an element when the value on the right side is truthy and then we
+我们可以使用 v-if显示或隐藏元素
+
+16
+00:00:58,829 --> 00:01:01,829
+might have a fallback element after that that's only rendered when the values
+我们可能会有一个后继元素只用于显示值，
+
+17
+00:01:01,829 --> 00:01:06,390
+fall C with v-else we can make the app interactive by listening to events using
+这时我们可以使用 v-if,也可以通过使用 v-on 指令监听事件来使应用程序交互
+
+18
+00:01:06,390 --> 00:01:10,409
+the v-on directive we can listen to an event on an element then run some code
+我们可以监听元素上的事件
+
+19
+00:01:10,409 --> 00:01:13,799
+to handle that event on the right side we can do that directly in the template
+运行一些代码来处理右侧的事件，我们可以直接在模板中执行这些操作
+
+20
+00:01:13,799 --> 00:01:18,090
+or define a custom method and the components methods object the method has
+或者定义一个自定义方法和组件方法对象，该方法可以访问我们的响应式数据
+
+21
+00:01:18,090 --> 00:01:21,540
+access to our reactive data and that means all we have to do is change the
+这意味着我们所要做的就是更改数据的值
+
+22
+00:01:21,540 --> 00:01:25,320
+value of the data and the component will automatically rerender and that's all it
+组件将自动重新渲染，这就是构建具有视图的交互式反应式声明性
+
+23
+00:01:25,320 --> 00:01:28,799
+takes to build an interactive reactive declarative UI component with view the
+UI 组件所需的全部内容，该框架因其简单而受到开发人员的喜爱
+
+24
+00:01:28,799 --> 00:01:32,460
+framework is loved by developers for the simplicity but also its ability to scale
+它还具有逐步扩展复杂性的能力，
+
+25
+00:01:32,460 --> 00:01:36,689
+up in complexity incrementally its plugin system allows you to easily drop
+它的插件系统使您可以轻松地插入代码
+
+26
+00:01:36,689 --> 00:01:40,920
+in things like a router state management firebase support and more and perhaps
+放入诸如路由器状态管理Firebase等等
+
+27
+00:01:40,920 --> 00:01:44,700
+best of all it's not sponsored by some mega corporation it's not pressured to
+也许最重要的是它不是由一些大型公司赞助的，对于
+
+28
+00:01:44,700 --> 00:01:47,520
+push out new releases all the time and does a great job listening to its
+持续推出新版本没有压力，并且
+
+29
+00:01:47,520 --> 00:01:51,299
+community this has been GU Jas and 100 seconds stay tuned for a full length
+在倾听用户的声音这方面做的很好，这是Vue Js 的100秒简介
+
+30
+00:01:58,140 --> 00:02:02,090
+thanks for watching and I will see you in the next one
+感谢观看，下次见

@@ -1,0 +1,609 @@
+1
+00:00:00,000 --> 00:00:02,879
+[Music] progressive web apps build websites that
+[音乐]渐进式网络应用程序构建的网站
+
+2
+00:00:02,879 --> 00:00:07,200
+deliver an experience indistinguishable from native mobile apps when smartphones
+提供了与原生移动应用程序无法区分的体验，当智能手机
+
+3
+00:00:07,200 --> 00:00:10,639
+first hit the scene back in 2008 they brought with them all kinds of new
+于 2008 年首次出现时，它们带来
+
+4
+00:00:10,639 --> 00:00:14,400
+features that weren't available on the web like offline mode push notifications
+了网络上不可用的各种新功能，例如离线模式推送通知
+
+5
+00:00:14,400 --> 00:00:18,400
+cameras geolocation and more internet explorer powered the web back then and
+相机地理定位 当时有更多的 InternetExplorer 为 Web 提供动力，
+
+6
+00:00:18,400 --> 00:00:22,800
+web developers had no way to access most in-device features in the 2020s though
+Web 开发人员无法访问2020 年代的大多数设备内功能，
+
+7
+00:00:22,800 --> 00:00:26,480
+the game has changed the web platform has reached near feature parity with
+尽管游戏已经改变 Web 平台已达到与本机应用程序几乎相同的功能 请
+
+8
+00:00:26,480 --> 00:00:30,320
+native apps notice how the twitter pwa can be installed just like a native app
+注意如何安装 twitter pwa 就像原生应用程序一样，
+
+9
+00:00:30,320 --> 00:00:33,360
+it works without a connection it can interact with the device camera and
+它无需连接即可工作，它可以与设备摄像头交互并
+
+10
+00:00:33,360 --> 00:00:36,880
+receive push notifications and on top of that the web offers much better
+接收推送通知，最重要的是，网络提供
+
+11
+00:00:36,880 --> 00:00:40,960
+distribution than app stores and doesn't take a 30 cut of your revenue not to
+比应用程序商店更好的分发，并且不会从你的收入中抽取 30 分，
+
+12
+00:00:40,960 --> 00:00:44,800
+mention your app will work on ios android and the web from a single code
+更不用说你的应用程序了
+
+13
+00:00:44,800 --> 00:00:48,559
+base if you own a website turning it into a progressive web app is easier
+如果您拥有一个网站，则可以从一个代码库在 ios android 和 web 上运行，将其变成渐进式 web 应用程序
+
+14
+00:00:48,559 --> 00:00:52,160
+than you might think first open up the lighthouse tool in chrome dev tools to
+比您更容易 可能会认为首先在 chrome 开发工具中打开灯塔工具以
+
+15
+00:00:52,160 --> 00:00:55,600
+run an audit on your site it'll tell you how well your site performs and what
+在您的网站上运行审核，它会告诉您您的网站性能如何以及
+
+16
+00:00:55,600 --> 00:01:00,000
+needs to change to qualify as a pwa at a bare minimum the site needs to load
+需要更改哪些内容才能获得 pwa 的资格，至少该网站需要快速加载
+
+17
+00:01:00,000 --> 00:01:03,920
+quickly and be accessible on mobile most sites already check this box the more
+和 可以在移动设备上访问大多数网站已经选中此框更
+
+18
+00:01:03,920 --> 00:01:08,080
+difficult requirement is making the app work offline normally a website runs on
+困难的要求是使应用程序正常脱机工作网站
+
+19
+00:01:08,080 --> 00:01:12,159
+a single thread while the tab is open however modern websites can now register
+在选项卡打开时在单个线程上运行但是现代网站现在可以注册
+
+20
+00:01:12,159 --> 00:01:15,920
+a service worker which is just a script that runs in the background it can
+一个服务工作者，它只是一个运行在其中的脚本后台它可以
+
+21
+00:01:15,920 --> 00:01:20,080
+perform caching background sync and listen to push notifications among other
+执行缓存后台同步和监听推送通知
+
+22
+00:01:20,080 --> 00:01:23,680
+things the implementation is actually very simple we just check if the browser
+等实现实际上非常简单我们只需检查浏览器是否
+
+23
+00:01:23,680 --> 00:01:27,600
+supports this feature then register a javascript file as the worker once
+支持此功能然后注册一个javascript文件作为worker一旦
+
+24
+00:01:27,600 --> 00:01:31,680
+registered you'll find it activated in the application tab in chrome devtools
+注册你会发现它在应用程序中被激活 chrome devtools 中的选项卡
+
+25
+00:01:31,680 --> 00:01:35,040
+from there you can write your own code in the worker file or use a library like
+从那里您可以在工作文件中编写自己的代码，或者使用像工作
+
+26
+00:01:35,040 --> 00:01:38,479
+workbox to do everything for you most importantly you'll want to cache the
+箱这样的库来为您做所有事情，最重要的是 您需要
+
+27
+00:01:38,479 --> 00:01:42,240
+urls in your app so they can be viewed offline you can inspect the cache and
+在您的应用程序中缓存 url，以便可以离线查看它们您可以
+
+28
+00:01:42,240 --> 00:01:45,920
+other background services here in the application tab the final step is to
+在应用程序选项卡中检查缓存和其他后台服务最后一步是
+
+29
+00:01:45,920 --> 00:01:50,240
+create a manifest.json file which contains icons and other metadata about
+创建一个 manifest.json 文件，其中包含有关图标和其他元数据
+
+30
+00:01:50,240 --> 00:01:54,320
+the app once the requirements have been met you'll unlock the pwa achievement
+应用程序一旦满足要求，您将解锁 pwa 成就
+
+31
+00:01:54,320 --> 00:01:58,159
+and lighthouse at which point your app can be installed on most native devices
+和灯塔，此时您的应用程序可以安装在大多数本机设备上
+
+32
+00:01:58,159 --> 00:02:01,759
+and can even be listed on google play or the microsoft store this has been
+，甚至可以在 google play 或 microsoft store 上列出，
+
+33
+00:02:01,759 --> 00:02:05,360
+progressive web apps in 100 seconds if you want to learn more hang out for a
+如果这是 100 秒内的渐进式网络应用程序您想了解更多信息，请
+
+34
+00:02:05,360 --> 00:02:08,800
+minute while we go beyond 100 seconds to learn a bunch of cool things that you'll
+在我们超过 100 秒的时间里学习一堆很酷的东西
+
+35
+00:02:08,800 --> 00:02:12,800
+definitely want to know about pwas first of all make sure to like and subscribe
+
+
+36
+00:02:12,800 --> 00:02:16,239
+because it really helps out the short videos what i want to do now is just
+我现在想做的只是说出
+
+37
+00:02:16,239 --> 00:02:20,160
+rattle off a bunch of cool things you should know about when it comes to pwas
+一堆你应该知道的很酷的事情，当谈到 pwas
+
+38
+00:02:20,160 --> 00:02:23,360
+first you'll definitely want to get familiar with the chrome lighthouse tool
+首先你肯定想熟悉它分析性能的 chrome lighthouse 工具
+
+39
+00:02:23,360 --> 00:02:27,520
+it analyzes performance accessibility seo and determines whether or not your
+可访问性seo 并确定您的
+
+40
+00:02:27,520 --> 00:02:31,920
+app is installable as a pwa you can run this tool on any site you want and
+应用程序是否可作为 pwa 安装，您可以在任何您想要的站点上运行此工具，并且
+
+41
+00:02:31,920 --> 00:02:35,360
+should be available under the lighthouse tab in chrome devtools even if you're
+应该在 chrome devtools 的灯塔选项卡下可用，即使您
+
+42
+00:02:35,360 --> 00:02:39,440
+not building a pwa it can be useful to run an audit on your site and while
+没有构建 pwa，运行它也很有用在您的网站上进行审核，当
+
+43
+00:02:39,440 --> 00:02:42,879
+we're here you'll also want to know about the application tab which allows
+我们在这里时，您还想了解应用程序选项卡，它允许
+
+44
+00:02:42,879 --> 00:02:47,120
+you to analyze and debug information related to your app every pwa has a
+您分析和调试与您的应用程序相关的信息每个 pwa 都有一个
+
+45
+00:02:47,120 --> 00:02:51,440
+manifest file which defines metadata about the app and you can view that here
+清单文件，其中定义了有关应用程序的元数据，您可以查看 在这里，
+
+46
+00:02:51,440 --> 00:02:55,920
+such as the app name and icons but more importantly it tells you whether or not
+例如应用程序名称和图标，但更重要的是它告诉您
+
+47
+00:02:55,920 --> 00:03:00,159
+a service worker is up and running you can also manually trigger events here to
+服务工作者是否已启动并运行您还可以在此处手动触发事件以
+
+48
+00:03:00,159 --> 00:03:04,159
+test things like push notifications and background sync your service worker will
+测试推送通知和后台同步等内容您的服务工作者
+
+49
+00:03:04,159 --> 00:03:08,000
+likely cache pages and you can view the cache from this tab as well now when you
+可能会缓存页面和您当您
+
+50
+00:03:08,000 --> 00:03:11,440
+hear me talk about service workers and caching that may sound like a lot of
+听到我谈论服务工作者和缓存时，现在也可以从此选项卡查看缓存，这听起来像是
+
+51
+00:03:11,440 --> 00:03:14,959
+code that you have to write but that's actually not the case most of these jobs
+您必须编写的大量代码，但实际上大多数情况并非如此 这些作业
+
+52
+00:03:14,959 --> 00:03:19,120
+fall into very common use cases and can be implemented with minimal code if you
+属于非常常见的用例，如果您
+
+53
+00:03:19,120 --> 00:03:23,120
+use a library like workbox as the name implies it's a collection of different
+使用像 workbox 这样的
+
+54
+00:03:23,120 --> 00:03:28,400
+libraries to help you build pwas quickly and reliably and it even has a cli tool
+库，则可以用最少的代码来
+
+55
+00:03:28,400 --> 00:03:32,720
+to automatically generate the files and assets that you need if you're using a
+实现如果您使用
+
+56
+00:03:32,720 --> 00:03:36,400
+front-end framework like react or angular you can install it as an npm
+像 react 或 angular 这样的前端框架，您需要的文件和资产，您可以将其安装为 npm
+
+57
+00:03:36,400 --> 00:03:40,959
+package or you can import it directly into your service worker over a cdn
+包，或者您可以使用 import scripts 功能通过 CDN 将其直接导入您的 Service Worker，
+
+58
+00:03:40,959 --> 00:03:45,040
+using the import scripts function but an awesome new feature in workbox is
+但非常棒 工作箱中的新功能是
+
+59
+00:03:45,040 --> 00:03:49,040
+recipes it allows you to implement features very quickly often with just a
+食谱它允许您经常使用一行代码非常快速地实现功能
+
+60
+00:03:49,040 --> 00:03:52,720
+single line of code want to add offline fallback to your app it's just a single
+想要将离线回退添加到您的应用程序它只是一个
+
+61
+00:03:52,720 --> 00:03:56,879
+function call and the same goes for an image cache google fonts cache and many
+函数调用并且对于图像缓存谷歌字体缓存和许多
+
+62
+00:03:56,879 --> 00:04:00,560
+others workbox is awesome but there are other libraries out there as well if you
+其他功能也是如此 workbox 很棒，但是如果你
+
+63
+00:04:00,560 --> 00:04:04,480
+use a framework like angular it has a service worker module built into it and
+使用像 angular 这样的框架，它也有其他库，它内置了一个service worker 模块，并且
+
+64
+00:04:04,480 --> 00:04:08,400
+when you use the create react app tool it automatically generates a service
+当你使用 create react 应用程序时 工具它会自动为您生成一个服务
+
+65
+00:04:08,400 --> 00:04:11,840
+worker for you and speaking of frameworks if you want to see how pwas
+工作者并谈到框架如果您想了解如何
+
+66
+00:04:11,840 --> 00:04:14,959
+are implemented in a variety of different frameworks check out the
+在各种不同的框架中实现 pwa，请查看
+
+67
+00:04:14,959 --> 00:04:19,600
+hacker news pwa site it's a showcase of different framework implementations and
+黑客新闻 pwa 网站它展示了不同的框架实现
+
+68
+00:04:19,600 --> 00:04:23,120
+how well they perform compared to each other if you're learning to code a great
+以及它们与每个框架相比的表现如何其他如果你正在学习编写一个伟大的
+
+69
+00:04:23,120 --> 00:04:27,840
+project is implementing your own version of a hacker news pwa or if you want to
+项目正在实现你自己的黑客新闻 pwa 版本，或者如果你想
+
+70
+00:04:27,840 --> 00:04:31,759
+start with something easier let's go ahead and build a pwa right now we only
+从更简单的开始让我们继续构建一个 pwa，我们只
+
+71
+00:04:31,759 --> 00:04:36,560
+need four files an index.html for our main webpage a logo
+需要四个文件 index.html 为我们的主网页 一个 logo
+
+72
+00:04:36,560 --> 00:04:42,880
+a manifest.json to describe our app and then a serviceworker.js file the html
+一个 manifest.json 来描述我们的应用程序，然后是一个 serviceworker.js 文件 html
+
+73
+00:04:42,880 --> 00:04:46,880
+needs to reference the manifest and load the service worker we can reference the
+需要引用清单并加载服务工作者 我们可以
+
+74
+00:04:46,880 --> 00:04:51,199
+manifest with a link tag just like we would with a css file then we can add a
+使用链接标签引用清单，就像我们使用 css 文件一样然后我们 可以
+
+75
+00:04:51,199 --> 00:04:55,840
+script above the closing body tag and if the service worker is supported in this
+在结束正文标记上方添加一个脚本，如果此
+
+76
+00:04:55,840 --> 00:05:00,080
+browser or in its navigator then we'll go ahead and register our service worker
+浏览器或其导航器支持服务工作者，
+
+77
+00:05:00,080 --> 00:05:04,639
+file now if we open up the manifest.json file we can add some information about
+那么如果我们打开你，我们将继续注册我们的服务工作者文件 p manifest.json文件，我们可以添加一些关于
+
+78
+00:05:04,639 --> 00:05:09,520
+our app which is mostly self-explanatory but notice this icons array it's looking
+我们的应用程序的信息，这主要是不言自明的，但请注意这个图标数组，它正在
+
+79
+00:05:09,520 --> 00:05:14,320
+for icons or images of different sizes that can be used as the home screen icon
+寻找可以用作我们应用程序主屏幕图标的不同大小的图标或图像，
+
+80
+00:05:14,320 --> 00:05:18,400
+for our app we could create all of them manually but that would take forever a
+我们可以创建所有 其中一个是手动的，但
+
+81
+00:05:18,400 --> 00:05:24,080
+better option is to use the pwa asset generator we'll go ahead and run npx pwa
+更好的选择是使用 pwa 资产生成器，我们将继续运行 npx pwa
+
+82
+00:05:24,080 --> 00:05:28,400
+asset generator then point it to the logo file in our project and tell it to
+资产生成器，然后将其指向我们项目中的徽标文件并告诉它
+
+83
+00:05:28,400 --> 00:05:32,080
+output the results in the icons directory that creates a bunch of images
+在图标目录中输出结果 这会立即为我们创建一堆图像
+
+84
+00:05:32,080 --> 00:05:36,000
+for us in no time and if you look at the terminal output it'll even give you the
+，如果您查看终端输出，它甚至会为您提供
+
+85
+00:05:36,000 --> 00:05:40,479
+json that you need to paste into your manifest.json file now we just need to
+需要粘贴到manifest.json 文件中的 json，现在我们只需要在其中
+
+86
+00:05:40,479 --> 00:05:44,639
+write a little bit of code in our serviceworker.js file to enable caching
+编写一些代码 我们的serviceworker.js 文件以启用缓存
+
+87
+00:05:44,639 --> 00:05:48,720
+we'll import workbox from a cdn by adding a link to the file inside of this
+我们将从 cdn 导入工作箱，方法是在此导入脚本函数中添加指向该文件的链接，
+
+88
+00:05:48,720 --> 00:05:52,720
+import scripts function that'll give us access to workbox then we can use the
+这将使我们能够访问工作箱，然后我们可以使用
+
+89
+00:05:52,720 --> 00:05:57,280
+routing module to register a route that matches all the image files in our
+路由模块来注册匹配的路由所有的想象 e 文件在我们的
+
+90
+00:05:57,280 --> 00:06:01,199
+project then once we've matched all the files we need to decide on a caching
+项目中，然后一旦我们匹配了所有文件，我们需要决定缓存
+
+91
+00:06:01,199 --> 00:06:05,919
+strategy in this case we'll use cache first which means the pwa will attempt
+策略，在这种情况下，我们将首先使用缓存，这意味着 pwa 将尝试
+
+92
+00:06:05,919 --> 00:06:09,440
+to read from the cache instead of going over the network if there's something
+从缓存中读取，而不是通过网络如果有
+
+93
+00:06:09,440 --> 00:06:12,479
+available in the cache that's great for files that don't change
+缓存中可用的东西对于不经常更改的文件（
+
+94
+00:06:12,479 --> 00:06:16,160
+often like images but if you have something that does change often you
+如图像）非常有用，但如果您有经常更改的文件，您
+
+95
+00:06:16,160 --> 00:06:19,600
+might want to use a network for a strategy which will use the network if
+可能希望使用网络作为策略，
+
+96
+00:06:19,600 --> 00:06:23,280
+the app is connected to the internet or if it's offline it will fall back to the
+如果应用程序连接到互联网或如果它处于脱机状态，它将回退到
+
+97
+00:06:23,280 --> 00:06:25,840
+cache now let's go ahead and serve the app by
+缓存现在让我们继续通过
+
+98
+00:06:25,840 --> 00:06:30,960
+running npx serve and then open the browser to localhost 5000 once there hit
+运行 npx serve 为应用程序提供服务，然后打开浏览器到 localhost 5000，一旦点击
+
+99
+00:06:30,960 --> 00:06:34,960
+ctrl shift j to open up the chrome dev tools let's start by going to the
+ctrl shift j 打开 chrome 开发工具让我们从进入
+
+100
+00:06:34,960 --> 00:06:39,039
+application tab and making sure that we have all the icons appearing in our
+应用程序开始 选项卡并确保我们的清单中显示的所有图标
+
+101
+00:06:39,039 --> 00:06:43,199
+manifest that looks good now let's check out the service worker and make sure
+现在看起来不错让我们检查服务工作者并
+
+102
+00:06:43,199 --> 00:06:47,360
+that it's up and running that looks good as well now we can go to the lighthouse
+确保它已启动并运行并且看起来也不错现在我们可以转到灯塔
+
+103
+00:06:47,360 --> 00:06:51,520
+tab and run an audit on the app as you can see we get a score of 100 on pretty
+选项卡 d 对应用程序进行审核，如您所见，我们几乎在每个指标上都获得了 100 分，
+
+104
+00:06:51,520 --> 00:06:55,759
+much every metric and we get the pwa achievement badge meaning this app is
+并且我们获得了 pwa成就徽章，这意味着
+
+105
+00:06:55,759 --> 00:06:59,199
+installable on most mobile devices if you already have a website that's
+如果您已经拥有一个针对移动设备进行了优化的网站，那么这个应用程序可以安装在大多数移动设备上，
+
+106
+00:06:59,199 --> 00:07:03,680
+optimized for mobile it's incredibly easy to turn it into a pwa from that
+这令人难以置信从那时起很容易将其转换为 pwa
+
+107
+00:07:03,680 --> 00:07:07,039
+point you might consider adding an install button to your site in different
+，您可能会考虑在不同位置的站点上添加一个安装按钮
+
+108
+00:07:07,039 --> 00:07:10,720
+locations to prompt the user to install the app and there's a number of
+以提示用户安装应用程序，并且现在您知道如何构建，有许多
+
+109
+00:07:10,720 --> 00:07:14,240
+different ux strategies to do that successfully now that you know how to
+不同的用户体验策略可以成功地做到这一点
+
+110
+00:07:14,240 --> 00:07:18,240
+build a pwa from scratch i want to leave you with a few other resources that you
+从头开始的 pwa 我想给你留下一些其他资源，你
+
+111
+00:07:18,240 --> 00:07:23,199
+might use to go further first of all i'm working on a new video called 7 things
+可能会用它们来更进一步 首先我正在制作一个名为 7 件
+
+112
+00:07:23,199 --> 00:07:26,639
+you didn't know the web could do it'll cover advanced implementations of
+你不知道网络可以做的事情的新视频，它将涵盖高级实现
+
+113
+00:07:26,639 --> 00:07:31,919
+lesser-known browser apis like bluetooth device motion idle detection and a bunch
+鲜为人知的浏览器 api，如蓝牙设备运动空闲检测和
+
+114
+00:07:31,919 --> 00:07:35,840
+of others i expect to have that out early next week so stay tuned another
+其他一些我希望在下周初推出的，所以请继续关注另一个
+
+115
+00:07:35,840 --> 00:07:39,840
+awesome resource is web.dev this contains basically everything you would
+很棒的资源是 web.dev，它基本上包含你想要的一切
+
+116
+00:07:39,840 --> 00:07:45,120
+ever want to know about pwas as well as new and upcoming browser apis if you
+如果您
+
+117
+00:07:45,120 --> 00:07:48,160
+want to make your app available on other platforms beyond the web you might want
+想让您的应用程序在 Web 以外的其他平台上可用，您可能想了解 pwas 以及新的和即将推出的浏览器 api，您可能想要
+
+118
+00:07:48,160 --> 00:07:52,560
+to do some research on trusted web activities or twas which allow you to
+对受信任的 Web活动或 twas 进行一些研究，以便在其上
+
+119
+00:07:52,560 --> 00:07:56,960
+market your app on the google play store alongside android apps and you can also
+推销您的应用程序 google play store与 android 应用程序一起使用，您还可以
+
+120
+00:07:56,960 --> 00:08:01,120
+market pwas in the microsoft store so check out the official documentation for
+在 microsoft store 中销售 pwas，因此请查看官方文档，
+
+121
+00:08:01,120 --> 00:08:04,560
+that i'm gonna go ahead and wrap things up there if this video helped you please
+如果此视频对您有帮助，我将继续并在那里整理内容，请
+
+122
+00:08:04,560 --> 00:08:10,840
+like and subscribe thanks for watching and i will see you in the next one
+喜欢并订阅感谢观看，我 下一篇见

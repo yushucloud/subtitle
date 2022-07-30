@@ -1,0 +1,325 @@
+1
+00:00:00,000 --> 00:00:02,010
+get a system for keeping track of
+
+
+2
+00:00:02,010 --> 00:00:03,870
+changes that happen across a set of
+
+
+3
+00:00:03,870 --> 00:00:05,580
+files open a directory on your local
+
+
+4
+00:00:05,580 --> 00:00:07,710
+system with an editor like vs code then
+
+
+5
+00:00:07,710 --> 00:00:09,660
+run get an it from the command line you
+
+
+6
+00:00:09,660 --> 00:00:12,210
+just created a git repository or repo it
+
+
+7
+00:00:12,210 --> 00:00:13,950
+lives in this hidden get directory and
+
+
+8
+00:00:13,950 --> 00:00:15,420
+keeps track of all the changes that
+
+
+9
+00:00:15,420 --> 00:00:17,250
+happen to these files as you work on a
+
+
+10
+00:00:17,250 --> 00:00:19,289
+codebase you take snapshots or commits
+
+
+11
+00:00:19,289 --> 00:00:20,760
+of the current state of these files
+
+
+12
+00:00:20,760 --> 00:00:22,769
+every commit has a unique ID and is
+
+
+13
+00:00:22,769 --> 00:00:24,390
+linked to its parent and this means we
+
+
+14
+00:00:24,390 --> 00:00:26,160
+can travel back in time to a previous
+
+
+15
+00:00:26,160 --> 00:00:27,810
+version of our files notice how our
+
+
+16
+00:00:27,810 --> 00:00:29,849
+source control icon is lit up currently
+
+
+17
+00:00:29,849 --> 00:00:31,619
+all of our files are untracked because
+
+
+18
+00:00:31,619 --> 00:00:33,809
+we need to add them to the repo run get
+
+
+19
+00:00:33,809 --> 00:00:35,880
+add to include or stage these files in
+
+
+20
+00:00:35,880 --> 00:00:37,770
+the repo then create a snapshot of their
+
+
+21
+00:00:37,770 --> 00:00:39,420
+current state by running git commit
+
+
+22
+00:00:39,420 --> 00:00:41,219
+along with a message about what you did
+
+
+23
+00:00:41,219 --> 00:00:43,050
+to these files congratulations
+
+
+24
+00:00:43,050 --> 00:00:44,430
+you just created the first commit on the
+
+
+25
+00:00:44,430 --> 00:00:46,320
+head of the master branch in this repo
+
+
+26
+00:00:46,320 --> 00:00:48,149
+the changed files disappeared and you're
+
+
+27
+00:00:48,149 --> 00:00:49,920
+now on a clean working directory the
+
+
+28
+00:00:49,920 --> 00:00:51,539
+head represents the most recent commit
+
+
+29
+00:00:51,539 --> 00:00:53,489
+if we make some changes commit them to
+
+
+30
+00:00:53,489 --> 00:00:55,530
+the repo the head moves forward but we
+
+
+31
+00:00:55,530 --> 00:00:56,879
+still have a reference to our previous
+
+
+32
+00:00:56,879 --> 00:00:58,590
+commits so we can always go back to it
+
+
+33
+00:00:58,590 --> 00:01:00,149
+but the thing about software is that
+
+
+34
+00:01:00,149 --> 00:01:01,649
+it's developed in a nonlinear fashion
+
+
+35
+00:01:01,649 --> 00:01:03,899
+you might have multiple teams working on
+
+
+36
+00:01:03,899 --> 00:01:05,549
+different features for the same codebase
+
+
+37
+00:01:05,549 --> 00:01:08,130
+simultaneously it makes that possible by
+
+
+38
+00:01:08,130 --> 00:01:10,110
+branching create one by running git
+
+
+39
+00:01:10,110 --> 00:01:12,090
+branch and then rank it check out to
+
+
+40
+00:01:12,090 --> 00:01:13,920
+move into that branch you can now safely
+
+
+41
+00:01:13,920 --> 00:01:15,450
+work on your feature in this branch
+
+
+42
+00:01:15,450 --> 00:01:17,640
+without affecting the code or files in
+
+
+43
+00:01:17,640 --> 00:01:19,170
+the master branch the commits you make
+
+
+44
+00:01:19,170 --> 00:01:20,880
+here live in an alternate universe with
+
+
+45
+00:01:20,880 --> 00:01:22,619
+its own unique history at some point
+
+
+46
+00:01:22,619 --> 00:01:24,119
+though you'll likely want to merge this
+
+
+47
+00:01:24,119 --> 00:01:25,710
+history with the history and the master
+
+
+48
+00:01:25,710 --> 00:01:27,540
+branch when you're ready go back to the
+
+
+49
+00:01:27,540 --> 00:01:28,920
+master branch by running git checkout
+
+
+50
+00:01:28,920 --> 00:01:30,600
+then run git merge on your
+
+
+51
+00:01:30,600 --> 00:01:31,380
+alternate-universe
+
+
+52
+00:01:31,380 --> 00:01:33,270
+the tip of your feature branch now
+
+
+53
+00:01:33,270 --> 00:01:34,770
+becomes the head of the master branch
+
+
+54
+00:01:34,770 --> 00:01:36,630
+where in other words our fragmented
+
+
+55
+00:01:36,630 --> 00:01:39,210
+universe has become one unless he ran
+
+
+56
+00:01:39,210 --> 00:01:40,979
+into a merge conflict in which case
+
+
+57
+00:01:40,979 --> 00:01:42,509
+you'll just have to wait for the sequel
+
+
+58
+00:01:42,509 --> 00:01:44,670
+this has been get explained in 100
+
+
+59
+00:01:44,670 --> 00:01:46,259
+seconds if you want to see more short
+
+
+60
+00:01:46,259 --> 00:01:47,729
+videos like this make sure to hit the
+
+
+61
+00:01:47,729 --> 00:01:49,470
+like button subscribe and let me know
+
+
+62
+00:01:49,470 --> 00:01:50,939
+what you think in the comments thanks
+
+
+63
+00:01:50,939 --> 00:01:52,560
+for watching and I will see you in the
+
+
+64
+00:01:52,560 --> 00:01:55,020
+next one
+
+
+65
+00:01:55,020 --> 00:01:57,079
+you
+
+

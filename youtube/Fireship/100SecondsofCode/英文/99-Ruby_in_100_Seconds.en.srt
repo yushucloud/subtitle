@@ -1,0 +1,410 @@
+1
+00:00:00,000 --> 00:00:00,560
+[Music]
+
+
+2
+00:00:00,560 --> 00:00:02,639
+ruby a dynamic interpreted scripting
+
+
+3
+00:00:02,639 --> 00:00:04,240
+language made famous for taking
+
+
+4
+00:00:04,240 --> 00:00:06,319
+simplicity and code readability to the
+
+
+5
+00:00:06,319 --> 00:00:07,919
+extreme it was first conceived by
+
+
+6
+00:00:07,919 --> 00:00:11,679
+yukihiro matsumoto aka mats in 1993 as
+
+
+7
+00:00:11,679 --> 00:00:13,280
+an easy-to-use scripting language like
+
+
+8
+00:00:13,280 --> 00:00:15,519
+python but with genuine object-oriented
+
+
+9
+00:00:15,519 --> 00:00:17,440
+features like smalltalk it exploded in
+
+
+10
+00:00:17,440 --> 00:00:19,920
+popularity after david hanemeyer hansen
+
+
+11
+00:00:19,920 --> 00:00:23,760
+aka dhh created rails in 2005 a model
+
+
+12
+00:00:23,760 --> 00:00:25,519
+view controller framework at the time it
+
+
+13
+00:00:25,519 --> 00:00:27,359
+was a game changer for startups because
+
+
+14
+00:00:27,359 --> 00:00:29,039
+it reduced the complexity required to
+
+
+15
+00:00:29,039 --> 00:00:30,880
+build a full stack web application and
+
+
+16
+00:00:30,880 --> 00:00:32,399
+has been used to build unicorns like
+
+
+17
+00:00:32,399 --> 00:00:34,960
+twitter shopify github and airbnb just
+
+
+18
+00:00:34,960 --> 00:00:36,800
+to name a few ruby is often called a
+
+
+19
+00:00:36,800 --> 00:00:38,399
+programmer's best friend thanks to its
+
+
+20
+00:00:38,399 --> 00:00:40,399
+minimal syntax that relies on plain
+
+
+21
+00:00:40,399 --> 00:00:42,320
+english words and the use of blocks to
+
+
+22
+00:00:42,320 --> 00:00:44,320
+write concise functional code at the
+
+
+23
+00:00:44,320 --> 00:00:46,399
+same time it's a true object-oriented
+
+
+24
+00:00:46,399 --> 00:00:48,320
+language where everything is an object
+
+
+25
+00:00:48,320 --> 00:00:50,399
+and every object can be modified giving
+
+
+26
+00:00:50,399 --> 00:00:52,559
+developers the flexibility to extend or
+
+
+27
+00:00:52,559 --> 00:00:54,399
+modify the behavior of the underlying
+
+
+28
+00:00:54,399 --> 00:00:56,399
+language the developer ecosystem is
+
+
+29
+00:00:56,399 --> 00:00:58,160
+large and mature code is shared between
+
+
+30
+00:00:58,160 --> 00:01:00,000
+developers with the rubygems package
+
+
+31
+00:01:00,000 --> 00:01:01,920
+manager where a program is organized
+
+
+32
+00:01:01,920 --> 00:01:03,600
+into a self-contained format called a
+
+
+33
+00:01:03,600 --> 00:01:05,840
+gem to get started install ruby then
+
+
+34
+00:01:05,840 --> 00:01:08,400
+create a file ending in rb to declare a
+
+
+35
+00:01:08,400 --> 00:01:10,240
+local variable give it a name followed
+
+
+36
+00:01:10,240 --> 00:01:12,080
+by a value there's no variable keyword
+
+
+37
+00:01:12,080 --> 00:01:14,080
+but you can define constants in all caps
+
+
+38
+00:01:14,080 --> 00:01:16,159
+or global variables with a dollar sign
+
+
+39
+00:01:16,159 --> 00:01:18,080
+every value is an instance of an object
+
+
+40
+00:01:18,080 --> 00:01:19,759
+which means we can call methods directly
+
+
+41
+00:01:19,759 --> 00:01:21,840
+on a string like so and parentheses are
+
+
+42
+00:01:21,840 --> 00:01:23,759
+usually optional ruby is dynamically
+
+
+43
+00:01:23,759 --> 00:01:25,040
+typed which means there's no type
+
+
+44
+00:01:25,040 --> 00:01:27,119
+annotations however modern tools like
+
+
+45
+00:01:27,119 --> 00:01:29,439
+rbs can add a type system on top of it
+
+
+46
+00:01:29,439 --> 00:01:30,799
+kind of like how typescript does for
+
+
+47
+00:01:30,799 --> 00:01:32,640
+javascript now to print a value to the
+
+
+48
+00:01:32,640 --> 00:01:34,880
+standard output use the puts method we
+
+
+49
+00:01:34,880 --> 00:01:36,640
+can define our own custom methods using
+
+
+50
+00:01:36,640 --> 00:01:38,560
+the def keyword which end with the end
+
+
+51
+00:01:38,560 --> 00:01:40,400
+keyword every method will always return
+
+
+52
+00:01:40,400 --> 00:01:42,640
+exactly one object no return keyword is
+
+
+53
+00:01:42,640 --> 00:01:44,479
+necessary or if you don't want a named
+
+
+54
+00:01:44,479 --> 00:01:46,240
+method you might create a block with a
+
+
+55
+00:01:46,240 --> 00:01:48,159
+do keyword which works like an anonymous
+
+
+56
+00:01:48,159 --> 00:01:50,240
+function blocks can also take arguments
+
+
+57
+00:01:50,240 --> 00:01:52,320
+found in between the pipe characters now
+
+
+58
+00:01:52,320 --> 00:01:53,759
+use the class keyword to create
+
+
+59
+00:01:53,759 --> 00:01:55,840
+blueprints for your own custom objects
+
+
+60
+00:01:55,840 --> 00:01:57,360
+an interesting point is that ruby
+
+
+61
+00:01:57,360 --> 00:01:59,119
+supports duct typing which means that if
+
+
+62
+00:01:59,119 --> 00:02:00,640
+it walks like a duck and quacks like a
+
+
+63
+00:02:00,640 --> 00:02:02,399
+duck then it's a duck in other words it
+
+
+64
+00:02:02,399 --> 00:02:03,759
+won't throw type errors based on the
+
+
+65
+00:02:03,759 --> 00:02:05,520
+class itself but rather the methods that
+
+
+66
+00:02:05,520 --> 00:02:06,880
+are implemented on it define the
+
+
+67
+00:02:06,880 --> 00:02:08,879
+initialize method to run code when a new
+
+
+68
+00:02:08,879 --> 00:02:10,720
+object is constructed any variable that
+
+
+69
+00:02:10,720 --> 00:02:12,560
+starts with at belongs to an object
+
+
+70
+00:02:12,560 --> 00:02:14,239
+instance while any variable with a
+
+
+71
+00:02:14,239 --> 00:02:16,239
+double at is static and belongs to the
+
+
+72
+00:02:16,239 --> 00:02:18,239
+class itself you can easily add getters
+
+
+73
+00:02:18,239 --> 00:02:19,599
+and setters to a class using the
+
+
+74
+00:02:19,599 --> 00:02:21,599
+attribute accessor method and now we can
+
+
+75
+00:02:21,599 --> 00:02:23,360
+create a new object instance by calling
+
+
+76
+00:02:23,360 --> 00:02:25,360
+the new method on the class now run your
+
+
+77
+00:02:25,360 --> 00:02:26,800
+code with the ruby interpreter from the
+
+
+78
+00:02:26,800 --> 00:02:28,800
+terminal this has been ruby in 100
+
+
+79
+00:02:28,800 --> 00:02:30,239
+seconds hit the like button and
+
+
+80
+00:02:30,239 --> 00:02:31,680
+subscribe if you want to see more short
+
+
+81
+00:02:31,680 --> 00:02:33,519
+videos like this thanks for watching and
+
+
+82
+00:02:33,519 --> 00:02:37,720
+i will see you in the next one
+
+

@@ -1,0 +1,395 @@
+1
+00:00:00,240 --> 00:00:03,120
+scalable vector graphics or svg is an
+
+
+2
+00:00:03,120 --> 00:00:05,359
+image format that's like html for
+
+
+3
+00:00:05,359 --> 00:00:07,600
+2d graphics they differ from raster
+
+
+4
+00:00:07,600 --> 00:00:09,760
+images like png or jpeg
+
+
+5
+00:00:09,760 --> 00:00:11,840
+that use a grid of tiny pixels to create
+
+
+6
+00:00:11,840 --> 00:00:13,840
+an image and as you zoom in the pixels
+
+
+7
+00:00:13,840 --> 00:00:15,839
+become larger making the image grainy in
+
+
+8
+00:00:15,839 --> 00:00:18,160
+contrast a vector image can be scaled to
+
+
+9
+00:00:18,160 --> 00:00:20,400
+any size without losing its resolution
+
+
+10
+00:00:20,400 --> 00:00:22,080
+because instead of fixed pixels its
+
+
+11
+00:00:22,080 --> 00:00:24,000
+appearance is based on geometry
+
+
+12
+00:00:24,000 --> 00:00:25,760
+you can create svgs with tools like
+
+
+13
+00:00:25,760 --> 00:00:27,119
+figma or illustrator
+
+
+14
+00:00:27,119 --> 00:00:29,039
+or by writing the code directly which is
+
+
+15
+00:00:29,039 --> 00:00:30,160
+easier than you might think
+
+
+16
+00:00:30,160 --> 00:00:32,079
+and opens the door to animation and
+
+
+17
+00:00:32,079 --> 00:00:34,320
+interactivity create one by opening an
+
+
+18
+00:00:34,320 --> 00:00:35,280
+svg tag
+
+
+19
+00:00:35,280 --> 00:00:37,200
+then define a coordinate system with the
+
+
+20
+00:00:37,200 --> 00:00:38,480
+view box attribute
+
+
+21
+00:00:38,480 --> 00:00:40,480
+that gives us a frame with a width and
+
+
+22
+00:00:40,480 --> 00:00:42,800
+height of 100 units on which we can draw
+
+
+23
+00:00:42,800 --> 00:00:44,000
+graphics draw basic
+
+
+24
+00:00:44,000 --> 00:00:46,160
+shapes by adding elements like rectangle
+
+
+25
+00:00:46,160 --> 00:00:47,920
+circle and polygon position the
+
+
+26
+00:00:47,920 --> 00:00:50,480
+rectangle by defining its x-y value
+
+
+27
+00:00:50,480 --> 00:00:52,480
+on the view box then give it a size
+
+
+28
+00:00:52,480 --> 00:00:54,160
+which can take values that are either
+
+
+29
+00:00:54,160 --> 00:00:55,760
+explicit or responsive
+
+
+30
+00:00:55,760 --> 00:00:57,280
+we can change the color of the shape by
+
+
+31
+00:00:57,280 --> 00:00:59,520
+defining its fill or define an outline
+
+
+32
+00:00:59,520 --> 00:01:01,120
+with the stroke attribute and if our
+
+
+33
+00:01:01,120 --> 00:01:03,120
+styling gets too complex we can extract
+
+
+34
+00:01:03,120 --> 00:01:04,960
+everything into a separate css
+
+
+35
+00:01:04,960 --> 00:01:05,600
+stylesheet
+
+
+36
+00:01:05,600 --> 00:01:07,760
+by applying a class to it just like any
+
+
+37
+00:01:07,760 --> 00:01:08,880
+html element
+
+
+38
+00:01:08,880 --> 00:01:10,960
+we have the full power of css at our
+
+
+39
+00:01:10,960 --> 00:01:12,880
+fingertips which means we can react to
+
+
+40
+00:01:12,880 --> 00:01:14,400
+events on the shapes and then change
+
+
+41
+00:01:14,400 --> 00:01:16,960
+their styling or animation accordingly
+
+
+42
+00:01:16,960 --> 00:01:18,560
+but most graphics are more than just
+
+
+43
+00:01:18,560 --> 00:01:20,400
+basic shapes they contain complex
+
+
+44
+00:01:20,400 --> 00:01:22,080
+artwork with all kinds of twists and
+
+
+45
+00:01:22,080 --> 00:01:23,759
+turns and that's where the path element
+
+
+46
+00:01:23,759 --> 00:01:24,400
+comes in
+
+
+47
+00:01:24,400 --> 00:01:26,320
+the shape of a path is determined by one
+
+
+48
+00:01:26,320 --> 00:01:27,439
+attribute d
+
+
+49
+00:01:27,439 --> 00:01:29,360
+for draw coding a path is like
+
+
+50
+00:01:29,360 --> 00:01:30,960
+controlling the tip of a pen with a
+
+
+51
+00:01:30,960 --> 00:01:32,000
+series of commands
+
+
+52
+00:01:32,000 --> 00:01:34,400
+the most basic command is m for move
+
+
+53
+00:01:34,400 --> 00:01:36,320
+which will move the pen tip to an x y
+
+
+54
+00:01:36,320 --> 00:01:36,880
+coordinate
+
+
+55
+00:01:36,880 --> 00:01:38,799
+an uppercase letter means move relative
+
+
+56
+00:01:38,799 --> 00:01:40,880
+to the view box and lowercase means
+
+
+57
+00:01:40,880 --> 00:01:42,720
+move relative to the last point in the
+
+
+58
+00:01:42,720 --> 00:01:44,720
+path but move doesn't actually draw
+
+
+59
+00:01:44,720 --> 00:01:45,200
+anything
+
+
+60
+00:01:45,200 --> 00:01:47,119
+to put the pen tip down on the paper and
+
+
+61
+00:01:47,119 --> 00:01:49,200
+draw something use the l command
+
+
+62
+00:01:49,200 --> 00:01:51,360
+it works exactly like move but draws a
+
+
+63
+00:01:51,360 --> 00:01:52,640
+line that can be styled
+
+
+64
+00:01:52,640 --> 00:01:54,159
+straight lines are cool but what if we
+
+
+65
+00:01:54,159 --> 00:01:56,159
+wanted to add a curve like we would with
+
+
+66
+00:01:56,159 --> 00:01:57,680
+the handles in illustrator
+
+
+67
+00:01:57,680 --> 00:01:59,920
+create bezier curves with the c and q
+
+
+68
+00:01:59,920 --> 00:02:01,920
+commands define the position of two
+
+
+69
+00:02:01,920 --> 00:02:02,799
+control points
+
+
+70
+00:02:02,799 --> 00:02:04,240
+then the x and y coordinates where the
+
+
+71
+00:02:04,240 --> 00:02:06,320
+curve should end then svg will
+
+
+72
+00:02:06,320 --> 00:02:08,160
+automatically calculate a smooth curve
+
+
+73
+00:02:08,160 --> 00:02:08,640
+for you
+
+
+74
+00:02:08,640 --> 00:02:10,640
+at any scale this has been scalable
+
+
+75
+00:02:10,640 --> 00:02:12,800
+vector graphics in 100 seconds if you
+
+
+76
+00:02:12,800 --> 00:02:14,239
+want to see more short videos like this
+
+
+77
+00:02:14,239 --> 00:02:15,920
+hit the like button and subscribe
+
+
+78
+00:02:15,920 --> 00:02:17,920
+thanks for watching and i will see you
+
+
+79
+00:02:17,920 --> 00:02:21,040
+in the next one
+
+

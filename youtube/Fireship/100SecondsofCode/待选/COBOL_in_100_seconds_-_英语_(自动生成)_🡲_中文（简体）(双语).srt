@@ -1,0 +1,169 @@
+1
+00:00:00,000 --> 00:00:03,780
+common business oriented language or COBOL is a weak verbose and flabby
+通用面向业务的语言或COBOL 是一种微弱冗长和松散的
+
+2
+00:00:03,780 --> 00:00:07,919
+language used by coat grinders to do boring things on dinosaur mainframes it
+语言，被外套研磨机用来在恐龙大型机上做无聊的事情，它
+
+3
+00:00:07,919 --> 00:00:12,750
+was developed over 100 years ago in 1959 but is still in demand today in 2020
+是在 100 多年前的 1959 年开发的，但在 2020 年今天仍然有需求，
+
+4
+00:00:12,750 --> 00:00:16,199
+because it's the language used on many mainframe computer systems you know
+因为它是许多大型计算机上使用的语言你知道
+
+5
+00:00:16,199 --> 00:00:20,100
+those things we call big iron usually built by IBM to handle massive amounts
+那些我们称之为大铁的系统，通常由 IBM 构建，用于处理
+
+6
+00:00:20,100 --> 00:00:23,130
+of throughput to handle things like credit card transactions airline
+大量吞吐量，以处理信用卡交易、
+
+7
+00:00:23,130 --> 00:00:27,090
+ticketing and most recently the massive spike in unemployment claims so if you
+机票以及最近失业人数激增等问题，所以如果你
+
+8
+00:00:27,090 --> 00:00:30,449
+want to be a programmer in 2020 COBOL might be your best bet it's a high-level
+想在 2020 年成为一名程序员，COBOL可能是 你最好的选择它是一种高级
+
+9
+00:00:30,449 --> 00:00:34,020
+imperative language which means it's very easy to learn the syntax is
+命令式语言，这意味着它很容易学习语法
+
+10
+00:00:34,020 --> 00:00:37,710
+extremely verbose by design because it's self documenting and it contains over
+设计非常冗长，因为它是自我记录的，它包含超过
+
+11
+00:00:37,710 --> 00:00:41,730
+600 reserved words for you to memorize to take advantage of and every COBOL
+600 个保留字供你记忆以利用，每个 COBOL
+
+12
+00:00:41,730 --> 00:00:44,940
+program is structured with an easy-to-follow hierarchy your program
+程序的结构都是易于遵循的层次结构您的程序
+
+13
+00:00:44,940 --> 00:00:47,879
+contains many divisions which contain many sections which contain many
+包含许多分区，其中包含许多节，其中包含许多
+
+14
+00:00:47,879 --> 00:00:51,329
+paragraphs which contain many sentences that contain your statements which of
+段落 包含许多句子的图表包含您的语句
+
+15
+00:00:51,329 --> 00:00:54,360
+course contain many characters when you start writing some COBOL code you'll
+当然包含许多字符 当您开始编写一些 COBOL 代码时您会
+
+16
+00:00:54,360 --> 00:00:57,660
+notice these vertical lines in your IDE the first six characters are your line
+注意到 IDE 中的这些垂直线前六个字符是您的行
+
+17
+00:00:57,660 --> 00:01:01,410
+numbers start at zero zero zero one hundred and increment by 100 for each
+号从零零零一百开始并递增 每
+
+18
+00:01:01,410 --> 00:01:04,979
+line column seven is where you identify comments or the continuation of a
+行 100 列第 7 列是您识别注释或前一行的延续，
+
+19
+00:01:04,979 --> 00:01:08,760
+previous line if we're identifying a new division section or paragraph we can use
+如果我们要识别新的划分部分或段落，我们可以使用第
+
+20
+00:01:08,760 --> 00:01:12,180
+columns 8 through 11 and notice how every line ends with a period that's
+8 列到第 11 列，并注意每行如何以
+
+21
+00:01:12,180 --> 00:01:15,750
+what's known as readable code now columns 12 through 72 are where you
+所谓的可读句点结尾 代码现在第12 到 72 列是
+
+22
+00:01:15,750 --> 00:01:19,020
+write your actual statements the reason you don't go beyond 72 columns is
+您编写实际语句的地方您不超过 72 列的
+
+23
+00:01:19,020 --> 00:01:22,470
+because your code needs to fit onto a physical punch card and it ensures your
+原因是因为您的代码需要适合物理穿孔卡，并且它确保您的
+
+24
+00:01:22,470 --> 00:01:26,310
+program is responsive on mobile devices we can define our variables in the data
+程序在移动设备上响应我们可以定义我们的变量 在数据
+
+25
+00:01:26,310 --> 00:01:29,939
+division first we name the variable then we define its data type with the picture
+划分中，首先我们为变量命名，然后使用图片关键字定义其数据类型，
+
+26
+00:01:29,939 --> 00:01:33,060
+keyword then assign a value to it we can then work with this data in the
+然后为其分配一个值，然后我们可以使用 是程序部门中的数据
+
+27
+00:01:33,060 --> 00:01:36,150
+procedure division we display the variable then tell our program to stop
+我们显示变量然后告诉我们的程序
+
+28
+00:01:36,150 --> 00:01:39,600
+from there we can pile our program to a binary run it and everything should work
+从那里停止我们可以将我们的程序堆积到一个二进制文件中运行它并且一切都应该
+
+29
+00:01:39,600 --> 00:01:43,200
+perfectly and now you're qualified for a six-figure salary maintaining the
+完美运行现在你有资格获得六位数的薪水维持
+
+30
+00:01:43,200 --> 00:01:47,430
+world's most critical legacy systems this has been COBOL in 100 seconds hit
+世界上最关键的 遗留系统，这在 100 秒内已经是 COBOL
+
+31
+00:01:47,430 --> 00:01:50,040
+the like button if you want to see more short videos like this thanks for
+如果您想观看更多这样的短视频，请点击“赞”按钮，谢谢
+
+32
+00:01:50,040 --> 00:01:54,509
+watching and I will see you in the next one oh hey there thanks for sticking
+观看，我将在下一个视频中见到您哦，嘿，谢谢您的
+
+33
+00:01:54,509 --> 00:01:57,509
+around this is the part of the video where we go beyond 100 seconds to
+关注这是视频的一部分我们超过 100 秒来
+
+34
+00:01:57,509 --> 00:02:01,189
+learned some more advanced features of COBOL
+学习 COBOL 的一些更高级的特性

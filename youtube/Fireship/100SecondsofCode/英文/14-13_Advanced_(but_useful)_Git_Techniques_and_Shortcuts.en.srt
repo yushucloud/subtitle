@@ -1,0 +1,1265 @@
+1
+00:00:00,080 --> 00:00:01,920
+one of the best pieces of advice i ever
+
+
+2
+00:00:01,920 --> 00:00:04,640
+got was get good at git few things are
+
+
+3
+00:00:04,640 --> 00:00:06,480
+more scary for a software engineer than
+
+
+4
+00:00:06,480 --> 00:00:08,160
+screwing something up with git after
+
+
+5
+00:00:08,160 --> 00:00:09,760
+weeks of writing the perfect code you
+
+
+6
+00:00:09,760 --> 00:00:11,759
+submit a pull request and end up with a
+
+
+7
+00:00:11,759 --> 00:00:13,679
+bunch of embarrassing failed checks and
+
+
+8
+00:00:13,679 --> 00:00:15,360
+merge conflicts next thing you know
+
+
+9
+00:00:15,360 --> 00:00:16,880
+you're scrambling on stack overflow
+
+
+10
+00:00:16,880 --> 00:00:18,640
+looking for a solution that will likely
+
+
+11
+00:00:18,640 --> 00:00:20,560
+just add gasoline to the fire git was
+
+
+12
+00:00:20,560 --> 00:00:22,480
+created by a guy much smarter than us he
+
+
+13
+00:00:22,480 --> 00:00:23,840
+knew if he made it too easy it would
+
+
+14
+00:00:23,840 --> 00:00:25,519
+make us weak instead he wanted to give
+
+
+15
+00:00:25,519 --> 00:00:34,079
+us the glory of overcoming the challenge
+
+
+16
+00:00:34,079 --> 00:00:35,120
+i'm pretty sure that's what he was
+
+
+17
+00:00:35,120 --> 00:00:36,880
+thinking in today's video we'll look at
+
+
+18
+00:00:36,880 --> 00:00:38,640
+a bunch of different tips and tricks to
+
+
+19
+00:00:38,640 --> 00:00:40,399
+make you more productive with git but if
+
+
+20
+00:00:40,399 --> 00:00:42,000
+you're new to git i just released a
+
+
+21
+00:00:42,000 --> 00:00:44,000
+short course on fire fireship io that's
+
+
+22
+00:00:44,000 --> 00:00:45,920
+designed as a modern learning path to
+
+
+23
+00:00:45,920 --> 00:00:47,920
+get you started with git and github it
+
+
+24
+00:00:47,920 --> 00:00:49,680
+contains a bunch of short videos along
+
+
+25
+00:00:49,680 --> 00:00:51,920
+with exercises to transform you into a
+
+
+26
+00:00:51,920 --> 00:00:53,760
+professional git user quickly this
+
+
+27
+00:00:53,760 --> 00:00:55,680
+content is supported by viewers like you
+
+
+28
+00:00:55,680 --> 00:00:57,280
+and i want to send a huge thank you to
+
+
+29
+00:00:57,280 --> 00:00:58,960
+everybody out there who's already a pro
+
+
+30
+00:00:58,960 --> 00:01:01,039
+member so to get started i'm assuming
+
+
+31
+00:01:01,039 --> 00:01:02,719
+you know the basics of git like you know
+
+
+32
+00:01:02,719 --> 00:01:04,559
+how to do a git ad followed by a git
+
+
+33
+00:01:04,559 --> 00:01:06,720
+commit to save a snapshot of your code
+
+
+34
+00:01:06,720 --> 00:01:08,080
+that's usually the first thing you learn
+
+
+35
+00:01:08,080 --> 00:01:10,080
+in git but there's actually a better way
+
+
+36
+00:01:10,080 --> 00:01:11,920
+to get the job done you can get rid of
+
+
+37
+00:01:11,920 --> 00:01:14,400
+the git add and go straight to commit by
+
+
+38
+00:01:14,400 --> 00:01:16,320
+using the am flag this will
+
+
+39
+00:01:16,320 --> 00:01:18,240
+automatically add all the files in the
+
+
+40
+00:01:18,240 --> 00:01:20,000
+current working directory that's a nice
+
+
+41
+00:01:20,000 --> 00:01:21,680
+improvement but there's actually an even
+
+
+42
+00:01:21,680 --> 00:01:23,360
+more concise way to get the job done
+
+
+43
+00:01:23,360 --> 00:01:25,680
+your git config provides a way to create
+
+
+44
+00:01:25,680 --> 00:01:27,680
+aliases which are commonly used to
+
+
+45
+00:01:27,680 --> 00:01:29,600
+shorten existing commands or create your
+
+
+46
+00:01:29,600 --> 00:01:31,759
+own new custom commands for example we
+
+
+47
+00:01:31,759 --> 00:01:34,000
+might create an alias called ac that
+
+
+48
+00:01:34,000 --> 00:01:35,920
+runs the add and commit command with
+
+
+49
+00:01:35,920 --> 00:01:37,600
+just two letters that allows us to get
+
+
+50
+00:01:37,600 --> 00:01:39,680
+things done faster but sometimes going
+
+
+51
+00:01:39,680 --> 00:01:42,159
+fast leads to mistakes clearly mistakes
+
+
+52
+00:01:42,159 --> 00:01:43,920
+were made what if you made a typo on
+
+
+53
+00:01:43,920 --> 00:01:45,680
+your last commit message instead of
+
+
+54
+00:01:45,680 --> 00:01:47,680
+resetting and creating a new commit the
+
+
+55
+00:01:47,680 --> 00:01:49,520
+amend flag followed by a new message
+
+
+56
+00:01:49,520 --> 00:01:51,680
+will simply update the latest commit or
+
+
+57
+00:01:51,680 --> 00:01:53,600
+maybe you forgot to include or stage a
+
+
+58
+00:01:53,600 --> 00:01:55,360
+couple files with your last commit you
+
+
+59
+00:01:55,360 --> 00:01:57,040
+can also update the last commit with new
+
+
+60
+00:01:57,040 --> 00:01:59,200
+files by using the amend flag and if you
+
+
+61
+00:01:59,200 --> 00:02:00,960
+want to keep the same commit message add
+
+
+62
+00:02:00,960 --> 00:02:03,119
+the no edit flag as well but keep in
+
+
+63
+00:02:03,119 --> 00:02:04,799
+mind this only really works if you
+
+
+64
+00:02:04,799 --> 00:02:06,399
+haven't already pushed your code to a
+
+
+65
+00:02:06,399 --> 00:02:08,560
+remote repository unless you like to
+
+
+66
+00:02:08,560 --> 00:02:10,560
+live dangerously in which case you can
+
+
+67
+00:02:10,560 --> 00:02:12,959
+do a git push with the force flag this
+
+
+68
+00:02:12,959 --> 00:02:14,720
+will overwrite the remote commit with
+
+
+69
+00:02:14,720 --> 00:02:16,879
+the state of your local code however if
+
+
+70
+00:02:16,879 --> 00:02:18,239
+there are commits on the remote branch
+
+
+71
+00:02:18,239 --> 00:02:19,840
+that you don't have you will lose them
+
+
+72
+00:02:19,840 --> 00:02:21,680
+forever and your co-workers might not be
+
+
+73
+00:02:21,680 --> 00:02:23,440
+too happy about that don't make me swing
+
+
+74
+00:02:23,440 --> 00:02:25,040
+on you bro but what happens if you push
+
+
+75
+00:02:25,040 --> 00:02:27,200
+some code to a remote repository then
+
+
+76
+00:02:27,200 --> 00:02:29,040
+realize it's complete garbage and never
+
+
+77
+00:02:29,040 --> 00:02:29,920
+should have been there in the first
+
+
+78
+00:02:29,920 --> 00:02:32,000
+place the git revert command allows you
+
+
+79
+00:02:32,000 --> 00:02:34,000
+to take one commit and go back to the
+
+
+80
+00:02:34,000 --> 00:02:35,599
+state that was there previously it's
+
+
+81
+00:02:35,599 --> 00:02:37,280
+kind of like an undo but it doesn't
+
+
+82
+00:02:37,280 --> 00:02:38,800
+remove the original commit from the
+
+
+83
+00:02:38,800 --> 00:02:40,640
+history instead it just goes back to the
+
+
+84
+00:02:40,640 --> 00:02:42,400
+original state and that's much easier
+
+
+85
+00:02:42,400 --> 00:02:44,080
+than trying to put things back together
+
+
+86
+00:02:44,080 --> 00:02:46,080
+like a trauma surgeon
+
+
+87
+00:02:46,080 --> 00:02:47,840
+too much blood i can't see a thing in
+
+
+88
+00:02:47,840 --> 00:02:49,519
+other cases you may need to work on a
+
+
+89
+00:02:49,519 --> 00:02:51,760
+repo but not have access to your local
+
+
+90
+00:02:51,760 --> 00:02:53,040
+machine if you're at your grandma's
+
+
+91
+00:02:53,040 --> 00:02:54,800
+house without your laptop you can use
+
+
+92
+00:02:54,800 --> 00:02:56,800
+any computer that has a web browser go
+
+
+93
+00:02:56,800 --> 00:02:58,400
+to github and find the repo that you
+
+
+94
+00:02:58,400 --> 00:03:00,159
+want to work on then hit the period key
+
+
+95
+00:03:00,159 --> 00:03:02,239
+on your keyboard and like magic it pulls
+
+
+96
+00:03:02,239 --> 00:03:04,239
+up a browser-based version of vs code
+
+
+97
+00:03:04,239 --> 00:03:05,680
+where you can make edits submit pull
+
+
+98
+00:03:05,680 --> 00:03:07,519
+requests and do almost anything else you
+
+
+99
+00:03:07,519 --> 00:03:09,599
+could do locally well except for run the
+
+
+100
+00:03:09,599 --> 00:03:11,360
+terminal if you do need to run terminal
+
+
+101
+00:03:11,360 --> 00:03:13,360
+commands you can set up a github code
+
+
+102
+00:03:13,360 --> 00:03:15,040
+space in the cloud which will give you
+
+
+103
+00:03:15,040 --> 00:03:16,800
+the full power of vs code and is likely
+
+
+104
+00:03:16,800 --> 00:03:18,879
+much faster than your grandma's computer
+
+
+105
+00:03:18,879 --> 00:03:20,400
+but now let's switch gears to one of my
+
+
+106
+00:03:20,400 --> 00:03:22,400
+favorite git commands stash have you
+
+
+107
+00:03:22,400 --> 00:03:24,159
+ever spent time working on some changes
+
+
+108
+00:03:24,159 --> 00:03:25,920
+that almost work but they can't really
+
+
+109
+00:03:25,920 --> 00:03:27,280
+be committed yet because they break
+
+
+110
+00:03:27,280 --> 00:03:28,799
+everything else or maybe it's just
+
+
+111
+00:03:28,799 --> 00:03:30,319
+really sloppy and you don't want all
+
+
+112
+00:03:30,319 --> 00:03:32,319
+your friends to see it yet git stash
+
+
+113
+00:03:32,319 --> 00:03:33,680
+will remove the changes from your
+
+
+114
+00:03:33,680 --> 00:03:35,599
+current working directory and save them
+
+
+115
+00:03:35,599 --> 00:03:37,519
+for later use without committing them to
+
+
+116
+00:03:37,519 --> 00:03:39,840
+the repo the simple way to use it is get
+
+
+117
+00:03:39,840 --> 00:03:41,760
+stash and then get pop when you're ready
+
+
+118
+00:03:41,760 --> 00:03:43,760
+to add those changes back into your code
+
+
+119
+00:03:43,760 --> 00:03:45,599
+but if you use the command a lot you can
+
+
+120
+00:03:45,599 --> 00:03:48,480
+use git stash save followed by a name to
+
+
+121
+00:03:48,480 --> 00:03:50,080
+reference it later then when you're
+
+
+122
+00:03:50,080 --> 00:03:52,239
+ready to work on it again use git stash
+
+
+123
+00:03:52,239 --> 00:03:54,720
+list to find it then git stash apply
+
+
+124
+00:03:54,720 --> 00:03:56,879
+with the corresponding index to use it
+
+
+125
+00:03:56,879 --> 00:03:58,239
+now if you want to use a stash at
+
+
+126
+00:03:58,239 --> 00:04:00,480
+grandma's house you're pretty much sol
+
+
+127
+00:04:00,480 --> 00:04:02,720
+unless you use a github code space in
+
+
+128
+00:04:02,720 --> 00:04:04,799
+which case your stashes would be saved
+
+
+129
+00:04:04,799 --> 00:04:06,640
+in the cloud that's pretty cool but now
+
+
+130
+00:04:06,640 --> 00:04:08,400
+i have a public service announcement for
+
+
+131
+00:04:08,400 --> 00:04:09,920
+developers in the modern era
+
+
+132
+00:04:09,920 --> 00:04:12,159
+historically the default branch in git
+
+
+133
+00:04:12,159 --> 00:04:14,000
+is called the master branch but post
+
+
+134
+00:04:14,000 --> 00:04:16,000
+2020 this term is no longer the
+
+
+135
+00:04:16,000 --> 00:04:17,919
+preferred nomenclature refer to it as
+
+
+136
+00:04:17,919 --> 00:04:20,320
+main mega or mucho to stay out of
+
+
+137
+00:04:20,320 --> 00:04:22,720
+trouble to change it use get branch
+
+
+138
+00:04:22,720 --> 00:04:24,960
+followed by the m flag and rename it to
+
+
+139
+00:04:24,960 --> 00:04:26,960
+main or maybe get creative and invent
+
+
+140
+00:04:26,960 --> 00:04:28,479
+your own name now another command you're
+
+
+141
+00:04:28,479 --> 00:04:30,639
+probably familiar with is git log to
+
+
+142
+00:04:30,639 --> 00:04:32,639
+view a history of commits the problem
+
+
+143
+00:04:32,639 --> 00:04:34,479
+with this command is that the output is
+
+
+144
+00:04:34,479 --> 00:04:36,080
+harder and harder to read as your
+
+
+145
+00:04:36,080 --> 00:04:38,080
+project grows in complexity to make the
+
+
+146
+00:04:38,080 --> 00:04:40,080
+output more readable add the options of
+
+
+147
+00:04:40,080 --> 00:04:42,800
+graph one line and decorate you can now
+
+
+148
+00:04:42,800 --> 00:04:44,880
+see a more concise breakdown and how
+
+
+149
+00:04:44,880 --> 00:04:46,960
+different branches connect together but
+
+
+150
+00:04:46,960 --> 00:04:48,479
+if you're looking at the git log there's
+
+
+151
+00:04:48,479 --> 00:04:49,759
+likely a commit in there that's
+
+
+152
+00:04:49,759 --> 00:04:52,240
+currently breaking your app get bisect
+
+
+153
+00:04:52,240 --> 00:04:54,160
+allows you to start from a commit that
+
+
+154
+00:04:54,160 --> 00:04:56,080
+is known to have a bug likely the most
+
+
+155
+00:04:56,080 --> 00:04:57,840
+recent commit but you knew that the app
+
+
+156
+00:04:57,840 --> 00:04:59,600
+was working a few hours ago you can
+
+
+157
+00:04:59,600 --> 00:05:01,680
+point bisect to the last known working
+
+
+158
+00:05:01,680 --> 00:05:03,919
+commit then it performs a binary search
+
+
+159
+00:05:03,919 --> 00:05:05,360
+to walk you through each commit in
+
+
+160
+00:05:05,360 --> 00:05:07,680
+between if the commit looks good type
+
+
+161
+00:05:07,680 --> 00:05:09,840
+bisect good to move on to the next
+
+
+162
+00:05:09,840 --> 00:05:11,360
+commit eventually you'll find the bad
+
+
+163
+00:05:11,360 --> 00:05:13,280
+one and know exactly which code needs to
+
+
+164
+00:05:13,280 --> 00:05:15,360
+be fixed another advanced git technique
+
+
+165
+00:05:15,360 --> 00:05:17,199
+that every developer should know is how
+
+
+166
+00:05:17,199 --> 00:05:19,120
+to squash their commits imagine you're
+
+
+167
+00:05:19,120 --> 00:05:20,720
+working on a feature branch that has
+
+
+168
+00:05:20,720 --> 00:05:22,320
+three different commits and you're ready
+
+
+169
+00:05:22,320 --> 00:05:24,240
+to merge it into the master branch i
+
+
+170
+00:05:24,240 --> 00:05:26,240
+mean main branch but all these commit
+
+
+171
+00:05:26,240 --> 00:05:27,840
+messages are kind of pointless and it
+
+
+172
+00:05:27,840 --> 00:05:29,280
+would be better if it was just one
+
+
+173
+00:05:29,280 --> 00:05:30,880
+single commit we can do that from our
+
+
+174
+00:05:30,880 --> 00:05:33,039
+feature branch by running git rebase
+
+
+175
+00:05:33,039 --> 00:05:35,199
+with the interactive option for the main
+
+
+176
+00:05:35,199 --> 00:05:37,120
+branch that'll pull up a file with a
+
+
+177
+00:05:37,120 --> 00:05:38,880
+list of commits on this branch if we
+
+
+178
+00:05:38,880 --> 00:05:40,720
+want to use a commit we just use the
+
+
+179
+00:05:40,720 --> 00:05:42,240
+pick command we can also change a
+
+
+180
+00:05:42,240 --> 00:05:44,560
+message using the reword command or we
+
+
+181
+00:05:44,560 --> 00:05:46,880
+can combine or squash everything into
+
+
+182
+00:05:46,880 --> 00:05:49,360
+the original commit using squash go
+
+
+183
+00:05:49,360 --> 00:05:51,440
+ahead and save the file and close it git
+
+
+184
+00:05:51,440 --> 00:05:53,360
+will pull up another file prompting you
+
+
+185
+00:05:53,360 --> 00:05:55,280
+to update the commit message which by
+
+
+186
+00:05:55,280 --> 00:05:57,120
+default will be a combination of all the
+
+
+187
+00:05:57,120 --> 00:05:58,800
+messages that you just squashed and if
+
+
+188
+00:05:58,800 --> 00:06:00,000
+you don't like all the messages to be
+
+
+189
+00:06:00,000 --> 00:06:02,000
+combined you can use fix up instead of
+
+
+190
+00:06:02,000 --> 00:06:04,400
+squash when doing the rebase to be even
+
+
+191
+00:06:04,400 --> 00:06:06,880
+more productive you can also use fix up
+
+
+192
+00:06:06,880 --> 00:06:09,039
+and squash flags when making commits on
+
+
+193
+00:06:09,039 --> 00:06:10,720
+your branch when you do that it tells
+
+
+194
+00:06:10,720 --> 00:06:12,639
+git in advance that you want to squash
+
+
+195
+00:06:12,639 --> 00:06:14,800
+them so when you go to do a rebase with
+
+
+196
+00:06:14,800 --> 00:06:16,960
+the auto squash flag it can handle all
+
+
+197
+00:06:16,960 --> 00:06:18,960
+the squashing automatically now if you
+
+
+198
+00:06:18,960 --> 00:06:20,639
+maintain a repo one tool that can be
+
+
+199
+00:06:20,639 --> 00:06:22,960
+very useful is get hooks whenever you
+
+
+200
+00:06:22,960 --> 00:06:24,960
+perform an operation with git like a
+
+
+201
+00:06:24,960 --> 00:06:27,360
+commit for example it creates an event
+
+
+202
+00:06:27,360 --> 00:06:29,440
+and hooks allow you to run some code
+
+
+203
+00:06:29,440 --> 00:06:31,440
+either before or after that event
+
+
+204
+00:06:31,440 --> 00:06:33,199
+happens if you look in the hidden git
+
+
+205
+00:06:33,199 --> 00:06:35,120
+directory you'll see a directory there
+
+
+206
+00:06:35,120 --> 00:06:36,720
+called hooks and inside of it you'll
+
+
+207
+00:06:36,720 --> 00:06:38,319
+find a bunch of different scripts that
+
+
+208
+00:06:38,319 --> 00:06:40,160
+can be configured to run when different
+
+
+209
+00:06:40,160 --> 00:06:42,080
+events in git happen if you happen to be
+
+
+210
+00:06:42,080 --> 00:06:44,000
+a javascript developer there's a package
+
+
+211
+00:06:44,000 --> 00:06:45,919
+called husky that makes it much easier
+
+
+212
+00:06:45,919 --> 00:06:48,240
+to configure git hooks for example you
+
+
+213
+00:06:48,240 --> 00:06:50,400
+might install it with npm then create a
+
+
+214
+00:06:50,400 --> 00:06:52,560
+script that will validate or link your
+
+
+215
+00:06:52,560 --> 00:06:54,560
+code before each commit and that can
+
+
+216
+00:06:54,560 --> 00:06:56,720
+help improve your overall code quality
+
+
+217
+00:06:56,720 --> 00:06:58,319
+to wrap things up let's talk about
+
+
+218
+00:06:58,319 --> 00:07:00,080
+deleting things let's imagine you have a
+
+
+219
+00:07:00,080 --> 00:07:02,400
+remote repository on github than a local
+
+
+220
+00:07:02,400 --> 00:07:04,000
+version on your machine that you've been
+
+
+221
+00:07:04,000 --> 00:07:05,680
+making changes to but things haven't
+
+
+222
+00:07:05,680 --> 00:07:07,280
+been going too well and you just want to
+
+
+223
+00:07:07,280 --> 00:07:08,880
+go back to the original state and the
+
+
+224
+00:07:08,880 --> 00:07:11,440
+remote repo first do a git fetch to grab
+
+
+225
+00:07:11,440 --> 00:07:14,000
+the latest code in the remote repo then
+
+
+226
+00:07:14,000 --> 00:07:16,800
+use reset with the hard flag to override
+
+
+227
+00:07:16,800 --> 00:07:18,960
+your local code with the remote code but
+
+
+228
+00:07:18,960 --> 00:07:20,960
+be careful your local changes will be
+
+
+229
+00:07:20,960 --> 00:07:23,120
+lost forever but you might still be left
+
+
+230
+00:07:23,120 --> 00:07:25,280
+with some random untracked files or
+
+
+231
+00:07:25,280 --> 00:07:27,039
+build artifacts here and there use the
+
+
+232
+00:07:27,039 --> 00:07:29,039
+get clean command to remove those files
+
+
+233
+00:07:29,039 --> 00:07:30,720
+as well but if you're sick of get at
+
+
+234
+00:07:30,720 --> 00:07:32,560
+this point and want to just get rid of
+
+
+235
+00:07:32,560 --> 00:07:34,080
+it all together maybe you want to try
+
+
+236
+00:07:34,080 --> 00:07:36,240
+out apache subversion to change things
+
+
+237
+00:07:36,240 --> 00:07:37,840
+up a bit all you have to do is delete
+
+
+238
+00:07:37,840 --> 00:07:39,599
+that hidden git folder and you're on
+
+
+239
+00:07:39,599 --> 00:07:41,440
+your own again oh and there's one other
+
+
+240
+00:07:41,440 --> 00:07:43,199
+tip i almost forgot about that comes in
+
+
+241
+00:07:43,199 --> 00:07:44,960
+really handy if you recently switched
+
+
+242
+00:07:44,960 --> 00:07:46,960
+out of a branch and forgot its name you
+
+
+243
+00:07:46,960 --> 00:07:49,360
+can use git checkout followed by a dash
+
+
+244
+00:07:49,360 --> 00:07:51,280
+to go directly back into the previous
+
+
+245
+00:07:51,280 --> 00:07:52,800
+branch that you were working on i'm
+
+
+246
+00:07:52,800 --> 00:07:54,080
+going to go ahead and wrap things up
+
+
+247
+00:07:54,080 --> 00:07:55,680
+there if you have any additional git
+
+
+248
+00:07:55,680 --> 00:07:57,199
+tips make sure to leave them in the
+
+
+249
+00:07:57,199 --> 00:07:58,879
+comments and if you want to master the
+
+
+250
+00:07:58,879 --> 00:08:00,800
+fundamentals of git step by step check
+
+
+251
+00:08:00,800 --> 00:08:02,720
+out the full course on fire ship io
+
+
+252
+00:08:02,720 --> 00:08:04,479
+thanks for watching and i will see you
+
+
+253
+00:08:04,479 --> 00:08:07,960
+in the next one
+
+

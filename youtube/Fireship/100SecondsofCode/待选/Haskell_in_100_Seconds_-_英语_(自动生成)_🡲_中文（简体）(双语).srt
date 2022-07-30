@@ -1,0 +1,194 @@
+1
+00:00:00,160 --> 00:00:03,840
+haskell a statically typed general-purpose language made famous for
+haskell 一种静态类型的通用语言，以
+
+2
+00:00:03,840 --> 00:00:07,440
+expanding the minds of developers into the functional programming paradigm you
+将开发人员的思想扩展到函数式编程范式而闻名，你
+
+3
+00:00:07,440 --> 00:00:11,599
+see haskell is a purely functional language based on lambda calculus which
+看到 haskell 是一种基于 lambda 演算的纯函数式语言，这
+
+4
+00:00:11,599 --> 00:00:15,759
+means a function always produces the same output given the same input unlike
+意味着一个函数在相同的输入下总是产生相同的输出，这
+
+5
+00:00:15,759 --> 00:00:19,279
+an imperative language your code can't modify the inputs or produce side
+与命令式语言不同 你的代码不能修改输入或产生
+
+6
+00:00:19,279 --> 00:00:22,960
+effects that would otherwise change the behavior of the application it was first
+副作用，否则会改变应用程序的行为它最初
+
+7
+00:00:22,960 --> 00:00:27,519
+developed in 1987 and named after logician haskell curry whose work had a
+是在 1987 年开发的，以逻辑学家 haskell curry 的名字命名，他的工作
+
+8
+00:00:27,519 --> 00:00:30,720
+massive influence on the functional programming world it's been used to
+对函数式编程世界产生了巨大的影响，它被用来
+
+9
+00:00:30,720 --> 00:00:34,640
+build a wide variety of server-side applications like the hasura api
+构建一个 各种各样的服务器端应用程序，例如 facebook 上的 hasura api
+
+10
+00:00:34,640 --> 00:00:39,360
+platform spam filtering at facebook and compilers for other languages like elm
+平台垃圾邮件过滤和其他语言（例如 elm
+
+11
+00:00:39,360 --> 00:00:42,960
+and purescript and it's responsible for a countless number of blog posts about
+和 purescript）的编译器，它负责无数关于
+
+12
+00:00:42,960 --> 00:00:46,960
+monads in haskell you write declarative code where the program is a single
+haskell 中 monad 的博客文章 你编写声明性代码，程序是单个
+
+13
+00:00:46,960 --> 00:00:50,960
+expression that is executed by evaluating that expression it also uses
+表达式 通过评估该表达式执行它也使用
+
+14
+00:00:50,960 --> 00:00:55,039
+lazy evaluation which means an expression is not evaluated until it's
+la  zy 评估，这意味着表达式在被函数实际使用之前不会被评估，
+
+15
+00:00:55,039 --> 00:00:58,480
+actually used by a function this can result in big performance gains but
+这可能会带来巨大的性能提升，但
+
+16
+00:00:58,480 --> 00:01:02,719
+unpredictable memory use at runtime all data in a haskell program is immutable
+在运行时内存使用不可预测Haskell 程序中的所有数据都是不可变的
+
+17
+00:01:02,719 --> 00:01:06,560
+which produces a lot of memory garbage so it contains a garbage collector to
+，这会产生大量内存垃圾，因此它包含垃圾收集器
+
+18
+00:01:06,560 --> 00:01:10,640
+clean things up to get started install the glasgow haskell compiler then create
+清理一切以开始安装 glasgow haskell 编译器然后创建
+
+19
+00:01:10,640 --> 00:01:14,880
+a file ending in dot hs we don't work with statements here only expressions
+一个以点 hs 结尾的文件我们不使用这里的语句只有表达式
+
+20
+00:01:14,880 --> 00:01:18,799
+which is code that will always evaluate to a value create a string with double
+，它是总是评估为一个值的代码创建一个带双引号的字符串
+
+21
+00:01:18,799 --> 00:01:22,479
+quotes then give it a name with the equal sign the value is immutable and
+然后给它一个 带等号的名称 该值是不可变的，
+
+22
+00:01:22,479 --> 00:01:25,680
+can never be changed the type will automatically be inferred or we can
+永远不能更改 类型将自动推断，或者我们现在可以
+
+23
+00:01:25,680 --> 00:01:30,000
+strongly type it with a double colon as a list of characters now to define a
+用双冒号作为字符列表强输入它来定义一个
+
+24
+00:01:30,000 --> 00:01:33,520
+function start with a name followed by the arguments that you want to pass to
+函数，该函数以名称开头，后跟您的参数 想在右边传递给
+
+25
+00:01:33,520 --> 00:01:36,960
+it on the right side define the logic of the function and it will automatically
+它定义函数的逻辑，它会
+
+26
+00:01:36,960 --> 00:01:40,560
+return a value based on the result of the expression we can also statically
+根据表达式的结果自动返回一个值，我们也可以 o
+
+27
+00:01:40,560 --> 00:01:44,399
+type it using an arrow to separate the argument and return value we can call
+使用箭头静态键入它来分隔参数和返回值我们可以
+
+28
+00:01:44,399 --> 00:01:48,240
+the function by referencing its name with the arguments all values including
+通过使用参数引用它的名称来调用函数所有值包括
+
+29
+00:01:48,240 --> 00:01:52,079
+functions are first class which means they can be passed as arguments to other
+函数都是第一类这意味着
+
+30
+00:01:52,079 --> 00:01:55,680
+functions if we try to print the result to the standard output we get an error
+如果我们尝试打印它们可以作为参数传递给其他函数 结果到标准输出我们得到一个错误
+
+31
+00:01:55,680 --> 00:01:59,280
+that's because working with io creates a side effect to write a program that
+，这是因为使用 io 会产生一个副作用来编写一个
+
+32
+00:01:59,280 --> 00:02:03,200
+actually does something we write a main function with a do block here we can
+实际执行某些操作的程序我们在这里编写一个带有 do 块的主函数我们可以
+
+33
+00:02:03,200 --> 00:02:06,640
+chain together a sequence of actions where the side effects are abstracted
+将一系列动作链接在一起，其中副作用被抽象出来
+
+34
+00:02:06,640 --> 00:02:10,959
+away made possible by a mathematical concept known as the monad which is
+被称为 monad 的数学概念
+
+35
+00:02:10,959 --> 00:02:14,800
+basically a wrapper that can make functional code more modular now to run
+使之成为可能
+
+36
+00:02:14,800 --> 00:02:18,160
+your code you can use the interactive interpreter or compile it to an
+
+
+37
+00:02:18,160 --> 00:02:23,120
+executable by running ghc make this has been haskell in 100 seconds hit the like
+秒点击喜欢
+
+38
+00:02:23,120 --> 00:02:26,319
+button and subscribe if you want to see more short videos like this thanks for
+按钮并订阅如果您想看到更多这样的短视频感谢
+
+39
+00:02:26,319 --> 00:02:31,280
+watching and i will see you in the next one
+观看，我会在下一个看到你

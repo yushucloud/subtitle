@@ -1,0 +1,229 @@
+1
+00:00:00,080 --> 00:00:03,919
+one million subscribers a youtube milestone i never expected to reach but
+100 万订阅者 这是我从未想过会达到的 youtube 里程碑，但这
+
+2
+00:00:03,919 --> 00:00:08,320
+here's the story of how i got here in 2017 i started the channel with no video
+是我在 2017 年如何到达这里的故事 我在没有视频
+
+3
+00:00:08,320 --> 00:00:12,160
+editing skills and zero expectations i hated the sound of my own voice and have
+编辑技能和零期望的情况下开始了这个频道
+
+4
+00:00:12,160 --> 00:00:15,440
+been told i have the personality of a carrot but i was like screw it i'm going
+一个胡萝卜，但我就像搞砸了，我
+
+5
+00:00:15,440 --> 00:00:18,880
+to try youtube and probably fail and disappoint my mom again in the process i
+要去尝试 youtube，可能会失败，并且在这个过程中再次让我妈妈失望我
+
+6
+00:00:18,880 --> 00:00:22,560
+found there was a need for developer content around angular and firebase so i
+发现需要围绕 angular 和 firebase 的开发人员内容，所以我
+
+7
+00:00:22,560 --> 00:00:26,160
+created some really bad videos that were very useful to this highly specialized
+制作了一些非常糟糕的视频对这个高度专业化的观众很有用
+
+8
+00:00:26,160 --> 00:00:30,880
+audience welcome to angularfirebase you create a new app with the angular cli
+欢迎来到 angularfirebase 你用 angular cli 创建一个新的应用程序
+
+9
+00:00:30,880 --> 00:00:34,480
+then these files are going to be here by default i even remember my very first
+然后这些文件将默认在这里我什至记得我的第一条
+
+10
+00:00:34,480 --> 00:00:37,840
+comment that motivated me to keep pushing forward in the early game the
+评论激励我在早期游戏中继续前进
+
+11
+00:00:37,840 --> 00:00:41,600
+key is to find a specialized unmet need in the market then create the useful
+关键是 在市场上找到一个未满足的特殊需求，然后创建观众正在寻找的有用的
+
+12
+00:00:41,600 --> 00:00:44,879
+educational content that audience is looking for if you're consistent
+教育内容，如果你坚持
+
+13
+00:00:44,879 --> 00:00:48,399
+uploading a new video say once a week that should take you to about 10 000
+上传一个新视频，比如每周一次，应该不 在大约一年左右的时间里将您吸引到大约 10 000 个
+
+14
+00:00:48,399 --> 00:00:52,399
+subscribers in about a year or so but then you'll hit a ceiling by the mid
+订阅者，但是您将在
+
+15
+00:00:52,399 --> 00:00:56,160
+game my video editing skills were much improved to grow further i created
+游戏
+
+16
+00:00:56,160 --> 00:01:00,800
+videos targeted at a wider audience my first real banger was firebase basics my
+中期达到上限 我的
+
+17
+00:01:00,800 --> 00:01:04,479
+philosophy has always been to make the next video better than the last one it
+理念一直是让下一个视频比上一个更好
+
+18
+00:01:04,479 --> 00:01:08,000
+takes a lot of time and experimentation to really optimize the content for what
+需要大量时间和实验才能真正优化内容以
+
+19
+00:01:08,000 --> 00:01:11,280
+your audience is looking for listen to feedback and give the audience what they
+满足观众的需求 听取反馈并为观众提供他们
+
+20
+00:01:11,280 --> 00:01:14,320
+want like i don't show my face in my videos because my handsomeness is
+想要的东西，就像我不喜欢 在我的视频中展示我的脸，因为我的英俊会
+
+21
+00:01:14,320 --> 00:01:17,680
+distracting and it forces me to find useful graphics that actually represent
+分散注意力，它迫使我找到有用的图形，实际上代表
+
+22
+00:01:17,680 --> 00:01:20,720
+what i'm talking about what you don't want to do is copy somebody else not
+我在说什么你不想做的是复制别人
+
+23
+00:01:20,720 --> 00:01:23,840
+only will that eat away at your soul but in order to grow on youtube you really
+不仅会侵蚀你的灵魂，而且为了在 youtube 上成长，你真的
+
+24
+00:01:23,840 --> 00:01:27,640
+need to find the thing that makes you unique to reach 100k subscribers it took
+需要找到让你独一无二的东西才能达到 10 万订阅者花了
+
+25
+00:01:27,640 --> 00:01:32,880
+675 days and 150 uploads the late game is where things get difficult you'll be
+675 天和 150 次上传 游戏后期是事情变得困难的地方，你会
+
+26
+00:01:32,880 --> 00:01:36,400
+extremely burned out at this point and 10xing the road to 100k might seem
+非常精疲力尽 尽管公式很简单，但这一点和10xing 通往 100k 的道路似乎
+
+27
+00:01:36,400 --> 00:01:40,400
+impossible to keep growing though the formula is simple keep uploading and
+不可能继续增长继续上传并
+
+28
+00:01:40,400 --> 00:01:43,360
+keep getting better at this point i started taking a more scientific
+不断变得更好 在这一点上，我开始采取更科学的
+
+29
+00:01:43,360 --> 00:01:47,520
+approach by optimizing two metrics the click-through rating and the watch time
+方法，优化点击率和观看时间这两个指标
+
+30
+00:01:47,520 --> 00:01:51,360
+to optimize clicks you need a good title and thumbnail that's more of an art form
+来优化 点击你需要一个好的标题和缩略图，这更像是一种艺术形式
+
+31
+00:01:51,360 --> 00:01:54,560
+than anything you need to know what your audience wants and how to surprise them
+你需要知道你的观众想要什么，以及如何
+
+32
+00:01:54,560 --> 00:01:57,600
+with something creative for me that comes easy because i also have a lot of
+用对我来说有创意的东西来给他们惊喜，这很容易，因为我也有很多
+
+33
+00:01:57,600 --> 00:02:01,520
+fun and get really excited about every video i create for watch time i have a
+乐趣并且真的很兴奋我为观看时间创建的每个视频我都有一个
+
+34
+00:02:01,520 --> 00:02:04,640
+formula with three ingredients most importantly the content needs to be
+包含三个要素的公式最重要的内容需要具有
+
+35
+00:02:04,640 --> 00:02:08,479
+educational and useful the second ingredient is storytelling there are so
+教育性和有用性第二个要素是讲故事有
+
+36
+00:02:08,479 --> 00:02:11,760
+many interesting stories to tell about the history of software and the people
+很多有趣的故事可以讲述软件的历史及其
+
+37
+00:02:11,760 --> 00:02:15,520
+behind it the final ingredient is humor i can tell jokes that are actually
+背后的人最终要素 是幽默吗？我可以讲笑话，这些笑话实际上是
+
+38
+00:02:15,520 --> 00:02:18,720
+encoded messages of things that i couldn't say otherwise without sounding
+对我无法说出来的
+
+39
+00:02:18,720 --> 00:02:22,480
+like a total dick this has been how to get 1 million youtube subscribers in 100
+事情的编码信息 老兄，这就是如何在 100 秒内获得 100 万 youtube 订阅者
+
+40
+00:02:22,480 --> 00:02:25,760
+seconds and i want to send a huge thank you to everybody who supported my
+，我想向多年来支持我频道的每个人表示衷心的感谢，这对我
+
+41
+00:02:25,760 --> 00:02:28,879
+channel over the years it truly means more to me than you'll ever know i've
+来说真的比你所
+
+42
+00:02:28,879 --> 00:02:32,239
+learned so much met amazing people and have the rare privilege of actually
+知道的更重要 很多人遇到了很棒的人，并有幸真正
+
+43
+00:02:32,239 --> 00:02:35,920
+enjoying what i do for work and now we get to start down the road to 10 million
+享受我为工作所做的事情，现在我们开始走向 1000 万
+
+44
+00:02:35,920 --> 00:02:39,360
+i'm not sure how we'll get there yet but we will get there or die trying thanks
+我不知道我们将如何到达那里，但我们会到达那里或死去尝试谢谢
+
+45
+00:02:39,360 --> 00:02:43,770
+for watching and i will see you in the next one
+观看，我会在下一个
+
+46
+00:02:43,770 --> 00:02:46,020
+[Music]
+[音乐]中见到你

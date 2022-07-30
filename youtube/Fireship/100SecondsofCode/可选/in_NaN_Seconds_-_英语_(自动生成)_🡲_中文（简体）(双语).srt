@@ -1,0 +1,214 @@
+1
+00:00:01,760 --> 00:00:05,200
+the question mark it's one of the most powerful characters in the javascript
+问号 它是 javascript 世界中最强大的字符之一
+
+2
+00:00:05,200 --> 00:00:09,679
+universe providing syntactic sugar in three awesome yet totally unrelated ways
+以三种令人敬畏但完全不相关的方式提供语法糖
+
+3
+00:00:09,679 --> 00:00:13,360
+first up we have the ternary operator the word ternary literally means
+首先我们有三元运算符三元这个词的字面意思是
+
+4
+00:00:13,360 --> 00:00:16,480
+composed of three parts using the question mark as our starting
+由三个部分组成使用问号作为
+
+5
+00:00:16,480 --> 00:00:20,240
+place we add a condition on the left side then on the right side
+我们添加的起点 左边的条件然后右边的
+
+6
+00:00:20,240 --> 00:00:23,519
+we add a value to a sign when the condition is truthy but if the
+我们在条件为真时为符号添加一个值，但如果
+
+7
+00:00:23,519 --> 00:00:28,160
+condition is falsy we add a colon to assign a different value the operator is
+条件为假，我们添加一个冒号来分配不同的值，该运算符
+
+8
+00:00:28,160 --> 00:00:32,160
+often used to replace a traditional if statement the code in a ternary
+通常用于替换传统的if 语句 三元
+
+9
+00:00:32,160 --> 00:00:35,520
+expression is far more concise but you might argue that it's much less
+表达式中的代码要简洁得多，但是您可能会争辩说它
+
+10
+00:00:35,520 --> 00:00:38,800
+readable than an if statement and you might be right that is until you
+比 if 语句的可读性要低得多，而且您可能是对的，直到您
+
+11
+00:00:38,800 --> 00:00:42,719
+need to assign a variable a statement like if is code that does
+需要为变量分配一个语句，例如 if 是执行
+
+12
+00:00:42,719 --> 00:00:45,680
+something it's imperative it begins with state then as the
+某些命令的代码，它以 state 然后随着
+
+13
+00:00:45,680 --> 00:00:50,079
+program's executed it mutates the state and takes multiple lines of code just to
+程序的执行，它会改变状态并使用多行代码来
+
+14
+00:00:50,079 --> 00:00:52,559
+assign a variable based on a simple condition
+根据一个简单的条件分配一个
+
+15
+00:00:52,559 --> 00:00:56,320
+the ternary operator on the other hand creates an expression which means that
+变量 另一方面， y 运算符创建一个表达式，这意味着
+
+16
+00:00:56,320 --> 00:00:59,600
+it produces a value that we can then assign to a variable
+它产生一个值，然后我们可以将其分配给一个变量。
+
+17
+00:00:59,600 --> 00:01:02,800
+this code is declarative it describes the state of the variable
+这段代码是声明性的，它描述了变量的状态，
+
+18
+00:01:02,800 --> 00:01:06,560
+as opposed to mutating it that's why we can use const here but require
+而不是改变它，这就是为什么我们可以在这里使用 const 但需要
+
+19
+00:01:06,560 --> 00:01:10,400
+let in the if statement declarative code is awesome because it can also be used
+let 在 if 语句中，声明性代码很棒，因为它也可以
+
+20
+00:01:10,400 --> 00:01:14,720
+in function arguments and in array and object literals but the question mark
+用于函数参数以及数组和对象字面量中，但是问号
+
+21
+00:01:14,720 --> 00:01:17,840
+isn't done there in 2020 an awesome new feature landed in
+在 2020 年还没有完成
+
+22
+00:01:17,840 --> 00:01:21,680
+javascript called optional chaining at some point you've likely written code
+可能编写的
+
+23
+00:01:21,680 --> 00:01:25,280
+that calls an object property that does not exist and when that happens it
+代码调用了一个不存在的对象属性，当这种情况发生时它
+
+24
+00:01:25,280 --> 00:01:27,840
+triggers an error at runtime you could write some code
+会在运行时触发一个错误，您可以编写一些代码
+
+25
+00:01:27,840 --> 00:01:30,560
+that asserts a property exists before calling it
+在调用它之前断言一个属性存在，
+
+26
+00:01:30,560 --> 00:01:34,240
+but this can get really ugly nowadays you can just insert a question mark
+但是现在这可能会变得非常丑陋，您可以
+
+27
+00:01:34,240 --> 00:01:37,360
+between the property name and the period between the next property
+在它们之间插入一个问号 如果父属性未定义，则属性名称和下一个属性之间的句
+
+28
+00:01:37,360 --> 00:01:41,200
+if the parent property is undefined it'll just return undefined instead of
+点将只返回未定义而不是
+
+29
+00:01:41,200 --> 00:01:44,079
+throwing an error that's a truly life-changing feature for
+引发错误 对于 javascript 开发人员来说，这是一项真正改变生活的功能，
+
+30
+00:01:44,079 --> 00:01:47,280
+the javascript developer but the question mark has one more trick
+但问号还有一个
+
+31
+00:01:47,280 --> 00:01:51,360
+up its sleeve nolish coalescing in many cases you may want to set a
+技巧 nolish 合并在许多情况下，您可能希望
+
+32
+00:01:51,360 --> 00:01:54,560
+default value for a missing variable or property name
+为缺少的变量或属性名称设置默认值，
+
+33
+00:01:54,560 --> 00:01:58,719
+you can easily do that with a logical or operator if the left side is falsy
+您可以轻松地使用逻辑或运算符如果左侧是假的，
+
+34
+00:01:58,719 --> 00:02:02,799
+then use the value on the right side but because javascript has a bunch of weird
+则使用右侧的值，但是因为 javascript 有一堆奇怪的
+
+35
+00:02:02,799 --> 00:02:06,799
+rules for what is truthy and falsey you may get weird results like an empty
+规则来判断什么是真假，你可能会得到奇怪的结果，比如空
+
+36
+00:02:06,799 --> 00:02:11,120
+string or zero being set to a default value because it resolves to falsey
+字符串或零被设置为默认值，因为它解决了 虚假
+
+37
+00:02:11,120 --> 00:02:14,959
+instead of logical or you can add a double question mark which works just
+而不是逻辑，或者您可以添加一个双问号，其工作方式
+
+38
+00:02:14,959 --> 00:02:18,000
+like logical or except undefined and null are the only
+与逻辑或除了 undefined 和 null 是
+
+39
+00:02:18,000 --> 00:02:21,360
+values that short circuit to the right side making the behavior of your code
+唯一短路到右侧的值，使您的代码的行为
+
+40
+00:02:21,360 --> 00:02:24,080
+much more predictable this has been the javascript question
+更加可预测这一直是 javascript
+
+41
+00:02:24,080 --> 00:02:26,800
+mark in 100 seconds if you want to see more short videos
+问号 在 100 秒内如果您想看更多这样的短视频，请
+
+42
+00:02:26,800 --> 00:02:29,599
+like this make sure to hit the like button and subscribe
+确保点击“赞”按钮并订阅
+
+43
+00:02:29,599 --> 00:02:34,480
+thanks for watching and i will see you in the next one
+感谢观看，我会在下一个看到你

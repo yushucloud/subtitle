@@ -1,0 +1,224 @@
+1
+00:00:00,160 --> 00:00:04,640
+unity a cross-platform game engine for building 2d and 3d experiences made
+unity 一个用于构建 2d 和 3d 体验的跨平台游戏引擎，以使
+
+2
+00:00:04,640 --> 00:00:08,240
+famous for democratizing the immense challenge of game development it was
+游戏开发的巨大挑战民主化而闻名，它
+
+3
+00:00:08,240 --> 00:00:12,880
+created in copenhagen denmark and first released in 2005. today it's the magic
+在丹麦哥本哈根创建并于 2005 年首次发布。如今，它是
+
+4
+00:00:12,880 --> 00:00:17,520
+behind many popular games like the 2d among us
+许多流行游戏背后的魔力，例如我们当中的 2d 和
+
+5
+00:00:17,520 --> 00:00:21,680
+the 3d monument valley augmented reality apps like pokemon go first-person
+3d 纪念碑谷 增强现实应用程序，例如 pokemon go 第一人称
+
+6
+00:00:21,680 --> 00:00:25,519
+shooters like escape from tarkov as well as interactive simulations and
+射击游戏，例如逃离塔科夫，以及
+
+7
+00:00:25,519 --> 00:00:29,439
+animations beyond the gaming industry the engine itself is written in c plus
+游戏行业之外的交互式模拟和动画引擎本身是用 c plus plus 编写的，
+
+8
+00:00:29,439 --> 00:00:32,960
+plus but allows developers to write their code in the more approachable c
+但允许开发人员用更平易近人的 c 语言编写代码
+
+9
+00:00:32,960 --> 00:00:36,719
+sharp in addition it provides a powerful graphical editor allowing you to draw
+此外，它还提供了一个强大的图形编辑器，允许您
+
+10
+00:00:36,719 --> 00:00:40,000
+shapes work with cameras and apply materials without having to write a
+使用相机绘制形状并应用材料，而无需编写
+
+11
+00:00:40,000 --> 00:00:44,000
+single line of code every game object can have a variety of components like a
+一行代码每个游戏对象都可以有各种组件，如
+
+12
+00:00:44,000 --> 00:00:48,239
+mesh to define its actual physical shape a mesh renderer to apply materials and
+网格来定义其实际物理形状 网格渲染器应用 物体的材质和
+
+13
+00:00:48,239 --> 00:00:52,239
+lighting to an object and physics components like rigidbody and colliders
+光照以及模拟物体的刚体和对撞机等物理组件
+
+14
+00:00:52,239 --> 00:00:56,239
+that simulate things like gravity and collisions in the real world and finally
+就像现实世界中的重力和碰撞一样，最后
+
+15
+00:00:56,239 --> 00:00:59,760
+you can extend an object with your own c sharp code to make it do something
+你可以用你自己的 c 语言代码扩展一个对象，让它做一些
+
+16
+00:00:59,760 --> 00:01:03,600
+interesting like take hit points when it runs into a bad guy to build your first
+有趣的事情，比如当它遇到一个坏人时获得生命值来构建你的第一个
+
+17
+00:01:03,600 --> 00:01:07,680
+video game right now install unity hub create a new project then open up the
+视频游戏现在安装统一集线器创建一个新项目，然后打开
+
+18
+00:01:07,680 --> 00:01:11,280
+editor you'll be greeted with a 3d scene that contains a light source and a
+编辑器，您将看到一个包含光源和
+
+19
+00:01:11,280 --> 00:01:14,960
+camera a scene is like a game level that you're developing while the camera is
+相机的 3d 场景。场景就像您正在开发的游戏关卡，而相机
+
+20
+00:01:14,960 --> 00:01:18,320
+the point of view of the player to create a game of dodgeball let's add a
+是玩家的视角创建一个躲避球游戏让我们添加一个
+
+21
+00:01:18,320 --> 00:01:22,240
+plane to be the ground a cylinder for the player and a sphere for the ball
+平面作为地面玩家的圆柱体和球的球体
+
+22
+00:01:22,240 --> 00:01:26,240
+select an object then hit y on your keyboard to move rotate and scale it to
+选择一个对象然后按键盘上的 y移动旋转并根据
+
+23
+00:01:26,240 --> 00:01:29,200
+your liking hit the play button and notice how these shapes don't do
+自己的喜好缩放它按播放按钮并注意这些 形状没有
+
+24
+00:01:29,200 --> 00:01:32,799
+anything but if we add a rigid body to the objects all of a sudden they're now
+任何作用，但如果我们突然给物体添加一个刚体，它们现在会
+
+25
+00:01:32,799 --> 00:01:36,240
+impacted by the laws of gravity currently they look pretty boring but we
+受到万有引力定律的影响，目前它们看起来很无聊，但我们
+
+26
+00:01:36,240 --> 00:01:39,520
+can make them look cool by creating a material and then drag it onto the
+可以通过创建一个材质然后拖动它来让它们看起来很酷到
+
+27
+00:01:39,520 --> 00:01:42,799
+shapes and now to make this game playable let's add a script component to
+形状上 现在为了让这个游戏可玩，让我们向它添加一个脚本组件
+
+28
+00:01:42,799 --> 00:01:46,320
+it and then open it in vs code it contains a class with two methods to
+，然后在 vs 代码中打开它，它包含一个类，其中包含两个方法来
+
+29
+00:01:46,320 --> 00:01:50,000
+implement your code start is called once at the very beginning of the game while
+实现你的代码 start在游戏开始时调用一次，而
+
+30
+00:01:50,000 --> 00:01:53,280
+update is called on every frame while the game is being played and there's
+update 在每一帧上调用在玩游戏的同时，还有一个
+
+31
+00:01:53,280 --> 00:01:57,040
+also fixed update that runs at the same frame rate as the physics engine now to
+固定更新，它以与物理引擎相同的帧速率运行，
+
+32
+00:01:57,040 --> 00:02:00,799
+move our player around we can define a public property for the rigid body which
+现在我们可以为刚体定义一个公共属性，其中
+
+33
+00:02:00,799 --> 00:02:04,320
+contains a bunch of different properties and methods to move the object around
+包含许多不同的属性和方法来移动
+
+34
+00:02:04,320 --> 00:02:07,920
+now assign an actual value from the game to that property by dragging the rigid
+现在通过
+
+35
+00:02:07,920 --> 00:02:11,599
+body component to it in the editor in the fixed update method we can first use
+在编辑器中将刚体组件拖动到该属性中，在固定更新方法中将游戏中的实际值分配给该属性，我们可以首先使用
+
+36
+00:02:11,599 --> 00:02:15,280
+input to detect when a user presses the arrow keys and then call the move
+输入来检测用户何时按下箭头键，然后调用移动
+
+37
+00:02:15,280 --> 00:02:18,720
+position method on the rigid body to move it hit the play button and you
+位置方法 在刚体上移动它，点击播放按钮，你
+
+38
+00:02:18,720 --> 00:02:22,080
+should now be able to move your player around from there we can add a script to
+现在应该可以从
+
+39
+00:02:22,080 --> 00:02:25,520
+the ball that will add force to it when the game starts to roll it across the
+那里移动你的玩家了 在屏幕上滚动它
+
+40
+00:02:25,520 --> 00:02:29,760
+screen and we can also run code when the two objects collide by defining the on
+，我们还可以在两个对象发生碰撞时运行代码，通过定义 on
+
+41
+00:02:29,760 --> 00:02:33,599
+collision enter method congratulations you just built a video game this has
+collision enter 方法恭喜你刚刚构建了一个视频游戏
+
+42
+00:02:33,599 --> 00:02:37,440
+been unity in 100 seconds if you want to see more short videos like this hit the
+如果你想看到更多这样的短视频，这已经在 100 秒内统一了点击
+
+43
+00:02:37,440 --> 00:02:40,560
+like button and subscribe and let me know if you want to see a full unity
+喜欢按钮并订阅，如果你想在评论中看到完整的统一
+
+44
+00:02:40,560 --> 00:02:44,080
+tutorial in the comments thanks for watching and i will see you in the next
+教程，请告诉我谢谢观看，我会在下
+
+45
+00:02:44,080 --> 00:02:46,560
+one
+一个

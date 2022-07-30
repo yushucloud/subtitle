@@ -1,0 +1,169 @@
+1
+00:00:00,160 --> 00:00:05,359
+tailwind a massive collection of tiny css utility classes for quickly and
+tailwind 大量的微型css 实用程序类集合，用于快速、
+
+2
+00:00:05,359 --> 00:00:10,559
+consistently building good-looking websites css is hard design is also hard
+一致地构建漂亮的网站 css 很难设计也很难，
+
+3
+00:00:10,559 --> 00:00:14,960
+but naming your css classes in a sane way is virtually impossible frameworks
+但是以理智的方式命名你的 css 类几乎是不可能的，
+
+4
+00:00:14,960 --> 00:00:18,800
+like bootstrap and material address this challenge by creating styles for high
+像 bootstrap 和 material 这样的框架通过创建高的样式来解决这个挑战
+
+5
+00:00:18,800 --> 00:00:23,199
+level components things like buttons drop downs and forms tailwind takes a
+级别组件之类的按钮下拉菜单和表单tailwind
+
+6
+00:00:23,199 --> 00:00:26,720
+more functional approach by providing you with utility classes that can be
+通过为您提供实用程序类来提供更实用的方法，这些实用程序类可以
+
+7
+00:00:26,720 --> 00:00:30,480
+composed together to build components like this instead of using the card
+组合在一起以构建这样的组件，而不是像您在引导程序中那样使用卡片
+
+8
+00:00:30,480 --> 00:00:34,160
+class like you might in bootstrap you combine utility classes like flex to
+类您可以组合像 flex 这样的实用程序类来
+
+9
+00:00:34,160 --> 00:00:38,399
+make it a flexbox p to give it padding m for margin and hundreds of others to
+制作 它是一个 flexbox p 来给它填充 m作为边距，还有数百个其他的
+
+10
+00:00:38,399 --> 00:00:42,640
+control things like color shadows and so on in addition every utility can be
+东西来控制颜色阴影等东西。此外，每个实用程序都可以
+
+11
+00:00:42,640 --> 00:00:46,239
+applied conditionally you have variants like small medium and large for
+有条件地应用，你有像小型和大型这样的变体，用于
+
+12
+00:00:46,239 --> 00:00:50,719
+responsive designs along with a bunch of pseudo-selectors like hover and focus to
+响应式设计以及一堆伪 选择器像悬停和焦点来
+
+13
+00:00:50,719 --> 00:00:54,719
+handle state changes or dark to render different colors when dark mode is
+处理状态变化或黑暗来呈现不同的颜色时
+
+14
+00:00:54,719 --> 00:00:58,000
+enabled this approach gives you a lot more freedom over your creativity
+启用暗模式 与其他 css 框架相比，这种方法为您的创造力提供了更多的自由，
+
+15
+00:00:58,000 --> 00:01:02,079
+compared to other css frameworks while at the same time following the rules of
+同时遵循
+
+16
+00:01:02,079 --> 00:01:06,240
+a design system that you don't get with plain css it lives in the sweet spot
+设计系统的规则，这是普通 css 无法获得的，它位于约定和之间的最佳位置
+
+17
+00:01:06,240 --> 00:01:10,799
+between convention and configuration however it does produce some ugly ass
+配置但是它确实会产生一些丑陋的
+
+18
+00:01:10,799 --> 00:01:15,040
+html you've got tons of hard to read duplicated class names here as your ui
+html 你有很多难以阅读的重复类名，因为你的 ui
+
+19
+00:01:15,040 --> 00:01:19,200
+grows in complexity code duplication is inevitable but you can avoid it by
+变得越来越复杂，代码重复是不可避免的，但你可以通过
+
+20
+00:01:19,200 --> 00:01:22,799
+creating reusable components with your favorite javascript framework or by
+使用你最喜欢的 javascript 框架创建可重用组件或
+
+21
+00:01:22,799 --> 00:01:27,680
+using the apply directive in css to take tailwind classes and compose them into a
+使用 在 css 中应用指令来获取tailwind 类并将它们组合成
+
+22
+00:01:27,680 --> 00:01:31,360
+single concise class name another concern you may have is performance
+一个简洁的类名您可能需要担心的另一个问题是性能，
+
+23
+00:01:31,360 --> 00:01:35,840
+because tailwind weighs in at over 3 500 kilobytes but when you go to build for
+因为 tailwind 的重量超过 3 500KB，但是当您进行
+
+24
+00:01:35,840 --> 00:01:40,320
+production it will automatically purge any unused utility from the final bundle
+生产时，它会自动清除任何未使用的实用程序 最终捆绑
+
+25
+00:01:40,320 --> 00:01:45,040
+resulting in minimal dead code and thus faster page loads but who has time to
+导致最少的死代码，从而更快的页面加载，但谁有时间
+
+26
+00:01:45,040 --> 00:01:48,799
+learn and memorize all these different utility classes where tailwind really
+学习和记住所有这些不同的uti  tailwind 真正
+
+27
+00:01:48,799 --> 00:01:52,560
+shines is with its tooling you don't need to memorize much because vs code
+闪耀的 lity 类是它的工具，你不需要记住太多，因为如果你不确定它做什么，vs code
+
+28
+00:01:52,560 --> 00:01:56,159
+will auto-complete every tailwind class if you're not sure what it does just
+会自动完成每个 tailwind 类，只需将
+
+29
+00:01:56,159 --> 00:02:00,079
+hover over it and it will show you the equivalent code in plain css and if
+鼠标悬停在它上面，它就会向你显示等效的代码 普通的 css，如果
+
+30
+00:02:00,079 --> 00:02:03,280
+you're not happy with what it does you can easily customize everything from the
+您对它的功能不满意，您可以轻松自定义从
+
+31
+00:02:03,280 --> 00:02:07,200
+color palette to the spacing to build your own unique design system this has
+调色板到间距的所有内容，以构建您自己独特的设计系统，这
+
+32
+00:02:07,200 --> 00:02:11,440
+been tailwind css in 100 seconds make sure to like and subscribe if you want
+在 100 秒内成为顺风 css，如果您愿意，请确保喜欢并
+
+33
+00:02:11,440 --> 00:02:15,120
+to see more short videos like this and if we hit 10 000 likes i'll make a full
+订阅 看更多这样的短视频，如果我们达到 10 000 个赞，我会制作一个完整的
+
+34
+00:02:15,120 --> 00:02:21,480
+tailwind tutorial thanks for watching and i will see you in the next one
+顺风教程 感谢观看，我会在下一个

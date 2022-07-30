@@ -1,0 +1,739 @@
+1
+00:00:00,000 --> 00:00:02,320
+[Music] ethical hacking find exploits in your
+[音乐]道德黑客在
+
+2
+00:00:02,320 --> 00:00:06,560
+web application before the bad guys do as a web developer there are 10 common
+坏人之前在您的 Web 应用程序中发现漏洞作为 Web 开发人员，您需要注意 10 种常见的
+
+3
+00:00:06,560 --> 00:00:10,000
+security risks that you'll want to be aware of things like database injection
+安全风险，例如数据库注入
+
+4
+00:00:10,000 --> 00:00:13,920
+broken authentication and cross-site scripting hackers have been exploiting
+破坏身份验证和跨站点脚本黑客一直在利用
+
+5
+00:00:13,920 --> 00:00:17,359
+these vulnerabilities from day 0. like back in 05 when cross-site
+这些漏洞从第 0 天开始。就像早在 05 年，当跨站点
+
+6
+00:00:17,359 --> 00:00:21,199
+scripting was used to update your myspace page with sami is my hero or
+脚本被用来更新你的myspace 页面时，sami is my hero 或者
+
+7
+00:00:21,199 --> 00:00:23,760
+just last year when the chinese version of twitter weibo
+就在去年，中国版 twitter 微博
+
+8
+00:00:23,760 --> 00:00:27,599
+exposed over 500 million user accounts because of a brute force attack on their
+因为暴力攻击暴露了超过 5 亿用户帐户 在他们的
+
+9
+00:00:27,599 --> 00:00:30,720
+authentication system you can reduce your chances of being a victim by
+身份验证系统上，您可以通过
+
+10
+00:00:30,720 --> 00:00:33,120
+running penetration tests on your web application
+在您的 Web应用程序
+
+11
+00:00:33,120 --> 00:00:38,239
+i refuse to be a victim and a popular free tool for doing so is
+
+
+12
+00:00:38,239 --> 00:00:41,680
+the burp suite whenever you visit a website the browser automatically makes
+上运行渗透测试来减少成为
+
+13
+00:00:41,680 --> 00:00:45,920
+requests to a bunch of servers for the html images in javascript that that site
+受害者的机会该站点
+
+14
+00:00:45,920 --> 00:00:48,320
+needs to run the burp suite is like a man in the
+需要运行 burp 套件的 javascript 中的 html 图像的一堆服务器就像
+
+15
+00:00:48,320 --> 00:00:52,320
+middle that can eavesdrop on or intercept every single request on its
+中间的一个人可以窃听 o  r拦截仪表板上的每一个请求，
+
+16
+00:00:52,320 --> 00:00:56,239
+dashboard we can find the proxy tab then open an instance of the chromium
+我们可以找到代理选项卡，然后打开 chromium 浏览器的实例，
+
+17
+00:00:56,239 --> 00:00:59,920
+browser then visit a website that's given us permission to run penetration
+然后访问一个允许我们运行渗透
+
+18
+00:00:59,920 --> 00:01:02,480
+testing the tool will intercept every request
+测试的网站，该工具将拦截每个请求，
+
+19
+00:01:02,480 --> 00:01:06,479
+allowing us to inspect it and optionally modify its values before it gets sent to
+允许我们检查它并选择性地修改它的值 在它被发送到服务器之前，
+
+20
+00:01:06,479 --> 00:01:08,960
+the server this is kind of like casing the joint to
+这有点像在联合
+
+21
+00:01:08,960 --> 00:01:12,799
+find potential requests to exploit for example you might submit a form to
+查找潜在的请求以利用例如，
+
+22
+00:01:12,799 --> 00:01:15,200
+complete a shopping cart order if you change the
+如果您
+
+23
+00:01:15,200 --> 00:01:18,720
+order amount on the post request and their server side validation is weak
+在发布请求中更改订单金额并且他们的服务器端验证是，您可能会提交一个表单来完成购物车订单 弱，
+
+24
+00:01:18,720 --> 00:01:22,320
+you may have just received a five finger discount but in real life hacking is
+您可能刚刚收到五指折扣，但在现实生活中，黑客
+
+25
+00:01:22,320 --> 00:01:25,040
+rarely that simple it takes a lot of tedious trial and
+很少那么简单，它需要进行大量繁琐的试验和
+
+26
+00:01:25,040 --> 00:01:28,560
+error luckily you can automate your bruteforce attacks with the intruder
+错误，幸运的是，您可以使用入侵者工具自动执行暴力攻击，
+
+27
+00:01:28,560 --> 00:01:30,479
+tool you might have a bunch of username
+您可能拥有一堆用户名
+
+28
+00:01:30,479 --> 00:01:33,680
+password combinations that get added to a request dynamically
+密码组合动态添加到请求中，
+
+29
+00:01:33,680 --> 00:01:36,720
+then sent to the server with a variety of different attack types all you have
+然后使用各种不同的攻击类型发送到服务器，您
+
+30
+00:01:36,720 --> 00:01:40,400
+to do is click the start attack button then sit back and wait for a successful
+只需单击 开始攻击按钮然后坐下来等待成功
+
+31
+00:01:40,400 --> 00:01:43,840
+response once you've gained access you can use those same credentials to
+响应一旦您获得访问权限您可以使用这些相同的凭据来
+
+32
+00:01:43,840 --> 00:01:47,840
+determine if you can maintain access to extract sensitive data from the target
+确定您是否可以保持访问权限以从目标中提取敏感数据
+
+33
+00:01:47,840 --> 00:01:51,040
+if you had permission to do this you wear a white hat if you didn't have
+如果您有权这样做您戴着白帽子 如果你没有获得
+
+34
+00:01:51,040 --> 00:01:54,560
+permission but notified the target you wear a gray hat and if you're selling
+许可但通知了目标你戴着灰色帽子，如果你
+
+35
+00:01:54,560 --> 00:01:57,200
+the data for dogecoin on the dark web then you wear
+在暗网上出售狗狗币的数据，那么你
+
+36
+00:01:57,200 --> 00:02:01,119
+a black hat this has been ethical hacking on the web in 100 seconds
+戴着黑色帽子，这在 100 秒内已经在网络上进行了道德黑客攻击，
+
+37
+00:02:01,119 --> 00:02:04,799
+but stay tuned because today i've invited bartos from the web security
+但请继续关注 因为今天我邀请了来自网络安全
+
+38
+00:02:04,799 --> 00:02:09,920
+academy to take us beyond 100 seconds and level up our skills on web security
+学院的 bartos 带我们超过 100 秒，并提升我们的网络安全技能
+
+39
+00:02:09,920 --> 00:02:14,000
+hello internet bartos from web security academy here and i'm super happy that we
+来自网络安全学院的你好 internet bartos 在这里，我非常高兴我们
+
+40
+00:02:14,000 --> 00:02:17,680
+partnered with fireship again several days ago jeff posted a video
+几天前再次与 fireship 合作 jeff 发布了一个
+
+41
+00:02:17,680 --> 00:02:21,440
+about course cross origin risk of sharing and in today's video
+关于课程跨来源共享风险的视频，在今天的视频中，
+
+42
+00:02:21,440 --> 00:02:25,840
+i would like to give you an insight into why we need course in the first place
+我想让您了解为什么我们首先需要课程，
+
+43
+00:02:25,840 --> 00:02:29,920
+we will take a look at same origin policy which is the fundamental
+我们将看看同源政策，即
+
+44
+00:02:29,920 --> 00:02:33,519
+principle of web security model we will start with the theory and
+Web安全模型的基本原理我们将从理论和
+
+45
+00:02:33,519 --> 00:02:38,160
+explanation of important concepts followed by coding labs so that you can
+重要概念的解释开始，然后是编码实验室，以便您可以
+
+46
+00:02:38,160 --> 00:02:41,599
+see the mechanics of this policy in practice
+在实践中看到该策略的机制
+
+47
+00:02:41,599 --> 00:02:44,560
+let's get started in order to understand same origin
+让我们开始了解同源
+
+48
+00:02:44,560 --> 00:02:47,599
+policy let's first understand the concept of origin
+策略让我们首先了解概念 origin
+
+49
+00:02:47,599 --> 00:02:54,080
+when you take the triple of scheme domain port this is what constitutes to
+当您采用三重方案域端口时，这构成了
+
+50
+00:02:54,080 --> 00:02:58,000
+origin first three examples when we have https
+前三个示例，当我们有
+
+51
+00:02:58,000 --> 00:03:03,360
+the domain web security academy and here the port is implicit because when you
+https 域网络安全学院时，这里的端口是隐式的，因为当您
+
+52
+00:03:03,360 --> 00:03:07,040
+use https the default port for this is four
+使用https 时，默认端口是
+
+53
+00:03:07,040 --> 00:03:14,159
+for free the default port for http is port 80. so
+四个免费默认端口 http的端口是端口 80。因此，
+
+54
+00:03:14,159 --> 00:03:18,239
+when you have the same scheme the same domain and the same port
+当您具有相同的方案时，相同的域和相同的端口，
+
+55
+00:03:18,239 --> 00:03:22,159
+regardless of the path it is considered to be the same origin
+无论路径如何，
+
+56
+00:03:22,159 --> 00:03:28,400
+if you have a different subdomain or a different port or a different
+如果您有不同的子域或不同的端口或不同的
+
+57
+00:03:28,400 --> 00:03:34,000
+scheme these are all different origins why is this so important to
+方案，这些都被认为是相同的来源 不同的起源为什么区分这些起源如此重要
+
+58
+00:03:34,000 --> 00:03:37,519
+differentiate those origins let's jump to the next
+让我们跳到下
+
+59
+00:03:37,519 --> 00:03:41,840
+slide so the same origin policy creates
+一张幻灯片，因此相同的起源政策会产生
+
+60
+00:03:41,840 --> 00:03:45,280
+some kind of secure context for your websites
+某种 为您
+
+61
+00:03:45,280 --> 00:03:50,400
+running in the browser so imagine that you have site a.com
+在浏览器中运行的网站提供安全上下文，因此假设您有站点 a.com
+
+62
+00:03:50,400 --> 00:03:57,519
+which will consider our origin a and the browser fetches this website
+，它将考虑我们的来源a，并且浏览器从服务器获取该网站
+
+63
+00:03:57,519 --> 00:04:01,040
+from the server and then we have origin b
+，然后我们
+
+64
+00:04:01,040 --> 00:04:08,000
+that is hosted on site b.com so imagine that you fetch index.html
+有托管在站点 b.com 上的来源 b，所以想象一下 您获取 index.html
+
+65
+00:04:08,000 --> 00:04:14,640
+image jpg script.js and inside of single tab we have this
+图像 jpg script.js并且在单个选项卡内部，我们有这个
+
+66
+00:04:14,640 --> 00:04:21,280
+secure context with javascript running dom document object model cookies and
+安全上下文与运行dom 文档对象模型 cookie 和
+
+67
+00:04:21,280 --> 00:04:26,080
+web storage and if this second origin
+Web 存储的 javascript，如果第二个
+
+68
+00:04:26,080 --> 00:04:29,360
+is loaded in the different tab they cannot
+来源加载到不同的选项卡中，它们将无法
+
+69
+00:04:29,360 --> 00:04:33,199
+communicate each other they are isolated but
+相互通信，它们是孤立的但是
+
+70
+00:04:33,199 --> 00:04:38,800
+you can still fetch resources from the different origin for example
+您仍然可以从不同的来源获取资源，例如，
+
+71
+00:04:38,800 --> 00:04:43,759
+you would be able to load images css styles or scripts
+您可以加载图像 css 样式或脚本，
+
+72
+00:04:43,759 --> 00:04:47,360
+to enrich your website with resources from the different origin
+以使用来自不同来源的资源来丰富您的网站
+
+73
+00:04:47,360 --> 00:04:54,000
+and here is very important to note that this is the browser which enforces same
+，这里非常重要的是要注意这是执行同源策略的浏览器
+
+74
+00:04:54,000 --> 00:04:58,080
+origin policy and as i told you there's going to be some kind of secure
+正如我告诉你的那样，将会有某种安全的
+
+75
+00:04:58,080 --> 00:05:02,720
+context that is going to bind this origin and the execution of
+上下文将绑定这个起源和
+
+76
+00:05:02,720 --> 00:05:05,520
+this website and scripts and everything
+这个网站和脚本的执行以及每个
+
+77
+00:05:05,520 --> 00:05:10,479
+related to this website in your browser and this single
+在您的浏览器中与该网站相关的内容和该单个
+
+78
+00:05:10,479 --> 00:05:15,440
+website would not be allowed to communicate with different origins
+网站将不允许与不同来源进行通信，
+
+79
+00:05:15,440 --> 00:05:20,560
+so imagine that you load some website and you would like to communicate
+因此假设您加载了某个网站，并且您希望
+
+80
+00:05:20,560 --> 00:05:26,240
+with site b by default same origin policy restrict this kind of
+默认与站点 b 进行通信，同源策略限制这种
+
+81
+00:05:26,240 --> 00:05:29,840
+communication because who said that they can't trust
+通信，因为谁说 他们不能相互信任，
+
+82
+00:05:29,840 --> 00:05:33,039
+each other maybe one website is evil and we would
+也许一个网站是邪恶的，我们
+
+83
+00:05:33,039 --> 00:05:35,600
+like to prevent this kind of communication
+想阻止这种通信
+
+84
+00:05:35,600 --> 00:05:42,800
+in order for this kind of communication origin b must white list origin a
+，以便这种通信来源 b 必须将来源 a 列入白名单，
+
+85
+00:05:42,800 --> 00:05:49,280
+explicitly saying that origin a is trustworthy let's look at this
+明确说明来源 a是可信赖的让我们看看这个
+
+86
+00:05:49,280 --> 00:05:52,800
+example we have a simple website which displays
+例子 有一个简单的网站，显示
+
+87
+00:05:52,800 --> 00:05:59,520
+hello world some image it links to some style sheets and scripts and also
+hello world 一些图像，它链接到一些样式表和脚本，
+
+88
+00:05:59,520 --> 00:06:04,080
+it has some simple inline scripts implemented to call
+还有一些简单的内联脚本实现了
+
+89
+00:06:04,080 --> 00:06:11,919
+apis on different urls so to serve this application we have a
+在不同的 url 上调用 apis所以为了服务这个应用程序，我们有一个
+
+90
+00:06:11,919 --> 00:06:15,440
+simple server which is written in node.js and utilizes
+用 node.js 编写的简单服务器 并利用
+
+91
+00:06:15,440 --> 00:06:19,759
+express.js library to serve our application
+express.js库为我们的应用程序提供
+
+92
+00:06:19,759 --> 00:06:23,680
+if we look here we see that whenever there is a request
+
+
+93
+00:06:23,680 --> 00:06:30,800
+to this url we are going to serve index.html whenever there is a request
+服务 g 服务index.html 每当有对该 url 的请求时
+
+94
+00:06:30,800 --> 00:06:34,560
+to this url we are going to execute some
+，我们将执行一些
+
+95
+00:06:34,560 --> 00:06:38,800
+simulated logic in this case just a console log and also we have a
+模拟逻辑，在这种情况下只是一个控制台日志，而且
+
+96
+00:06:38,800 --> 00:06:42,800
+second application before we jump into the second application
+在我们跳转到第二个应用程序之前我们还有第二个应用程序
+
+97
+00:06:42,800 --> 00:06:46,639
+let's note that this application is going to be
+让我们注意这个应用程序正在运行 将
+
+98
+00:06:46,639 --> 00:06:51,840
+served at port 88 and the second application which is
+在端口 88 上提供服务，第二个应用程序
+
+99
+00:06:51,840 --> 00:06:56,479
+called external because it's going to simulate our external origin is going to
+称为 external，因为它将模拟我们的外部来源，将
+
+100
+00:06:56,479 --> 00:07:00,160
+be served on the different port and here
+在不同的端口
+
+101
+00:07:00,160 --> 00:07:04,400
+it's going to serve some static resources in the folder
+上提供服务，这里它将提供 public文件夹中的一些静态资源，
+
+102
+00:07:04,400 --> 00:07:08,560
+public so we see it serves an image script
+所以我们看到它服务于 图像脚本
+
+103
+00:07:08,560 --> 00:07:15,280
+and some stylesheet and also exposes api method
+和一些样式表，还公开
+
+104
+00:07:15,280 --> 00:07:22,720
+for http get to also simulate some logic in this case console.log so let's
+了 http get 的 api 方法，在这种情况下也模拟了一些逻辑 console.log 所以让我们
+
+105
+00:07:22,720 --> 00:07:27,280
+also look how we can run those two applications npm run policies would
+也看看我们如何运行这两个应用程序 npm 运行策略将
+
+106
+00:07:27,280 --> 00:07:32,639
+start our first application npm policies external would start our
+启动我们的第一个应用程序npm 策略外部将启动我们的
+
+107
+00:07:32,639 --> 00:07:36,800
+second application as you remember we are trying to
+第二个应用程序 您还记得我们
+
+108
+00:07:36,800 --> 00:07:44,240
+see same origin policy in practice we know that we can fetch external css
+在实践中尝试查看同源策略的应用程序我们知道我们可以像这样获取外部 css
+
+109
+00:07:44,240 --> 00:07:47,599
+and scripts like this so here you see that
+和脚本，所以在这里您可以看到 在
+
+110
+00:07:47,599 --> 00:07:55,520
+we are requesting our external origin which we know by the port number here
+我们请求我们通过端口号知道的外部来源时，
+
+111
+00:07:55,520 --> 00:08:00,720
+they were successfully applied image was successfully loaded
+它们已成功应用
+
+112
+00:08:00,720 --> 00:08:08,639
+if we go to style we see that the port is different and everything actually
+如果我们转到样式，则图像已成功加载，我们看到端口不同并且一切
+
+113
+00:08:08,639 --> 00:08:14,000
+works fine we also know that same origin policy
+正常，我们也知道相同的来源策略会
+
+114
+00:08:14,000 --> 00:08:21,759
+prevents some api executions so here we have two buttons call api
+阻止某些 api 执行所以这里我们有两个按钮调用 api
+
+115
+00:08:21,759 --> 00:08:25,360
+and call external api let's look at the console
+和调用外部 api 让我们看一下控制台
+
+116
+00:08:25,360 --> 00:08:31,120
+to see that we have some message here it says i was fetched from external
+，看看我们有一些消息在这里它说我是从外部来源获取的
+
+117
+00:08:31,120 --> 00:08:35,599
+origin this is a script that we can see here
+这是一个脚本，我们可以在这里看到
+
+118
+00:08:35,599 --> 00:08:39,200
+there was no problem in importing a script
+导入没有问题
+
+119
+00:08:39,200 --> 00:08:42,479
+from a different origin our external origin
+来自不同来源的脚本我们的外部来源
+
+120
+00:08:42,479 --> 00:08:49,760
+and that we see the port is 8081 so let's try to execute api method
+并且我们看到端口是 8081所以让我们尝试
+
+121
+00:08:49,760 --> 00:08:56,399
+on our first origin so looking back on our index.html
+在我们的第一个来源上执行 api 方法所以回顾我们的 index.html
+
+122
+00:08:56,399 --> 00:09:04,080
+we see whenever we click button call api it's going to call our server
+我们看到每当我们单击按钮调用 api它就会调用我们的服务器
+
+123
+00:09:04,080 --> 00:09:07,360
+then get the response and display it in the console
+然后 获取响应并将其显示在控制台中，
+
+124
+00:09:07,360 --> 00:09:13,920
+so whenever i click here console.log success and also our server says that
+因此每当我单击此处 console.log成功并且我们的服务器说调用了
+
+125
+00:09:13,920 --> 00:09:18,640
+api was called but different situation
+api但情况
+
+126
+00:09:18,640 --> 00:09:25,440
+would be when we would try to call external api because now our
+不同时，我们会 ry调用外部 api，因为现在我们的
+
+127
+00:09:25,440 --> 00:09:32,959
+api endpoint is living on the different origin so if we click here we see
+api 端点位于不同的源上，所以如果我们单击此处，我们会看到发生
+
+128
+00:09:32,959 --> 00:09:38,959
+two things that happened first of all a request actually hit the server
+的两件事，首先一个请求实际上到达了服务器，因为
+
+129
+00:09:38,959 --> 00:09:41,760
+because we see console.log from the server that
+我们从服务器中看到了调用
+
+130
+00:09:41,760 --> 00:09:46,720
+external api was called but actual response was blocked
+外部 api 的 consoe.log 但实际响应
+
+131
+00:09:46,720 --> 00:09:50,640
+on the browser because we know that same origin policy
+在浏览器上被阻止，因为我们知道
+
+132
+00:09:50,640 --> 00:09:55,920
+is enforced on the browser level so now because we didn't actually allow this
+在浏览器级别强制执行同源策略所以现在因为我们实际上并没有允许这个
+
+133
+00:09:55,920 --> 00:10:01,040
+origin to communicate with our website the result
+源与我们的网站通信结果
+
+134
+00:10:01,040 --> 00:10:07,519
+is blocked to recap we were able to get style sheets images and scripts to be
+被阻止回顾我们能够获得样式表 要在我们的网站上执行的图像和脚本，
+
+135
+00:10:07,519 --> 00:10:12,399
+executed on our website but calling external api
+但调用外部 api
+
+136
+00:10:12,399 --> 00:10:18,800
+was prevented from reading the result but internal api call was successful
+被阻止读取结果，但内部 api 调用是成功
+
+137
+00:10:18,800 --> 00:10:23,600
+if you liked how it was explained to you that we start with the theory and follow
+
+
+138
+00:10:23,600 --> 00:10:27,120
+with coding labs i encourage you to check out my web
+的 在这个简明的一小时
+
+139
+00:10:27,120 --> 00:10:30,240
+security fundamentals course that you can get right now with
+课程中，
+
+140
+00:10:30,240 --> 00:10:34,560
+a 40 discount using the code that you see
+使用您现在在屏幕上看到的代码，您可以立即获得 40 折优惠的我的网络安全基础
+
+141
+00:10:34,560 --> 00:10:39,040
+on the screen right now during this concise one hour course i will teach you
+课程 我将从理论和实践的角度教你
+
+142
+00:10:39,040 --> 00:10:42,880
+the most important aspects of web security model from the
+网络安全模型最重要的方面，
+
+143
+00:10:42,880 --> 00:10:46,399
+theoretical and practical perspective so that you
+这样你
+
+144
+00:10:46,399 --> 00:10:49,279
+will never ever end up with course error again
+就永远不会再遇到课程错误
+
+145
+00:10:49,279 --> 00:10:53,920
+and you would know how to efficiently prevent cross-site scripting
+，你会知道如何有效地防止跨站点脚本
+
+146
+00:10:53,920 --> 00:10:58,640
+or at least minimize the risk of cross-site scripting to a negligible
+或至少将风险降到最低跨站点脚本可以忽略不计的
+
+147
+00:10:58,640 --> 00:11:01,120
+degree see you in the course thanks for
+程度在课程中见感谢您的
+
+148
+00:11:01,120 --> 00:11:06,480
+watching and i will see you in the next one
+观看，我将在下一个课程中见到您

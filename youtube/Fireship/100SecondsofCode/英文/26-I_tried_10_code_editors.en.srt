@@ -1,0 +1,1685 @@
+1
+00:00:00,000 --> 00:00:03,840
+at exactly 3 45 pm on september 9 1947
+
+
+2
+00:00:03,840 --> 00:00:05,359
+grace hopper discovered the first
+
+
+3
+00:00:05,359 --> 00:00:07,680
+official computer bug a real-life moth
+
+
+4
+00:00:07,680 --> 00:00:09,599
+that found its way onto the number 70
+
+
+5
+00:00:09,599 --> 00:00:12,080
+relay of the harvard mark ii aiken relay
+
+
+6
+00:00:12,080 --> 00:00:14,160
+calculator today computer programmers
+
+
+7
+00:00:14,160 --> 00:00:15,839
+create their own bugs but that wouldn't
+
+
+8
+00:00:15,839 --> 00:00:17,760
+be possible without the help of a modern
+
+
+9
+00:00:17,760 --> 00:00:19,439
+code editor i wanted to find out which
+
+
+10
+00:00:19,439 --> 00:00:21,600
+code editor is best in the 2020s so i
+
+
+11
+00:00:21,600 --> 00:00:23,359
+tried to write a basic program with 10
+
+
+12
+00:00:23,359 --> 00:00:25,199
+different text editors and ides we'll
+
+
+13
+00:00:25,199 --> 00:00:26,960
+look at everything from basic command
+
+
+14
+00:00:26,960 --> 00:00:28,640
+line editors to the most advanced
+
+
+15
+00:00:28,640 --> 00:00:30,160
+cloud-based integrated development
+
+
+16
+00:00:30,160 --> 00:00:31,840
+environments we'll talk about the pros
+
+
+17
+00:00:31,840 --> 00:00:33,440
+and cons of each option and look at how
+
+
+18
+00:00:33,440 --> 00:00:34,960
+these tools have evolved over the last
+
+
+19
+00:00:34,960 --> 00:00:37,120
+50 years think about this
+
+
+20
+00:00:37,120 --> 00:00:39,680
+things like undo find and replace copy
+
+
+21
+00:00:39,680 --> 00:00:41,600
+and paste are all commonplace but back
+
+
+22
+00:00:41,600 --> 00:00:44,000
+in the 1960s they were revolutionary new
+
+
+23
+00:00:44,000 --> 00:00:46,079
+features made possible by the computer
+
+
+24
+00:00:46,079 --> 00:00:48,079
+screen and visual terminal eventually
+
+
+25
+00:00:48,079 --> 00:00:49,680
+they would replace punch cards where one
+
+
+26
+00:00:49,680 --> 00:00:51,199
+wrong keystroke meant you had to start
+
+
+27
+00:00:51,199 --> 00:00:52,960
+over from scratch the first editor we'll
+
+
+28
+00:00:52,960 --> 00:00:55,199
+look at is vi which was written by bill
+
+
+29
+00:00:55,199 --> 00:00:57,920
+joy and released in 1976. it's still a
+
+
+30
+00:00:57,920 --> 00:00:59,840
+standard tool on most linux distros to
+
+
+31
+00:00:59,840 --> 00:01:01,680
+this day so to use it all you have to do
+
+
+32
+00:01:01,680 --> 00:01:03,760
+is type vi into the terminal what's most
+
+
+33
+00:01:03,760 --> 00:01:05,360
+interesting is that it's a keyboard
+
+
+34
+00:01:05,360 --> 00:01:06,880
+based editor the mouse doesn't do
+
+
+35
+00:01:06,880 --> 00:01:08,640
+anything useful that's because the mouse
+
+
+36
+00:01:08,640 --> 00:01:10,479
+didn't go mainstream until the apple
+
+
+37
+00:01:10,479 --> 00:01:13,920
+macintosh came out in 1984 january 24th
+
+
+38
+00:01:13,920 --> 00:01:17,280
+apple computer will introduce macintosh
+
+
+39
+00:01:17,280 --> 00:01:20,799
+and you'll see why 1984 won't be
+
+
+40
+00:01:20,799 --> 00:01:23,680
+like 1984. but do you really need a
+
+
+41
+00:01:23,680 --> 00:01:25,759
+mouse to code efficiently in vi if you
+
+
+42
+00:01:25,759 --> 00:01:27,280
+start typing nothing will happen
+
+
+43
+00:01:27,280 --> 00:01:28,880
+initially that's because to write some
+
+
+44
+00:01:28,880 --> 00:01:31,200
+text you'll need to enter insert mode by
+
+
+45
+00:01:31,200 --> 00:01:33,600
+hitting the i key vi is a modal editor
+
+
+46
+00:01:33,600 --> 00:01:35,200
+which means the keys on your keyboard do
+
+
+47
+00:01:35,200 --> 00:01:36,560
+different things based on the mode
+
+
+48
+00:01:36,560 --> 00:01:38,320
+you're currently in in insert mode we
+
+
+49
+00:01:38,320 --> 00:01:40,159
+can add some actual code to the document
+
+
+50
+00:01:40,159 --> 00:01:41,759
+then hit escape to go back to command
+
+
+51
+00:01:41,759 --> 00:01:43,600
+mode and use the right quick command to
+
+
+52
+00:01:43,600 --> 00:01:45,200
+save the file to the disk when you get
+
+
+53
+00:01:45,200 --> 00:01:47,119
+used to it it can actually be very fast
+
+
+54
+00:01:47,119 --> 00:01:49,119
+to edit code this way for example to
+
+
+55
+00:01:49,119 --> 00:01:50,960
+delete an entire line of code i can hit
+
+
+56
+00:01:50,960 --> 00:01:53,840
+double d or 3 d to delete three lines at
+
+
+57
+00:01:53,840 --> 00:01:55,439
+once without needing to highlight the
+
+
+58
+00:01:55,439 --> 00:01:57,360
+entire thing with my mouse the hard part
+
+
+59
+00:01:57,360 --> 00:01:58,960
+is memorizing all the tricks to get
+
+
+60
+00:01:58,960 --> 00:02:00,880
+things done efficiently vi is nice and
+
+
+61
+00:02:00,880 --> 00:02:02,560
+simple but there are a lot of features
+
+
+62
+00:02:02,560 --> 00:02:04,560
+missing like syntax highlighting or the
+
+
+63
+00:02:04,560 --> 00:02:06,640
+ability to implement plugins to extend
+
+
+64
+00:02:06,640 --> 00:02:08,319
+its functionality around the same time
+
+
+65
+00:02:08,319 --> 00:02:10,319
+period another editor was being created
+
+
+66
+00:02:10,319 --> 00:02:13,360
+by guy steele at mit called emacs which
+
+
+67
+00:02:13,360 --> 00:02:16,239
+stands for editor macros like vi it's
+
+
+68
+00:02:16,239 --> 00:02:18,319
+primarily a keyboard based editor but
+
+
+69
+00:02:18,319 --> 00:02:20,160
+it's highly extensible and integrates
+
+
+70
+00:02:20,160 --> 00:02:22,239
+additional features like debuggers a
+
+
+71
+00:02:22,239 --> 00:02:24,640
+file manager terminal emulator music
+
+
+72
+00:02:24,640 --> 00:02:26,480
+player and anything else you can imagine
+
+
+73
+00:02:26,480 --> 00:02:28,239
+it's not just a text editor but a
+
+
+74
+00:02:28,239 --> 00:02:29,840
+full-blown integrated development
+
+
+75
+00:02:29,840 --> 00:02:31,360
+environment that means it can do a lot
+
+
+76
+00:02:31,360 --> 00:02:32,879
+more but it takes a lot more time to
+
+
+77
+00:02:32,879 --> 00:02:35,200
+configure on your part initially emacs
+
+
+78
+00:02:35,200 --> 00:02:36,720
+feels a little more user-friendly than
+
+
+79
+00:02:36,720 --> 00:02:38,640
+something like vi we can pull up a menu
+
+
+80
+00:02:38,640 --> 00:02:40,319
+that allows us to navigate the different
+
+
+81
+00:02:40,319 --> 00:02:42,400
+commands and it's a non-modal editor
+
+
+82
+00:02:42,400 --> 00:02:44,000
+which means we don't have to understand
+
+
+83
+00:02:44,000 --> 00:02:45,360
+what a bunch of different modes do
+
+
+84
+00:02:45,360 --> 00:02:47,040
+before using it however you will need to
+
+
+85
+00:02:47,040 --> 00:02:49,120
+use a bunch of modifier keys when typing
+
+
+86
+00:02:49,120 --> 00:02:51,120
+which could result in a gruesome injury
+
+
+87
+00:02:51,120 --> 00:02:53,360
+known as emax pinky at the same time
+
+
+88
+00:02:53,360 --> 00:02:55,599
+it's far from simple and has over 10 000
+
+
+89
+00:02:55,599 --> 00:02:57,200
+built-in commands that can be used to
+
+
+90
+00:02:57,200 --> 00:02:58,879
+create macros that customize the
+
+
+91
+00:02:58,879 --> 00:03:01,040
+experience and automate work now due to
+
+
+92
+00:03:01,040 --> 00:03:02,640
+the philosophical differences between
+
+
+93
+00:03:02,640 --> 00:03:04,720
+emacs and vi and the tribal nature of
+
+
+94
+00:03:04,720 --> 00:03:06,480
+developers two distinct factions have
+
+
+95
+00:03:06,480 --> 00:03:08,720
+emerged the cult of vi and the church of
+
+
+96
+00:03:08,720 --> 00:03:10,720
+emacs founded by high priest richard
+
+
+97
+00:03:10,720 --> 00:03:12,400
+stallman they've been waging war for
+
+
+98
+00:03:12,400 --> 00:03:14,080
+decades now and people take it very
+
+
+99
+00:03:14,080 --> 00:03:15,440
+seriously when you go to google to
+
+
+100
+00:03:15,440 --> 00:03:17,760
+search for vi it auto-corrects to emacs
+
+
+101
+00:03:17,760 --> 00:03:19,440
+or if you search for emacs it auto
+
+
+102
+00:03:19,440 --> 00:03:21,760
+corrects to bi in modern times though vi
+
+
+103
+00:03:21,760 --> 00:03:23,680
+based editors are much more popular and
+
+
+104
+00:03:23,680 --> 00:03:25,680
+that brings us to editor number three
+
+
+105
+00:03:25,680 --> 00:03:28,640
+vim or vi improved on the surface vim
+
+
+106
+00:03:28,640 --> 00:03:30,640
+feels almost identical to vi because
+
+
+107
+00:03:30,640 --> 00:03:32,080
+it's a superset of its core
+
+
+108
+00:03:32,080 --> 00:03:33,760
+functionality however it's much more
+
+
+109
+00:03:33,760 --> 00:03:35,440
+popular with developers using it as
+
+
+110
+00:03:35,440 --> 00:03:37,200
+their daily editor because it provides a
+
+
+111
+00:03:37,200 --> 00:03:38,799
+ton of other essential features like
+
+
+112
+00:03:38,799 --> 00:03:41,360
+syntax highlighting multi-level undo and
+
+
+113
+00:03:41,360 --> 00:03:43,440
+plugins to customize and extend its
+
+
+114
+00:03:43,440 --> 00:03:44,959
+functionality it's more developer
+
+
+115
+00:03:44,959 --> 00:03:46,799
+friendly and you can enter the vim tutor
+
+
+116
+00:03:46,799 --> 00:03:48,799
+command to learn the basics right now
+
+
+117
+00:03:48,799 --> 00:03:50,640
+it's kind of annoying at first but once
+
+
+118
+00:03:50,640 --> 00:03:52,080
+you have the basics down you'll find
+
+
+119
+00:03:52,080 --> 00:03:53,519
+that it keeps your fingers on the home
+
+
+120
+00:03:53,519 --> 00:03:55,200
+row of the keyboard which will gradually
+
+
+121
+00:03:55,200 --> 00:03:56,799
+improve your coding speed with a lot of
+
+
+122
+00:03:56,799 --> 00:03:58,480
+practice but it also does things like
+
+
+123
+00:03:58,480 --> 00:04:00,799
+code completion in a regular ide so it's
+
+
+124
+00:04:00,799 --> 00:04:02,799
+not just all about typing faster as you
+
+
+125
+00:04:02,799 --> 00:04:04,080
+start to learn it you'll see a lot of
+
+
+126
+00:04:04,080 --> 00:04:05,760
+people make jokes about not being able
+
+
+127
+00:04:05,760 --> 00:04:07,519
+to get out of them like developers in
+
+
+128
+00:04:07,519 --> 00:04:09,360
+the 60s were writing their own compilers
+
+
+129
+00:04:09,360 --> 00:04:11,120
+but developers today can't even exit
+
+
+130
+00:04:11,120 --> 00:04:13,040
+them without a soy latte and stack
+
+
+131
+00:04:13,040 --> 00:04:14,640
+overflow i don't want to beat off a dead
+
+
+132
+00:04:14,640 --> 00:04:16,079
+horse here so i'm not going to make one
+
+
+133
+00:04:16,079 --> 00:04:17,680
+of those jokes in this video vim was
+
+
+134
+00:04:17,680 --> 00:04:19,840
+created in 1991 making it older than
+
+
+135
+00:04:19,840 --> 00:04:21,600
+many viewers on this channel but not
+
+
+136
+00:04:21,600 --> 00:04:22,800
+everybody has been happy with its
+
+
+137
+00:04:22,800 --> 00:04:24,320
+evolution and that brings us to a
+
+
+138
+00:04:24,320 --> 00:04:26,479
+popular fork called neovim that came out
+
+
+139
+00:04:26,479 --> 00:04:29,040
+in 2015. first of all it's faster than
+
+
+140
+00:04:29,040 --> 00:04:30,880
+vim which is always a plus but one of
+
+
+141
+00:04:30,880 --> 00:04:32,639
+the ways you customize vim is with a
+
+
+142
+00:04:32,639 --> 00:04:34,880
+scripting language called vim script the
+
+
+143
+00:04:34,880 --> 00:04:36,639
+problem is that vimscript sucks
+
+
+144
+00:04:36,639 --> 00:04:38,479
+according to this one guy on hacker news
+
+
+145
+00:04:38,479 --> 00:04:40,160
+neovim has addressed this problem by
+
+
+146
+00:04:40,160 --> 00:04:42,240
+embedding lua as its scripting language
+
+
+147
+00:04:42,240 --> 00:04:44,240
+an extremely fast and proven language
+
+
+148
+00:04:44,240 --> 00:04:45,840
+that's also used by platforms like
+
+
+149
+00:04:45,840 --> 00:04:47,840
+roblox that's cool and all but what if
+
+
+150
+00:04:47,840 --> 00:04:49,520
+you don't want to spend years mastering
+
+
+151
+00:04:49,520 --> 00:04:51,680
+the art of vim another good option is
+
+
+152
+00:04:51,680 --> 00:04:53,680
+nano which is part of the gnu project
+
+
+153
+00:04:53,680 --> 00:04:56,000
+and came out in 1999. it's also a
+
+
+154
+00:04:56,000 --> 00:04:57,440
+keyboard based editor that you can
+
+
+155
+00:04:57,440 --> 00:04:59,120
+launch from the command line and unlike
+
+
+156
+00:04:59,120 --> 00:05:01,199
+vim it doesn't require modes and has a
+
+
+157
+00:05:01,199 --> 00:05:02,960
+far more gentle learning curve when you
+
+
+158
+00:05:02,960 --> 00:05:04,479
+open it you'll notice all the important
+
+
+159
+00:05:04,479 --> 00:05:06,240
+keybindings are right here at the bottom
+
+
+160
+00:05:06,240 --> 00:05:08,080
+most importantly it tells you control x
+
+
+161
+00:05:08,080 --> 00:05:09,520
+is how you exit so you don't have to
+
+
+162
+00:05:09,520 --> 00:05:11,039
+unplug your computer like you would with
+
+
+163
+00:05:11,039 --> 00:05:11,490
+vim
+
+
+164
+00:05:11,490 --> 00:05:12,880
+[Music]
+
+
+165
+00:05:12,880 --> 00:05:14,240
+it lacks the features you would need to
+
+
+166
+00:05:14,240 --> 00:05:16,400
+use it as a full-blown ide but is still
+
+
+167
+00:05:16,400 --> 00:05:17,759
+a great option available on most
+
+
+168
+00:05:17,759 --> 00:05:19,680
+machines to quickly edit a file from the
+
+
+169
+00:05:19,680 --> 00:05:21,280
+terminal at this point we've looked at
+
+
+170
+00:05:21,280 --> 00:05:23,600
+editors that mostly rely on a text user
+
+
+171
+00:05:23,600 --> 00:05:25,280
+interface but the majority of developers
+
+
+172
+00:05:25,280 --> 00:05:27,520
+today use editors that have a graphical
+
+
+173
+00:05:27,520 --> 00:05:29,120
+user interface one of the earliest
+
+
+174
+00:05:29,120 --> 00:05:31,360
+programs was notepad on windows which
+
+
+175
+00:05:31,360 --> 00:05:33,919
+came out in 1983. in fact the program
+
+
+176
+00:05:33,919 --> 00:05:35,759
+itself was designed to commercialize the
+
+
+177
+00:05:35,759 --> 00:05:38,320
+mouse for ms-dos a more modern version
+
+
+178
+00:05:38,320 --> 00:05:40,960
+for programmers is notepad plus plus
+
+
+179
+00:05:40,960 --> 00:05:42,560
+instead of using the keyboard to place
+
+
+180
+00:05:42,560 --> 00:05:44,080
+the cursor where you want to edit you
+
+
+181
+00:05:44,080 --> 00:05:45,919
+simply click there with the mouse or if
+
+
+182
+00:05:45,919 --> 00:05:47,759
+you want to highlight you click hold and
+
+
+183
+00:05:47,759 --> 00:05:50,160
+drag sounds obvious but in the early 80s
+
+
+184
+00:05:50,160 --> 00:05:51,759
+this was a feature that felt like going
+
+
+185
+00:05:51,759 --> 00:05:53,840
+into the metaverse today notepad plus
+
+
+186
+00:05:53,840 --> 00:05:55,600
+plus is not developed by microsoft but
+
+
+187
+00:05:55,600 --> 00:05:57,199
+it does feel very much like you're using
+
+
+188
+00:05:57,199 --> 00:05:59,280
+microsoft excel for writing code it
+
+
+189
+00:05:59,280 --> 00:06:01,280
+supports macros and plugins so you can
+
+
+190
+00:06:01,280 --> 00:06:02,800
+definitely use it as your primary
+
+
+191
+00:06:02,800 --> 00:06:04,319
+development environment next up we've
+
+
+192
+00:06:04,319 --> 00:06:06,319
+got a proprietary ide that's very near
+
+
+193
+00:06:06,319 --> 00:06:08,639
+and dear to my heart adobe dreamweaver i
+
+
+194
+00:06:08,639 --> 00:06:10,160
+haven't actually used it in years but
+
+
+195
+00:06:10,160 --> 00:06:11,840
+it's the tool that got me started in web
+
+
+196
+00:06:11,840 --> 00:06:13,280
+development it used to be extremely
+
+
+197
+00:06:13,280 --> 00:06:15,520
+popular but not so much anymore today
+
+
+198
+00:06:15,520 --> 00:06:17,120
+it's actually a very beautiful tool and
+
+
+199
+00:06:17,120 --> 00:06:18,400
+looks really nice while you're editing
+
+
+200
+00:06:18,400 --> 00:06:20,240
+code but at the same time feels overly
+
+
+201
+00:06:20,240 --> 00:06:22,080
+slow and complex like pretty much all
+
+
+202
+00:06:22,080 --> 00:06:23,600
+adobe software it's also pretty
+
+
+203
+00:06:23,600 --> 00:06:25,600
+antiquated with first class support for
+
+
+204
+00:06:25,600 --> 00:06:27,440
+jquery and bootstrap that's pretty sad
+
+
+205
+00:06:27,440 --> 00:06:28,800
+for a commercial product and if you're
+
+
+206
+00:06:28,800 --> 00:06:31,199
+paying to use dreamweaver in 2022 stop
+
+
+207
+00:06:31,199 --> 00:06:32,080
+it
+
+
+208
+00:06:32,080 --> 00:06:33,280
+get some help
+
+
+209
+00:06:33,280 --> 00:06:35,039
+mcdonald's wants you to give yourself a
+
+
+210
+00:06:35,039 --> 00:06:36,960
+chance there are far superior free
+
+
+211
+00:06:36,960 --> 00:06:38,400
+options in the modern world you've got
+
+
+212
+00:06:38,400 --> 00:06:40,960
+tools like sublime text brackets atom
+
+
+213
+00:06:40,960 --> 00:06:43,840
+which was killed recently
+
+
+214
+00:06:43,840 --> 00:06:45,520
+but the most popular lightweight editor
+
+
+215
+00:06:45,520 --> 00:06:47,840
+by far is visual studio code it has a
+
+
+216
+00:06:47,840 --> 00:06:49,599
+graphical user interface making it very
+
+
+217
+00:06:49,599 --> 00:06:51,440
+approachable for beginners but also has
+
+
+218
+00:06:51,440 --> 00:06:53,039
+a ton of built-in shortcuts that allow
+
+
+219
+00:06:53,039 --> 00:06:54,479
+you to do things quickly kind of like
+
+
+220
+00:06:54,479 --> 00:06:56,080
+text-based editors i actually have a
+
+
+221
+00:06:56,080 --> 00:06:58,080
+full course on fireship i o that breaks
+
+
+222
+00:06:58,080 --> 00:06:59,520
+down all my favorite techniques for
+
+
+223
+00:06:59,520 --> 00:07:01,440
+increasing productivity with vs code you
+
+
+224
+00:07:01,440 --> 00:07:03,039
+can support my work by enrolling in that
+
+
+225
+00:07:03,039 --> 00:07:05,120
+course or upgrading to a pro membership
+
+
+226
+00:07:05,120 --> 00:07:07,199
+young people from all over the globe are
+
+
+227
+00:07:07,199 --> 00:07:09,440
+joining up to fight for the future i'm
+
+
+228
+00:07:09,440 --> 00:07:11,680
+doing my part but an even bigger benefit
+
+
+229
+00:07:11,680 --> 00:07:13,759
+of vs code is the fact that it's popular
+
+
+230
+00:07:13,759 --> 00:07:15,919
+and has a huge extension ecosystem that
+
+
+231
+00:07:15,919 --> 00:07:17,120
+means if you're using some kind of
+
+
+232
+00:07:17,120 --> 00:07:18,800
+tooling that can benefit from additional
+
+
+233
+00:07:18,800 --> 00:07:20,720
+support like tailwind for example you're
+
+
+234
+00:07:20,720 --> 00:07:22,560
+pretty much guaranteed to have a vs code
+
+
+235
+00:07:22,560 --> 00:07:24,319
+extension which may not be the case on
+
+
+236
+00:07:24,319 --> 00:07:26,240
+other editors the application itself is
+
+
+237
+00:07:26,240 --> 00:07:27,919
+open source and built with electron
+
+
+238
+00:07:27,919 --> 00:07:29,520
+which is based on web technologies
+
+
+239
+00:07:29,520 --> 00:07:31,199
+making it easy to extend for web
+
+
+240
+00:07:31,199 --> 00:07:32,479
+developers although it does have a
+
+
+241
+00:07:32,479 --> 00:07:34,160
+reputation of being a memory hog the
+
+
+242
+00:07:34,160 --> 00:07:35,759
+editing experience can be very minimal
+
+
+243
+00:07:35,759 --> 00:07:37,280
+if you'd like and i usually go into zen
+
+
+244
+00:07:37,280 --> 00:07:39,039
+mode when writing code myself but at the
+
+
+245
+00:07:39,039 --> 00:07:40,800
+same time you can make it a full-blown
+
+
+246
+00:07:40,800 --> 00:07:42,240
+integrated development environment it
+
+
+247
+00:07:42,240 --> 00:07:43,919
+can edit files remotely on github
+
+
+248
+00:07:43,919 --> 00:07:45,440
+connect to your resources in the cloud
+
+
+249
+00:07:45,440 --> 00:07:47,360
+work with docker containers and so on
+
+
+250
+00:07:47,360 --> 00:07:48,800
+that's great and all but for many
+
+
+251
+00:07:48,800 --> 00:07:51,039
+platforms vs code may not be the optimal
+
+
+252
+00:07:51,039 --> 00:07:52,720
+choice if you're building ios apps
+
+
+253
+00:07:52,720 --> 00:07:54,080
+you'll likely want to use apple's
+
+
+254
+00:07:54,080 --> 00:07:56,000
+integrated development environment xcode
+
+
+255
+00:07:56,000 --> 00:07:58,080
+or for android apps google's android
+
+
+256
+00:07:58,080 --> 00:08:00,400
+studio or as we'll look at now visual
+
+
+257
+00:08:00,400 --> 00:08:02,879
+studio for microsoft's.net framework
+
+
+258
+00:08:02,879 --> 00:08:04,560
+this is a true integrated development
+
+
+259
+00:08:04,560 --> 00:08:06,240
+environment which is a comprehensive set
+
+
+260
+00:08:06,240 --> 00:08:08,240
+of tools for developing certain types of
+
+
+261
+00:08:08,240 --> 00:08:10,800
+apps like in this case desktop web and
+
+
+262
+00:08:10,800 --> 00:08:12,479
+server-side apps with dot-net it
+
+
+263
+00:08:12,479 --> 00:08:14,080
+provides powerful code completion
+
+
+264
+00:08:14,080 --> 00:08:16,240
+refactoring and debugging tools for its
+
+
+265
+00:08:16,240 --> 00:08:18,160
+core languages like c-plus plus and
+
+
+266
+00:08:18,160 --> 00:08:20,000
+c-sharp it may feel overwhelming at
+
+
+267
+00:08:20,000 --> 00:08:21,759
+first because there's all kinds of tools
+
+
+268
+00:08:21,759 --> 00:08:23,120
+and wizards that you're not going to
+
+
+269
+00:08:23,120 --> 00:08:24,879
+know how to use until you're balls deep
+
+
+270
+00:08:24,879 --> 00:08:26,240
+in a project when you get that deep
+
+
+271
+00:08:26,240 --> 00:08:27,759
+you'll be really glad to have tools like
+
+
+272
+00:08:27,759 --> 00:08:29,280
+that because otherwise you'll likely be
+
+
+273
+00:08:29,280 --> 00:08:31,039
+dealing with some half-assed open source
+
+
+274
+00:08:31,039 --> 00:08:32,800
+extension if you're lucky the bottom
+
+
+275
+00:08:32,800 --> 00:08:34,880
+line is that ides can be awesome when
+
+
+276
+00:08:34,880 --> 00:08:36,640
+you're committed to a specific platform
+
+
+277
+00:08:36,640 --> 00:08:38,320
+and that brings us to number 10
+
+
+278
+00:08:38,320 --> 00:08:40,800
+jetbrains a family of editors and ides
+
+
+279
+00:08:40,800 --> 00:08:42,399
+that many consider the gold standard for
+
+
+280
+00:08:42,399 --> 00:08:44,159
+writing code at a professional level
+
+
+281
+00:08:44,159 --> 00:08:45,920
+it's most well known for intellij for
+
+
+282
+00:08:45,920 --> 00:08:47,680
+java development but in this video we'll
+
+
+283
+00:08:47,680 --> 00:08:49,360
+look at webstorm for web development
+
+
+284
+00:08:49,360 --> 00:08:51,120
+although i use vs code today i've been a
+
+
+285
+00:08:51,120 --> 00:08:53,200
+happy jetbrains customer in the past but
+
+
+286
+00:08:53,200 --> 00:08:54,959
+that happiness comes at a cost of about
+
+
+287
+00:08:54,959 --> 00:08:57,200
+69 per year you can evaluate it with a
+
+
+288
+00:08:57,200 --> 00:08:58,880
+free trial and when you first open up
+
+
+289
+00:08:58,880 --> 00:09:00,560
+webstorm you'll notice things feel more
+
+
+290
+00:09:00,560 --> 00:09:02,959
+like a true ide as opposed to a minimal
+
+
+291
+00:09:02,959 --> 00:09:04,959
+text editor it has a wizard to guide you
+
+
+292
+00:09:04,959 --> 00:09:06,399
+through the setup of a new project
+
+
+293
+00:09:06,399 --> 00:09:08,000
+although this does feel pretty outdated
+
+
+294
+00:09:08,000 --> 00:09:10,399
+with options like meteor cordova and
+
+
+295
+00:09:10,399 --> 00:09:12,959
+angularjs version 1 which was retired a
+
+
+296
+00:09:12,959 --> 00:09:14,399
+few months ago if you're still using
+
+
+297
+00:09:14,399 --> 00:09:16,560
+angularjs version 1 you're only cheating
+
+
+298
+00:09:16,560 --> 00:09:18,240
+yourself out of the chance to find out
+
+
+299
+00:09:18,240 --> 00:09:20,160
+who you really can be once you're in the
+
+
+300
+00:09:20,160 --> 00:09:21,519
+project you should have pretty much
+
+
+301
+00:09:21,519 --> 00:09:22,880
+everything you need to hit the ground
+
+
+302
+00:09:22,880 --> 00:09:24,240
+running there's less of a need to
+
+
+303
+00:09:24,240 --> 00:09:25,760
+install a bunch of plugins one thing i
+
+
+304
+00:09:25,760 --> 00:09:27,600
+really appreciate about webstorm is its
+
+
+305
+00:09:27,600 --> 00:09:29,839
+code refactoring for example in a react
+
+
+306
+00:09:29,839 --> 00:09:31,839
+app we can click on a ui element and
+
+
+307
+00:09:31,839 --> 00:09:33,760
+easily extract it into its own named
+
+
+308
+00:09:33,760 --> 00:09:35,760
+component we can also do that in vs code
+
+
+309
+00:09:35,760 --> 00:09:37,600
+with extensions but it just feels way
+
+
+310
+00:09:37,600 --> 00:09:39,680
+more reliable in webstorm in webstorm
+
+
+311
+00:09:39,680 --> 00:09:41,200
+most of the features feel a little more
+
+
+312
+00:09:41,200 --> 00:09:42,959
+polished and reliable which is what you
+
+
+313
+00:09:42,959 --> 00:09:44,880
+would expect from a paid product what's
+
+
+314
+00:09:44,880 --> 00:09:46,640
+also interesting is that jetbrains is
+
+
+315
+00:09:46,640 --> 00:09:48,160
+coming out with a new editor called
+
+
+316
+00:09:48,160 --> 00:09:49,440
+fleet which will be more like a
+
+
+317
+00:09:49,440 --> 00:09:51,360
+competitor to vs code currently it's on
+
+
+318
+00:09:51,360 --> 00:09:52,800
+a close preview so i haven't been able
+
+
+319
+00:09:52,800 --> 00:09:53,920
+to try it but make sure you're
+
+
+320
+00:09:53,920 --> 00:09:55,440
+subscribed because as soon as it comes
+
+
+321
+00:09:55,440 --> 00:09:57,200
+out i'll drop a video we just looked at
+
+
+322
+00:09:57,200 --> 00:09:58,800
+10 different ways to edit code on your
+
+
+323
+00:09:58,800 --> 00:10:00,240
+machine but i want to finish up by
+
+
+324
+00:10:00,240 --> 00:10:01,920
+saying that we're entering an age where
+
+
+325
+00:10:01,920 --> 00:10:03,440
+code editors may become entirely
+
+
+326
+00:10:03,440 --> 00:10:05,360
+cloud-based like you can run vs code in
+
+
+327
+00:10:05,360 --> 00:10:07,000
+your browser right now by going to
+
+
+328
+00:10:07,000 --> 00:10:09,200
+vscode.dev then you've got github code
+
+
+329
+00:10:09,200 --> 00:10:11,120
+spaces where you can edit your code on
+
+
+330
+00:10:11,120 --> 00:10:12,720
+overpowered cloud hardware then you've
+
+
+331
+00:10:12,720 --> 00:10:14,320
+got tools like stack blitz that use
+
+
+332
+00:10:14,320 --> 00:10:16,160
+webassembly to run full stack web
+
+
+333
+00:10:16,160 --> 00:10:17,920
+applications in the browser the future
+
+
+334
+00:10:17,920 --> 00:10:19,600
+looks interesting but the most important
+
+
+335
+00:10:19,600 --> 00:10:21,600
+takeaway from this video is don't do
+
+
+336
+00:10:21,600 --> 00:10:23,839
+drugs thanks for watching and i will see
+
+
+337
+00:10:23,839 --> 00:10:27,480
+you in the next one
+
+

@@ -1,0 +1,219 @@
+1
+00:00:00,080 --> 00:00:04,720
+react.js a half-baked functional ui library created at facebook that's used
+react.js 一个在 facebook 创建的半生不熟的功能性 ui库，已
+
+2
+00:00:04,720 --> 00:00:08,400
+by millions of developers because it has a cool name and logo it was invented by
+被数百万开发人员使用，因为它有一个很酷的名称和徽标，它是由
+
+3
+00:00:08,400 --> 00:00:12,080
+mark zuckerberg in 2013. and that was a big mistake
+马克·扎克伯格在 2013 年发明的。这是一个很大的错误
+
+4
+00:00:12,080 --> 00:00:16,480
+and it was my mistake and i'm sorry react is simple it's just javascript bro
+，这是我的错误，我 对不起，react 很简单，它只是 javascript 兄弟
+
+5
+00:00:16,480 --> 00:00:19,520
+and that's why it gives you dozens of weird ways to solve the same problems
+，这就是为什么它为您提供了许多奇怪的方法来解决相同的问题，
+
+6
+00:00:19,520 --> 00:00:22,640
+like functional and class-based components hooks forward ref higher
+例如功能和基于类的组件挂钩转发 ref
+
+7
+00:00:22,640 --> 00:00:26,720
+order components mix-ins render props suspense and so on it's credited as the
+高阶组件混合组件渲染道具悬念等等它被认为是
+
+8
+00:00:26,720 --> 00:00:30,000
+first declarative ui library even though it took most of those ideas from
+第一个声明性 ui 库，尽管它采用了
+
+9
+00:00:30,000 --> 00:00:33,440
+angularjs its killer feature though is the fact that you can write pure
+angularjs 中的大部分想法，但它的杀手级特性是你可以编写纯
+
+10
+00:00:33,440 --> 00:00:36,640
+functional code that is until you want to do anything useful in which case
+函数式代码，直到你想做任何有用的事情，在这种情况下
+
+11
+00:00:36,640 --> 00:00:39,760
+you'll need to write imper functions with state and effects the beauty of
+你需要编写带有状态的不正确函数 和效果这种方法的美妙之
+
+12
+00:00:39,760 --> 00:00:42,960
+this approach is that it makes simple things like reactive state much more
+处在于它使像反应状态这样简单的事情
+
+13
+00:00:42,960 --> 00:00:45,440
+complicated than they need to be and that's what makes us feel like real
+比它们需要的复杂得多，这就是让我们感觉像真正的
+
+14
+00:00:45,440 --> 00:00:49,039
+developers use effect is especially fun and was originally going to be called
+开发人员使用效果 i 特别有趣，最初被称为
+
+15
+00:00:49,039 --> 00:00:52,640
+use foot gun because it's a great way to introduce infinite loops performance
+使用脚枪，因为它是引入无限循环性能
+
+16
+00:00:52,640 --> 00:00:55,760
+issues and bugs that you'll never be able to figure out not to worry though
+问题和错误的
+
+17
+00:00:55,760 --> 00:00:58,960
+react is always evolving with revolutionary new features to monkey
+好方法
+
+18
+00:00:58,960 --> 00:01:02,000
+patch all the weirdness nobody saw coming on the previous release now even
+修补以前版本中没有人看到的所有奇怪之处，
+
+19
+00:01:02,000 --> 00:01:05,280
+though it has an extremely high learning curve react is a library and not a
+即使它具有极高的学习曲线，react 是一个库而不是
+
+20
+00:01:05,280 --> 00:01:08,240
+framework and that means to build something cool you'll need to find and
+框架，这意味着要构建一些很酷的东西，你需要找到并
+
+21
+00:01:08,240 --> 00:01:11,360
+install hundreds of different packages most of which were built by teenagers
+安装数百个不同的包 它是由几年前停止维护它们的青少年构建的，
+
+22
+00:01:11,360 --> 00:01:14,320
+who stopped maintaining them years ago when they went off to college to learn a
+当时他们上大学学习
+
+23
+00:01:14,320 --> 00:01:17,840
+real language like c to get started create a new react app then open up
+像 c 这样的真正语言开始创建一个新的 react 应用程序然后打开
+
+24
+00:01:17,840 --> 00:01:21,920
+google to enter the gates of tutorial hell notice how we start in strict mode
+谷歌进入教程地狱注意我们如何在严格模式下开始
+
+25
+00:01:21,920 --> 00:01:24,880
+that's used to hide baggage from previous versions of the framework i
+用于隐藏以前版本框架的包袱我的
+
+26
+00:01:24,880 --> 00:01:28,080
+mean library now in the code we pretend we're doing functional programming by
+意思是现在在代码中的库我们假装我们正在通过
+
+27
+00:01:28,080 --> 00:01:31,920
+writing our components as functions classes are also possible but they are
+编写我们的组件进行函数式编程 nts 作为函数类也是可能的，但它们
+
+28
+00:01:31,920 --> 00:01:35,280
+literally the double instead we use these hooks everywhere that do the same
+实际上是双重的，而不是我们在任何地方都使用这些钩子，它们
+
+29
+00:01:35,280 --> 00:01:39,119
+classes do in a more magical hipstery way templating is handled in
+以更神奇的时髦方式执行相同的狗屎类，模板在 jsx 中处理，
+
+30
+00:01:39,119 --> 00:01:43,280
+jsx it's a non-standard way to write html which allows you to represent the
+这是编写 html 的非标准方式，它允许你
+
+31
+00:01:43,280 --> 00:01:48,000
+ui entirely in non-portable callback hell now we can all agree to hate css
+完全在不可移植的回调地狱中代表 ui 现在我们都可以同意讨厌 css
+
+32
+00:01:48,000 --> 00:01:51,200
+but react will make you hate it even more when you try to style something on
+但是当您尝试自己设置样式时，react 会让您更加讨厌它，
+
+33
+00:01:51,200 --> 00:01:54,960
+your own luckily there are hundreds of css and js libraries working on this
+幸运的是，有数百个css 和 js 库正在解决这个
+
+34
+00:01:54,960 --> 00:01:58,479
+problem as we speak the extra complexity is worth it though because react is
+问题，因为 我们说额外的复杂性是值得的，因为
+
+35
+00:01:58,479 --> 00:02:02,399
+blazingly fast assuming you implemented all the weird tricks flawlessly life is
+假设你完美地实施了所有奇怪的技巧，反应速度非常快，生活就是
+
+36
+00:02:02,399 --> 00:02:06,079
+about suffering it's not supposed to be fun like spelt or fast like solid or
+关于痛苦它不应该像拼写那样有趣或像固体一样快速或
+
+37
+00:02:06,079 --> 00:02:09,119
+reliable like angular or all of the above like view the only thing that
+像角度那样可靠或像以上所有一样查看 唯一
+
+38
+00:02:09,119 --> 00:02:13,120
+matters is react is the most popular and that makes it undeniably the best just
+重要的是 react 是最受欢迎的，这无疑使它成为最好的，
+
+39
+00:02:13,120 --> 00:02:16,640
+like microsoft makes the best operating system and mcdonald's makes the best
+就像 microsoft 制造最好的操作系统而 mcdonald 制造最好的
+
+40
+00:02:16,640 --> 00:02:19,840
+food this has been me destroying my reputation with the react community in
+foo  d 这让我在 100 秒内毁掉了我在 react 社区的声誉 react 在
+
+41
+00:02:19,840 --> 00:02:23,440
+100 seconds react has been the most influential library in front of web
+
+
+42
+00:02:23,440 --> 00:02:26,560
+development for the last decade nothing's perfect but it got to where it
+过去十年中一直是 Web 开发领域最有影响
+
+43
+00:02:26,560 --> 00:02:29,760
+is today because it does a lot of things right and for that it deserves our
+力的库 因为它值得我们
+
+44
+00:02:29,760 --> 00:02:34,959
+respect thanks for watching and i will see you in the next one
+尊重感谢观看，我会在下一个看到你

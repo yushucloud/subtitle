@@ -1,0 +1,173 @@
+1
+00:00:00,240 --> 00:00:04,880
+data driven documents or d3 is a javascript library for creating
+数据驱动文档或 d3 是一个javascript 库，用于创建
+
+2
+00:00:04,880 --> 00:00:08,800
+interactive data visualizations with scalable vector graphics if you've ever
+具有可缩放矢量图形的交互式数据可视化，如果您
+
+3
+00:00:08,800 --> 00:00:12,719
+been to a website that has a graph map scatter plot histogram dependency
+曾经访问过具有图表的网站散点图 直方图 依赖
+
+4
+00:00:12,719 --> 00:00:17,279
+diagram b swarm tree map or pie chart it's probably powered by d3 under the
+图 b 群树图或饼图它可能由 d3 提供支持
+
+5
+00:00:17,279 --> 00:00:22,160
+hood it was created in 2011 with the goal of generating svg graphics from
+它创建于 2011 年，目的是从数据中生成 svg 图形
+
+6
+00:00:22,160 --> 00:00:26,800
+data drawing a data visualization by hand is extremely difficult with d3 you
+手动绘制数据可视化对于 d3 来说非常困难，您
+
+7
+00:00:26,800 --> 00:00:30,400
+start with some input data then write some javascript to programmatically draw
+从一些输入数据开始，然后编写一些 javascript 以编程方式
+
+8
+00:00:30,400 --> 00:00:34,160
+the graphic for you which can then be made interactive with things like labels
+为您绘制图形，然后可以进行交互 使用标签
+
+9
+00:00:34,160 --> 00:00:37,920
+and controls and when the underlying data changes it can interpolate and
+和控件之类的东西，当底层数据发生变化时，它可以
+
+10
+00:00:37,920 --> 00:00:42,000
+animate between values resulting in a beautiful visual for the end user that's
+在值之间进行插值和动画处理，从而为最终用户提供漂亮的视觉效果，
+
+11
+00:00:42,000 --> 00:00:46,160
+built entirely on web standards that you already know like html css and
+完全建立在您已经知道的 web 标准（如 html css 和
+
+12
+00:00:46,160 --> 00:00:51,039
+javascript its api allows you to select and manipulate items in the dom not much
+javascript）上，它的 api 允许您选择和 在 dom 中操作项目
+
+13
+00:00:51,039 --> 00:00:54,559
+different than something like jquery what makes d3 different is that you can
+与 jquery 之类的操作没有太大区别 d3 的不同之处在于 y 您可以
+
+14
+00:00:54,559 --> 00:00:58,399
+set properties as functions that automatically draw different graphics
+将属性设置为
+
+15
+00:00:58,399 --> 00:01:02,160
+based on your data to get started you'll first want to grab an element from the
+根据您的数据自动绘制不同图形的函数以开始使用您首先要使用 select 方法从 dom 中获取一个元素，
+
+16
+00:01:02,160 --> 00:01:06,880
+dom with the select method like an empty svg you could then draw a single shape
+例如一个空的svg，然后您可以在其中绘制单个形状
+
+17
+00:01:06,880 --> 00:01:10,880
+inside of it with the append method and customize its appearance by chaining the
+append 方法并通过将绘制单个形状的属性方法链接到它来自定义其外观，
+
+18
+00:01:10,880 --> 00:01:14,799
+attribute method to it that draws a single shape but the real power of d3
+但是
+
+19
+00:01:14,799 --> 00:01:18,799
+comes into play when you attach data to a selection instead of using a for loop
+当您将数据附加到选择而不是使用 for 循环
+
+20
+00:01:18,799 --> 00:01:22,799
+to draw a bunch of shapes the select all method allows you to describe how to
+来绘制一堆形状时，d3 的真正威力就会发挥作用 select all方法 允许您描述如何
+
+21
+00:01:22,799 --> 00:01:26,320
+draw shape making your code more declarative you can then attach data to
+绘制形状，使您的代码更具声明性，然后您可以
+
+22
+00:01:26,320 --> 00:01:29,840
+it in the form of an array or an external file and it will draw a shape
+以数组或外部文件的形式将数据附加到它，它将
+
+23
+00:01:29,840 --> 00:01:34,159
+for every point in your data set each point has three possible states enter
+为数据集中的每个点绘制一个形状每个点都有三种可能的状态输入
+
+24
+00:01:34,159 --> 00:01:38,560
+update and exit enter is when you would initially draw your shape but d3 also
+更新和退出输入是您最初绘制形状的时候，但 d3 还
+
+25
+00:01:38,560 --> 00:01:42,479
+keeps track of changes to the data set allowing you to react when data is
+跟踪数据集的更改，允许您在数据
+
+26
+00:01:42,479 --> 00:01:46,399
+updated or removed it also provides a bunch of features to make your data look
+更新或删除时做出反应，它还提供了一堆 fea 使您的数据看起来很
+
+27
+00:01:46,399 --> 00:01:49,840
+beautiful like helpers that automatically draw scales along the x
+漂亮的助手，可以
+
+28
+00:01:49,840 --> 00:01:54,479
+and y axis based on the domain and range of the data or you might use transition
+根据数据的域和范围自动沿 x 和 y 轴绘制比例尺，或者您可以
+
+29
+00:01:54,479 --> 00:01:58,399
+to create an animation as each data point is added to the chart and finally
+在将每个数据点添加到图表时使用转换来创建动画，最后
+
+30
+00:01:58,399 --> 00:02:02,320
+you might listen to events to add tooltips or other interactive elements
+您可以 收听事件以将工具提示或其他交互式元素添加
+
+31
+00:02:02,320 --> 00:02:06,719
+to your chart this has been d3js in 100 seconds if you want to see more short
+到您的图表中这已经是 100秒内的 d3js 如果您想看到更多这样的短
+
+32
+00:02:06,719 --> 00:02:10,160
+videos like this hit the like button and subscribe and if you want to go beyond
+视频，请点击喜欢按钮并订阅，如果您想超过
+
+33
+00:02:10,160 --> 00:02:14,480
+100 seconds there's a new fireship pro lesson about building a real-time chart
+100 秒，那么有一个新的 fireship pro关于使用 d3 和 firestore 构建实时图表的课程
+
+34
+00:02:14,480 --> 00:02:18,400
+with d3 and firestore thanks for watching and i will see you in the next
+感谢您的观看，我们下节再见
+
+35
+00:02:18,400 --> 00:02:21,400
+one

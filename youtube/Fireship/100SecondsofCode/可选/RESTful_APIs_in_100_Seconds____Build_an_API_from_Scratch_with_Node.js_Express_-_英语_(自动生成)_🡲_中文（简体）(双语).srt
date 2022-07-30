@@ -1,0 +1,779 @@
+1
+00:00:00,240 --> 00:00:05,279
+an application programming interface or api is a way for two computers to talk
+应用程序编程接口或api 是两台计算机
+
+2
+00:00:05,279 --> 00:00:09,920
+to each other using an api is just like using a website in your browser but
+使用 api 相互通信的一种方式，就像在浏览器中使用网站一样，但
+
+3
+00:00:09,920 --> 00:00:13,840
+instead of clicking buttons and filling out forms you write code to explicitly
+不是单击按钮和填写表单，而是编写代码来明确地
+
+4
+00:00:13,840 --> 00:00:18,160
+request data from a server for example we could visit the nasa website to look
+从服务器请求数据我们可以访问 nasa 网站来
+
+5
+00:00:18,160 --> 00:00:23,039
+at asteroids or we could use their rest api to request the raw json data that is
+查看小行星，或者我们可以使用它们的 restapi 来请求屏幕上显示的原始 json 数据，
+
+6
+00:00:23,039 --> 00:00:27,199
+shown on the screen now most apis in the world are restful which means they
+现在世界上大多数 api都是安静的，这意味着它们
+
+7
+00:00:27,199 --> 00:00:31,760
+follow a set of rules or constraints known as representational state transfer
+遵循一组称为代表性的规则或约束
+
+8
+00:00:31,760 --> 00:00:36,320
+which has been the de facto standard for api development since the early 2000s a
+自 2000 年代初以来，状态转移一直是
+
+9
+00:00:36,320 --> 00:00:41,920
+restful api organizes data entities or resources into a bunch of unique urls
+api 开发的事实上的标准
+
+10
+00:00:41,920 --> 00:00:46,800
+well technically not urls but uris or uniform resource identifiers that
+
+
+11
+00:00:46,800 --> 00:00:51,199
+differentiate different types of data resources on a server a client can get
+客户端可以
+
+12
+00:00:51,199 --> 00:00:56,079
+data about a resource by making a request to that endpoint over http the
+通过 http 向该端点发出请求来获取有关资源的数据，
+
+13
+00:00:56,079 --> 00:01:00,399
+request message has a very specific format most importantly the start line
+请求消息具有非常特定的格式 重要的是，起始行
+
+14
+00:01:00,399 --> 00:01:05,280
+contains the uri that you wish to access which is preceded by an http verb or
+包含您希望访问的 uri，它前面是一个 http 动词或
+
+15
+00:01:05,280 --> 00:01:09,680
+request method which signal your intent with the resource a get request means
+请求方法，它表明您对资源的意图 get 请求意味着
+
+16
+00:01:09,680 --> 00:01:12,880
+you just want to read the data while post means you want to create a new
+您只想读取数据，而post 意味着您想要创建一个新
+
+17
+00:01:12,880 --> 00:01:17,360
+resource patch is for updates delete is for removing data along with a few other
+资源 patch 用于更新 delete用于删除数据以及
+
+18
+00:01:17,360 --> 00:01:20,960
+methods beyond those below the start line we have headers which contain
+除起始行之外的其他一些方法我们有包含
+
+19
+00:01:20,960 --> 00:01:24,400
+metadata about the request the accept header can tell the server you want the
+有关请求的元数据的标头接受标头可以告诉服务器您想要
+
+20
+00:01:24,400 --> 00:01:28,240
+data in a specific format or the authorization header can be used to tell
+特定格式的数据或授权标头可以 用于
+
+21
+00:01:28,240 --> 00:01:31,759
+the server that you're actually allowed to make that request then following the
+告诉服务器您实际上被允许发出该请求，然后在
+
+22
+00:01:31,759 --> 00:01:36,079
+headers we have the body which contains a custom payload of data the server will
+标头之后我们有包含自定义数据有效负载的正文，服务器将
+
+23
+00:01:36,079 --> 00:01:39,759
+receive the request message then execute some code usually to read from a
+接收请求消息然后执行一些代码通常从
+
+24
+00:01:39,759 --> 00:01:43,680
+database that can then be formatted into a response message the top of the
+数据库中读取 然后被格式化为响应消息，消息的顶部
+
+25
+00:01:43,680 --> 00:01:47,119
+message contains a status code to tell the client what happened to their
+包含一个状态代码，告诉客户端他们的
+
+26
+00:01:47,119 --> 00:01:51,600
+request codes at the 200 level mean that things went well at the 400 level it
+请求代码在 200 级别发生了什么 表示事情在 400 级别进展顺利，这
+
+27
+00:01:51,600 --> 00:01:55,280
+means something was wrong with your request and at the 500 level it means
+意味着您的请求有问题，在 500 级别，这
+
+28
+00:01:55,280 --> 00:01:59,200
+that the server failed after the status code we then have the response headers
+意味着服务器在状态代码后失败，然后我们有响应标头
+
+29
+00:01:59,200 --> 00:02:02,719
+which contain information about the server that's followed by the response
+，其中包含有关服务器的信息，然后是响应
+
+30
+00:02:02,719 --> 00:02:07,040
+body which contains the data payload and is usually formatted in json when
+正文 它包含数据有效负载，并且在谈论 apis 时通常以 json 格式
+
+31
+00:02:07,040 --> 00:02:10,800
+talking about apis now an important part of this architecture is that it's
+现在该架构的一个重要部分是它是
+
+32
+00:02:10,800 --> 00:02:14,080
+stateless which means that the two parties don't need to store any
+无状态的，这意味着双方不需要存储任何
+
+33
+00:02:14,080 --> 00:02:18,560
+information about each other and every request response cycle is independent
+关于彼此的信息，并且每个请求响应周期都是独立的
+
+34
+00:02:18,560 --> 00:02:22,480
+from all other communication and this leads to well-behaved web applications
+从所有其他通信中，这导致行为良好的 Web 应用
+
+35
+00:02:22,480 --> 00:02:27,280
+that are predictable and reliable this has been restful apis in 100 seconds if
+程序是可预测和可靠的，如果您喜欢它，这已经是 100 秒内宁静的 API，
+
+36
+00:02:27,280 --> 00:02:30,239
+you enjoyed it leave a comment below then next week i'll pick out the best
+请在下面留下评论，然后下周我会挑选出最好
+
+37
+00:02:30,239 --> 00:02:34,640
+one to win this free t-shirt and now it's time to go beyond 100 seconds to
+的来赢得这个免费 t  -shirt现在是时候超越 100 秒
+
+38
+00:02:34,640 --> 00:02:38,800
+build a restful api from scratch the most popular framework for building
+从头开始构建一个 RESTful api最流行的
+
+39
+00:02:38,800 --> 00:02:43,599
+restful apis in node is express.js it's been around forever and it's very
+在 node 中构建 RESTful api 的框架是 e  xpress.js 它一直存在，
+
+40
+00:02:43,599 --> 00:02:47,519
+minimal and easy to learn if you know a little bit of javascript over the next
+如果您在接下来的几分钟内了解一点 javascript，它非常简单且易于学习，
+
+41
+00:02:47,519 --> 00:02:51,760
+few minutes we'll use express to build our own restful api from scratch you'll
+我们将使用 express从头开始构建我们自己的 restful api 您将学习
+
+42
+00:02:51,760 --> 00:02:55,599
+learn how to create different endpoints for your api we'll also look at slightly
+如何创建不同的端点对于您的 api，我们还将研究
+
+43
+00:02:55,599 --> 00:02:59,120
+more advanced concepts like middleware and tools in the cloud for deploying
+更高级的概念，例如云中的中间件和工具，用于部署
+
+44
+00:02:59,120 --> 00:03:03,920
+your api like api gateways to get started you'll want to open up vs code
+您的 api，例如 api gateways 以开始您需要将 vs 代码打开
+
+45
+00:03:03,920 --> 00:03:08,000
+to an empty directory you'll need to have node.js installed and i'm using
+到您需要拥有节点的空目录.js 已安装并且我在
+
+46
+00:03:08,000 --> 00:03:13,440
+version 12 for this video to start a new node project let's run npm init y from
+此视频中使用版本 12 来启动一个新的节点项目让我们从命令行运行 npm init y
+
+47
+00:03:13,440 --> 00:03:17,040
+the command line this will create a package json and give
+这将创建一个包 json 并为
+
+48
+00:03:17,040 --> 00:03:21,840
+us a context for installing packages that we can use in node like express
+我们提供安装包的上下文，我们可以在 node 中使用这些包，例如 express
+
+49
+00:03:21,840 --> 00:03:26,080
+let's go ahead and install express using npm install you'll notice that adds
+让我们继续使用 npm install 安装 express你会注意到在 package.json 文件中添加
+
+50
+00:03:26,080 --> 00:03:30,400
+express to our dependencies in the package.json file from there we'll need
+express 到我们的依赖项中，我们需要
+
+51
+00:03:30,400 --> 00:03:35,040
+a file to write our code in so let's create an index.js file at the top of
+一个文件来编写我们的代码，所以让我们在顶部创建一个 index.js 文件
+
+52
+00:03:35,040 --> 00:03:39,680
+that file we'll declare a variable for app which represents the actual api that
+我们将声明的那个文件 app 的一个变量，它代表
+
+53
+00:03:39,680 --> 00:03:44,400
+we're building and its value is an import of the express package which
+我们正在构建的实际 api，它的值是 express 包的导入，它
+
+54
+00:03:44,400 --> 00:03:48,480
+itself is a function so we'll add parentheses after it to initialize it
+本身就是一个函数，所以我们将在它之后添加括号来初始化
+
+55
+00:03:48,480 --> 00:03:53,360
+now at this point our api hasn't defined any endpoints but let's go ahead and run
+它，此时我们的 api 还没有定义任何端点，但让我们继续运行
+
+56
+00:03:53,360 --> 00:03:58,560
+it anyway the way you fire up your api on the server is by calling app.listen
+它，您在服务器上启动 api 的方式是通过调用 app.listen
+
+57
+00:03:58,560 --> 00:04:02,400
+that tells it to listen on a specific port which we've defined as its own
+告诉它侦听我们定义为它自己的
+
+58
+00:04:02,400 --> 00:04:07,280
+separate variable as 8080. then as an optional second argument to listen we
+单独变量为 8080 的特定端口。然后作为 一个可选的第二个监听参数，我们
+
+59
+00:04:07,280 --> 00:04:11,439
+can fire a callback to let us know when the api is ready and we'll just have it
+可以触发一个回调，让我们知道api 何时准备好，我们只需让它
+
+60
+00:04:11,439 --> 00:04:15,680
+console log the main url we can now run the api by going to the terminal and
+控制台记录主 url，我们现在可以通过转到终端和
+
+61
+00:04:15,680 --> 00:04:21,359
+running node period to run that index.js file and it should console.log it's live
+运行节点期间运行 api 来运行它 index.js文件，它应该
+
+62
+00:04:21,359 --> 00:04:25,680
+on localhost 8080. if we paste the url into the browser you can see we get a
+在 localhost 8080 上运行 console.log。如果我们将 url 粘贴到浏览器中，您会看到我们收到
+
+63
+00:04:25,680 --> 00:04:30,400
+message of cannot get that's because we don't have any api endpoints set up yet
+无法获取的消息，因为我们还没有设置任何 api 端点，
+
+64
+00:04:30,400 --> 00:04:34,800
+but express is still responding with an error message in fact you can open up
+但 express 是 仍然以错误消息响应实际上您可以
+
+65
+00:04:34,800 --> 00:04:38,800
+the network tab in chrome if we look closely we can see that our server
+如果我们仔细观察，在 chrome 中打开网络选项卡，我们可以看到我们的服务器
+
+66
+00:04:38,800 --> 00:04:43,600
+responded with a 404 status code meaning that page was not found at this point we
+以 404 状态代码响应，这意味着此时未找到该页面我们
+
+67
+00:04:43,600 --> 00:04:47,840
+know our api is working but debugging it in the browser is usually not the best
+知道我们的 api 正在工作，但在浏览器中调试它通常不是最佳
+
+68
+00:04:47,840 --> 00:04:51,600
+option there are many different ways we can access our api we could use curl
+选择 有许多不同的方式可以访问我们的 api 我们可以从命令行使用 curl
+
+69
+00:04:51,600 --> 00:04:55,919
+from the command line we could install a vs code extension or we could use a rest
+我们可以安装一个vs 代码扩展或者我们可以使用
+
+70
+00:04:55,919 --> 00:05:00,080
+client like insomnia or postman i'm going to be using insomnia throughout
+像 insomnia 或 postman 这样的休息客户端 我将在
+
+71
+00:05:00,080 --> 00:05:03,120
+the rest of this video because it provides a really nice way to format
+本视频的其余部分使用 insomnia 因为它提供了一种非常好的方式来格式化
+
+72
+00:05:03,120 --> 00:05:07,199
+your requests and also view a history of all your interactions from insomnia we
+您的请求并查看您与失眠症的所有交互历史我们
+
+73
+00:05:07,199 --> 00:05:10,560
+can create a new request then simply paste in our url
+可以创建一个新请求然后简单地粘贴到我们的 url
+
+74
+00:05:10,560 --> 00:05:15,520
+we can easily change the http verb from the drop down menu here click send and
+我们可以从这里的下拉菜单中轻松更改 http 动词单击发送和
+
+75
+00:05:15,520 --> 00:05:19,280
+then get the response in a nicely formatted developer friendly way we can
+然后以格式良好的开发人员友好方式获取响应，我们
+
+76
+00:05:19,280 --> 00:05:22,880
+even see the timeline here with our request in yellow and the response in
+甚至可以在这里看到时间线，我们的请求为黄色，响应为
+
+77
+00:05:22,880 --> 00:05:26,560
+green but now we need to get back to our javascript and add an endpoint to the
+绿色，但现在我们需要回到我们的javascript 并添加一个 endp 对于
+
+78
+00:05:26,560 --> 00:05:32,080
+api we can do that by changing an http verb to the app instance if you type a
+api，我们可以通过将 http动词更改为应用程序实例来做到这一点，如果您
+
+79
+00:05:32,080 --> 00:05:36,000
+period after app you'll get intellisense on a bunch of different methods that
+在应用程序之后键入一个句点，您将在该对象上的一堆不同方法上获得智能感知
+
+80
+00:05:36,000 --> 00:05:40,960
+live on this object and you'll notice methods for git post patch etc which
+，您会注意到git post patch 的方法 etc
+
+81
+00:05:40,960 --> 00:05:45,280
+represent different http verbs if we want to add a get endpoint to the
+代表不同的http动词如果我们想向t-shirt uri添加一个get端点，
+
+82
+00:05:45,280 --> 00:05:51,199
+t-shirt uri we can do that by passing t-shirt as its first argument
+我们可以通过传递t-shirt作为它的第一个参数
+
+83
+00:05:51,199 --> 00:05:55,440
+that'll automatically set up our server with that endpoint then it's our job to
+来做到这一点，它将自动使用该端点设置我们的服务器，然后我们的工作就是
+
+84
+00:05:55,440 --> 00:05:59,840
+handle a request to it which we do by passing a callback function as the
+处理 每当客户端或最终用户请求该 url 时，我们通过将回调函数作为
+
+85
+00:05:59,840 --> 00:06:05,440
+second argument whenever a client or end user requests that url it will fire this
+第二个参数传递给它的请求，它将触发此
+
+86
+00:06:05,440 --> 00:06:10,000
+callback function to handle the request the function itself provides access to
+回调函数来处理请求，函数本身提供对
+
+87
+00:06:10,000 --> 00:06:14,720
+two different objects the request object and the response object the request is
+两个不同对象的访问，请求对象和响应 object 请求
+
+88
+00:06:14,720 --> 00:06:18,639
+the incoming data while the response is the data we want to send back to the
+是传入的数据，而响应是我们要发送回客户端的数据，
+
+89
+00:06:18,639 --> 00:06:22,479
+client the most important thing it does is allow us to send a response back to
+它所做的最重要的事情是允许我们向客户端发送响应，
+
+90
+00:06:22,479 --> 00:06:27,520
+the client that response can have a status code like 200 for an ok response
+该响应可以具有状态 类似 200 的代码表示 ok 响应，
+
+91
+00:06:27,520 --> 00:06:32,080
+then we can send a data payload along with it if we pass a javascript object
+然后我们可以发送一个数据有效负载，如果我们传递一个 javascript 对象
+
+92
+00:06:32,080 --> 00:06:36,720
+as the argument then it will send that data back as json by default let's go
+作为参数，那么默认情况下它将将该数据作为 json 发送回让我们
+
+93
+00:06:36,720 --> 00:06:41,199
+ahead and save the file then restart the server from the terminal from insomnia
+继续保存文件，然后从 从 insomnia 终端
+
+94
+00:06:41,199 --> 00:06:46,400
+we can then make a get request to localhost 8080 t-shirt when we do that
+我们可以向localhost 8080 t-shirt 发出一个获取请求，当我们这样做时，
+
+95
+00:06:46,400 --> 00:06:51,680
+we get a json object back as the response body with a status code of 200.
+我们会返回一个 json 对象作为响应体，状态码为 200。
+
+96
+00:06:51,680 --> 00:06:55,919
+that's pretty cool but now let's go back to our code and add a second endpoint
+这很酷，但现在让我们回到我们的代码并添加 这次是第二个端点，
+
+97
+00:06:55,919 --> 00:07:01,440
+this time a post endpoint followed by a slash and a dynamic url parameter that
+后跟一个斜线和一个动态 url 参数，
+
+98
+00:07:01,440 --> 00:07:05,680
+represents the id of that t-shirt there might be millions of different t-shirts
+表示该 T 恤的 id，这个 API 上可能有数百万种不同的 T 恤
+
+99
+00:07:05,680 --> 00:07:10,560
+on this api and a dynamic url allows us to handle all of them from a single
+，动态 url 允许我们处理所有这些
+
+100
+00:07:10,560 --> 00:07:14,560
+function when dealing with a post request it means that the user is trying
+处理 post请求时的单个函数意味着用户正在尝试
+
+101
+00:07:14,560 --> 00:07:18,720
+to create new data on the server or create a new t-shirt in this case first
+在服务器上创建新数据或创建新 T 恤在这种情况下首先
+
+102
+00:07:18,720 --> 00:07:23,360
+we need the id which we can get from the url and its value is made available to
+我们需要我们可以从 url 获取的 id并生成它的值 可根据要求提供给
+
+103
+00:07:23,360 --> 00:07:27,759
+us on the request parameters object second we also need a logo for the
+我们 st 参数对象第二个我们还需要
+
+104
+00:07:27,759 --> 00:07:32,720
+t-shirt but the logo is contained in the request body which if you remember from
+T 恤的徽标，但徽标包含在请求正文中，如果您之前记得，它
+
+105
+00:07:32,720 --> 00:07:36,880
+earlier is a custom data payload contained in the incoming request in
+是传入请求中包含的自定义数据有效负载，
+
+106
+00:07:36,880 --> 00:07:41,520
+other words the request object in express allows us to access information
+换句话说，快递中的请求对象允许我们
+
+107
+00:07:41,520 --> 00:07:47,360
+from the request message like the url parameters the body the headers etc and
+从请求消息中访问信息，例如 url参数、正文、标题等
+
+108
+00:07:47,360 --> 00:07:50,720
+now that we have that information we could use it to save a new record to the
+
+
+109
+00:07:50,720 --> 00:07:54,560
+database or something along those lines that's beyond the scope of this video
+
+
+110
+00:07:54,560 --> 00:07:58,080
+what we'll do for right now is check to make sure that we have a logo in the
+现在要做的是检查以确保我们在
+
+111
+00:07:58,080 --> 00:08:03,919
+request body and if we don't then we'll send an error response with a 418 status
+请求正文中有一个徽标，如果我们没有，那么我们将发送一个带有 418 状态代码的错误响应
+
+112
+00:08:03,919 --> 00:08:07,280
+code and an error message that we need a logo
+和一条错误消息，我们需要一个徽标，
+
+113
+00:08:07,280 --> 00:08:11,280
+but assuming we do have a valid logo we can just send a response with a t-shirt
+但假设我们有 有一个有效的标志，我们可以发送一个
+
+114
+00:08:11,280 --> 00:08:15,680
+that contains that logo and id now let's go back to insomnia and we'll make a
+包含该标志和 id 的 T 恤的响应现在让我们回到 insomnia，我们
+
+115
+00:08:15,680 --> 00:08:20,160
+post request to that t-shirt endpoint followed by a unique id that can be
+将向该 T 恤端点发出一个发布请求，然后是一个唯一的 id，可以是
+
+116
+00:08:20,160 --> 00:08:24,400
+whatever you want then in the body section we'll go ahead and add a request
+任何东西 那么你想要 在正文部分，我们将继续添加
+
+117
+00:08:24,400 --> 00:08:29,840
+body with a format of json and it's just a json object that contains a logo with
+格式为 json 的请求正文，它只是一个包含带有字符串值的徽标的 json 对象，
+
+118
+00:08:29,840 --> 00:08:34,320
+a string value if we send that request you'll notice we get a 500 error
+如果我们发送该请求，您会注意到我们收到 500 错误
+
+119
+00:08:34,320 --> 00:08:38,399
+response which means our api code is broken so what's going on here it's
+响应，这意味着 我们的 api 代码被破坏了，所以这里发生了什么它
+
+120
+00:08:38,399 --> 00:08:41,680
+telling us we have a runtime error because we can't destructure the
+告诉我们我们有一个运行时错误，因为我们无法
+
+121
+00:08:41,680 --> 00:08:46,399
+property logo from the request body the reason for that is that express does not
+从请求正文中解构属性 logo原因是 express 不会
+
+122
+00:08:46,399 --> 00:08:51,279
+parse json in the body by default not everybody uses express to build a json
+默认解析正文中的 json 不是每个人都使用 express 构建一个 json
+
+123
+00:08:51,279 --> 00:08:55,360
+api so that's not the default behavior what we need to do here is set up
+api，所以这不是默认行为我们需要在这里做的是设置
+
+124
+00:08:55,360 --> 00:09:01,120
+middleware that tells express to parse json before the actual data hits the
+中间件，告诉express 在实际数据到达
+
+125
+00:09:01,120 --> 00:09:04,399
+function that we're using here to handle the request when you hear the term
+我们在这里用来处理请求的函数之前解析 json当你听到这个术语时
+
+126
+00:09:04,399 --> 00:09:08,240
+middleware think of shared code that runs before every endpoint callback that
+中间件考虑在您定义的每个端点回调之前运行的共享代码，
+
+127
+00:09:08,240 --> 00:09:12,480
+you've defined very common middleware is built into express itself we can
+非常常见的中间件内置于 express 本身中，我们可以
+
+128
+00:09:12,480 --> 00:09:16,560
+refactor our code here a little bit to make a variable for express and then we
+在这里稍微重构我们的代码，为 express 创建一个变量，然后我们
+
+129
+00:09:16,560 --> 00:09:21,360
+can call app.use to apply middleware in this case the middleware we want to
+可以调用 app. 在这种情况下用于应用中间件，我们要
+
+130
+00:09:21,360 --> 00:09:26,480
+apply is the express.json middleware now every request that comes in will first
+应用的中间件是 express.json 中间件，现在每个进来的请求都将
+
+131
+00:09:26,480 --> 00:09:30,959
+go through this express json middleware which will convert the body to json
+首先通过这个 express json 中间件，该中间件会将 body 转换为 json，
+
+132
+00:09:30,959 --> 00:09:34,959
+therefore making it available in our post callback let's go ahead and save
+因此在我们的post 回调中可用，让我们开始吧 提前保存，
+
+133
+00:09:34,959 --> 00:09:39,200
+restart our server and then go back to insomnia and if we send the same exact
+重新启动我们的服务器，然后返回insomnia，如果我们发送相同的确切
+
+134
+00:09:39,200 --> 00:09:43,600
+request you'll notice this time we get back a successful response
+请求，您会注意到这次我们会收到成功的响应
+
+135
+00:09:43,600 --> 00:09:48,240
+in addition if we make the logo an empty string and try to send the same request
+，此外，如果我们将徽标设为空字符串并尝试发送相同的请求，
+
+136
+00:09:48,240 --> 00:09:52,720
+we get a 418 response along with a message that we need a logo
+我们 收到 418 响应以及一条消息，我们需要一个徽标
+
+137
+00:09:52,720 --> 00:09:57,200
+congratulations you just built a restful api from scratch with node.js and
+恭喜您刚刚使用 node.js 和 express 从头构建了一个 restful api，
+
+138
+00:09:57,200 --> 00:10:00,560
+express but before we wrap up the video there's one more thing you should
+但是在我们结束视频之前，您还应该知道一件事
+
+139
+00:10:00,560 --> 00:10:04,880
+definitely know about when it comes to restful apis and that is the open api
+关于restful api 这就是开放的 api
+
+140
+00:10:04,880 --> 00:10:09,279
+spec which provides a standard way to describe an api in yaml it originally
+规范，它提供了一种在 yaml 中描述 api 的标准方法，它最初
+
+141
+00:10:09,279 --> 00:10:12,800
+came about in something called the swagger framework and what it allows you
+是在称为swagger 框架的东西中出现的，它允许
+
+142
+00:10:12,800 --> 00:10:17,200
+to do is describe your api in a way that can be understood by both humans and
+你做的是描述以人类和机器都可以理解的方式创建您的 api
+
+143
+00:10:17,200 --> 00:10:21,200
+machines and if you're building a serious api you get all kinds of awesome
+，如果您正在构建一个严肃的 api，您将
+
+144
+00:10:21,200 --> 00:10:25,760
+benefits in the process your api will be fully documented making it much easier
+在此过程中获得各种令人敬畏的好处，您的 api 将被完整记录，从而
+
+145
+00:10:25,760 --> 00:10:29,519
+for the end user to work with and because it follows a standard format you
+使最终用户更容易工作 并且因为它遵循标准格式，您
+
+146
+00:10:29,519 --> 00:10:33,440
+can actually just automatically generate all of your client-side or server-side
+实际上可以自动生成所有客户端或服务器端
+
+147
+00:10:33,440 --> 00:10:37,440
+code what i'm using right now is a free tool called swaggerhub and i can come up
+代码我现在使用的是一个名为 swaggerhub 的免费工具，我可以来到
+
+148
+00:10:37,440 --> 00:10:40,880
+here and hit the export button to automatically generate a bunch of
+这里并点击导出按钮自动生成一堆
+
+149
+00:10:40,880 --> 00:10:44,880
+boilerplate code now i'm usually not a huge fan of code generators but there's
+样板代码现在我通常不是代码生成器的忠实拥护者，但是当您
+
+150
+00:10:44,880 --> 00:10:49,200
+a more powerful reason to use open api when you describe your api with the open
+使用开放 api 规范描述您的 api 时，使用开放 api 有更强有力的理由，
+
+151
+00:10:49,200 --> 00:10:53,760
+api spec you can then upload the configuration to tools like api gateway
+然后您可以将配置上传到 api gateway 等工具
+
+152
+00:10:53,760 --> 00:10:58,480
+on aws or google cloud where it can be secured monitored and connected to
+在 aws 或谷歌云上，可以对其进行安全监控并连接到
+
+153
+00:10:58,480 --> 00:11:01,760
+backend infrastructure let me know if you want to see a full tutorial on that
+后端基础架构，如果您想查看有关该主题的完整教程，请告诉我，
+
+154
+00:11:01,760 --> 00:11:05,200
+topic but i'm going to go ahead and wrap things up there and if you want access
+但我将继续在那里完成所有内容，如果您 想要
+
+155
+00:11:05,200 --> 00:11:09,680
+to even more advanced content consider becoming a pro member at fireship io
+访问更高级的内容考虑成为 fireship io 的专业会员
+
+156
+00:11:09,680 --> 00:11:15,000
+thanks for watching and i will see you in the next one
+感谢收看，我们下期再见

@@ -1,0 +1,193 @@
+1
+00:00:00,240 --> 00:00:04,160
+c sharp a statically typed general purpose programming language famous for
+c sharp 一种静态类型的通用编程语言
+
+2
+00:00:04,160 --> 00:00:07,680
+being the workhorse of the windows.net framework it was created in the year
+，以 windows.net 框架的主力而闻名，它是
+
+3
+00:00:07,680 --> 00:00:12,480
+2000 by anders heilsberg at microsoft it was designed as a modern c-like
+由微软的安德斯·海尔斯伯格于 2000 年创建的，它被设计为一种现代的类似 c
+
+4
+00:00:12,480 --> 00:00:15,599
+object-oriented language and was originally going to be called cool
+的面向对象语言，最初打算 最初被称为很酷，
+
+5
+00:00:15,599 --> 00:00:19,840
+initially it was criticized as imitation java but it's evolved into one of the
+它被批评为模仿java，但它已经发展成为
+
+6
+00:00:19,840 --> 00:00:23,680
+most popular and well-loved languages to this day it can be used to build almost
+最流行和最受欢迎的语言之一，直到今天它可以用来构建几乎
+
+7
+00:00:23,680 --> 00:00:28,160
+anything like desktop apps on.net core cross-platform mobile apps with xamarin
+任何东西，如桌面应用程序 on.net 核心跨平台移动应用程序与 xamarin
+
+8
+00:00:28,160 --> 00:00:32,239
+web applications with blazer and video games with the unity framework it became
+web 带有西装外套的应用程序和带有统一框架的视频游戏它
+
+9
+00:00:32,239 --> 00:00:35,760
+open source software in 2014 and can be used to build apps outside of the
+在 2014 年成为开源软件，可用于在
+
+10
+00:00:35,760 --> 00:00:39,360
+dot-net framework c-sharp code is compiled into an intermediate language
+dot-net 框架之外构建应用程序 c-sharp 代码被编译成一种中间语言
+
+11
+00:00:39,360 --> 00:00:42,640
+which can then be interpreted by the common language runtime where it can be
+，然后可以被通用语言解释 运行时它可以
+
+12
+00:00:42,640 --> 00:00:46,559
+executed as native machine code on any operating system without the need to
+在任何操作系统上作为本机机器代码执行而无需
+
+13
+00:00:46,559 --> 00:00:50,320
+recompile it's known primarily as an object oriented language but also
+重新编译它主要被称为面向对象的语言bu  t 还
+
+14
+00:00:50,320 --> 00:00:53,600
+supports functional lambda expressions and has the ability to write a
+支持函数式 lambda 表达式，并且能够使用称为链接的功能
+
+15
+00:00:53,600 --> 00:00:57,840
+declarative query on any data structure with a feature called link it's a memory
+对任何数据结构编写声明性查询。
+
+16
+00:00:57,840 --> 00:01:01,120
+safe language thanks to garbage collection although it is possible to
+由于垃圾收集，它是一种内存安全语言，尽管
+
+17
+00:01:01,120 --> 00:01:04,879
+create an unsafe context if you want to allocate your own memory with pointers
+如果您想分配自己的内存，可以创建不安全的上下文 使用
+
+18
+00:01:04,879 --> 00:01:09,200
+to get started install the.net core sdk then open the terminal to an empty
+指针开始安装.net core sdk，然后将终端打开到一个空
+
+19
+00:01:09,200 --> 00:01:13,040
+directory and run.net new to create a new application that creates a
+目录并运行.net new 以创建一个新应用程序，该应用程序创建一个
+
+20
+00:01:13,040 --> 00:01:17,280
+program.cs file that imports the system namespace at the top then provides a
+program.cs文件，该文件在顶部导入系统命名空间，然后
+
+21
+00:01:17,280 --> 00:01:20,560
+class with a main function which is where your code will start executing
+提供一个类您的代码将开始执行的 main 函数
+
+22
+00:01:20,560 --> 00:01:24,880
+declare a variable by starting with a type followed by a name and value by
+声明一个变量，首先是一个类型，后跟一个名称和值，
+
+23
+00:01:24,880 --> 00:01:28,479
+default a value cannot be null but you can make it nullable by adding a
+默认情况下，一个值不能为空，但您可以通过向类型添加问号来使其可为空，
+
+24
+00:01:28,479 --> 00:01:31,920
+question mark to the type now to organize our code and share it in other
+以组织我们的代码 并在其他
+
+25
+00:01:31,920 --> 00:01:35,840
+files we will wrap it in a namespace we can then create a new class inside the
+文件中共享它我们将它包装在命名空间中然后我们可以在命名空间内创建一个新类
+
+26
+00:01:35,840 --> 00:01:39,360
+namespace that has a constructor when the class is instantiated and a
+，当类被实例化时它具有一个构造函数和一个
+
+27
+00:01:39,360 --> 00:01:42,960
+destructor when the class goes out of scope classes support inheritance
+des 当类超出范围时的 tructor类支持继承
+
+28
+00:01:42,960 --> 00:01:46,880
+polymorphism and everything else you would expect in a modern object-oriented
+多态性以及您在现代面向对象
+
+29
+00:01:46,880 --> 00:01:50,960
+language we can define a property on the class and make it readable with get or
+语言中
+
+30
+00:01:50,960 --> 00:01:54,479
+writable with set the language doesn't have top level functions but rather
+所期望的所有其他内容 级别函数，而是
+
+31
+00:01:54,479 --> 00:01:58,640
+methods that are defined as a member of a class however it does support lambda
+定义为类成员的方法，但是它确实支持 lambda
+
+32
+00:01:58,640 --> 00:02:02,479
+expressions or anonymous functions and other functional programming patterns
+表达式或匿名函数以及其他函数式编程模式，
+
+33
+00:02:02,479 --> 00:02:05,680
+when it comes to asynchronous programming it supports a task-based
+当涉及到异步编程时，它支持基于任务的
+
+34
+00:02:05,680 --> 00:02:09,520
+asynchronous pattern allowing you to write non-blocking code using the async
+异步模式，允许您编写非阻塞代码 现在使用异步
+
+35
+00:02:09,520 --> 00:02:14,239
+await syntax now to compile and execute your code use the.net run command this
+等待语法来编译和执行你的代码使用.net运行命令这
+
+36
+00:02:14,239 --> 00:02:18,239
+has been c sharp in 100 seconds hit the like button and subscribe if you want to
+已经在100秒内升c点击喜欢按钮并订阅如果你
+
+37
+00:02:18,239 --> 00:02:21,120
+see more short videos like this and let me know in the comments if you want to
+想看更多这样的短片，如果你想看更多这样的短片，请在评论中告诉我 你
+
+38
+00:02:21,120 --> 00:02:25,360
+see a full.net or unity tutorial thanks for watching and i will see you in the
+想看一个 full.net 或 unity 教程感谢观看，我会在下一个看到你
+
+39
+00:02:25,360 --> 00:02:28,480
+next one

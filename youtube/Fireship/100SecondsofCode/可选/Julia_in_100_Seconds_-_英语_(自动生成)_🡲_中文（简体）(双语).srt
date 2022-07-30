@@ -1,0 +1,214 @@
+1
+00:00:00,000 --> 00:00:04,140
+Julia a dynamic general purpose programming language capable of high
+Julia 是一种动态通用编程语言，能够
+
+2
+00:00:04,140 --> 00:00:08,160
+performance scientific Computing with high-level code it was created in 2012
+使用高级代码进行高性能科学计算，它是由一群计算机科学家于 2012 年创建的，
+
+3
+00:00:08,160 --> 00:00:11,880
+by a gang of computer scientists who set out to build a language with the speed
+他们着手构建一种具有
+
+4
+00:00:11,880 --> 00:00:15,420
+of C the dynamism of Ruby the practicality of python that can do
+C 速度的语言、Ruby 的活力、python 的实用性 可以开箱即用地进行
+
+5
+00:00:15,420 --> 00:00:19,380
+statistics like R and linear algebra like Matlab out of the box it's a
+R 之类的统计和 Matlab 之类的线性代数它是一种
+
+6
+00:00:19,380 --> 00:00:22,320
+general purpose language but is most well known for its use in numerical
+通用语言，但最著名的是它在数值
+
+7
+00:00:22,320 --> 00:00:26,400
+analysis data visualization and machine learning it's extremely fast because
+分析数据可视化和机器学习中的应用它非常快，因为
+
+8
+00:00:26,400 --> 00:00:30,840
+unlike most high-level languages it uses a just-in-time compiler to convert your
+与大多数高级语言不同，它使用了一个just- 实时编译器在运行之前将您的
+
+9
+00:00:30,840 --> 00:00:34,079
+source code into machine code before running it and unlike most dynamic
+源代码转换为机器代码，与大多数动态语言不同，
+
+10
+00:00:34,079 --> 00:00:38,219
+languages it has a flexible parametric type system that means static typing is
+它具有灵活的参数类型系统，这意味着静态类型
+
+11
+00:00:38,219 --> 00:00:41,879
+optional by default and types can take parameters allowing one type to
+默认是可选的，类型可以采用参数，允许一种类型
+
+12
+00:00:41,879 --> 00:00:45,120
+represent many different possibilities this opens the door to the multiple
+表示许多不同的可能性，这将打开 多分派模式的大门，
+
+13
+00:00:45,120 --> 00:00:49,020
+dispatch pattern where one function can have multiple methods or implementations
+其中一个函数可以有多个方法或
+
+14
+00:00:49,020 --> 00:00:52,920
+based on its input parameters and the language will determine which method to
+实现 编辑其输入参数和语言将确定
+
+15
+00:00:52,920 --> 00:00:56,940
+dispatch at runtime in fact even operators like Plus or functions that
+在运行时调度哪个方法实际上甚至像 Plus 这样的运算符或
+
+16
+00:00:56,940 --> 00:01:00,480
+use multiple dispatch to handle a variety of different type common Nations
+使用多个调度来处理各种不同类型的通用函数
+
+17
+00:01:00,480 --> 00:01:05,100
+to get started install Julia then create a file ending in JL declare a variable
+的函数开始安装 Julia 然后创建一个以 JL 结尾的文件声明
+
+18
+00:01:05,100 --> 00:01:09,420
+by providing a name then assign a value to it names support utf-8 encoding like
+通过提供名称然后为其分配值的变量名称支持 utf-8 编码，如
+
+19
+00:01:09,420 --> 00:01:13,619
+emojis or mathematical symbols it uses symbols to represent built-in constants
+表情符号或数学符号它使用符号来表示内置常量，
+
+20
+00:01:13,619 --> 00:01:17,460
+like Pi allowing you to write equations more elegantly in your code like Pearl
+如 Pi，允许您在代码中更优雅地编写方程式，如 Pearl
+
+21
+00:01:17,460 --> 00:01:20,700
+it's very good at string parsing and supports multiple Expressions on a
+它非常擅长 字符串解析并支持单行上的多个表达式，
+
+22
+00:01:20,700 --> 00:01:24,540
+single line resulting in tourists yet powerful code Define a function with the
+从而产生游客但功能强大的代码 使用 function 关键字定义一个函数
+
+23
+00:01:24,540 --> 00:01:28,080
+function keyword and close it with the end keyword or shorten it to a single
+并使用end 关键字将其关闭或将其缩短为
+
+24
+00:01:28,080 --> 00:01:31,560
+line with the equal sign or because functions are first class objects they
+带有等号的单行，或者因为函数是它们可以的第一类对象
+
+25
+00:01:31,560 --> 00:01:35,040
+can be assigned to a variable or pass to another function anonymously what's
+被分配给一个变量或匿名传递给另一个函数
+
+26
+00:01:35,040 --> 00:01:38,460
+interesting though is that by default a function is untyped which means it
+有趣的是，默认情况下一个函数是unty  ped 这意味着如果函数被重新定义，它会
+
+27
+00:01:38,460 --> 00:01:42,420
+implements one method to handle all inputs if the function is redefined but
+实现一种方法来处理所有输入，但是
+
+28
+00:01:42,420 --> 00:01:46,259
+this time with a type for the arguments another method is added to it when this
+这次使用参数的类型，
+
+29
+00:01:46,259 --> 00:01:49,860
+function is called at runtime Julia will look at the type of the arguments and
+在运行时调用此函数时会添加另一个方法 Julia 将查看参数的类型并
+
+30
+00:01:49,860 --> 00:01:53,340
+dispatch the corresponding method in addition we can pass a type as a
+分派 相应的方法此外，我们可以将类型作为参数传递，
+
+31
+00:01:53,340 --> 00:01:57,360
+parameter then use keywords like where to perform Logic on the type itself in
+然后使用关键字，例如 where对类型本身执行逻辑，在
+
+32
+00:01:57,360 --> 00:02:00,780
+this case it will assert that both types are the same now Julia is not an
+这种情况下，它将断言这两种类型现在是相同的，但是 Julia 不是
+
+33
+00:02:00,780 --> 00:02:04,740
+object-oriented language in the classic sense however it does support composite
+经典意义上的面向对象语言它确实支持
+
+34
+00:02:04,740 --> 00:02:08,819
+types with structs which contain multiple fields and optional types like
+具有包含多个字段和可选类型的结构的复合类型，就像
+
+35
+00:02:08,819 --> 00:02:12,660
+any good scientific language it has very well thought out support for arrays with
+任何优秀的科学语言一样，它经过深思熟虑地支持具有
+
+36
+00:02:12,660 --> 00:02:15,660
+many built-in functions to initialize and compute values over
+许多内置函数的数组，以在多维数组上初始化和计算值
+
+37
+00:02:15,660 --> 00:02:19,140
+multi-dimensional arrays it supports asynchronous Computing with its task
+它支持异步计算及其 任务
+
+38
+00:02:19,140 --> 00:02:23,040
+model which can pause and synchronize the execution of code like co-routines
+模型，它可以暂停和同步代码的执行，例如
+
+39
+00:02:23,040 --> 00:02:26,940
+in other languages and finally when it comes to Big Data it can even distribute
+其他语言中的协同程序，最后是 Bi  g 数据它甚至可以将
+
+40
+00:02:26,940 --> 00:02:31,560
+processing to multiple memory spaces or machines and run natively on a GPU this
+处理分配到多个内存空间或机器上，并在 GPU 上本地运行
+
+41
+00:02:31,560 --> 00:02:35,040
+has been Julia in 100 seconds if you want to see more short videos like this
+如果你想看更多像这样的短视频，100 秒内 Julia
+
+42
+00:02:35,040 --> 00:02:38,879
+hit the like button and subscribe thanks for watching and I will see you in the
+
+
+43
+00:02:38,879 --> 00:02:41,180
+next one
+在下一个

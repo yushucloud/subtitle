@@ -1,0 +1,345 @@
+1
+00:00:00,030 --> 00:00:02,639
+strike it's a toolkit that can monetize
+
+
+2
+00:00:02,639 --> 00:00:04,710
+virtually any online business model it's
+
+
+3
+00:00:04,710 --> 00:00:06,629
+api's or like low-level building blocks
+
+
+4
+00:00:06,629 --> 00:00:08,340
+that can be used to accept payments
+
+
+5
+00:00:08,340 --> 00:00:10,320
+manage customers handle recurring
+
+
+6
+00:00:10,320 --> 00:00:12,630
+subscriptions and more lyft uses it to
+
+
+7
+00:00:12,630 --> 00:00:14,219
+take payments from riders and payout
+
+
+8
+00:00:14,219 --> 00:00:16,680
+drivers digitalocean uses it to sell a
+
+
+9
+00:00:16,680 --> 00:00:18,359
+metered software-as-a-service product
+
+
+10
+00:00:18,359 --> 00:00:20,520
+and Shopify uses it to implement a
+
+
+11
+00:00:20,520 --> 00:00:22,380
+massive online marketplace it's
+
+
+12
+00:00:22,380 --> 00:00:23,939
+extremely popular with startups because
+
+
+13
+00:00:23,939 --> 00:00:25,800
+of its developer first approach instead
+
+
+14
+00:00:25,800 --> 00:00:26,970
+of worrying about things like compliance
+
+
+15
+00:00:26,970 --> 00:00:29,250
+security and fraud detection you can
+
+
+16
+00:00:29,250 --> 00:00:30,599
+focus on the user experience and
+
+
+17
+00:00:30,599 --> 00:00:32,099
+implement your payment system with just
+
+
+18
+00:00:32,099 --> 00:00:34,469
+a few API calls so how does a credit
+
+
+19
+00:00:34,469 --> 00:00:36,630
+card payment work when a user is ready
+
+
+20
+00:00:36,630 --> 00:00:38,340
+to make a payment in your app you'll
+
+
+21
+00:00:38,340 --> 00:00:40,230
+first need to create a payment intent on
+
+
+22
+00:00:40,230 --> 00:00:42,329
+your server the payment intent is kind
+
+
+23
+00:00:42,329 --> 00:00:43,800
+of like a session that manages the
+
+
+24
+00:00:43,800 --> 00:00:45,870
+payment process currently it's in a
+
+
+25
+00:00:45,870 --> 00:00:48,059
+state of requires payment method step
+
+
+26
+00:00:48,059 --> 00:00:49,620
+two is obtaining the credit card details
+
+
+27
+00:00:49,620 --> 00:00:52,170
+or payment method from the customer you
+
+
+28
+00:00:52,170 --> 00:00:53,820
+can handle this process securely on the
+
+
+29
+00:00:53,820 --> 00:00:56,250
+web using stripe j/s it's able to mount
+
+
+30
+00:00:56,250 --> 00:00:57,870
+a customizable credit card forum
+
+
+31
+00:00:57,870 --> 00:00:59,520
+directly in your application it
+
+
+32
+00:00:59,520 --> 00:01:01,140
+automatically validates the users input
+
+
+33
+00:01:01,140 --> 00:01:02,520
+so you don't have to worry about
+
+
+34
+00:01:02,520 --> 00:01:04,170
+implementing your own form validation
+
+
+35
+00:01:04,170 --> 00:01:05,760
+and all the edge cases that go along
+
+
+36
+00:01:05,760 --> 00:01:06,990
+with it when the form is submitted
+
+
+37
+00:01:06,990 --> 00:01:08,909
+you'll write a function that takes the
+
+
+38
+00:01:08,909 --> 00:01:10,830
+payment intent from your server combines
+
+
+39
+00:01:10,830 --> 00:01:12,360
+it with the credit card details entered
+
+
+40
+00:01:12,360 --> 00:01:14,400
+by the user in the browser then calls
+
+
+41
+00:01:14,400 --> 00:01:16,530
+stripe confirm card payment to send this
+
+
+42
+00:01:16,530 --> 00:01:18,509
+data off to stripe servers it will
+
+
+43
+00:01:18,509 --> 00:01:20,369
+attempt to finalize the payment but many
+
+
+44
+00:01:20,369 --> 00:01:21,990
+parts of the world now have regulations
+
+
+45
+00:01:21,990 --> 00:01:23,130
+in place that require additional
+
+
+46
+00:01:23,130 --> 00:01:25,140
+authorization for the payment the
+
+
+47
+00:01:25,140 --> 00:01:26,970
+payment intent now has a status of
+
+
+48
+00:01:26,970 --> 00:01:29,100
+requires action a strike will handle
+
+
+49
+00:01:29,100 --> 00:01:30,570
+this process for you entirely in the
+
+
+50
+00:01:30,570 --> 00:01:32,189
+front end and once complete your payment
+
+
+51
+00:01:32,189 --> 00:01:33,900
+intent will move to a status of
+
+
+52
+00:01:33,900 --> 00:01:36,030
+succeeded congratulations you've just
+
+
+53
+00:01:36,030 --> 00:01:37,560
+been paid but you're not done just yet
+
+
+54
+00:01:37,560 --> 00:01:39,329
+you still need to fulfill the product
+
+
+55
+00:01:39,329 --> 00:01:41,220
+somehow anytime something important
+
+
+56
+00:01:41,220 --> 00:01:42,840
+happens in the stripe API like when a
+
+
+57
+00:01:42,840 --> 00:01:44,670
+payment intent succeeds you can listen
+
+
+58
+00:01:44,670 --> 00:01:46,290
+to these events by setting up web hooks
+
+
+59
+00:01:46,290 --> 00:01:48,329
+when the event occurs stripe will send
+
+
+60
+00:01:48,329 --> 00:01:49,890
+this data to your server so you can
+
+
+61
+00:01:49,890 --> 00:01:51,630
+handle it accordingly like updating your
+
+
+62
+00:01:51,630 --> 00:01:53,310
+apps database or printing out a shipping
+
+
+63
+00:01:53,310 --> 00:01:54,899
+label this has been stripe payments in
+
+
+64
+00:01:54,899 --> 00:01:56,700
+100 seconds if you're serious about
+
+
+65
+00:01:56,700 --> 00:01:58,200
+monetizing your product consider
+
+
+66
+00:01:58,200 --> 00:01:59,729
+enrolling in my brand new stripe
+
+
+67
+00:01:59,729 --> 00:02:01,770
+JavaScript course thanks for watching
+
+
+68
+00:02:01,770 --> 00:02:04,520
+and I will see you in the next one
+
+
+69
+00:02:04,520 --> 00:02:07,660
+[Music]
+
+

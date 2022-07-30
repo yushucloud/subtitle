@@ -1,0 +1,204 @@
+1
+00:00:00,080 --> 00:00:05,040
+visual studio code a free and open source program for editing code software
+visual studio code 用于编辑代码的免费开源程序 软件
+
+2
+00:00:05,040 --> 00:00:09,040
+is just a collection of text files organized in a precise way the s code
+只是以精确方式组织的文本文件的集合s 代码
+
+3
+00:00:09,040 --> 00:00:12,960
+provides an integrated development environment to help you edit analyze and
+提供了一个集成的开发环境来帮助您编辑分析和
+
+4
+00:00:12,960 --> 00:00:16,720
+manage these files efficiently it's a microsoft project that first appeared in
+有效地管理这些文件 它是一个微软项目，最初出现 在
+
+5
+00:00:16,720 --> 00:00:20,960
+2015 as a lightweight cross-platform code editor that ships a new update
+2015 年，作为一个轻量级的跨平台代码编辑器，每个月都会发布一个新的更新
+
+6
+00:00:20,960 --> 00:00:24,160
+every single month today it's the world's most popular code editor
+，它是世界上最受欢迎的代码编辑器，
+
+7
+00:00:24,160 --> 00:00:28,400
+download it then use it to open a folder that contains your application files
+下载它然后用它打开一个包含应用程序文件的文件夹，
+
+8
+00:00:28,400 --> 00:00:31,599
+before you can write high quality code you'll need to make the editor look cool
+然后你就可以编写高质量的代码了需要
+
+9
+00:00:31,599 --> 00:00:36,399
+by clicking the settings icon to update your syntax and icon themes next you'll
+通过单击设置图标来更新您的语法和图标主题来使编辑器看起来很酷接下来您会
+
+10
+00:00:36,399 --> 00:00:40,320
+notice the file explorer contains all the files in this directory open a file
+注意到文件资源管理器包含此目录中的所有文件打开一个文件
+
+11
+00:00:40,320 --> 00:00:44,000
+and notice how the text inside is colored that's because vs code analyzes
+并注意里面的文本是如何着色的，这是因为 vs 代码分析
+
+12
+00:00:44,000 --> 00:00:47,360
+the symbols inside the file to perform syntax highlighting it will
+文件中用于执行语法高亮
+
+13
+00:00:47,360 --> 00:00:51,280
+automatically detect problems in your code if a variable is not used it
+的符号 如果不使用变量，它将自动检测代码中的问题
+
+14
+00:00:51,280 --> 00:00:54,960
+becomes a little more opaque a red squiggly line appears if your code will
+b 变得更加不透明如果您的代码
+
+15
+00:00:54,960 --> 00:00:58,879
+not compile hover over it for more details it also creates an outline of
+无法编译，会出现一条红色
+
+16
+00:00:58,879 --> 00:01:02,239
+the code structure to quickly navigate to the line of code that you're looking
+波浪线
+
+17
+00:01:02,239 --> 00:01:05,840
+for now as you start writing some code in this file you'll notice a little box
+这个文件中的一些代码你会注意到
+
+18
+00:01:05,840 --> 00:01:09,680
+pops up as you type professional developers rarely type every character
+当你键入时会弹出一个小框 专业开发人员很少键入每个字符，
+
+19
+00:01:09,680 --> 00:01:13,280
+instead they leverage vs code's intellisense to autocomplete the code
+而是利用 vs code 的智能感知来自动完成
+
+20
+00:01:13,280 --> 00:01:16,320
+that they were thinking about writing when the right suggestion comes up hit
+他们正在考虑编写的代码，当正确的建议出现时，点击
+
+21
+00:01:16,320 --> 00:01:19,920
+tab or enter to complete it you might also right click on your code to find a
+选项卡或输入 完成它，您也可以右键单击您的代码以找到
+
+22
+00:01:19,920 --> 00:01:23,840
+variety of options to analyze and refactor it but almost anything you can
+各种选项来分析和重构它，但几乎任何
+
+23
+00:01:23,840 --> 00:01:27,680
+do with the mouse you can do faster with the keyboard hit ctrl shift papa to
+您可以用鼠标做的事情，您都可以用键盘更快地完成ctrl shift papa
+
+24
+00:01:27,680 --> 00:01:31,119
+bring up the command palette from here you can quickly access any vs code
+从这里调出命令面板可以快速访问项目中的任何 vs code
+
+25
+00:01:31,119 --> 00:01:34,640
+command or any file in your project let's use it to open up a terminal
+命令或任何文件让我们用它来打开一个终端
+
+26
+00:01:34,640 --> 00:01:38,079
+session which brings up the command line here at the bottom we can use it to run
+会话，它会在底部显示命令行，我们可以使用它来
+
+27
+00:01:38,079 --> 00:01:42,320
+commands in this project like git init to enable source control or better yet
+在这个项目中运行命令，如 git init以启用源代码控制或更好，但
+
+28
+00:01:42,320 --> 00:01:45,840
+we can click on the source control icon to run git commands with a visual
+我们可以单击源代码控制图标以使用可视界面运行 git 命令
+
+29
+00:01:45,840 --> 00:01:50,640
+interface vs code is minimal by design but as an open source javascript project
+vs 代码在设计上是最小的，但作为一个开源 javascript 项目，
+
+30
+00:01:50,640 --> 00:01:53,759
+it's easily extendable from the extensions panel you'll find a huge
+它很容易从扩展中扩展 面板你会发现
+
+31
+00:01:53,759 --> 00:01:56,719
+number of packages that provide specialized tooling for whatever
+大量的包，它们为你正在使用的任何框架或语言提供专门的工具
+
+32
+00:01:56,719 --> 00:01:59,840
+framework or language you're working with most software projects work with
+大多数软件项目
+
+33
+00:01:59,840 --> 00:02:03,360
+the cloud in some capacity the remote button can connect your editor to a
+在一定程度上使用云远程按钮可以将你的编辑器连接到
+
+34
+00:02:03,360 --> 00:02:07,200
+remote github repository docker container or cloud server and you can
+远程 github 存储库 docker容器或云 服务器，您
+
+35
+00:02:07,200 --> 00:02:11,039
+even run vs code itself in the cloud to access it from the browser on any
+甚至可以在云中运行 vs code 本身，以便在任何机器上的浏览器上访问它，
+
+36
+00:02:11,039 --> 00:02:14,720
+machine this has been vs code in 100 seconds hit the like button and
+这在 100 秒内已经是 vs code点击喜欢按钮并
+
+37
+00:02:14,720 --> 00:02:17,680
+subscribe if you want to see more short videos like this and if you really want
+订阅，如果您想看更多这样的短视频，如果您真的想要
+
+38
+00:02:17,680 --> 00:02:21,520
+to maximize your productivity as a developer i just released a brand new vs
+为了最大限度地提高您作为开发人员的生产力，我刚刚发布了一个全新的 vs
+
+39
+00:02:21,520 --> 00:02:25,599
+code magic trix course that contains a ton of productivity hacks for beginners
+code 魔术 trix 课程，其中包含大量针对初学者
+
+40
+00:02:25,599 --> 00:02:29,280
+and advanced developers alike the first 10 videos are free so check it out on
+和进阶者的生产力技巧 高级开发人员前10 个视频是免费的，所以请在
+
+41
+00:02:29,280 --> 00:02:35,120
+fire ship io thanks for watching and i will see you in the next one
+fire ship io 上查看，感谢观看，我会在下一个视频中见到你

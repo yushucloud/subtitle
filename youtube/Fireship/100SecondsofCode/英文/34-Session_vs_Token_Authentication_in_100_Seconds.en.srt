@@ -1,0 +1,405 @@
+1
+00:00:00,320 --> 00:00:02,240
+user authentication there are two main
+
+
+2
+00:00:02,240 --> 00:00:03,520
+ways to get the job done
+
+
+3
+00:00:03,520 --> 00:00:05,520
+sessions and tokens the traditional
+
+
+4
+00:00:05,520 --> 00:00:07,440
+approach on the web is cookie-based
+
+
+5
+00:00:07,440 --> 00:00:09,679
+server-side sessions the process begins
+
+
+6
+00:00:09,679 --> 00:00:11,280
+with a user filling out their username
+
+
+7
+00:00:11,280 --> 00:00:13,040
+and password and then submitting it to a
+
+
+8
+00:00:13,040 --> 00:00:15,120
+server which then validates it creates a
+
+
+9
+00:00:15,120 --> 00:00:16,080
+session in the database
+
+
+10
+00:00:16,080 --> 00:00:18,000
+then responds with a session id the
+
+
+11
+00:00:18,000 --> 00:00:19,520
+session id will be saved in the
+
+
+12
+00:00:19,520 --> 00:00:20,560
+browser's cookie jar
+
+
+13
+00:00:20,560 --> 00:00:22,320
+which is a place in the browser to save
+
+
+14
+00:00:22,320 --> 00:00:24,240
+key value pairs that will be sent back
+
+
+15
+00:00:24,240 --> 00:00:26,400
+to the server on each subsequent request
+
+
+16
+00:00:26,400 --> 00:00:28,080
+it can then respond back with content
+
+
+17
+00:00:28,080 --> 00:00:29,679
+designed for the currently logged end
+
+
+18
+00:00:29,679 --> 00:00:30,240
+user
+
+
+19
+00:00:30,240 --> 00:00:31,840
+in other words we have a stateful
+
+
+20
+00:00:31,840 --> 00:00:33,600
+session between the front end client
+
+
+21
+00:00:33,600 --> 00:00:35,600
+and backend server this approach works
+
+
+22
+00:00:35,600 --> 00:00:37,360
+great but there are some drawbacks it
+
+
+23
+00:00:37,360 --> 00:00:39,040
+can be vulnerable to an attack known as
+
+
+24
+00:00:39,040 --> 00:00:40,879
+cross-site request forgery where the
+
+
+25
+00:00:40,879 --> 00:00:42,640
+attacker points the user to a site
+
+
+26
+00:00:42,640 --> 00:00:44,000
+they're logged into to perform
+
+
+27
+00:00:44,000 --> 00:00:45,600
+actions they didn't intend to like
+
+
+28
+00:00:45,600 --> 00:00:47,200
+submitting a payment or changing their
+
+
+29
+00:00:47,200 --> 00:00:47,760
+password
+
+
+30
+00:00:47,760 --> 00:00:49,600
+although the risk is very low especially
+
+
+31
+00:00:49,600 --> 00:00:51,039
+if you use a modern framework to
+
+
+32
+00:00:51,039 --> 00:00:52,800
+implement your code the bigger problem
+
+
+33
+00:00:52,800 --> 00:00:54,320
+is that you'll need to store the session
+
+
+34
+00:00:54,320 --> 00:00:54,640
+id
+
+
+35
+00:00:54,640 --> 00:00:56,480
+in a database or keep it in memory on
+
+
+36
+00:00:56,480 --> 00:00:58,000
+the server because most of today's
+
+
+37
+00:00:58,000 --> 00:00:59,440
+cloud applications are scaled
+
+
+38
+00:00:59,440 --> 00:01:01,120
+horizontally this can be a huge
+
+
+39
+00:01:01,120 --> 00:01:02,320
+bottleneck in production
+
+
+40
+00:01:02,320 --> 00:01:03,840
+and that brings us to token-based
+
+
+41
+00:01:03,840 --> 00:01:05,840
+authentication which solves this problem
+
+
+42
+00:01:05,840 --> 00:01:08,000
+but introduces its own set of challenges
+
+
+43
+00:01:08,000 --> 00:01:09,600
+the process begins the same with the
+
+
+44
+00:01:09,600 --> 00:01:11,439
+client sending its login details to the
+
+
+45
+00:01:11,439 --> 00:01:13,600
+server instead of storing a session id
+
+
+46
+00:01:13,600 --> 00:01:16,320
+it generates a json web token the jot is
+
+
+47
+00:01:16,320 --> 00:01:18,240
+created with a private key on the server
+
+
+48
+00:01:18,240 --> 00:01:19,840
+then it's sent back to the browser where
+
+
+49
+00:01:19,840 --> 00:01:21,759
+it's normally kept in local storage
+
+
+50
+00:01:21,759 --> 00:01:23,920
+on future requests the jot will be added
+
+
+51
+00:01:23,920 --> 00:01:25,439
+to the authorization header
+
+
+52
+00:01:25,439 --> 00:01:28,159
+prefixed by bearer the server then only
+
+
+53
+00:01:28,159 --> 00:01:29,840
+needs to validate the signature there's
+
+
+54
+00:01:29,840 --> 00:01:31,520
+no need for a database lookup somewhere
+
+
+55
+00:01:31,520 --> 00:01:32,720
+else in the infrastructure
+
+
+56
+00:01:32,720 --> 00:01:34,000
+and that's way more efficient when
+
+
+57
+00:01:34,000 --> 00:01:35,759
+dealing with a distributed system in the
+
+
+58
+00:01:35,759 --> 00:01:36,320
+cloud
+
+
+59
+00:01:36,320 --> 00:01:38,479
+however tokens can still be hijacked by
+
+
+60
+00:01:38,479 --> 00:01:39,920
+an attacker and they can also be
+
+
+61
+00:01:39,920 --> 00:01:41,040
+difficult to invalidate
+
+
+62
+00:01:41,040 --> 00:01:42,560
+and they can't be used to authenticate a
+
+
+63
+00:01:42,560 --> 00:01:44,399
+user in the background on the server
+
+
+64
+00:01:44,399 --> 00:01:45,600
+here's the most important thing to
+
+
+65
+00:01:45,600 --> 00:01:47,200
+understand with a session the
+
+
+66
+00:01:47,200 --> 00:01:48,960
+authentication state is handled on the
+
+
+67
+00:01:48,960 --> 00:01:49,439
+server
+
+
+68
+00:01:49,439 --> 00:01:51,600
+while tokens are managed on the client
+
+
+69
+00:01:51,600 --> 00:01:53,759
+this has been user authentication in 100
+
+
+70
+00:01:53,759 --> 00:01:54,320
+seconds
+
+
+71
+00:01:54,320 --> 00:01:56,159
+if you want to master web security check
+
+
+72
+00:01:56,159 --> 00:01:57,520
+out web security academy
+
+
+73
+00:01:57,520 --> 00:01:59,840
+my friend bartos is launching a 12-week
+
+
+74
+00:01:59,840 --> 00:02:00,799
+coaching program
+
+
+75
+00:02:00,799 --> 00:02:02,880
+it's not your ordinary course but 12
+
+
+76
+00:02:02,880 --> 00:02:05,119
+weeks of high-value group-based learning
+
+
+77
+00:02:05,119 --> 00:02:06,799
+and i'm teaching my own module in the
+
+
+78
+00:02:06,799 --> 00:02:08,640
+course on firebase security check out
+
+
+79
+00:02:08,640 --> 00:02:09,840
+the link in the description to learn
+
+
+80
+00:02:09,840 --> 00:02:11,599
+more and i will see you there in a few
+
+
+81
+00:02:11,599 --> 00:02:19,680
+weeks thanks for watching
+
+

@@ -1,0 +1,1030 @@
+1
+00:00:00,000 --> 00:00:01,040
+when you get started with web
+
+
+2
+00:00:01,040 --> 00:00:03,040
+development they say you gotta learn the
+
+
+3
+00:00:03,040 --> 00:00:05,279
+css fundamentals i agree but when you
+
+
+4
+00:00:05,279 --> 00:00:06,960
+get out into the real world you'll find
+
+
+5
+00:00:06,960 --> 00:00:09,360
+that one does not just use plain css to
+
+
+6
+00:00:09,360 --> 00:00:10,480
+build an app
+
+
+7
+00:00:10,480 --> 00:00:11,920
+the left side's getting lower than the
+
+
+8
+00:00:11,920 --> 00:00:13,679
+right side i can see what's happening
+
+
+9
+00:00:13,679 --> 00:00:15,679
+now twist it all right
+
+
+10
+00:00:15,679 --> 00:00:17,199
+it's just too painful there are
+
+
+11
+00:00:17,199 --> 00:00:18,720
+literally hundreds of libraries that
+
+
+12
+00:00:18,720 --> 00:00:20,960
+attempt to make css better but so far
+
+
+13
+00:00:20,960 --> 00:00:22,960
+there's no universal solution today
+
+
+14
+00:00:22,960 --> 00:00:24,480
+we'll take a look at seven different
+
+
+15
+00:00:24,480 --> 00:00:26,720
+ways to write css specifically in a
+
+
+16
+00:00:26,720 --> 00:00:28,960
+react app using next.js but most
+
+
+17
+00:00:28,960 --> 00:00:30,480
+importantly we'll look at the trade-offs
+
+
+18
+00:00:30,480 --> 00:00:32,079
+of each approach so you can decide
+
+
+19
+00:00:32,079 --> 00:00:33,760
+what's best for your project if you're
+
+
+20
+00:00:33,760 --> 00:00:35,360
+new here like and subscribe and check
+
+
+21
+00:00:35,360 --> 00:00:37,600
+out my full courses on fireship io to
+
+
+22
+00:00:37,600 --> 00:00:39,280
+learn even more by building complete
+
+
+23
+00:00:39,280 --> 00:00:41,600
+projects now let's talk about css here i
+
+
+24
+00:00:41,600 --> 00:00:43,600
+have a pristine next.js app and the most
+
+
+25
+00:00:43,600 --> 00:00:45,600
+primitive way to style it is to create
+
+
+26
+00:00:45,600 --> 00:00:47,840
+global css that applies to the entire
+
+
+27
+00:00:47,840 --> 00:00:49,440
+application that might work okay for a
+
+
+28
+00:00:49,440 --> 00:00:51,440
+small application but it doesn't scale
+
+
+29
+00:00:51,440 --> 00:00:53,120
+well at all the first problem you'll run
+
+
+30
+00:00:53,120 --> 00:00:54,960
+into is that naming things gets really
+
+
+31
+00:00:54,960 --> 00:00:57,600
+hard because css cascades to address
+
+
+32
+00:00:57,600 --> 00:00:59,440
+this you'll likely need to use a naming
+
+
+33
+00:00:59,440 --> 00:01:01,280
+convention like bem but it's not going
+
+
+34
+00:01:01,280 --> 00:01:03,120
+to be very fun it's hard to do perfectly
+
+
+35
+00:01:03,120 --> 00:01:04,479
+and you'll probably end up using
+
+
+36
+00:01:04,479 --> 00:01:06,000
+important everywhere because you've got
+
+
+37
+00:01:06,000 --> 00:01:07,680
+more important things to do than figure
+
+
+38
+00:01:07,680 --> 00:01:09,680
+out how to not use important the other
+
+
+39
+00:01:09,680 --> 00:01:11,439
+problem is that it generally results in
+
+
+40
+00:01:11,439 --> 00:01:14,159
+a very large and inefficient css bundle
+
+
+41
+00:01:14,159 --> 00:01:16,000
+the larger the bundle size the slower
+
+
+42
+00:01:16,000 --> 00:01:18,560
+the app loads luckily next.js supports a
+
+
+43
+00:01:18,560 --> 00:01:20,880
+tool called css modules out of the box
+
+
+44
+00:01:20,880 --> 00:01:23,200
+to address some of these concerns a css
+
+
+45
+00:01:23,200 --> 00:01:25,600
+module file looks just like regular css
+
+
+46
+00:01:25,600 --> 00:01:27,360
+but it can be scoped to an individual
+
+
+47
+00:01:27,360 --> 00:01:28,799
+component and that means you don't have
+
+
+48
+00:01:28,799 --> 00:01:30,320
+to worry about name collisions when
+
+
+49
+00:01:30,320 --> 00:01:32,000
+writing your code in other words you can
+
+
+50
+00:01:32,000 --> 00:01:33,520
+have two different module files that
+
+
+51
+00:01:33,520 --> 00:01:35,520
+define the same class name but because
+
+
+52
+00:01:35,520 --> 00:01:37,119
+they're scoped locally you don't have to
+
+
+53
+00:01:37,119 --> 00:01:38,640
+worry about them interfering with each
+
+
+54
+00:01:38,640 --> 00:01:40,640
+other in addition it tells next.js
+
+
+55
+00:01:40,640 --> 00:01:42,640
+exactly which css to load for a given
+
+
+56
+00:01:42,640 --> 00:01:44,560
+page which can reduce the bundle size
+
+
+57
+00:01:44,560 --> 00:01:46,399
+now that may sound inefficient because
+
+
+58
+00:01:46,399 --> 00:01:47,920
+you may want to share styles between
+
+
+59
+00:01:47,920 --> 00:01:49,920
+multiple components but modules have a
+
+
+60
+00:01:49,920 --> 00:01:51,920
+special composes property that can
+
+
+61
+00:01:51,920 --> 00:01:53,520
+import and override code from a
+
+
+62
+00:01:53,520 --> 00:01:55,520
+different module overall modules will
+
+
+63
+00:01:55,520 --> 00:01:57,040
+make your life much easier but we're
+
+
+64
+00:01:57,040 --> 00:01:58,960
+still dealing with plain css here and
+
+
+65
+00:01:58,960 --> 00:02:00,640
+one thing it lacks is programmatic
+
+
+66
+00:02:00,640 --> 00:02:03,280
+features like loops functions mixins and
+
+
+67
+00:02:03,280 --> 00:02:04,880
+things like that the classic way to make
+
+
+68
+00:02:04,880 --> 00:02:07,280
+css better is to use a preprocessor
+
+
+69
+00:02:07,280 --> 00:02:08,720
+which allows you to write a different
+
+
+70
+00:02:08,720 --> 00:02:11,760
+syntax like sas less or stylus than use
+
+
+71
+00:02:11,760 --> 00:02:13,840
+a compiler to convert that code back
+
+
+72
+00:02:13,840 --> 00:02:16,239
+into plain css the most popular version
+
+
+73
+00:02:16,239 --> 00:02:19,200
+is scss which is a superset of plain css
+
+
+74
+00:02:19,200 --> 00:02:21,120
+allowing you to write regular css with
+
+
+75
+00:02:21,120 --> 00:02:22,720
+additional features on top of it in
+
+
+76
+00:02:22,720 --> 00:02:24,319
+next.js all you have to do is install
+
+
+77
+00:02:24,319 --> 00:02:26,160
+the sas compiler then change the file
+
+
+78
+00:02:26,160 --> 00:02:27,440
+names in your project all the
+
+
+79
+00:02:27,440 --> 00:02:28,640
+compilation will happen in the
+
+
+80
+00:02:28,640 --> 00:02:30,480
+background for you automatically and now
+
+
+81
+00:02:30,480 --> 00:02:32,080
+you can use features like variables
+
+
+82
+00:02:32,080 --> 00:02:34,080
+mixins and functions to make your code
+
+
+83
+00:02:34,080 --> 00:02:36,080
+way more concise and efficient sas is
+
+
+84
+00:02:36,080 --> 00:02:37,760
+great and all but the problem is that
+
+
+85
+00:02:37,760 --> 00:02:39,200
+it's an entirely different language to
+
+
+86
+00:02:39,200 --> 00:02:41,120
+learn and it's completely decoupled from
+
+
+87
+00:02:41,120 --> 00:02:42,959
+our main application code we already
+
+
+88
+00:02:42,959 --> 00:02:45,040
+have our javascript and html together
+
+
+89
+00:02:45,040 --> 00:02:46,959
+why not add our css there as well and
+
+
+90
+00:02:46,959 --> 00:02:49,519
+that's where your css and js libraries
+
+
+91
+00:02:49,519 --> 00:02:50,879
+come in there are many different
+
+
+92
+00:02:50,879 --> 00:02:52,560
+libraries out there like styled
+
+
+93
+00:02:52,560 --> 00:02:55,840
+components emotion jss styletron and
+
+
+94
+00:02:55,840 --> 00:02:57,680
+many others but the characteristic they
+
+
+95
+00:02:57,680 --> 00:03:00,080
+all share is they allow you to write css
+
+
+96
+00:03:00,080 --> 00:03:01,920
+in your javascript code that allows you
+
+
+97
+00:03:01,920 --> 00:03:03,440
+to do many of the programmatic things
+
+
+98
+00:03:03,440 --> 00:03:05,280
+you can do in sas but you have the full
+
+
+99
+00:03:05,280 --> 00:03:07,200
+power of javascript at your fingertips
+
+
+100
+00:03:07,200 --> 00:03:09,200
+but more importantly it makes it easy to
+
+
+101
+00:03:09,200 --> 00:03:11,519
+create dynamic styles based on the state
+
+
+102
+00:03:11,519 --> 00:03:13,599
+of your application in next.js there's a
+
+
+103
+00:03:13,599 --> 00:03:16,400
+homegrown solution called style.jsx to
+
+
+104
+00:03:16,400 --> 00:03:18,080
+use it all you have to do is open up a
+
+
+105
+00:03:18,080 --> 00:03:20,319
+style tag and a component use the jsx
+
+
+106
+00:03:20,319 --> 00:03:22,400
+attribute then write your css as a
+
+
+107
+00:03:22,400 --> 00:03:24,239
+template literal string the cool thing
+
+
+108
+00:03:24,239 --> 00:03:26,000
+about this is that you can now compute
+
+
+109
+00:03:26,000 --> 00:03:28,000
+or interpolate values directly inside
+
+
+110
+00:03:28,000 --> 00:03:29,280
+the style which means you can
+
+
+111
+00:03:29,280 --> 00:03:31,280
+dynamically change the styles based on
+
+
+112
+00:03:31,280 --> 00:03:33,040
+state changes to the application in
+
+
+113
+00:03:33,040 --> 00:03:34,879
+addition these styles are scoped to the
+
+
+114
+00:03:34,879 --> 00:03:36,480
+location where they're defined which
+
+
+115
+00:03:36,480 --> 00:03:38,400
+means that like modules they won't bleed
+
+
+116
+00:03:38,400 --> 00:03:40,319
+out to affect other styles that's pretty
+
+
+117
+00:03:40,319 --> 00:03:42,319
+cool but we still have one major problem
+
+
+118
+00:03:42,319 --> 00:03:43,840
+we need to figure out how to write code
+
+
+119
+00:03:43,840 --> 00:03:45,519
+that will make the application actually
+
+
+120
+00:03:45,519 --> 00:03:47,360
+look good one way to address that is to
+
+
+121
+00:03:47,360 --> 00:03:49,360
+bring in a utility class library like
+
+
+122
+00:03:49,360 --> 00:03:52,159
+tailwind or windy css to provide a huge
+
+
+123
+00:03:52,159 --> 00:03:53,920
+collection of utility classes that can
+
+
+124
+00:03:53,920 --> 00:03:55,680
+help us rapidly build out a good looking
+
+
+125
+00:03:55,680 --> 00:03:57,920
+ui tailwind is very powerful but it does
+
+
+126
+00:03:57,920 --> 00:03:59,599
+require some additional tooling and
+
+
+127
+00:03:59,599 --> 00:04:01,360
+configuration to get started once
+
+
+128
+00:04:01,360 --> 00:04:03,040
+installed you'll be able to style your
+
+
+129
+00:04:03,040 --> 00:04:04,799
+components with utility classes instead
+
+
+130
+00:04:04,799 --> 00:04:06,720
+of writing the css directly in my
+
+
+131
+00:04:06,720 --> 00:04:08,239
+experience this tends to be a much
+
+
+132
+00:04:08,239 --> 00:04:09,920
+faster way to implement the design
+
+
+133
+00:04:09,920 --> 00:04:11,599
+you're going for because all your styles
+
+
+134
+00:04:11,599 --> 00:04:13,519
+are right at your fingertips with ide
+
+
+135
+00:04:13,519 --> 00:04:15,519
+intellisense in addition it can purge
+
+
+136
+00:04:15,519 --> 00:04:17,919
+all of your unused css automatically to
+
+
+137
+00:04:17,919 --> 00:04:19,919
+result in a very efficient bundle size
+
+
+138
+00:04:19,919 --> 00:04:21,680
+but not everybody likes the utility
+
+
+139
+00:04:21,680 --> 00:04:23,360
+class approach because your component
+
+
+140
+00:04:23,360 --> 00:04:25,440
+html code can get out of control very
+
+
+141
+00:04:25,440 --> 00:04:27,199
+quickly it is a big commitment and
+
+
+142
+00:04:27,199 --> 00:04:28,720
+you'll have to learn how to organize
+
+
+143
+00:04:28,720 --> 00:04:30,320
+your code properly the other thing about
+
+
+144
+00:04:30,320 --> 00:04:31,759
+tailwind is that it doesn't provide
+
+
+145
+00:04:31,759 --> 00:04:33,360
+pre-built components for you so you
+
+
+146
+00:04:33,360 --> 00:04:34,720
+still need to do a lot of work on your
+
+
+147
+00:04:34,720 --> 00:04:36,639
+own there are other popular css
+
+
+148
+00:04:36,639 --> 00:04:38,639
+frameworks out there like bootstrap or
+
+
+149
+00:04:38,639 --> 00:04:40,000
+bulma what makes it different than
+
+
+150
+00:04:40,000 --> 00:04:41,759
+tailwind is that it provides pre-built
+
+
+151
+00:04:41,759 --> 00:04:43,680
+components giving you a solid collection
+
+
+152
+00:04:43,680 --> 00:04:45,840
+of styles for things like buttons cards
+
+
+153
+00:04:45,840 --> 00:04:48,160
+and so on to use it in next.js all you
+
+
+154
+00:04:48,160 --> 00:04:50,000
+have to do is install it with npm then
+
+
+155
+00:04:50,000 --> 00:04:51,759
+import the bootstrap stylesheet from
+
+
+156
+00:04:51,759 --> 00:04:53,360
+your node modules it doesn't have the
+
+
+157
+00:04:53,360 --> 00:04:55,360
+tooling that tailwind does but to use it
+
+
+158
+00:04:55,360 --> 00:04:56,639
+all you have to do is start referencing
+
+
+159
+00:04:56,639 --> 00:04:58,320
+the classes in your components it's
+
+
+160
+00:04:58,320 --> 00:05:00,320
+simple effective and has a minimal
+
+
+161
+00:05:00,320 --> 00:05:02,000
+learning curve however if you're only
+
+
+162
+00:05:02,000 --> 00:05:03,600
+using the bootstrap style sheet you
+
+
+163
+00:05:03,600 --> 00:05:05,039
+might find yourself creating your own
+
+
+164
+00:05:05,039 --> 00:05:06,960
+components to wrap those styles in a way
+
+
+165
+00:05:06,960 --> 00:05:08,639
+that can be efficiently used with other
+
+
+166
+00:05:08,639 --> 00:05:10,080
+components like you might have a
+
+
+167
+00:05:10,080 --> 00:05:11,840
+bootstrap button component to avoid
+
+
+168
+00:05:11,840 --> 00:05:13,600
+repeating the same class names over and
+
+
+169
+00:05:13,600 --> 00:05:15,600
+over again another problem is that using
+
+
+170
+00:05:15,600 --> 00:05:17,199
+bootstrap like this will result in a
+
+
+171
+00:05:17,199 --> 00:05:18,880
+large bundle size because there are a
+
+
+172
+00:05:18,880 --> 00:05:20,400
+lot of unused classes that will get
+
+
+173
+00:05:20,400 --> 00:05:22,639
+included in the final css when it comes
+
+
+174
+00:05:22,639 --> 00:05:24,639
+to react a more tightly integrated
+
+
+175
+00:05:24,639 --> 00:05:26,320
+approach is to use a full-blown
+
+
+176
+00:05:26,320 --> 00:05:28,160
+component library there are ones that
+
+
+177
+00:05:28,160 --> 00:05:30,000
+already do that for bootstrap but the
+
+
+178
+00:05:30,000 --> 00:05:32,160
+react ecosystem has many other design
+
+
+179
+00:05:32,160 --> 00:05:33,919
+systems that you'll want to check out an
+
+
+180
+00:05:33,919 --> 00:05:35,520
+awesome one i've been using lately is
+
+
+181
+00:05:35,520 --> 00:05:37,360
+manteen not only does it handle much of
+
+
+182
+00:05:37,360 --> 00:05:39,360
+your css but it provides a ton of
+
+
+183
+00:05:39,360 --> 00:05:40,720
+utilities to handle things that you
+
+
+184
+00:05:40,720 --> 00:05:42,479
+would otherwise have to do in javascript
+
+
+185
+00:05:42,479 --> 00:05:44,000
+as well like hooks to use the
+
+
+186
+00:05:44,000 --> 00:05:46,000
+intersection observer api to know when
+
+
+187
+00:05:46,000 --> 00:05:48,080
+an element is visible it also has tools
+
+
+188
+00:05:48,080 --> 00:05:50,240
+to manage modals and notifications
+
+
+189
+00:05:50,240 --> 00:05:52,560
+calendars and a ton of other stuff now
+
+
+190
+00:05:52,560 --> 00:05:54,080
+libraries like this tend to be fairly
+
+
+191
+00:05:54,080 --> 00:05:55,840
+opinionated so make sure to choose one
+
+
+192
+00:05:55,840 --> 00:05:57,280
+that you really like other ones worth
+
+
+193
+00:05:57,280 --> 00:05:59,840
+checking out are ant material design
+
+
+194
+00:05:59,840 --> 00:06:02,720
+rebase chakra and tamagui that's not a
+
+
+195
+00:06:02,720 --> 00:06:04,080
+complete list so let me know your
+
+
+196
+00:06:04,080 --> 00:06:05,440
+favorite library in the comments
+
+
+197
+00:06:05,440 --> 00:06:07,520
+congratulations you now know seven
+
+
+198
+00:06:07,520 --> 00:06:09,360
+different ways to deal with css and
+
+
+199
+00:06:09,360 --> 00:06:11,120
+react keep in mind that you can mix and
+
+
+200
+00:06:11,120 --> 00:06:12,720
+match all these different techniques to
+
+
+201
+00:06:12,720 --> 00:06:14,319
+use whatever works best for your
+
+
+202
+00:06:14,319 --> 00:06:15,759
+application if you want to learn more
+
+
+203
+00:06:15,759 --> 00:06:17,520
+advanced concepts with full project
+
+
+204
+00:06:17,520 --> 00:06:19,840
+courses become a pro member at fireship
+
+
+205
+00:06:19,840 --> 00:06:21,840
+io thanks for watching and i will see
+
+
+206
+00:06:21,840 --> 00:06:24,720
+you in the next one
+
+

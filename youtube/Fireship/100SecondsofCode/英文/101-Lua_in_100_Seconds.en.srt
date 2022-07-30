@@ -1,0 +1,375 @@
+1
+00:00:00,160 --> 00:00:02,480
+lua a fast multi-paradigm scripting
+
+
+2
+00:00:02,480 --> 00:00:04,799
+language famous for being so underrated
+
+
+3
+00:00:04,799 --> 00:00:06,480
+imagine a language that's easier to
+
+
+4
+00:00:06,480 --> 00:00:08,160
+learn than python while also being
+
+
+5
+00:00:08,160 --> 00:00:10,480
+faster and more portable than python lua
+
+
+6
+00:00:10,480 --> 00:00:11,840
+was named after the moon when it was
+
+
+7
+00:00:11,840 --> 00:00:13,200
+designed by a team of computer
+
+
+8
+00:00:13,200 --> 00:00:15,519
+scientists in brazil in 1993 it's
+
+
+9
+00:00:15,519 --> 00:00:17,199
+lightweight and extremely fast because
+
+
+10
+00:00:17,199 --> 00:00:19,199
+its virtual machine maps very closely to
+
+
+11
+00:00:19,199 --> 00:00:20,800
+c and when used with its just-in-time
+
+
+12
+00:00:20,800 --> 00:00:22,480
+compiler it's widely considered the
+
+
+13
+00:00:22,480 --> 00:00:24,000
+fastest scripting language in the world
+
+
+14
+00:00:24,000 --> 00:00:26,080
+this makes it ideal for embedding into
+
+
+15
+00:00:26,080 --> 00:00:27,599
+other applications like world of
+
+
+16
+00:00:27,599 --> 00:00:29,840
+warcraft or roblox for example where
+
+
+17
+00:00:29,840 --> 00:00:31,760
+users can write lua to build their own
+
+
+18
+00:00:31,760 --> 00:00:33,440
+games and features because the language
+
+
+19
+00:00:33,440 --> 00:00:35,360
+is embedded into the base game it's easy
+
+
+20
+00:00:35,360 --> 00:00:37,600
+to learn because it has only 21 reserved
+
+
+21
+00:00:37,600 --> 00:00:39,600
+words and has only one data structuring
+
+
+22
+00:00:39,600 --> 00:00:41,200
+mechanism called a table that can
+
+
+23
+00:00:41,200 --> 00:00:43,520
+represent arrays dictionaries graphs
+
+
+24
+00:00:43,520 --> 00:00:45,360
+trees and more it also supports
+
+
+25
+00:00:45,360 --> 00:00:46,800
+collaborative multitasking with
+
+
+26
+00:00:46,800 --> 00:00:48,800
+co-routines its standard library is very
+
+
+27
+00:00:48,800 --> 00:00:50,399
+minimal but it does have a large
+
+
+28
+00:00:50,399 --> 00:00:52,559
+ecosystem of packages with the lua rocks
+
+
+29
+00:00:52,559 --> 00:00:54,719
+package manager to get started install
+
+
+30
+00:00:54,719 --> 00:00:56,879
+it then create a file ending in.lua
+
+
+31
+00:00:56,879 --> 00:00:59,120
+declare a variable by providing a name
+
+
+32
+00:00:59,120 --> 00:01:01,039
+and value by default variables are
+
+
+33
+00:01:01,039 --> 00:01:02,559
+global but make them local with the
+
+
+34
+00:01:02,559 --> 00:01:04,799
+local keyword it's a dynamic language so
+
+
+35
+00:01:04,799 --> 00:01:06,560
+no type annotations are required we can
+
+
+36
+00:01:06,560 --> 00:01:08,400
+then use print to output the value to
+
+
+37
+00:01:08,400 --> 00:01:10,159
+the standard output there are no classes
+
+
+38
+00:01:10,159 --> 00:01:12,240
+in lua but anything you can imagine can
+
+
+39
+00:01:12,240 --> 00:01:14,240
+be done with functions and tables a
+
+
+40
+00:01:14,240 --> 00:01:15,680
+function is declared with the function
+
+
+41
+00:01:15,680 --> 00:01:17,600
+keyword then closed with the end keyword
+
+
+42
+00:01:17,600 --> 00:01:19,360
+functions are first class objects which
+
+
+43
+00:01:19,360 --> 00:01:20,960
+means they can be passed around to other
+
+
+44
+00:01:20,960 --> 00:01:22,479
+functions to support functional
+
+
+45
+00:01:22,479 --> 00:01:24,320
+programming patterns now to structure
+
+
+46
+00:01:24,320 --> 00:01:26,640
+data you create tables with braces a
+
+
+47
+00:01:26,640 --> 00:01:28,720
+table is actually an associative array
+
+
+48
+00:01:28,720 --> 00:01:30,400
+which means the index in the array can
+
+
+49
+00:01:30,400 --> 00:01:32,159
+be replaced with different values by
+
+
+50
+00:01:32,159 --> 00:01:34,159
+default it uses integer values and the
+
+
+51
+00:01:34,159 --> 00:01:35,680
+craziest thing about this language is
+
+
+52
+00:01:35,680 --> 00:01:37,759
+that it starts the index at 1 instead of
+
+
+53
+00:01:37,759 --> 00:01:39,840
+0 like most languages that gives us a
+
+
+54
+00:01:39,840 --> 00:01:41,439
+conventional array but we can also
+
+
+55
+00:01:41,439 --> 00:01:43,360
+easily create a dictionary by giving the
+
+
+56
+00:01:43,360 --> 00:01:45,920
+keys a string value now we can use 4 to
+
+
+57
+00:01:45,920 --> 00:01:47,759
+loop over every key value pair in the
+
+
+58
+00:01:47,759 --> 00:01:49,520
+table the language is single threaded
+
+
+59
+00:01:49,520 --> 00:01:51,680
+but we can use coroutines to pause and
+
+
+60
+00:01:51,680 --> 00:01:53,680
+resume a function create a co-routine
+
+
+61
+00:01:53,680 --> 00:01:56,159
+then use yield to suspend its execution
+
+
+62
+00:01:56,159 --> 00:01:57,759
+now somewhere else in the code use
+
+
+63
+00:01:57,759 --> 00:02:00,079
+co-routine resume to continue execution
+
+
+64
+00:02:00,079 --> 00:02:01,600
+until you get to the return statement
+
+
+65
+00:02:01,600 --> 00:02:03,119
+now if you're a c programmer you'll be
+
+
+66
+00:02:03,119 --> 00:02:05,280
+happy to know that lua has a very simple
+
+
+67
+00:02:05,280 --> 00:02:07,840
+c api it allows us to run lua code
+
+
+68
+00:02:07,840 --> 00:02:10,479
+inside a c program or vice versa run c
+
+
+69
+00:02:10,479 --> 00:02:12,560
+code from a lua program now to execute
+
+
+70
+00:02:12,560 --> 00:02:14,400
+your code open up the terminal and run
+
+
+71
+00:02:14,400 --> 00:02:16,560
+the lua interpreter this has been lua in
+
+
+72
+00:02:16,560 --> 00:02:18,400
+100 seconds hit the like button and
+
+
+73
+00:02:18,400 --> 00:02:19,840
+subscribe if you want to see more short
+
+
+74
+00:02:19,840 --> 00:02:21,760
+videos like this thanks for watching and
+
+
+75
+00:02:21,760 --> 00:02:25,760
+i will see you in the next one
+
+

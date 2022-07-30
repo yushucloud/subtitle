@@ -1,0 +1,179 @@
+1
+00:00:00,000 --> 00:00:03,040
+[Music] php a dynamic interpreted scripting
+[音乐]php 一种动态解释脚本
+
+2
+00:00:03,040 --> 00:00:06,480
+language for building interactive websites on the server despite the
+语言，用于在服务器上构建交互式网站，尽管
+
+3
+00:00:06,480 --> 00:00:10,000
+haters pronouncing it dead it remains one of the most popular languages for
+仇恨者认为它已死，但它仍然是后端 Web 开发最流行的语言之一，
+
+4
+00:00:10,000 --> 00:00:12,960
+back-end web development it powers content management systems like
+它为内容管理系统（如
+
+5
+00:00:12,960 --> 00:00:16,480
+wordpress top-tier websites like wikipedia and countless others via
+wordpress 等顶级网站，如维基百科和 无数其他人通过
+
+6
+00:00:16,480 --> 00:00:20,560
+frameworks like laravel and symphony hell man even facebook uses it although
+laravel 和 symphonyhell man 等框架使用它，尽管
+
+7
+00:00:20,560 --> 00:00:24,080
+they built a custom compiler to convert it to machine code on their servers it
+他们构建了一个自定义编译器来将其转换为服务器上的机器代码，它
+
+8
+00:00:24,080 --> 00:00:29,359
+was created in 1994 by rasmus lyrdorf to manage his personal home page clever
+是 rasmus lyrdorf 于 1994 年创建的，用于管理他的个人主页聪明的
+
+9
+00:00:29,359 --> 00:00:32,640
+acronym but it sounds lame for a language that powers multi-billion
+首字母缩略词，但听起来很蹩脚 一种为数十亿
+
+10
+00:00:32,640 --> 00:00:36,320
+dollar enterprises so today we practice cognitive dissonance to tell ourselves
+美元企业提供动力的语言，所以今天我们练习认知失调来告诉自己
+
+11
+00:00:36,320 --> 00:00:40,960
+php stands for hypertext preprocessor it has a special place in history because
+php 代表超文本预处理器，它在历史上占有特殊地位，因为
+
+12
+00:00:40,960 --> 00:00:44,239
+it predates javascript and was one of the first languages to be embedded
+它早于 javascript，并且是最早
+
+13
+00:00:44,239 --> 00:00:48,879
+directly in html allowing websites to be built dynamically on a server it's open
+直接嵌入 html 的语言之一，允许网站在服务器上动态构建它是
+
+14
+00:00:48,879 --> 00:00:52,640
+source and was one of the technologies that revolutionized the web by making
+开源的并且是技术之一 IES通过使普通人可以访问应用程序开发而彻底改变了网络
+
+15
+00:00:52,640 --> 00:00:56,399
+application development accessible to the average person its interpreter is
+它的解释器是
+
+16
+00:00:56,399 --> 00:01:00,960
+implemented in c and has a syntax inspired by perl to get started create a
+用c实现的，并且具有受perl启发的语法来开始创建一个
+
+17
+00:01:00,960 --> 00:01:06,240
+php file and add some basic html to it within this file you can go into php
+php文件并在这个文件中添加一些基本的html你可以进入php
+
+18
+00:01:06,240 --> 00:01:10,799
+mode by opening a question mark php tag the code within these tags will be
+模式 通过打开一个问号 php 标签，这些标签中的代码将
+
+19
+00:01:10,799 --> 00:01:14,799
+rendered on the server use echo to output a value and the location of the
+在服务器上呈现使用 echo输出一个值和标签的位置
+
+20
+00:01:14,799 --> 00:01:18,799
+tag to declare a variable give it a name that starts with a dollar sign followed
+来声明一个变量，给它一个以美元符号开头的名称，
+
+21
+00:01:18,799 --> 00:01:23,280
+by a value it's a weekly typed language so no type annotations are necessary it
+后跟一个值 每周键入的语言，因此不需要类型注释
+
+22
+00:01:23,280 --> 00:01:26,720
+also comes with a large number of predefined variables geared towards web
+它还带有大量面向 Web 开发的预定义变量，
+
+23
+00:01:26,720 --> 00:01:30,720
+development like git post and cookie which contain information about the
+例如 git post 和 cookie，其中包含有关
+
+24
+00:01:30,720 --> 00:01:34,799
+incoming http request now when this code is rendered on your server it will
+传入 http 请求的信息，现在当此代码在您的服务器上呈现时，它将
+
+25
+00:01:34,799 --> 00:01:39,280
+output an html string with the php tags being replaced by whatever you echoed
+输出一个 html 带有php标签的字符串被您回显的任何内容替换
+
+26
+00:01:39,280 --> 00:01:42,640
+the language also supports multiple programming paradigms you have first
+该语言还支持多种编程范例，您拥有
+
+27
+00:01:42,640 --> 00:01:46,479
+class functions which can be assigned to variables or used anonymously as
+一流的功能 可以分配给变量或匿名用作
+
+28
+00:01:46,479 --> 00:01:50,000
+arguments and it has tons and tons of built-in functions to do pretty much
+参数，它有大量的内置函数可以做几乎
+
+29
+00:01:50,000 --> 00:01:53,920
+anything a web developer could ever imagine doing it also has a complete
+任何 Web 开发人员可以想象的事情。它还有一个完整的
+
+30
+00:01:53,920 --> 00:01:57,680
+object model where you can define classes with inheritance to implement
+对象模型，您可以在其中定义具有继承的类来实现
+
+31
+00:01:57,680 --> 00:02:01,520
+object-oriented patterns we're currently on php version 8 which has all the
+对象 面向模式，我们目前使用的是 php 版本 8，它具有
+
+32
+00:02:01,520 --> 00:02:05,200
+features you would expect from a modern pragmatic language every web developer
+每个 Web 开发人员
+
+33
+00:02:05,200 --> 00:02:09,679
+should be familiar with it because statistically there's a 78.5 chance that
+都应该熟悉的现代实用语言所期望的所有功能，因为从统计数据来看，您客
+
+34
+00:02:09,679 --> 00:02:13,040
+your client's website is running the personal homepage language this has been
+户的网站运行个人主页语言的可能性为 78.5
+
+35
+00:02:13,040 --> 00:02:16,879
+php in 100 seconds hit the like button if you want to see more short videos
+100 秒内 php如果您想看更多这样的短视频，请点击“赞”按钮，
+
+36
+00:02:16,879 --> 00:02:22,319
+like this thanks for watching and i will see you in the next one
+谢谢收看，我会在下一个

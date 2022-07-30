@@ -1,0 +1,81 @@
+networking it's the way computers exchange information around the world
+
+and just like the burrito its architecture is abstracted into seven
+
+layers based on the open systems interconnection model
+
+at the bottom we have physical hardware like fiber optic cables that literally
+
+carry light from point a to point b somehow this light travels all the way
+
+to layer seven where it can be transmitted directly into your
+
+consciousness in the form of pixels on a screen or vibrations from a speaker
+
+that's exactly what you're doing right now as an end user accessing this video
+
+over the hypertext transfer protocol in addition to http there are many other
+
+protocols at layer 7 like smpt for email or ftp for file
+
+transfers now let's work our way backwards to
+
+understand how we got here layer 6 is the presentation layer and
+
+essentially it works as a translator to ensure that a stream of bits from a
+
+computer like a jpeg image is encoded to a
+
+standard format that can be used at the application layer
+
+below that we have the session layer which is responsible for managing the
+
+connection between two computers it's here we have things like user
+
+authentication and authorization to control whether or not a user has
+
+access to data on a server we've all been on a zoom call where some
+
+random person joins and shares their unsolicited artwork they manage to
+
+authenticate on zoom servers by exploiting layer 5
+
+and that brings us to the middle of the stack the transport layer
+
+the transmission control protocol or tcp is the foundation for
+
+pretty much everything we've looked at so far its job is to take a stream of
+
+data from one computer and transfer it to another it determines
+
+how to segment the data into smaller pieces that can be sent over the network
+
+in the correct order it receives the data from layer 4 the
+
+network layer in the form of packets it's here we find the internet protocol
+
+every computer connected to the network has its own unique ip address
+
+which identifies that computer and whenever it sends information over the
+
+network it does so in the form of an ip packet
+
+that contains that address in the header a packet is just a unit of data along
+
+with some information about who sent it this happens from a router or gateway
+
+which connects to layer two the data link and its role is to connect
+
+one physical node in the network to another via protocols like ethernet or
+
+wi-fi and that is how over 2.5 quintillion
+
+bytes of data are shared around the world every single day
+
+this has been networking in 100 seconds if you want to see more short videos
+
+like this please like and subscribe thanks for watching and i will see you
+
+in the next one and now a quick word from our sponsor
+
+taco bell seven layer burritos just 99 cents

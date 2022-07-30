@@ -1,0 +1,355 @@
+1
+00:00:00,240 --> 00:00:02,560
+c a statically typed procedural
+
+
+2
+00:00:02,560 --> 00:00:04,560
+programming language famous for making
+
+
+3
+00:00:04,560 --> 00:00:06,399
+the world go around it's the language
+
+
+4
+00:00:06,399 --> 00:00:08,320
+behind many tools we take for granted
+
+
+5
+00:00:08,320 --> 00:00:10,559
+like the windows linux and mac operating
+
+
+6
+00:00:10,559 --> 00:00:13,519
+system kernels databases like mysql
+
+
+7
+00:00:13,519 --> 00:00:15,599
+interpreters for languages like python
+
+
+8
+00:00:15,599 --> 00:00:17,840
+tools like vim and git and countless
+
+
+9
+00:00:17,840 --> 00:00:20,560
+others it was created in 1972 by dennis
+
+
+10
+00:00:20,560 --> 00:00:22,480
+ritchie at bell labs where it would be
+
+
+11
+00:00:22,480 --> 00:00:24,320
+used to develop the unix operating
+
+
+12
+00:00:24,320 --> 00:00:25,840
+system it would go on to become the
+
+
+13
+00:00:25,840 --> 00:00:27,680
+mother of all languages inspiring the
+
+
+14
+00:00:27,680 --> 00:00:31,279
+syntax of c plus c sharp java javascript
+
+
+15
+00:00:31,279 --> 00:00:33,440
+perl and php just to name a few it
+
+
+16
+00:00:33,440 --> 00:00:35,280
+compiles directly to machine code and
+
+
+17
+00:00:35,280 --> 00:00:37,440
+requires minimal runtime support but is
+
+
+18
+00:00:37,440 --> 00:00:38,879
+platform dependent meaning the
+
+
+19
+00:00:38,879 --> 00:00:41,040
+executable is designed to run on a
+
+
+20
+00:00:41,040 --> 00:00:42,879
+specific operating system it's a high
+
+
+21
+00:00:42,879 --> 00:00:44,800
+high-level language designed for humans
+
+
+22
+00:00:44,800 --> 00:00:46,719
+yet provides low-level control over
+
+
+23
+00:00:46,719 --> 00:00:48,480
+memory and hardware there's no garbage
+
+
+24
+00:00:48,480 --> 00:00:50,399
+collector instead your code needs to
+
+
+25
+00:00:50,399 --> 00:00:51,920
+manage its own memory when you create a
+
+
+26
+00:00:51,920 --> 00:00:53,760
+variable it's assigned an address in
+
+
+27
+00:00:53,760 --> 00:00:55,600
+memory you can store that address in
+
+
+28
+00:00:55,600 --> 00:00:57,440
+another variable called a pointer when
+
+
+29
+00:00:57,440 --> 00:00:59,039
+the variable is no longer needed you'll
+
+
+30
+00:00:59,039 --> 00:01:01,359
+need to free it to avoid memory leaks to
+
+
+31
+00:01:01,359 --> 00:01:03,680
+get started install ac compiler a
+
+
+32
+00:01:03,680 --> 00:01:06,159
+popular choice is the gnu c compiler or
+
+
+33
+00:01:06,159 --> 00:01:08,720
+gcc create a file ending in dot c
+
+
+34
+00:01:08,720 --> 00:01:10,560
+include any libraries you plan to use
+
+
+35
+00:01:10,560 --> 00:01:12,479
+then add a main function to it this is
+
+
+36
+00:01:12,479 --> 00:01:14,240
+where your program will start executing
+
+
+37
+00:01:14,240 --> 00:01:16,000
+there's no function keyword and notice
+
+
+38
+00:01:16,000 --> 00:01:18,320
+how it returns an integer type a return
+
+
+39
+00:01:18,320 --> 00:01:20,560
+value of 0 means success while a return
+
+
+40
+00:01:20,560 --> 00:01:22,720
+value of 1 means failure there are only
+
+
+41
+00:01:22,720 --> 00:01:24,960
+a few basic types in c create a variable
+
+
+42
+00:01:24,960 --> 00:01:26,799
+by starting with a type followed by a
+
+
+43
+00:01:26,799 --> 00:01:29,439
+name and value use printf to print the
+
+
+44
+00:01:29,439 --> 00:01:31,439
+value to the standard output or put an
+
+
+45
+00:01:31,439 --> 00:01:33,200
+ampersand in front of it to reference
+
+
+46
+00:01:33,200 --> 00:01:35,200
+its address in memory there's no string
+
+
+47
+00:01:35,200 --> 00:01:37,600
+type but instead char which represents a
+
+
+48
+00:01:37,600 --> 00:01:39,759
+one byte character stored as an integer
+
+
+49
+00:01:39,759 --> 00:01:41,759
+a string can be created with an array of
+
+
+50
+00:01:41,759 --> 00:01:43,439
+characters each letter will have its own
+
+
+51
+00:01:43,439 --> 00:01:45,600
+memory address and be terminated by a
+
+
+52
+00:01:45,600 --> 00:01:47,759
+null character another approach is to
+
+
+53
+00:01:47,759 --> 00:01:49,680
+start with a pointer by adding a star
+
+
+54
+00:01:49,680 --> 00:01:51,360
+character in front of the type then we
+
+
+55
+00:01:51,360 --> 00:01:53,840
+can allocate 4 bytes to it now assign a
+
+
+56
+00:01:53,840 --> 00:01:56,000
+character to each index ending with the
+
+
+57
+00:01:56,000 --> 00:01:57,680
+null character to create a string when
+
+
+58
+00:01:57,680 --> 00:01:59,439
+you no longer need that memory allocated
+
+
+59
+00:01:59,439 --> 00:02:01,600
+to your program use free to release it
+
+
+60
+00:02:01,600 --> 00:02:03,759
+back to the computer's ram the language
+
+
+61
+00:02:03,759 --> 00:02:05,600
+is procedural and does not support
+
+
+62
+00:02:05,600 --> 00:02:07,360
+object oriented features although you
+
+
+63
+00:02:07,360 --> 00:02:09,280
+can create your own complex data types
+
+
+64
+00:02:09,280 --> 00:02:11,280
+using structs now compile your code to
+
+
+65
+00:02:11,280 --> 00:02:13,040
+machine instructions for your operating
+
+
+66
+00:02:13,040 --> 00:02:15,120
+system using the c compiler this has
+
+
+67
+00:02:15,120 --> 00:02:17,360
+been the c programming language in 100
+
+
+68
+00:02:17,360 --> 00:02:18,720
+seconds hit the like button and
+
+
+69
+00:02:18,720 --> 00:02:20,720
+subscribe if you want to see more short
+
+
+70
+00:02:20,720 --> 00:02:22,800
+videos like this thanks for watching and
+
+
+71
+00:02:22,800 --> 00:02:26,400
+i will see you in the next one
+
+

@@ -1,0 +1,1079 @@
+1
+00:00:00,799 --> 00:00:05,120
+dot files set up or restore a fully customized development environment by
+dot 文件通过维护基于文本的配置文件的存储库来设置或恢复完全定制的开发环境，
+
+2
+00:00:05,120 --> 00:00:08,720
+maintaining a repository of text-based config files
+
+
+3
+00:00:08,720 --> 00:00:12,400
+as developers were trained to write dry code do not repeat yourself
+因为开发人员接受过编写干代码的培训不要重复自己，
+
+4
+00:00:12,400 --> 00:00:16,240
+but this principle also applies to other areas of a developer's life like the
+但这一原则也适用于开发人员生活的其他领域，例如
+
+5
+00:00:16,240 --> 00:00:18,560
+configuration of a development environment
+配置 开发环境
+
+6
+00:00:18,560 --> 00:00:22,560
+imagine this you spent months fine tuning your top of the line intel mac
+想象一下，你花了几个月的时间来微调你的顶级英特尔 mac，
+
+7
+00:00:22,560 --> 00:00:26,400
+but now need to throw it in the garbage because the new mac mini with an m1 chip
+但现在需要把它扔进垃圾箱，因为带有 m1 芯片的新 mac mini
+
+8
+00:00:26,400 --> 00:00:29,840
+will blow it out of the water are you going to reinstall and reconfigure
+会把它从水中吹出来你要重新安装和重新配置
+
+9
+00:00:29,840 --> 00:00:33,280
+everything from scratch hopefully not dot files are those little
+所有东西吗？ 从头开始希望不是点文件是
+
+10
+00:00:33,280 --> 00:00:35,920
+hidden files on your system that start with a period
+系统上那些以
+
+11
+00:00:35,920 --> 00:00:41,360
+like bashprofile.env or git config just to name a few with a repository of
+bashprofile.env 或 git config 之类的句点开头的小隐藏文件，仅举几例，这些文件的存储库
+
+12
+00:00:41,360 --> 00:00:44,480
+these files you can chronicle the installation of your favorite
+可以记录您喜欢的
+
+13
+00:00:44,480 --> 00:00:48,079
+applications and command line tools keep track of how all that software is
+应用程序和命令行工具的安装跟踪所有软件的
+
+14
+00:00:48,079 --> 00:00:50,879
+configured and record all the various system preferences
+配置方式并记录
+
+15
+00:00:50,879 --> 00:00:54,239
+and changes that you've made to your computer these files already live on
+您对 com 所做的所有各种系统偏好和更改假设这些文件已经存在于
+
+16
+00:00:54,239 --> 00:00:57,520
+your system and when you harness their power you can replicate your perfect
+您的系统中，当您利用它们的强大功能时，您可以
+
+17
+00:00:57,520 --> 00:00:59,760
+development environment on a new computer in a
+在新计算机上复制完美的开发环境，以
+
+18
+00:00:59,760 --> 00:01:04,000
+completely hands-off and automated way to get started you'll want to organize
+完全不干涉和自动化的方式开始您需要将
+
+19
+00:01:04,000 --> 00:01:06,960
+all of your configuration files in a git repository
+所有配置文件组织在一个 git存储库
+
+20
+00:01:06,960 --> 00:01:11,040
+that will allow you to track changes and clone the repo on other machines
+，可让您跟踪更改并在其他机器上克隆 repo
+
+21
+00:01:11,040 --> 00:01:14,560
+its code will contain at least one script that applies or installs the
+它的代码将包含至少一个脚本，
+
+22
+00:01:14,560 --> 00:01:18,159
+configurations on a new system and that means weeks of hard manual
+用于在新系统上应用或安装配置，这意味着可以将数周的艰苦
+
+23
+00:01:18,159 --> 00:01:22,240
+labor can be reduced down to a git clone followed by an install script
+体力劳动减少到 git clone然后是一个安装脚本，
+
+24
+00:01:22,240 --> 00:01:26,080
+maintaining your own dot files repo will help you develop discipline for other
+维护您自己的点文件 repo 将帮助您培养其他
+
+25
+00:01:26,080 --> 00:01:29,200
+important skills from command line use to get to the
+重要技能的纪律，从命令行使用到
+
+26
+00:01:29,200 --> 00:01:32,479
+organization and inner workings of your machine wax
+您的机器蜡的组织和内部工作
+
+27
+00:01:32,479 --> 00:01:36,720
+on wax off read if you're ready to learn
+如果您准备好了解
+
+28
+00:01:36,720 --> 00:01:40,079
+more and build your own dot files repo stay tuned today we're going
+更多信息和构建，请阅读 您自己的点文件存储库今天继续关注我们将
+
+29
+00:01:40,079 --> 00:01:44,399
+beyond 100 seconds with special guest patrick mcdonald he's the instructor of
+与特邀嘉宾 patrick mcdonald 一起超越 100 秒，他
+
+30
+00:01:44,399 --> 00:01:47,280
+a full dot files course and will teach you how to set up your
+是完整点文件课程的讲师，并且 w 我会教你如何逐步设置
+
+31
+00:01:47,280 --> 00:01:50,880
+own dot files repo step by step taking your developer productivity to
+自己的 dot 文件 repo将你的开发人员生产力提升
+
+32
+00:01:50,880 --> 00:01:56,079
+the next level youtube meet patrick over the last 20 plus years
+到一个新的水平 youtube在过去的 20 多年里遇见 patrick
+
+33
+00:01:56,079 --> 00:02:00,240
+i've set up enough computers to have acquired an appreciation of automating
+我已经设置了足够的计算机来获得对自动化
+
+34
+00:02:00,240 --> 00:02:03,280
+that process and i've gathered a few tricks i'd like
+该过程的欣赏 '已经收集了一些技巧，我想
+
+35
+00:02:03,280 --> 00:02:08,000
+to share with you hello everyone i'm patrick and i'll be your guide as we
+与你分享大家好，我是 patrick，我将成为你的向导，因为
+
+36
+00:02:08,000 --> 00:02:12,080
+go beyond 100 seconds to learn how to back up a few typical
+我们超过 100 秒来学习如何备份一些典型的
+
+37
+00:02:12,080 --> 00:02:14,800
+dot files without disturbing your computer's
+dot 文件，而不会影响你的计算机的
+
+38
+00:02:14,800 --> 00:02:18,400
+ability to use those files to configure software
+能力
+
+39
+00:02:18,400 --> 00:02:21,840
+if you've never heard of dot files you're probably familiar with a home
+如果您从未听说过点文件，请使用这些文件来配置软件，您可能熟悉
+
+40
+00:02:21,840 --> 00:02:26,400
+directory that looks like this but as jeff mentioned mac os is littered
+看起来像这样的主目录，但正如 jeff 提到的，mac os 充满
+
+41
+00:02:26,400 --> 00:02:30,080
+with hidden files vs code is open to the same home
+了隐藏文件，而代码对同一个主
+
+42
+00:02:30,080 --> 00:02:34,720
+directory and its file explorer shows several more items we can tell
+目录及其 文件资源管理器显示了更多项目，我们可以告诉
+
+43
+00:02:34,720 --> 00:02:39,120
+finder to show the same hidden files by entering the key combination command
+finder 通过输入组合键命令来显示相同的隐藏文件 shift
+
+44
+00:02:39,120 --> 00:02:42,560
+shift period most hidden files have a dot prefix
+period 大数隐藏文件都有一个点前缀，因此
+
+45
+00:02:42,560 --> 00:02:46,319
+hence the name dot files they can be folders as well as
+名称点文件它们可以是文件夹以及 文件
+
+46
+00:02:46,319 --> 00:02:49,200
+files and in special cases they can be hidden
+，在特殊情况下，它们可以
+
+47
+00:02:49,200 --> 00:02:52,800
+by the operating system even though they are missing the dot
+被操作系统隐藏，即使它们缺少
+
+48
+00:02:52,800 --> 00:02:56,879
+that's all we need to know about finder so let's look at vs code where we
+我们需要知道的关于 finder 的所有点，所以让我们看看 vs 代码，我们
+
+49
+00:02:56,879 --> 00:02:59,840
+can see that our system uses dot files in our
+可以看到我们的系统在我们的
+
+50
+00:02:59,840 --> 00:03:03,519
+home directory software that comes pre-installed uses
+主目录软件中使用了点文件 预装也使用
+
+51
+00:03:03,519 --> 00:03:07,599
+hidden files too and so does the custom software that we
+隐藏文件，
+
+52
+00:03:07,599 --> 00:03:11,040
+install on our own if you've been using your computer for a
+如果您已经使用计算机很
+
+53
+00:03:11,040 --> 00:03:15,200
+significant amount of time you likely have many more dot files here
+长时间，我们自己安装的自定义软件也会使用隐藏文件，您可能有更多的点文件在这里
+
+54
+00:03:15,200 --> 00:03:18,800
+we are going to focus on these two at the bottom git config
+我们将重点关注这两个在底部 git config
+
+55
+00:03:18,800 --> 00:03:24,560
+and zshrc when you started using git you probably issued a pair of commands
+和 zshrc 当您开始使用 git 时，您可能发出了一对命令
+
+56
+00:03:24,560 --> 00:03:28,000
+to set your name and email address those settings ended
+来设置您的姓名和电子邮件地址，随着您继续学习和使用 git，这些设置最终会
+
+57
+00:03:28,000 --> 00:03:32,239
+up here in the git config file as you continue learning and using
+出现在 git config文件中，
+
+58
+00:03:32,239 --> 00:03:34,560
+git this file can grow with more
+这个文件可以随着更多
+
+59
+00:03:34,560 --> 00:03:38,239
+configurations before we move on let me recommend using
+配置而增长在我们继续之前，让我建议
+
+60
+00:03:38,239 --> 00:03:42,159
+the no reply email address available with your github account
+
+
+61
+00:03:42,159 --> 00:03:45,440
+when you publish your dot files repo for the world to see
+您在发布您的 dot 文件 repo 时使用您的 github 帐户中可用的无回复电子邮件地址，以便全世界看到
+
+62
+00:03:45,440 --> 00:03:48,640
+this lets you keep your personal email address a secret
+这可以让您保留您的个人电子邮件 邮件地址 a secret
+
+63
+00:03:48,640 --> 00:03:55,439
+zsh is the new default shell on mac os and the zshrc file is what you use to
+zsh 是 mac os 上的新默认 shell，zshrc 文件是您用来自
+
+64
+00:03:55,439 --> 00:04:00,080
+customize the shell experience so far we are only using this to
+定义 shell 体验的文件到目前为止，我们仅使用它来自
+
+65
+00:04:00,080 --> 00:04:03,920
+customize the prompt but like we saw with the git config file
+定义提示，但就像我们看到的 git config 文件一样，
+
+66
+00:04:03,920 --> 00:04:09,120
+we can add to this file in many ways we already have two files that are going
+我们可以添加到 这个文件在很多方面我们已经有两个文件会
+
+67
+00:04:09,120 --> 00:04:13,519
+to change over time what does this mean yes it means we're
+随着时间而改变这是什么意思是的这意味着我们
+
+68
+00:04:13,519 --> 00:04:17,680
+going to need a git repository to start tracking these files along with the
+将需要一个 git 存储库来开始跟踪这些文件以及
+
+69
+00:04:17,680 --> 00:04:21,440
+changes we make to them let's open the integrated terminal where
+我们对它们所做的更改让我们打开集成 终端，
+
+70
+00:04:21,440 --> 00:04:24,960
+we can see our super fancy custom prompt in action
+我们可以看到我们的超级花哨的自定义提示正在运行
+
+71
+00:04:24,960 --> 00:04:28,479
+and where we can see that we start off in the home directory
+，我们可以看到我们从主目录开始
+
+72
+00:04:28,479 --> 00:04:33,440
+i've already set up a repository on github so i'll start a git clone command
+我已经在 github 上设置了一个存储库，所以我将启动一个 git clone 命令
+
+73
+00:04:33,440 --> 00:04:39,120
+and paste in the ssh url now we need to tell it the directory to create
+并粘贴 ssh url 现在我们需要告诉它要创建的目录
+
+74
+00:04:39,120 --> 00:04:43,759
+and since everybody else is doing it let's make a hidden folder by prefixing
+，因为其他人都在这样做，所以让我们通过在
+
+75
+00:04:43,759 --> 00:04:47,440
+our dot files repo with a period our new directory has a
+我们的 dot 文件 repo 前加上句点来创建一个隐藏文件夹，我们的新目录有一个
+
+76
+00:04:47,440 --> 00:04:51,840
+readme that we will look at shortly but let's start by moving these two dot
+自述文件，我们很快就会看到，但让我们从移动这两个开始 d  ot
+
+77
+00:04:51,840 --> 00:04:56,160
+files into the repo so we can back them up of course the act
+文件到 repo 中，所以我们可以备份它们当然移动它们的行为
+
+78
+00:04:56,160 --> 00:04:58,960
+of moving them isn't enough and these two files are
+是不够的，这两个文件仍然没有被
+
+79
+00:04:58,960 --> 00:05:02,720
+still untracked so we will cd into the dot files
+跟踪，所以我们将 cd 进入 dot files
+
+80
+00:05:02,720 --> 00:05:05,520
+directory where we can add the two files to the
+目录，我们可以将这两个文件添加到
+
+81
+00:05:05,520 --> 00:05:10,960
+repository and then we will commit them but is this all we have to do will we be
+存储库，然后 我们将提交它们，但这就是我们所
+
+82
+00:05:10,960 --> 00:05:15,199
+done after entering this command let's try it and it looks like we have a
+要做的，在输入此命令后我们是否完成让我们尝试一下，看起来我们遇到了
+
+83
+00:05:15,199 --> 00:05:18,320
+problem instead of using the user information
+问题，而不是使用
+
+84
+00:05:18,320 --> 00:05:23,280
+that we just saw in our git config the output says that git automatically
+我们刚刚在 git config 中看到的用户信息，输出显示 git 根据用户名和主机名自动
+
+85
+00:05:23,280 --> 00:05:26,320
+configured this committer information based on the
+配置此提交者信息
+
+86
+00:05:26,320 --> 00:05:29,919
+username and hostname remember that software likes to use our
+请记住，软件喜欢使用我们的
+
+87
+00:05:29,919 --> 00:05:33,039
+home directory so by moving this file to a different
+主目录，因此通过将此文件移动到不同的
+
+88
+00:05:33,039 --> 00:05:38,240
+location we've broken the configuration every time we make a commit git will
+位置，我们每次提交时都会破坏配置 git 会
+
+89
+00:05:38,240 --> 00:05:42,400
+remind us of this problem let's copy this suggested command about
+提醒我们这个问题让我们复制 这个关于
+
+90
+00:05:42,400 --> 00:05:45,919
+resetting the author and amending the commit and we will try
+重置作者和修改提交的建议命令，我们将
+
+91
+00:05:45,919 --> 00:05:50,400
+to fix this in a few minutes what about our zsh configurations i
+在几分钟内尝试修复这个问题，我们的 zsh 配置我
+
+92
+00:05:50,400 --> 00:05:53,199
+think we can assume that these are broken as well
+认为我们可以假设这些被破坏为
+
+93
+00:05:53,199 --> 00:05:56,880
+keep an eye on the file explorer to the left as i kill this terminal
+请注意左侧的文件资源管理器，因为我
+
+94
+00:05:56,880 --> 00:06:00,639
+when a shell session ends its command history is written out
+在 shell 会话结束时杀死了这个终端，它的命令历史记录被写出，
+
+95
+00:06:00,639 --> 00:06:04,160
+and as software continues to add files to our home directory
+并且随着软件继续将文件添加到我们的主目录，
+
+96
+00:06:04,160 --> 00:06:08,240
+we have to decide whether to move these files to our repository
+我们必须决定是否将这些文件移动到我们的存储库
+
+97
+00:06:08,240 --> 00:06:12,639
+zsh history is not the type of file we want to track in our repo
+zsh 历史记录不是我们想要在我们的 repo 中跟踪的文件类型，
+
+98
+00:06:12,639 --> 00:06:17,120
+so we will leave it here in the home directory we just saw that zsh
+所以我们将把它留在主目录中，我们刚刚看到 zsh
+
+99
+00:06:17,120 --> 00:06:21,120
+writes to our home directory but it tries to read from it as well
+写入我们的主目录，但是
+
+100
+00:06:21,120 --> 00:06:24,880
+if we open a new shell we see that we've lost our custom prompt
+如果我们打开一个新的 shell，它也会尝试从中读取 我们看到我们丢失了自定义提示，
+
+101
+00:06:24,880 --> 00:06:28,400
+because zsh could not find the zshrc file
+因为 zsh 找不到 zshrc文件，
+
+102
+00:06:28,400 --> 00:06:31,520
+instead we see the default prompt which happens to have
+而是看到了默认提示，它恰好
+
+103
+00:06:31,520 --> 00:06:36,000
+a similar default to the one we just saw for git using the same username and
+与我们刚刚看到的使用相同用户名和
+
+104
+00:06:36,000 --> 00:06:38,880
+hostname combination how do we fix these broken
+主机名组合的 git 的默认提示相似我们如何修复 这些损坏的
+
+105
+00:06:38,880 --> 00:06:42,400
+configurations we don't want to duplicate these files
+配置我们不想复制这些文件
+
+106
+00:06:42,400 --> 00:06:47,039
+store their copies in the home directory and manually keep them in sync
+将它们的副本存储在主目录中并手动使它们保持同步
+
+107
+00:06:47,039 --> 00:06:51,039
+luckily there's a way that a file can be in two places at the same time
+幸运的是有一种方法可以使文件同时位于两个位置，
+
+108
+00:06:51,039 --> 00:06:55,039
+which is called a symbolic link or symlink for short
+这称为符号 c链接或符号链接
+
+109
+00:06:55,039 --> 00:06:59,360
+to create one we will use the ln or link command
+简称创建一个我们将使用ln或链接命令
+
+110
+00:06:59,360 --> 00:07:03,039
+then we will add the s option which stands for symbolic link
+然后我们将添加代表符号链接的s选项
+
+111
+00:07:03,039 --> 00:07:07,840
+now we'll pass in the full path to the real file in our dot files directory
+现在我们将在我们的点文件目录中传递到真实文件的完整路径
+
+112
+00:07:07,840 --> 00:07:11,440
+and lastly we'll pass in the path to the original location
+最后我们 '将传递
+
+113
+00:07:11,440 --> 00:07:16,960
+where the zshrc file is expected to live the file explorer now shows that the
+到zshrc文件预期存在的原始位置的路径文件资源管理器现在显示
+
+114
+00:07:16,960 --> 00:07:22,319
+zshrc file is back in the home directory but it has an arrow to the right which
+zshrc文件回到主目录但它有一个向右的箭头
+
+115
+00:07:22,319 --> 00:07:26,880
+signifies that this is a sim link if that arrow does not show up for you
+表示这是一个sim链接如果 那个箭头没有出现，因为你
+
+116
+00:07:26,880 --> 00:07:31,520
+reload the window and it should appear now i'll kill the terminal again and
+重新加载窗口，它
+
+117
+00:07:31,520 --> 00:07:34,400
+open the new simlink version from the home directory
+
+
+118
+00:07:34,400 --> 00:07:38,319
+to the right of the zshrc file in our dot files directory they
+
+
+119
+00:07:38,319 --> 00:07:42,639
+both look like normal files don't they but if i add a comment to the
+现在应该出现了 文件不是，但是如果我向真实文件添加注释
+
+120
+00:07:42,639 --> 00:07:46,080
+real file and save it we can see that changes to
+并保存它，我们可以看到
+
+121
+00:07:46,080 --> 00:07:49,599
+the real file at the left will show up in the symlink version at
+左侧真实文件的更改将显示在右侧的符号链接版本中
+
+122
+00:07:49,599 --> 00:07:53,120
+the right of course we can delete these lines from the right
+，当然我们可以从右侧删除这些行
+
+123
+00:07:53,120 --> 00:07:57,280
+and after another save those changes are reflected at the left
+然后又保存了那些 c  hanges反映在左侧，
+
+124
+00:07:57,280 --> 00:08:00,879
+since vs code can follow the sim link to the real file
+因为 vs 代码可以跟随 sim 链接到真实文件
+
+125
+00:08:00,879 --> 00:08:04,879
+and treat it as a real file i bet zsh can too
+并将其视为真实文件我敢打赌 zsh也可以，
+
+126
+00:08:04,879 --> 00:08:08,800
+if we open a new shell we see our custom prompt has returned
+如果我们打开一个新的 shell，我们会看到我们的自定义提示
+
+127
+00:08:08,800 --> 00:08:14,000
+when a shell loads it looks for the zshrc file in the home directory
+在 shell 加载时返回它寻找主目录中的 zshrc 文件
+
+128
+00:08:14,000 --> 00:08:17,199
+which follows the sim link to the real file and
+跟随 sim 链接到真实文件，
+
+129
+00:08:17,199 --> 00:08:21,599
+the customization makes it into the shell not only did the shell load the
+并且自定义使其进入shell 不仅 shell 加载了
+
+130
+00:08:21,599 --> 00:08:25,680
+zshrc file it also loaded the zsh history file
+zshrc 文件，它还加载了
+
+131
+00:08:25,680 --> 00:08:29,759
+which is still in the home directory this means we have access to previous
+仍然在主目录中的 zsh 历史文件这意味着我们 可以访问以前的
+
+132
+00:08:29,759 --> 00:08:33,760
+commands i can press up to retrieve the most recent command
+命令，我可以按向上键从历史记录中检索最新的命令
+
+133
+00:08:33,760 --> 00:08:37,279
+from the history and then alter it to create a sim link
+，然后更改它以创建
+
+134
+00:08:37,279 --> 00:08:41,279
+for the git config file which we see appear in the explorer with
+git 配置文件的 sim 链接，我们看到该文件出现在资源管理器中，带有
+
+135
+00:08:41,279 --> 00:08:45,279
+another arrow icon we've seen enough of the home directory
+另一个箭头图标，我们已经看到了足够的 主目录，
+
+136
+00:08:45,279 --> 00:08:50,880
+so before testing our git config fix let's open only the dot files directory
+所以在测试我们的 git config 修复之前，让我们只打开点文件
+
+137
+00:08:50,880 --> 00:08:54,480
+the key combo we used in finder to show hidden files
+目录我们在 finder 中使用的组合键来显示隐藏文件
+
+138
+00:08:54,480 --> 00:08:59,519
+command shift period works here as well of course the arrows here on the file
+命令转换周期在这里也有效，当然文件图标上的箭头
+
+139
+00:08:59,519 --> 00:09:02,160
+icons mean the same thing they do in the file
+表示 他们
+
+140
+00:09:02,160 --> 00:09:06,320
+explorer after opening the dot files directory we have less clutter to look
+在打开点文件目录后在文件资源管理器中执行的操作相同，因为我们在 vs 代码中打开了点文件目录，所以我们看不到杂乱，
+
+141
+00:09:06,320 --> 00:09:08,959
+at since we have the dot files directory
+
+
+142
+00:09:08,959 --> 00:09:12,560
+open in vs code the integrated terminal will start at
+
+
+143
+00:09:12,560 --> 00:09:15,760
+the same location when we fire up a new shell
+当我们启动新的 shell 时，集成终端将在同一位置启动
+
+144
+00:09:15,760 --> 00:09:20,480
+a git log command will remind us that our last commit has the wrong author
+git log 命令会提醒我们上次提交的作者错误
+
+145
+00:09:20,480 --> 00:09:23,519
+which happened because we moved the git config file
+，这是因为我们移动了 git配置文件，
+
+146
+00:09:23,519 --> 00:09:26,560
+we can check to see if our second sim link is working
+我们可以通过检查显示正确 no 的电子邮件地址的全局 git config 来检查我们的第二个 sim链接是否有效
+
+147
+00:09:26,560 --> 00:09:30,000
+by checking the global git config for the email address
+
+
+148
+00:09:30,000 --> 00:09:34,080
+which shows the correct no reply email address that we saw before
+回复我们之前看到的电子邮件地址，
+
+149
+00:09:34,080 --> 00:09:37,200
+now i'll paste in the command that i copied a bit ago
+
+
+150
+00:09:37,200 --> 00:09:41,920
+if you issue this command as is you'll end up editing the commit in vim
+如果您按原样发出此命令，我将粘贴我刚才复制的命令，您最终将在 vim 中编辑提交，
+
+151
+00:09:41,920 --> 00:09:46,000
+because it is the default editor and if you're like me it will take you half an
+因为它是默认编辑器，如果您喜欢 我需要
+
+152
+00:09:46,000 --> 00:09:50,320
+hour to figure out how to exit them changing the default editor perhaps to
+半个小时才能弄清楚如何退出它们将默认编辑器更改为
+
+153
+00:09:50,320 --> 00:09:54,080
+nano or vs code is the type of configuration you could
+nano 或 vs 代码是您
+
+154
+00:09:54,080 --> 00:09:57,200
+make to your git config file and the change would be tracked in
+可以对 git 配置文件进行的配置类型，并且更改将在
+
+155
+00:09:57,200 --> 00:10:01,040
+your repo but in this case we don't actually want to edit the
+您的存储库中进行跟踪，但是 在这种情况下，我们实际上并不想编辑
+
+156
+00:10:01,040 --> 00:10:05,519
+contents of the commit so we can add the no edit option another
+提交的内容，因此我们可以添加 no edit 选项 再次
+
+157
+00:10:05,519 --> 00:10:08,399
+look at the git log shows that the author information
+查看 git日志显示作者信息
+
+158
+00:10:08,399 --> 00:10:11,440
+has been corrected we have successfully backed up our
+已更正，我们已成功备份
+
+159
+00:10:11,440 --> 00:10:15,120
+configurations while preserving the ability to use them
+配置，同时保留了以下功能 使用它们，
+
+160
+00:10:15,120 --> 00:10:18,959
+but that won't do a lot of good if our software is not installed
+但如果我们的软件没有安装，那不会有很大的好处
+
+161
+00:10:18,959 --> 00:10:23,360
+we need an automated way of installing software and for that we will use a
+我们需要一种自动安装软件的方式，为此我们将使用一个
+
+162
+00:10:23,360 --> 00:10:27,760
+package manager called homebrew it just so happens that i used homebrew
+名为 homebrew 的包管理器，碰巧我使用 homebrew
+
+163
+00:10:27,760 --> 00:10:30,959
+to install vs code along with some other software
+来安装 vs code 对于其他一些软件，
+
+164
+00:10:30,959 --> 00:10:35,120
+we don't have time to learn much about it but homebrew keeps track of what it
+我们没有时间了解太多，但是自制软件会跟踪它
+
+165
+00:10:35,120 --> 00:10:38,560
+has installed and can output a list of software with
+已安装的内容，并且可以
+
+166
+00:10:38,560 --> 00:10:41,600
+this command after brew bundle dump i'll add the
+在 brew bundle dump 后使用此命令输出软件列表我将添加
+
+167
+00:10:41,600 --> 00:10:46,160
+describe option for a little more info this command will create a file in your
+描述选项以获取更多信息此命令将在您的当前目录中创建一个文件，
+
+168
+00:10:46,160 --> 00:10:49,440
+current directory so it's important that we are already in
+因此重要的是我们已经在
+
+169
+00:10:49,440 --> 00:10:53,279
+our dot files repo our new brew file has a list of software
+我们的点文件 repo我们的新 brew 文件有一个
+
+170
+00:10:53,279 --> 00:10:58,079
+that can be reinstalled at a later date taps are the repositories where homebrew
+可以在以后重新安装的软件列表点击是 homebrew
+
+171
+00:10:58,079 --> 00:11:01,279
+keeps its own software along with the information about the
+保存自己的软件以及
+
+172
+00:11:01,279 --> 00:11:05,519
+other software it can install brews are tools you typically use in
+它可以安装的其他软件的信息的存储库brews 是您通常在 shell 中使用的工具
+
+173
+00:11:05,519 --> 00:11:08,880
+your shell these top two are new tools i've added
+这前两个是我添加的新工具，
+
+174
+00:11:08,880 --> 00:11:12,560
+to improve my shell experience while these bottom two are upgraded
+以改善我的 shell 体验，而后两个是升级
+
+175
+00:11:12,560 --> 00:11:16,160
+versions of pre-installed software so homebrew helps keep
+版本 预安装的软件，因此 homebrew 有助于保持
+
+176
+00:11:16,160 --> 00:11:19,360
+everything up to date and the casks at the bottom are
+一切都是最新的，底部的木桶是
+
+177
+00:11:19,360 --> 00:11:22,399
+full-blown applications that you probably recognize
+成熟的应用程序，你可能已经认出了
+
+178
+00:11:22,399 --> 00:11:26,959
+let's start one last shell add the brew file to start tracking it
+让我们启动最后一个 shell 添加 brew文件以开始跟踪它
+
+179
+00:11:26,959 --> 00:11:31,440
+and do another commit note that this time we did not get the warning message
+并做另一个提交记录，这次我们做了 没有收到
+
+180
+00:11:31,440 --> 00:11:34,560
+that we saw before about automatically configuring the
+我们之前看到的关于自动配置
+
+181
+00:11:34,560 --> 00:11:38,480
+author that's another sign that our git config sim link is working
+作者的警告消息，这是我们的 gitconfig sim 链接正在工作的另一个迹象，
+
+182
+00:11:38,480 --> 00:11:41,600
+so we will push our changes to the remote repository
+所以我们将把我们的更改推送到远程存储库，
+
+183
+00:11:41,600 --> 00:11:45,360
+now we've saved our software along with some configurations
+现在我们已经保存了我们的软件和一些配置，
+
+184
+00:11:45,360 --> 00:11:49,600
+but we haven't recorded the process when the time comes to bootstrap a new
+但我们还没有 t 记录了
+
+185
+00:11:49,600 --> 00:11:52,639
+computer using our dot files repository we are
+使用我们的点文件存储库引导新计算机时的过程，我们
+
+186
+00:11:52,639 --> 00:11:56,880
+likely to forget some steps instead of researching and relearning
+可能会忘记一些步骤inst 在研究和重新学习
+
+187
+00:11:56,880 --> 00:11:59,760
+these things we can keep a list in the readme
+这些东西之前，我们可以在自述文件中保留一个列表
+
+188
+00:11:59,760 --> 00:12:03,279
+we haven't seen this first step yet before we can use git
+我们还没有看到这第一步在我们可以使用 git
+
+189
+00:12:03,279 --> 00:12:06,959
+and homebrew we would need to install the command line tools
+和 homebrew 之前我们需要安装命令行工具
+
+190
+00:12:06,959 --> 00:12:10,560
+after that we would clone the repository to our new machine
+之后我们会将存储库克隆到我们的新 机器
+
+191
+00:12:10,560 --> 00:12:14,360
+ssh is preferred but you might want to start with
+ssh 是首选，但您可能希望从 https 开始，
+
+192
+00:12:14,360 --> 00:12:19,440
+https and switch remotes after you've had a chance to set up ssh
+并在您有机会
+
+193
+00:12:19,440 --> 00:12:22,800
+with our configuration files on our machine
+在我们的机器上使用我们的配置文件设置 ssh 后切换遥控器，
+
+194
+00:12:22,800 --> 00:12:27,040
+we would then repeat our sim linking steps you can probably see that this
+然后我们将重复我们的 sim 链接步骤，您可能会发现这
+
+195
+00:12:27,040 --> 00:12:29,839
+would be unwieldy if we had a dozen sim links
+会很笨拙 如果我们有十几个 sim链接，
+
+196
+00:12:29,839 --> 00:12:34,480
+and the more manual steps we have the more error prone our process
+并且手动步骤越多，我们的过程就越容易出错，
+
+197
+00:12:34,480 --> 00:12:37,839
+there are better ways to do this and this is the type of thing you'd
+那么就有更好的方法来做到这一点，这就是你
+
+198
+00:12:37,839 --> 00:12:42,880
+eventually work into an install script finally we would install homebrew and
+最终会在安装脚本中工作的类型，最后我们会安装 homebrew，
+
+199
+00:12:42,880 --> 00:12:45,680
+then point it to our brew file to reinstall
+然后 将它指向我们的 brew 文件以重新安装
+
+200
+00:12:45,680 --> 00:12:50,079
+all of our software i really wish we had the time to see this step in action
+我们所有的软件 我真的希望我们有时间看到这一步的实际操作，
+
+201
+00:12:50,079 --> 00:12:54,959
+because it is very satisfying just like we saw in the git config and
+因为它非常令人满意，就像我们在 git config 和
+
+202
+00:12:54,959 --> 00:12:58,880
+zshrc files here we have another list of ideas
+zshrc 文件中看到的一样，我们有一个
+
+203
+00:12:58,880 --> 00:13:01,760
+regarding improving our dot files process
+关于改进我们的点文件过程的其他想法列表
+
+204
+00:13:01,760 --> 00:13:06,000
+we haven't looked at saving system preferences organizing this repo
+我们没有考虑保存系统首选项将此存储库组织
+
+205
+00:13:06,000 --> 00:13:09,360
+into separate files building that install script
+到单独的文件中构建安装脚本
+
+206
+00:13:09,360 --> 00:13:14,480
+or automating any of the steps we did there are 11 billion possibilities which
+或自动化我们所做的任何步骤有 110 亿种可能性
+
+207
+00:13:14,480 --> 00:13:18,639
+we can't cover in 10 minutes let alone 100 seconds but as jeff
+我们无法在 10 中涵盖 分钟，更不用说 100 秒，但正如杰夫
+
+208
+00:13:18,639 --> 00:13:21,760
+mentioned i have a growing course that thoroughly covers this
+所说，我有一个不断增长的课程，可以彻底涵盖这些
+
+209
+00:13:21,760 --> 00:13:25,360
+material and for the next 30 days i'll keep the price
+材料，在接下来的 30 天里，我将把价格
+
+210
+00:13:25,360 --> 00:13:30,320
+as low as the course platform allows enroll now and your next computer setup
+保持在课程平台允许的最低价格现在注册，你的下一台计算机设置
+
+211
+00:13:30,320 --> 00:13:32,959
+will be no match for your dot file skills
+将无法匹配 您的点文件技能
+
+212
+00:13:32,959 --> 00:13:37,279
+thank you for watching and since there's no way i could possibly thank jeff
+感谢您的收看，因为我无法感谢杰夫
+
+213
+00:13:37,279 --> 00:13:42,320
+enough for sharing his stage with me please thank him on my behalf by liking
+与我分享他的舞台，请通过喜欢
+
+214
+00:13:42,320 --> 00:13:46,720
+and sharing his videos subscribing to this channel and going
+和分享他的视频来代表我感谢他订阅这个频道并成为
+
+215
+00:13:46,720 --> 00:13:49,839
+pro at fire ship io thanks for watching and
+fire ship io 的专业人士，谢谢 看，
+
+216
+00:13:49,839 --> 00:13:55,040
+i will see you in the next one
+我会在下一个见到你

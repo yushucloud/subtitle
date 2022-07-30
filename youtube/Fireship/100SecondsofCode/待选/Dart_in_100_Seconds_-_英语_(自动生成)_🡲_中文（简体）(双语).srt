@@ -1,0 +1,194 @@
+1
+00:00:00,240 --> 00:00:03,919
+dart a type safe general purpose programming language designed for
+dart 一种类型安全的通用编程语言，旨在
+
+2
+00:00:03,919 --> 00:00:08,080
+building fast apps on multiple platforms it was developed by google and first
+在多个平台上构建快速应用程序，由谷歌开发并
+
+3
+00:00:08,080 --> 00:00:12,240
+appeared in 2011 and was intended to be an alternative to javascript by shipping
+于 2011 年首次出现，旨在通过
+
+4
+00:00:12,240 --> 00:00:16,080
+its own virtual machine to run apps in the browser but things got off to a
+提供自己的虚拟机在浏览器中运行应用程序来替代 javascript，但事情得到了
+
+5
+00:00:16,080 --> 00:00:18,960
+rocky start and it was never really embraced by the web development
+起步并不顺利，它从未真正被 Web 开发社区所接受，
+
+6
+00:00:18,960 --> 00:00:23,039
+community however it bounced back in a big way after being adopted by the
+但在被 Flutter 框架采用后，它又大幅反弹
+
+7
+00:00:23,039 --> 00:00:26,400
+flutter framework and today it's one of the most loved programming languages in
+，如今它是业内最受欢迎的编程语言
+
+8
+00:00:26,400 --> 00:00:30,800
+the industry it's unique for its ability to compile to multiple targets like arm
+之一，它的独特之处在于它能够 编译为多个目标，例如
+
+9
+00:00:30,800 --> 00:00:35,440
+and x64 machine code for mobile devices javascript for web browsers and
+移动设备的 arm 和 x64 机器代码用于 Web 浏览器的 JavaScript 和
+
+10
+00:00:35,440 --> 00:00:40,960
+self-contained executables for windows mac os and linux it also has a just in
+Windowsmac os 和 linux 的自包含可执行文件 它还有一个
+
+11
+00:00:40,960 --> 00:00:45,440
+time or jit compiler which compiles your source code to machine code on the fly
+即时编译器或 jit 编译器，可将您的源代码即时编译为机器代码
+
+12
+00:00:45,440 --> 00:00:48,719
+which can boost developer productivity with features like hot reload and
+， 可以通过热重载和
+
+13
+00:00:48,719 --> 00:00:52,719
+flutter all dark code runs inside of an isolate which is like a chunk of memory
+颤动等功能提高开发人员的生产力 k 内存
+
+14
+00:00:52,719 --> 00:00:55,920
+running a single threaded event loop this makes it possible to perform
+运行单线程事件循环，这使得
+
+15
+00:00:55,920 --> 00:00:59,760
+asynchronous background work on a single thread but you can also spawn multiple
+在单个线程上执行异步后台工作成为可能，但您也可以生成多个
+
+16
+00:00:59,760 --> 00:01:04,080
+isolates to run code in parallel the language itself is type safe which means
+隔离以并行运行代码语言本身是类型安全的，这
+
+17
+00:01:04,080 --> 00:01:08,000
+that a variable's value always matches its static type and that generally
+意味着变量的值始终与其静态匹配 类型，这通常
+
+18
+00:01:08,000 --> 00:01:11,680
+results in fewer runtime errors for your app in production however the type
+会在生产中为您的应用程序减少运行时错误，但是类型
+
+19
+00:01:11,680 --> 00:01:15,680
+system is flexible allowing you to use dynamic types and runtime checks when
+系统很灵活，允许您在需要时使用动态类型和运行时检查
+
+20
+00:01:15,680 --> 00:01:19,680
+required it also provides null safety which means that values can't be null
+，它还提供空值安全性，这意味着值不能为空，
+
+21
+00:01:19,680 --> 00:01:23,360
+unless you explicitly allow them to be which can further cut down runtime
+除非您明确允许它们 在语法上，它可以进一步减少运行时
+
+22
+00:01:23,360 --> 00:01:28,159
+exceptions syntactically it's often described as combining elements of java
+异常，它通常被描述为结合 java
+
+23
+00:01:28,159 --> 00:01:32,320
+and javascript a dart program always starts with a main function that has no
+和 javascript 的元素一个 dart 程序总是以一个没有返回值的 main 函数开始，
+
+24
+00:01:32,320 --> 00:01:36,479
+return value so it's annotated with the void type inside of it we might declare
+所以它内部带有 void 类型的注释，我们可以声明
+
+25
+00:01:36,479 --> 00:01:40,720
+a variable with var and set it equal to a string dart will automatically infer
+一个变量 var 并将其设置为字符串 dart 会自动将其
+
+26
+00:01:40,720 --> 00:01:44,799
+this as a string type however we could explicitly type it by replacing var
+推断为字符串类型，但是我们可以解释 citly 通过替换 var 来输入它
+
+27
+00:01:44,799 --> 00:01:48,720
+anything you can store in a variable is an object and every object is an
+你可以存储在变量中的任何东西都是一个对象，每个对象都是
+
+28
+00:01:48,720 --> 00:01:52,479
+instance of a class the only thing that's not an object in dart is null
+一个类的实例dart 中唯一不是对象的东西是 null
+
+29
+00:01:52,479 --> 00:01:56,320
+this opens the door to multiple programming paradigms functions are also
+这为多种编程范式打开了大门 函数也是
+
+30
+00:01:56,320 --> 00:01:59,520
+first-class objects which means they can be passed around for functional
+一流的 对象，这意味着它们可以被传递以进行函数式
+
+31
+00:01:59,520 --> 00:02:03,439
+programming or you can define classes with mixin-based inheritance for
+编程，或者您可以为面向对象模式定义具有基于 mixin 的继承的类，
+
+32
+00:02:03,439 --> 00:02:07,600
+object-oriented patterns on top of that it has a package manager called pub
+除此之外它有一个名为 pub 的包管理器，
+
+33
+00:02:07,600 --> 00:02:10,959
+providing thousands of open source packages to help you get things done
+提供数千个开源包来帮助您完成
+
+34
+00:02:10,959 --> 00:02:14,640
+this has been dart in 100 seconds hit the like button and subscribe if you
+这项工作 已经在 100 秒内完成了 dart，如果你
+
+35
+00:02:14,640 --> 00:02:17,360
+want to see more short videos like this and if you want to get really good at
+想看更多这样的短视频，点击喜欢按钮并订阅，如果你想真正擅长
+
+36
+00:02:17,360 --> 00:02:21,120
+dart i just released a brand new full course for pro members it teaches the
+dart，我刚刚为专业会员发布了一个全新的完整课程，它教授
+
+37
+00:02:21,120 --> 00:02:24,400
+fundamentals of dart from the ground up to get you ready for flutter development
+dart 的基础知识为 Flutter 开发
+
+38
+00:02:24,400 --> 00:02:27,920
+and my upcoming flutter 2 course which will be out later this year thanks for
+和我即将在今年晚些时候推出的 Flutter 2 课程做好准备感谢
+
+39
+00:02:27,920 --> 00:02:32,160
+watching and i will see you in the next one
+您的观看，我们下期再见

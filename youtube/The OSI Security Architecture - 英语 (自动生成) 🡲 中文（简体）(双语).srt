@@ -1,0 +1,679 @@
+1
+00:00:03,020 --> 00:00:06,320
+[Music]
+[音乐]
+
+2
+00:00:07,120 --> 00:00:10,400
+hello everyone welcome back in today's lecture we will
+大家好，欢迎回到今天的讲座，我们将
+
+3
+00:00:10,400 --> 00:00:15,280
+see the osi security architecture as usual we will start the session with
+像往常一样看到 osi 安全架构，我们将开始课程，
+
+4
+00:00:15,280 --> 00:00:19,840
+the outcomes upon the completion of the session the learner will be able to
+课程结束后，学习者将能够获得
+
+5
+00:00:19,840 --> 00:00:22,960
+outcome number one we will know the difference between
+第一名的结果，我们将知道
+
+6
+00:00:22,960 --> 00:00:27,680
+threat and attack outcome number two we will understand the osi security
+威胁和威胁之间的区别 攻击结果二 我们将了解 osi 安全
+
+7
+00:00:27,680 --> 00:00:30,320
+architecture and outcome number three we will know
+架构和结果三 我们将
+
+8
+00:00:30,320 --> 00:00:34,079
+about security attacks security services and security
+了解安全攻击安全服务和安全
+
+9
+00:00:34,079 --> 00:00:37,600
+mechanisms before we step into what is threat and
+机制在我们讨论什么是威胁和
+
+10
+00:00:37,600 --> 00:00:42,079
+attack let's see an analogy just contemplate you want to protect
+攻击之前让我们看一个类比，只是考虑您想要保护
+
+11
+00:00:42,079 --> 00:00:44,559
+your home and your belongings in your home from
+您的家和您的财物 在您的家中免受
+
+12
+00:00:44,559 --> 00:00:47,920
+unauthorized access obviously you will prefer a strong
+未经授权的访问显然您会更喜欢坚固的
+
+13
+00:00:47,920 --> 00:00:51,520
+lock and if you prefer a lock that is made of plastic
+锁，如果您更喜欢由塑料制成
+
+14
+00:00:51,520 --> 00:00:55,600
+of course it can protect to some extent and not to the extent of security that
+的锁，它当然可以在一定程度上保护而不是
+
+15
+00:00:55,600 --> 00:00:59,920
+can be offered by a metal lock i hope you can understand this say you
+金属锁可以提供的安全程度我希望你 可以理解这说您
+
+16
+00:00:59,920 --> 00:01:02,960
+are preferring a plastic lock instead of a metal lock
+更喜欢塑料锁而不是金属锁，
+
+17
+00:01:02,960 --> 00:01:06,880
+you know what will be the impact of a plastic lock in place of a metal lock
+您知道塑料锁会产生什么影响用 ock 代替金属锁，
+
+18
+00:01:06,880 --> 00:01:10,479
+but still plastic locks can offer some degree of security
+但塑料锁仍然可以提供一定程度的安全性
+
+19
+00:01:10,479 --> 00:01:15,360
+maybe kids can't break it easily so you understood that there is a threat with
+也许孩子们不能轻易打破它，所以您了解塑料锁存在威胁，
+
+20
+00:01:15,360 --> 00:01:19,280
+the plastic lock because it can be easily broken so you
+因为它很容易被打破，所以
+
+21
+00:01:19,280 --> 00:01:22,799
+have decided to replace it with the metal lock and you know
+您决定更换它 使用金属锁，你知道
+
+22
+00:01:22,799 --> 00:01:26,000
+metal lock it will be hard to break when compared to the plastic
+金属锁与塑料锁相比很难打破
+
+23
+00:01:26,000 --> 00:01:29,439
+lock and after replacing the plastic lock with the metal lock
+，在用金属锁替换塑料锁后，
+
+24
+00:01:29,439 --> 00:01:33,119
+do you think there is no security vulnerability or security issues
+你认为没有安全漏洞或安全问题
+
+25
+00:01:33,119 --> 00:01:36,560
+let's assume somehow you secure your home with a metal lock
+让我们假设你以某种方式保护你的家 一把金属锁，
+
+26
+00:01:36,560 --> 00:01:40,079
+but still your home is vulnerable to threats you know why
+但你的家仍然容易受到威胁你知道为什么
+
+27
+00:01:40,079 --> 00:01:44,720
+attackers may attack the metal lock also and if you feel that metal lock is fully
+攻击者也可能攻击金属锁，如果你觉得金属锁得到了充分
+
+28
+00:01:44,720 --> 00:01:47,920
+protected and nobody can break the metal lock but
+保护，没有人可以打破金属锁，但
+
+29
+00:01:47,920 --> 00:01:52,880
+still there are vulnerabilities i'll tell you where just assume you have
+仍然存在漏洞，我会告诉你刚才在哪里 假设您
+
+30
+00:01:52,880 --> 00:01:56,159
+a poor quality window and so trespassers can
+的窗户质量很差，因此侵入者可以
+
+31
+00:01:56,159 --> 00:02:00,240
+enter home through your window and they may not prefer the regular way by
+通过您的窗户进入家中，他们可能不喜欢打破金属锁的常规方式
+
+32
+00:02:00,240 --> 00:02:03,920
+breaking the metal lock let's also assume your home is having a
+让我们也假设您的家
+
+33
+00:02:03,920 --> 00:02:07,759
+poor roofing system so that attackers can enter your home
+屋顶系统很差，因此攻击者可以进入您的家，
+
+34
+00:02:07,759 --> 00:02:11,680
+and take your belongings through your poor roofing system by breaking your
+并通过破坏您的屋顶系统将您的财物通过您的屋顶系统，
+
+35
+00:02:11,680 --> 00:02:15,280
+roofing system so your home is vulnerable to attack
+因此如果您的窗户质量差，那么您的家仍然容易受到攻击，
+
+36
+00:02:15,280 --> 00:02:18,319
+still if you have a poor quality window then
+那么
+
+37
+00:02:18,319 --> 00:02:21,920
+obviously still your home is not safe your home is
+显然您的家仍然不安全
+
+38
+00:02:21,920 --> 00:02:25,760
+still vulnerable to threats if someone is successful in breaking
+如果有人成功破坏了
+
+39
+00:02:25,760 --> 00:02:28,959
+your security system and enter your home and steal your
+您的安全系统并进入您的家中并偷走了您的
+
+40
+00:02:28,959 --> 00:02:33,840
+belongings this is what we call as attack in this example there always
+财物，您的家仍然容易受到威胁，这就是我们在这个例子中所说的攻击，总是
+
+41
+00:02:33,840 --> 00:02:37,200
+exist a potential for violation of security in
+存在以不良屋顶系统形式违反安全的可能性
+
+42
+00:02:37,200 --> 00:02:40,640
+the form of poor roofing system or poor quality
+或质量差的
+
+43
+00:02:40,640 --> 00:02:43,360
+window and if there is a potential violation of
+窗户，如果
+
+44
+00:02:43,360 --> 00:02:46,959
+security in your home then it is a threat so i hope you can
+您家中存在潜在的安全隐患，那么这是一种威胁，所以我希望您能
+
+45
+00:02:46,959 --> 00:02:50,000
+understand this say if you have a potential violation of
+理解这一点，如果您家中存在潜在的
+
+46
+00:02:50,000 --> 00:02:53,920
+security in your home then it is a threat to your home and if
+安全隐患，那么这对您的家庭构成威胁，如果
+
+47
+00:02:53,920 --> 00:02:57,040
+someone enters your home and steals your belongings
+有人进入您的家并偷走您的财物
+
+48
+00:02:57,040 --> 00:03:01,519
+it is an attack the intention of this lecture is knowing about threats and
+这是一次攻击本讲座的目的是了解威胁和
+
+49
+00:03:01,519 --> 00:03:04,000
+attacks let's dive into the definition of
+攻击让我们深入了解defi
+
+50
+00:03:04,000 --> 00:03:08,319
+threats and attacks what is a threat it is a potential for
+威胁和攻击的概念什么是威胁 它是潜在
+
+51
+00:03:08,319 --> 00:03:11,599
+violation of security which exists when there is a
+的安全违规行为 当存在可能滋生安全并造成伤害的
+
+52
+00:03:11,599 --> 00:03:16,319
+circumstance capability action or event that could breed
+环境能力行动或事件
+
+53
+00:03:16,319 --> 00:03:21,680
+security and cause harm that is a threat is a possible danger
+时存在的潜在威胁 威胁是可能利用漏洞的潜在危险
+
+54
+00:03:21,680 --> 00:03:26,640
+that might exploit a vulnerability just understand you might have protected your
+您可能已经
+
+55
+00:03:26,640 --> 00:03:29,360
+home with a secure system or a locking system
+使用安全系统或锁定系统保护了您的家，
+
+56
+00:03:29,360 --> 00:03:33,280
+but still your home is vulnerable to threats you know why
+但您的家仍然容易受到威胁，您知道原因，
+
+57
+00:03:33,280 --> 00:03:36,400
+because there exists a poor quality window and
+因为存在质量差的窗户，并且
+
+58
+00:03:36,400 --> 00:03:40,799
+attacks can happen based on the poor quality window so obviously there is a
+可能会根据质量差的窗户发生攻击，因此显然存在
+
+59
+00:03:40,799 --> 00:03:44,720
+possible danger that might exploit a vulnerability and
+可能的危险 可能会利用一个漏洞，
+
+60
+00:03:44,720 --> 00:03:48,720
+where is that vulnerability it is in the form of poor quality window
+该漏洞在哪里，它以低质量窗口的形式出现，
+
+61
+00:03:48,720 --> 00:03:52,799
+so before attack can happen there should be a threat and this threat
+所以在攻击发生之前应该存在威胁，这种
+
+62
+00:03:52,799 --> 00:03:57,120
+is a possible danger that might exploit a vulnerability so
+威胁是可能利用漏洞的潜在危险，所以
+
+63
+00:03:57,120 --> 00:04:01,040
+this is about a threat now let's see what is an attack an
+这是关于威胁的，现在让我们看看是什么
+
+64
+00:04:01,040 --> 00:04:06,319
+attack is an assault on system security that derives from an intelligent threat
+是攻击 攻击是对系统安全性的攻击，源自智能威胁，智能威胁
+
+65
+00:04:06,319 --> 00:04:10,080
+that is an intelligent act that is a deliberate
+是一种智能行为 是一种蓄意的
+
+66
+00:04:10,080 --> 00:04:12,879
+attempt especially in the sense of a method or
+尝试，尤其是在
+
+67
+00:04:12,879 --> 00:04:17,759
+technique to evade security services and violate the security policy of a
+逃避安全服务和违反系统安全政策的方法或技术的意义上
+
+68
+00:04:17,759 --> 00:04:20,400
+system say if someone has entered your home
+说，如果有人进入您的家
+
+69
+00:04:20,400 --> 00:04:23,600
+and stolen your belongings it is an attack actually
+并偷走了您的财物，这实际上是一种攻击，
+
+70
+00:04:23,600 --> 00:04:27,440
+you are affected because of that the attack will be a deliberate one and
+因为攻击会影响您是故意的，
+
+71
+00:04:27,440 --> 00:04:30,400
+that's why the statement is mentioned as it is a
+这就是为什么提到该声明，因为它是
+
+72
+00:04:30,400 --> 00:04:34,479
+deliberate attempt and how this attempt is made it is made
+故意的尝试，以及如何进行这种尝试，它
+
+73
+00:04:34,479 --> 00:04:39,440
+in the form of a method or a technique and normally attack will be an
+是以方法或技术的形式进行的，通常攻击将是一种
+
+74
+00:04:39,440 --> 00:04:43,040
+intelligent threat because attackers are intelligent guys i
+智能威胁，因为攻击者是聪明人
+
+75
+00:04:43,040 --> 00:04:46,080
+am not praising the attackers but please make a note of it
+我是 不赞扬攻击者，但请记下它，
+
+76
+00:04:46,080 --> 00:04:49,680
+because they are able to find out some flaws in the security system
+因为他们能够发现安全系统中的一些缺陷，
+
+77
+00:04:49,680 --> 00:04:53,600
+and they are making use of that vulnerability and gaining access
+并且他们正在利用该漏洞并获得访问权限，
+
+78
+00:04:53,600 --> 00:04:58,080
+so obviously attackers are knowledgeable guys so we should not underestimate
+所以显然攻击者是知识渊博的人，所以我们不应该低估
+
+79
+00:04:58,080 --> 00:05:01,360
+attackers whenever you create any secured system
+攻击者每当你创建 任何安全系统
+
+80
+00:05:01,360 --> 00:05:04,080
+always think in the perspective of attackers and
+总是站在攻击者的角度思考，并
+
+81
+00:05:04,080 --> 00:05:07,919
+think is there any possibility for the attackers to get into your system
+认为攻击者有可能获得 进入您的系统
+
+82
+00:05:07,919 --> 00:05:11,919
+and take away your data or your belongings i hope now you are clear with
+并带走您的数据或您的财物 我希望您现在清楚
+
+83
+00:05:11,919 --> 00:05:16,240
+what is a threat and what is an attack let's now dive into the topic of the day
+什么是威胁和什么是攻击现在让我们深入探讨当今的主题
+
+84
+00:05:16,240 --> 00:05:21,199
+the osa security architecture the osc security architecture deals with
+osa 安全架构 osc 安全架构处理
+
+85
+00:05:21,199 --> 00:05:24,479
+three things number one the security attack number
+第一件事 安全攻击
+
+86
+00:05:24,479 --> 00:05:28,880
+two the security mechanism and number three the security services
+第二个安全机制和第三个安全服务
+
+87
+00:05:28,880 --> 00:05:32,639
+so we will talk about this one by one elaborately in the coming lectures
+所以我们将在接下来的讲座中详细讨论这个
+
+88
+00:05:32,639 --> 00:05:35,919
+but i will give you an introduction of all the topics now
+但我会给你介绍所有主题现在
+
+89
+00:05:35,919 --> 00:05:39,039
+say someone has stolen your information it is an attack
+说有人窃取了你的信息这是攻击
+
+90
+00:05:39,039 --> 00:05:42,960
+someone is sniffing your conversation it is an attack someone is able to gain
+有人在窃听您的对话 这是一种攻击 有人能够
+
+91
+00:05:42,960 --> 00:05:47,280
+access to your secure system it is an attack say someone defacing a server
+访问您的安全系统 这是一种攻击 说有人破坏了服务器
+
+92
+00:05:47,280 --> 00:05:51,280
+from functioning properly it is an attack so firstly we will focus
+的正常运行这是一种攻击 所以首先我们将
+
+93
+00:05:51,280 --> 00:05:55,199
+on the security attack this attack means it is the action that
+关注安全攻击这种攻击意味着它是
+
+94
+00:05:55,199 --> 00:05:59,120
+compromises the security so whenever any action is carried out
+危害安全性的操作，因此无论何时执行任何操作
+
+95
+00:05:59,120 --> 00:06:03,120
+and because of that your security system is compromised then it is called as an
+并且因此您的安全系统受到危害，它都被称为
+
+96
+00:06:03,120 --> 00:06:06,400
+attack then what is security mechanism it is to
+攻击那么什么是安全机制 检测安全
+
+97
+00:06:06,400 --> 00:06:09,360
+detect prevent or recover from a security
+机制或从安全
+
+98
+00:06:09,360 --> 00:06:13,360
+attack the security mechanism must be proactive as well as reactive
+攻击中恢复 安全机制必须是主动的和被动的
+
+99
+00:06:13,360 --> 00:06:17,120
+suppose if there is an attack that has happened so the security mechanism
+假设如果发生了攻击，那么安全机制
+
+100
+00:06:17,120 --> 00:06:20,720
+should come into action and recover the system to its original state
+应该开始行动并将系统恢复到 原
+
+101
+00:06:20,720 --> 00:06:24,800
+the security system not only react to the attack but should also prevent
+状态 安全系统不仅对攻击做出反应，而且还应该在攻击
+
+102
+00:06:24,800 --> 00:06:28,800
+attack before it happens and not only this it should also detect
+发生之前阻止攻击，不仅如此，它还应该检测
+
+103
+00:06:28,800 --> 00:06:32,960
+any attack if it has happened so this is about the security mechanism
+任何攻击，如果它发生了，所以这是关于安全机制
+
+104
+00:06:32,960 --> 00:06:36,639
+and coming to the last one the security services so security
+，最后是安全服务，所以 安全
+
+105
+00:06:36,639 --> 00:06:41,440
+services enhances the security counter security attacks and provide the
+服务增强了安全反安全攻击并提供
+
+106
+00:06:41,440 --> 00:06:43,919
+service see there are various services that we
+服务 看到
+
+107
+00:06:43,919 --> 00:06:47,759
+are expecting from a security system don't worry about this we are going to
+我们期望从安全系统获得的各种服务不要担心这个我们将
+
+108
+00:06:47,759 --> 00:06:50,240
+talk about that elaborately in the coming lectures
+在接下来的讲座中详细讨论，
+
+109
+00:06:50,240 --> 00:06:53,520
+but in this lecture i will be providing a basic understanding about attacks
+但在本次讲座中，我将 提供对攻击机制和服务的基本了解
+
+110
+00:06:53,520 --> 00:06:57,199
+mechanisms and services basically the attacks are of two types
+基本上攻击有两种类型
+
+111
+00:06:57,199 --> 00:06:59,759
+number one is the passive attack and number two
+第一是 t 被动攻击，第二个
+
+112
+00:06:59,759 --> 00:07:03,280
+is the active attack we will see about the attacks in the next lecture with
+是主动攻击，我们将在下一节课中看到关于攻击的
+
+113
+00:07:03,280 --> 00:07:06,000
+examples before we conclude let's also see what
+例子，在我们总结之前让我们
+
+114
+00:07:06,000 --> 00:07:10,080
+about security mechanisms and services coming to security services
+看看安全机制和服务如何进入安全服务
+
+115
+00:07:10,080 --> 00:07:14,160
+there are lot of security services that we are expecting from a secure system
+有很多安全服务，我们期望从一个 安全
+
+116
+00:07:14,160 --> 00:07:17,360
+the authentication service the access control
+系统 身份验证服务 访问
+
+117
+00:07:17,360 --> 00:07:20,639
+the data confidentiality the data integrity
+控制 数据机密性 数据完整性
+
+118
+00:07:20,639 --> 00:07:23,919
+and non-repudiation i can very well understand
+和不可否认性 我可以很好地理解
+
+119
+00:07:23,919 --> 00:07:27,680
+these terms are new to you don't worry about these terms or
+这些术语对您来说是新的 不要担心这些术语或
+
+120
+00:07:27,680 --> 00:07:31,280
+any new terms you hear in this lecture we are going to see all the
+您在本讲座中听到的任何新术语我们将看到
+
+121
+00:07:31,280 --> 00:07:34,479
+terminologies in this lecture series so that's it
+本讲座系列中的所有术语，这就是
+
+122
+00:07:34,479 --> 00:07:38,479
+about the security services and coming to the security mechanisms we
+关于安全服务和安全机制的内容 我们
+
+123
+00:07:38,479 --> 00:07:43,680
+have a lot of mechanisms to detect prevent or recover from a security
+有很多机制来检测防止或从安全
+
+124
+00:07:43,680 --> 00:07:47,120
+attack the mechanisms include encipherment
+攻击中恢复这些机制包括加密
+
+125
+00:07:47,120 --> 00:07:50,960
+digital signatures access control data integrity
+数字签名访问控制数据完整性
+
+126
+00:07:50,960 --> 00:07:55,280
+authentication exchange traffic padding routing control and
+认证交换流量填充路由 控制和
+
+127
+00:07:55,280 --> 00:07:58,800
+notarization we are done with the three components of
+公证我们完成了o的三个组件
+
+128
+00:07:58,800 --> 00:08:02,879
+the osa security architecture the security attacks the security
+sa 安全架构 安全攻击 安全
+
+129
+00:08:02,879 --> 00:08:07,280
+mechanisms and the security services we have just seen what are the three
+机制和安全服务我们刚刚看到了什么是
+
+130
+00:08:07,280 --> 00:08:10,720
+components in the coming lectures anyway we are going to deal about this
+接下来的讲座中的三个组成部分 无论如何我们将详细讨论这个问题
+
+131
+00:08:10,720 --> 00:08:13,759
+elaborately and that's it guys i hope now you
+我希望现在你们
+
+132
+00:08:13,759 --> 00:08:16,319
+understood the difference between threat and attack
+了解威胁和攻击之间的区别
+
+133
+00:08:16,319 --> 00:08:20,240
+you understood the osa security architecture and we also have come to
+您了解了 osa 安全架构，我们也
+
+134
+00:08:20,240 --> 00:08:24,319
+know about the security attacks security services and security
+了解了安全攻击安全服务和安全
+
+135
+00:08:24,319 --> 00:08:27,440
+mechanisms i hope you guys enjoyed today's lecture
+机制，希望大家喜欢今天的讲座
+
+136
+00:08:27,440 --> 00:08:41,839
+and thank you for watching
+，感谢大家的收看

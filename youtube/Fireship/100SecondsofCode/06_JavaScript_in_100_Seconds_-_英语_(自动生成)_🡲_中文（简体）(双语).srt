@@ -1,0 +1,204 @@
+1
+00:00:02,080 --> 00:00:06,319
+javascript a high level single threaded garbage collected interpreted or just in
+javascript 一种高级单线程垃圾收集解释或
+
+2
+00:00:06,319 --> 00:00:09,679
+time compiled prototype-based multi-paradigm dynamic language with a
+及时编译的基于原型的多范式动态语言，具有
+
+3
+00:00:09,679 --> 00:00:14,719
+non-blocking event loop made famous for building websites it was created in 1995
+非阻塞事件循环，以构建网站而闻名，它是
+
+4
+00:00:14,719 --> 00:00:18,240
+in just one week by brendan ike with the goal of adding an easy to learn
+由 Brendan ike 在短短一周内于 1995 年创建的，其目标是 在 netscape 浏览器中添加了一种易于学习的
+
+5
+00:00:18,240 --> 00:00:21,920
+scripting language to the netscape browser it was originally named mocha
+脚本语言，它最初被命名为 mocha，
+
+6
+00:00:21,920 --> 00:00:25,439
+but the genius marketing people of the time wanted it to sound like that sexy
+但当时的天才营销人员希望它在今天听起来像一种性感的
+
+7
+00:00:25,439 --> 00:00:28,880
+new java language today it's a fully featured language that continues to
+新 java 语言，它是一种功能齐全的语言，它
+
+8
+00:00:28,880 --> 00:00:32,320
+evolve through the ecmascript standard it's most well known for building
+通过 ecmascript 标准继续发展以构建
+
+9
+00:00:32,320 --> 00:00:35,440
+front-end web applications because it's the only language other than web
+前端 Web 应用程序而闻名，因为它是除了 Web
+
+10
+00:00:35,440 --> 00:00:39,440
+assembly that is natively supported in browsers however anything that can be
+程序集之外唯一在浏览器中原生支持的语言，但是任何可以
+
+11
+00:00:39,440 --> 00:00:43,120
+built with javascript will be built with javascript like server-side applications
+用 javascript 构建的东西都将用 javascript 构建，例如
+
+12
+00:00:43,120 --> 00:00:47,680
+with node.js mobile applications with react native or ionic and desktop apps
+带有 node.js 的服务器端应用程序和带有react 的移动应用程序 带有电子的本机或离子和桌面应用程序
+
+13
+00:00:47,680 --> 00:00:51,440
+with electron it's an interpreted scripting language but tools like the v8
+，它是一种解释性脚本语言，但工具 li  ke v8
+
+14
+00:00:51,440 --> 00:00:55,440
+engine and chromium use a just-in-time compiler to convert it to machine code
+引擎和 chromium 使用即时编译器在运行时将其转换为机器代码
+
+15
+00:00:55,440 --> 00:00:59,840
+at runtime it's also excellent at handling i o intensive jobs despite the
+，它在处理 i o 密集型作业方面也非常出色，
+
+16
+00:00:59,840 --> 00:01:03,520
+fact that it's a single threaded language made possible by a non-blocking
+尽管它是通过非阻塞事件循环实现的单线程语言
+
+17
+00:01:03,520 --> 00:01:06,880
+event loop that can queue up work in the background without blocking the main
+，可以 在后台排队工作而不阻塞主
+
+18
+00:01:06,880 --> 00:01:11,280
+thread to get started create a file ending in.js your code will start
+线程开始创建一个以.js 结尾的文件您的代码
+
+19
+00:01:11,280 --> 00:01:15,200
+executing from the global context use the console to log a value with the
+将从全局上下文开始执行使用控制台使用内置调试器记录一个值
+
+20
+00:01:15,200 --> 00:01:18,640
+built-in debugger now think about where you want to run this file is it a
+现在考虑您想要的位置 运行此文件是
+
+21
+00:01:18,640 --> 00:01:22,720
+front-end browser or a back-end node.js server in the browser you can reference
+前端浏览器还是浏览器中的后端 node.js服务器，您可以
+
+22
+00:01:22,720 --> 00:01:26,400
+it with a script tag then the browser will execute it when you open that html
+使用脚本标记引用它，然后当您在网站上打开该 html 文件时，浏览器将执行它
+
+23
+00:01:26,400 --> 00:01:30,560
+file on a website javascript is often used to grab an element from the dom
+javascript 通常用于 从 dom
+
+24
+00:01:30,560 --> 00:01:34,000
+document query selector will grab the first button then we can assign it to a
+文档查询选择器中抓取一个元素将抓取第一个按钮，然后我们可以
+
+25
+00:01:34,000 --> 00:01:38,240
+variable with either var let or const var is the og way to do it but is
+使用 var let 或 const
+
+26
+00:01:38,240 --> 00:01:42,079
+typically avoided let is for variables that can be reassigned while const is
+将其分配给一个变量 ed while const
+
+27
+00:01:42,079 --> 00:01:45,680
+for variables that cannot be reassigned now to make the button interactive we
+用于现在无法重新分配的变量以使按钮具有交互性我们
+
+28
+00:01:45,680 --> 00:01:49,520
+can add an event listener to it by defining a function for the on click
+可以通过为单击事件定义一个函数来为其添加事件侦听器
+
+29
+00:01:49,520 --> 00:01:53,520
+event we can use the function keyword here or the more concise arrow syntax
+我们可以在此处使用 function 关键字或更简洁的箭头语法
+
+30
+00:01:53,520 --> 00:01:57,040
+now the event loop will execute this function whenever a new click occurs
+现在是事件循环每当发生新点击时都会执行此函数
+
+31
+00:01:57,040 --> 00:02:00,560
+functions are first class objects to support functional programming patterns
+函数是支持函数式编程模式的第一类对象，
+
+32
+00:02:00,560 --> 00:02:04,880
+but javascript also supports classes and inheritance for object oriented patterns
+但 javascript 也支持面向对象模式的类和继承，
+
+33
+00:02:04,880 --> 00:02:08,319
+even though it's single threaded it can do work asynchronously with the promise
+即使它是单线程的，它也可以与
+
+34
+00:02:08,319 --> 00:02:13,200
+api which also supports the async await syntax js code can also run on the
+也支持异步等待的 promise api 异步工作语法js代码也可以在服务器上运行，这
+
+35
+00:02:13,200 --> 00:02:16,959
+server thanks to the nodejs runtime instead of buttons on a web page it
+要归功于nodejs运行时而不是网页上的按钮它
+
+36
+00:02:16,959 --> 00:02:20,160
+interacts with things like the file system api execute your code on the
+与文件系统api之类的东西交互
+
+37
+00:02:20,160 --> 00:02:23,599
+server by pulling up the terminal and entering the node command this has been
+通过拉起终端并输入节点命令在服务器上执行你的代码这是
+
+38
+00:02:23,599 --> 00:02:27,280
+javascript in 100 seconds hit the like button and subscribe if you want to see
+javascript  100秒内点击喜欢按钮订阅，如果你
+
+39
+00:02:27,280 --> 00:02:30,480
+more short videos like this and become a fireship pro member if you want to learn
+想看更多这样的短视频并成为如果你想学习
+
+40
+00:02:30,480 --> 00:02:34,160
+how to do all kinds of crazy stuff with javascript thanks for watching and i
+如何用 javascript 做各种疯狂的事情，fireship pro 会员，谢谢你的收看，我
+
+41
+00:02:34,160 --> 00:02:37,599
+will see you in the next one
+会在下一个看到你

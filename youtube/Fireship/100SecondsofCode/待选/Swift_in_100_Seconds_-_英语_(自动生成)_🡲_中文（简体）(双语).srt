@@ -1,0 +1,184 @@
+1
+00:00:00,240 --> 00:00:04,720
+swift a multi-paradigm compiled language created by apple famous for building
+swift 是一种由苹果公司创建的多范式编译语言，以构建
+
+2
+00:00:04,720 --> 00:00:09,120
+apps that grow inside of apple's walled garden it was first introduced in 2014
+在苹果围墙花园内生长的应用程序而闻名。它于 2014 年
+
+3
+00:00:09,120 --> 00:00:12,960
+at the worldwide developers conference and was designed as a modern successor
+在全球开发者大会上首次推出，被设计
+
+4
+00:00:12,960 --> 00:00:16,480
+to objective-c the original apple platform language that had been in use
+为 Objective-c 的现代继承者，最初的苹果平台语言拥有
+
+5
+00:00:16,480 --> 00:00:20,960
+since the 1980s swift interops with objective-c but provides a shorter more
+自 1980 年代以来一直在使用 swift 与Objective-c 互操作，但它提供了更短且更
+
+6
+00:00:20,960 --> 00:00:25,199
+readable syntax and features like memory safety and type inference to improve
+易读的语法和功能，例如内存安全和类型推断，以提高
+
+7
+00:00:25,199 --> 00:00:29,760
+developer productivity today it's used to build mobile apps on ios desktop apps
+开发人员的工作效率如今它用于在 ios 上构建移动应用程序 在 mac os 上的桌面应用程序
+
+8
+00:00:29,760 --> 00:00:34,640
+on mac os wearable apps for watch os but is also open source which means it can
+上用于 watch os 的可穿戴应用程序 但它也是开源的，这意味着它
+
+9
+00:00:34,640 --> 00:00:38,559
+be used to build software outside of apple platforms it compiles to native
+可以用于在苹果平台之外构建软件，它可以编译为本地
+
+10
+00:00:38,559 --> 00:00:42,800
+machine code and is built on top of the llvm tool chain like many other modern
+机器代码，并且像许多其他现代语言一样构建在 llvm 工具链之上，
+
+11
+00:00:42,800 --> 00:00:46,559
+languages however it also supports a readable print loop allowing you to
+但是它还支持可读的打印循环，让您可以
+
+12
+00:00:46,559 --> 00:00:50,160
+experiment with code in a playground without needing to recompile making it a
+在操场上试验代码，无需重新编译，使其
+
+13
+00:00:50,160 --> 00:00:54,160
+great language for beginners in addition it provides memory safety by preventing
+成为初学者的好语言，此外它还证明了 通过防止
+
+14
+00:00:54,160 --> 00:00:58,480
+you from writing unsafe code by default and uses automatic reference counting to
+您默认编写不安全的代码来保护内存安全并使用自动引用计数来
+
+15
+00:00:58,480 --> 00:01:02,559
+manage memory automatically to get started install it then create a file
+自动管理内存以开始安装它然后创建一个
+
+16
+00:01:02,559 --> 00:01:06,640
+ending in.swift your code will start executing in the global scope there's no
+以.swift 结尾的文件您的代码将开始在全局范围内执行
+
+17
+00:01:06,640 --> 00:01:10,560
+need for a main function create a variable with the var keyword followed
+不需要主函数使用 var 关键字
+
+18
+00:01:10,560 --> 00:01:14,880
+by its name and value var creates a mutable variable which means its value
+后跟其名称和值创建一个变量 var 创建一个可变变量，这意味着它的值
+
+19
+00:01:14,880 --> 00:01:18,799
+can change in the future let on the other hand creates an immutable variable
+将来可以更改 let另一方面创建一个不可变变量
+
+20
+00:01:18,799 --> 00:01:23,280
+or constant it uses type inference to strongly type the value as a string but
+或常量 它使用类型推断将值强类型为字符串 但是
+
+21
+00:01:23,280 --> 00:01:27,520
+we can explicitly type it by adding a semicolon after the variable name every
+我们可以通过在变量名之后添加分号来显式键入它，每个
+
+22
+00:01:27,520 --> 00:01:31,119
+variable must be initialized with a value unless the type has a question
+变量都必须用一个值初始化，除非该类型有一个
+
+23
+00:01:31,119 --> 00:01:35,280
+mark which makes it an optional type allowing it to also contain a nil value
+问号，这使它成为一个可选类型，允许它也包含一个 nil 值
+
+24
+00:01:35,280 --> 00:01:38,960
+it also supports optional chaining making it really easy to work with nil
+它还支持可选链接使其成为 使用 nil
+
+25
+00:01:38,960 --> 00:01:42,320
+values functions are declared with the fun keyword and will use named
+值函数非常容易使用 fun 关键字声明，
+
+26
+00:01:42,320 --> 00:01:45,360
+parameters by default place an underscore before the name to use
+默认情况下将使用命名参数放置一个und  erscore 在名称之前使用
+
+27
+00:01:45,360 --> 00:01:49,040
+positional arguments instead now use a backslash with parentheses to
+位置参数，现在使用带括号的反斜杠将
+
+28
+00:01:49,040 --> 00:01:52,720
+interpolate these values into a string functions in swift are first class
+这些值插入字符串中
+
+29
+00:01:52,720 --> 00:01:56,880
+objects they can be passed as arguments used as return values and nested to
+
+
+30
+00:01:56,880 --> 00:02:00,880
+create closures it also supports object-oriented patterns like classes
+像类和继承这样的模式
+
+31
+00:02:00,880 --> 00:02:04,799
+and inheritance to encapsulate the var and fung keywords that you just learned
+来封装你刚刚学到的 var 和 fung 关键字
+
+32
+00:02:04,799 --> 00:02:08,399
+now pull up the terminal and run the swift compiler to convert your code into
+现在拉起终端并运行swift 编译器将你的代码转换
+
+33
+00:02:08,399 --> 00:02:12,000
+a high performance executable congratulations your code is now ready
+为高性能的可执行文件恭喜你的代码现在已经准备
+
+34
+00:02:12,000 --> 00:02:15,520
+to seek approval on the apple app store this has been the swift programming
+好在苹果应用商店寻求批准了 已经
+
+35
+00:02:15,520 --> 00:02:19,040
+language in 100 seconds if you want to see more short videos like this make
+是 100 秒内的 Swift 编程语言 如果你想看更多这样的短视频，请
+
+36
+00:02:19,040 --> 00:02:22,560
+sure to hit the like button and subscribe thanks for watching and i will
+确保点击喜欢按钮并订阅感谢观看，我会
+
+37
+00:02:22,560 --> 00:02:26,319
+see you in the next one
+在下一个看到你

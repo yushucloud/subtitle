@@ -1,0 +1,189 @@
+1
+00:00:02,480 --> 00:00:05,600
+raspberry pi a computer that fits in the palm of your
+raspberry pi一款可放在手掌中的电脑，
+
+2
+00:00:05,600 --> 00:00:08,960
+hand with a price tag as low as five dollars the idea was born
+价格低至 5 美元 这个想法诞生
+
+3
+00:00:08,960 --> 00:00:12,559
+in 2006 and the first commercial unit was launched in 2012
+于 2006 年，第一个商业单元于 2012 年推出
+
+4
+00:00:12,559 --> 00:00:16,240
+and since then it's evolved into one of the best selling computers in the world
+，从那时起，它发展成为全球最畅销的电脑之一 世界
+
+5
+00:00:16,240 --> 00:00:19,680
+it's named raspberry because computer companies like to name themselves after
+之所以将其命名为 raspberry，是因为计算机公司喜欢以
+
+6
+00:00:19,680 --> 00:00:22,560
+fruit and pie for the python programming language
+水果和派来命名自己，因为 Python 编程语言
+
+7
+00:00:22,560 --> 00:00:25,760
+not only is the computer tiny but it can also be quite powerful
+不仅计算机很小，而且它还可以非常强大
+
+8
+00:00:25,760 --> 00:00:29,439
+with a quad core processor and up to eight gigabytes of ram they're great for
+，具有四核处理器和高达8 GB 的内存，它们非常适合
+
+9
+00:00:29,439 --> 00:00:34,399
+building your own iot prototypes robots security cameras web servers and many
+构建自己的物联网原型 机器人安全摄像头 网络服务器和许多
+
+10
+00:00:34,399 --> 00:00:37,520
+other fun projects when you unbox your raspberry pi 4
+其他有趣的项目当你打开你的树莓派 4 时，
+
+11
+00:00:37,520 --> 00:00:40,000
+you'll notice a bunch of little chips and connectors
+你会注意到中心有一堆小芯片和连接
+
+12
+00:00:40,000 --> 00:00:44,559
+in the center we have our cpu and ram that is the brain of the operation
+器 我们有我们的 cpu 和 ram，它们是
+
+13
+00:00:44,559 --> 00:00:48,719
+nearby is the wi-fi bluetooth module that can wirelessly connect to the
+附近的操作大脑 顶部是可以无线连接外部世界的wi-fi蓝牙模块
+
+14
+00:00:48,719 --> 00:00:51,600
+outside world at the top we have a general purpose
+我们有一个通用
+
+15
+00:00:51,600 --> 00:00:55,039
+input output connector for connecting other electrical devices
+输入输出连接器用于连接其他电气设备
+
+16
+00:00:55,039 --> 00:00:58,800
+to the right we have an ethernet connection along with four usb ports
+在右边，我们有一个以太网连接，底部有四个 USB
+
+17
+00:00:58,800 --> 00:01:02,640
+on the bottom we have an audio jack two connect speakers or headphones
+端口，我们有一个音频插孔，两个连接扬声器或耳机，
+
+18
+00:01:02,640 --> 00:01:06,159
+a csi camera connector for building your own custom camera
+一个 csi 摄像头连接器，用于构建您自己的自定义摄像头
+
+19
+00:01:06,159 --> 00:01:09,520
+micro hdmi ports for connecting multiple monitors
+micro hdmi 端口，用于连接多个显示器
+
+20
+00:01:09,520 --> 00:01:13,600
+and finally a usb c port to provide power to the computer but most
+，最后一个 USB c 端口连接到为计算机提供电源，但最
+
+21
+00:01:13,600 --> 00:01:16,159
+importantly flip the raspberry pi over to find the
+重要的是翻转树莓派以找到
+
+22
+00:01:16,159 --> 00:01:18,960
+micro sd slot think of it as a hard drive that
+微型 sd 插槽将其视为包含与硬件接口所需的操作系统的硬盘驱动器，
+
+23
+00:01:18,960 --> 00:01:21,360
+contains the operating system required to
+
+
+24
+00:01:21,360 --> 00:01:25,280
+interface with the hardware you can use the raspberry pi like a normal desktop
+您可以像使用普通台式计算机一样使用树莓
+
+25
+00:01:25,280 --> 00:01:27,759
+computer by connecting a keyboard mouse and
+派连接 一个键盘鼠标和
+
+26
+00:01:27,759 --> 00:01:30,400
+monitor when you power it up the first time you can install
+显示器，当你第一次启动它时，你可以安装
+
+27
+00:01:30,400 --> 00:01:33,920
+any operating system you'd like but most beginners will take advantage of the
+任何你想要的操作系统，但大多数初学者会利用
+
+28
+00:01:33,920 --> 00:01:36,880
+noobs installer which installs a flavor of linux called
+noobs 安装程序，它安装了一种称为 raspberry pi os 的 Linux 风格，
+
+29
+00:01:36,880 --> 00:01:40,479
+raspberry pi os now that you're in you can program it to
+因为你在你里面 可以对其进行编程以
+
+30
+00:01:40,479 --> 00:01:44,000
+take over the world you might connect some leds to the gpio header then
+接管世界您可以将一些 LED 连接到 gpio 标头然后
+
+31
+00:01:44,000 --> 00:01:48,000
+control them with a python script or you might add a camera then connect to wi-fi
+使用 python 脚本控制它们，或者您可以添加一个摄像头然后 c 连接到 Wi-Fi
+
+32
+00:01:48,000 --> 00:01:50,479
+to build your own home security system from scratch
+从头开始构建您自己的家庭安全系统 可
+
+33
+00:01:50,479 --> 00:01:53,520
+the possibilities are limited only by your imagination
+性仅限于您的想象力 这
+
+34
+00:01:53,520 --> 00:01:57,520
+this has been raspberry pi in 100 seconds if you enjoy these short videos
+100 秒的树莓派 如果您喜欢这些短片，请确
+
+35
+00:01:57,520 --> 00:02:00,000
+please make sure to hit the like button and subscribe
+保点击“赞”按钮并订阅它真
+
+36
+00:02:00,000 --> 00:02:03,360
+it really helps out and if you want to see more raspberry pi content let me
+的很有帮助 如果您想查看更多树莓派内容
+
+37
+00:02:03,360 --> 00:02:06,320
+know in the comments thanks for watching and i will see you
+，请在评论中告诉我，谢谢观看，我们
+
+38
+00:02:06,320 --> 00:02:09,200
+in the next one
+下期再见

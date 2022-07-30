@@ -1,0 +1,395 @@
+1
+00:00:00,240 --> 00:00:02,399
+cypress a testing solution for web
+
+
+2
+00:00:02,399 --> 00:00:04,080
+applications famous for making
+
+
+3
+00:00:04,080 --> 00:00:05,759
+test-driven development fun for
+
+
+4
+00:00:05,759 --> 00:00:07,440
+javascript developers we all know
+
+
+5
+00:00:07,440 --> 00:00:09,280
+testing is the right thing to do but
+
+
+6
+00:00:09,280 --> 00:00:10,719
+actually doing it in a front-end
+
+
+7
+00:00:10,719 --> 00:00:12,799
+javascript project can be complicated
+
+
+8
+00:00:12,799 --> 00:00:15,120
+slow and just not fun for many the
+
+
+9
+00:00:15,120 --> 00:00:17,119
+obvious solution is to simply not test
+
+
+10
+00:00:17,119 --> 00:00:19,359
+anything at all that's not ideal cyprus
+
+
+11
+00:00:19,359 --> 00:00:21,199
+provides an open source browser-based
+
+
+12
+00:00:21,199 --> 00:00:22,880
+test runner that can experience your
+
+
+13
+00:00:22,880 --> 00:00:24,960
+website just like the end user would it
+
+
+14
+00:00:24,960 --> 00:00:26,560
+might fill out a login form click the
+
+
+15
+00:00:26,560 --> 00:00:28,480
+submit button then navigate to the user
+
+
+16
+00:00:28,480 --> 00:00:29,920
+dashboard all of which happens
+
+
+17
+00:00:29,920 --> 00:00:31,519
+programmatically based on code you
+
+
+18
+00:00:31,519 --> 00:00:33,600
+define every test is recorded and a
+
+
+19
+00:00:33,600 --> 00:00:35,360
+snapshot is saved at each step this
+
+
+20
+00:00:35,360 --> 00:00:37,280
+makes it possible to time travel through
+
+
+21
+00:00:37,280 --> 00:00:38,879
+the user experience to figure out
+
+
+22
+00:00:38,879 --> 00:00:41,280
+precisely why your code sucks and unlike
+
+
+23
+00:00:41,280 --> 00:00:43,520
+traditional testing utilities debugging
+
+
+24
+00:00:43,520 --> 00:00:45,039
+can be performed directly from the
+
+
+25
+00:00:45,039 --> 00:00:46,960
+browser dev tools not only does it work
+
+
+26
+00:00:46,960 --> 00:00:48,719
+for end-to-end testing of an entire
+
+
+27
+00:00:48,719 --> 00:00:50,719
+application but it's also great for
+
+
+28
+00:00:50,719 --> 00:00:52,960
+integration testing and unit testing of
+
+
+29
+00:00:52,960 --> 00:00:54,879
+isolated components or javascript
+
+
+30
+00:00:54,879 --> 00:00:57,039
+business logic to get started install it
+
+
+31
+00:00:57,039 --> 00:00:59,840
+into your project then run npx cypress
+
+
+32
+00:00:59,840 --> 00:01:01,760
+open notice how this pulls up the test
+
+
+33
+00:01:01,760 --> 00:01:03,440
+runner automatically and creates a
+
+
+34
+00:01:03,440 --> 00:01:05,119
+folder in the root of your project named
+
+
+35
+00:01:05,119 --> 00:01:06,720
+cypress that contains all of your
+
+
+36
+00:01:06,720 --> 00:01:08,400
+testing code fixtures is where you would
+
+
+37
+00:01:08,400 --> 00:01:10,640
+define mock data plugins allow you to
+
+
+38
+00:01:10,640 --> 00:01:12,799
+hook into the testing life cycle support
+
+
+39
+00:01:12,799 --> 00:01:14,640
+is for your global configuration then
+
+
+40
+00:01:14,640 --> 00:01:16,479
+your main testing code lives in the
+
+
+41
+00:01:16,479 --> 00:01:18,400
+integration file we can create a test
+
+
+42
+00:01:18,400 --> 00:01:20,400
+suite with describe then before each
+
+
+43
+00:01:20,400 --> 00:01:22,400
+test we can run some setup code like
+
+
+44
+00:01:22,400 --> 00:01:25,119
+tell cyprus to visit a specific url from
+
+
+45
+00:01:25,119 --> 00:01:27,439
+there use it to describe a test case
+
+
+46
+00:01:27,439 --> 00:01:29,280
+where you might verify that the web page
+
+
+47
+00:01:29,280 --> 00:01:31,119
+contains a certain piece of content the
+
+
+48
+00:01:31,119 --> 00:01:32,960
+get method will grab an element from the
+
+
+49
+00:01:32,960 --> 00:01:35,040
+dom and allow you to run assertions on
+
+
+50
+00:01:35,040 --> 00:01:36,880
+it like it should have the text to log
+
+
+51
+00:01:36,880 --> 00:01:39,119
+in it bundles the chai assertion library
+
+
+52
+00:01:39,119 --> 00:01:40,880
+for behavior-driven development which
+
+
+53
+00:01:40,880 --> 00:01:42,799
+will autocomplete with intellisense from
+
+
+54
+00:01:42,799 --> 00:01:44,880
+there you may want to find a form input
+
+
+55
+00:01:44,880 --> 00:01:46,560
+and type something into it after the
+
+
+56
+00:01:46,560 --> 00:01:48,560
+form is filled out submit it to update
+
+
+57
+00:01:48,560 --> 00:01:50,000
+your database the great thing about
+
+
+58
+00:01:50,000 --> 00:01:51,680
+cypress is that it will automatically
+
+
+59
+00:01:51,680 --> 00:01:53,680
+wait for async events which means you
+
+
+60
+00:01:53,680 --> 00:01:55,200
+don't need to add a bunch of sleepers in
+
+
+61
+00:01:55,200 --> 00:01:56,880
+your test code things just work
+
+
+62
+00:01:56,880 --> 00:01:58,719
+naturally now run your tests to watch
+
+
+63
+00:01:58,719 --> 00:02:00,880
+everything go down visually a snapshot
+
+
+64
+00:02:00,880 --> 00:02:03,119
+of the dom is taken for every event if
+
+
+65
+00:02:03,119 --> 00:02:04,719
+an assertion fails you can easily
+
+
+66
+00:02:04,719 --> 00:02:06,719
+inspect the dom to see what went wrong
+
+
+67
+00:02:06,719 --> 00:02:08,479
+on top of that you can open the selector
+
+
+68
+00:02:08,479 --> 00:02:10,720
+playground to easily grab any element on
+
+
+69
+00:02:10,720 --> 00:02:12,720
+the page by default it runs in chrome
+
+
+70
+00:02:12,720 --> 00:02:15,360
+but you can also run in firefox edge or
+
+
+71
+00:02:15,360 --> 00:02:17,599
+electron for desktop apps this has been
+
+
+72
+00:02:17,599 --> 00:02:19,680
+cypress in 100 seconds hit the like
+
+
+73
+00:02:19,680 --> 00:02:21,200
+button and subscribe if you want to see
+
+
+74
+00:02:21,200 --> 00:02:22,800
+more short videos like this and if you
+
+
+75
+00:02:22,800 --> 00:02:24,239
+want to learn more about testing my
+
+
+76
+00:02:24,239 --> 00:02:26,000
+friend bartow's just launched a free
+
+
+77
+00:02:26,000 --> 00:02:27,680
+end-to-end testing course thanks for
+
+
+78
+00:02:27,680 --> 00:02:29,599
+watching and i will see you in the next
+
+
+79
+00:02:29,599 --> 00:02:32,160
+one
+
+

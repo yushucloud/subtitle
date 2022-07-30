@@ -1,0 +1,158 @@
+1
+00:00:00,319 --> 00:00:04,560
+pseudo-class a way to style an element based on a change to its state for
+伪类 一种基于状态更改设置元素样式的方法，
+
+2
+00:00:04,560 --> 00:00:08,130
+example when you hover over a button in the browser it automatically adds this
+例如，当您将鼠标悬停在浏览器中的按钮上时，它会自动将此
+
+3
+00:00:08,130 --> 00:00:11,580
+hover keyword to the selector when working with pseudo classes it can be
+悬停关键字添加到选择器中，当使用伪类时，
+
+4
+00:00:11,580 --> 00:00:14,820
+useful to go into the browser inspector and force the state on the element
+进入浏览器可能很有用 检查器并强制您定位的元素的状态
+
+5
+00:00:14,820 --> 00:00:17,670
+you're targeting there are a bunch of different pseudo classes out there like
+有一堆不同的伪类，例如
+
+6
+00:00:17,670 --> 00:00:21,779
+focus when the user is actively using a form input or disabled when a button has
+当用户积极使用表单输入时的焦点或当按钮
+
+7
+00:00:21,779 --> 00:00:25,619
+the disabled attribute set to true pseudo classes are also useful when
+的禁用属性设置为 true 时禁用伪类也很有用 在
+
+8
+00:00:25,619 --> 00:00:29,250
+working with a collection of elements we can easily target the first or last
+处理元素集合时，我们可以通过定位第一个子伪类或最后一个子伪类来轻松定位
+
+9
+00:00:29,250 --> 00:00:32,579
+element in the list relative to its other siblings at this level by
+列表中相对于该级别的其他兄弟元素的第一个或最后一个元素，
+
+10
+00:00:32,579 --> 00:00:36,090
+targeting in the first child or last child pseudo classes if we want to be
+如果我们想要
+
+11
+00:00:36,090 --> 00:00:40,379
+more specific we can use last of type so it only targets this type of element but
+更具体，我们可以使用 last of  type 所以它只针对这种类型的元素
+
+12
+00:00:40,379 --> 00:00:43,590
+what if we want the second third or fourth element in that case we can use
+但是如果我们想要第二个第三个或第四个元素在这种情况下我们可以使用
+
+13
+00:00:43,590 --> 00:00:47,700
+nth child and pass an argument for the element that we want to grab or instead
+第 n 个子元素并为我们想要抓取的元素传递一个参数 或者
+
+14
+00:00:47,700 --> 00:00:51,660
+of a specific number we might want to use odd or even or maybe we want to grab
+我们可能想要使用奇数或偶数而不是特定数字，或者我们可能想要获取
+
+15
+00:00:51,660 --> 00:00:56,219
+every fifth element in the list multiply 5 by n to get every 5th element like 5
+列表中的每第五个元素乘以 n 以获得每第五个元素，例如 5
+
+16
+00:00:56,219 --> 00:01:00,180
+10 15 and so on you can also use addition and subtraction here to create
+10 15 等等，您也可以在这里使用加法和减法 要创建
+
+17
+00:01:00,180 --> 00:01:03,359
+any kind of pattern you want now sometimes you might select something in
+您现在想要的任何类型的模式，有时您可能会在 CSS 中选择某些内容，
+
+18
+00:01:03,359 --> 00:01:07,290
+your CSS but what you actually want to style is everything else for that we
+但您真正想要设置样式的是其他所有内容，因为我们
+
+19
+00:01:07,290 --> 00:01:11,340
+have the non pseudo class which performs negation notice how when we hover over
+有执行否定的非伪类注意当我们将鼠标悬停
+
+20
+00:01:11,340 --> 00:01:14,970
+an element in this list all the other elements are styled but not the actual
+在此列表中的元素上时如何 其他元素是样式化的，但不是
+
+21
+00:01:14,970 --> 00:01:18,060
+element that we're hovering over that's because we're targeting all the elements
+我们悬停的实际元素，因为我们的目标是所有
+
+22
+00:01:18,060 --> 00:01:21,360
+that are not hovered pseudo selectors are especially powerful when working
+未悬停的元素伪选择器在使用表单时特别强大
+
+23
+00:01:21,360 --> 00:01:25,619
+with forms one of my favorites is focus within which allows a parent element to
+我最喜欢的一个是焦点，其中允许父元素
+
+24
+00:01:25,619 --> 00:01:29,220
+see if one of its children has focus and that's especially useful if you have
+看看它的一个孩子是否有焦点，如果你有
+
+25
+00:01:29,220 --> 00:01:32,670
+something like a drop-down menu and once you keep it open after the user has
+一个下拉菜单之类的东西，并且一旦你在用户点击一个按钮后保持打开状态，
+
+26
+00:01:32,670 --> 00:01:35,549
+clicked a button if you're building a web app with an international audience
+如果你正在构建，这将特别有用 g 一个拥有国际受众的网络应用程序，
+
+27
+00:01:35,549 --> 00:01:39,119
+you might want to know about fileting selector use it to apply custom styles
+您可能想了解有关文件选择器的信息，使用它来将自定义样式
+
+28
+00:01:39,119 --> 00:01:42,689
+to any element that has a Lang attribute you can use it to make all of your Dutch
+应用于任何具有 Lang 属性的元素，您可以使用它来使所有荷兰语
+
+29
+00:01:42,689 --> 00:01:46,710
+text orange or combine it with int child to make your German text black red and
+文本变为橙色，或将其与 int child 组合以使您的 德文黑
+
+30
+00:01:46,710 --> 00:01:50,790
+yellow this has been pseudo classes and 100 seconds hit the like button if you
+红黄这已经是伪类了，100秒点击喜欢按钮，如果你
+
+31
+00:01:50,790 --> 00:01:54,030
+want to see more short videos like this thanks for watching and I will see you
+想看更多这样的短视频感谢观看，我会在下一个看到你
+
+32
+00:01:54,030 --> 00:01:56,659
+in the next one

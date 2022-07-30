@@ -1,0 +1,169 @@
+1
+00:00:00,240 --> 00:00:04,799
+react a javascript library for building user interfaces developed at facebook
+react 一个用于构建用户界面的 javascript 库，在 facebook 开发
+
+2
+00:00:04,799 --> 00:00:08,639
+and released in 2013 it's safe to say react has been the most influential ui
+并于 2013 年发布 可以肯定地说，react 是最近记忆中最具影响力的 ui
+
+3
+00:00:08,639 --> 00:00:12,799
+library of recent memory we use it to build components that represent logical
+库，我们使用它来构建表示
+
+4
+00:00:12,799 --> 00:00:17,119
+reusable parts of the ui the beauty of react is that the simplicity of building
+ui 的逻辑可重用部分的组件 react 的美妙之处在于 构建组件的简单性
+
+5
+00:00:17,119 --> 00:00:20,560
+a component has been brought down to its theoretical minimum it's just a
+已降至理论上的最低限度 它只是一个
+
+6
+00:00:20,560 --> 00:00:24,800
+javascript function it's so easy a caveman could do it the return value
+javascript 函数穴居人可以很容易地做到这
+
+7
+00:00:24,800 --> 00:00:29,119
+from this function is your html or ui which is written in a special syntax
+一点 该函数的返回值是您的 html 或 ui，它是用称为 jsx 的特殊语法编写的，
+
+8
+00:00:29,119 --> 00:00:33,600
+called jsx allowing you to easily combine javascript with html markup if
+允许您 如果您想将数据传递到组件中，您可以轻松地将 javascript 与 html 标记结合起来，
+
+9
+00:00:33,600 --> 00:00:37,040
+you want to pass data into a component you simply pass it a props argument
+您只需向它传递一个 props 参数
+
+10
+00:00:37,040 --> 00:00:41,040
+which you can then reference inside the function body or in the ui using braces
+，然后您可以在函数体内部或使用大括号在 ui 中引用该参数，
+
+11
+00:00:41,040 --> 00:00:45,760
+if the value changes react will react to update the ui if we want to give our
+如果值更改，react 将响应更新 ui 想要给我们的
+
+12
+00:00:45,760 --> 00:00:49,760
+component its own internal state we can use the state hook the hook is just a
+组件自己的内部状态，我们可以使用状态钩子钩子只是
+
+13
+00:00:49,760 --> 00:00:53,920
+function that returns a value as well as a function to change the value in this
+一个返回值的函数以及一个函数到 cha 在这种
+
+14
+00:00:53,920 --> 00:00:58,239
+case count is our reactive state and setcount will change the state when used
+情况下，值 count 是我们的响应状态，setcount 将在模板中使用时更改状态
+
+15
+00:00:58,239 --> 00:01:01,520
+in the template the count will always show the most recent value then we can
+count 将始终显示最新值，然后我们可以
+
+16
+00:01:01,520 --> 00:01:05,600
+bind set count to a button click event so the user can change the state react
+将 set count 绑定到按钮单击事件，以便用户可以更改状态响应
+
+17
+00:01:05,600 --> 00:01:09,040
+provides a variety of other built-in hooks to handle common use cases but the
+提供了各种其他内置钩子来处理常见用例，但
+
+18
+00:01:09,040 --> 00:01:12,080
+main reason you might want to use react is not the library itself but the
+您可能想要使用 react 的主要原因不是库本身，
+
+19
+00:01:12,080 --> 00:01:16,000
+massive ecosystem that surrounds it react itself doesn't care about routing
+而是围绕它的庞大生态系统react 本身并不关心路由
+
+20
+00:01:16,000 --> 00:01:19,920
+state management animation or anything like that instead it lets those concerns
+状态管理动画或类似的东西 相反，它让这些问题
+
+21
+00:01:19,920 --> 00:01:22,960
+evolve naturally within the open source community no matter what you're trying
+在开源社区内自然发展，无论您
+
+22
+00:01:22,960 --> 00:01:26,080
+to do there's very likely a good supporting library to help you get it
+尝试做什么，很可能有一个很好的支持库来帮助您完成它
+
+23
+00:01:26,080 --> 00:01:30,159
+done need a static site you have gatsby need server side rendering you have next
+需要一个静态站点您有 gatsby需要服务器端渲染您有下一个
+
+24
+00:01:30,159 --> 00:01:33,840
+for animation you have spring for forums you have formic state management you've
+动画 你有论坛的春天你有蚁群状态管理 你
+
+25
+00:01:33,840 --> 00:01:37,840
+got redux mobx flux recoil x state and more you have an endless supply of
+有 redux mobx 通量反冲 x 状态等等 你有无穷无尽的
+
+26
+00:01:37,840 --> 00:01:41,439
+choices to get things done the way you like it as an added bonus once you have
+选择来完成工作 你喜欢它的方式是一个额外的奖励，一旦你
+
+27
+00:01:41,439 --> 00:01:45,040
+reactdown you can easily jump into react native and start building mobile apps
+做出反应，你可以轻松地跳入反应原生并开始构建移动应用程序
+
+28
+00:01:45,040 --> 00:01:48,320
+and it's no surprise that knowing this little ui library is one of the most
+，知道这个小 ui 库是当今
+
+29
+00:01:48,320 --> 00:01:51,759
+in-demand skills for front-end developers today this has been react in
+前端开发人员最需要的技能之一也就不足为奇了这已经在
+
+30
+00:01:51,759 --> 00:01:55,119
+100 seconds if you want to see more short videos like this make sure to like
+100 秒内做出反应如果您想看更多这样的短视频，请确保喜欢
+
+31
+00:01:55,119 --> 00:01:58,560
+and subscribe and check out more advanced react content on fire ship i o
+并订阅并查看fire ship i o 上更高级的反应内容
+
+32
+00:01:58,560 --> 00:02:01,200
+and if you're curious how i make these videos make sure to check out my new
+，如果您好奇我是如何制作这些视频的，请务必查看 我
+
+33
+00:02:01,200 --> 00:02:05,119
+personal channel and video on that topic thanks for watching and i will see you
+关于该主题的新个人频道和视频感谢收看，我会
+
+34
+00:02:05,119 --> 00:02:08,600
+in the next one
+在下一个

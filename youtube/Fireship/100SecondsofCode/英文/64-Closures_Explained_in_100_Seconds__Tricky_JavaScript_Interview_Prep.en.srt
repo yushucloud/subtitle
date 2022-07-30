@@ -1,0 +1,895 @@
+1
+00:00:00,640 --> 00:00:02,960
+javascript closures are functions that
+
+
+2
+00:00:02,960 --> 00:00:04,960
+can access values outside of their own
+
+
+3
+00:00:04,960 --> 00:00:07,120
+curly braces in order to call a function
+
+
+4
+00:00:07,120 --> 00:00:09,200
+in your code the javascript interpreter
+
+
+5
+00:00:09,200 --> 00:00:11,040
+needs to know about the function itself
+
+
+6
+00:00:11,040 --> 00:00:12,960
+and any other data from the surrounding
+
+
+7
+00:00:12,960 --> 00:00:14,559
+environment that it depends on
+
+
+8
+00:00:14,559 --> 00:00:16,160
+everything needs to be neatly closed up
+
+
+9
+00:00:16,160 --> 00:00:18,160
+into a box before it can be fed into the
+
+
+10
+00:00:18,160 --> 00:00:18,640
+machine
+
+
+11
+00:00:18,640 --> 00:00:20,880
+take for example a pure function that
+
+
+12
+00:00:20,880 --> 00:00:22,880
+only depends on its own arguments and
+
+
+13
+00:00:22,880 --> 00:00:23,760
+internal data
+
+
+14
+00:00:23,760 --> 00:00:25,199
+what we have here is a fully
+
+
+15
+00:00:25,199 --> 00:00:27,119
+self-contained closed expression
+
+
+16
+00:00:27,119 --> 00:00:28,880
+when it's called it gets pushed onto the
+
+
+17
+00:00:28,880 --> 00:00:31,039
+call stack where it's executed and its
+
+
+18
+00:00:31,039 --> 00:00:32,960
+internal data is only kept in memory
+
+
+19
+00:00:32,960 --> 00:00:34,559
+until it's popped back off the call
+
+
+20
+00:00:34,559 --> 00:00:35,920
+stack but what if that function
+
+
+21
+00:00:35,920 --> 00:00:36,960
+references data
+
+
+22
+00:00:36,960 --> 00:00:38,800
+outside of its own scope like from the
+
+
+23
+00:00:38,800 --> 00:00:40,960
+global environment or an outer function
+
+
+24
+00:00:40,960 --> 00:00:42,800
+that leaves us with an open expression
+
+
+25
+00:00:42,800 --> 00:00:44,000
+that references other
+
+
+26
+00:00:44,000 --> 00:00:45,200
+free variables throughout the
+
+
+27
+00:00:45,200 --> 00:00:46,719
+environment now in order for the
+
+
+28
+00:00:46,719 --> 00:00:48,320
+interpreter to call this function
+
+
+29
+00:00:48,320 --> 00:00:50,160
+and also know the value of these free
+
+
+30
+00:00:50,160 --> 00:00:52,640
+variables it creates a closure to store
+
+
+31
+00:00:52,640 --> 00:00:54,399
+them in a place in memory where they can
+
+
+32
+00:00:54,399 --> 00:00:55,520
+be accessed later
+
+
+33
+00:00:55,520 --> 00:00:57,440
+that area of memory is called the heap
+
+
+34
+00:00:57,440 --> 00:00:58,960
+and unlike the call stack which is
+
+
+35
+00:00:58,960 --> 00:00:59,600
+short-lived
+
+
+36
+00:00:59,600 --> 00:01:01,760
+it can keep data in memory indefinitely
+
+
+37
+00:01:01,760 --> 00:01:03,440
+then decide once you get rid of it later
+
+
+38
+00:01:03,440 --> 00:01:04,640
+with the garbage collector
+
+
+39
+00:01:04,640 --> 00:01:06,880
+so a closure is not just a function it's
+
+
+40
+00:01:06,880 --> 00:01:09,040
+a function combined with its outer state
+
+
+41
+00:01:09,040 --> 00:01:10,880
+or lexical environment as you might
+
+
+42
+00:01:10,880 --> 00:01:12,960
+imagine closures require more memory and
+
+
+43
+00:01:12,960 --> 00:01:14,720
+processing power than a pure function
+
+
+44
+00:01:14,720 --> 00:01:16,320
+but you'll come across many practical
+
+
+45
+00:01:16,320 --> 00:01:17,280
+reasons to use them
+
+
+46
+00:01:17,280 --> 00:01:18,960
+the most important one being data
+
+
+47
+00:01:18,960 --> 00:01:20,960
+encapsulation to prevent leaking or
+
+
+48
+00:01:20,960 --> 00:01:22,799
+exposing data where it's not needed we
+
+
+49
+00:01:22,799 --> 00:01:24,400
+can create a closure by defining an
+
+
+50
+00:01:24,400 --> 00:01:26,320
+outer function that contains the state
+
+
+51
+00:01:26,320 --> 00:01:28,240
+then an inner function that operates on
+
+
+52
+00:01:28,240 --> 00:01:30,079
+it the data contained here will not leak
+
+
+53
+00:01:30,079 --> 00:01:31,680
+out to the surrounding environment the
+
+
+54
+00:01:31,680 --> 00:01:33,759
+inner function has access to data
+
+
+55
+00:01:33,759 --> 00:01:35,759
+defined in the outer function scope but
+
+
+56
+00:01:35,759 --> 00:01:37,200
+the outer function does not have
+
+
+57
+00:01:37,200 --> 00:01:39,280
+access to the inner function in addition
+
+
+58
+00:01:39,280 --> 00:01:41,840
+many javascript apis are callback based
+
+
+59
+00:01:41,840 --> 00:01:43,439
+you can use closures to create a
+
+
+60
+00:01:43,439 --> 00:01:45,439
+function factory that takes an argument
+
+
+61
+00:01:45,439 --> 00:01:47,200
+then returns a brand new function which
+
+
+62
+00:01:47,200 --> 00:01:48,640
+can then be passed along to other
+
+
+63
+00:01:48,640 --> 00:01:50,320
+functions that expect a callback
+
+
+64
+00:01:50,320 --> 00:01:52,560
+this has been javascript closures in 100
+
+
+65
+00:01:52,560 --> 00:01:54,000
+seconds but stay tuned
+
+
+66
+00:01:54,000 --> 00:01:55,759
+because today we're going beyond 100
+
+
+67
+00:01:55,759 --> 00:01:57,360
+seconds to take a look at one of the
+
+
+68
+00:01:57,360 --> 00:01:59,360
+most famous javascript trick questions
+
+
+69
+00:01:59,360 --> 00:02:00,960
+that will wreck you on an interview if
+
+
+70
+00:02:00,960 --> 00:02:02,799
+you don't know closures but first make
+
+
+71
+00:02:02,799 --> 00:02:04,479
+sure to like and subscribe i'm trying to
+
+
+72
+00:02:04,479 --> 00:02:06,320
+fulfill my childhood dream of getting to
+
+
+73
+00:02:06,320 --> 00:02:07,920
+a million subscribers but it's going to
+
+
+74
+00:02:07,920 --> 00:02:09,039
+be really hard to get there
+
+
+75
+00:02:09,039 --> 00:02:10,640
+if you don't click the button just
+
+
+76
+00:02:10,640 --> 00:02:12,239
+kidding i have a ton of fun making these
+
+
+77
+00:02:12,239 --> 00:02:14,000
+videos and learn something new every
+
+
+78
+00:02:14,000 --> 00:02:14,319
+time
+
+
+79
+00:02:14,319 --> 00:02:16,080
+a great example of which is this tricky
+
+
+80
+00:02:16,080 --> 00:02:17,599
+javascript interview question the
+
+
+81
+00:02:17,599 --> 00:02:18,560
+question itself
+
+
+82
+00:02:18,560 --> 00:02:20,720
+is what does this code log out let's go
+
+
+83
+00:02:20,720 --> 00:02:22,000
+through it line by line
+
+
+84
+00:02:22,000 --> 00:02:24,319
+first we're declaring a variable i with
+
+
+85
+00:02:24,319 --> 00:02:25,360
+the var keyword
+
+
+86
+00:02:25,360 --> 00:02:27,040
+then a for loop that will run three
+
+
+87
+00:02:27,040 --> 00:02:29,200
+times by incrementing that variable
+
+
+88
+00:02:29,200 --> 00:02:30,800
+now inside the for loop is where
+
+
+89
+00:02:30,800 --> 00:02:32,720
+closures come into play we define a
+
+
+90
+00:02:32,720 --> 00:02:33,360
+function
+
+
+91
+00:02:33,360 --> 00:02:35,840
+log that console logs the global
+
+
+92
+00:02:35,840 --> 00:02:36,959
+variable i
+
+
+93
+00:02:36,959 --> 00:02:38,720
+this is not a pure function because it
+
+
+94
+00:02:38,720 --> 00:02:40,879
+depends on a variable outside of its
+
+
+95
+00:02:40,879 --> 00:02:41,360
+scope
+
+
+96
+00:02:41,360 --> 00:02:43,599
+therefore creating a closure then from
+
+
+97
+00:02:43,599 --> 00:02:45,200
+there we set up a timeout
+
+
+98
+00:02:45,200 --> 00:02:47,120
+and pass the log function as the
+
+
+99
+00:02:47,120 --> 00:02:49,120
+callback this queues up a task
+
+
+100
+00:02:49,120 --> 00:02:51,519
+to execute the log function after 100
+
+
+101
+00:02:51,519 --> 00:02:52,400
+milliseconds
+
+
+102
+00:02:52,400 --> 00:02:53,840
+so what do you think the output of this
+
+
+103
+00:02:53,840 --> 00:02:55,519
+code will be we're capturing the i
+
+
+104
+00:02:55,519 --> 00:02:57,200
+variable in the closure for each
+
+
+105
+00:02:57,200 --> 00:02:58,400
+iteration of the loop
+
+
+106
+00:02:58,400 --> 00:03:00,239
+so it would seem like it should log out
+
+
+107
+00:03:00,239 --> 00:03:01,440
+as 0 1 2.
+
+
+108
+00:03:01,440 --> 00:03:03,440
+but if we log it out it actually console
+
+
+109
+00:03:03,440 --> 00:03:05,120
+logs three three times
+
+
+110
+00:03:05,120 --> 00:03:07,120
+to understand why that happens we also
+
+
+111
+00:03:07,120 --> 00:03:08,400
+need to understand the difference
+
+
+112
+00:03:08,400 --> 00:03:08,879
+between
+
+
+113
+00:03:08,879 --> 00:03:11,440
+var and let when you use var in a for
+
+
+114
+00:03:11,440 --> 00:03:11,920
+loop
+
+
+115
+00:03:11,920 --> 00:03:14,400
+that variable actually gets hoisted up
+
+
+116
+00:03:14,400 --> 00:03:16,640
+into the parent scope which in this case
+
+
+117
+00:03:16,640 --> 00:03:18,400
+would be the global scope watch what
+
+
+118
+00:03:18,400 --> 00:03:20,080
+happens when we change the variable to
+
+
+119
+00:03:20,080 --> 00:03:20,560
+let
+
+
+120
+00:03:20,560 --> 00:03:22,720
+we get our original expectation of a
+
+
+121
+00:03:22,720 --> 00:03:24,400
+console log of 0 1
+
+
+122
+00:03:24,400 --> 00:03:26,879
+2. with var we have a global variable
+
+
+123
+00:03:26,879 --> 00:03:29,040
+that we're mutating over and over again
+
+
+124
+00:03:29,040 --> 00:03:31,120
+but with let we're creating a variable
+
+
+125
+00:03:31,120 --> 00:03:33,280
+that is scoped to the for loop in other
+
+
+126
+00:03:33,280 --> 00:03:33,760
+words
+
+
+127
+00:03:33,760 --> 00:03:35,920
+it's local to the for loop and can't be
+
+
+128
+00:03:35,920 --> 00:03:37,920
+accessed outside of it now remember
+
+
+129
+00:03:37,920 --> 00:03:39,840
+a closure is the combination of a
+
+
+130
+00:03:39,840 --> 00:03:42,080
+function and its lexical environment
+
+
+131
+00:03:42,080 --> 00:03:44,080
+in the case of let the closure is
+
+
+132
+00:03:44,080 --> 00:03:45,599
+capturing the log function
+
+
+133
+00:03:45,599 --> 00:03:47,760
+along with the variable i for each
+
+
+134
+00:03:47,760 --> 00:03:49,760
+iteration of the loop which would be 0 1
+
+
+135
+00:03:49,760 --> 00:03:51,599
+2. if we didn't have a closure here
+
+
+136
+00:03:51,599 --> 00:03:53,439
+javascript would allocate that i
+
+
+137
+00:03:53,439 --> 00:03:54,640
+variable in memory
+
+
+138
+00:03:54,640 --> 00:03:56,319
+in the call stack and then immediately
+
+
+139
+00:03:56,319 --> 00:03:57,840
+release it but because we do have a
+
+
+140
+00:03:57,840 --> 00:03:58,400
+closure
+
+
+141
+00:03:58,400 --> 00:04:00,000
+it stores that variable in the heap
+
+
+142
+00:04:00,000 --> 00:04:01,599
+memory so it can be referenced again
+
+
+143
+00:04:01,599 --> 00:04:02,879
+when that closure is called by the
+
+
+144
+00:04:02,879 --> 00:04:04,159
+timeout in the future
+
+
+145
+00:04:04,159 --> 00:04:06,080
+but when var is used it's capturing the
+
+
+146
+00:04:06,080 --> 00:04:07,680
+reference to the global variable
+
+
+147
+00:04:07,680 --> 00:04:09,840
+the reason it logs three three times is
+
+
+148
+00:04:09,840 --> 00:04:10,879
+because the timeout
+
+
+149
+00:04:10,879 --> 00:04:13,280
+doesn't run until 100 milliseconds later
+
+
+150
+00:04:13,280 --> 00:04:15,120
+long after that for loop has completed
+
+
+151
+00:04:15,120 --> 00:04:15,439
+and
+
+
+152
+00:04:15,439 --> 00:04:17,440
+iterated up to three we can actually
+
+
+153
+00:04:17,440 --> 00:04:19,359
+examine this behavior in the browser dev
+
+
+154
+00:04:19,359 --> 00:04:21,280
+tools by adding a debugger to the
+
+
+155
+00:04:21,280 --> 00:04:21,919
+closure
+
+
+156
+00:04:21,919 --> 00:04:23,280
+if you try to run this code in the
+
+
+157
+00:04:23,280 --> 00:04:24,960
+browser with the devtools open
+
+
+158
+00:04:24,960 --> 00:04:26,800
+it will take you to the sources tab and
+
+
+159
+00:04:26,800 --> 00:04:28,560
+allow you to inspect the call stack and
+
+
+160
+00:04:28,560 --> 00:04:29,600
+scope of the function
+
+
+161
+00:04:29,600 --> 00:04:31,360
+when lead is used you can see we have a
+
+
+162
+00:04:31,360 --> 00:04:33,280
+block scoped variable named i
+
+
+163
+00:04:33,280 --> 00:04:35,360
+but when var is used that variable is
+
+
+164
+00:04:35,360 --> 00:04:36,639
+now in the global scope
+
+
+165
+00:04:36,639 --> 00:04:38,160
+which changes the way it's captured by
+
+
+166
+00:04:38,160 --> 00:04:39,919
+the closure that's a pretty tricky one
+
+
+167
+00:04:39,919 --> 00:04:42,000
+but javascript interviewers love to ask
+
+
+168
+00:04:42,000 --> 00:04:43,600
+questions like this if you ever find
+
+
+169
+00:04:43,600 --> 00:04:45,199
+yourself faced with a question like this
+
+
+170
+00:04:45,199 --> 00:04:46,560
+the best thing you can do is talk
+
+
+171
+00:04:46,560 --> 00:04:48,320
+through the code slowly and explain how
+
+
+172
+00:04:48,320 --> 00:04:49,280
+a closure works
+
+
+173
+00:04:49,280 --> 00:04:50,560
+so they know you're on the right track
+
+
+174
+00:04:50,560 --> 00:04:51,680
+even if you don't come to the right
+
+
+175
+00:04:51,680 --> 00:04:52,400
+conclusion
+
+
+176
+00:04:52,400 --> 00:04:53,600
+i'm going to go ahead and wrap things up
+
+
+177
+00:04:53,600 --> 00:04:55,759
+there thanks for watching and i will see
+
+
+178
+00:04:55,759 --> 00:04:56,000
+you
+
+
+179
+00:04:56,000 --> 00:04:58,800
+in the next one
+
+

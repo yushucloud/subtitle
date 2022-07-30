@@ -1,0 +1,1484 @@
+1
+00:00:00,000 --> 00:00:00,160
+[Music]
+
+
+2
+00:00:00,160 --> 00:00:02,320
+ethical hacking find exploits in your
+
+
+3
+00:00:02,320 --> 00:00:04,480
+web application before the bad guys do
+
+
+4
+00:00:04,480 --> 00:00:06,560
+as a web developer there are 10 common
+
+
+5
+00:00:06,560 --> 00:00:07,919
+security risks that you'll want to be
+
+
+6
+00:00:07,919 --> 00:00:10,000
+aware of things like database injection
+
+
+7
+00:00:10,000 --> 00:00:12,080
+broken authentication and cross-site
+
+
+8
+00:00:12,080 --> 00:00:13,920
+scripting hackers have been exploiting
+
+
+9
+00:00:13,920 --> 00:00:15,679
+these vulnerabilities from day 0.
+
+
+10
+00:00:15,679 --> 00:00:17,359
+like back in 05 when cross-site
+
+
+11
+00:00:17,359 --> 00:00:18,880
+scripting was used to update your
+
+
+12
+00:00:18,880 --> 00:00:21,199
+myspace page with sami is my hero or
+
+
+13
+00:00:21,199 --> 00:00:22,800
+just last year when the chinese version
+
+
+14
+00:00:22,800 --> 00:00:23,760
+of twitter weibo
+
+
+15
+00:00:23,760 --> 00:00:25,920
+exposed over 500 million user accounts
+
+
+16
+00:00:25,920 --> 00:00:27,599
+because of a brute force attack on their
+
+
+17
+00:00:27,599 --> 00:00:29,279
+authentication system you can reduce
+
+
+18
+00:00:29,279 --> 00:00:30,720
+your chances of being a victim by
+
+
+19
+00:00:30,720 --> 00:00:32,480
+running penetration tests on your web
+
+
+20
+00:00:32,480 --> 00:00:33,120
+application
+
+
+21
+00:00:33,120 --> 00:00:36,160
+i refuse to be a victim
+
+
+22
+00:00:36,160 --> 00:00:38,239
+and a popular free tool for doing so is
+
+
+23
+00:00:38,239 --> 00:00:39,680
+the burp suite whenever you visit a
+
+
+24
+00:00:39,680 --> 00:00:41,680
+website the browser automatically makes
+
+
+25
+00:00:41,680 --> 00:00:43,600
+requests to a bunch of servers for the
+
+
+26
+00:00:43,600 --> 00:00:45,920
+html images in javascript that that site
+
+
+27
+00:00:45,920 --> 00:00:46,719
+needs to run
+
+
+28
+00:00:46,719 --> 00:00:48,320
+the burp suite is like a man in the
+
+
+29
+00:00:48,320 --> 00:00:50,160
+middle that can eavesdrop on or
+
+
+30
+00:00:50,160 --> 00:00:52,320
+intercept every single request on its
+
+
+31
+00:00:52,320 --> 00:00:54,320
+dashboard we can find the proxy tab
+
+
+32
+00:00:54,320 --> 00:00:56,239
+then open an instance of the chromium
+
+
+33
+00:00:56,239 --> 00:00:58,079
+browser then visit a website that's
+
+
+34
+00:00:58,079 --> 00:00:59,920
+given us permission to run penetration
+
+
+35
+00:00:59,920 --> 00:01:01,840
+testing the tool will intercept every
+
+
+36
+00:01:01,840 --> 00:01:02,480
+request
+
+
+37
+00:01:02,480 --> 00:01:04,400
+allowing us to inspect it and optionally
+
+
+38
+00:01:04,400 --> 00:01:06,479
+modify its values before it gets sent to
+
+
+39
+00:01:06,479 --> 00:01:07,200
+the server
+
+
+40
+00:01:07,200 --> 00:01:08,960
+this is kind of like casing the joint to
+
+
+41
+00:01:08,960 --> 00:01:10,960
+find potential requests to exploit for
+
+
+42
+00:01:10,960 --> 00:01:12,799
+example you might submit a form to
+
+
+43
+00:01:12,799 --> 00:01:13,439
+complete a
+
+
+44
+00:01:13,439 --> 00:01:15,200
+shopping cart order if you change the
+
+
+45
+00:01:15,200 --> 00:01:17,040
+order amount on the post request and
+
+
+46
+00:01:17,040 --> 00:01:18,720
+their server side validation is weak
+
+
+47
+00:01:18,720 --> 00:01:20,560
+you may have just received a five finger
+
+
+48
+00:01:20,560 --> 00:01:22,320
+discount but in real life hacking is
+
+
+49
+00:01:22,320 --> 00:01:23,280
+rarely that simple
+
+
+50
+00:01:23,280 --> 00:01:25,040
+it takes a lot of tedious trial and
+
+
+51
+00:01:25,040 --> 00:01:26,880
+error luckily you can automate your
+
+
+52
+00:01:26,880 --> 00:01:28,560
+bruteforce attacks with the intruder
+
+
+53
+00:01:28,560 --> 00:01:29,040
+tool
+
+
+54
+00:01:29,040 --> 00:01:30,479
+you might have a bunch of username
+
+
+55
+00:01:30,479 --> 00:01:32,400
+password combinations that get added to
+
+
+56
+00:01:32,400 --> 00:01:33,680
+a request dynamically
+
+
+57
+00:01:33,680 --> 00:01:35,200
+then sent to the server with a variety
+
+
+58
+00:01:35,200 --> 00:01:36,720
+of different attack types all you have
+
+
+59
+00:01:36,720 --> 00:01:38,479
+to do is click the start attack button
+
+
+60
+00:01:38,479 --> 00:01:40,400
+then sit back and wait for a successful
+
+
+61
+00:01:40,400 --> 00:01:42,240
+response once you've gained access
+
+
+62
+00:01:42,240 --> 00:01:43,840
+you can use those same credentials to
+
+
+63
+00:01:43,840 --> 00:01:45,840
+determine if you can maintain access to
+
+
+64
+00:01:45,840 --> 00:01:47,840
+extract sensitive data from the target
+
+
+65
+00:01:47,840 --> 00:01:49,280
+if you had permission to do this you
+
+
+66
+00:01:49,280 --> 00:01:51,040
+wear a white hat if you didn't have
+
+
+67
+00:01:51,040 --> 00:01:53,040
+permission but notified the target you
+
+
+68
+00:01:53,040 --> 00:01:54,560
+wear a gray hat and if you're selling
+
+
+69
+00:01:54,560 --> 00:01:56,560
+the data for dogecoin on the dark web
+
+
+70
+00:01:56,560 --> 00:01:57,200
+then you wear
+
+
+71
+00:01:57,200 --> 00:01:58,960
+a black hat this has been ethical
+
+
+72
+00:01:58,960 --> 00:02:01,119
+hacking on the web in 100 seconds
+
+
+73
+00:02:01,119 --> 00:02:02,960
+but stay tuned because today i've
+
+
+74
+00:02:02,960 --> 00:02:04,799
+invited bartos from the web security
+
+
+75
+00:02:04,799 --> 00:02:07,040
+academy to take us beyond 100 seconds
+
+
+76
+00:02:07,040 --> 00:02:09,920
+and level up our skills on web security
+
+
+77
+00:02:09,920 --> 00:02:12,160
+hello internet bartos from web security
+
+
+78
+00:02:12,160 --> 00:02:14,000
+academy here and i'm super happy that we
+
+
+79
+00:02:14,000 --> 00:02:15,920
+partnered with fireship again
+
+
+80
+00:02:15,920 --> 00:02:17,680
+several days ago jeff posted a video
+
+
+81
+00:02:17,680 --> 00:02:19,920
+about course cross origin risk of
+
+
+82
+00:02:19,920 --> 00:02:21,440
+sharing and in today's video
+
+
+83
+00:02:21,440 --> 00:02:23,520
+i would like to give you an insight into
+
+
+84
+00:02:23,520 --> 00:02:25,840
+why we need course in the first place
+
+
+85
+00:02:25,840 --> 00:02:28,239
+we will take a look at same origin
+
+
+86
+00:02:28,239 --> 00:02:29,920
+policy which is the fundamental
+
+
+87
+00:02:29,920 --> 00:02:31,840
+principle of web security model
+
+
+88
+00:02:31,840 --> 00:02:33,519
+we will start with the theory and
+
+
+89
+00:02:33,519 --> 00:02:35,680
+explanation of important concepts
+
+
+90
+00:02:35,680 --> 00:02:38,160
+followed by coding labs so that you can
+
+
+91
+00:02:38,160 --> 00:02:38,720
+see
+
+
+92
+00:02:38,720 --> 00:02:41,599
+the mechanics of this policy in practice
+
+
+93
+00:02:41,599 --> 00:02:43,040
+let's get started
+
+
+94
+00:02:43,040 --> 00:02:44,560
+in order to understand same origin
+
+
+95
+00:02:44,560 --> 00:02:46,160
+policy let's first understand the
+
+
+96
+00:02:46,160 --> 00:02:47,599
+concept of origin
+
+
+97
+00:02:47,599 --> 00:02:50,640
+when you take the triple of scheme
+
+
+98
+00:02:50,640 --> 00:02:54,080
+domain port this is what constitutes to
+
+
+99
+00:02:54,080 --> 00:02:54,800
+origin
+
+
+100
+00:02:54,800 --> 00:02:58,000
+first three examples when we have https
+
+
+101
+00:02:58,000 --> 00:03:01,280
+the domain web security academy and here
+
+
+102
+00:03:01,280 --> 00:03:03,360
+the port is implicit because when you
+
+
+103
+00:03:03,360 --> 00:03:03,760
+use
+
+
+104
+00:03:03,760 --> 00:03:07,040
+https the default port for this is four
+
+
+105
+00:03:07,040 --> 00:03:10,720
+for free the default port for http
+
+
+106
+00:03:10,720 --> 00:03:14,159
+is port 80. so
+
+
+107
+00:03:14,159 --> 00:03:16,159
+when you have the same scheme the same
+
+
+108
+00:03:16,159 --> 00:03:18,239
+domain and the same port
+
+
+109
+00:03:18,239 --> 00:03:20,560
+regardless of the path it is considered
+
+
+110
+00:03:20,560 --> 00:03:22,159
+to be the same origin
+
+
+111
+00:03:22,159 --> 00:03:25,280
+if you have a different subdomain
+
+
+112
+00:03:25,280 --> 00:03:28,400
+or a different port or a different
+
+
+113
+00:03:28,400 --> 00:03:32,159
+scheme these are all different origins
+
+
+114
+00:03:32,159 --> 00:03:34,000
+why is this so important to
+
+
+115
+00:03:34,000 --> 00:03:35,280
+differentiate
+
+
+116
+00:03:35,280 --> 00:03:37,519
+those origins let's jump to the next
+
+
+117
+00:03:37,519 --> 00:03:38,640
+slide so
+
+
+118
+00:03:38,640 --> 00:03:41,840
+the same origin policy creates
+
+
+119
+00:03:41,840 --> 00:03:44,480
+some kind of secure context for your
+
+
+120
+00:03:44,480 --> 00:03:45,280
+websites
+
+
+121
+00:03:45,280 --> 00:03:48,239
+running in the browser so imagine that
+
+
+122
+00:03:48,239 --> 00:03:50,400
+you have site a.com
+
+
+123
+00:03:50,400 --> 00:03:53,680
+which will consider our origin
+
+
+124
+00:03:53,680 --> 00:03:57,519
+a and the browser fetches this website
+
+
+125
+00:03:57,519 --> 00:04:00,480
+from the server and then we have origin
+
+
+126
+00:04:00,480 --> 00:04:01,040
+b
+
+
+127
+00:04:01,040 --> 00:04:04,560
+that is hosted on site b.com
+
+
+128
+00:04:04,560 --> 00:04:08,000
+so imagine that you fetch index.html
+
+
+129
+00:04:08,000 --> 00:04:11,360
+image jpg script.js
+
+
+130
+00:04:11,360 --> 00:04:14,640
+and inside of single tab we have this
+
+
+131
+00:04:14,640 --> 00:04:18,160
+secure context with javascript running
+
+
+132
+00:04:18,160 --> 00:04:21,280
+dom document object model cookies and
+
+
+133
+00:04:21,280 --> 00:04:22,560
+web storage
+
+
+134
+00:04:22,560 --> 00:04:26,080
+and if this second origin
+
+
+135
+00:04:26,080 --> 00:04:28,240
+is loaded in the different tab they
+
+
+136
+00:04:28,240 --> 00:04:29,360
+cannot
+
+
+137
+00:04:29,360 --> 00:04:31,919
+communicate each other they are isolated
+
+
+138
+00:04:31,919 --> 00:04:33,199
+but
+
+
+139
+00:04:33,199 --> 00:04:36,479
+you can still fetch resources
+
+
+140
+00:04:36,479 --> 00:04:38,800
+from the different origin for example
+
+
+141
+00:04:38,800 --> 00:04:40,160
+you would be able to
+
+
+142
+00:04:40,160 --> 00:04:43,759
+load images css styles or scripts
+
+
+143
+00:04:43,759 --> 00:04:45,840
+to enrich your website with resources
+
+
+144
+00:04:45,840 --> 00:04:47,360
+from the different origin
+
+
+145
+00:04:47,360 --> 00:04:50,880
+and here is very important to note that
+
+
+146
+00:04:50,880 --> 00:04:54,000
+this is the browser which enforces same
+
+
+147
+00:04:54,000 --> 00:04:56,320
+origin policy and as i told you
+
+
+148
+00:04:56,320 --> 00:04:58,080
+there's going to be some kind of secure
+
+
+149
+00:04:58,080 --> 00:04:59,759
+context that is going to
+
+
+150
+00:04:59,759 --> 00:05:02,720
+bind this origin and the execution of
+
+
+151
+00:05:02,720 --> 00:05:03,120
+this
+
+
+152
+00:05:03,120 --> 00:05:05,520
+website and scripts and everything
+
+
+153
+00:05:05,520 --> 00:05:07,120
+related to this website
+
+
+154
+00:05:07,120 --> 00:05:10,479
+in your browser and this single
+
+
+155
+00:05:10,479 --> 00:05:12,960
+website would not be allowed to
+
+
+156
+00:05:12,960 --> 00:05:15,440
+communicate with different origins
+
+
+157
+00:05:15,440 --> 00:05:18,479
+so imagine that you load some website
+
+
+158
+00:05:18,479 --> 00:05:20,560
+and you would like to communicate
+
+
+159
+00:05:20,560 --> 00:05:24,000
+with site b by default same origin
+
+
+160
+00:05:24,000 --> 00:05:26,240
+policy restrict this kind of
+
+
+161
+00:05:26,240 --> 00:05:27,039
+communication
+
+
+162
+00:05:27,039 --> 00:05:29,840
+because who said that they can't trust
+
+
+163
+00:05:29,840 --> 00:05:30,479
+each other
+
+
+164
+00:05:30,479 --> 00:05:33,039
+maybe one website is evil and we would
+
+
+165
+00:05:33,039 --> 00:05:34,560
+like to prevent this kind of
+
+
+166
+00:05:34,560 --> 00:05:35,600
+communication
+
+
+167
+00:05:35,600 --> 00:05:39,189
+in order for this kind of 
+
+168
+00:05:39,189 --> 00:05:39,199
+in order for this kind of communication
+
+
+169
+00:05:39,199 --> 00:05:42,800
+origin b must white list origin a
+
+
+170
+00:05:42,800 --> 00:05:46,080
+explicitly saying that origin a
+
+
+171
+00:05:46,080 --> 00:05:49,280
+is trustworthy let's look at this
+
+
+172
+00:05:49,280 --> 00:05:51,759
+example we have a simple website which
+
+
+173
+00:05:51,759 --> 00:05:52,800
+displays
+
+
+174
+00:05:52,800 --> 00:05:55,840
+hello world some image it links to some
+
+
+175
+00:05:55,840 --> 00:05:59,520
+style sheets and scripts and also
+
+
+176
+00:05:59,520 --> 00:06:02,479
+it has some simple inline scripts
+
+
+177
+00:06:02,479 --> 00:06:04,080
+implemented to call
+
+
+178
+00:06:04,080 --> 00:06:08,560
+apis on different urls
+
+
+179
+00:06:08,560 --> 00:06:11,919
+so to serve this application we have a
+
+
+180
+00:06:11,919 --> 00:06:12,880
+simple server
+
+
+181
+00:06:12,880 --> 00:06:15,440
+which is written in node.js and utilizes
+
+
+182
+00:06:15,440 --> 00:06:16,560
+express.js
+
+
+183
+00:06:16,560 --> 00:06:19,759
+library to serve our application
+
+
+184
+00:06:19,759 --> 00:06:22,400
+if we look here we see that whenever
+
+
+185
+00:06:22,400 --> 00:06:23,680
+there is a request
+
+
+186
+00:06:23,680 --> 00:06:27,720
+to this url we are going to serve
+
+
+187
+00:06:27,720 --> 00:06:30,800
+index.html whenever there is a request
+
+
+188
+00:06:30,800 --> 00:06:31,280
+to
+
+
+189
+00:06:31,280 --> 00:06:34,560
+this url we are going to execute some
+
+
+190
+00:06:34,560 --> 00:06:36,639
+simulated logic in this case just a
+
+
+191
+00:06:36,639 --> 00:06:38,800
+console log and also we have a
+
+
+192
+00:06:38,800 --> 00:06:41,600
+second application before we jump into
+
+
+193
+00:06:41,600 --> 00:06:42,800
+the second application
+
+
+194
+00:06:42,800 --> 00:06:45,919
+let's note that this application is
+
+
+195
+00:06:45,919 --> 00:06:46,639
+going to be
+
+
+196
+00:06:46,639 --> 00:06:49,680
+served at port 88
+
+
+197
+00:06:49,680 --> 00:06:51,840
+and the second application which is
+
+
+198
+00:06:51,840 --> 00:06:53,599
+called external because it's going to
+
+
+199
+00:06:53,599 --> 00:06:56,479
+simulate our external origin is going to
+
+
+200
+00:06:56,479 --> 00:06:57,120
+be served
+
+
+201
+00:06:57,120 --> 00:07:00,160
+on the different port and here
+
+
+202
+00:07:00,160 --> 00:07:02,639
+it's going to serve some static
+
+
+203
+00:07:02,639 --> 00:07:04,400
+resources in the folder
+
+
+204
+00:07:04,400 --> 00:07:07,360
+public so we see it serves an image
+
+
+205
+00:07:07,360 --> 00:07:08,560
+script
+
+
+206
+00:07:08,560 --> 00:07:11,599
+and some stylesheet and also
+
+
+207
+00:07:11,599 --> 00:07:15,280
+exposes api method
+
+
+208
+00:07:15,280 --> 00:07:20,000
+for http get to also simulate some
+
+
+209
+00:07:20,000 --> 00:07:22,720
+logic in this case console.log so let's
+
+
+210
+00:07:22,720 --> 00:07:24,800
+also look how we can run those two
+
+
+211
+00:07:24,800 --> 00:07:27,280
+applications npm run policies would
+
+
+212
+00:07:27,280 --> 00:07:28,960
+start our first application
+
+
+213
+00:07:28,960 --> 00:07:32,639
+npm policies external would start our
+
+
+214
+00:07:32,639 --> 00:07:35,759
+second application as you remember we
+
+
+215
+00:07:35,759 --> 00:07:36,800
+are trying to
+
+
+216
+00:07:36,800 --> 00:07:40,479
+see same origin policy in practice
+
+
+217
+00:07:40,479 --> 00:07:44,240
+we know that we can fetch external css
+
+
+218
+00:07:44,240 --> 00:07:47,039
+and scripts like this so here you see
+
+
+219
+00:07:47,039 --> 00:07:47,599
+that
+
+
+220
+00:07:47,599 --> 00:07:51,759
+we are requesting our external origin
+
+
+221
+00:07:51,759 --> 00:07:55,520
+which we know by the port number here
+
+
+222
+00:07:55,520 --> 00:07:58,800
+they were successfully applied image was
+
+
+223
+00:07:58,800 --> 00:08:00,720
+successfully loaded
+
+
+224
+00:08:00,720 --> 00:08:05,280
+if we go to style we see that the port
+
+
+225
+00:08:05,280 --> 00:08:08,639
+is different and everything actually
+
+
+226
+00:08:08,639 --> 00:08:10,000
+works fine
+
+
+227
+00:08:10,000 --> 00:08:14,000
+we also know that same origin policy
+
+
+228
+00:08:14,000 --> 00:08:18,160
+prevents some api executions
+
+
+229
+00:08:18,160 --> 00:08:21,759
+so here we have two buttons call api
+
+
+230
+00:08:21,759 --> 00:08:24,560
+and call external api let's look at the
+
+
+231
+00:08:24,560 --> 00:08:25,360
+console
+
+
+232
+00:08:25,360 --> 00:08:28,960
+to see that we have some message here
+
+
+233
+00:08:28,960 --> 00:08:31,120
+it says i was fetched from external
+
+
+234
+00:08:31,120 --> 00:08:32,000
+origin
+
+
+235
+00:08:32,000 --> 00:08:35,599
+this is a script that we can see here
+
+
+236
+00:08:35,599 --> 00:08:38,560
+there was no problem in importing a
+
+
+237
+00:08:38,560 --> 00:08:39,200
+script
+
+
+238
+00:08:39,200 --> 00:08:41,519
+from a different origin our external
+
+
+239
+00:08:41,519 --> 00:08:42,479
+origin
+
+
+240
+00:08:42,479 --> 00:08:45,839
+and that we see the port is 8081
+
+
+241
+00:08:45,839 --> 00:08:49,760
+so let's try to execute api method
+
+
+242
+00:08:49,760 --> 00:08:53,360
+on our first origin so
+
+
+243
+00:08:53,360 --> 00:08:56,399
+looking back on our index.html
+
+
+244
+00:08:56,399 --> 00:09:00,080
+we see whenever we click button call api
+
+
+245
+00:09:00,080 --> 00:09:04,080
+it's going to call our server
+
+
+246
+00:09:04,080 --> 00:09:06,480
+then get the response and display it in
+
+
+247
+00:09:06,480 --> 00:09:07,360
+the console
+
+
+248
+00:09:07,360 --> 00:09:10,880
+so whenever i click here console.log
+
+
+249
+00:09:10,880 --> 00:09:13,920
+success and also our server says that
+
+
+250
+00:09:13,920 --> 00:09:15,519
+api was called
+
+
+251
+00:09:15,519 --> 00:09:18,640
+but different situation
+
+
+252
+00:09:18,640 --> 00:09:21,680
+would be when we would try to
+
+
+253
+00:09:21,680 --> 00:09:25,440
+call external api because now our
+
+
+254
+00:09:25,440 --> 00:09:29,279
+api endpoint is living on the different
+
+
+255
+00:09:29,279 --> 00:09:32,959
+origin so if we click here we see
+
+
+256
+00:09:32,959 --> 00:09:36,480
+two things that happened first of all
+
+
+257
+00:09:36,480 --> 00:09:38,959
+a request actually hit the server
+
+
+258
+00:09:38,959 --> 00:09:40,000
+because we see
+
+
+259
+00:09:40,000 --> 00:09:41,760
+console.log from the server that
+
+
+260
+00:09:41,760 --> 00:09:43,440
+external api was called
+
+
+261
+00:09:43,440 --> 00:09:46,720
+but actual response was blocked
+
+
+262
+00:09:46,720 --> 00:09:49,600
+on the browser because we know that same
+
+
+263
+00:09:49,600 --> 00:09:50,640
+origin policy
+
+
+264
+00:09:50,640 --> 00:09:54,000
+is enforced on the browser level so now
+
+
+265
+00:09:54,000 --> 00:09:55,920
+because we didn't actually allow this
+
+
+266
+00:09:55,920 --> 00:09:57,839
+origin to communicate
+
+
+267
+00:09:57,839 --> 00:10:01,040
+with our website the result
+
+
+268
+00:10:01,040 --> 00:10:04,720
+is blocked to recap we were able to get
+
+
+269
+00:10:04,720 --> 00:10:07,519
+style sheets images and scripts to be
+
+
+270
+00:10:07,519 --> 00:10:08,480
+executed
+
+
+271
+00:10:08,480 --> 00:10:12,399
+on our website but calling external api
+
+
+272
+00:10:12,399 --> 00:10:15,600
+was prevented from reading the result
+
+
+273
+00:10:15,600 --> 00:10:18,800
+but internal api call was successful
+
+
+274
+00:10:18,800 --> 00:10:21,680
+if you liked how it was explained to you
+
+
+275
+00:10:21,680 --> 00:10:23,600
+that we start with the theory and follow
+
+
+276
+00:10:23,600 --> 00:10:25,120
+with coding labs
+
+
+277
+00:10:25,120 --> 00:10:27,120
+i encourage you to check out my web
+
+
+278
+00:10:27,120 --> 00:10:28,959
+security fundamentals course that you
+
+
+279
+00:10:28,959 --> 00:10:30,240
+can get right now with
+
+
+280
+00:10:30,240 --> 00:10:33,920
+a 40 discount using the code that you
+
+
+281
+00:10:33,920 --> 00:10:34,560
+see
+
+
+282
+00:10:34,560 --> 00:10:36,320
+on the screen right now during this
+
+
+283
+00:10:36,320 --> 00:10:39,040
+concise one hour course i will teach you
+
+
+284
+00:10:39,040 --> 00:10:40,160
+the most important
+
+
+285
+00:10:40,160 --> 00:10:42,880
+aspects of web security model from the
+
+
+286
+00:10:42,880 --> 00:10:43,920
+theoretical
+
+
+287
+00:10:43,920 --> 00:10:46,399
+and practical perspective so that you
+
+
+288
+00:10:46,399 --> 00:10:48,399
+will never ever end up with course error
+
+
+289
+00:10:48,399 --> 00:10:49,279
+again
+
+
+290
+00:10:49,279 --> 00:10:52,000
+and you would know how to efficiently
+
+
+291
+00:10:52,000 --> 00:10:53,920
+prevent cross-site scripting
+
+
+292
+00:10:53,920 --> 00:10:56,720
+or at least minimize the risk of
+
+
+293
+00:10:56,720 --> 00:10:58,640
+cross-site scripting to a negligible
+
+
+294
+00:10:58,640 --> 00:10:59,760
+degree
+
+
+295
+00:10:59,760 --> 00:11:01,120
+see you in the course thanks for
+
+
+296
+00:11:01,120 --> 00:11:03,480
+watching and i will see you in the next
+
+
+297
+00:11:03,480 --> 00:11:06,480
+one
+
+

@@ -1,0 +1,203 @@
+1
+00:00:00,240 --> 00:00:04,560
+terraform an infrastructure as code tool that can provision resources in the
+terraform 一种基础设施即代码工具，可以在
+
+2
+00:00:04,560 --> 00:00:07,120
+cloud from simple declarative code when
+云中构建应用程序时从简单的声明性代码
+
+3
+00:00:07,120 --> 00:00:10,559
+building an app in the cloud you may find yourself using the graphical user
+在云中配置资源 您可能会发现自己使用
+
+4
+00:00:10,559 --> 00:00:12,559
+interface of your favorite cloud provider
+您最喜欢的云提供商的图形用户界面
+
+5
+00:00:12,559 --> 00:00:15,599
+clicking on buttons and paying for products just like you would on an
+单击按钮并像您一样为产品付款 一个
+
+6
+00:00:15,599 --> 00:00:19,039
+e-commerce site the only drawback of this approach is that it's complete and
+电子商务网站，这种方法的唯一缺点是它完全和
+
+7
+00:00:19,039 --> 00:00:22,320
+total chaos you might click a thousand different buttons to get your vm
+完全混乱，您可能会单击一千个不同的按钮来正确配置您的虚拟机
+
+8
+00:00:22,320 --> 00:00:24,560
+configured properly but what happens when you need to
+，但是当您需要
+
+9
+00:00:24,560 --> 00:00:26,480
+reproduce the same thing again in the future
+在未来再次复制相同的东西时会发生什么
+
+10
+00:00:26,480 --> 00:00:30,480
+terraform provides a way to build change and version infrastructure
+terraform 提供了一种方法
+
+11
+00:00:30,480 --> 00:00:33,760
+safely and efficiently by representing your infrastructure
+通过使用 hashcorp 配置语言或可选的 json 表示您的基础架构
+
+12
+00:00:33,760 --> 00:00:37,840
+and all that settings with the hashicorp configuration language or optionally
+和所有设置来安全有效地构建更改和版本基础架构
+
+13
+00:00:37,840 --> 00:00:41,680
+json think of it like a human readable blueprint that can execute and
+将其视为人类可读的蓝图，可以执行和
+
+14
+00:00:41,680 --> 00:00:45,120
+automate everything you do in the cloud it's free and open source
+自动化您在云中所做的一切它是免费和
+
+15
+00:00:45,120 --> 00:00:49,039
+and the first step to get started is to install the cli on your local system
+开源 开始的第一步是在本地系统上安装 cli
+
+16
+00:00:49,039 --> 00:00:52,399
+then from your project create a file ending in tf
+然后从您的项目中创建一个以 tf 结尾的文件
+
+17
+00:00:52,399 --> 00:00:55,920
+at the top we have a terraform block that controls global settings for
+在顶部我们有一个 terraform 块来控制
+
+18
+00:00:55,920 --> 00:00:58,960
+terraform itself most importantly we can define providers
+terraform 本身的全局设置最重要的是我们可以在此处定义提供程序
+
+19
+00:00:58,960 --> 00:01:02,320
+here which are like plugins that can connect to different cloud providers
+，它们就像可以连接到不同云提供程序的插件，
+
+20
+00:01:02,320 --> 00:01:05,920
+like aws google cloud azure etc below that we
+例如下面的 aws google cloud azure 等 我们
+
+21
+00:01:05,920 --> 00:01:09,600
+have a provider block which gives terraform the necessary credentials to
+有一个提供程序块，它为terraform 提供必要的凭据以
+
+22
+00:01:09,600 --> 00:01:13,119
+connect to our google cloud account from there we can create actual cloud
+从那里连接到我们的谷歌云帐户，我们可以使用资源块创建实际的云
+
+23
+00:01:13,119 --> 00:01:17,680
+infrastructure using a resource block it takes a type as its first argument which
+基础设施，它将类型作为其第一个参数，
+
+24
+00:01:17,680 --> 00:01:22,159
+corresponds to a product on google cloud then a custom name to identify it as the
+对应于谷歌云上的产品，然后是自定义 名称将其标识为块内的
+
+25
+00:01:22,159 --> 00:01:24,720
+second argument inside the block we can customize the
+第二个参数我们可以自定义
+
+26
+00:01:24,720 --> 00:01:27,280
+settings of the resource like its machine type
+资源的设置，例如其机器类型
+
+27
+00:01:27,280 --> 00:01:30,960
+zone and anything else you can imagine now that our infrastructure is defined
+区域以及您现在可以想象的任何其他内容，因为我们的基础设施被定义
+
+28
+00:01:30,960 --> 00:01:34,400
+as code we can run terraform init to initialize the project
+为代码，我们可以运行 terraform init 来初始化项目，
+
+29
+00:01:34,400 --> 00:01:38,240
+then terraform apply to make the actual changes to google cloud
+然后 terraform apply 要对谷歌云进行实际更改，
+
+30
+00:01:38,240 --> 00:01:41,520
+it'll require a confirmation before making the changes then after it's
+需要在进行更改之前进行确认
+
+31
+00:01:41,520 --> 00:01:43,840
+complete the terraform show command can be used
+完成后， terraform show 命令可
+
+32
+00:01:43,840 --> 00:01:46,799
+to inspect the current state of the infrastructure what's awesome
+用于检查基础架构的当前状态 令人敬畏的
+
+33
+00:01:46,799 --> 00:01:50,880
+is that as we add more resources to the configuration terraform keeps track of
+是，当我们向配置中添加更多资源时，terraform
+
+34
+00:01:50,880 --> 00:01:54,240
+the changes or diff similar to a version control system like
+跟踪更改或差异，类似于 git 之类的版本控制系统
+
+35
+00:01:54,240 --> 00:01:58,719
+git just run terraform apply again to deploy any changes to the configuration
+只需运行 terraform 再次申请以部署对配置的任何更改，
+
+36
+00:01:58,719 --> 00:02:02,240
+now once your startup has failed and it comes time to tear down the project
+一旦您的启动失败并且是时候
+
+37
+00:02:02,240 --> 00:02:06,479
+use the terraform destroy command as the inverse of apply to delete everything in
+
+
+38
+00:02:06,479 --> 00:02:09,200
+your configuration file this has been infrastructure as
+
+
+39
+00:02:09,200 --> 00:02:12,959
+code with terraform in 100 seconds make sure to hit the like button if you want
+拆除项目了 100秒，如果你
+
+40
+00:02:12,959 --> 00:02:16,480
+to see more short videos like this thanks for watching and i will see you
+想看更多这样的短视频，请确保点击喜欢按钮谢谢观看，我会在下一个看到你
+
+41
+00:02:16,480 --> 00:02:19,200
+in the next one

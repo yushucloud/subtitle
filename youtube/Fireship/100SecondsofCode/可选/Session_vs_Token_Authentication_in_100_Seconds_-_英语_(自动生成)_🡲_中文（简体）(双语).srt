@@ -1,0 +1,204 @@
+1
+00:00:00,320 --> 00:00:03,520
+user authentication there are two main ways to get the job done
+用户身份验证完成工作的主要方法有两种
+
+2
+00:00:03,520 --> 00:00:07,440
+sessions and tokens the traditional approach on the web is cookie-based
+会话和令牌网络上的传统方法是基于 cookie 的
+
+3
+00:00:07,440 --> 00:00:11,280
+server-side sessions the process begins with a user filling out their username
+服务器端会话 该过程始于用户填写其用户名
+
+4
+00:00:11,280 --> 00:00:15,120
+and password and then submitting it to a server which then validates it creates a
+和密码，然后将其提交到服务器，然后 验证它
+
+5
+00:00:15,120 --> 00:00:18,000
+session in the database then responds with a session id the
+在数据库中创建一个会话，然后用一个会话 ID 响应
+
+6
+00:00:18,000 --> 00:00:20,560
+session id will be saved in the browser's cookie jar
+会话 ID 将保存在浏览器的 cookie jar 中
+
+7
+00:00:20,560 --> 00:00:24,240
+which is a place in the browser to save key value pairs that will be sent back
+，这是浏览器中保存键值对的地方，该键值对将
+
+8
+00:00:24,240 --> 00:00:28,080
+to the server on each subsequent request it can then respond back with content
+在每次后续请求时发送回服务器然后可以用
+
+9
+00:00:28,080 --> 00:00:30,240
+designed for the currently logged end user
+为当前登录的最终用户设计的内容进行响应
+
+10
+00:00:30,240 --> 00:00:33,600
+in other words we have a stateful session between the front end client
+，换句话说，我们在前端客户端
+
+11
+00:00:33,600 --> 00:00:37,360
+and backend server this approach works great but there are some drawbacks it
+和后端服务器之间有一个有状态的会话，这种方法效果很好，但是有一些缺点，它
+
+12
+00:00:37,360 --> 00:00:40,879
+can be vulnerable to an attack known as cross-site request forgery where the
+可能容易受到称为跨站点的攻击 请求伪造
+
+13
+00:00:40,879 --> 00:00:44,000
+attacker points the user to a site they're logged into to perform
+攻击者将用户指向他们登录的站点以
+
+14
+00:00:44,000 --> 00:00:47,200
+actions they didn't intend to like submitting a payment or changing their
+执行他们不打算喜欢的操作提交付款或更改 ir
+
+15
+00:00:47,200 --> 00:00:49,600
+password although the risk is very low especially
+密码虽然风险非常低，特别是
+
+16
+00:00:49,600 --> 00:00:52,800
+if you use a modern framework to implement your code the bigger problem
+如果您使用现代框架来实现代码，更大的问题
+
+17
+00:00:52,800 --> 00:00:54,640
+is that you'll need to store the session id
+是您需要将会话 ID 存储
+
+18
+00:00:54,640 --> 00:00:58,000
+in a database or keep it in memory on the server because most of today's
+在数据库中或将其保存在服务器的内存中，因为当今的大多数
+
+19
+00:00:58,000 --> 00:01:01,120
+cloud applications are scaled horizontally this can be a huge
+云应用程序 水平扩展，这可能
+
+20
+00:01:01,120 --> 00:01:03,840
+bottleneck in production and that brings us to token-based
+是生产中的一个巨大瓶颈，这将我们带到基于令牌的
+
+21
+00:01:03,840 --> 00:01:08,000
+authentication which solves this problem but introduces its own set of challenges
+身份验证，它解决了这个问题，但引入了自己的一组挑战，
+
+22
+00:01:08,000 --> 00:01:11,439
+the process begins the same with the client sending its login details to the
+该过程开始于客户端将其登录详细信息发送到
+
+23
+00:01:11,439 --> 00:01:16,320
+server instead of storing a session id it generates a json web token the jot is
+服务器而不是存储 会话 id它生成一个 json Web 令牌
+
+24
+00:01:16,320 --> 00:01:19,840
+created with a private key on the server then it's sent back to the browser where
+使用服务器上的私钥创建 jot然后将其发送回浏览器，在将来的请求中
+
+25
+00:01:19,840 --> 00:01:23,920
+it's normally kept in local storage on future requests the jot will be added
+它通常保存在本地存储中 jot 将添加
+
+26
+00:01:23,920 --> 00:01:28,159
+to the authorization header prefixed by bearer the server then only
+到以承载服务器为前缀的授权标头中 那么只
+
+27
+00:01:28,159 --> 00:01:31,520
+needs to validate the signature there's no need for a database lookup somewhere
+需要验证签名就不需要
+
+28
+00:01:31,520 --> 00:01:34,000
+else in the infrastructure and that's way more efficient when
+在基础设施中的其他地方进行数据库查找，这样效率更高
+
+29
+00:01:34,000 --> 00:01:36,320
+dealing with a distributed system in the cloud
+处理云中的分布式系统，
+
+30
+00:01:36,320 --> 00:01:39,920
+however tokens can still be hijacked by an attacker and they can also be
+但是令牌仍然可能被攻击者劫持，并且它们也可能
+
+31
+00:01:39,920 --> 00:01:42,560
+difficult to invalidate and they can't be used to authenticate a
+难以失效，并且它们不能用于
+
+32
+00:01:42,560 --> 00:01:45,600
+user in the background on the server here's the most important thing to
+在服务器的后台对用户进行身份验证这是最重要的要
+
+33
+00:01:45,600 --> 00:01:48,960
+understand with a session the authentication state is handled on the
+理解的事情 一个会话身份验证状态在服务器上处理，
+
+34
+00:01:48,960 --> 00:01:51,600
+server while tokens are managed on the client
+而令牌在客户端上管理
+
+35
+00:01:51,600 --> 00:01:54,320
+this has been user authentication in 100 seconds
+这已经是 100 秒内的用户身份验证
+
+36
+00:01:54,320 --> 00:01:57,520
+if you want to master web security check out web security academy
+如果你想掌握网络安全，请查看网络安全学院
+
+37
+00:01:57,520 --> 00:02:00,799
+my friend bartos is launching a 12-week coaching program
+我的朋友 bartos 正在启动一个为期 12 周的辅导计划
+
+38
+00:02:00,799 --> 00:02:05,119
+it's not your ordinary course but 12 weeks of high-value group-based learning
+它不是 您的普通课程，但 12周的高价值基于小组的学习
+
+39
+00:02:05,119 --> 00:02:08,640
+and i'm teaching my own module in the course on firebase security check out
+，我在 Firebase 安全课程中教授我自己的模块查看
+
+40
+00:02:08,640 --> 00:02:11,599
+the link in the description to learn more and i will see you there in a few
+描述中的链接以了解更多信息，我将在几周后见到您，
+
+41
+00:02:11,599 --> 00:02:19,680
+weeks thanks for watching
+谢谢 观看

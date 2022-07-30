@@ -1,0 +1,139 @@
+1
+00:00:00,000 --> 00:00:03,449
+console it's the browsers built-in debugger you may have heard of it before
+控制台它是浏览器的内置调试器，您之前可能听说过它，
+
+2
+00:00:03,449 --> 00:00:06,990
+but try running console log console it does a lot more than you may have
+但尝试运行控制台日志控制台它所做的比您可能
+
+3
+00:00:06,990 --> 00:00:11,370
+realized in some cases you only want to console log something if a condition is
+意识到的要多得多
+
+4
+00:00:11,370 --> 00:00:14,849
+false in that case you're probably looking for assert when the first
+' 可能在第一个
+
+5
+00:00:14,849 --> 00:00:17,820
+argument is false it logs the second argument as an error
+参数为 false 时寻找 assert 它将第二个参数记录为错误
+
+6
+00:00:17,820 --> 00:00:22,020
+another trick you'll often see people do is use console.log along with braces to
+您经常会看到人们使用的另一个技巧是使用 console.log 和大括号来
+
+7
+00:00:22,020 --> 00:00:24,990
+provide labels for the things that they're logging that's cool in all but
+为他们正在记录的内容提供标签，这很酷 总而言之，除了
+
+8
+00:00:24,990 --> 00:00:29,039
+change log to table and you get a much prettier output as j/s developers we
+将日志更改为表格之外，作为 j/s 开发人员，我们
+
+9
+00:00:29,039 --> 00:00:32,880
+often like to abuse console and that can make things pretty messy use console
+经常喜欢滥用控制台，这可能会使事情变得非常
+
+10
+00:00:32,880 --> 00:00:36,360
+group to group things together with a label then collapse them by default to
+
+
+11
+00:00:36,360 --> 00:00:39,870
+save space in the console things can also get ugly if you're logging a bunch
+混乱 在控制台中，如果您正在记录
+
+12
+00:00:39,870 --> 00:00:44,520
+of objects changelog Tudor and you get a much cleaner triangle drop-down do you
+一堆对象 changelog Tudor 并且您得到一个更清晰的三角形下拉列表，那么在控制台中的事情也会变得丑陋，如果是这样，您
+
+13
+00:00:44,520 --> 00:00:48,570
+ever find yourself manually incrementing a number in your console logs if so you
+是否发现自己在控制台日志中手动增加了一个数字 您
+
+14
+00:00:48,570 --> 00:00:52,620
+might be able to save your sanity by using console count it takes an optional
+可能可以通过使用控制台计数来节省您的理智，它需要一个可选
+
+15
+00:00:52,620 --> 00:00:56,789
+label and every time it's called it will increment the count by one on a similar
+标签，每次调用它时，它都会在类似的注释上将计数增加一个
+
+16
+00:00:56,789 --> 00:01:00,030
+note you can also keep track of the amount of time between your console logs
+您还可以跟踪控制台日志调用时间之间的
+
+17
+00:01:00,030 --> 00:01:04,229
+calling time will start a timer then time log will log the amount of time you
+时间量 启动一个计时器，然后时间日志将记录您
+
+18
+00:01:04,229 --> 00:01:08,040
+elapsed since that timer started now in JavaScript we're often working in the
+从该计时器启动以来经过的时间在JavaScript 中我们经常在
+
+19
+00:01:08,040 --> 00:01:11,970
+context of deeply nested functions and objects when debugging it may be
+深度嵌套的函数和对象的上下文中工作调试时可能
+
+20
+00:01:11,970 --> 00:01:16,049
+necessary to traverse through the stack trace of your code use console trace in
+需要遍历代码的堆栈跟踪 在
+
+21
+00:01:16,049 --> 00:01:19,110
+the function you would expect to be at the top of the call stack and now we can
+您希望位于调用堆栈顶部的函数中使用控制台跟踪，现在我们可以
+
+22
+00:01:19,110 --> 00:01:22,409
+see exactly what happened before this function was pushed on to the top of the
+确切地看到在此函数被推送到
+
+23
+00:01:22,409 --> 00:01:26,430
+call stack and lastly every good Jas developer should give their console logs
+调用堆栈顶部之前发生了什么，最后每个优秀的 Jas开发人员都应该提供他们的控制台日志
+
+24
+00:01:26,430 --> 00:01:30,990
+some flair use % C as the first character in a string then pass in some
+一些天赋使用 % C 作为字符串中的第一个字符，然后传入一些
+
+25
+00:01:30,990 --> 00:01:35,369
+CSS styling as your second argument and now the console is your canvas if you
+CSS 样式作为第二个参数，如果你
+
+26
+00:01:35,369 --> 00:01:38,579
+want to see more short videos like this make sure to hit the like button thanks
+想看到更多这样的短视频，现在控制台就是你的画布记得按赞
+
+27
+00:01:38,579 --> 00:01:42,070
+for watching and I will see you in the next one
+谢谢收看，下期
+
+28
+00:01:42,070 --> 00:01:44,130
+you
+再见

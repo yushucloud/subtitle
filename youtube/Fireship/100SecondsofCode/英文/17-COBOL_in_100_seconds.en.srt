@@ -1,0 +1,340 @@
+1
+00:00:00,000 --> 00:00:01,800
+common business oriented language or
+
+
+2
+00:00:01,800 --> 00:00:03,780
+COBOL is a weak verbose and flabby
+
+
+3
+00:00:03,780 --> 00:00:05,580
+language used by coat grinders to do
+
+
+4
+00:00:05,580 --> 00:00:07,919
+boring things on dinosaur mainframes it
+
+
+5
+00:00:07,919 --> 00:00:10,530
+was developed over 100 years ago in 1959
+
+
+6
+00:00:10,530 --> 00:00:12,750
+but is still in demand today in 2020
+
+
+7
+00:00:12,750 --> 00:00:14,340
+because it's the language used on many
+
+
+8
+00:00:14,340 --> 00:00:16,199
+mainframe computer systems you know
+
+
+9
+00:00:16,199 --> 00:00:18,150
+those things we call big iron usually
+
+
+10
+00:00:18,150 --> 00:00:20,100
+built by IBM to handle massive amounts
+
+
+11
+00:00:20,100 --> 00:00:21,510
+of throughput to handle things like
+
+
+12
+00:00:21,510 --> 00:00:23,130
+credit card transactions airline
+
+
+13
+00:00:23,130 --> 00:00:25,109
+ticketing and most recently the massive
+
+
+14
+00:00:25,109 --> 00:00:27,090
+spike in unemployment claims so if you
+
+
+15
+00:00:27,090 --> 00:00:29,010
+want to be a programmer in 2020 COBOL
+
+
+16
+00:00:29,010 --> 00:00:30,449
+might be your best bet it's a high-level
+
+
+17
+00:00:30,449 --> 00:00:32,189
+imperative language which means it's
+
+
+18
+00:00:32,189 --> 00:00:34,020
+very easy to learn the syntax is
+
+
+19
+00:00:34,020 --> 00:00:35,850
+extremely verbose by design because it's
+
+
+20
+00:00:35,850 --> 00:00:37,710
+self documenting and it contains over
+
+
+21
+00:00:37,710 --> 00:00:39,570
+600 reserved words for you to memorize
+
+
+22
+00:00:39,570 --> 00:00:41,730
+to take advantage of and every COBOL
+
+
+23
+00:00:41,730 --> 00:00:43,200
+program is structured with an
+
+
+24
+00:00:43,200 --> 00:00:44,940
+easy-to-follow hierarchy your program
+
+
+25
+00:00:44,940 --> 00:00:46,530
+contains many divisions which contain
+
+
+26
+00:00:46,530 --> 00:00:47,879
+many sections which contain many
+
+
+27
+00:00:47,879 --> 00:00:49,530
+paragraphs which contain many sentences
+
+
+28
+00:00:49,530 --> 00:00:51,329
+that contain your statements which of
+
+
+29
+00:00:51,329 --> 00:00:52,949
+course contain many characters when you
+
+
+30
+00:00:52,949 --> 00:00:54,360
+start writing some COBOL code you'll
+
+
+31
+00:00:54,360 --> 00:00:55,920
+notice these vertical lines in your IDE
+
+
+32
+00:00:55,920 --> 00:00:57,660
+the first six characters are your line
+
+
+33
+00:00:57,660 --> 00:00:59,430
+numbers start at zero zero zero one
+
+
+34
+00:00:59,430 --> 00:01:01,410
+hundred and increment by 100 for each
+
+
+35
+00:01:01,410 --> 00:01:02,969
+line column seven is where you identify
+
+
+36
+00:01:02,969 --> 00:01:04,979
+comments or the continuation of a
+
+
+37
+00:01:04,979 --> 00:01:06,960
+previous line if we're identifying a new
+
+
+38
+00:01:06,960 --> 00:01:08,760
+division section or paragraph we can use
+
+
+39
+00:01:08,760 --> 00:01:10,560
+columns 8 through 11 and notice how
+
+
+40
+00:01:10,560 --> 00:01:12,180
+every line ends with a period that's
+
+
+41
+00:01:12,180 --> 00:01:13,830
+what's known as readable code now
+
+
+42
+00:01:13,830 --> 00:01:15,750
+columns 12 through 72 are where you
+
+
+43
+00:01:15,750 --> 00:01:17,430
+write your actual statements the reason
+
+
+44
+00:01:17,430 --> 00:01:19,020
+you don't go beyond 72 columns is
+
+
+45
+00:01:19,020 --> 00:01:20,670
+because your code needs to fit onto a
+
+
+46
+00:01:20,670 --> 00:01:22,470
+physical punch card and it ensures your
+
+
+47
+00:01:22,470 --> 00:01:24,479
+program is responsive on mobile devices
+
+
+48
+00:01:24,479 --> 00:01:26,310
+we can define our variables in the data
+
+
+49
+00:01:26,310 --> 00:01:28,320
+division first we name the variable then
+
+
+50
+00:01:28,320 --> 00:01:29,939
+we define its data type with the picture
+
+
+51
+00:01:29,939 --> 00:01:31,979
+keyword then assign a value to it we can
+
+
+52
+00:01:31,979 --> 00:01:33,060
+then work with this data in the
+
+
+53
+00:01:33,060 --> 00:01:34,470
+procedure division we display the
+
+
+54
+00:01:34,470 --> 00:01:36,150
+variable then tell our program to stop
+
+
+55
+00:01:36,150 --> 00:01:37,680
+from there we can pile our program to a
+
+
+56
+00:01:37,680 --> 00:01:39,600
+binary run it and everything should work
+
+
+57
+00:01:39,600 --> 00:01:41,700
+perfectly and now you're qualified for a
+
+
+58
+00:01:41,700 --> 00:01:43,200
+six-figure salary maintaining the
+
+
+59
+00:01:43,200 --> 00:01:44,939
+world's most critical legacy systems
+
+
+60
+00:01:44,939 --> 00:01:47,430
+this has been COBOL in 100 seconds hit
+
+
+61
+00:01:47,430 --> 00:01:48,570
+the like button if you want to see more
+
+
+62
+00:01:48,570 --> 00:01:50,040
+short videos like this thanks for
+
+
+63
+00:01:50,040 --> 00:01:51,840
+watching and I will see you in the next
+
+
+64
+00:01:51,840 --> 00:01:54,509
+one oh hey there thanks for sticking
+
+
+65
+00:01:54,509 --> 00:01:55,740
+around this is the part of the video
+
+
+66
+00:01:55,740 --> 00:01:57,509
+where we go beyond 100 seconds to
+
+
+67
+00:01:57,509 --> 00:01:58,829
+learned some more advanced features of
+
+
+68
+00:01:58,829 --> 00:02:01,189
+COBOL
+
+

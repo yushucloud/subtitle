@@ -1,0 +1,178 @@
+1
+00:00:00,240 --> 00:00:05,520
+go a statically typed compiled language often described as c for the 21st
+go 一种静态类型的编译语言，通常被描述为 21
+
+2
+00:00:05,520 --> 00:00:09,040
+century it's a popular choice for high-performance server-side
+世纪的 c，它是高性能服务器端
+
+3
+00:00:09,040 --> 00:00:13,599
+applications and is the language that built tools like docker cockroachdb and
+应用程序的流行选择，并且是构建 docker cockroachdb 和
+
+4
+00:00:13,599 --> 00:00:18,400
+d-graph it was created at google in 2007 by legends who really know their stuff
+d-graph 等工具的语言，它是 2007 年在谷歌由传奇人物创建的 真正了解他们的东西，
+
+5
+00:00:18,400 --> 00:00:23,439
+like ken thompson the inventor of the b and c programming languages version 1.0
+比如 ken thompson，b和 c 编程语言的发明者 1.0 版
+
+6
+00:00:23,439 --> 00:00:28,240
+was released as open source software in 2012. it was designed for simplicity and
+于 2012 年作为开源软件发布。它的设计是为了简单和
+
+7
+00:00:28,240 --> 00:00:32,320
+efficiency and that's why we call it go and not go lang the source code is
+高效，这就是为什么我们称它为 go而不是 go lang 源代码被
+
+8
+00:00:32,320 --> 00:00:35,280
+compiled down to machine code which means it generally outperforms
+编译 直到机器代码，这意味着它通常优于
+
+9
+00:00:35,280 --> 00:00:39,200
+interpreted languages but it's famous for its extremely fast compile times
+解释型语言，但它以依赖分析的创新实现极快的编译时间而闻名
+
+10
+00:00:39,200 --> 00:00:43,040
+made possible by innovations to dependency analysis and even though it's
+，即使它是
+
+11
+00:00:43,040 --> 00:00:47,360
+a statically typed language it performs type inference to deliver a syntax that
+一种静态类型语言，它也会执行类型推断以提供
+
+12
+00:00:47,360 --> 00:00:51,760
+is very concise and practical it also has a package and module system making
+非常简洁实用的语法还有一个包和模块系统，
+
+13
+00:00:51,760 --> 00:00:56,399
+it easy to import and export code between projects to get started install
+可以轻松地在项目之间导入和导出代码以开始安装 l
+
+14
+00:00:56,399 --> 00:01:01,039
+go and then open an empty directory on your system create a file ending in go
+go 然后在你的系统上打开一个空目录创建一个以 go 结尾的文件
+
+15
+00:01:01,039 --> 00:01:05,760
+then add package main at the top to create a standalone executable then
+然后在顶部添加 package main 以创建一个独立的可执行文件然后
+
+16
+00:01:05,760 --> 00:01:10,080
+declare a main function which is where your program will start executing go has
+声明一个 main 函数，这是你的程序将开始执行的地方 go 有
+
+17
+00:01:10,080 --> 00:01:14,479
+a standard library of core packages to handle common requirements like math
+一个标准的核心包库 要通过导入 fmt 来处理数学网络或格式化 io 等常见需求，
+
+18
+00:01:14,479 --> 00:01:19,920
+networking or formatted io by importing fmt we can print a line to the standard
+我们可以在标准输出中打印一行，
+
+19
+00:01:19,920 --> 00:01:23,920
+output then run the go build command and it quickly compiles the source code and
+然后运行 go build 命令，它会快速将源代码和依赖
+
+20
+00:01:23,920 --> 00:01:28,000
+dependencies into an executable binary when it comes to dependencies we can
+项编译成可执行的二进制文件，当涉及到依赖项时，我们还可
+
+21
+00:01:28,000 --> 00:01:32,159
+also link to remote packages on github run go mod init from the command line
+以链接 到 github 上的远程包从命令行运行 go mod init
+
+22
+00:01:32,159 --> 00:01:35,680
+and that creates a go module file that enables dependency tracking
+并创建一个启用依赖跟踪的 go 模块文件，
+
+23
+00:01:35,680 --> 00:01:40,320
+syntactically go is like a concise version of c or c plus plus declare a
+语法上 go 就像一个简洁版本的 c 或 c plus 声明一个
+
+24
+00:01:40,320 --> 00:01:44,399
+variable with the var keyword followed by its name and type and initialize it
+变量，其中 var 关键字后跟其名称和类型 并
+
+25
+00:01:44,399 --> 00:01:48,720
+with a value or you might use the short assignment syntax to replace var and let
+用一个值初始化它，或者您可以使用短赋值语法替换 var 并
+
+26
+00:01:48,720 --> 00:01:52,640
+go automatically infer the type and you can define multiple variables from a
+自动推断类型，您可以定义 mu  ltiple variables from a
+
+27
+00:01:52,640 --> 00:01:55,360
+single line go has all the other features you would expect in a
+single line go具有您在编程语言中所期望的所有其他功能，
+
+28
+00:01:55,360 --> 00:01:59,439
+programming language like arrays maps loops and control flow but also allows
+例如数组映射循环和控制流，但还允许
+
+29
+00:01:59,439 --> 00:02:03,280
+you to store the memory address of a value using pointers while disallowing
+您使用指针存储值的内存地址，同时不允许
+
+30
+00:02:03,280 --> 00:02:07,600
+pointer arithmetic which often leads to dangerous and unpredictable behavior in
+指针运算，这通常会导致危险和 不可预知的行为
+
+31
+00:02:07,600 --> 00:02:11,520
+addition it supports concurrency with go routines which are functions that can
+此外它还支持与 go例程的并发性，这些函数可以
+
+32
+00:02:11,520 --> 00:02:16,319
+run at the same time as other functions by utilizing multiple threads on a cpu
+通过利用 cpu 上的多个线程与其他函数同时运行
+
+33
+00:02:16,319 --> 00:02:19,920
+this has been go in 100 seconds hit the like button if you want to see more
+如果您想查看更多短视频，请在 100 秒内完成点击喜欢按钮
+
+34
+00:02:19,920 --> 00:02:23,440
+short videos like this and check out the full article to write your first 100
+这个并查看完整的文章来写你的前 100
+
+35
+00:02:23,440 --> 00:02:27,520
+lines of go on fireship io thanks for watching and i will see you in the next
+行 on fireship io 感谢收看，我会在下一篇见到你
+
+36
+00:02:27,520 --> 00:02:30,520
+one

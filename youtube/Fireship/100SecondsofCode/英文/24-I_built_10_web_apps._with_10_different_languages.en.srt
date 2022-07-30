@@ -1,0 +1,2345 @@
+1
+00:00:00,160 --> 00:00:02,720
+this is a web app this is a web app this
+
+
+2
+00:00:02,720 --> 00:00:04,880
+thing here also a web app dude why am i
+
+
+3
+00:00:04,880 --> 00:00:06,640
+doing this again i built the same app 10
+
+
+4
+00:00:06,640 --> 00:00:08,480
+times with 10 different frameworks using
+
+
+5
+00:00:08,480 --> 00:00:10,000
+10 different programming languages it
+
+
+6
+00:00:10,000 --> 00:00:11,759
+was a horrible experience but i learned
+
+
+7
+00:00:11,759 --> 00:00:13,360
+a lot and i figured out which full stack
+
+
+8
+00:00:13,360 --> 00:00:15,040
+framework is the greatest of all time
+
+
+9
+00:00:15,040 --> 00:00:16,400
+which will be revealed in dramatic
+
+
+10
+00:00:16,400 --> 00:00:18,160
+fashion at the end of this video to
+
+
+11
+00:00:18,160 --> 00:00:19,920
+maximize the watch time on this journey
+
+
+12
+00:00:19,920 --> 00:00:21,439
+you will meet 10 different server side
+
+
+13
+00:00:21,439 --> 00:00:23,519
+frameworks like rails django laravel
+
+
+14
+00:00:23,519 --> 00:00:26,320
+spring.net next js phoenix rocket gin
+
+
+15
+00:00:26,320 --> 00:00:28,720
+vapor and ktor i realize that's 11 but
+
+
+16
+00:00:28,720 --> 00:00:30,000
+you don't need to be good at math to be
+
+
+17
+00:00:30,000 --> 00:00:31,840
+a programmer this video was insanely
+
+
+18
+00:00:31,840 --> 00:00:33,040
+difficult because each one of these
+
+
+19
+00:00:33,040 --> 00:00:34,800
+frameworks uses a different programming
+
+
+20
+00:00:34,800 --> 00:00:36,399
+language for each one of them we will
+
+
+21
+00:00:36,399 --> 00:00:38,160
+look at the overall developer experience
+
+
+22
+00:00:38,160 --> 00:00:40,239
+including things like setup routing
+
+
+23
+00:00:40,239 --> 00:00:42,079
+database integration and the overall
+
+
+24
+00:00:42,079 --> 00:00:43,680
+architecture now before we get started
+
+
+25
+00:00:43,680 --> 00:00:45,200
+here's a warning the framework you
+
+
+26
+00:00:45,200 --> 00:00:46,800
+choose by the end of this video is going
+
+
+27
+00:00:46,800 --> 00:00:48,320
+to dictate your life for the next 10
+
+
+28
+00:00:48,320 --> 00:00:50,079
+years as you grow your startup into a
+
+
+29
+00:00:50,079 --> 00:00:52,000
+deca unicorn if your startup fails it's
+
+
+30
+00:00:52,000 --> 00:00:53,920
+100 because you didn't choose the right
+
+
+31
+00:00:53,920 --> 00:00:56,000
+framework reminds me of when my dad made
+
+
+32
+00:00:56,000 --> 00:00:58,480
+me choose which of my pet calves to
+
+
+33
+00:00:58,480 --> 00:01:00,399
+slaughter with my own hands for my sixth
+
+
+34
+00:01:00,399 --> 00:01:02,399
+birthday now before we look at the code
+
+
+35
+00:01:02,399 --> 00:01:04,239
+let's first answer the question of what
+
+
+36
+00:01:04,239 --> 00:01:06,400
+does a web framework actually do there
+
+
+37
+00:01:06,400 --> 00:01:07,840
+are three main things you should know
+
+
+38
+00:01:07,840 --> 00:01:09,760
+first they provide an abstraction over
+
+
+39
+00:01:09,760 --> 00:01:11,680
+your relational database they typically
+
+
+40
+00:01:11,680 --> 00:01:14,000
+have a built-in object relational mapper
+
+
+41
+00:01:14,000 --> 00:01:15,280
+that can migrate code from your
+
+
+42
+00:01:15,280 --> 00:01:17,520
+preferred programming language into sql
+
+
+43
+00:01:17,520 --> 00:01:19,119
+code that can be used by the database
+
+
+44
+00:01:19,119 --> 00:01:21,280
+second they provide routing that can map
+
+
+45
+00:01:21,280 --> 00:01:23,520
+a url in the browser to code that you
+
+
+46
+00:01:23,520 --> 00:01:25,680
+want to run on the server and third they
+
+
+47
+00:01:25,680 --> 00:01:28,000
+provide a way to dynamically insert data
+
+
+48
+00:01:28,000 --> 00:01:30,479
+from your database directly into html
+
+
+49
+00:01:30,479 --> 00:01:32,640
+for the ui together these three elements
+
+
+50
+00:01:32,640 --> 00:01:34,240
+make up the model view controller
+
+
+51
+00:01:34,240 --> 00:01:36,640
+architecture or mvc which is by far the
+
+
+52
+00:01:36,640 --> 00:01:38,240
+most common approach when building a
+
+
+53
+00:01:38,240 --> 00:01:39,840
+full stack web app the first framework
+
+
+54
+00:01:39,840 --> 00:01:41,840
+we'll look at is ruby on rails made
+
+
+55
+00:01:41,840 --> 00:01:43,360
+famous for building some of the biggest
+
+
+56
+00:01:43,360 --> 00:01:45,200
+companies in the world like shopify
+
+
+57
+00:01:45,200 --> 00:01:47,040
+airbnb and github rails was
+
+
+58
+00:01:47,040 --> 00:01:48,560
+revolutionary when it came out because
+
+
+59
+00:01:48,560 --> 00:01:49,920
+it dramatically simplified web
+
+
+60
+00:01:49,920 --> 00:01:51,759
+development compared to other approaches
+
+
+61
+00:01:51,759 --> 00:01:53,439
+of the day it's still very popular in
+
+
+62
+00:01:53,439 --> 00:01:55,600
+2022 and is kind of a rebel in the web
+
+
+63
+00:01:55,600 --> 00:01:57,200
+development space it has adjacent
+
+
+64
+00:01:57,200 --> 00:01:59,200
+libraries like hotwire stimulus and
+
+
+65
+00:01:59,200 --> 00:02:01,600
+turbo that take an html centric approach
+
+
+66
+00:02:01,600 --> 00:02:03,360
+to building web apps which goes against
+
+
+67
+00:02:03,360 --> 00:02:04,640
+the approach you might see in front-end
+
+
+68
+00:02:04,640 --> 00:02:06,640
+frameworks like react angular and vue to
+
+
+69
+00:02:06,640 --> 00:02:08,160
+get started with rails you'll first need
+
+
+70
+00:02:08,160 --> 00:02:09,759
+to have ruby installed then install the
+
+
+71
+00:02:09,759 --> 00:02:11,920
+rails gem and run rails new i'm
+
+
+72
+00:02:11,920 --> 00:02:13,680
+developing this app on a fresh install
+
+
+73
+00:02:13,680 --> 00:02:15,680
+of wm linux and i did run into some
+
+
+74
+00:02:15,680 --> 00:02:17,360
+issues with the initial setup these were
+
+
+75
+00:02:17,360 --> 00:02:18,720
+errors that could easily be solved with
+
+
+76
+00:02:18,720 --> 00:02:20,560
+a google search but the initial setup
+
+
+77
+00:02:20,560 --> 00:02:22,239
+was a little more error prone than other
+
+
+78
+00:02:22,239 --> 00:02:23,920
+frameworks once you get the project set
+
+
+79
+00:02:23,920 --> 00:02:26,000
+up though the rail cli is extremely
+
+
+80
+00:02:26,000 --> 00:02:27,760
+powerful not only does it do things like
+
+
+81
+00:02:27,760 --> 00:02:29,599
+serve the application with rail server
+
+
+82
+00:02:29,599 --> 00:02:31,360
+but it can also generate a ton of code
+
+
+83
+00:02:31,360 --> 00:02:33,280
+for you automatically with commands like
+
+
+84
+00:02:33,280 --> 00:02:34,959
+scaffold now if we look in the file
+
+
+85
+00:02:34,959 --> 00:02:36,239
+explorer you'll notice a bunch of
+
+
+86
+00:02:36,239 --> 00:02:37,519
+different folders here and that's
+
+
+87
+00:02:37,519 --> 00:02:39,360
+because rails is a battery's included
+
+
+88
+00:02:39,360 --> 00:02:40,879
+framework it handles your relational
+
+
+89
+00:02:40,879 --> 00:02:43,360
+database testing logging and a bunch of
+
+
+90
+00:02:43,360 --> 00:02:44,560
+other stuff it might look pretty
+
+
+91
+00:02:44,560 --> 00:02:46,000
+overwhelming at first your main
+
+
+92
+00:02:46,000 --> 00:02:47,760
+application code is contained in the app
+
+
+93
+00:02:47,760 --> 00:02:49,599
+directory where you'll find folders for
+
+
+94
+00:02:49,599 --> 00:02:51,280
+models views and controllers the first
+
+
+95
+00:02:51,280 --> 00:02:52,959
+thing we'll look at is routing and the
+
+
+96
+00:02:52,959 --> 00:02:55,519
+routes.rb file from this file we can map
+
+
+97
+00:02:55,519 --> 00:02:58,000
+urls to actions in a controller
+
+
+98
+00:02:58,000 --> 00:02:59,599
+resources create all the routes we would
+
+
+99
+00:02:59,599 --> 00:03:01,040
+need for a basic red feature
+
+
+100
+00:03:01,040 --> 00:03:03,200
+automatically it's kind of magical but
+
+
+101
+00:03:03,200 --> 00:03:05,120
+what it's actually doing is setting up a
+
+
+102
+00:03:05,120 --> 00:03:07,360
+mapping between urls in the browser and
+
+
+103
+00:03:07,360 --> 00:03:09,040
+controller actions now when the user
+
+
+104
+00:03:09,040 --> 00:03:10,879
+visits a url it will trigger one of
+
+
+105
+00:03:10,879 --> 00:03:13,120
+these actions on the server that action
+
+
+106
+00:03:13,120 --> 00:03:14,959
+might go and retrieve some data from
+
+
+107
+00:03:14,959 --> 00:03:17,200
+your database the logic for that data is
+
+
+108
+00:03:17,200 --> 00:03:18,959
+contained in the model but before we can
+
+
+109
+00:03:18,959 --> 00:03:20,879
+use the data in the database we need to
+
+
+110
+00:03:20,879 --> 00:03:22,879
+run a migration which will take the code
+
+
+111
+00:03:22,879 --> 00:03:24,640
+in the model and sync it up with the
+
+
+112
+00:03:24,640 --> 00:03:26,319
+actual database and all the data is
+
+
+113
+00:03:26,319 --> 00:03:28,319
+managed with an object relational mapper
+
+
+114
+00:03:28,319 --> 00:03:30,319
+called activerecord and then finally you
+
+
+115
+00:03:30,319 --> 00:03:31,959
+have a view which is an
+
+
+116
+00:03:31,959 --> 00:03:34,959
+html.erp file erb stands for embedded
+
+
+117
+00:03:34,959 --> 00:03:36,720
+ruby and it allows you to render your
+
+
+118
+00:03:36,720 --> 00:03:39,200
+data dynamically inside an html file
+
+
+119
+00:03:39,200 --> 00:03:40,640
+overall this provides a very nice
+
+
+120
+00:03:40,640 --> 00:03:42,560
+separation of concerns and rails is very
+
+
+121
+00:03:42,560 --> 00:03:44,080
+opinionated which means you can achieve
+
+
+122
+00:03:44,080 --> 00:03:45,920
+a lot of functionality with very little
+
+
+123
+00:03:45,920 --> 00:03:47,680
+code the scaffold not only retrieves
+
+
+124
+00:03:47,680 --> 00:03:49,200
+items from the database but it also
+
+
+125
+00:03:49,200 --> 00:03:51,360
+provides ui to create and update that
+
+
+126
+00:03:51,360 --> 00:03:53,760
+data as well but too much magic can also
+
+
+127
+00:03:53,760 --> 00:03:55,519
+be a bad thing depending on who you ask
+
+
+128
+00:03:55,519 --> 00:03:57,120
+and ruby is not the most popular
+
+
+129
+00:03:57,120 --> 00:03:59,360
+language in the world but python is what
+
+
+130
+00:03:59,360 --> 00:04:00,640
+if there is a way we could build web
+
+
+131
+00:04:00,640 --> 00:04:02,400
+apps like this with python and that's
+
+
+132
+00:04:02,400 --> 00:04:04,159
+where django comes in it's also
+
+
+133
+00:04:04,159 --> 00:04:06,000
+extremely popular and has been used to
+
+
+134
+00:04:06,000 --> 00:04:08,239
+build massive sites like spotify and
+
+
+135
+00:04:08,239 --> 00:04:10,159
+bitbucket when you generate a new django
+
+
+136
+00:04:10,159 --> 00:04:12,159
+app you'll notice the file structure is
+
+
+137
+00:04:12,159 --> 00:04:14,159
+far less overwhelming than rails but at
+
+
+138
+00:04:14,159 --> 00:04:15,680
+the same time it's still very much a
+
+
+139
+00:04:15,680 --> 00:04:17,680
+battery's included framework in addition
+
+
+140
+00:04:17,680 --> 00:04:19,120
+your code tends to be a lot more
+
+
+141
+00:04:19,120 --> 00:04:21,280
+explicit for example we have this manage
+
+
+142
+00:04:21,280 --> 00:04:23,440
+py file that contains the code for the
+
+
+143
+00:04:23,440 --> 00:04:25,040
+actual command line interface to
+
+
+144
+00:04:25,040 --> 00:04:26,720
+generate things in the project we could
+
+
+145
+00:04:26,720 --> 00:04:28,479
+use it to serve the app locally or
+
+
+146
+00:04:28,479 --> 00:04:30,639
+generate an app to represent a feature
+
+
+147
+00:04:30,639 --> 00:04:32,960
+of the website it also follows the mvc
+
+
+148
+00:04:32,960 --> 00:04:34,720
+architecture with routes being defined
+
+
+149
+00:04:34,720 --> 00:04:37,360
+in the urls.py file and controllers are
+
+
+150
+00:04:37,360 --> 00:04:39,520
+represented as python functions in the
+
+
+151
+00:04:39,520 --> 00:04:41,759
+views.py file a route points to one of
+
+
+152
+00:04:41,759 --> 00:04:43,520
+these functions which itself might want
+
+
+153
+00:04:43,520 --> 00:04:45,840
+to access data from one of our models a
+
+
+154
+00:04:45,840 --> 00:04:48,000
+model is a python class that represents
+
+
+155
+00:04:48,000 --> 00:04:50,639
+the structure of data in an sql database
+
+
+156
+00:04:50,639 --> 00:04:53,120
+aka the object relational mapper and
+
+
+157
+00:04:53,120 --> 00:04:55,199
+finally we have our html templates that
+
+
+158
+00:04:55,199 --> 00:04:57,280
+allow you to embed python directly into
+
+
+159
+00:04:57,280 --> 00:04:59,120
+the code that's pretty cool but one
+
+
+160
+00:04:59,120 --> 00:05:01,360
+extra superpower of django is that it
+
+
+161
+00:05:01,360 --> 00:05:03,280
+has an admin feature built into it
+
+
+162
+00:05:03,280 --> 00:05:05,120
+directly as you define models in your
+
+
+163
+00:05:05,120 --> 00:05:07,039
+application you can register them with
+
+
+164
+00:05:07,039 --> 00:05:08,800
+the admin app to easily manage all of
+
+
+165
+00:05:08,800 --> 00:05:10,720
+your data in the browser this is really
+
+
+166
+00:05:10,720 --> 00:05:12,160
+useful and not something that you'd want
+
+
+167
+00:05:12,160 --> 00:05:13,840
+to roll out on your own python's great
+
+
+168
+00:05:13,840 --> 00:05:15,360
+null but the original server-side
+
+
+169
+00:05:15,360 --> 00:05:17,680
+language of the web was php there have
+
+
+170
+00:05:17,680 --> 00:05:19,440
+been countless php frameworks over the
+
+
+171
+00:05:19,440 --> 00:05:20,960
+years and high-level tools like
+
+
+172
+00:05:20,960 --> 00:05:23,199
+wordpress but the most popular one today
+
+
+173
+00:05:23,199 --> 00:05:25,759
+is laravel the php framework for web
+
+
+174
+00:05:25,759 --> 00:05:27,520
+artisans to use it you'll first want to
+
+
+175
+00:05:27,520 --> 00:05:29,840
+install php and a tool called composer
+
+
+176
+00:05:29,840 --> 00:05:31,680
+when i generated my initial app it took
+
+
+177
+00:05:31,680 --> 00:05:33,520
+a long time and downloaded a lot of
+
+
+178
+00:05:33,520 --> 00:05:35,520
+packages and as you can see the initial
+
+
+179
+00:05:35,520 --> 00:05:37,520
+project has a lot of batteries included
+
+
+180
+00:05:37,520 --> 00:05:39,360
+even more so than rails if we look at
+
+
+181
+00:05:39,360 --> 00:05:41,039
+routes you can see it not only handles
+
+
+182
+00:05:41,039 --> 00:05:43,520
+web routes but also api routes and
+
+
+183
+00:05:43,520 --> 00:05:45,360
+channels for real-time communication
+
+
+184
+00:05:45,360 --> 00:05:47,199
+with websockets now if we go into the
+
+
+185
+00:05:47,199 --> 00:05:48,800
+app code you'll notice it's already been
+
+
+186
+00:05:48,800 --> 00:05:50,400
+configured with things like user
+
+
+187
+00:05:50,400 --> 00:05:52,880
+authentication via providers a provider
+
+
+188
+00:05:52,880 --> 00:05:54,479
+is like a shared service that you can
+
+
+189
+00:05:54,479 --> 00:05:56,240
+use anywhere in the application in the
+
+
+190
+00:05:56,240 --> 00:05:58,080
+http directory we will find our
+
+
+191
+00:05:58,080 --> 00:06:00,160
+controllers and just like rails we have
+
+
+192
+00:06:00,160 --> 00:06:01,680
+a class that contains a bunch of
+
+
+193
+00:06:01,680 --> 00:06:03,680
+different methods that can access data
+
+
+194
+00:06:03,680 --> 00:06:05,680
+and render a specific template now our
+
+
+195
+00:06:05,680 --> 00:06:07,440
+database models use a tool called
+
+
+196
+00:06:07,440 --> 00:06:09,680
+eloquent orm which is based on the same
+
+
+197
+00:06:09,680 --> 00:06:11,600
+active record pattern as rails now when
+
+
+198
+00:06:11,600 --> 00:06:13,759
+it comes to views php is a language
+
+
+199
+00:06:13,759 --> 00:06:15,759
+that's designed to work with html out of
+
+
+200
+00:06:15,759 --> 00:06:17,840
+the box larvale makes it even easier by
+
+
+201
+00:06:17,840 --> 00:06:19,840
+building on top of php with blade
+
+
+202
+00:06:19,840 --> 00:06:21,520
+templates another cool point about the
+
+
+203
+00:06:21,520 --> 00:06:23,199
+ecosystem is that they put a lot of
+
+
+204
+00:06:23,199 --> 00:06:25,039
+thought into how to integrate front end
+
+
+205
+00:06:25,039 --> 00:06:26,960
+frameworks like react and vue it has an
+
+
+206
+00:06:26,960 --> 00:06:28,720
+adjacent tool called inertia that can
+
+
+207
+00:06:28,720 --> 00:06:30,479
+bridge the gap between front end and
+
+
+208
+00:06:30,479 --> 00:06:32,160
+back end frameworks the next framework
+
+
+209
+00:06:32,160 --> 00:06:34,479
+we'll look at is next.js which allows us
+
+
+210
+00:06:34,479 --> 00:06:36,240
+to build a full stack application
+
+
+211
+00:06:36,240 --> 00:06:38,000
+entirely with javascript now in the
+
+
+212
+00:06:38,000 --> 00:06:39,520
+javascript world there's a million
+
+
+213
+00:06:39,520 --> 00:06:40,880
+different options we could have chosen
+
+
+214
+00:06:40,880 --> 00:06:43,360
+here like nuxjs angular universal
+
+
+215
+00:06:43,360 --> 00:06:46,319
+sveltkit sjs adonis and many others
+
+
+216
+00:06:46,319 --> 00:06:48,160
+maybe i'll make a top 10 video just for
+
+
+217
+00:06:48,160 --> 00:06:50,000
+those to get started with next we run
+
+
+218
+00:06:50,000 --> 00:06:51,840
+npx create next app and that will
+
+
+219
+00:06:51,840 --> 00:06:53,520
+generate a starter project now the one
+
+
+220
+00:06:53,520 --> 00:06:54,880
+thing you'll notice about next right off
+
+
+221
+00:06:54,880 --> 00:06:56,479
+the bat is that it doesn't provide any
+
+
+222
+00:06:56,479 --> 00:06:58,319
+integration for your database there are
+
+
+223
+00:06:58,319 --> 00:06:59,680
+a million different solutions to choose
+
+
+224
+00:06:59,680 --> 00:07:01,360
+from but one of my personal favorites is
+
+
+225
+00:07:01,360 --> 00:07:03,120
+prisma so i'm going to add prisma to
+
+
+226
+00:07:03,120 --> 00:07:04,880
+this project the fact that next.js
+
+
+227
+00:07:04,880 --> 00:07:06,560
+doesn't have a database out of the box
+
+
+228
+00:07:06,560 --> 00:07:08,000
+is a good thing in my opinion the
+
+
+229
+00:07:08,000 --> 00:07:09,840
+javascript ecosystem is just way too
+
+
+230
+00:07:09,840 --> 00:07:11,599
+crazy it's nice to start with a very
+
+
+231
+00:07:11,599 --> 00:07:12,960
+good minimal framework and then add
+
+
+232
+00:07:12,960 --> 00:07:14,639
+whatever database integration you want
+
+
+233
+00:07:14,639 --> 00:07:16,240
+on top of it now that we have a database
+
+
+234
+00:07:16,240 --> 00:07:17,680
+integrated let's take a look at the
+
+
+235
+00:07:17,680 --> 00:07:19,199
+pages directory one thing that's
+
+
+236
+00:07:19,199 --> 00:07:21,120
+different about next is that routing is
+
+
+237
+00:07:21,120 --> 00:07:23,039
+handled with the file system each file
+
+
+238
+00:07:23,039 --> 00:07:24,960
+defined in the pages directory defines a
+
+
+239
+00:07:24,960 --> 00:07:27,120
+different url in the browser dynamic
+
+
+240
+00:07:27,120 --> 00:07:28,479
+routes can be created by wrapping the
+
+
+241
+00:07:28,479 --> 00:07:30,400
+file name in brackets now each one of
+
+
+242
+00:07:30,400 --> 00:07:32,720
+these files exports a react component to
+
+
+243
+00:07:32,720 --> 00:07:35,039
+define the ui or view this is actually
+
+
+244
+00:07:35,039 --> 00:07:36,639
+really convenient because many other
+
+
+245
+00:07:36,639 --> 00:07:38,319
+frameworks will ultimately want to have
+
+
+246
+00:07:38,319 --> 00:07:39,840
+some kind of front-end framework having
+
+
+247
+00:07:39,840 --> 00:07:41,599
+react fundamentally integrated into the
+
+
+248
+00:07:41,599 --> 00:07:42,720
+framework can streamline your
+
+
+249
+00:07:42,720 --> 00:07:44,560
+productivity big time now things get
+
+
+250
+00:07:44,560 --> 00:07:46,080
+more complex when you think about data
+
+
+251
+00:07:46,080 --> 00:07:48,000
+fetching normally in a react app you're
+
+
+252
+00:07:48,000 --> 00:07:49,840
+thinking about client-side code but in
+
+
+253
+00:07:49,840 --> 00:07:51,680
+next.js you can also run server-side
+
+
+254
+00:07:51,680 --> 00:07:53,919
+code with functions like get server-side
+
+
+255
+00:07:53,919 --> 00:07:55,520
+props this function will run on the
+
+
+256
+00:07:55,520 --> 00:07:57,680
+server with node.js and as you can see
+
+
+257
+00:07:57,680 --> 00:08:00,000
+inside of it we're using prisma to fetch
+
+
+258
+00:08:00,000 --> 00:08:02,160
+some items from the database these items
+
+
+259
+00:08:02,160 --> 00:08:04,160
+can be delivered as props to the react
+
+
+260
+00:08:04,160 --> 00:08:05,599
+component where they're rendered in the
+
+
+261
+00:08:05,599 --> 00:08:07,840
+ui both your server side and client-side
+
+
+262
+00:08:07,840 --> 00:08:09,759
+code is tightly coupled together which
+
+
+263
+00:08:09,759 --> 00:08:11,360
+may feel like a bad separation of
+
+
+264
+00:08:11,360 --> 00:08:13,039
+concerns but generally speaking it
+
+
+265
+00:08:13,039 --> 00:08:15,039
+actually works very well overall next.js
+
+
+266
+00:08:15,039 --> 00:08:16,560
+feels very minimal compared to other
+
+
+267
+00:08:16,560 --> 00:08:18,240
+frameworks in this list but it does a
+
+
+268
+00:08:18,240 --> 00:08:19,680
+ton of stuff behind the scenes to
+
+
+269
+00:08:19,680 --> 00:08:21,199
+simplify the annoying parts of web
+
+
+270
+00:08:21,199 --> 00:08:22,960
+development now speaking of simple we're
+
+
+271
+00:08:22,960 --> 00:08:24,560
+going to do the polar opposite and see
+
+
+272
+00:08:24,560 --> 00:08:26,479
+what java has to offer even though java
+
+
+273
+00:08:26,479 --> 00:08:28,000
+is a boilerplate driven language for
+
+
+274
+00:08:28,000 --> 00:08:29,759
+writing instant legacy code the spring
+
+
+275
+00:08:29,759 --> 00:08:30,960
+framework actually makes it very
+
+
+276
+00:08:30,960 --> 00:08:32,560
+enjoyable to work with the first thing
+
+
+277
+00:08:32,560 --> 00:08:34,080
+you'll notice when building with it is
+
+
+278
+00:08:34,080 --> 00:08:35,599
+that it's kind of like a create your own
+
+
+279
+00:08:35,599 --> 00:08:37,680
+adventure story it has a generator that
+
+
+280
+00:08:37,680 --> 00:08:39,440
+allows you to start with a framework and
+
+
+281
+00:08:39,440 --> 00:08:41,279
+you can even use kotlin or groovy if
+
+
+282
+00:08:41,279 --> 00:08:42,560
+you'd like then you choose all the
+
+
+283
+00:08:42,560 --> 00:08:44,159
+different dependencies that you want to
+
+
+284
+00:08:44,159 --> 00:08:46,000
+add to this project now even though java
+
+
+285
+00:08:46,000 --> 00:08:47,839
+does have a lot of boilerplate the code
+
+
+286
+00:08:47,839 --> 00:08:49,440
+pretty much writes itself and in my
+
+
+287
+00:08:49,440 --> 00:08:51,360
+opinion it feels a lot more robust
+
+
+288
+00:08:51,360 --> 00:08:52,959
+compared to the dynamic languages that
+
+
+289
+00:08:52,959 --> 00:08:54,399
+we've looked at so far you'll find the
+
+
+290
+00:08:54,399 --> 00:08:55,839
+source code way down in this deeply
+
+
+291
+00:08:55,839 --> 00:08:57,760
+nested folder and it also follows the
+
+
+292
+00:08:57,760 --> 00:09:00,080
+mvc pattern the controller is a class
+
+
+293
+00:09:00,080 --> 00:09:02,480
+and a route is defined using a decorator
+
+
+294
+00:09:02,480 --> 00:09:04,480
+on each one of its methods spring relies
+
+
+295
+00:09:04,480 --> 00:09:06,160
+on a lot of meta programming to keep
+
+
+296
+00:09:06,160 --> 00:09:08,000
+your code nice and simple it feels very
+
+
+297
+00:09:08,000 --> 00:09:09,600
+much like angular and the javascript
+
+
+298
+00:09:09,600 --> 00:09:11,440
+world the database models are based on
+
+
+299
+00:09:11,440 --> 00:09:13,680
+code with the java persistence api then
+
+
+300
+00:09:13,680 --> 00:09:15,600
+we can use that data in templates using
+
+
+301
+00:09:15,600 --> 00:09:17,279
+time leaf where you add these attributes
+
+
+302
+00:09:17,279 --> 00:09:19,440
+to your html to define where your data
+
+
+303
+00:09:19,440 --> 00:09:21,120
+should go to be honest though i didn't
+
+
+304
+00:09:21,120 --> 00:09:22,959
+have a very good time using time leaf
+
+
+305
+00:09:22,959 --> 00:09:24,480
+and that brings me to java's arch
+
+
+306
+00:09:24,480 --> 00:09:27,360
+nemesis c-sharp and the.net framework or
+
+
+307
+00:09:27,360 --> 00:09:29,680
+asp.net it's an open source project
+
+
+308
+00:09:29,680 --> 00:09:31,360
+maintained by microsoft and obviously
+
+
+309
+00:09:31,360 --> 00:09:33,519
+feels very microsofty but is extremely
+
+
+310
+00:09:33,519 --> 00:09:35,519
+popular and reliable it's evolved very
+
+
+311
+00:09:35,519 --> 00:09:37,279
+nicely over the years and has modern
+
+
+312
+00:09:37,279 --> 00:09:39,120
+supporting libraries like blazer that
+
+
+313
+00:09:39,120 --> 00:09:40,640
+allow you to build client-side apps
+
+
+314
+00:09:40,640 --> 00:09:42,959
+using webassembly and c-sharp to use it
+
+
+315
+00:09:42,959 --> 00:09:45,519
+install the.net sdk then generate a new
+
+
+316
+00:09:45,519 --> 00:09:47,279
+mvc application i really like the
+
+
+317
+00:09:47,279 --> 00:09:48,959
+initial project structure everything is
+
+
+318
+00:09:48,959 --> 00:09:50,320
+clearly named and it's not too
+
+
+319
+00:09:50,320 --> 00:09:51,760
+overwhelming and you get all the awesome
+
+
+320
+00:09:51,760 --> 00:09:53,519
+tooling and static typing like you do in
+
+
+321
+00:09:53,519 --> 00:09:55,839
+java when it comes to routing the urls
+
+
+322
+00:09:55,839 --> 00:09:57,680
+are inferred from the class names and
+
+
+323
+00:09:57,680 --> 00:09:59,360
+your controllers here we have an animals
+
+
+324
+00:09:59,360 --> 00:10:01,120
+controller which gives us the animal's
+
+
+325
+00:10:01,120 --> 00:10:03,360
+url then we have methods in that class
+
+
+326
+00:10:03,360 --> 00:10:05,600
+that then represent the next url segment
+
+
+327
+00:10:05,600 --> 00:10:06,959
+the method can take an argument to
+
+
+328
+00:10:06,959 --> 00:10:09,040
+create a dynamic url to represent our
+
+
+329
+00:10:09,040 --> 00:10:10,959
+data we have a model that is managed by
+
+
+330
+00:10:10,959 --> 00:10:13,120
+an orm called the entity core framework
+
+
+331
+00:10:13,120 --> 00:10:14,720
+and then finally we have our views which
+
+
+332
+00:10:14,720 --> 00:10:17,360
+are written in cshtml at the top of one
+
+
+333
+00:10:17,360 --> 00:10:19,120
+of these files you'll notice a model
+
+
+334
+00:10:19,120 --> 00:10:20,880
+where we can access our data and we can
+
+
+335
+00:10:20,880 --> 00:10:22,880
+also declare additional data here in c
+
+
+336
+00:10:22,880 --> 00:10:24,800
+sharp like a title it's more verbose
+
+
+337
+00:10:24,800 --> 00:10:26,560
+than other templating languages but you
+
+
+338
+00:10:26,560 --> 00:10:28,240
+get full intellisense inside of it which
+
+
+339
+00:10:28,240 --> 00:10:30,480
+is really helpful overall net is really
+
+
+340
+00:10:30,480 --> 00:10:32,160
+impressive the only real drawback is
+
+
+341
+00:10:32,160 --> 00:10:33,519
+that you have to sell your soul to the
+
+
+342
+00:10:33,519 --> 00:10:35,200
+big giant tech corporation if you want
+
+
+343
+00:10:35,200 --> 00:10:36,560
+to take the righteous path another
+
+
+344
+00:10:36,560 --> 00:10:38,079
+awesome framework to check out is
+
+
+345
+00:10:38,079 --> 00:10:40,000
+phoenix which is based on the elixir
+
+
+346
+00:10:40,000 --> 00:10:41,440
+programming language it's a functional
+
+
+347
+00:10:41,440 --> 00:10:43,120
+language that feels much different than
+
+
+348
+00:10:43,120 --> 00:10:44,800
+most of the object-oriented languages
+
+
+349
+00:10:44,800 --> 00:10:45,839
+that we've looked at throughout the
+
+
+350
+00:10:45,839 --> 00:10:48,240
+video don't worry a 100 second video is
+
+
+351
+00:10:48,240 --> 00:10:50,160
+coming soon install it then generate a
+
+
+352
+00:10:50,160 --> 00:10:52,240
+new project like ruby on rails it has a
+
+
+353
+00:10:52,240 --> 00:10:54,399
+very powerful cli that can automatically
+
+
+354
+00:10:54,399 --> 00:10:56,480
+scaffold an entire crud application for
+
+
+355
+00:10:56,480 --> 00:10:58,160
+you routing is also very similar to
+
+
+356
+00:10:58,160 --> 00:11:00,160
+rails where we have resources that map
+
+
+357
+00:11:00,160 --> 00:11:01,920
+all the necessary cred urls to the
+
+
+358
+00:11:01,920 --> 00:11:03,519
+controller in the controller we have
+
+
+359
+00:11:03,519 --> 00:11:05,519
+functions namespaced under a module that
+
+
+360
+00:11:05,519 --> 00:11:07,519
+access data and render the appropriate
+
+
+361
+00:11:07,519 --> 00:11:09,519
+template the model uses an object
+
+
+362
+00:11:09,519 --> 00:11:11,279
+relational mapper called ecto and
+
+
+363
+00:11:11,279 --> 00:11:12,880
+templates use embedded elixir which
+
+
+364
+00:11:12,880 --> 00:11:14,640
+again feels very similar to rails
+
+
+365
+00:11:14,640 --> 00:11:16,480
+however phoenix has a huge advantage in
+
+
+366
+00:11:16,480 --> 00:11:18,720
+performance because elixir is a compiled
+
+
+367
+00:11:18,720 --> 00:11:20,880
+language as an added bonus every app has
+
+
+368
+00:11:20,880 --> 00:11:22,880
+a built-in live dashboard to closely
+
+
+369
+00:11:22,880 --> 00:11:24,560
+monitor performance and that brings us
+
+
+370
+00:11:24,560 --> 00:11:26,079
+to another high performance framework
+
+
+371
+00:11:26,079 --> 00:11:28,079
+worth checking out jin which is powered
+
+
+372
+00:11:28,079 --> 00:11:30,000
+by the go language it easily wins the
+
+
+373
+00:11:30,000 --> 00:11:31,920
+best logo award to get started we're not
+
+
+374
+00:11:31,920 --> 00:11:34,079
+going to use a fancy cli but instead
+
+
+375
+00:11:34,079 --> 00:11:36,560
+create a go project from scratch jin is
+
+
+376
+00:11:36,560 --> 00:11:38,720
+a minimal http framework and is not
+
+
+377
+00:11:38,720 --> 00:11:40,399
+concerned with the model view controller
+
+
+378
+00:11:40,399 --> 00:11:41,920
+architecture we'll have to figure that
+
+
+379
+00:11:41,920 --> 00:11:43,680
+out on our own it also doesn't contain
+
+
+380
+00:11:43,680 --> 00:11:45,760
+an orm for the database so for that
+
+
+381
+00:11:45,760 --> 00:11:47,279
+we'll bring in another package called
+
+
+382
+00:11:47,279 --> 00:11:49,120
+gorm the nice thing about this approach
+
+
+383
+00:11:49,120 --> 00:11:50,480
+is that we don't really need to follow
+
+
+384
+00:11:50,480 --> 00:11:52,720
+the nbc conventions of a framework which
+
+
+385
+00:11:52,720 --> 00:11:54,320
+is probably overkill for many
+
+
+386
+00:11:54,320 --> 00:11:56,000
+applications instead we can write some
+
+
+387
+00:11:56,000 --> 00:11:57,920
+very focused functions and do things in
+
+
+388
+00:11:57,920 --> 00:11:59,600
+a way that makes sense for our exact
+
+
+389
+00:11:59,600 --> 00:12:01,440
+business needs like in this app we just
+
+
+390
+00:12:01,440 --> 00:12:02,959
+have two routes that need to retrieve
+
+
+391
+00:12:02,959 --> 00:12:04,720
+some data from a database which itself
+
+
+392
+00:12:04,720 --> 00:12:06,720
+is modeled with a struct using the orm
+
+
+393
+00:12:06,720 --> 00:12:08,720
+then go has its own built-in templating
+
+
+394
+00:12:08,720 --> 00:12:10,320
+language so we can simply create a
+
+
+395
+00:12:10,320 --> 00:12:11,680
+couple of template files here in the
+
+
+396
+00:12:11,680 --> 00:12:13,360
+project and interpolate the values that
+
+
+397
+00:12:13,360 --> 00:12:15,120
+we retrieve from the database the end
+
+
+398
+00:12:15,120 --> 00:12:16,800
+result is a much smaller code base with
+
+
+399
+00:12:16,800 --> 00:12:18,880
+a lot more low-level control however as
+
+
+400
+00:12:18,880 --> 00:12:20,560
+this application grows bigger it's going
+
+
+401
+00:12:20,560 --> 00:12:22,160
+to get harder and harder so you really
+
+
+402
+00:12:22,160 --> 00:12:23,440
+kind of have to know what you're doing
+
+
+403
+00:12:23,440 --> 00:12:25,120
+and that brings us to our next language
+
+
+404
+00:12:25,120 --> 00:12:27,360
+rust and the web framework rocket as far
+
+
+405
+00:12:27,360 --> 00:12:29,360
+as i know the rust ecosystem doesn't
+
+
+406
+00:12:29,360 --> 00:12:31,440
+have a full-blown mvc framework like
+
+
+407
+00:12:31,440 --> 00:12:33,279
+rails and to be honest i found it very
+
+
+408
+00:12:33,279 --> 00:12:35,440
+difficult to build a basic application
+
+
+409
+00:12:35,440 --> 00:12:38,000
+my approach was to use rocket for http
+
+
+410
+00:12:38,000 --> 00:12:40,000
+and routing then combine it with diesel
+
+
+411
+00:12:40,000 --> 00:12:42,000
+which is a rust-based orm and then
+
+
+412
+00:12:42,000 --> 00:12:44,000
+finally a templating language to use the
+
+
+413
+00:12:44,000 --> 00:12:46,480
+data in html called ascama i think this
+
+
+414
+00:12:46,480 --> 00:12:48,160
+is a reasonable approach but i didn't
+
+
+415
+00:12:48,160 --> 00:12:49,680
+quite get to a full working demo with
+
+
+416
+00:12:49,680 --> 00:12:51,440
+rust it's a systems language that gives
+
+
+417
+00:12:51,440 --> 00:12:53,279
+you low level control over memory which
+
+
+418
+00:12:53,279 --> 00:12:54,959
+the average web application developer
+
+
+419
+00:12:54,959 --> 00:12:56,720
+doesn't really need i quickly realized
+
+
+420
+00:12:56,720 --> 00:12:57,760
+that it would take more time and
+
+
+421
+00:12:57,760 --> 00:12:59,120
+dedication than i'm willing to give for
+
+
+422
+00:12:59,120 --> 00:13:00,959
+the tail end of a silly youtube video
+
+
+423
+00:13:00,959 --> 00:13:02,800
+however there is one rust-based library
+
+
+424
+00:13:02,800 --> 00:13:04,079
+that i want to bring to your attention
+
+
+425
+00:13:04,079 --> 00:13:05,760
+called you it's a component-based
+
+
+426
+00:13:05,760 --> 00:13:07,360
+framework for building web apps with
+
+
+427
+00:13:07,360 --> 00:13:08,959
+webassembly and it's coming to a
+
+
+428
+00:13:08,959 --> 00:13:10,800
+fireship tutorial near you soon and that
+
+
+429
+00:13:10,800 --> 00:13:12,399
+brings us to the final framework in this
+
+
+430
+00:13:12,399 --> 00:13:14,639
+list vapor which is based on the swift
+
+
+431
+00:13:14,639 --> 00:13:16,160
+programming language this is the only
+
+
+432
+00:13:16,160 --> 00:13:17,680
+app that i built on my mac because i
+
+
+433
+00:13:17,680 --> 00:13:18,959
+found that anything with swift just
+
+
+434
+00:13:18,959 --> 00:13:20,639
+works better on a mac it provides you
+
+
+435
+00:13:20,639 --> 00:13:22,079
+with a project structure that looks like
+
+
+436
+00:13:22,079 --> 00:13:23,519
+this it's well organized with
+
+
+437
+00:13:23,519 --> 00:13:25,519
+controllers models and routes routes
+
+
+438
+00:13:25,519 --> 00:13:27,200
+point to methods in the controller which
+
+
+439
+00:13:27,200 --> 00:13:29,519
+can access data from a model it uses an
+
+
+440
+00:13:29,519 --> 00:13:32,000
+orm called fluent which uses classes
+
+
+441
+00:13:32,000 --> 00:13:34,079
+along with decorators to model your data
+
+
+442
+00:13:34,079 --> 00:13:35,920
+swift is a very well-designed language
+
+
+443
+00:13:35,920 --> 00:13:37,600
+and i found it very enjoyable to work
+
+
+444
+00:13:37,600 --> 00:13:39,360
+with for stuff like this the code is
+
+
+445
+00:13:39,360 --> 00:13:41,199
+concise and readable yet statically
+
+
+446
+00:13:41,199 --> 00:13:42,720
+typed with awesome tooling like you
+
+
+447
+00:13:42,720 --> 00:13:44,639
+would get in java or c-sharp i also like
+
+
+448
+00:13:44,639 --> 00:13:46,320
+how it embraces async of weight when
+
+
+449
+00:13:46,320 --> 00:13:48,000
+fetching data from your models for
+
+
+450
+00:13:48,000 --> 00:13:50,000
+templating it has an engine called leaf
+
+
+451
+00:13:50,000 --> 00:13:51,519
+which also felt very modern and
+
+
+452
+00:13:51,519 --> 00:13:53,279
+practical now that we look at vapor i
+
+
+453
+00:13:53,279 --> 00:13:55,519
+want to also mention ktor which is a
+
+
+454
+00:13:55,519 --> 00:13:57,440
+kotlin-based web application framework
+
+
+455
+00:13:57,440 --> 00:13:58,800
+it's a lot more minimal than something
+
+
+456
+00:13:58,800 --> 00:14:00,639
+like spring but also something worth
+
+
+457
+00:14:00,639 --> 00:14:02,240
+checking out and with that we've looked
+
+
+458
+00:14:02,240 --> 00:14:04,000
+at 10 full stack frameworks now i'm
+
+
+459
+00:14:04,000 --> 00:14:05,600
+ready to show you the best full stack
+
+
+460
+00:14:05,600 --> 00:14:07,199
+framework in the world you're looking at
+
+
+461
+00:14:07,199 --> 00:14:09,040
+your own reflection in the mirror yes it
+
+
+462
+00:14:09,040 --> 00:14:11,120
+was you all along without you the
+
+
+463
+00:14:11,120 --> 00:14:13,120
+framework would be nothing actually no
+
+
+464
+00:14:13,120 --> 00:14:14,959
+no that's that's just dumb ruby on rails
+
+
+465
+00:14:14,959 --> 00:14:16,480
+is by far the best framework nothing
+
+
+466
+00:14:16,480 --> 00:14:18,000
+else even comes close it's like the
+
+
+467
+00:14:18,000 --> 00:14:19,760
+magic jordan of web frameworks thanks
+
+
+468
+00:14:19,760 --> 00:14:21,440
+for watching and i will see you in the
+
+
+469
+00:14:21,440 --> 00:14:24,079
+next one
+
+

@@ -1,0 +1,340 @@
+1
+00:00:00,160 --> 00:00:02,720
+tailwind a massive collection of tiny
+
+
+2
+00:00:02,720 --> 00:00:05,359
+css utility classes for quickly and
+
+
+3
+00:00:05,359 --> 00:00:07,040
+consistently building good-looking
+
+
+4
+00:00:07,040 --> 00:00:10,559
+websites css is hard design is also hard
+
+
+5
+00:00:10,559 --> 00:00:12,880
+but naming your css classes in a sane
+
+
+6
+00:00:12,880 --> 00:00:14,960
+way is virtually impossible frameworks
+
+
+7
+00:00:14,960 --> 00:00:16,960
+like bootstrap and material address this
+
+
+8
+00:00:16,960 --> 00:00:18,800
+challenge by creating styles for high
+
+
+9
+00:00:18,800 --> 00:00:20,800
+level components things like buttons
+
+
+10
+00:00:20,800 --> 00:00:23,199
+drop downs and forms tailwind takes a
+
+
+11
+00:00:23,199 --> 00:00:24,960
+more functional approach by providing
+
+
+12
+00:00:24,960 --> 00:00:26,720
+you with utility classes that can be
+
+
+13
+00:00:26,720 --> 00:00:28,720
+composed together to build components
+
+
+14
+00:00:28,720 --> 00:00:30,480
+like this instead of using the card
+
+
+15
+00:00:30,480 --> 00:00:32,079
+class like you might in bootstrap you
+
+
+16
+00:00:32,079 --> 00:00:34,160
+combine utility classes like flex to
+
+
+17
+00:00:34,160 --> 00:00:36,559
+make it a flexbox p to give it padding m
+
+
+18
+00:00:36,559 --> 00:00:38,399
+for margin and hundreds of others to
+
+
+19
+00:00:38,399 --> 00:00:40,559
+control things like color shadows and so
+
+
+20
+00:00:40,559 --> 00:00:42,640
+on in addition every utility can be
+
+
+21
+00:00:42,640 --> 00:00:44,719
+applied conditionally you have variants
+
+
+22
+00:00:44,719 --> 00:00:46,239
+like small medium and large for
+
+
+23
+00:00:46,239 --> 00:00:48,239
+responsive designs along with a bunch of
+
+
+24
+00:00:48,239 --> 00:00:50,719
+pseudo-selectors like hover and focus to
+
+
+25
+00:00:50,719 --> 00:00:53,120
+handle state changes or dark to render
+
+
+26
+00:00:53,120 --> 00:00:54,719
+different colors when dark mode is
+
+
+27
+00:00:54,719 --> 00:00:56,399
+enabled this approach gives you a lot
+
+
+28
+00:00:56,399 --> 00:00:58,000
+more freedom over your creativity
+
+
+29
+00:00:58,000 --> 00:01:00,239
+compared to other css frameworks while
+
+
+30
+00:01:00,239 --> 00:01:02,079
+at the same time following the rules of
+
+
+31
+00:01:02,079 --> 00:01:04,080
+a design system that you don't get with
+
+
+32
+00:01:04,080 --> 00:01:06,240
+plain css it lives in the sweet spot
+
+
+33
+00:01:06,240 --> 00:01:08,320
+between convention and configuration
+
+
+34
+00:01:08,320 --> 00:01:10,799
+however it does produce some ugly ass
+
+
+35
+00:01:10,799 --> 00:01:12,960
+html you've got tons of hard to read
+
+
+36
+00:01:12,960 --> 00:01:15,040
+duplicated class names here as your ui
+
+
+37
+00:01:15,040 --> 00:01:17,280
+grows in complexity code duplication is
+
+
+38
+00:01:17,280 --> 00:01:19,200
+inevitable but you can avoid it by
+
+
+39
+00:01:19,200 --> 00:01:21,040
+creating reusable components with your
+
+
+40
+00:01:21,040 --> 00:01:22,799
+favorite javascript framework or by
+
+
+41
+00:01:22,799 --> 00:01:25,200
+using the apply directive in css to take
+
+
+42
+00:01:25,200 --> 00:01:27,680
+tailwind classes and compose them into a
+
+
+43
+00:01:27,680 --> 00:01:29,600
+single concise class name another
+
+
+44
+00:01:29,600 --> 00:01:31,360
+concern you may have is performance
+
+
+45
+00:01:31,360 --> 00:01:34,000
+because tailwind weighs in at over 3 500
+
+
+46
+00:01:34,000 --> 00:01:35,840
+kilobytes but when you go to build for
+
+
+47
+00:01:35,840 --> 00:01:38,000
+production it will automatically purge
+
+
+48
+00:01:38,000 --> 00:01:40,320
+any unused utility from the final bundle
+
+
+49
+00:01:40,320 --> 00:01:42,560
+resulting in minimal dead code and thus
+
+
+50
+00:01:42,560 --> 00:01:45,040
+faster page loads but who has time to
+
+
+51
+00:01:45,040 --> 00:01:46,720
+learn and memorize all these different
+
+
+52
+00:01:46,720 --> 00:01:48,799
+utility classes where tailwind really
+
+
+53
+00:01:48,799 --> 00:01:50,560
+shines is with its tooling you don't
+
+
+54
+00:01:50,560 --> 00:01:52,560
+need to memorize much because vs code
+
+
+55
+00:01:52,560 --> 00:01:54,640
+will auto-complete every tailwind class
+
+
+56
+00:01:54,640 --> 00:01:56,159
+if you're not sure what it does just
+
+
+57
+00:01:56,159 --> 00:01:57,759
+hover over it and it will show you the
+
+
+58
+00:01:57,759 --> 00:02:00,079
+equivalent code in plain css and if
+
+
+59
+00:02:00,079 --> 00:02:01,520
+you're not happy with what it does you
+
+
+60
+00:02:01,520 --> 00:02:03,280
+can easily customize everything from the
+
+
+61
+00:02:03,280 --> 00:02:05,360
+color palette to the spacing to build
+
+
+62
+00:02:05,360 --> 00:02:07,200
+your own unique design system this has
+
+
+63
+00:02:07,200 --> 00:02:09,840
+been tailwind css in 100 seconds make
+
+
+64
+00:02:09,840 --> 00:02:11,440
+sure to like and subscribe if you want
+
+
+65
+00:02:11,440 --> 00:02:13,040
+to see more short videos like this and
+
+
+66
+00:02:13,040 --> 00:02:15,120
+if we hit 10 000 likes i'll make a full
+
+
+67
+00:02:15,120 --> 00:02:17,040
+tailwind tutorial thanks for watching
+
+
+68
+00:02:17,040 --> 00:02:21,480
+and i will see you in the next one
+
+

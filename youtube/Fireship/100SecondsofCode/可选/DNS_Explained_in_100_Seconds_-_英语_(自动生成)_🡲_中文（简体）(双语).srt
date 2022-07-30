@@ -1,0 +1,194 @@
+1
+00:00:00,320 --> 00:00:04,799
+the domain name system or dns is like the phone book of the internet it maps
+域名系统或 dns 就像互联网的电话簿，当您在浏览器中键入 url 时，它将
+
+2
+00:00:04,799 --> 00:00:09,279
+human readable urls or host names like
+人类可读的 url 或主机名（如
+
+3
+00:00:09,320 --> 00:00:12,719
+www.fireship.io to the ip address of the server that
+www.fireship.io）映射到托管该站点的服务器的 IP 地址。
+
+4
+00:00:12,719 --> 00:00:15,599
+hosts that site when you type a url into the browser
+
+
+5
+00:00:15,599 --> 00:00:19,199
+it makes a dns query to figure out which unique ip address
+dns 查询首先找出
+
+6
+00:00:19,199 --> 00:00:22,960
+is associated with that hostname first it'll attempt to look in the local
+与该主机名关联的唯一 IP 地址，它会尝试在本地
+
+7
+00:00:22,960 --> 00:00:26,880
+browser or operating system cache but if the cache is empty then we need
+浏览器或操作系统缓存中查找，但如果缓存为空，那么我们需要
+
+8
+00:00:26,880 --> 00:00:30,480
+to look up the ip address in the phone book which is the job of a server
+在电话簿中查找 IP 地址，即
+
+9
+00:00:30,480 --> 00:00:33,920
+known as the dns recursive resolver it's recursive
+称为 dns 递归解析器的服务器的工作它是递归的，
+
+10
+00:00:33,920 --> 00:00:37,360
+because it needs to make multiple requests to other servers starting with
+因为它需要从根名称服务器开始向其他服务器发出多个请求，
+
+11
+00:00:37,360 --> 00:00:41,360
+the root name server which itself will respond with the address of a top level
+根名称服务器本身将响应顶级
+
+12
+00:00:41,360 --> 00:00:45,520
+domain dns server which stores data about top level domains like
+域 dns 服务器的地址，该服务器存储有关顶级域的数据 像
+
+13
+00:00:45,520 --> 00:00:49,440
+com or dot io the resolver makes a request there which will respond with
+com 或 dot io 解析器在那里发出请求，该请求将使用
+
+14
+00:00:49,440 --> 00:00:52,239
+the ip address of the authoritative name server
+权威名称服务器的 IP 地址进行响应，该地址
+
+15
+00:00:52,239 --> 00:00:55,920
+that's the final source of truth that contains the requested website's ip
+是包含所请求网站的 IP
+
+16
+00:00:55,920 --> 00:00:58,000
+address that gets sent back down to the client
+地址的最终事实来源 s 被发送回客户端
+
+17
+00:00:58,000 --> 00:01:02,079
+and is cached for future use that sounds complicated but it all happens within a
+并被缓存以备将来使用 这听起来很复杂，但这一切都在
+
+18
+00:01:02,079 --> 00:01:04,720
+fraction of a second you can think of it as a globally
+几分之一秒内发生，您可以将其视为一个全球
+
+19
+00:01:04,720 --> 00:01:08,320
+distributed database that handles more requests than any other database in the
+分布式数据库，它处理的请求比世界上任何其他数据库都多
+
+20
+00:01:08,320 --> 00:01:10,479
+world when you register a domain name it's
+您注册了
+
+21
+00:01:10,479 --> 00:01:13,439
+handled by a registrar accredited by the non-profit
+一个由非营利组织 icann 认可的注册商处理的域名，
+
+22
+00:01:13,439 --> 00:01:18,000
+organization icann the record is then maintained by a registry operator who
+然后由注册运营商维护记录，该注册运营商
+
+23
+00:01:18,000 --> 00:01:20,720
+stores your dns settings and propagates them to
+存储您的 dns 设置并将它们传播到
+
+24
+00:01:20,720 --> 00:01:24,720
+other dns servers around the world as the registrant you'll be assigned a zone
+世界各地的其他 dns 服务器作为您将被分配的注册人 一个区域
+
+25
+00:01:24,720 --> 00:01:28,240
+file where you can configure the settings of your domain every zone
+文件，您可以在其中配置域的设置每个区域
+
+26
+00:01:28,240 --> 00:01:31,840
+has a startup authority record to tell other dns servers who's in
+都有一个启动权限记录，以告诉负责该域的其他 dns 服务器，
+
+27
+00:01:31,840 --> 00:01:34,799
+charge of that domain but most importantly we have the a
+但最重要的是我们有一个
+
+28
+00:01:34,799 --> 00:01:38,880
+record it means address and maps a domain or subdomain to the ip
+记录，它表示地址并将域或子域映射到 ip
+
+29
+00:01:38,880 --> 00:01:41,520
+address of its host in other cases though we may want to
+在其他情况下，我们可能希望将
+
+30
+00:01:41,520 --> 00:01:44,320
+forward a domain to another domain on the internet
+域转发到 Internet 上的另一个域
+
+31
+00:01:44,320 --> 00:01:48,720
+instead of an ip address in which case a canonical name or cname record would be
+而不是 IP 地址，在这种情况下是规范的 将使用名称或 cname 记录
+
+32
+00:01:48,720 --> 00:01:51,439
+used we have mx records for email and we can
+我们有电子邮件的 mx 记录，我们可以
+
+33
+00:01:51,439 --> 00:01:54,000
+store arbitrary data with text records which is
+存储带有文本记录的任意数据，这些数据
+
+34
+00:01:54,000 --> 00:01:57,680
+often used to communicate with third parties to verify ownership of the
+通常用于与第三方通信以验证
+
+35
+00:01:57,680 --> 00:02:01,920
+domain and finally we have the ns or name server record a url that the
+域的所有权，最后我们有 ns 或名称服务器记录一个 url
+
+36
+00:02:01,920 --> 00:02:05,520
+internet can ping to find our ip address and there's almost always two of them
+互联网可以 ping 找到我们的 IP 地址，并且几乎总是有两个
+
+37
+00:02:05,520 --> 00:02:08,720
+for better reliability this has been the domain name system in
+以提高可靠性这是域名系统在
+
+38
+00:02:08,720 --> 00:02:12,160
+100 seconds hit the like button if you want to see more short videos like this
+100 秒内点击喜欢按钮如果您想看到更多这样的短视频
+
+39
+00:02:12,160 --> 00:02:17,120
+thanks for watching and i will see you in the next one
+感谢观看，我会看到 你在下一个

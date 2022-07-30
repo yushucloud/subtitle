@@ -1,0 +1,204 @@
+1
+00:00:00,240 --> 00:00:03,760
+networking it's the way computers exchange information around the world
+网络是计算机在世界各地交换信息的一种方式
+
+2
+00:00:03,760 --> 00:00:07,120
+and just like the burrito its architecture is abstracted into seven
+就像墨西哥卷饼一样
+
+3
+00:00:07,120 --> 00:00:09,920
+layers based on the open systems interconnection model
+它的架构是基于底层的开放系统互连模型被抽象为七层
+
+4
+00:00:09,920 --> 00:00:13,440
+at the bottom we have physical hardware like fiber optic cables that literally
+我们有物理硬件，如光纤电缆，它们实际上
+
+5
+00:00:13,440 --> 00:00:17,039
+carry light from point a to point b somehow this light travels all the way
+将光从 a 点传输到 b 点不知何故，这种光一直传播
+
+6
+00:00:17,039 --> 00:00:19,439
+to layer seven where it can be transmitted directly into your
+到第七层，在那里它可以以屏幕
+
+7
+00:00:19,439 --> 00:00:22,960
+consciousness in the form of pixels on a screen or vibrations from a speaker
+上的像素或扬声器的振动的形式直接传输到你的意识中，
+
+8
+00:00:22,960 --> 00:00:26,560
+that's exactly what you're doing right now as an end user accessing this video
+这正是你现在正在做的事情，因为最终用户
+
+9
+00:00:26,560 --> 00:00:30,480
+over the hypertext transfer protocol in addition to http there are many other
+通过除了 http 之外的超文本传输
+
+10
+00:00:30,480 --> 00:00:34,719
+protocols at layer 7 like smpt for email or ftp for file
+在第 7 层还有许多其他协议，例如用于电子邮件的 smpt 或用于文件传输
+
+11
+00:00:34,719 --> 00:00:36,960
+transfers now let's work our way backwards to
+的 ftp 现�让我们向后工作以了解
+
+12
+00:00:36,960 --> 00:00:40,239
+understand how we got here layer 6 is the presentation layer and
+我们是如何到达这里的。第 6 层是表示层，本质
+
+13
+00:00:40,239 --> 00:00:43,680
+essentially it works as a translator to ensure that a stream of bits from a
+上它作为翻译器工作确保将来自计算机的比特流（
+
+14
+00:00:43,680 --> 00:00:46,239
+computer like a jpeg image is encoded to a
+如 jpeg 图像）
+
+15
+00:00:46,239 --> 00:00:49,039
+standard format that can be used at the application layer
+编码为可在应用层
+
+16
+00:00:49,039 --> 00:00:52,239
+below that we have the session layer which is responsible for managing the
+下面我们有会话层，它负责管理
+
+17
+00:00:52,239 --> 00:00:55,360
+connection between two computers it's here we have things like user
+两台计算机之间的连接，在这里我们有用户
+
+18
+00:00:55,360 --> 00:00:58,960
+authentication and authorization to control whether or not a user has
+身份验证和授权来控制用户是否
+
+19
+00:00:58,960 --> 00:01:02,160
+access to data on a server we've all been on a zoom call where some
+可以访问我们都在服务器上的数据 zoom call 一些
+
+20
+00:01:02,160 --> 00:01:05,600
+random person joins and shares their unsolicited artwork they manage to
+随机的人加入并分享他们不请自来的艺术作品，他们设法
+
+21
+00:01:05,600 --> 00:01:08,560
+authenticate on zoom servers by exploiting layer 5
+通过利用第 5 层在 Zoom 服务器上进行身份验证
+
+22
+00:01:08,560 --> 00:01:11,680
+and that brings us to the middle of the stack the transport layer
+，这将我们带到了堆栈的中间传输
+
+23
+00:01:11,680 --> 00:01:15,520
+the transmission control protocol or tcp is the foundation for
+层传输控制协议或 tcp是
+
+24
+00:01:15,520 --> 00:01:18,799
+pretty much everything we've looked at so far its job is to take a stream of
+我们几乎所有东西的基础到目前为止，它的工作是
+
+25
+00:01:18,799 --> 00:01:21,920
+data from one computer and transfer it to another it determines
+从一台计算机获取数据流并将其传输到另一台计算机，它决定
+
+26
+00:01:21,920 --> 00:01:25,680
+how to segment the data into smaller pieces that can be sent over the network
+如何将数据分割成更小的片段，这些片段可以按照正确的顺序通过网络发送，
+
+27
+00:01:25,680 --> 00:01:28,880
+in the correct order it receives the data from layer 4 the
+它从层接收数据 4
+
+28
+00:01:28,880 --> 00:01:32,960
+network layer in the form of packets it's here we find the internet protocol
+数据包形式的网络层 在这里我们可以找到互联网协议
+
+29
+00:01:32,960 --> 00:01:36,400
+every computer connected to the network has its own unique ip address
+每台连接到网络的计算机都有自己唯一的 ip add
+
+30
+00:01:36,400 --> 00:01:39,600
+which identifies that computer and whenever it sends information over the
+ress 标识该计算机，并且每当它通过网络发送信息时，它都会
+
+31
+00:01:39,600 --> 00:01:42,399
+network it does so in the form of an ip packet
+以 ip 数据包的形式发送信息，该数据包
+
+32
+00:01:42,399 --> 00:01:46,640
+that contains that address in the header a packet is just a unit of data along
+在标头中包含该地址，数据包只是一个数据单元以及
+
+33
+00:01:46,640 --> 00:01:50,079
+with some information about who sent it this happens from a router or gateway
+有关谁发送它的一些信息，这发生在
+
+34
+00:01:50,079 --> 00:01:53,759
+which connects to layer two the data link and its role is to connect
+连接到第二层数据链路的路由器或网关，其作用是通过以太网或 wi-fi 等协议
+
+35
+00:01:53,759 --> 00:01:57,520
+one physical node in the network to another via protocols like ethernet or
+将网络中的一个物理节点连接到另一个物理节点
+
+36
+00:01:57,520 --> 00:02:00,560
+wi-fi and that is how over 2.5 quintillion
+，这就是如何在
+
+37
+00:02:00,560 --> 00:02:03,280
+bytes of data are shared around the world every single day
+全球范围内共享超过 2.5 万亿字节的数据
+
+38
+00:02:03,280 --> 00:02:06,799
+this has been networking in 100 seconds if you want to see more short videos
+如果您想观看更多这样的短片，
+
+39
+00:02:06,799 --> 00:02:10,239
+like this please like and subscribe thanks for watching and i will see you
+请点赞并订阅，谢谢观看，我将
+
+40
+00:02:10,239 --> 00:02:13,680
+in the next one and now a quick word from our sponsor
+在下一个视频中看到您，现在我们的赞助商
+
+41
+00:02:13,680 --> 00:02:19,040
+taco bell seven layer burritos just 99 cents
+taco bell 七层卷饼只需 99 美分，我们的赞助商 taco bell 的简短消息将在 100 秒内建立

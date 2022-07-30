@@ -1,0 +1,173 @@
+1
+00:00:00,399 --> 00:00:04,799
+gzip a lossless file compression tool famous for making large chunks of data
+gzip 一种无损文件压缩工具，以使大量数据
+
+2
+00:00:04,799 --> 00:00:08,960
+smaller the files on a computer are represented by bits on a silicon chip
+变小而闻名计算机上的文件由硅芯片上的位表示，
+
+3
+00:00:08,960 --> 00:00:12,719
+but they often take up more space than is actually necessary for example when
+但它们通常占用比实际需要的空间更多的空间，例如当
+
+4
+00:00:12,719 --> 00:00:16,240
+you write your screenplay in a text document you produce a bunch of repeated
+您在文本文档中编写剧本时
+
+5
+00:00:16,240 --> 00:00:19,680
+patterns many years ago computer scientists realized we were wasting
+许多年前，计算机科学家意识到我们在浪费
+
+6
+00:00:19,680 --> 00:00:24,560
+space and wrote algorithms like lz77 to address this problem by looping over the
+空间并编写了类似 lz77 的算法来解决这个问题，通过循环
+
+7
+00:00:24,560 --> 00:00:28,240
+contents of a file to identify repeated sequences that can be replaced with
+文件的内容来识别可以用
+
+8
+00:00:28,240 --> 00:00:31,840
+metadata or shorter sequences thus reducing the total amount of bits
+元数据或更短的序列替换的重复序列，从而减少总的重复序列。 表示信息所需的位数
+
+9
+00:00:31,840 --> 00:00:36,239
+required to represent the information most importantly no information is lost
+最重要的是不会丢失任何信息
+
+10
+00:00:36,239 --> 00:00:39,920
+this differs from lossy compression algorithms like jpeg which can make an
+这与 jpeg 等有损压缩算法不同，jpeg 可以使
+
+11
+00:00:39,920 --> 00:00:44,160
+image file smaller but information is lost in the process gzip was developed
+图像文件更小但在此过程中会丢失信息 gzip
+
+12
+00:00:44,160 --> 00:00:48,960
+by jean-luc guys and mark alder in 1992 because the big evil tech corporations
+由 jean-luc guy 和 mark alder 在 1992 年开发，因为 大邪恶科技公司
+
+13
+00:00:48,960 --> 00:00:52,960
+held the patents on existing compression technology their implementation is based
+持有他们实施的现有压缩技术的专利 ntation
+
+14
+00:00:52,960 --> 00:00:57,360
+on the deflate compression algorithm which is a combination of lz77 and
+基于 deflate 压缩算法，它是 lz77 和
+
+15
+00:00:57,360 --> 00:01:02,079
+huffman coding gzip is not the only game in town and other formats like zip 7zip
+霍夫曼编码的组合 gzip 不是城里唯一的游戏，其他格式如 zip 7zip
+
+16
+00:01:02,079 --> 00:01:06,479
+and rar solve similar problems on the web gzip is the most common way to
+和 rar 解决了网络上的类似问题gzip 是实现端到端的最常见
+
+17
+00:01:06,479 --> 00:01:10,320
+implement end-to-end compression where a file is compressed on the server then
+方式 - 结束压缩，其中文件在服务器上
+
+18
+00:01:10,320 --> 00:01:14,080
+decompressed by the browser to reduce the amount of data sent over the network
+压缩，然后由浏览器解压缩以减少通过网络发送的数据量，
+
+19
+00:01:14,080 --> 00:01:17,759
+although broadly is a newer compression algorithm that's generally superior for
+尽管广义上是一种较新的压缩算法，通常更适合
+
+20
+00:01:17,759 --> 00:01:21,680
+files on the web to get started open up any linux machine where you'll find gzip
+网络上的文件开始打开任何 linux 机器 您会发现 gzip
+
+21
+00:01:21,680 --> 00:01:25,520
+installed by default as one of the most popular utilities of the gnu project to
+默认安装为 gnu 项目最流行的实用程序之一来
+
+22
+00:01:25,520 --> 00:01:29,439
+compress a file use the gzip command followed by the file name that creates a
+压缩文件使用 gzip 命令后跟文件名，该文件名创建一个
+
+23
+00:01:29,439 --> 00:01:33,680
+new file ending in gz that should be significantly smaller run the command
+以 gz 结尾的新文件，该文件应该明显更小再次运行该命令
+
+24
+00:01:33,680 --> 00:01:37,680
+again with the l flag to print out the compression ratio the higher the ratio
+l 标志打印出压缩比
+
+25
+00:01:37,680 --> 00:01:41,759
+the more space that was saved now use the d flag to decompress the file back
+比率越高，节省的空间越多 现在使用 d 标志将文件解压
+
+26
+00:01:41,759 --> 00:01:46,000
+to its original form or better yet use the gunzip command in the real world
+缩回其原始形式或 b 仍然在现实世界中使用 gunzip 命令，
+
+27
+00:01:46,000 --> 00:01:50,240
+though you'll often want to compress multiple files at the same time gzip on
+尽管您经常希望同时压缩多个文件 gzip
+
+28
+00:01:50,240 --> 00:01:53,600
+its own cannot compress an entire directory for that you'll need to bring
+本身无法压缩整个目录，因为您需要
+
+29
+00:01:53,600 --> 00:01:57,759
+in an archiver like tar its name is derived from tape archive and what it
+引入像 tar 这样的存档器，它的名称是派生的 从磁带存档，它的
+
+30
+00:01:57,759 --> 00:02:01,920
+does is take multiple files and combine them into a single file known as a
+作用是在运行 tar 命令时获取多个文件并将它们组合成一个称为
+
+31
+00:02:01,920 --> 00:02:05,759
+tarball when running the tar command include the z flag to automatically
+tarball 的文件包括 z 标志以自动
+
+32
+00:02:05,759 --> 00:02:10,160
+compress the archive congratulations you just made a large set of files smaller
+压缩存档 恭喜您刚刚使大量文件变小
+
+33
+00:02:10,160 --> 00:02:13,599
+this has been gzip in 100 seconds hit the like button if you want to see more
+这是 gzip  100秒内点击喜欢按钮，如果你想看更多这样的
+
+34
+00:02:13,599 --> 00:02:17,120
+short videos like this thanks for watching and i will see you in the next
+短片谢谢收看，我会在下一个看到你
+
+35
+00:02:17,120 --> 00:02:19,520
+one

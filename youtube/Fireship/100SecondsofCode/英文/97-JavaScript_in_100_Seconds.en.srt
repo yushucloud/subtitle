@@ -1,0 +1,405 @@
+1
+00:00:02,080 --> 00:00:04,400
+javascript a high level single threaded
+
+
+2
+00:00:04,400 --> 00:00:06,319
+garbage collected interpreted or just in
+
+
+3
+00:00:06,319 --> 00:00:07,759
+time compiled prototype-based
+
+
+4
+00:00:07,759 --> 00:00:09,679
+multi-paradigm dynamic language with a
+
+
+5
+00:00:09,679 --> 00:00:11,840
+non-blocking event loop made famous for
+
+
+6
+00:00:11,840 --> 00:00:14,719
+building websites it was created in 1995
+
+
+7
+00:00:14,719 --> 00:00:16,640
+in just one week by brendan ike with the
+
+
+8
+00:00:16,640 --> 00:00:18,240
+goal of adding an easy to learn
+
+
+9
+00:00:18,240 --> 00:00:19,920
+scripting language to the netscape
+
+
+10
+00:00:19,920 --> 00:00:21,920
+browser it was originally named mocha
+
+
+11
+00:00:21,920 --> 00:00:23,519
+but the genius marketing people of the
+
+
+12
+00:00:23,519 --> 00:00:25,439
+time wanted it to sound like that sexy
+
+
+13
+00:00:25,439 --> 00:00:27,279
+new java language today it's a fully
+
+
+14
+00:00:27,279 --> 00:00:28,880
+featured language that continues to
+
+
+15
+00:00:28,880 --> 00:00:30,720
+evolve through the ecmascript standard
+
+
+16
+00:00:30,720 --> 00:00:32,320
+it's most well known for building
+
+
+17
+00:00:32,320 --> 00:00:34,000
+front-end web applications because it's
+
+
+18
+00:00:34,000 --> 00:00:35,440
+the only language other than web
+
+
+19
+00:00:35,440 --> 00:00:37,360
+assembly that is natively supported in
+
+
+20
+00:00:37,360 --> 00:00:39,440
+browsers however anything that can be
+
+
+21
+00:00:39,440 --> 00:00:41,120
+built with javascript will be built with
+
+
+22
+00:00:41,120 --> 00:00:43,120
+javascript like server-side applications
+
+
+23
+00:00:43,120 --> 00:00:45,280
+with node.js mobile applications with
+
+
+24
+00:00:45,280 --> 00:00:47,680
+react native or ionic and desktop apps
+
+
+25
+00:00:47,680 --> 00:00:49,280
+with electron it's an interpreted
+
+
+26
+00:00:49,280 --> 00:00:51,440
+scripting language but tools like the v8
+
+
+27
+00:00:51,440 --> 00:00:53,360
+engine and chromium use a just-in-time
+
+
+28
+00:00:53,360 --> 00:00:55,440
+compiler to convert it to machine code
+
+
+29
+00:00:55,440 --> 00:00:57,520
+at runtime it's also excellent at
+
+
+30
+00:00:57,520 --> 00:00:59,840
+handling i o intensive jobs despite the
+
+
+31
+00:00:59,840 --> 00:01:01,199
+fact that it's a single threaded
+
+
+32
+00:01:01,199 --> 00:01:03,520
+language made possible by a non-blocking
+
+
+33
+00:01:03,520 --> 00:01:05,199
+event loop that can queue up work in the
+
+
+34
+00:01:05,199 --> 00:01:06,880
+background without blocking the main
+
+
+35
+00:01:06,880 --> 00:01:08,960
+thread to get started create a file
+
+
+36
+00:01:08,960 --> 00:01:11,280
+ending in.js your code will start
+
+
+37
+00:01:11,280 --> 00:01:13,439
+executing from the global context use
+
+
+38
+00:01:13,439 --> 00:01:15,200
+the console to log a value with the
+
+
+39
+00:01:15,200 --> 00:01:17,040
+built-in debugger now think about where
+
+
+40
+00:01:17,040 --> 00:01:18,640
+you want to run this file is it a
+
+
+41
+00:01:18,640 --> 00:01:20,960
+front-end browser or a back-end node.js
+
+
+42
+00:01:20,960 --> 00:01:22,720
+server in the browser you can reference
+
+
+43
+00:01:22,720 --> 00:01:24,320
+it with a script tag then the browser
+
+
+44
+00:01:24,320 --> 00:01:26,400
+will execute it when you open that html
+
+
+45
+00:01:26,400 --> 00:01:28,560
+file on a website javascript is often
+
+
+46
+00:01:28,560 --> 00:01:30,560
+used to grab an element from the dom
+
+
+47
+00:01:30,560 --> 00:01:32,320
+document query selector will grab the
+
+
+48
+00:01:32,320 --> 00:01:34,000
+first button then we can assign it to a
+
+
+49
+00:01:34,000 --> 00:01:36,640
+variable with either var let or const
+
+
+50
+00:01:36,640 --> 00:01:38,240
+var is the og way to do it but is
+
+
+51
+00:01:38,240 --> 00:01:40,159
+typically avoided let is for variables
+
+
+52
+00:01:40,159 --> 00:01:42,079
+that can be reassigned while const is
+
+
+53
+00:01:42,079 --> 00:01:44,000
+for variables that cannot be reassigned
+
+
+54
+00:01:44,000 --> 00:01:45,680
+now to make the button interactive we
+
+
+55
+00:01:45,680 --> 00:01:47,360
+can add an event listener to it by
+
+
+56
+00:01:47,360 --> 00:01:49,520
+defining a function for the on click
+
+
+57
+00:01:49,520 --> 00:01:51,280
+event we can use the function keyword
+
+
+58
+00:01:51,280 --> 00:01:53,520
+here or the more concise arrow syntax
+
+
+59
+00:01:53,520 --> 00:01:55,119
+now the event loop will execute this
+
+
+60
+00:01:55,119 --> 00:01:57,040
+function whenever a new click occurs
+
+
+61
+00:01:57,040 --> 00:01:58,640
+functions are first class objects to
+
+
+62
+00:01:58,640 --> 00:02:00,560
+support functional programming patterns
+
+
+63
+00:02:00,560 --> 00:02:02,560
+but javascript also supports classes and
+
+
+64
+00:02:02,560 --> 00:02:04,880
+inheritance for object oriented patterns
+
+
+65
+00:02:04,880 --> 00:02:06,320
+even though it's single threaded it can
+
+
+66
+00:02:06,320 --> 00:02:08,319
+do work asynchronously with the promise
+
+
+67
+00:02:08,319 --> 00:02:10,959
+api which also supports the async await
+
+
+68
+00:02:10,959 --> 00:02:13,200
+syntax js code can also run on the
+
+
+69
+00:02:13,200 --> 00:02:15,360
+server thanks to the nodejs runtime
+
+
+70
+00:02:15,360 --> 00:02:16,959
+instead of buttons on a web page it
+
+
+71
+00:02:16,959 --> 00:02:18,400
+interacts with things like the file
+
+
+72
+00:02:18,400 --> 00:02:20,160
+system api execute your code on the
+
+
+73
+00:02:20,160 --> 00:02:22,000
+server by pulling up the terminal and
+
+
+74
+00:02:22,000 --> 00:02:23,599
+entering the node command this has been
+
+
+75
+00:02:23,599 --> 00:02:25,760
+javascript in 100 seconds hit the like
+
+
+76
+00:02:25,760 --> 00:02:27,280
+button and subscribe if you want to see
+
+
+77
+00:02:27,280 --> 00:02:29,040
+more short videos like this and become a
+
+
+78
+00:02:29,040 --> 00:02:30,480
+fireship pro member if you want to learn
+
+
+79
+00:02:30,480 --> 00:02:32,319
+how to do all kinds of crazy stuff with
+
+
+80
+00:02:32,319 --> 00:02:34,160
+javascript thanks for watching and i
+
+
+81
+00:02:34,160 --> 00:02:37,599
+will see you in the next one
+
+

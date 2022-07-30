@@ -1,0 +1,244 @@
+1
+00:00:00,240 --> 00:00:04,720
+the linux file system it's a cryptic labyrinth of directories defined by the
+linux 文件系统 它是由文件系统层次标准定义的目录的神秘迷宫
+
+2
+00:00:04,720 --> 00:00:08,320
+file system hierarchy standard navigate through it with the change
+使用更改
+
+3
+00:00:08,320 --> 00:00:11,840
+directory command cd forward slash drops you into the root
+目录命令 cd 正斜杠将您放入根目录
+
+4
+00:00:11,840 --> 00:00:15,360
+then with the ls command we can list out the contents of this directory
+然后使用 ls 命令我们可以列出该目录的内容
+
+5
+00:00:15,360 --> 00:00:18,560
+first we have the bin directory which contains binaries or
+首先我们有 bin 目录，其中包含
+
+6
+00:00:18,560 --> 00:00:22,080
+executables that are essential to the entire operating system
+对整个操作系统至关重要的二进制文件或可执行文件，
+
+7
+00:00:22,080 --> 00:00:25,519
+you can run these binaries from the command line at any time things like
+您可以随时从命令行运行这些二进制文件，例如
+
+8
+00:00:25,519 --> 00:00:28,880
+gzip curl and even the ls command that we just ran
+gzip curl 甚至我们刚刚运行的 ls 命令，
+
+9
+00:00:28,880 --> 00:00:33,280
+but confusingly there's also an s-bin directory it contains system binaries
+但令人困惑的是还有一个 s-bin目录 它
+
+10
+00:00:33,280 --> 00:00:35,680
+that should only be executed by the root user
+包含只能由 root 用户执行的系统二进制文件，
+
+11
+00:00:35,680 --> 00:00:40,559
+like mount or delete user many of these binaries may share common libraries
+例如 mount 或 delete 用户这些二进制文件中的许多可能共享
+
+12
+00:00:40,559 --> 00:00:44,480
+which are stored in the lib directory now we also have a usr
+存储在 lib 目录中的公共库现在我们还有一个 usr
+
+13
+00:00:44,480 --> 00:00:47,920
+user directory with its own bin and s-bin directories
+用户目录，其中包含自己的 bin 和s-bin 目录
+
+14
+00:00:47,920 --> 00:00:51,920
+the binaries or applications here are non-essential to the operating system
+此处的二进制文件或应用程序对操作系统本身来说不是必需的，
+
+15
+00:00:51,920 --> 00:00:56,000
+itself and intended for the end user you'll also notice a local directory
+并且适用于最终用户，您还会注意到一个 loca  l
+
+16
+00:00:56,000 --> 00:00:58,480
+under user it contains any binaries that you
+用户下的目录它包含您手动编译的所有二进制文件，
+
+17
+00:00:58,480 --> 00:01:02,800
+compile manually to provide a safe place that won't conflict with any software
+以提供一个不会与
+
+18
+00:01:02,800 --> 00:01:06,720
+installed by a system package manager all these binaries get mapped together
+系统包管理器安装的任何软件冲突的安全位置所有这些二进制文件都
+
+19
+00:01:06,720 --> 00:01:10,320
+with the path environment variable and that's why you can execute them from
+与路径环境变量一起映射，这就是您可以执行它们的原因
+
+20
+00:01:10,320 --> 00:01:14,000
+any directory in the terminal if you ever want to know where a binary lives
+终端中的任何目录，如果您想知道二进制文件在哪里
+
+21
+00:01:14,000 --> 00:01:17,200
+run which followed by the binary name to view its full path
+运行，然后是二进制名称以查看其
+
+22
+00:01:17,200 --> 00:01:21,040
+in the file system now at some point you may want to customize the behavior of
+在文件系统中的完整路径，现在在某些时候您可能想要自定义
+
+23
+00:01:21,040 --> 00:01:25,119
+the software on your system the etc directory stands for etc or
+系统上软件的行为等 目录代表 etc 或
+
+24
+00:01:25,119 --> 00:01:28,799
+editable text configuration many of these files end in conf and
+可编辑的文本配置，其中许多文件以 conf 结尾，
+
+25
+00:01:28,799 --> 00:01:31,840
+they're typically just text-based config files that you can modify
+它们通常只是基于文本的配置文件，您可以
+
+26
+00:01:31,840 --> 00:01:36,000
+in your editor as an operating system linux can support multiple users
+在编辑器中修改作为操作系统linux 可以
+
+27
+00:01:36,000 --> 00:01:39,840
+in the home directory you'll find a folder named after each user registered
+在主目录中支持多个用户，您会发现以在系统上注册的每个用户命名的文件夹
+
+28
+00:01:39,840 --> 00:01:42,720
+on the system it contains the files configuration and
+，其中包含该用户的文件配置和
+
+29
+00:01:42,720 --> 00:01:45,600
+software for that user and you need to be logged in as that
+软件，您需要以该
+
+30
+00:01:45,600 --> 00:01:50,240
+user or as a root user to modify it notice how the file path is a squiggly
+用户或以该用户身份登录 一个 root 用户来修改它注意文件路径是如何弯曲的
+
+31
+00:01:50,240 --> 00:01:53,520
+that's your normal starting location when you open up a terminal session
+，这是你打开终端会话时的正常起始位置
+
+32
+00:01:53,520 --> 00:01:56,640
+now let's go back to the root there are a few more directories here that we
+现在让我们回到 root这里还有一些我们
+
+33
+00:01:56,640 --> 00:02:00,000
+haven't talked about yet like boot it contains the files needed
+还没有讨论过的目录，比如 boot 它包含启动系统所需的文件，
+
+34
+00:02:00,000 --> 00:02:02,960
+to boot the system like the linux kernel itself then we
+如 linux 内核本身，然后我们
+
+35
+00:02:02,960 --> 00:02:07,040
+have dev which stands for device files here you can interface with hardware or
+有 dev 代表设备文件，在这里您可以与硬件或
+
+36
+00:02:07,040 --> 00:02:11,200
+drivers as if they were regular files you might create disk partitions here or
+驱动程序接口，就好像它们是常规文件一样，您可以在这里创建磁盘分区或
+
+37
+00:02:11,200 --> 00:02:15,040
+interface with your floppy drive the op directory contains optional or
+与软盘驱动器接口op 目录包含可选或
+
+38
+00:02:15,040 --> 00:02:18,239
+add-on software and you'll rarely interact with it var
+附加软件，您很少与它交互 var
+
+39
+00:02:18,239 --> 00:02:20,720
+contains variable files that will change as
+包含可变文件，这些文件会
+
+40
+00:02:20,720 --> 00:02:23,840
+the operating system is being used things like logs and
+随着操作系统的使用而改变，例如日志和
+
+41
+00:02:23,840 --> 00:02:28,720
+cache files temp is for temporary files that won't be persisted between reboots
+缓存文件 temp 用于在重新启动之间不会保留的临时文件
+
+42
+00:02:28,720 --> 00:02:30,879
+and finally we have the weirdest one of all
+最后我们有一个最奇怪
+
+43
+00:02:30,879 --> 00:02:34,879
+the proc directory is an illusionary file system that doesn't actually exist
+的 proc 目录是一个虚拟的文件系统，它实际上并不存在
+
+44
+00:02:34,879 --> 00:02:37,760
+on the disk but is created in memory on the fly by
+于磁盘上，而是由 t 在内存中动态创建的
+
+45
+00:02:37,760 --> 00:02:41,200
+the linux kernel to keep track of running processes this
+他 linux 内核来跟踪正在运行的进程 这
+
+46
+00:02:41,200 --> 00:02:43,840
+has been the linux file system in 100 seconds
+已经是 100 秒内的 linux 文件系统
+
+47
+00:02:43,840 --> 00:02:46,800
+if you want to see more short videos like this hit the like button and let me
+如果你想看到更多这样的短视频点击喜欢按钮，让我
+
+48
+00:02:46,800 --> 00:02:50,000
+know what you want to see next in the comments thanks for watching and i will
+知道你接下来想在评论中看到什么感谢观看和 我会
+
+49
+00:02:50,000 --> 00:02:53,840
+see you in the next one
+在下一个见到你

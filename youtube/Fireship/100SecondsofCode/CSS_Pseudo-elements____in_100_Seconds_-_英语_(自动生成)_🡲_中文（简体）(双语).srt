@@ -1,0 +1,154 @@
+1
+00:00:00,079 --> 00:00:04,230
+pseudo elements there's more to your HTML than meets the eye there are parts
+伪元素HTML 的内容远比表面上看到
+
+2
+00:00:04,230 --> 00:00:07,470
+of the UI that you can style with CSS that don't actually exist in your HTML
+的要多 用户界面的某些部分可以使用 CSS 设置样式，但 HTML 标记中实际上并不存在，
+
+3
+00:00:07,470 --> 00:00:11,460
+markup take for example a form input that has some placeholder text the
+例如，表单输入包含一些占位符文本，
+
+4
+00:00:11,460 --> 00:00:14,880
+placeholder value is defined as an attribute on the element so how do we
+占位符值定义为元素上的一个属性那么我们如何
+
+5
+00:00:14,880 --> 00:00:18,750
+get ahold of the placeholder to style it the answer is we target a pseudo element
+获得占位符来设置它的样式答案是我们
+
+6
+00:00:18,750 --> 00:00:22,470
+in our CSS they always have a double colon to distinguish them from pseudo
+在我们的 CSS 中定位一个伪元素它们总是有一个双冒号来区分它们与伪
+
+7
+00:00:22,470 --> 00:00:26,490
+classes the difference is that a pseudo element represents an actual part of the
+类不同的是伪元素代表一个实际
+
+8
+00:00:26,490 --> 00:00:30,390
+Dom whereas a pseudo class represents the state of an element based on the
+Dom 的一部分，而伪类表示基于
+
+9
+00:00:30,390 --> 00:00:33,270
+user's interaction with it pseudo elements can make your code much more
+用户与其交互的元素的状态，伪元素可以使您的代码更加
+
+10
+00:00:33,270 --> 00:00:37,110
+efficient take for example this HTML where the first letter in each paragraph
+高效，例如这个 HTML，其中每个段落中的第一个字母
+
+11
+00:00:37,110 --> 00:00:41,070
+is being wrapped in a span so it can be styled a far more efficient way to solve
+被包装在一个跨度中，所以它 可以设置样式来解决此问题的一种更有效的方法
+
+12
+00:00:41,070 --> 00:00:44,610
+this problem is by targeting the first letter on the paragraph element the end
+是通过定位段落元素上的第一个字母最终
+
+13
+00:00:44,610 --> 00:00:48,629
+result is much cleaner semantic HTML that's cool but by far the most powerful
+结果是更清晰的语义 HTML，这很酷但 到目前为止，最强大的
+
+14
+00:00:48,629 --> 00:00:53,250
+pseudo elements are before and after many but not all HTML elements can have
+伪元素是在许多 HTML 元素之前和之后，但并非所有 HTML 元素都可以
+
+15
+00:00:53,250 --> 00:00:57,420
+content inserted before or after their inner content handled entirely from your
+在其内部内容之前或之后插入内容，这些内容完全由您的
+
+16
+00:00:57,420 --> 00:01:01,620
+CSS code for example we can target before and provide an empty string as
+CSS 代码处理，例如，我们可以定位before 并提供一个空字符串
+
+17
+00:01:01,620 --> 00:01:04,710
+the content property now that we've targeted this element you'll notice that
+作为 content 属性现在 我们已经定位了这个元素你会注意到
+
+18
+00:01:04,710 --> 00:01:08,070
+it shows up in the browser's inspector we can style this element as if it were
+它显示在浏览器的检查器中我们可以为这个元素设置样式，就好像它
+
+19
+00:01:08,070 --> 00:01:11,520
+an empty span or div in our HTML and that can be very useful for creating
+是我们 HTML 中的一个空 span 或 div，这对于创建高级动画非常有用，
+
+20
+00:01:11,520 --> 00:01:15,540
+advanced animations without polluting your HTML markup imagine we have a big
+而不会污染你的 HTML 标记 假设我们有一个很大的
+
+21
+00:01:15,540 --> 00:01:19,619
+unordered list and before each list item we have an emoji character instead of
+无序列表，并且在每个列表项之前我们有一个表情符号字符，而不是
+
+22
+00:01:19,619 --> 00:01:23,220
+duplicating it in the markup we can simply add it as the content property to
+在标记中复制它，我们可以简单地将其作为 content 属性添加
+
+23
+00:01:23,220 --> 00:01:26,369
+the before selector and once again we're left with code that is far more
+到 before 选择器中，我们再次得到更多的代码
+
+24
+00:01:26,369 --> 00:01:29,040
+maintainable there's a few other pseudo elements that you should know about
+可维护的还有一些其他的伪元素，你应该知道
+
+25
+00:01:29,040 --> 00:01:33,030
+selection allows you to change the background and color of highlighted text
+选择允许你改变一些浏览器（如 chrome）中突出显示的文本的背景和颜色，
+
+26
+00:01:33,030 --> 00:01:36,600
+in some browsers like chrome but not Firefox you can customize the scroll bar
+但是 不是Firefox，您可以
+
+27
+00:01:36,600 --> 00:01:40,170
+on scrollable elements before using the pseudo element always check for browser
+在使用伪元素之前自定义可滚动元素上的滚动条始终检查浏览器
+
+28
+00:01:40,170 --> 00:01:43,380
+compatibility ones like spelling error might sound cool but they don't really
+兼容性 诸如拼写错误之类的可能听起来很酷，但它们实际上
+
+29
+00:01:43,380 --> 00:01:47,310
+have any browser support yet this has been pseudo elements in 100 seconds make
+并没有任何浏览器支持，但这已经是 100 秒内的伪元素
+
+30
+00:01:47,310 --> 00:01:50,939
+sure to also check out pseudo classes thanks for watching and I will see you
+确保 还可以查看伪类感谢收看，我会
+
+31
+00:01:50,939 --> 00:01:55,000
+in the next one you
+在下一个你看到你

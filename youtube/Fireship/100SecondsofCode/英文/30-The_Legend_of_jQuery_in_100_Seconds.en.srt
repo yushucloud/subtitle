@@ -1,0 +1,405 @@
+1
+00:00:00,640 --> 00:00:02,879
+jquery by far the world's most popular
+
+
+2
+00:00:02,879 --> 00:00:04,799
+javascript library being found on over
+
+
+3
+00:00:04,799 --> 00:00:06,720
+80 percent of the world's top 1 million
+
+
+4
+00:00:06,720 --> 00:00:07,440
+websites
+
+
+5
+00:00:07,440 --> 00:00:08,880
+that's more than four times the adoption
+
+
+6
+00:00:08,880 --> 00:00:10,480
+of angular react and view
+
+
+7
+00:00:10,480 --> 00:00:13,040
+combined it was invented back in 2006 by
+
+
+8
+00:00:13,040 --> 00:00:14,880
+john resig before most of today's junior
+
+
+9
+00:00:14,880 --> 00:00:16,560
+developers were even born he originally
+
+
+10
+00:00:16,560 --> 00:00:18,000
+wanted to call it jselect
+
+
+11
+00:00:18,000 --> 00:00:19,520
+but all the domains were taken the
+
+
+12
+00:00:19,520 --> 00:00:21,520
+popularity of jquery is driven by a
+
+
+13
+00:00:21,520 --> 00:00:23,119
+fundamental need in the web development
+
+
+14
+00:00:23,119 --> 00:00:23,519
+market
+
+
+15
+00:00:23,519 --> 00:00:25,760
+javascript is a total and we want to
+
+
+16
+00:00:25,760 --> 00:00:27,039
+write less of it furthermore
+
+
+17
+00:00:27,039 --> 00:00:28,960
+back in o6 browsers had a bunch of
+
+
+18
+00:00:28,960 --> 00:00:31,199
+interop issues jquery provided a single
+
+
+19
+00:00:31,199 --> 00:00:33,360
+api to handle the edge cases across
+
+
+20
+00:00:33,360 --> 00:00:34,399
+multiple browsers
+
+
+21
+00:00:34,399 --> 00:00:36,000
+it's so good in fact that browser
+
+
+22
+00:00:36,000 --> 00:00:37,680
+vendors of today have standardized many
+
+
+23
+00:00:37,680 --> 00:00:39,440
+of its features and ship them as native
+
+
+24
+00:00:39,440 --> 00:00:40,239
+apis
+
+
+25
+00:00:40,239 --> 00:00:41,680
+you can install it by finding the source
+
+
+26
+00:00:41,680 --> 00:00:43,520
+code on the website right click to copy
+
+
+27
+00:00:43,520 --> 00:00:45,520
+it then open dreamweaver and find all of
+
+
+28
+00:00:45,520 --> 00:00:47,520
+the html pages and paste it into a
+
+
+29
+00:00:47,520 --> 00:00:49,520
+script tag on each one your javascript
+
+
+30
+00:00:49,520 --> 00:00:51,440
+now has access to the mighty dollar sign
+
+
+31
+00:00:51,440 --> 00:00:51,920
+function
+
+
+32
+00:00:51,920 --> 00:00:53,840
+it takes a selector as its argument like
+
+
+33
+00:00:53,840 --> 00:00:56,000
+a tag name class or id it'll grab that
+
+
+34
+00:00:56,000 --> 00:00:57,199
+html from the dom
+
+
+35
+00:00:57,199 --> 00:00:58,960
+allowing you to perform actions on it in
+
+
+36
+00:00:58,960 --> 00:01:00,960
+the html we have a list of items and we
+
+
+37
+00:01:00,960 --> 00:01:02,719
+want to grab the first item in vanilla
+
+
+38
+00:01:02,719 --> 00:01:04,320
+js we'd have to use this ridiculously
+
+
+39
+00:01:04,320 --> 00:01:05,680
+long line of code to do so
+
+
+40
+00:01:05,680 --> 00:01:07,360
+in react we have to completely rewrite
+
+
+41
+00:01:07,360 --> 00:01:09,040
+our code into a component and implement
+
+
+42
+00:01:09,040 --> 00:01:10,320
+the confusing ref hook
+
+
+43
+00:01:10,320 --> 00:01:12,080
+with jquery we can use the dollar sign
+
+
+44
+00:01:12,080 --> 00:01:13,760
+to grab all the list items and then call
+
+
+45
+00:01:13,760 --> 00:01:15,040
+first to get the first one
+
+
+46
+00:01:15,040 --> 00:01:16,960
+it's easy and readable if we want to
+
+
+47
+00:01:16,960 --> 00:01:18,479
+animate it we can do that by simply
+
+
+48
+00:01:18,479 --> 00:01:20,159
+chaining a method to it and we can chain
+
+
+49
+00:01:20,159 --> 00:01:21,840
+more methods to it to register event
+
+
+50
+00:01:21,840 --> 00:01:23,439
+listeners and all kinds of other fun
+
+
+51
+00:01:23,439 --> 00:01:23,840
+stuff
+
+
+52
+00:01:23,840 --> 00:01:25,520
+declarative framework developers love to
+
+
+53
+00:01:25,520 --> 00:01:27,040
+fight each other about state management
+
+
+54
+00:01:27,040 --> 00:01:28,479
+don't make me swing on you bro
+
+
+55
+00:01:28,479 --> 00:01:30,079
+while jquery developers don't have this
+
+
+56
+00:01:30,079 --> 00:01:31,680
+problem because there's no data layer to
+
+
+57
+00:01:31,680 --> 00:01:33,200
+worry about instead you just start with
+
+
+58
+00:01:33,200 --> 00:01:33,840
+an object
+
+
+59
+00:01:33,840 --> 00:01:35,520
+shade methods to it and let the state
+
+
+60
+00:01:35,520 --> 00:01:36,880
+manage itself when it comes time to
+
+
+61
+00:01:36,880 --> 00:01:38,479
+extend jquery there's no need for
+
+
+62
+00:01:38,479 --> 00:01:40,479
+insanely complex web pack bundling or
+
+
+63
+00:01:40,479 --> 00:01:41,520
+npm packages
+
+
+64
+00:01:41,520 --> 00:01:43,280
+you can just extend its prototype with a
+
+
+65
+00:01:43,280 --> 00:01:44,640
+plugin and there's already a huge
+
+
+66
+00:01:44,640 --> 00:01:46,320
+ecosystem of plugins to get things done
+
+
+67
+00:01:46,320 --> 00:01:46,880
+quickly
+
+
+68
+00:01:46,880 --> 00:01:48,479
+as an added bonus once you've mastered
+
+
+69
+00:01:48,479 --> 00:01:50,720
+jquery you can jump into jquery mobile
+
+
+70
+00:01:50,720 --> 00:01:52,079
+and start building native apps for
+
+
+71
+00:01:52,079 --> 00:01:53,439
+windows phone and blackberry
+
+
+72
+00:01:53,439 --> 00:01:55,119
+developers of today sometimes make fun
+
+
+73
+00:01:55,119 --> 00:01:56,560
+of jquery but that's just the stuff you
+
+
+74
+00:01:56,560 --> 00:01:57,840
+have to deal with when you're the king
+
+
+75
+00:01:57,840 --> 00:01:59,360
+of javascript libraries
+
+
+76
+00:01:59,360 --> 00:02:01,040
+this has been the legend of jquery in
+
+
+77
+00:02:01,040 --> 00:02:02,640
+100 seconds if you want to see more
+
+
+78
+00:02:02,640 --> 00:02:04,079
+short videos like this hit the like
+
+
+79
+00:02:04,079 --> 00:02:05,280
+button and subscribe
+
+
+80
+00:02:05,280 --> 00:02:06,960
+thanks for watching and i will see you
+
+
+81
+00:02:06,960 --> 00:02:09,840
+in the next one
+
+

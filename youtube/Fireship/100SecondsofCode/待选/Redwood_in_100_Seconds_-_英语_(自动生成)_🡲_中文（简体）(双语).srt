@@ -1,0 +1,194 @@
+1
+00:00:00,000 --> 00:00:04,620
+Redwood JS an opinionated full stack JavaScript framework for building big
+Redwood JS 是一个自以为是的全栈JavaScript 框架，用于构建
+
+2
+00:00:04,620 --> 00:00:08,519
+ambitious startups as we all know the JavaScript ecosystem is incredibly
+雄心勃勃的大型初创公司，因为我们都知道JavaScript 生态系统非常
+
+3
+00:00:08,519 --> 00:00:12,120
+complex with millions of different tools to choose from when architecting an app
+复杂，在构建应用程序时有数百万种不同的工具可供选择
+
+4
+00:00:12,120 --> 00:00:15,900
+Redwood takes a collection of the most battle tested Technologies like react
+Redwood 收集了经过大量实战考验的技术，例如 react
+
+5
+00:00:15,900 --> 00:00:20,460
+Prisma graphql storybook and jest then weaves them together so developers can
+Prisma graphql 故事书 然后 jest将它们编织在一起，以便开发人员可以
+
+6
+00:00:20,460 --> 00:00:24,000
+get things done quickly and reliably it was developed by a team of software
+快速可靠地完成工作 它是由一个软件工程师团队开发的
+
+7
+00:00:24,000 --> 00:00:28,380
+Engineers that includes the co-founder of GitHub and hit version 1.0 in 2022 it
+，其中包括 GitHub 的联合创始人，并在 2022 年推出 1.0 版它
+
+8
+00:00:28,380 --> 00:00:31,800
+has its own custom router for server-side rendering but unlike many
+有自己的用于服务器端渲染的自定义路由器，但是 与许多
+
+9
+00:00:31,800 --> 00:00:35,700
+other Frameworks it doesn't use the file system and instead puts all routes in a
+其他框架不同，它不使用文件系统，而是将所有路由放在
+
+10
+00:00:35,700 --> 00:00:39,239
+single file with automatic code splitting for each page most importantly
+一个文件中，并为每个页面自动进行代码拆分，最重要的是，
+
+11
+00:00:39,239 --> 00:00:43,440
+though it provides abstractions to connect your front-end UI to a back-end
+尽管它提供了抽象来
+
+12
+00:00:43,440 --> 00:00:48,539
+relational database via a graphql API its rails inspired CLI can quickly
+通过 a 将前端 UI 连接到后端关系数据库 graphql API其 rails 启发的 CLI 可以快速
+
+13
+00:00:48,539 --> 00:00:52,379
+generate the code required to build complex features and not just build them
+生成构建复杂功能所需的代码，而不仅仅是 构建它们，
+
+14
+00:00:52,379 --> 00:00:56,399
+but also test them with jest and storybook it ships with Apollo client by
+但也使用 jest 和storybook 测试它们默认情况下它与 Apollo 客户端一起提供，
+
+15
+00:00:56,399 --> 00:01:00,960
+default making it easy for the front end to consume data from the graphql API and
+使前端可以轻松地使用来自 graphql API 的数据，并且
+
+16
+00:01:00,960 --> 00:01:03,899
+when it comes time for deployment the code can easily run on a standalone
+当需要部署时，代码可以轻松地在独立
+
+17
+00:01:03,899 --> 00:01:07,619
+server or your favorite serverless infrastructure to get started generate a
+服务器或您最喜欢的服务器上运行开始使用无服务器基础设施
+
+18
+00:01:07,619 --> 00:01:11,460
+new Redwood project with yarn the front end code is managed in the web directory
+使用 yarn 生成一个新的 Redwood 项目前端代码在 web 目录中管理
+
+19
+00:01:11,460 --> 00:01:15,119
+it's a react app that's wrapped with the Redwood provider with routes as the main
+它是一个反应应用程序，与Redwood 提供程序一起包装，路由
+
+20
+00:01:15,119 --> 00:01:18,600
+entry point for the UI the routes component is a collection of URL
+作为 UI 的主要入口点 路由组件是 URL 的集合
+
+21
+00:01:18,600 --> 00:01:22,320
+patterns that point to a specific component which is defined in the Pages
+指向在 Pages 目录中定义的特定组件的模式
+
+22
+00:01:22,320 --> 00:01:26,220
+directory all pages are automatically imported here keeping your code nice and
+所有页面都会自动导入这里，使您的代码保持
+
+23
+00:01:26,220 --> 00:01:29,759
+concise in addition all pages are automatically lazy loaded with code
+简洁明了此外所有页面都会自动延迟加载代码
+
+24
+00:01:29,759 --> 00:01:33,720
+splitting making your load times as fast as possible it also contains a layout
+拆分，使您的加载时间尽可能快它还包含一个布局
+
+25
+00:01:33,720 --> 00:01:38,100
+system to share UI across different routes now the back end is organized in
+系统现在可以跨不同路由共享 UI，后端组织在
+
+26
+00:01:38,100 --> 00:01:42,240
+the API directory which uses Prisma to manage the database schema but also
+使用 Prisma 管理的 API 目录中e 数据库模式，但还
+
+27
+00:01:42,240 --> 00:01:46,619
+provides the tools required to build a full-fledged graphql API to access your
+提供构建成熟的 graphql API 以访问您的
+
+28
+00:01:46,619 --> 00:01:50,340
+data the back end can also Define its own custom serverless functions or
+数据所需的工具，后端还可以定义自己的自定义无服务器函数或
+
+29
+00:01:50,340 --> 00:01:53,820
+directives which operate like middleware to handle concerns like user
+指令，这些函数或指令像中间件一样运行，以处理用户身份验证等问题。
+
+30
+00:01:53,820 --> 00:01:57,000
+authentication what's really cool though is Redwood provides an abstraction
+虽然 Redwood 真的很酷提供
+
+31
+00:01:57,000 --> 00:02:01,680
+called a cell to simplify complex data fetching a cell is just a component that
+称为单元格的抽象来简化复杂数据获取单元格只是一个
+
+32
+00:02:01,680 --> 00:02:05,280
+manages a graphql query allowing you to clearly Define different states like
+管理 graphql 查询的组件，允许您清楚地定义不同的状态，如
+
+33
+00:02:05,280 --> 00:02:09,360
+loading error and success like angular or rails Redwood provides strong
+加载错误和成功，如角度或轨道 Redwood 提供强大的
+
+34
+00:02:09,360 --> 00:02:13,560
+conventions and a CLI to generate the boilerplate code for you use it to
+约定和 CLI 来生成样板代码 因为你用它来
+
+35
+00:02:13,560 --> 00:02:17,520
+quickly create a component page or cell along with the code for jest and
+快速创建一个组件页面或单元格以及
+
+36
+00:02:17,520 --> 00:02:21,239
+storybook for testing and finally use the CLI to deploy the app to your
+用于测试的笑话和故事书的代码，最后使用 CLI 将应用程序部署到你
+
+37
+00:02:21,239 --> 00:02:25,680
+favorite serverless Cloud platform this has been Redwood JS in 100 seconds hit
+最喜欢的无服务器云平台这已经是 Redwood JS 在 100 秒内
+
+38
+00:02:25,680 --> 00:02:28,620
+the like button and subscribe if you want to see more short videos like this
+点击喜欢按钮和 如果您想看更多这样的短视频，请订阅
+
+39
+00:02:28,620 --> 00:02:33,379
+thanks for watching and I will see you in the next one
+感谢收看，我们会在 下一个

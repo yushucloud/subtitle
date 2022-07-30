@@ -1,0 +1,129 @@
+1
+00:00:00,030 --> 00:00:04,200
+arrey reduce start with a list of items then iterate over them to compute a
+arrey reduce 从一个项目列表开始，然后遍历它们以计算
+
+2
+00:00:04,200 --> 00:00:08,340
+single value it works just like basic arithmetic consider one plus two plus
+单个值它的工作原理就像基本算术一样考虑一加二加
+
+3
+00:00:08,340 --> 00:00:12,599
+three what we have here is a list of numbers they're reduced to a single
+三我们这里有一个数字列表，它们
+
+4
+00:00:12,599 --> 00:00:16,650
+value using a function called addition in arithmetic we go from left to right
+使用一个名为在算术中，我们从左到右
+
+5
+00:00:16,650 --> 00:00:20,730
+the results of the first computation is then added to the next one so it's
+将第一个计算的结果添加到下一个计算中，所以它
+
+6
+00:00:20,730 --> 00:00:25,019
+actually just a loop but a loop with a memory take for example in array of
+实际上只是一个循环，但是一个带有内存的循环
+
+7
+00:00:25,019 --> 00:00:28,859
+orders from our online store our goal is to calculate the total dollar amount of
+以我们在线商店的订单数组为例，我们的目标是计算
+
+8
+00:00:28,859 --> 00:00:33,059
+sales across all of the orders in this array one option is to create a variable
+这个数组中所有订单的总销售额一个选项是创建一个从零开始的变量
+
+9
+00:00:33,059 --> 00:00:36,840
+that starts at zero then we'll start a for loop and increment this value for
+，然后我们将启动一个for 循环并为每个订单增加这个值
+
+10
+00:00:36,840 --> 00:00:40,469
+each order total reduce can solve the same type of problem but without
+total reduce 可以解决相同类型的问题，但是 在不
+
+11
+00:00:40,469 --> 00:00:45,090
+mutating the appstate directly it does this by applying a reducer function to
+直接改变 appstate 的情况下，它通过将 reducer 函数
+
+12
+00:00:45,090 --> 00:00:49,020
+each element in that array your job is to define the reducer function the
+应用于该数组中的每个元素来实现这一点，您的工作是定义 reducer 函数该函数的
+
+13
+00:00:49,020 --> 00:00:52,649
+signature of that function has two required positional arguments the first
+签名具有两个必需的位置参数 nts 第
+
+14
+00:00:52,649 --> 00:00:56,879
+one being the accumulator that's just a fancy word for the last value that you
+一个是累加器，它只是你从这个函数返回的最后一个值的一个花哨的词
+
+15
+00:00:56,879 --> 00:01:00,420
+returned from this function the second argument represents the current element
+第二个参数表示
+
+16
+00:01:00,420 --> 00:01:04,830
+in the loop or in our case and ordered object the way we change the accumulated
+循环中的当前元素，或者在我们的例子中和有序对象，我们改变累积
+
+17
+00:01:04,830 --> 00:01:08,880
+or remembered value is to return a value from the function to combine all of the
+或记忆值的方式是 从函数返回一个值以将所有
+
+18
+00:01:08,880 --> 00:01:12,869
+order totals into a single number we simply add the accumulated value to the
+订单总计合并为一个数字我们只需将累积值添加到
+
+19
+00:01:12,869 --> 00:01:16,650
+current value and optionally we can add a starting value as a second argument
+当前值，并且我们可以选择添加一个起始值作为第二个参数
+
+20
+00:01:16,650 --> 00:01:20,820
+which will set at zero the end result is the combined order total across all
+，它将设置为零最终结果是组合
+
+21
+00:01:20,820 --> 00:01:24,360
+elements in the array we started with many things and reduced it down to one
+对数组中所有元素的总排序我们从很多事情开始并将其减少到一
+
+22
+00:01:24,360 --> 00:01:27,900
+thing in some cases you might want to start at the end of the array and work
+件事在某些情况下您可能希望从数组的末尾开始并向后工作
+
+23
+00:01:27,900 --> 00:01:30,990
+your way backwards you can use reduced write to start at the end of the array
+您可以使用减少的写入从末尾开始 阵列
+
+24
+00:01:30,990 --> 00:01:35,100
+and work your way to the beginning this has been array reduce and 100 seconds
+并按您的方式工作到开始这是阵列减少和 100 秒
+
+25
+00:01:35,100 --> 00:01:38,140
+thanks for watching and I will see you in the next one
+感谢观看，我会在下一个
+
+26
+00:01:38,140 --> 00:01:41,239
+[Music]
+[音乐]

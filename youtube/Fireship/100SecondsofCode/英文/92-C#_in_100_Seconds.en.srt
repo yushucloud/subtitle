@@ -1,0 +1,385 @@
+1
+00:00:00,240 --> 00:00:02,399
+c sharp a statically typed general
+
+
+2
+00:00:02,399 --> 00:00:04,160
+purpose programming language famous for
+
+
+3
+00:00:04,160 --> 00:00:06,240
+being the workhorse of the windows.net
+
+
+4
+00:00:06,240 --> 00:00:07,680
+framework it was created in the year
+
+
+5
+00:00:07,680 --> 00:00:10,480
+2000 by anders heilsberg at microsoft it
+
+
+6
+00:00:10,480 --> 00:00:12,480
+was designed as a modern c-like
+
+
+7
+00:00:12,480 --> 00:00:14,160
+object-oriented language and was
+
+
+8
+00:00:14,160 --> 00:00:15,599
+originally going to be called cool
+
+
+9
+00:00:15,599 --> 00:00:18,080
+initially it was criticized as imitation
+
+
+10
+00:00:18,080 --> 00:00:19,840
+java but it's evolved into one of the
+
+
+11
+00:00:19,840 --> 00:00:21,920
+most popular and well-loved languages to
+
+
+12
+00:00:21,920 --> 00:00:23,680
+this day it can be used to build almost
+
+
+13
+00:00:23,680 --> 00:00:26,080
+anything like desktop apps on.net core
+
+
+14
+00:00:26,080 --> 00:00:28,160
+cross-platform mobile apps with xamarin
+
+
+15
+00:00:28,160 --> 00:00:30,320
+web applications with blazer and video
+
+
+16
+00:00:30,320 --> 00:00:32,239
+games with the unity framework it became
+
+
+17
+00:00:32,239 --> 00:00:34,399
+open source software in 2014 and can be
+
+
+18
+00:00:34,399 --> 00:00:35,760
+used to build apps outside of the
+
+
+19
+00:00:35,760 --> 00:00:37,600
+dot-net framework c-sharp code is
+
+
+20
+00:00:37,600 --> 00:00:39,360
+compiled into an intermediate language
+
+
+21
+00:00:39,360 --> 00:00:40,879
+which can then be interpreted by the
+
+
+22
+00:00:40,879 --> 00:00:42,640
+common language runtime where it can be
+
+
+23
+00:00:42,640 --> 00:00:44,879
+executed as native machine code on any
+
+
+24
+00:00:44,879 --> 00:00:46,559
+operating system without the need to
+
+
+25
+00:00:46,559 --> 00:00:48,480
+recompile it's known primarily as an
+
+
+26
+00:00:48,480 --> 00:00:50,320
+object oriented language but also
+
+
+27
+00:00:50,320 --> 00:00:52,160
+supports functional lambda expressions
+
+
+28
+00:00:52,160 --> 00:00:53,600
+and has the ability to write a
+
+
+29
+00:00:53,600 --> 00:00:55,680
+declarative query on any data structure
+
+
+30
+00:00:55,680 --> 00:00:57,840
+with a feature called link it's a memory
+
+
+31
+00:00:57,840 --> 00:00:59,280
+safe language thanks to garbage
+
+
+32
+00:00:59,280 --> 00:01:01,120
+collection although it is possible to
+
+
+33
+00:01:01,120 --> 00:01:02,960
+create an unsafe context if you want to
+
+
+34
+00:01:02,960 --> 00:01:04,879
+allocate your own memory with pointers
+
+
+35
+00:01:04,879 --> 00:01:07,680
+to get started install the.net core sdk
+
+
+36
+00:01:07,680 --> 00:01:09,200
+then open the terminal to an empty
+
+
+37
+00:01:09,200 --> 00:01:11,439
+directory and run.net new to create a
+
+
+38
+00:01:11,439 --> 00:01:13,040
+new application that creates a
+
+
+39
+00:01:13,040 --> 00:01:15,600
+program.cs file that imports the system
+
+
+40
+00:01:15,600 --> 00:01:17,280
+namespace at the top then provides a
+
+
+41
+00:01:17,280 --> 00:01:18,960
+class with a main function which is
+
+
+42
+00:01:18,960 --> 00:01:20,560
+where your code will start executing
+
+
+43
+00:01:20,560 --> 00:01:22,479
+declare a variable by starting with a
+
+
+44
+00:01:22,479 --> 00:01:24,880
+type followed by a name and value by
+
+
+45
+00:01:24,880 --> 00:01:26,960
+default a value cannot be null but you
+
+
+46
+00:01:26,960 --> 00:01:28,479
+can make it nullable by adding a
+
+
+47
+00:01:28,479 --> 00:01:30,079
+question mark to the type now to
+
+
+48
+00:01:30,079 --> 00:01:31,920
+organize our code and share it in other
+
+
+49
+00:01:31,920 --> 00:01:34,320
+files we will wrap it in a namespace we
+
+
+50
+00:01:34,320 --> 00:01:35,840
+can then create a new class inside the
+
+
+51
+00:01:35,840 --> 00:01:37,680
+namespace that has a constructor when
+
+
+52
+00:01:37,680 --> 00:01:39,360
+the class is instantiated and a
+
+
+53
+00:01:39,360 --> 00:01:41,119
+destructor when the class goes out of
+
+
+54
+00:01:41,119 --> 00:01:42,960
+scope classes support inheritance
+
+
+55
+00:01:42,960 --> 00:01:44,880
+polymorphism and everything else you
+
+
+56
+00:01:44,880 --> 00:01:46,880
+would expect in a modern object-oriented
+
+
+57
+00:01:46,880 --> 00:01:48,960
+language we can define a property on the
+
+
+58
+00:01:48,960 --> 00:01:50,960
+class and make it readable with get or
+
+
+59
+00:01:50,960 --> 00:01:52,720
+writable with set the language doesn't
+
+
+60
+00:01:52,720 --> 00:01:54,479
+have top level functions but rather
+
+
+61
+00:01:54,479 --> 00:01:56,399
+methods that are defined as a member of
+
+
+62
+00:01:56,399 --> 00:01:58,640
+a class however it does support lambda
+
+
+63
+00:01:58,640 --> 00:02:00,799
+expressions or anonymous functions and
+
+
+64
+00:02:00,799 --> 00:02:02,479
+other functional programming patterns
+
+
+65
+00:02:02,479 --> 00:02:03,759
+when it comes to asynchronous
+
+
+66
+00:02:03,759 --> 00:02:05,680
+programming it supports a task-based
+
+
+67
+00:02:05,680 --> 00:02:07,360
+asynchronous pattern allowing you to
+
+
+68
+00:02:07,360 --> 00:02:09,520
+write non-blocking code using the async
+
+
+69
+00:02:09,520 --> 00:02:12,000
+await syntax now to compile and execute
+
+
+70
+00:02:12,000 --> 00:02:14,239
+your code use the.net run command this
+
+
+71
+00:02:14,239 --> 00:02:16,720
+has been c sharp in 100 seconds hit the
+
+
+72
+00:02:16,720 --> 00:02:18,239
+like button and subscribe if you want to
+
+
+73
+00:02:18,239 --> 00:02:20,000
+see more short videos like this and let
+
+
+74
+00:02:20,000 --> 00:02:21,120
+me know in the comments if you want to
+
+
+75
+00:02:21,120 --> 00:02:23,520
+see a full.net or unity tutorial thanks
+
+
+76
+00:02:23,520 --> 00:02:25,360
+for watching and i will see you in the
+
+
+77
+00:02:25,360 --> 00:02:28,480
+next one
+
+

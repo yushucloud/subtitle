@@ -1,0 +1,4694 @@
+This course will help you learn what you need to implement graph algorithms and use them
+本课程将帮助您了解实现图算法并使用它们
+
+to solve coding challenges. Alvin's dynamic programming course is one of the most popular
+来解决编码挑战所需的知识。  Alvin 的动态编程课程是我们频道上最受欢迎的
+
+courses on our channel. And now he's back to teach you graph algorithms. Hey, programmers,
+课程之一。 现在他又回来教你图算法了。 嘿，程序员，
+
+I'm Alvin from Structy. Welcome to our course on graphs. And in particular, this is going
+我是 Structy 的 Alvin。 欢迎来到我们的图表课程。 特别是，这
+
+to be about graphs for your technical interviews. Of course, graphs are a very common topic
+将是关于你的技术面试的图表。当然，在那些技术面试中，图表是一个非常常见的话题
+
+when it comes to those technical interviews. And in particular, what I want to emphasize
+。特别是，我想在
+
+throughout this course, is the handful of patterns that come up time and time again,
+整个课程中强调的是，
+
+on those technical interviews. in just about two and a half hours, I'm going to give you
+在那些技术面试中一次又一次出现的少数模式。 在大约两个半小时内，我将为
+
+all the tools you need to basically cover I'd say about 80% of all graph problems. And
+您提供基本涵盖所有图形问题所需的所有工具。我会说大约 80% 的图形问题。
+
+so what I have in store for this course, well, I think the key to victory for your data structures
+所以我为这门课程准备的东西，嗯，我认为你的数据结构
+
+and algorithms, and especially your graphs is to visualize things, right. So we're going
+和算法，尤其是你的图表，取胜的关键是可视化事物，对吧。 所以我们
+
+to do is trace through a lot of different algorithms, and be sure to understand them
+要做的是追踪很多不同的算法，并确保
+
+at a high level. And that means going through different animations here, I think graphs
+在高层次上理解它们。 这意味着在这里要通过不同的动画，我认为图表
+
+have a pretty bad rap for being a difficult topic. Because to a beginner, you can have
+作为一个困难的话题有一个相当糟糕的说唱。 因为对于初学者来说，你可以
+
+very, very different narratives around a problem, and not really understand. They're all really
+围绕一个问题有非常非常不同的叙述，并且并不真正理解。 它们都是
+
+based on a graph premise. So we're going to realize that a bunch of different things can
+基于图的前提。 所以我们会意识到，一堆不同的东西可以
+
+be understood as graphs. So when it comes to the prerequisites of this course, I'm going
+被理解为图表。 因此，当谈到本课程的先决条件时，我
+
+to assume that you know nothing about graphs. But you do know how to code, right, so I'm
+将假设您对图表一无所知。但是你确实知道如何编码，对，所以
+
+going to have the expectation that you understand some recursion. So as you work through the
+我希望你理解一些递归。 因此，当您完成
+
+course, and learn about different graph patterns, we're going to use those patterns to solve
+课程并了解不同的图形模式时，我们将使用这些模式来解决
+
+some very classic interview problems about graphs, right. And I'm going to give you plenty
+一些关于图形的非常经典的面试问题，对吧。 我会给你
+
+of opportunity to practice these patterns in different problems that we will be ready
+很多机会在不同的问题中练习这些模式，
+
+whenever you have them on a technical interview. What I love about the topic of graphs is just
+只要你在技术面试中遇到它们，我们就会准备好。我喜欢图这个话题的地方在于
+
+using a handful of different algorithms, you can cover the majority of graph problems,
+使用了一些不同的算法，你可以涵盖大多数图问题，
+
+right. For every graph problem that we cover, we're going to split it up into two sections,
+对吧。 对于我们涉及的每个图形问题，我们将把它分成两部分，第一
+
+section one is going to be about the approach for the video. So we're going to go over the
+部分是关于视频的方法。 因此，我们将回顾
+
+strategy and overall theory, and be sure to sketch out a nice meaningful picture. We're
+战略和总体理论，并确保勾勒出一幅漂亮而有意义的画面。 我们
+
+also going to talk about the complexity of the algorithm in the approach video. Following
+还将在方法视频中讨论算法的复杂性。 遵循
+
+every approach, we're also going to implement the code of course, I'm going to be writing
+每一种方法，我们当然也将实现代码，我将
+
+all of my code in JavaScript, you'll be able to follow along in any language that you like.
+用 JavaScript 编写我所有的代码，你将能够使用任何你喜欢的语言来跟随。
+
+So that means occasionally I'll be switching to my code editor where you of course can
+所以这意味着偶尔我会切换到我的代码编辑器，你当然可以
+
+follow along. We're also going to be sure provide links in description as well as links
+跟随。 我们还将确保在描述中提供链接以及
+
+on screen. That way you can formerly you read the prompts for every problem, as well as
+在屏幕上提供链接。 这样，您以前就可以阅读每个问题的提示，以及
+
+look at the different test cases. Alright, I think that's enough introduction. For now,
+查看不同的测试用例。 好吧，我想这已经足够介绍了。 现在，
+
+let's hop right into the course. Alright, programmers. So let's jump right into the
+让我们直接进入课程。 好吧，程序员。 所以让我们直接进入
+
+course, I want to start by giving you some background about your graphs, we're going
+课程，我想首先给你一些关于你的图表的背景，我们
+
+to go over the graph basics that you need to start attacking problems in a technical
+将回顾你在技术面试中开始解决问题所需的图表基础知识
+
+interview. So first off, what is a graph? A graph is really just a collection of nodes
+。 那么首先，什么是图表？图实际上只是节点
+
+and edges. So with respect to nodes, you can visualize them as typically just some circles
+和边的集合。 因此，对于节点，您可以将它们可视化为通常只是一些
+
+with some data inside of them. So I'll put some letter values in my nodes over here.
+圆圈，其中包含一些数据。 所以我会在这里的节点中放一些字母值。
+
+And when we refer to edges, that would be just any connections between nodes. So for
+当我们提到边时，这只是节点之间的任何连接。
+
+example, if there was a connection between A and C, it would look something like this,
+例如，如果A 和 C 之间有联系，它看起来像这样，
+
+right? What I can formally say is there's an edge between A and C, I can create many
+对吧？ 我可以正式说的是A 和 C 之间有一条边，我可以
+
+edges between any nodes I want within this graph. Another word you might hear out in
+在该图中我想要的任何节点之间创建许多边。 在
+
+the wild when it comes to describing nodes, as you might hear the word vertex being used,
+描述节点时，您可能会在野外听到另一个词，就像您可能听到使用的词顶点一样，
+
+right, they're really the same thing. In this course, I'll stick to the word node. And an
+对，它们实际上是同一回事。 在本课程中，我将坚持使用节点一词。 一条
+
+edge is just a connection between a pair of nodes. And that's really all a graph is at
+边只是一对节点之间的连接。 这实际上是
+
+a high level, where things get interesting is how we can use this graph framework to
+一个高层次的图，有趣的是我们如何使用这个图框架来
+
+actually solve a problem, right. So if you think of these nodes as just things and the
+实际解决问题，对吧。 因此，如果您将这些节点视为事物，而将
+
+edges as relationships, a graph is grid describing the relationship between things. For example,
+边视为关系，那么图形就是描述事物之间关系的网格。 例如，
+
+we can say that the nodes here are cities and edges would be roads connecting cities
+我们可以说这里的节点是城市，边是连接城市的道路
+
+are in a similar way, maybe our nodes here are courses, and then the edges represent
+，类似地，也许我们这里的节点是课程，然后边代表
+
+prerequisites. And so in the future, we're going to use graphs as a way to illustrate
+先决条件。 因此，在未来，我们将使用图表来说明
+
+and frame some narrative problem. Let's talk about this graph. In particular, here, I really
+和构建一些叙述性问题。 让我们谈谈这个图表。 特别是这里，我
+
+have drawn a directed graph. And that's because I have some arrowheads along the edges. That
+真的画了一个有向图。 那是因为我在边缘有一些箭头。 这
+
+would be a comparison to an undirected graph. So here, I have really the same structure,
+将是与无向图的比较。所以在这里，我的结构实际上是相同的，
+
+except I don't have any arrowheads on the edges here. And that means that there is no
+只是我这里的边缘没有任何箭头。 这意味着它没有
+
+directionality to it right. If I look at the directed graph, let's say I was at the node
+正确的方向性。 如果我查看有向图，假设我在节点
+
+A, well, then I can travel to B or C, let's say I move to C. However, once I'm at C, I
+A，那么我可以前往 B 或 C，假设我移动到 C。但是，一旦我在 C，我
+
+cannot travel to a, I can only travel to E, right? That's because I have to obey the direction
+就无法前往 a， 我只能前往E，对吧？ 那是因为我必须服从
+
+of the arrow heads here. By take a look at my undirected graph, let's say I was currently
+这里箭头的方向。 看看我的无向图，假设我目前
+
+situated at the scene over here, that I do have the option of traveling to either a or
+位于这里的现场，我确实可以选择前往 a 或
+
+E, right? So if I traveled to a, that's all good, I can even travel back to C. So think
+E，对吗？ 所以如果我去了a，那很好，我什至可以回到C。所以
+
+of as an undirected graph as a two way street. For now we'll just continue on with our directed
+把一个无向图想象成一条双向街道。现在我们将继续我们的定向
+
+version. Let me also introduce some useful terminology we can use when talking about
+版本。 让我还介绍一些有用的术语，我们可以在讨论
+
+the nodes in our graph. If I was currently situated at this a node, I can refer to B
+图中的节点时使用。 如果我当前位于此节点，我可以将 B
+
+and C as neighbor nodes. Alright, so a neighbor node is really any know that's accessible
+和 C 称为邻居节点。 好的，所以邻居节点实际上是可以
+
+through an edge, of course, obeying the direction of the edge. In other words, if I was currently
+通过边缘访问的，当然，服从边缘的方向。 换句话说，如果我当前
+
+situated at the sea node, that I only have one neighbor of E, right, if I'm at the sea,
+位于海节点，那么我只有一个 E 的邻居，对，如果我在海中，
+
+you know, then I won't consider a neighbor. Awesome. When you visualize graph algorithms,
+你知道，那么我不会考虑邻居。惊人的。 当你可视化图形算法时，
+
+you should really sketch a picture that looks just like this, right literally drop nodes
+你真的应该画一张看起来像这样的图片，在这里，将节点
+
+as circles and arrows as your edges here. However, when it comes to how we implement
+作为圆圈和箭头作为你的边缘。然而，当谈到我们如何
+
+this algorithm in some code, we're gonna have to represent it in a more programmatic way.
+在一些代码中实现这个算法时，我们将不得不以一种更加程序化的方式来表示它。
+
+Right? So in my brain, I think of this image of like nodes and arrows between them. However,
+正确的？ 所以在我的大脑中，我想到了这个节点和它们之间的箭头的图像。 但是，
+
+in my program, I'm going to use typically an adjacency list, it's probably our preferred
+在我的程序中，我将通常使用邻接表，这可能是我们
+
+way to represent and graph information, right. So depending on the programming language of
+表示和绘制信息的首选方式，对吧。因此，根据
+
+choice we're going to use typically, we would use some hash map data structure to represent
+我们通常要使用的编程语言的选择，我们将使用一些哈希映射数据结构来
+
+an adjacency list. Really, we're looking forward to using some constant time, I'll look up
+表示邻接列表。 真的，我们期待使用一些常数时间，我会查找
+
+data structure that has a key value pair mapping, right. So if you're in JavaScript, they'll
+具有键值对映射的数据结构，对吧。 所以如果你在 JavaScript 中，它们将
+
+be an object, if you're in Python, they'll be a dictionary. If you're in a language like
+是一个对象，如果你在 Python 中，它们将是一个字典。 如果您使用
+
+Java, or C, you'll be using an unordered map. Looking at this hash map, I have drawn or
+Java 或 C 等语言，您将使用无序映射。看看这个哈希图，我已经绘制了
+
+this adjacency list, the keys of this adjacency list are going to be every node in my graph,
+这个邻接列表，这个邻接列表的键将是我图中的每个节点，
+
+right, so I just have all of the node values A through F laid out as the keys. However,
+对，所以我只是将所有节点值A 到 F 布置为键。 但是，
+
+if you look at the corresponding values, the values are actually going to be an array,
+如果您查看相应的值，这些值实际上将是一个数组，
+
+right? So if I look at this very first entry, it says that I have a node of a and then in
+对吗？ 因此，如果我查看第一个条目，它表示我有一个节点 a，然后在
+
+the array of populated all of the neighbors have a that is a has two neighbors have BNC.
+填充的数组中，所有邻居都有 a，即 a 有两个邻居有 BNC。
+
+That's why I have this correspondence within my adjacency list. That holds true for every
+这就是为什么我在我的邻接列表中有这个通信。 这适用
+
+entry within my adjacency lists. So for example, let's say look at the entry for e. So I go
+于我的邻接列表中的每个条目。 例如，假设查看 e 的条目。 所以我
+
+to the spot and make j c list where the key is E, it only has a one outgoing edge to be.
+去现场并列出关键是 E 的 j c 列表，它只有一个出边。
+
+That's why the array for he only has be inside of it. One thing to also note is even if a
+这就是为什么他的阵列只有在里面。 还要注意的一件事是，即使一个
+
+node has no neighbors, it should still appear as a key within my adjacency list. For example,
+节点没有邻居，它仍然应该作为我的邻接列表中的键出现。 例如，
+
+if you look at the D, node D has no outgoing edges. That's why its neighbor array is empty.
+如果您查看 D，节点 D 没有出边。 这就是为什么它的邻居数组是空的。
+
+However, it should still at least appear as a key within my adjacency lists, right, that
+但是，它至少应该仍然作为我的邻接列表中的键出现，对，
+
+way, you can still know that the D node exists. So at the start of the course, will usually
+这样，您仍然可以知道 D 节点存在。所以在课程开始时，通常
+
+be taking in adjacency list as the information to represent a graph, right. But as we sketch
+会以邻接表作为信息来表示一个图，对吧。 但是当
+
+through things on the whiteboard, we should be visualizing them using a nice picture like
+我们在白板上画草图时，我们应该使用像这样的漂亮图片来可视化它们
+
+this. Awesome. So let's actually jump into our first pair of algorithms. To me, the must
+。 惊人的。 所以让我们真正进入我们的第一对算法。 对我来说，必须
+
+know algorithm for a graph is really going to be to do some sort of traversal on it.
+知道的图算法实际上是对其进行某种遍历。
+
+Why don't we start by talking about a depth first traversal, something you may have heard
+我们为什么不从深度优先遍历开始，你
+
+of before, right, now we're going to talk about the depth first traversal algorithm
+之前可能听说过，对，现在我们将讨论对图进行操作的深度优先遍历算法
+
+that operates on a graph. So let's start by understanding at a high level what order a
+。 因此，让我们首先从高层次了解
+
+depth first traversal would give you. So let's say I had some starting node, and I'm gonna
+深度优先遍历会给您带来什么顺序。假设我有一些起始节点，我将
+
+choose a as my starting node, right, so I'm gonna color it here in yellow. If I was following
+选择 a 作为起始节点，对，所以我将这里用黄色着色。 如果我
+
+a depth first traversal. Now that I've, you know, chosen as my starting point, I can either
+遵循深度优先遍历。 现在我已经选择了作为起点，我可以按
+
+hit B or C. Next, I'm just gonna commit to using B. So let's say I had the sequence so
+B 或 C。接下来，我将承诺使用 B。所以假设我的序列
+
+far have a comma b. And at this point, if I was truly following a depth first traversal,
+到目前为止有一个逗号 b。 在这一点上，如果我真的遵循深度优先遍历，
+
+I must go deeper to the D node. In other words, I don't go to the C node yet. Cool, that would
+我必须深入到 D 节点。 也就是说，我还没去C节点。 很酷，那
+
+be a true depth first traversal, right. At this point, now that I've bottomed out at
+将是真正的深度优先遍历，对吧。 在这一点上，现在我已经在
+
+D, D is a dead end, right? I can't travel to F from D, because that would be disobeying
+D 触底，D 是死胡同，对吧？ 我不能从 D 到 F，因为那会
+
+the arrowhead. And so now I can move to that other neighbor of C. And from here, the algorithm
+违反箭头。 所以现在我可以移动到C 的另一个邻居。从这里开始，算法
+
+would continue, right, I go from C to E, and then e to B. And technically, I would have
+将继续，对，我从 C 到 E，然后从 e 到 B。从技术上讲，我
+
+to double traverse some nodes like B and D over here. So overall, in this yellow coloring,
+必须双重遍历一些节点，比如 B 和D在这里。 所以总的来说，在这个黄色着色中，
+
+I have colored the full region that a depth first traversal would explore starting at
+我已经为深度优先遍历将从
+
+a notice that if you started at a it would be impossible to reach F. And that's kind
+一个通知开始探索的整个区域着色，如果你从 a 开始，就不可能到达 F。
+
+of normal, right? That's kind of why we use these traversal algorithms that can tell you
+这很正常，对吧？ 这就是为什么我们使用这些遍历算法来告诉您
+
+whether or not you can travel between some nodes. And we'll see that literal problem
+是否可以在某些节点之间旅行的原因。 我们稍后会看到这个字面问题
+
+later on. Right? So you're probably wondering, you know, exactly how do we implement this,
+。 正确的？ 所以你可能想知道，你知道，我们究竟如何实现这一点，
+
+but for now, I just want to stay focused on the order that we got, right. So just regarding
+但现在，我只想专注于我们得到的顺序，对吧。 所以就
+
+our depth first traversal, we remember the first three iterations of the algorithm, we
+我们的深度优先遍历而言，我们记得算法的前三个迭代，我们
+
+hit the sequence of a B, D, right, that's indicative of a depth first traversal. Now
+击中了 B、D 的序列，对，这表示深度优先遍历。 现在
+
+let's compare that to the breadth first Marion. So I'm going to lay down the same exact graph,
+让我们将其与广度优先的 Marion 进行比较。所以我要绘制相同的精确图，
+
+we're also going to start a traversal at the a node, but this time follow a breadth first
+我们还要在 a 节点处开始遍历，但这次遵循广度优先
+
+order. So I have a first and let's say, you know, I chose B as my next node when it comes
+顺序。 所以我有一个第一个，假设你知道，当涉及到广度优先遍历时，我选择 B 作为我的下一个节点
+
+to breadth first traversal. It doesn't matter like which, you know, initial neighbor you
+。 不管你选择哪个，你知道，最初的邻居
+
+choose, so I'm just gonna choose B. But now that I've chosen B, if I was following a true
+，所以我只会选择 B。但是现在我选择了 B，如果我遵循真正的
+
+breadth first traversal, I must hit c next, right. And that's the main difference between
+广度优先遍历，我接下来必须点击 c，正确的。 这就是同一张图
+
+our depth first and breadth first reversals for the same graph, my depth first would start
+的深度优先和广度优先反转之间的主要区别，我的深度优先会
+
+a B, D, whereas my breadth first would start a, b, c. And so you're probably wondering,
+从 B、D 开始，而我的广度优先会从a、b、c 开始。 所以你可能想知道，
+
+is there any importance between this nuance right? When would I prefer depth first over
+这种细微差别之间有什么重要性吗？ 我什么时候更喜欢深度优先而不是
+
+breadth first, or vice versa? Either a depth first or breadth first traversal would explore
+广度优先，反之亦然？ 深度优先或广度优先遍历将探索图
+
+the same exact nodes within a graph. However, it would explore them in a different order,
+中相同的确切节点。 但是，它会以不同的顺序探索它们，
+
+right? And this is more obvious to see when we have a larger graph with way more edges.
+对吧？ 当我们有一个更大的图和更多的边时，这一点就更明显了。
+
+And so let's look at how he depth first traversal explores again, but this time on a much larger
+因此，让我们看看他如何再次进行深度优先遍历，但这次是在一个更大的
+
+graph, let's take a look at this one. So I'm going to choose some random node as a starting
+图表上，让我们来看看这个。 所以我要选择一些随机节点作为
+
+point, let's say I chose this node in yellow, that was doing a depth first traversal, what
+起点，假设我选择了黄色的这个节点，这是进行深度优先遍历，
+
+I'm going to do is, you know, pick a direction and travel in that same direction as far as
+我要做的是，你知道的，选择一个方向并进入
+
+possible before switching directions. So let's say I move to the right, at this point, I
+在切换方向之前尽可能同一个方向。 那么假设我向右移动，此时，
+
+would have to continue moving toward the right, until I can't move to the right any longer,
+我必须继续向右移动，直到我不能再向右移动
+
+at which point, I have to choose some new directions, let's say it was downward. I'll
+，此时我必须选择一些新的方向，比如说 是向下的。 我会
+
+keep doing that until I can't move downward anymore. And so I'd have to move to the left
+一直这样做，直到我不能再向下移动。 所以我现在必须向左移动
+
+now, now I'd keep chasing this single path in a very deep direction. So that's behavior
+，现在我将继续朝着非常深的方向追逐这条单一的道路。 所以这
+
+indicative of a depth first traversal, right, you're exploring one direction as far as possible
+是深度优先遍历的行为，对，你
+
+before switching directions. Let's compare that to a breadth first traversal. So let's
+在切换方向之前尽可能地探索一个方向。 让我们将其与广度优先遍历进行比较。 所以
+
+say start at the same node in pink, if I was following a breadth first traversal, it would
+假设从粉红色的同一个节点开始，如果我遵循广度优先遍历，它
+
+look something like this. From the starting point, I would explore all of the immediate
+看起来像这样。 从起点开始，我会探索
+
+neighbors of this node, kind of in a circle like this. Now I just keep applying that behavior.
+这个节点的所有直接邻居，有点像这样的圆圈。 现在我只是继续应用这种行为。
+
+So as you notice about the breadth first traversal, is it'll tend to explore you know, all directions
+因此，当您注意到广度优先遍历时，它是否会倾向于均匀地探索所有方向
+
+evenly, right, instead of just favoring One Direction all the way through. That's really
+，对，而不是一直偏爱一个方向。 这实际上
+
+the only difference between a depth first and breadth first traversal. Later on the
+是深度优先和广度优先遍历之间的唯一区别。 在
+
+course, I'll bring up explicit problems where you might prefer one over the other. All right,
+课程的稍后部分，我将提出明确的问题，您可能更喜欢其中一个。 好吧，
+
+but for now, what I want to do is give you all the background you need. So you can actually
+但是现在，我想做的是给你所有你需要的背景。 所以你实际上可以
+
+build this algorithm will kind of talk about things at a high level, consider this the
+构建这个算法，在高层次上讨论一些事情，把它
+
+pseudocode, then, of course, we'll express it in some JavaScript code later on. So when
+当作伪代码，然后，当然，我们稍后会用一些 JavaScript 代码来表达它。 因此，
+
+it comes to actually implementing in code, these two algorithms, the key is to understand
+当涉及到在代码中实际实现这两种算法时，关键是要
+
+that a depth first traversal uses a stack, and a breadth first traversal uses a queue,
+了解深度优先遍历使用堆栈，而广度优先遍历使用队列，请
+
+recall that a stack is something where you add to the top and remove from the top as
+记住堆栈是您添加到顶部的东西 也从顶部移除
+
+well, or is it Q is something where you add to the back and remove from the front, and
+，或者 Q 是你添加到后面并从前面移除的东西，
+
+it gives you two very different orderings. That's really the only difference between
+它给你两个非常不同的顺序。这实际上是这两种算法之间的唯一区别
+
+these two algorithms. So let's start by tracing through our depth first traversal, of course,
+。 因此，让我们从跟踪深度优先遍历开始，当然，
+
+using a stack, so I'm going to use a slightly different graph. And to visualize my stack,
+使用堆栈，所以我将使用稍微不同的图。 为了可视化我的堆栈，
+
+I'm going to use this bar to represent the bottom of my stack, obviously, for me, at
+我将使用这个条来表示堆栈的底部，显然，对我来说，
+
+least I think of a stack as some vertical data structure. Cool. So let's say I just
+至少我认为堆栈是一些垂直的数据结构。 凉爽的。 所以假设我只是
+
+arbitrarily chose a as my starting node to perform my depth first traversal, right, in
+随意选择了一个作为我的起始节点来执行我的深度优先遍历，对，
+
+the long run, just want to print out all different node values within this graph. So what I'm
+从长远来看，只是想打印出这个图中所有不同的节点值。 所以
+
+gonna do is I'm gonna take my starting node of a, and I'm just gonna immediately initialize
+我要做的是，我将获取我的起始节点 a，我将立即将
+
+it onto my stack. So right now as the only thing on my stack, it's also at the top of
+它初始化到我的堆栈中。 所以现在作为我堆栈中唯一的东西，它也在我堆栈的顶部
+
+my stack. And now I can enter the flow of the main algorithm here, because I have a
+。 而现在我可以在这里进入主算法的流程了，因为我有一个
+
+stack, what I can only do is remove the top of my stack. So that means I pop off a from
+栈，我唯一能做的就是移除我的栈顶。 所以这意味着我
+
+the stack, and consider the a node, my current node being looked at, right? At this point,
+从堆栈中弹出 a ，并考虑 a 节点，我正在查看当前节点，对吗？ 此时，
+
+let's say I print out a to my console. And from here, what I want to do is consider A's
+假设我将 a 打印到控制台。从这里开始，我想做的是考虑 A 的
+
+neighbors, right. So if I look at the C node, what I should do is just push c to the stack,
+邻居，对。 所以如果我看C节点，我应该做的就是将c推入堆栈，
+
+then also push B to the stack, right. And it doesn't matter like in which order you
+然后将B也推入堆栈，对吧。你按什么顺序
+
+push these neighbors. If I want it to hit B first, then I'm going to push them second,
+推动这些邻居并不重要。 如果我想让它先击中B，那么我会第二次推他们，
+
+right? Awesome. That would end like my first iteration of this depth first traversal. Cool.
+对吗？ 惊人的。 这将像我对深度优先遍历的第一次迭代一样结束。 凉爽的。
+
+So at this point, I can look at my stack, and my stack still has some data on it. So
+所以此时，我可以查看我的堆栈，我的堆栈上仍然有一些数据。 所以
+
+I should do is again, pop the top of my stack. So I'm going to pop and be off my stack. And
+我应该做的是再次弹出我的堆栈顶部。所以我要弹出并离开我的堆栈。
+
+that becomes my current, I'm also going to print it out. At this point, I look at B's
+这成了我现在的样子，我也要把它打印出来。 此时，我查看 B 的
+
+neighbors, B has one neighbor of D and so I push d to the top of the stack. Notice that
+邻居，B 有一个 D 的邻居，所以我将 d 推到堆栈的顶部。 请注意，
+
+because I have a stack D ends up on top of the C, right. And so now when I get to another
+因为我有一个堆栈 D 最终位于 C 的顶部，对。 所以现在当我进行另一个
+
+iteration, when I pop the top of my stack, I look at the D node as my current, right,
+迭代时，当我弹出堆栈的顶部时，我将 D 节点视为我的当前节点，对
+
+and I can print out D. And this feels good because so far, my print order would be a
+，我可以打印出 D。这感觉很好，因为到目前为止，我的打印顺序会 成为
+
+BD, notice that I kind of pursued that single path deeply following a BD. But I have to
+BD，请注意，我有点追随 BD 的单一路径。 但是我必须
+
+look at DS neighbors, I can take f and just push f to the top of my stack. next iteration,
+查看 DS 邻居，我可以取 f并将 f 推到我的堆栈顶部。 下一次迭代，
+
+my stack is still on empty. So I should do is pop the top F is now my current, I can
+我的堆栈仍然是空的。 所以我应该做的是弹出顶部的 F 现在是我当前的，我可以
+
+print out F, but f has no neighbors. So F isn't going to push anything else to the top
+打印出 F，但 f 没有邻居。 所以F 不会将其他任何东西推到
+
+of the stack. Right? At this point, I get to this next pass, and I pop the top of my
+堆栈的顶部。 正确的？ 在这一点上，我到达了下一个通道，并且我弹出了堆栈的顶部
+
+stack. And that means C is now my current, I can print out CS value. And then I can look
+。 这意味着 C 现在是我的当前值，我可以打印出 CS 值。 然后我可以
+
+at Sue's neighbors. And I just push e to the top of my stack. On this last iteration, I
+看看苏的邻居。 我只是将 e 推到我的堆栈顶部。 在最后一次迭代中，我
+
+popped up on my stack, he is now my current I print out he since he has no neighbors,
+弹出了我的堆栈，他现在是我的当前我打印出他，因为他没有邻居，
+
+I don't push anything else to the top of my stack. And at this point, I've reached the
+我没有将其他任何东西推到我的堆栈顶部。 在这一点上，我已经达到
+
+state where my stack is empty. And that means my algorithm is done right that means you
+了我的堆栈为空的状态。 这意味着我的算法是正确的，这意味着你
+
+explored as far as possible within your graph. Notice that it might not necessarily be the
+在你的图表中尽可能地探索。请注意，您可能不一定
+
+case that you're able to hit every node of the graph. And this particular example it
+能够点击图表的每个节点。 这个特殊的例子
+
+was possible though, awesome. So let's redo that trace using Our breadth first algorithm,
+是可能的，太棒了。 因此，让我们使用广度优先算法重做该跟踪，
+
+which means we just adjust things slightly. And we use a queue order. Remember that a
+这意味着我们只需稍微调整一下。我们使用队列顺序。 请记住，
+
+queue is a first in first out data structure, meaning things enter to the back, and then
+队列是先进先出的数据结构，这意味着事物从后面进入，
+
+they leave from the front. And so let's say I use this arrow to represent the directionality
+然后从前面离开。 所以假设我用这个箭头来表示
+
+of my queue, right. And I start the algorithm in the same way for my breadth first traversal.
+我的队列的方向性，对吧。对于广度优先遍历，我以同样的方式启动算法。
+
+Let's say I want it to begin at node A. So I just initialize my queue with a cool, so
+假设我希望它从节点 A 开始。所以我只是用酷初始化我的队列，所以
+
+I start by removing the front of my queue. So a becomes my current node, I can print
+我从删除队列的前面开始。所以 a 成为我当前的节点，我也可以打印
+
+out a as well. And now I consider A's neighbors, right. So I consider B and C. If I wanted
+出 a 。 现在我考虑 A 的邻居，对。 所以我考虑 B 和 C。如果我想
+
+to travel to B before C, then I should push B to my queue first, right, so I add B to
+在 C 之前前往 B，那么我应该先将 B 推到我的队列中，对，所以我将 B 添加到
+
+the back of my queue, right. And I should also add c to the back of my queue, right.
+队列的后面，对。 而且我还应该将 c 添加到队列的后面，对。
+
+And that would actually end my first iteration. So now I look at my queue still has some stuff
+这实际上会结束我的第一次迭代。所以现在我看看我的队列上还有一些
+
+on it. So I removed the front of my queue, that means B becomes my current. Of course,
+东西。 所以我删除了队列的前面，这意味着 B 成为我当前的。 当然，
+
+I print out B. Now I consider B's neighbors. So I just look at the D node, and I push d
+我打印出 B。现在我考虑 B 的邻居。所以我只看 D 节点，我将 d 推
+
+to the back of the queue, since D enters through the back and ends up behind the C, and that's
+到队列的后面，因为 D从后面进入并最终在 C 后面，这是
+
+really important behavior. next iteration, I removed the front of my queue. So my current
+非常重要的行为。 下一次迭代，我删除了队列的前面。 所以我的当前
+
+is now see, right, I can print out see, and then look at sees neighbors of just E and
+是see，对，我可以打印出see，然后looks只看到E的邻居，
+
+I add e to the back of the queue, which means that in the order of my queue, he ends up
+我把e加到队列的后面，也就是说按照我的队列顺序，他最后在
+
+behind the my next iteration, I removed D from the queue, and I print out the edits
+后面 在我的下一次迭代中，我从队列中删除了 D，并将 F 的编辑
+
+neighbor of F to the back of my queue. next iteration, I removed e from the front of my
+邻居打印到队列的后面。 下一次迭代，我从队列的前面删除了 e
+
+queue, print it out. Since he has no neighbors, he is not going to add anything else to the
+，打印出来。 由于他没有邻居，他不会在队列后面添加任何其他内容
+
+back of the queue. And of course, finally, f leaves the front of my queue, I print out
+。 当然，最后，f 离开了我的队列的前面，我打印出
+
+F, F has no neighbors, at which point now my queue is totally empty. And since our queue
+F，F 没有邻居，此时我的队列完全是空的。 由于我们的队列
+
+is empty, that would be the end of our algorithm. Alright, and that's all there is to our depth
+是空的，这将是我们算法的结束。好的，这就是我们的深度
+
+first and breadth first algorithms, they're going to be the nice baseline code that we
+优先和广度优先算法的全部内容，它们将成为我们
+
+use to solve many different graph problems. I think that's enough theory. For now, what
+用来解决许多不同图形问题的很好的基线代码。我认为这是足够的理论。 现在，
+
+I want to do is now switch to my code editor, where you can actually implement these in
+我想做的是切换到我的代码编辑器，在那里你可以在 JavaScript 中实际实现这些
+
+JavaScript, hey, programmers, here I am in my editor, what I want to do is now show you
+，嘿，程序员，我在我的编辑器中，我现在想做的是向你
+
+how to implement those depth first and breadth first algorithms. So we'll start with the
+展示如何实现这些深度 第一和广度优先算法。 所以我们先从
+
+depth first. And my goal is really just to build a function that will print out all of
+深度开始。 我的目标实际上只是构建一个函数，它会
+
+my values in the graph, according to a depth first traversal, right, we're going to define
+根据深度优先遍历在图中打印出我的所有值，对，我们将定义
+
+this function depth first print, making an arrow function in JavaScript, it's going to
+这个函数深度优先打印，在 JavaScript 中创建一个箭头函数，
+
+take in the graph, which is going to be given as a nice adjacency list. And this is actually
+它将包含图表，这将作为一个很好的邻接列表给出。 这实际上
+
+the same graph. Now last example we traced out, I'm also going to need to specify some
+是同一张图。 现在我们追踪的最后一个示例，我还需要在这里指定一些
+
+starting node here, I'll call it a source node, we're going to begin the traversal.
+起始节点，我将其称为源节点，我们将开始遍历。
+
+Starting at that node. Cool. And so we know inherent to a depth first traversal is going
+从那个节点开始。 凉爽的。 所以我们知道深度优先遍历所固有的
+
+to be a stack. So I'll show you how to implement this iteratively, which means you need an
+将是一个堆栈。 因此，我将向您展示如何迭代地实现它，这意味着您需要一个
+
+explicit stack. For me in JavaScript, that's as simple as just using a JavaScript array,
+显式堆栈。 对我来说，使用 JavaScript 就像使用 JavaScript 数组一样简单，
+
+right? I'll make it empty at the start. And I can use this array as a stack, if I just
+对吧？ 我会在开始时将其设为空。如果我只是
+
+commit to using operations that manipulate the same end of the array. In other words,
+承诺使用操作数组同一端的操作，我可以将此数组用作堆栈。 换句话说，
+
+if I just use push and pop, that will always manipulate the end of the array, right? removing
+如果我只使用 push 和 pop，那总是会操纵数组的末尾，对吧？ 删除
+
+and adding to the end of that array. What I want to actually be sure to do is I want
+并添加到该数组的末尾。我实际上要确保做的是我想
+
+to initialize the stack with my starting node, that is with my source node. Remember that
+用我的起始节点初始化堆栈，也就是我的源节点。 请记住，
+
+like a node here is really just designated by some character. Cool. And when it comes
+这里的节点实际上只是由某个字符指定的。 凉爽的。 当涉及
+
+to designing like the main loop for the algorithm here, do you want to keep running the algorithm
+到像这里的算法的主循环那样设计时，你想
+
+while the stack is not empty? In other words, wall stack dot length is bigger than zero,
+在堆栈不为空的时候继续运行算法吗？ 换句话说，墙堆栈点长度大于零
+
+that I have to keep running. That's very reminiscent to what we expressed on the whiteboard. So
+，我必须继续运行。 这让人想起我们在白板上表达的内容。 因此，
+
+when it comes to performing like a single iteration of this depth first, what I want
+当首先要执行此深度的单次迭代时，
+
+to do is remove the top of my stack. So if I do stack dot pop, that will remove the last
+我想要做的是移除堆栈的顶部。 因此，如果我执行 stack dot pop，这将删除数组的最后
+
+item of an array, in this case like the top of my stack, and also return it to me. So
+一项，在这种情况下，就像我的堆栈顶部一样，并将其返回给我。 所以
+
+I'm going to save that to a variable, I'll call it my current. And so this point would
+我要把它保存到一个变量中，我称之为我的当前。 因此，这一点
+
+actually be a great opportunity to just print out that current. So I'll console dot log
+实际上是打印出该电流的绝佳机会。 所以我会控制台点日志
+
+current, right? So looking at, you know, this example over here, since I initialize a stack
+当前，对吧？ 所以看看，你知道，这个例子在这里，因为我初始化了一个堆栈
+
+to contain just the source note of a, on the very first iteration, this while loop, I would
+以只包含 a 的源注释，在第一次迭代时，这个 while 循环，
+
+of course, pop out a, then I would print it out, right. And from that point, what I want
+我当然会弹出 a，然后我会打印它出来，对。 从那时起，我想做的
+
+to do is consider A's neighbors of B and C. So if I want to look at like the array associated
+是考虑 A 的 B 和 C 的邻居。所以如果我想查看与 a 关联的数组
+
+with a, I can just key into my graph, right, cuz my graph is an object right now. So if
+，我可以键入我的图表，对，因为我的图表是一个对象，对 现在。 因此，如果
+
+I say graph, square bracket, current, right, if current is a, that means graph, square
+我说图形，方括号，电流，对，如果电流是 a，这意味着图形，方
+
+bracket current would give me back this array. I want to iterate through every node or every
+括号电流会给我这个数组。我想遍历
+
+neighbor in that array. So I'm going to nest a loop here. And I say for let neighbor of
+该数组中的每个节点或每个邻居。 所以我要在这里嵌套一个循环。 我说让
+
+that array. So if you're familiar in JavaScript, if you just use a for of loop, they'll iterate
+那个数组的邻居。 因此，如果您熟悉 JavaScript，如果您只使用 for of 循环，它们将
+
+an order through an array. So now I'm hitting a neighbor as B and neighbors see. What I
+通过数组迭代一个订单。 所以现在我像 B 和邻居看到的那样打了一个邻居。 我
+
+want to do with those neighbors is simply Push them to the top of my stack. So that
+想对这些邻居做的只是将它们推到我的堆栈顶部。 所以这
+
+will just be stacked up, push and push this neighbor. Awesome, I'm going to be sure to
+只会堆积起来，推动并推动这个邻居。 太棒了，我一定会
+
+push every single neighbor that has. So sometimes I'll have two neighbors. Other times I'll
+推动每一个拥有的邻居。 所以有时我会有两个邻居。 其他时候我
+
+have one neighbor, or even no neighbors. That's really all there is to implementing a nice
+会有一个邻居，甚至没有邻居。这就是实现良好的
+
+baseline depth first print. Something that I do want to point out, my favorite way to
+基线深度优先打印的全部内容。我确实想指出一点，我最喜欢的
+
+implement this algorithm is to consider like processing your node, when it leaves the stack,
+实现这个算法的方法是考虑像处理你的节点，当它离开堆栈时，
+
+not when it enters the stack. In other words, I usually write like my print statement, right
+而不是当它进入堆栈时。 换句话说，我通常像我的打印语句那样写，就
+
+after something is popped. And the thing that I pop is exactly what I print. Right. So let's
+在弹出某些东西之后。 我弹出的东西正是我打印的东西。 正确的。 所以让我们
+
+go ahead and give this a run, see what we get. It looks like in my terminal, I got the
+继续尝试一下，看看我们得到了什么。 看起来在我的终端中，我得到
+
+order of AC e b df, which you'll notice is slightly different from what I expected from
+了 AC e b df 的顺序，你会注意到这与我
+
+over here. However, this would be also a valid depth first traversal, we have to bear in
+在这里的预期略有不同。 然而，这也是一个有效的深度优先遍历，我们必须
+
+mind is you know, depending on like the arbitrary order of values within the same neighbor's
+记住，你知道吗，取决于同一个邻居数组中值的任意顺序
+
+array, you could tend a different direction at first, right? Most important thing I look
+，你一开始可能会倾向于不同的方向，对吧？ 在首先验证深度时，我寻找的最重要的事情
+
+for when it comes to verifying a depth first is to make sure that I you know, chase the
+是确保我知道，
+
+same direction before switching directions, right. So since I started out with a C, so
+在切换方向之前追逐相同的方向，对。 因此，由于我从 C 开始，所以
+
+I go a and then to a C over here, the next move would be going to E and that's exactly
+我先选择 a，然后再选择 C，下一步将是 E，这
+
+what happened in my code, right. And then once I hit E is actually a dead end. So then
+正是我的代码中发生的事情，对吧。 然后一旦我击中E实际上是一个死胡同。 这样
+
+I can go on to my other lateral neighbor like B, right. And so I can contrive the same order
+我就可以继续找我的另一个横向邻居，比如B，对。 所以我可以设计出与这里预期的相同的顺序
+
+expected here, if I just flipped this right. And so I put c followed by B. I'll give that
+，如果我把它翻对了。所以我把 c 放在 B 后面。我会给出
+
+around. They're both valid. depth first traversals. See what we got now. Cool, now I get the exact
+这个。 它们都是有效的。 深度优先遍历。看看我们现在得到了什么。 酷，现在我得到
+
+order of A, B, D, F, C. And really think about why that is, right. So let's say that I just
+了 A、B、D、F、C 的确切顺序。真的想想为什么会这样，对。 所以假设我刚刚
+
+popped out a from my stack. So I printed out a that's nothing fancy, right. And then from
+从我的堆栈中弹出一个。 所以我打印了一个没什么花哨的，对吧。 然后从
+
+there, I start iterating through the array that's associated with a right, so on the
+那里开始，我开始遍历与权限关联的数组，所以在第
+
+first iteration, I iterate through C, right? If I push C on the stack, let's say this is
+一次迭代时，我遍历 C，对吗？如果我将 C 压入堆栈，假设这是
+
+the bottom my stack, by pushing on the stack, it's right here. Then followed by that I pushed
+我的堆栈底部，通过压入堆栈，它就在这里。 然后我将
+
+B on the stack. Now B is on top. Since B is on top, I know like the next top level iteration,
+B 压入堆栈。 现在B在上面。 由于 B在顶部，我知道像下一个顶级迭代，
+
+this while loop, I would remove B and that's going to be the next note I visit. And so
+这个 while 循环，我会删除 B，这将是我访问的下一个注释。 所以
+
+they're really both depth for sure Russell's. Nice. So two things to note, you're definitely
+他们确实都是拉塞尔的深度。好的。 所以有两点需要注意，你肯定
+
+going to use a stack to implement depth reversal. And you can use the stack in a few different
+会使用堆栈来实现深度反转。您可以通过几种不同的方式使用堆栈
+
+ways. Right? So here I'm using like an explicit like array as a stack. And I'm implementing
+。 正确的？ 所以在这里我使用像一个明确的像数组作为堆栈。 我正在
+
+this using some iterative code, right. So using a few loops, right, what you can also
+使用一些迭代代码来实现这一点，对。 所以使用几个循环，对，你还可以
+
+do is implement depth first recursively, because I know any recursion uses the underlying call
+做的是首先递归实现深度，因为我知道任何递归都使用底层调用
+
+stack. So let me show you how to implement that as well. And when it comes to, you know,
+堆栈。 因此，让我向您展示如何实现它。 当谈到，你知道，
+
+having all these different tools in your arsenal, I would definitely practice both the iterative
+在你的武器库中拥有所有这些不同的工具时，我肯定会练习迭代
+
+and recursive flavors. We'll see that later on in this course. So let's say I wanted to
+和递归的风格。 我们稍后会在本课程中看到这一点。 所以假设我想
+
+solve the same problem. But now recursively, it's actually going to be less code. So I'm
+解决同样的问题。 但现在递归地，它实际上将是更少的代码。 因此，我
+
+going to have the same sort of arguments, I'm going to have the graph which is the adjacency
+将使用相同类型的参数，我将拥有
+
+list as well as a source node, consider like the source node as like your current location.
+作为邻接列表和源节点的图形，将源节点视为您当前的位置。
+
+So if I'm at some node, maybe the first thing I should do is just print out myself, right,
+所以如果我在某个节点，也许我应该做的第一件事就是打印出自己，对，
+
+print out this node, so I'll do is console dot log, this source node. And that feels
+打印出这个节点，所以我要做的是控制台点日志，这个源节点。
+
+good just from the get because when we actually do a top level call to this recursive function,
+从一开始就感觉很好，因为当我们实际上对这个递归函数进行顶级调用时，
+
+they're passing in a as the source node. So I do want to begin a as a first note in my
+它们将 a 作为源节点传入。 所以我确实想在我的印刷品中作为第一个音符开始
+
+print, and then from there, I need to look at AES neighbors. Well, if you want to look
+，然后从那里，我需要看看 AES 邻居。 好吧，如果你想像以前一样
+
+at as neighbors like before, just key into the graph, adjacency list using that node,
+查看邻居，只需键入图形，使用该节点的邻接列表，
+
+right, and this would give me an array of CNB. Now I just iterate through that array.
+对，这会给我一个CNB 数组。 现在我只是遍历那个数组。
+
+So I'll say for let neighbor of that array. And at this point, what I want to do is now
+所以我会说 for let 那个数组的邻居。在这一点上，我现在
+
+do the recursion, right, so I make a recursive call on each of these neighbors. So for me,
+想做的是进行递归，对，所以我对这些邻居中的每一个进行递归调用。 所以对我来说，
+
+that means just called depth first print, you give the same graph, right, the graph
+这意味着只是称为深度优先打印，你给出相同的图形，对，图形
+
+object doesn't change, but you should change like the source node. Now you want to pass
+对象没有改变，但你应该像源节点一样改变。 现在您想
+
+in that neighbor as the source node. And you're going to make a recursive call for every neighbor
+将该邻居作为源节点传入。 你将对该数组中的每个邻居进行递归调用
+
+in that array. And this would actually be all we need. Let's go ahead and just run this
+。 这实际上就是我们所需要的。 让我们继续运行这个
+
+version. divider run over here. Looks like now we get the order AC E, B, D, F. And that's
+版本。 分频器跑过来。 看起来现在我们得到了 AC E、B、D、F 的顺序。这
+
+really again, another type of depth first print, right, not exactly this order, because
+真的又是另一种深度优先打印，对，不完全是这个顺序，因为
+
+this time we chased c first, right, we went a C, I want to get exactly this ordering and
+这次我们先追逐 c，对，我们去了 C， 我想得到这个顺序和
+
+my recursion, then I would have to put in B first, really same sort of pattern. Now
+我的递归，然后我必须先输入B，真的是相同的模式。 现在
+
+let's get that into the run. Good AB de FC. One thing I want to bring up about this recursive
+让我们开始运行。 好 AB de FC。关于这个递归，我首先要提出的一件事
+
+first is it has no explicit base case, meaning there's no obvious like, if statement that
+是它没有明确的基本情况，这意味着没有明显的 like, if 语句，
+
+just like returns like you'd typically see in most recursion. That's because in this
+就像你通常在大多数递归中看到的那样返回。 那是因为在这个
+
+problem I have an implicit base case when a node like he is a dead end. All right, let's
+问题中，当像他这样的节点是死胡同时，我有一个隐含的基本情况。 好吧，
+
+say my current source coming in is he, well, then when I iterate in this for loop, I'm
+假设我当前的来源是他，那么当我在这个 for 循环中迭代时，我正在
+
+iterating through this empty array, I mean to have zero iterations. If you have zero
+迭代这个空数组，我的意思是有零次迭代。 如果您的
+
+iterations, then you never make a recursive call. Right? That's the same thing as having
+迭代次数为零，那么您永远不会进行递归调用。 正确的？ 这和有
+
+a base case, right? A base case is really just a scenario where we don't have a recursive
+一个基本案例是一样的，对吧？ 基本案例实际上只是我们没有递归调用的场景
+
+call. So that's how this code still works. Alright, so now you know how to implement
+。 所以这就是这段代码仍然有效的方式。好的，现在您知道如何
+
+depth first in two ways, right, iterated and recursively. And they both use definitely
+首先通过两种方式实现深度，对，迭代和递归。 他们都使用
+
+a stack. Let me now show you how to implement your breadth first, right as well comment
+绝对堆栈。 现在让我向您展示如何首先实现您的广度，以及
+
+out some of this code. Now we'll do a nice breath first, give myself some room over here.
+注释掉其中的一些代码。 现在我们先好好呼吸一下，在这里给自己一些空间。
+
+So for a breadth first, we want to solve the swan iteratively. And it's really only possible
+因此，首先，我们要迭代地解决天鹅问题。 而且它真的只能
+
+iteratively, right. So I know a breadth first traversal demands a queue, if you try to like
+迭代，对吧。 所以我知道广度优先遍历需要一个队列，如果您尝试
+
+implement a breadth first traversal using some recursion, and under the hood, there's
+使用某种递归来实现广度优先遍历，并且在幕后，有
+
+some stack data structure, that's going to fight against the queue order that you want,
+一些堆栈数据结构，这将与您想要的队列顺序作斗争，
+
+right? So for breadth first traversal, you're always typically going to be writing some
+对吧？ 因此，对于广度优先遍历，您通常总是要编写一些
+
+iterative code. So some loops, right? Let me define this, I'll say breadth first print,
+迭代代码。 所以有些循环，对吧？ 让我定义一下，我会说广度优先打印，
+
+take in the full graph, adjacency list, as well as the source node, I want to initialize
+获取完整的图形、邻接列表以及源节点，我要初始化
+
+my queue. With that source note, again, the queue here is just going to be an array in
+我的队列。 再次使用该源注释，这里的队列将只是 JavaScript 中的一个数组
+
+JavaScript. So I'll say const q equals an array that begins with just the source node.
+。 所以我会说 const q 等于一个仅以源节点开头的数组。
+
+Awesome. And I'm going to use this queue by just committing to two specific methods on
+惊人的。 我将通过
+
+my arrays in JavaScript. So if I use array dot shift that removes the first element of
+在 JavaScript 中的数组上提交两个特定方法来使用这个队列。 因此，如果我使用数组点移来删除数组的第一个元素
+
+an array. If I do array dot push that adds to the last position of an Array. And using
+。 如果我做数组点推，它会添加到数组的最后一个位置。 结合使用
+
+those two methods in combination would give me a nice cue, right, add to one end and remove
+这两种方法会给我一个很好的提示，对，添加到一端并
+
+from the other end. So like before, we're gonna have a while loop, we're gonna iterate
+从另一端移除。 所以像以前一样，我们将有一个 while 循环，我们将
+
+while our queue is not empty. And so while queue dot length is bigger than zero, nice.
+在队列不为空时进行迭代。 因此，虽然队列点长度大于零，但很好。
+
+And same thing as our iterative, you know, at first, you want to start by just removing
+和我们的迭代一样，你知道，一开始，你想从删除
+
+the front of your queue. So I'll say q dot shift, that will remove the first element
+队列的前面开始。 所以我会说 q dotshift，这将删除第一个元素
+
+as well as return it to me. So I can save in a variable, I like to call it current,
+并将其返回给我。 所以我可以保存在一个变量中，我喜欢称它为 current，
+
+just like the whiteboard, right? And from there, maybe I'll print it out. So console
+就像白板一样，对吧？ 从那里，也许我会把它打印出来。 所以控制台
+
+dot log, this current node. And from here, just consider your neighbors, right. So if
+点日志，这个当前节点。 从这里开始，想想你的邻居，对吧。 因此，如果
+
+I key into my graph, using this current node, that gives me an array of its neighbors, I
+我使用这个当前节点键入我的图表，这给了我一个邻居数组，我
+
+want to loop through each of those neighbors. So I can say four will say let neighbor of
+想循环遍历每个邻居。所以我可以说四个会说让
+
+that array. And for that neighbor, I want to add them to the back of my queue. So for
+那个数组的邻居。 对于那个邻居，我想将它们添加到我的队列后面。 所以对
+
+me, that would mean simply q dot push, I'm going to go ahead and push that neighbor.
+我来说，这意味着简单的 q dot push，我将继续推动那个邻居。
+
+Awesome. So I remove from the front, and I add to the back. So that looks pretty good.
+惊人的。 所以我从前面删除，然后添加到后面。 所以看起来还不错。
+
+Let's go ahead and give it a run. And actually, before I do that, I'm going to change the
+让我们继续前进吧。 实际上，在我这样做之前，我要改变
+
+order of this, put the CNB. Again, doesn't really matter the relative order for neighbors,
+这个顺序，放入 CNB。 同样，邻居的相对顺序并不重要，
+
+I just want this exact output, and we'll talk about why that is right. Give that a run.
+我只想要这个确切的输出，我们将讨论为什么这是正确的。 试一试。
+
+So I get ACB EDF just like I expected ACB EDF, right. So let's say you're on the first
+所以我得到了 ACB EDF，就像我期望的 ACBEDF 一样，对。 所以假设你在
+
+iteration of this breadth first print, I know that I would have just removed a because I
+这个广度优先打印的第一次迭代中，我知道我会删除 a 因为我
+
+initialized a on the queue, right? So my current is a and I print out a and then from there,
+在队列上初始化了 a ，对吗？ 所以我的当前是 a 并且我打印出 a 然后从
+
+I start iterating through this array, right. So on the first iteration, I have C, that
+那里开始迭代这个数组，对吧。所以在第一次迭代中，我有 C，这
+
+means I put c into my queue, right? And then afterwards, I put B, if you put C and then
+意味着我将 c 放入我的队列中，对吗？然后，我放了B，如果你放C然后
+
+B, that means C is at the front of the queue, which is why on the second iteration, I have
+B，这意味着C在队列的前面，这就是为什么在第二次迭代中，我先有
+
+C first, right? So that's how you can manipulate potentially the lateral order of a breadth
+C，对吧？ 因此，这就是您可以潜在地操纵宽度优先打印的横向顺序的方式
+
+first print. Awesome. That's all there is to this traversal algorithm, what I really
+。 惊人的。 这就是这个遍历算法的全部内容，我真正
+
+want emphasizes, especially if you look at the apples to apples iterative code, you compare
+想要强调的是，特别是如果你看一下苹果到苹果的迭代代码，你
+
+depth first or breadth first, it's almost identical code. You're really just changing
+首先比较深度或广度，它几乎是相同的代码。 您实际上只是
+
+how you access items in your array, right? You either pop or push or you shift and push
+在更改访问数组中项目的方式，对吗？您要么弹出或推送，要么移动并
+
+harder than that the whole like structure of this code is identical, right? All right.
+更加努力地推动这段代码的整个类似结构是相同的，对吗？ 好的。
+
+So that's our introduction on depth first and breadth first for our graphs. In the next
+这就是我们对图表的深度优先和广度优先的介绍。 在
+
+section, we're going to start to solve a problem, right, which will be really fun. I'm just
+下一节中，我们将开始解决一个问题，对，这将非常有趣。 我只是
+
+utilizing this code as our baseline tool. And then that section also promised that start
+将此代码用作我们的基线工具。然后该部分还承诺
+
+doing the analysis for bego of these algorithms. So let's jump back to that whiteboard. Hey,
+开始对这些算法进行分析。所以让我们回到那个白板。 嘿，
+
+programmers, welcome back, right, and let's go over the approach for this has path problem.
+程序员，欢迎回来，对，让我们来看看这个有路径问题的方法。
+
+So in this problem, we're gonna take in an adjacency list representing a graph for this
+所以在这个问题中，我们将采用一个邻接表来表示这个
+
+problem, and really all graph problems, you definitely want to visualize this one with
+问题的图，实际上所有的图问题，你肯定想用一张图片来可视化这个问题
+
+a picture. And so what we'll do is we'll interpret each key of this adjacency list as representing
+。 所以我们要做的就是将这个邻接列表的每个键解释为代表
+
+a distinct node. And if I look at any particular list, I can see that this f node should point
+一个不同的节点。 如果我查看任何特定的列表，我可以看到这个 f 节点应该
+
+to G and I. And they do tell us in this problem that I have a directed graph. So I'm going
+指向 G 和 I。他们确实在这个问题中告诉我们我有一个有向图。 所以我要
+
+to draw arrowheads on these edges here. So F points to G, as well as f points tie. And
+在这些边缘上画箭头。 所以F 指向 G，以及 f 点并列。
+
+I'll create similar edges based on the information in the given graph. So we end up with an image
+我将根据给定图表中的信息创建相似的边。 所以我们最终得到了这样的图像
+
+like this, until they tell us that this is a directed graph that explains the arrowheads,
+，直到他们告诉我们这是一个解释箭头的有向图，
+
+but they also tell us that this graph is a cyclic. So if you're unfamiliar, a cyclic
+但他们也告诉我们这个图是循环的。 所以如果你不熟悉，循环
+
+just means No cycles, that kind of begs the question, what is a cycle in a graph. So a
+只是意味着没有循环，这就引出了一个问题，什么是图中的循环。 所以一个
+
+cycle would be a some path through nodes, where I can end up where I want started. In
+循环将是一条通过节点的路径，我可以在我想要开始的地方结束。
+
+other words, if I started at the a node over here that I can go to B, then from there,
+换句话说，如果我从这里的a节点开始，我可以去B，然后从那里，
+
+I can go to C, then back to a, and so on and so forth. So if I did a traversal, on the
+我可以去C，然后回到a，依此类推。 因此，如果我在 Sigma 图上进行遍历
+
+Sigma graph, I would get an infinite loop. And what they're saying is, our graph input
+，我会得到一个无限循环。他们说的是，我们的图形
+
+is guaranteed to be directed. So it has arrowheads, but also a cyclic, so we don't have to consider
+输入保证是定向的。 所以它有箭头，但也有循环，所以我们这里不必考虑
+
+any infinite cycles here. That being said, In this problem, we also want to take in not
+任何无限循环。 话虽如此，在这个问题中，我们不仅要获取
+
+only the graph information, but also a source and destination node, we want to do is return
+图信息，还要获取源节点和目标节点，我们要做的是返回
+
+true or false indicating whether or not we can travel from the source node to the destination
+true 或 false 指示我们是否可以从源节点移动到 目的
+
+node. In other words, is there a path that exists between those two nodes? For this problem,
+节点。 换句话说，这两个节点之间是否存在路径？ 对于这个问题，
+
+you can use either a depth first or breadth first search to actually solve the problem
+你可以使用深度优先或广度优先搜索来实际解决这里的问题
+
+here, I'll trace through in this approach video, just the depth first search. But in
+，我将在这个方法视频中进行跟踪，只是深度优先搜索。 但
+
+the walkthrough, I'll be sure to code it up both ways. So let's say started at my source
+在演练中，我一定会以两种方式对其进行编码。 所以假设从我的源
+
+node, I know that if I was doing a depth first traversal, I can either choose the IRG, let's
+节点开始，我知道如果我在进行深度优先遍历，我可以选择 IRG，
+
+say happen to choose to G next. Now I have no choice, right? If I'm doing truly a depth
+假设接下来碰巧选择 G。 现在我别无选择，对吧？ 如果我真的要先做一个深度
+
+first, I should go deeper to the H. So then I hit this H. And as I traverse through these
+，我应该更深入到 H。然后我点击这个 H。当我遍历这些
+
+different nodes, I need to ask myself if my current node is equal to my destination. So
+不同的节点时，我需要问自己我当前的节点是否等于我的目的地。
+
+far, that hasn't been true. At this point, I bottomed out with my h node, I can't travel
+到目前为止，这还不是真的。 在这一点上，我的 h 节点触底，我不能
+
+any deeper. So now I can move laterally to a node like I, at this point from I can either
+再深入了。 所以现在我可以横向移动到像我这样的节点，在这一点上，我可以
+
+move to a K or a G, let's say by luck, I just happen to go to the G, this would actually
+移动到 K 或 G，假设幸运的是，我恰好去了 G，这实际上会
+
+bring me down a path I've explored previously, which we can optimize later on, but wouldn't
+带我走上一条路径 ' 之前已经探索过，我们可以稍后对其进行优化，但不会
+
+be too much of a big deal. Eventually, if I continued this depth first search through
+有太大的影响。 最终，如果我在图中继续这种深度优先搜索
+
+the graph, I would end up at a node that matches my destination, at which point I can return
+，我最终会到达一个与我的目的地匹配的节点，此时我可以返回
+
+true signifying that there must be some path from F to k, just doing a depth first search.
+true，表示必须有从 F 到 k 的路径，只需进行深度优先搜索 .
+
+And as we do this depth first search, it's really important that you obey the directions
+当我们进行深度优先搜索时，遵守箭头的方向非常重要
+
+of your arrows. So I should never try to travel upstream. So that was a scenario where we
+。 所以我永远不应该尝试逆流而上。 所以这是一个
+
+were able to find a path from source of destination. That's why we return true. Let's reset and
+我们能够从目标源找到路径的场景。这就是我们返回 true 的原因。 让我们重置并
+
+say that now, I should return false. Alright, so let's say my source was J. So I start at
+说现在，我应该返回 false。 好吧，假设我的源是 J。所以我从
+
+J. And I'm trying to get to my destination of F. If I start a depth first traversal,
+J 开始。我正试图到达我的目的地 F。如果我开始深度优先遍历，
+
+here, sorry, my j node traveled to the AI node. At this point, I can hit either the
+在这里，抱歉，我的 j 节点移动到 AI节点。 此时，我可以击中任何一个
+
+G, okay, let's say I happen to hit the k, this point of bottom now. So now I can move
+G，好吧，假设我碰巧击中了k，现在这个点是底部。 所以现在我可以移动
+
+to the G. And then from there to the H. And at this point, there's actually nowhere else
+到 G。然后从那里移动到 H。在这一点上，实际上
+
+I can go, right. So if I finish my traversal through the graph, using either a depth first
+我无处可去，对吧。 因此，如果我完成了对图表的遍历，使用深度优先
+
+or breadth first and I never hit my destination, then I can just return false, right? It must
+或广度优先并且我从未到达目的地，那么我可以返回 false，对吗？ 一定
+
+be the case that there is no such path from my source to my destination. When it comes
+是没有这样的路径从我的源头到我的目的地。 当谈到在这个图
+
+to implementing the depth first and breadth first reversals on this graph, it's going
+上实现深度优先和广度优先的反转时，这
+
+to be exactly what we're used to, you can either use a stack and solve it recursively.
+将完全是我们习惯的，你可以使用堆栈并递归地解决它。
+
+Or you can do it iteratively. And use a queue in which case you'd be doing the breadth first
+或者你可以迭代地做。 并使用队列，在这种情况下，您将进行广度优先
+
+traversal. We talked about the complexity of this, let's say that n is the number of
+遍历。 我们讨论了它的复杂性，假设 n
+
+nodes of our graph, a common thing that you can also do with these graph problems is define
+是我们图的节点数，对于这些图问题，您也可以做的一个常见事情是将
+
+e as the number of edges here and edges refers to a connection between two nodes, basically
+e 定义为此处的边数，边指的是两个之间的连接 节点，基本上
+
+just the arrows. So if we use these two terms of number nodes and number edges, we would
+只是箭头。 因此，如果我们使用数字节点和数字边这两个术语，我们将
+
+have a time complexity of our V o of the number of edges as because we would have to travel
+有边数的 V o 的时间复杂度，因为我们必须
+
+through every single edge of our graph. Here, the space complexity would be based on the
+遍历图的每条边。 在这里，空间复杂度将基于
+
+number of nodes, right? If I solved it, recursively, or even iteratively, with some sort of a depth
+节点的数量，对吧？ 如果我使用某种深度优先堆栈递归地甚至迭代地解决它
+
+first stack, then the worst case, I would have to have every single node on the stack,
+，那么最坏的情况是，我必须将每个节点都放在堆栈上，
+
+right? Likewise, if I saw the eternity with a breadth first I would have every single
+对吗？ 同样，如果我首先从广度上看到永恒，我会将每个
+
+node on the queue. So that's just one way we can define the terms for analyzing the
+节点都放在队列中。 所以这只是我们定义用于分析
+
+time and space of this graph. Typically, for graph problems, another acceptable way to
+该图的时间和空间的术语的一种方式。 通常，对于图问题，
+
+analyze the time and space of your algorithm is to just use a single variable and just
+分析算法时间和空间的另一种可接受的方法是仅使用单个变量并将
+
+define n as the number of nodes. That's because if you say n is the number of nodes, then
+n 定义为节点数。 那是因为如果你说 n 是节点的数量，那么
+
+we can also say that n squared would be the number of edges, or that big O. It's about
+我们也可以说 n 的平方是边的数量，或者那个大 O。这
+
+the worst case. So let's imagine the worst case graph. Let's say I just had these nodes
+是最坏的情况。 所以让我们想象一下最坏情况的图表。 假设我只有这些
+
+of ABC. Well, if I wanted to create as many edges as possible, how would I just create
+ABC 节点。 好吧，如果我想创建尽可能多的边，我将如何只创建
+
+a single edge? Well, an edge is just a connection between two nodes. So you could just really
+一条边？ 好吧，边缘只是两个节点之间的连接。 因此，您可以真正
+
+draw an edge for every pair of nodes in your graph, something like this. And that's why
+为图中的每一对节点绘制一条边，就像这样。 这就是为什么
+
+we can say that n squared is the number of edges of any particular graph. And so if you
+我们可以说 n 平方是任何特定图的边数。 因此，如果您
+
+just wanted to use n to define the complexity here, then you could say that your time is
+只想在这里使用 n 来定义复杂度，那么您可以说您的时间
+
+going to be O of n squared, and your space complexity would still be O of n. Do know
+将是 O of n 的平方，而您的空间复杂度仍然是 O of n。 要知道
+
+that these are both two valid ways for defining the complexity for a very typical graph problems.
+，这两种方法都是为非常典型的图问题定义复杂性的两种有效方法。
+
+That being said, I think this is pretty straightforward. Let's hop into the walkthrough video while
+话虽如此，我认为这很简单。让我们跳进演练视频，同时
+
+we're actually implement both a depth first and breadth first solution for these. I'll
+我们实际上正在为这些实现深度优先和广度优先解决方案。 我会
+
+see you there. Hey, programmers, Alvin here, right now. Let's go over Ah, JavaScript solution
+在那里见你。 嘿，程序员们，Alvin 在这里，现在。 让我们复习一下啊，JavaScript 解决
+
+for this has path problem. And so we'll jump right in, we're gonna start by solving this
+方案有路径问题。 因此，我们将直接进入，我们将从
+
+one using a depth first traversal, which I know requires some underlying stack data structure,
+使用深度优先遍历解决这个问题开始，我知道这需要一些底层堆栈数据结构，
+
+I'll just implement that using recursion. So I can leverage the call stack to get my
+我将使用递归来实现它。所以我可以利用调用堆栈来获得我的
+
+ordering. And so I'm gonna solve this recursively, I'm gonna consider my source argument as like
+订单。 所以我要递归地解决这个问题，我会考虑我的源参数，就像
+
+my current position during the traversal. And so I can have a base case in check. All
+我在遍历过程中的当前位置一样。所以我可以检查一个基本案例。
+
+right, if my source is equal to my destination, that I must have found the thing I'm looking
+好吧，如果我的来源等于我的目的地，那我一定找到了我要找的东西
+
+for. So just return true. This base case signifies that I found my destination. So there must
+。 所以只要返回true。 这个基本情况表明我找到了目的地。 所以必须
+
+exist a path. And so I return true, always paying attention to the type that they want
+存在一条路径。 所以我返回 true，总是注意他们希望
+
+us to return for this function. Let's say it's not true, well, they need to keep looking.
+我们为这个函数返回的类型。 假设这不是真的，好吧，他们需要继续寻找。
+
+So what I should do is consider my current node, which is source, consider its neighbors.
+所以我应该做的是考虑我当前的节点，即源节点，考虑它的邻居。
+
+If I key into my adjacency list, I know that this is going to be an object. So I key into
+如果我键入我的邻接列表，我知道这将是一个对象。 所以我
+
+it using my source, that would give me an array of all of its neighbors. So for example,
+使用我的源输入它，这会给我一个包含所有邻居的数组。 例如，
+
+let's say it was staring at this one, if my current source was F, and I say graph square
+假设它正在盯着这个，如果我当前的来源是 F，我说图形方
+
+bracket, F, I would get back an array of gi. So now I want to look through the neighbors,
+括号 F，我会得到一个 gi 数组。所以现在我想看看邻居，
+
+right? So I can see over here is turned us into a loop and say for that neighbor of those
+对吧？ 所以我可以看到这里把我们变成了一个循环，对那些邻居中的那个
+
+neighbors, I want to traverse to them, which means I call recursively. Right call has path,
+邻居说，我想遍历他们，这意味着我递归调用。 正确的调用有路径，
+
+keep your graph the same, but update your current position. Now I'm going to be situated
+保持你的图表相同，但更新你的当前位置。 现在我要住
+
+at the neighbor. And the destination stays the same, right, always have the same goal
+在邻居家。 目的地保持不变，对，总是有相同的目标
+
+to get to solving this one recursively. So think about what type of this is going to
+来递归解决这个问题。 所以想想这会返回什么类型
+
+return, I know it's going to give back Boolean, right, it's going to tell me whether or not
+，我知道它会返回布尔值，对，它会告诉我
+
+there is some path between my neighbor and the destination, right. So if there's some
+在我的邻居和目的地之间是否有一些路径，对吧。 所以如果我的邻居和目的地之间有一些
+
+connecting point, or some connecting path between my neighbor and the destination, then
+连接点，或者一些连接路径，那么
+
+I know that there must be some path from my source to the destination, because your source
+我知道从我的源到目的地肯定有一些路径，因为你的
+
+is definitely next to your neighbor, right. So there would be a path between all of us.
+源肯定在你的邻居旁边，对吧。所以我们所有人之间都会有一条道路。
+
+And so what I'll do is, check if this recursive call returns true, I'll make it explicit here,
+所以我要做的是，检查这个递归调用是否返回 true，我会在这里明确说明，
+
+maybe it's clear. And so if there is some path through my neighbor to the destination,
+也许很清楚。 因此，如果有一些路径通过我的邻居到达目的地，
+
+then I can return true, just pass that true upward. Because once I find a path, you can
+那么我可以返回 true，只需向上传递那个 true。 因为一旦我找到了一条路径，您就
+
+just exit out and return that shoe all the way back to the top level of color. But let's
+可以退出并将那只鞋一直返回到颜色的顶层。 但是
+
+say that this call returned false, that means that there is no path through my neighbor
+假设这个调用返回 false，这意味着没有通过我的邻居
+
+to the destination. But it couldn't be the case that some other neighbor is actually
+到目的地的路径。 但不可能有其他邻居真的
+
+going to work out. And so what I don't want to do is just say like else return false,
+会解决问题。 所以我不想做的只是说像 else return false 一样，
+
+you should be able to immediately catch that code like this as suspect because there's
+你应该能够立即将这样的代码视为可疑代码，因为
+
+no point of having a for loop then right? If in either case, you're always going to
+没有必要再有一个 for 循环，对吧？如果在任何一种情况下，你总是要
+
+return, then you're never going to have a second iteration of this for loop, right?
+返回，那么你永远不会有这个 for 循环的第二次迭代，对吧？
+
+So if I don't find a path through my neighbor, so if this call returns false, then that's
+因此，如果我找不到通过邻居的路径，那么如果此调用返回 false，那就
+
+okay. Just continue on to the next iteration, and search through your other neighbor. that
+没关系。 继续下一个迭代，然后搜索你的另一个邻居。
+
+begs the question, Where should we return false, needs to be after the for loop? So
+这就引出了一个问题，我们应该在哪里返回false，需要在 for 循环之后？ 所以
+
+only after I searched through all of my neighbors, and I never find a winning path? Should I
+只有在我搜索了所有邻居之后，我才找到一条成功的道路？ 如果
+
+return false, and that'd be our nice depth first traversal. Let's give that a test run.
+我返回 false，那将是我们很好的深度优先遍历。 让我们测试一下。
+
+Awesome. There we have it. One thing to bear in mind here, we are leveraging the assumptions
+惊人的。 我们有它。 这里要记住的一件事是，我们正在利用
+
+in the problem, right, they tell us straight up that the graph is going to be given is
+问题中的假设，对，他们直接告诉我们，将给出的图表
+
+a sick like, so there are no cycles. So that's why in our code, we didn't really worry about
+是病态的，所以没有循环。 所以这就是为什么在我们的代码中，我们并不真正担心
+
+getting trapped in an infinite loop. In our upcoming problems, we'll have harder grass
+陷入无限循环。 在我们即将到来的问题中，我们将有更难的草
+
+to actually deal with that sick case. But for now, this is a good baseline solution.
+来实际处理那个病案。 但就目前而言，这是一个很好的基准解决方案。
+
+While we're here, let's also do a reference solution, which you know, by now should be
+当我们在这里的时候，让我们也做一个参考解决方案，你知道，现在应该
+
+iterated, right, there's no way to do like a breadth first recursively. And so I need
+迭代，对，没有办法像广度优先那样递归地做。 所以我
+
+to create my own queue. So I can create a queue, kind of in a pinch, I always just use
+需要创建自己的队列。 所以我可以创建一个队列，在紧要关头，我总是只
+
+an array in JavaScript, I'm gonna initialize that queue with my source on it. So I'm gonna
+在 JavaScript 中使用一个数组，我会用我的源代码初始化那个队列。 所以我要
+
+refer to like source and destination, they're really nodes. But in the context of like our
+提到源和目的地，它们实际上是节点。 但是在类似我们的问题的上下文中
+
+problem, they're really just given us strings, but they represent nodes, right? So think
+，它们实际上只是给了我们字符串，但它们代表节点，对吗？ 所以
+
+about the information they represent. I'm going to iterate while my queue is not empty.
+想想他们所代表的信息。当我的队列不为空时，我将进行迭代。
+
+So while q dot length is bigger than zero, should be familiar code, very similar to our
+因此，虽然 q 点长度大于零，但应该是熟悉的代码，与我们的
+
+tree algorithms. And I start a single iteration of reference by removing the front of my queue.
+树算法非常相似。我通过删除队列的前面开始单次引用迭代。
+
+So I can say q dot shift some of the front, I can call that my current node that I'm traversing
+所以我可以说 q dot shift 前面的一些，我可以称之为我正在遍历的当前节点
+
+through. And now that something has left the queue, typically here is where I check, I
+。 现在有些东西已经离开队列，通常这里是我检查的地方，我
+
+can check. All right, if a thing I just visited, if that is my destination, then I can just
+可以检查。 好吧，如果我刚刚访问过的东西，如果那是我的目的地，那么我可以
+
+return true, right, I found the thing I'm looking for. So there must be a path that
+返回 true，对，我找到了我正在寻找的东西。 所以必须有一条路径
+
+connects my original source and my destination. Nice. But let's say this was not true. Well,
+连接我的原始来源和我的目的地。好的。 但是，假设这不是真的。 那么，
+
+then I need to consider its neighbors. So like before, look at the neighbors just key
+我需要考虑它的邻居。 所以像以前一样，看看邻居只是
+
+into your graph using the source like it's a graph, square bracket source. That gives
+使用源输入你的图表，就像它是一个图表，方括号源。 这给了
+
+me an array of all of the neighbors, all the neighbor nodes. That's what I want to do here
+我所有邻居，所有邻居节点的数组。 这就是我想要在这里做的
+
+is iterate through every neighbor Over there. And then I can just add them into my queue.
+就是遍历那里的每个邻居。然后我可以将它们添加到我的队列中。
+
+So q dot push that single neighbor, and do be sure to implement your true breadth first.
+所以 q dot push 那个邻居，一定要先实现你的真实广度。
+
+So you need to make things leave from one end of your queue, and you add to the other
+所以你需要让事情从队列的一端离开，然后添加到另一
+
+end. So this codes looking good. So you should realize how similar This is to our old like
+端。 所以这个代码看起来不错。 所以你应该首先意识到这与我们以前的
+
+binary tree breadth first, except now we have to account for the fact that we could have
+二叉树宽度有多么相似，除了现在我们必须考虑这样一个事实，即我们可以
+
+like a dynamic amount of neighbors here, not just dot left and dot, right. So I'm just
+在这里拥有动态数量的邻居，而不仅仅是左点和右点。 所以我只是
+
+iterating through all those neighbors adding them, I need to wait to return false. And
+遍历所有添加它们的邻居，我需要等待返回 false。
+
+you guessed it, the move is after you finish this entire while loop, if your cube becomes
+你猜对了，移动是在你完成整个while循环之后，如果你的立方体变
+
+empty, then you must have explored as far as you could. And if you never return true,
+空了，那么你一定已经尽可能地探索了。 如果你从不返回 true
+
+and now you can return false, because it must be the case that there is no path between
+，现在你可以返回 false，因为必须是
+
+the original source and your target. So let's give this a test run will have a very similar
+原始源和目标之间没有路径。 所以让我们给这个测试运行将具有非常相似的
+
+time and space complexity. But this would be the code for all of my iterative fans.
+时间和空间复杂度。 但这将是我所有迭代粉丝的代码。
+
+So here I'm getting a little error. Let's see what we did wrong here. So it looks like
+所以在这里我遇到了一个小错误。 让我们看看我们在这里做错了什么。 所以看起来
+
+I timed out here. Let's see bug this one together, I had to guess that means I did something
+我在这里超时了。 让我们一起看看这个错误，我不得不猜测这意味着我
+
+wrong getting trapped in an infinite loop. This condition looks okay, right q dot length
+做错了什么，陷入了无限循环。这个条件看起来没问题，对 q 点长度
+
+greater than zero. And so here it is, must be the case that I'm not correctly iterating
+大于零。 所以在这里，一定是我没有正确地迭代
+
+through the neighbors here, I just wrote source. Instead, I need to say current, because now
+这里的邻居，我只是写了 source.相反，我需要说当前，因为现在
+
+I'm doing this iteratively, right. So whatever node has just left my queue, I consider that
+我正在迭代地执行此操作，对。 因此，无论节点刚刚离开我的队列，我都认为这些
+
+nodes neighbors and add them to be visited next through my queue. So let's give that
+节点是邻居，并将它们添加到下一个通过我的队列访问的节点。 因此，让我们进行
+
+a test run. honest mistake there. Cool. And there's our breadth first solution for this
+一次测试。 那里有诚实的错误。 凉爽的。我们的广度优先解决方案
+
+has path problem. So what I want you to do is practice both the depth first and the breadth
+有路径问题。 所以我想让你做的是先练习深度优先和广度
+
+first, like you expect, we're going to do a lot of graph problems coming up. And depending
+优先，就像你期望的那样，我们会做很多即将出现的图形问题。 并且
+
+on you know what the problem is asking sometimes will prefer one type of algorithm over the
+取决于您知道问题所要求的内容，有时会更喜欢一种算法而不是另一种算法
+
+other. So it's really important that you practice both of these algorithms. Now, all the problems
+。 因此，练习这两种算法非常重要。 现在，所有的问题
+
+are relatively easy. So practice this, give it a shot on your own. And I'll catch you
+都比较容易。 所以练习这个，自己试一试。 我会
+
+in the next problem. See you there. Hey, programmers, Alvin here, right. Now let's go over the approach
+在下一个问题中抓住你。 到时候那里见。 嘿，程序员，这里是 Alvin，对。 现在让我们回顾
+
+for this undirected path problem. So we'll jump right in. In this problem, we're going
+一下这个无向路径问题的方法。 所以我们将直接进入。在这个问题中，我们
+
+to be given an edge list for a undirected graph. So if I are familiar with the terminology
+将得到一个无向图的边列表。 因此，如果我熟悉这里的术语
+
+here, really what we're saying is every pair and this edge list represents a connection
+，实际上我们所说的是每一对，这个边列表代表
+
+between two nodes. For example, if I look at the first edge, and the list, I see i comma
+两个节点之间的连接。 例如，如果我查看第一个边和列表，我看到 i 逗号
+
+j, that means that there's a edge or connection between i and j. And since this is an undirected
+j，这意味着i 和 j 之间存在边或连接。 而且由于这是一个无向
+
+graph, not only can I directly travel from i to j, but I can of course, move from j to
+图，我不仅可以直接从i 移动到 j，而且我当然可以从 j 移动到
+
+i. So it really represents a connection in both directions. And so as we start to attack,
+i。 所以它确实代表了两个方向的联系。 所以当我们开始攻击时，
+
+this problem we'll want to do is actually convert this edulis into a more favorable
+我们想要做的这个问题实际上是将这个 edulis 转换成更有利的
+
+format, like an adjacency list. That's because typically, when we perform our traversal algorithms,
+格式，比如邻接表。 这是因为通常，当我们执行遍历算法时，
+
+they work best on an adjacency list form. So let's start by doing that conversion here.
+它们在邻接表形式上效果最好。因此，让我们从这里开始进行转换。
+
+And I'll actually be pretty easy to code up. So I want to basically generate a graph where
+而且我实际上很容易编写代码。所以我想基本上生成一个图，其中
+
+I have nodes as keys, I want them to point to a an array of their neighbors. For example,
+我有节点作为键，我希望它们指向它们的邻居数组。 例如，
+
+if I wanted to convert the first edge into an adjacency list form, what I can do is create
+如果我想将第一条边转换为邻接表形式，我可以做的是
+
+keys for i and j. Now that I is a neighbor of J, and also j is a neighbor of I, so I'm
+为 i 和 j 创建键。 现在 I是 J 的邻居，j 也是 I 的邻居，所以我
+
+going to populate those neighbors respectively. Now just follow this process for another edge.
+将分别填充这些邻居。现在只需按照此过程获得另一个优势。
+
+So if I look at the edge, k comma i, I need to create a new key for K. And I'm going to
+因此，如果我查看边缘 k 逗号 i，我需要为 K 创建一个新键。我
+
+populate that with I and then for the existing key of I, I just add k into that collection.
+将用 I 填充它，然后对于 I 的现有键，我只需将 k 添加到该集合中。
+
+So do bear in mind, the most important thing about this conversion is because we know that
+所以请记住，关于这种转换最重要的是因为我们
+
+the graph is going to be undirected, whenever you put a connection within your graph, make
+知道图形将是无向的，每当您在图形中放置连接时，请
+
+sure that you have the inverse connection. So if I have an edge from k to AI, they also
+确保您具有反向连接。因此，如果我有从 k 到 AI 的优势，他们也
+
+need to have information for it. Okay. And this process would just continue for the entire
+需要为此提供信息。 好的。这个过程将继续为整个
+
+list of edges. And by the end of this conversion, we'll end up with an adjacency list just like
+边缘列表。 在这个转换结束时，我们将得到一个像这样的邻接列表
+
+this. And now we're ready to perform our main algorithm. When we go through the code walkthrough
+。 现在我们已经准备好执行我们的主要算法了。 当我们为此进行代码
+
+for this, I'll show you in depth how you can actually create this adjacency list. And so
+演练时，我将深入向您展示如何实际创建此邻接列表。 因此，
+
+when we want to actually come up with a traversal algorithm to solve a graph problem, it really
+当我们真正想提出一个遍历算法来解决图形问题时，
+
+helps if you actually visualize the shape of your graph. So actually want to visualize
+如果您真正可视化图形的形状，这真的很有帮助。 所以实际上想要
+
+this in terms of nodes and edges. That means a bunch of circles and lines between them.
+根据节点和边来可视化这一点。 这意味着它们之间有一堆圆圈和线条。
+
+If you drew out a nice picture for this graph information, you would end up with a diagram
+如果你为这个图表信息画了一张漂亮的图片，你最终会得到一个这样的图表
+
+like so. And so we'll go through the rest of this approach video just referencing this
+。 因此，我们将仅参考此图来浏览此方法视频的其余部分
+
+diagram. Something important I want to bring up at this point is for this graph, a very
+。在这一点上我想提出的重要一点是对于这个图表，
+
+common case we'll have to handle is what if your graph has a cycle. And that's especially
+我们必须处理的一个非常常见的情况是如果你的图表有一个循环。
+
+true for your undirected graphs. And so just for the purposes of this approach video, I'm
+对于您的无向图尤其如此。 因此，仅出于此方法视频的目的，我
+
+going to add an additional edge just so we can talk about an explicit cycle. So I'm going
+将添加一个额外的边缘，以便我们可以讨论一个显式循环。 所以我
+
+to add one new edge from k to J. Cool. The reason is now there's a nice big cycle of
+要从 k 到 J. Cool 添加一个新的边。原因是现在有一个很好的大循环，
+
+length three highlighting in red right now. And this cycle is important to watch out for
+长度为三，现在以红色突出显示。这个循环很重要，需要注意，
+
+because if we don't do any special handling Then we may get trapped in an infinite traversal.
+因为如果我们不做任何特殊处理，那么我们可能会陷入无限遍历。
+
+So imagine I started at this keynote, and next I moved to J, then I would move to i,
+所以想象一下我从这个主题演讲开始，然后我移动到 J，然后我会移动到 i，
+
+and then back to k, and then back to J, and then I, and so on. So now it gives me a cycle,
+然后回到 k，然后回到 J，然后是 I，依此类推。 所以现在它给了我一个循环，
+
+we'll have to guard against that. And so I can have a cycle of three nodes here, right,
+我们必须提防它。 所以我可以在这里有一个三个节点的循环，对
+
+and you can really have a cycle of basically almost any size, as long as it's more than
+，你真的可以有一个基本上几乎任何大小的循环，只要它不止
+
+one. So for example, if I took a look down here, notice that my graph actually contains
+一个。 例如，如果我往下看，请注意我的图表
+
+technically like two separate islands, but we would consider them as just one giant graph,
+实际上包含两个独立的岛屿，但我们会认为它们只是一个巨大的图表，
+
+right? So I've got the small island of O and N, they actually form a trivial cycle, right?
+对吗？ 所以我得到了O和N的小岛，它们实际上形成了一个微不足道的循环，对吧？
+
+If I started traversal, at o. From there, I can move to n. And because I know that the
+如果我开始遍历，在 o。 从那里，我可以移动到 n。 因为我知道
+
+edge between o and n is bi directional writes an undirected graph, that means I can travel
+o 和 n 之间的边是双向的，所以我可以写一个无向图，这意味着我可以
+
+back to O, and then back to n. And this would give me cyclic behavior. So have to watch
+回到 O，然后回到 n。 这会给我循环行为。 所以必须注意
+
+out for all types of cycles in this problem. So in the context of this problem, not only
+这个问题中的所有类型的循环。所以在这个问题的背景下，
+
+are we given a graph, we're also going to take in a two nodes. So let's step through
+我们不仅给出了一个图，我们还将接受两个节点。 因此，让我们通过
+
+an example where I want to return true or false, is there a path between I and L. So
+一个示例，我想返回真或假，I 和 L 之间是否存在路径。所以
+
+I'm going to mark those in my graph Israel. So I'm going to start at the notify. And to
+我将在我的图表以色列中标记它们。所以我将从通知开始。 为了
+
+solve this one, you can use any type of traversal. So either depth first or breadth first, I'll
+解决这个问题，您可以使用任何类型的遍历。因此，无论是深度优先还是广度优先，我都会
+
+step through explicitly the depth first traversal. Right. Now, in order to avoid any infinite
+明确地逐步介绍深度优先遍历。正确的。 现在，为了避免任何无限
+
+traversals, I want to mark my nodes as visited as I travel through them. So not only do I
+遍历，我想在遍历节点时将节点标记为已访问。 因此，我
+
+situate myself at this source note of I, but I'm gonna mark it as visited. And you can
+不仅将自己置于 I 的源注释中，而且将其标记为已访问。 您可以
+
+implement this like marking a visited pattern. And a few different ways. When we code this
+像标记访问模式一样实现这一点。以及几种不同的方式。 当我们稍后编写代码
+
+up later on, we're probably going to use a set to represent what we have visited. But
+时，我们可能会使用一个集合来表示我们访问过的内容。
+
+for now, I'll just check them off in my diagram. And so in my diagram, if you see a checkmark
+但是现在，我将在我的图表中检查它们。所以在我的图表中，如果你在一个节点旁边看到一个复选标记
+
+next to a node, that means that I already have visited it. So since I'm at this node
+，这意味着我已经访问过它。 所以既然我在这个节点
+
+of I want to move to its neighbors, so I'm gonna move to the neighbor of J. And I'll
+，我想移动到它的邻居，所以我要移动到 J 的邻居。我
+
+also be sure to check it off as visited. At this point, I can move to one of Jays neighbors,
+也一定要检查它是否已访问。此时，我可以搬到 Jays 的邻居之一，
+
+let's say I move to k. And I'm also going to mark it as visited. Now then Matt K, I
+假设我搬到了 k。 我还将把它标记为已访问。 现在，Matt K，我
+
+can move to a few different neighbors, I could either move to I LRM. Let's say by chance
+可以搬到几个不同的邻居，我可以搬到 I LRM。 假设我偶然
+
+I chose I, I once I get to this, I know, I'm immediately going to be able to see that,
+选择了我，一旦我到达这个，我知道，我马上就能看到，
+
+oh, I visited this node previously. So what I should do is not travel through it again.
+哦，我以前访问过这个节点。 所以我应该做的就是不要再穿越它了。
+
+Instead, I should go back to the K, right, because this eye node is already visited.
+相反，我应该回到 K，对，因为这个眼节点已经被访问过了。
+
+And that's where I actually avoid the infinite loop. So instead, I moved to some of Kay's
+这就是我真正避免无限循环的地方。 所以相反，我搬到了 Kay 的
+
+other neighbors, let's say I chose the L. At this point, I would mark it as visited.
+其他一些邻居，假设我选择了 L。此时，我会将其标记为已访问。
+
+If I do a quick check, I can see that this note I'm at L is also my destination node.
+如果我快速检查一下，我可以看到我在 L 的这张便笺也是我的目标节点。
+
+So I must have just found a path between my source and the destination. So at this point,
+所以我一定是在我的源头和目的地之间找到了一条路径。 所以此时，
+
+if I find my destination, I can just return true, which was a pattern we spoke about in
+如果我找到我的目的地，我可以返回true，这是我们
+
+a previous problem, the only additional criteria we need is to mark nodes as visited. That
+在上一个问题中谈到的模式，我们需要的唯一附加标准是将节点标记为已访问。
+
+way, we don't get trapped in an infinite loop. And that's only going to be needed if we have
+这样，我们就不会陷入无限循环。只有当
+
+cycles in our graph, which if they don't give us any assumptions we should always guard
+我们的图中有循环时才需要这样做，如果它们没有给我们任何我们应该始终警惕的假设
+
+against. So let's take a look at another example. Let's say I had a source of K. And my destination
+。 所以让我们看另一个例子。假设我有一个 K 的来源。我的目的地
+
+was Oh, just looking visually in the graph, you can already see that there's no way to
+是哦，只是在图中直观地看，你已经可以看到没有
+
+get from k to O, because they're disconnected, right, they're on separate islands both step
+办法从 k 到 O，因为它们是断开的，对，它们是分开的
+
+through the algorithm regardless, so I'm going to start at K gonna mark it as visited, I'm
+无论如何，岛屿都会通过算法，所以我将从 K 开始，将其标记为已访问，我
+
+going to visit some of Ks neighbors. So I can move to i, then I can move to J. And then
+将访问 Ks 的一些邻居。 所以我可以移动到 i，然后我可以移动到 J。然后
+
+at this point, I would move back to K and really make sure they don't explore any of
+在这一点上，我会回到 K，并确保他们不会探索任何
+
+Ks visited neighbors, so I don't move back to I right, instead, I should move to an unvisited
+Ks 访问过的邻居，所以我不会回到 I 对，相反，我应该移动到一个未访问的
+
+neighbor, like l market is visited, then I only have one other node to visit, which would
+邻居，比如访问了 l 个市场，然后我只有另一个节点要访问，这将
+
+be this m node. And at this point, I've actually exhausted this full graph region, right, there's
+是这个 m 节点。 在这一点上，我实际上已经用尽了这个完整的图形区域，对，
+
+nowhere else I can go. And once I finished my traversal, if I never find my destination
+我无处可去。 一旦我完成遍历，如果我永远找不到我的目标
+
+node, then I can just return false, right? It must be the case that there is no path
+节点，那么我可以返回 false，对吗？一定是
+
+that exists from my source node to the destination node. That's really all there is to this algorithm.
+不存在从我的源节点到目标节点的路径。 这就是这个算法的全部内容。
+
+Let's talk about the complexity. If we say that n is a number of nodes, let's also define
+让我们谈谈复杂性。 如果我们说 n 是节点的数量，那么我们也可以
+
+that he is a number of edges. Like we said previously, this is something typically acceptable
+定义 he 是边的数量。 就像我们之前所说的，对于我们的图形问题，这通常是可以接受的
+
+to do for our graph problems. I know that the time complexity is going to be roughly
+。 我知道时间复杂度将大致
+
+of the number of edges. And my space complexity is going to be O of n that is the number of
+与边数有关。 我的空间复杂度将是 n 的 O，即
+
+nodes. I think it's worth stepping through, you know what this complexity actually means,
+节点数。 我认为值得一试，你知道这种复杂性实际上意味着什么，
+
+you know, big O refers to the worst case. So let's think about a worst case graph that
+你知道，大 O 指的是最坏的情况。因此，让我们考虑一下我们可以拥有的最坏情况图表
+
+we can have. And there are a few different graphs that you can kind of design and think
+。你可以设计和思考一些不同
+
+of, I'll just show you one example. So let's say I was given a graph like this, right?
+的图表，我只给你看一个例子。 所以假设我得到了这样的图表，对吧？
+
+Notice that although z is kind of on its own island, all of these nodes that is a three
+请注意，虽然 z 有点像在它自己的岛上，但所有这些节点都是一个
+
+as well as a C note. They're all members of the same graph. So let's say I wanted to figure
+3 和一个 C 音符。 他们都是同一个图表的成员。 因此，假设我想
+
+out is there a path between A and z. So if I did my traversal algorithm from here, I'll
+弄清楚 A 和 z 之间是否存在路径。 所以如果我从这里开始我的遍历算法，我将从a
+
+start at a then I move to B, and then to C, and then to D, and then to E. At this point,
+开始，然后我移动到B，然后到C，然后到D，然后到E。此时，
+
+I've covered all of the edges in the graph. Remember that the edges are the arrowheads
+我已经覆盖了所有的边缘 图表。请记住，这里的边是箭头
+
+here, because I have to travel through every edge of this graph. That's why we said the
+，因为我必须遍历该图的每条边。 这就是为什么我们说
+
+time complexity in the worst case is going to be o of E, right o of the number of edges.
+最坏情况下的时间复杂度将是 E 的 o，边数的右 o。
+
+and here we can say the space complexity is O of n. Because if you're doing this with
+在这里我们可以说空间复杂度是 n 的 O。 因为如果您
+
+either a depth first stack, or a breadth first queue, in the worst case, you would have to
+使用深度优先堆栈或广度优先队列执行此操作，在最坏的情况下，您将不得不
+
+add everything you visited, or that is all of the nodes onto your stack or queue. That's
+添加您访问的所有内容，或者将所有节点添加到您的堆栈或队列中。 这就是
+
+why we say for regular graph traversal algorithms, we have a time complexity of o v, and a space
+为什么我们说对于常规图遍历算法，我们的时间复杂度为 ov，空间
+
+complexity of O of n. All right, I think we have the approach for this algorithm down
+复杂度为 O，为 n。 好吧，我认为我们有这个算法的
+
+pat. At this point, I want to join me in the walkthrough videos, where we can actually
+方法。 在这一点上，我想加入我的演练视频，在那里我们可以实际
+
+see how to implement these visited patterns in some code. I'll see you there. Hey, programmers,
+看到如何在一些代码中实现这些访问模式。 我会在那里见你。 嘿，程序员，
+
+Alan here, right. Now let's go over a JavaScript solution for this undirected path problem.
+艾伦在这里，对。 现在让我们看一下这个无向路径问题的 JavaScript 解决方案。
+
+So we'll jump right in, just like we said, in the approach video, there's going to be
+因此，就像我们在进场视频中所说的那样，我们将直接进入，将
+
+a two parter. First, we're going to convert our edge list into an adjacency list. That
+有两个部分。 首先，我们要将边列表转换为邻接列表。
+
+way, it's easier to do a classic traversal through it. So I'm going to pretend I had
+这样，通过它进行经典遍历会更容易。 所以我要假装我在
+
+a helper function here. That gives me back an adjacency list. I'll call it graph. And
+这里有一个辅助函数。 这给了我一个邻接列表。 我称之为图表。
+
+I'm going to call this helper function, we'll say build graph. And if I pass it, just all
+我将调用这个辅助函数，我们会说构建图。 如果我通过它，只是
+
+of my edges, I want it to do that conversion for me. So let's work on that helper function
+我所有的优势，我希望它为我进行转换。 所以让我们现在就来处理那个辅助函数
+
+right now. And then we'll jump back to undirected path. So I'll create my build graph function,
+。 然后我们将跳回到无向路径。 所以我将创建我的构建图函数，
+
+just going to take in the edges, right. And I know I want my adjacency list to be in the
+只是要考虑边缘，对吧。 而且我知道我希望我的邻接列表
+
+form of a plain old JavaScript object. So create that graph object here. And I'm going
+采用普通的旧 JavaScript 对象的形式。 所以在这里创建那个图形对象。 我会
+
+to return it by the end just like this. And what I want to do is fill up this graph with
+像这样在最后归还它。我想要做的是用
+
+information from the edges. So I'm going to iterate through every edge. So for let edge
+来自边缘的信息填充这个图表。 所以我要遍历每一个边。 因此，对于让边缘
+
+of edges, so iterating, through every single edge, I know a single edge would be a pair.
+的边缘，如此迭代，通过每条边缘，我知道一条边缘将是一对。
+
+So I'm just gonna de structure out of that, maybe just my two node identifiers, we'll
+所以我要从中解构出来，也许只是我的两个节点标识符，我们
+
+call them a and b, from the edge. Nice. What I want to do is now initialize these nodes
+将从边缘称它们为 a 和 b。 好的。我现在要做的是将这些节点初始化
+
+as keys of this graph object. So a would be something like this, I note or this k node,
+为这个图形对象的键。 所以 a 会是这样的，我注意到或者这个 k 节点，
+
+right. So what I'll do is check if A is in my graph, I think really clean up this code,
+对。 所以我要做的是检查 A 是否在我的图表中，我认为真的清理这段代码，
+
+we better if I check if it's not in the graph. So if the a node is not in the graph, then
+如果我检查它是否不在图表中，我们会更好。所以如果a节点不在图中，
+
+what I can do is initialize it in the graph. So use it as a key and assign it to be an
+那么我能做的就是在图中初始化它。因此，将其用作键并将其分配为
+
+empty array. And I'll do the same for B over here. Right, so I'm initializing A and B in
+空数组。 我也会在这里为 B 做同样的事情。 对，所以如果 A 和 B
+
+the graph if they don't exist, and once I do that, then I can safely just add neighbors
+不存在，我将在图中初始化它们，一旦我这样做了，我就可以安全地将邻居添加
+
+into their their edges, right? So I can say, the graph square bracket a dot push B. So
+到它们的边缘，对吗？ 所以我可以说，图方括号a点推B。所以
+
+now I'm saying that right, B should be a neighbor of a, but I know that this is an undirected
+现在我说对了，B应该是a的邻居，但我知道这是一个无向
+
+graph, right? So that should be symmetric. In other words, then make sure you push a
+图，对吧？ 所以应该是对称的。换句话说，然后确保将 a 推
+
+into the neighbors of B. So it's really important that you notice that this is an undirected
+入 B 的邻居。因此，注意到这是一个无向
+
+graph. So your adjacency list needs to be symmetric in that way. So if a is in B's neighbors,
+图非常重要。 所以你的邻接列表需要以这种方式对称。 所以如果a在B的邻居中，
+
+B should also be an A's neighbors. So that's looking pretty good. Let's go ahead and see
+B也应该是A的邻居。 所以这看起来很不错。 让我们继续
+
+how that graph looks just with a little little side test here. So I must steal maybe this
+看看这个图表看起来如何，只需在这里进行一点小测试。 所以我可能必须窃取这个
+
+snippet, get that full snippet here, I could just run it manually love to make sure I can
+片段，在这里获取完整的片段，我可以手动运行它，以确保我可以
+
+test these little helper functions before I use them. So we'll give this a run, we should
+在使用这些小辅助函数之前对其进行测试。 所以我们将试一试，我们应该
+
+just see the adjacency list form of these edges here. See how it looks. So that looks
+在这里看到这些边的邻接表形式。 看看它的样子。 所以看起来还
+
+pretty good. So I'm seeing that all right, I is connected to J and K. Right? And that
+不错。 所以我看到了，我与 J 和 K 有联系。对吧？
+
+looks correct based on these edges. Awesome. And I'm also want to make sure that it's symmetric,
+基于这些边缘，这看起来是正确的。 惊人的。我还想确保它是对称的，
+
+right. So if i and j are over here that I should have JNI over here as well, right,
+对吧。 所以如果 i 和 j 在这里，我也应该在这里有 JNI，对，
+
+it should be a two way street. Alright, now let's work in our real algorithm here, which
+它应该是一条双向街道。 好的，现在让我们在这里使用我们真正的算法，这
+
+would be some sort of traversal. Now that you have a nice adjacency list, you can do
+将是某种遍历。 现在您有了一个不错的邻接列表，您
+
+either a breadth first or a depth first traversal. I'm going to implement I think, a depth first.
+可以进行广度优先或深度优先遍历。我将实施我认为，深度优先。
+
+Typically for me, it's just easier to raise push if I do it recursively. And so I'm going
+通常对我来说，如果我递归地进行推力，它会更容易。 所以我
+
+to pretend I had a function called has path, it's going to take in my graph now. And also
+要假装我有一个名为 has path 的函数，它现在将包含在我的图表中。 还有
+
+a start node and an end node. So I want to find a path from node A to node B, of course,
+一个起始节点和一个结束节点。 所以我想找到从节点 A 到节点 B 的路径，当然，
+
+I'm going to assume that this function returns a Boolean. But of course, I have to write
+我会假设这个函数返回一个布尔值。 但是，当然，我必须
+
+that function for myself. So stay organized in our code, we'll say has path. I'm going
+为自己编写该函数。 所以在我们的代码中保持井井有条，我们会说有路径。 我
+
+to take in the graph as well as node A and node B. And I think a better name for these
+将考虑图表以及节点 A 和节点 B。我认为这些参数的名称更好，
+
+arguments as I'm doing this recursively. Let's call this one source and this one destination.
+因为我正在递归地执行此操作。 让我们称此为一个源和此一个目的地。
+
+So over time, we're going to call recursively and update this source node. And that should
+所以随着时间的推移，我们将递归调用并更新这个源节点。 这应该
+
+be a familiar pattern to some other problems resolved. Recently. So think about my base
+是解决其他一些问题的熟悉模式。 最近。 所以想想我的基本
+
+case. All right, I know that I've has successfully found a path when my source is equal to my
+情况。 好吧，我知道当我的源节点等于我的目标节点时，我已经成功找到了一条路径
+
+destination node, if that's the case in return true, because I just found a path. Otherwise,
+，如果是这种情况，则返回true，因为我刚刚找到了一条路径。 否则，
+
+I have to keep looking. So I should be able to look through the neighbors of my source
+我必须继续寻找。 所以我应该能够查看我的源节点的邻居
+
+node. So I could say graph square brackets source, right? Remember that any point through
+。 所以我可以说图形方括号源，对吗？ 请记住，通过
+
+this recursion source represents my current position. If I say graph, square bracket source,
+此递归源的任何点都代表我当前的位置。 如果我说图形，方括号源，
+
+let's say source was I, I'd be accessing all of ies neighbors, right? So I want to do is
+假设源是我，我会访问所有 ies 邻居，对吗？ 所以我想做的是
+
+really iterates for let neighbor and, or rather have graph of source. So if sources I on the
+真正迭代让邻居，或者更确切地说有源图。 因此，如果
+
+first iteration neighbor would be j, second iteration neighbor might be K. And for each
+第一次迭代邻居上的源 I 是 j，第二次迭代邻居可能是 K。对于我的每个
+
+of my neighbors, I want to travel to them. So call has path, you can keep your graph
+邻居，我想去他们那里。所以调用有路径，你可以保持你的图形
+
+argument the same needs to change your source though now you're situated at your neighbor,
+参数与改变源的需求相同，尽管现在你位于你的邻居，
+
+and your destination is fixed, or you're always trying to get to the same exact node. I'm
+并且你的目的地是固定的，或者你总是试图到达同一个确切的节点。 我
+
+gonna think about what type this returns I know this is going to tell me Boolean, right?
+会考虑返回什么类型我知道这会告诉我布尔值，对吧？
+
+True or false? Is there some path from my neighbor to the destination, I'm going to
+对或错？ 从我的邻居到目的地有什么路吗，我去
+
+check. All right, if that call, returns true, I'll be explicit here, then I've just found
+查一下。 好吧，如果该调用返回 true，我将在这里明确说明，那么我刚刚找到
+
+a path. So just return that true, right, pass it all the way back up. And kind of the logic
+了一条路径。 所以只要返回那个真实的，对的，把它一直传回去。
+
+that we form here is, I know that by definition, source and neighbor are definitely connected.
+我们在这里形成的一种逻辑是，我知道根据定义，源和邻居肯定是相连的。
+
+So there's definitely a path between them. They're connected by a direct edge. So if
+所以他们之间肯定有一条路。它们通过直接边缘连接。 因此，如果
+
+my neighbor has a path to the destination, then I know, then the source also has a path
+我的邻居有到目的地的路径，那么我知道，那么源也有
+
+to the destination. Awesome. And so after this for loop is done running, let's say we
+到目的地的路径。 惊人的。 所以在这个for循环完成运行之后，假设我们
+
+never find that any of our neighbors make a winning path, then means I finished this
+从来没有发现我们的任何邻居做出了一条成功的路径，那么意味着我完成了这个
+
+for loop without ever returning true, which means that I can return false right must be
+for循环而没有返回true，这意味着我可以返回false正确必须是这样
+
+the case that this source node does not have some path to destination. So I think we can
+的情况 这个源节点没有到达目的地的路径。 所以我认为我们可以
+
+go ahead and give this code a test run. If you watch the approach video, you'll notice
+继续测试这段代码。 如果您观看方法视频，您会注意到此代码
+
+that there's something important missing from this code. But we'll just run it and show
+中缺少一些重要的东西。 但我们只会运行它并向
+
+you how to fish here. So here I'm getting an error edges is not defined what I do horribly
+您展示如何在这里钓鱼。 所以在这里我得到一个错误边缘没有定义我
+
+wrong, line 34 months ago, line 34 over here. So got to take out this call, don't need that
+做错了什么，34个月前的第34行在这里。所以必须打掉这个电话，不再需要那个
+
+anymore. That's on me. Let's get that test run. So that was not the error I was expecting.
+了。 那在我身上。 让我们进行测试。 所以这不是我所期待的错误。
+
+I am expecting some sort of an infinite loop, though. Perfect, I'm getting maximum call
+不过，我期待某种无限循环。 完美，我正在超出最大调用
+
+stack size exceeded. So I got like an infinite recursion really. And that's going to occur
+堆栈大小。 所以我真的得到了无限递归。 这会发生，
+
+because we didn't account for the case where we have cycles in our graph, right, we need
+因为我们没有考虑到我们的图表中有循环的情况，对，我们
+
+to avoid that. Because if I have a cycle in my graph, I'm never going to hit any of these
+需要避免这种情况。 因为如果我的图表中有一个循环，我将永远不会遇到任何这些
+
+base cases, I'm just gonna keep traveling around in a circle. And if that's unclear,
+基本情况，我只会继续绕着一个圆圈旅行。 如果不清楚，请
+
+make sure you watch the approach video, right. And so like we said, the move here is to add
+务必观看进场视频，对。就像我们说的那样，这里的举措是添加
+
+some sort of data that shows where you've been previously. Typically, the way we do
+某种数据，以显示您以前去过的地方。 通常，
+
+this for our graph problems is to track some visited set. So when I make my top level call
+我们对图形问题执行此操作的方式是跟踪一些访问集。 因此，当我
+
+to this house path, I know that that is the actual function that does that traversal,
+对这个房子路径进行顶级调用时，我知道这是执行该遍历的实际函数，
+
+I'm going to pass along a new argument here. And I'll make it a new JavaScript set. So
+我将在此处传递一个新参数。我将使它成为一个新的 JavaScript 集。 因此，
+
+if you're unfamiliar with sets, and JavaScript, they're really just a collection of items.
+如果您不熟悉集合和 JavaScript，它们实际上只是项目的集合。
+
+And what's really great about a set is in o of one time, I can add something into the
+一个系列真正伟大的地方在于，我可以在一次内添加一些东西到
+
+set. And I can also check for something within the set is going to be very, very quick for
+系列中。 而且我还可以检查集合中的某些内容是否会非常非常快地
+
+our traversal. I don't want to use something slow like an array, because to do a lookup
+进行遍历。 我不想使用像数组这样慢的东西，因为要在数组中进行查找
+
+or a check within an array, that would actually be O of n time, or it's for a set, it's o
+或检查，这实际上是 n 次的 O，或者它是一个集合，它
+
+of one. So I'm going to make a new argument here to receive a column visited. What I want
+是一个的 o。 所以我要在这里提出一个新的论点来接收访问的列。 我
+
+to do is all right check if my source node is already in the visited set to do that in
+想要做的就是检查我的源节点是否已经在访问集中，以便在 JavaScript 中执行此操作，
+
+JavaScript I can check visited out has. So if the source node is inside of the visited
+我可以检查访问过的节点。 所以如果源节点在访问
+
+set, then I could return false here, right, there's no reason to travel through this node
+集中，那么我可以在这里返回false，对，没有理由再穿过这个节点
+
+anymore. Because if it's an visited then I must have traveled at previously. And this
+了。 因为如果它是访问过的，那么我之前一定去过。 这
+
+is how I can avoid an infinite recursion can also move this line downward if I wanted to.
+就是我可以避免无限递归的方法，如果我愿意，也可以将这条线向下移动。
+
+And let's say that I make it through this if statement. So that means that all right,
+假设我通过了这个if 语句。 所以这意味着好吧，
+
+this node source has not been visited. But I'm visiting it right now. So I need to do
+这个节点源没有被访问过。 但我现在正在访问它。 所以我需要
+
+visit a dot add source. So this expression checks if source is in visited, and this expression
+访问一个点添加源。 所以这个表达式检查源是否在访问中，并且这个表达式
+
+adds source to the visited set. I want to change a few other details here. Make sure
+将源添加到访问集中。 我想在这里更改一些其他细节。
+
+that you pass along the same visited set through all of your recursive calls over here. Because
+确保通过此处的所有递归调用传递相同的访问集。 因为
+
+you want this visited set to be like global for the entire traversal right I need to know
+您希望这个访问集对于整个遍历权来说都是全局的，所以我需要
+
+exactly where I've been in the past. And once we have that in place, that should be everything
+确切地知道我过去去过哪里。 一旦我们有了它，这应该是
+
+we need to prevent any any cycles from giving us infinite recursion here. Let's give it
+我们需要的一切，以防止任何任何循环在这里给我们无限递归。 让我们
+
+a test run. Awesome. There's a solution for our undirected path problem. So important
+试一试。 惊人的。我们的无向路径问题有一个解决方案。 如此重要的
+
+things to take away here do consider this problem, a two parter right? phase one is
+事情要在这里带走考虑这个问题，一个两方，对吧？ 第一阶段
+
+really straightforward, just converting an edge list into an adjacency list, which is
+非常简单，只是将边缘列表转换为邻接列表，这
+
+actually an important skill to practice. Because when it comes to, you know, some problems
+实际上是一个重要的练习技能。 因为当谈到，你知道，
+
+you'll face in the wild, they are all going to be basically graph problems. But sometimes
+你会在野外面临的一些问题，它们基本上都是图问题。 但有时
+
+they'll give you the graph and like a different format, and you can always convert into a
+他们会给你图表并喜欢不同的格式，你总是可以转换成
+
+format that you're comfortable with. And from there, we have a really core pattern of just
+你喜欢的格式。 从那里开始，我们有了一个真正的核心模式，
+
+doing a traversal through a graph, but also guarding against infinite loops, right. And
+即遍历一个图，同时防止无限循环，对吧。
+
+to do that, we just use some sort of a visited set. Hey, programmers, welcome back right
+为此，我们只需使用某种已访问集。 嘿，程序员，欢迎回来，
+
+now want to go over the approach for this connected components count problem. So in
+现在想复习一下这个连接组件计数问题的方法。 所以在
+
+this problem we want to do is take an adjacency list representing an undirected graph. As
+这个问题中，我们要做的是取一个表示无向图的邻接表。 与
+
+always, with any graph problem, you want to start by visualizing the actual graph. And
+往常一样，对于任何图形问题，您都希望从可视化实际图形开始。
+
+so if you took a picture of this information, it would end up looking like a graph with
+所以如果你把这些信息拍下来，它最终会看起来像一个具有
+
+this structure. The first thing we should notice about this visual graph is that a has
+这种结构的图表。关于这个可视化图表，我们首先应该注意的是 a 有
+
+multiple connected components. So for example, I can look at this component in pink spanning
+多个连接的组件。 例如，我可以查看
+
+just the one and two nodes, I can look at another component spanning the four or 5678
+仅跨越一个和两个节点的粉红色组件，我可以查看跨越四个或 5678 个
+
+nodes. And finally, a third component just covering the three node. And that's why we
+节点的另一个组件。 最后，第三个组件仅覆盖三个节点。 这就是为什么我们
+
+say that your result for your function here should be three, right? Because there are
+说你的函数的结果应该是三个，对吧？ 因为存在
+
+three different connected components. So let's come up with an algorithm we can use to count
+三个不同的连通分量。 所以让我们想出一个我们可以用来计算组件的算法
+
+the components, we know that a general counting algorithm is going to use some variable, and
+，我们知道一个通用的计数算法将使用一些变量，我们
+
+we'll initialize that count variable to zero. And the trick here is to use a combination
+将这个计数变量初始化为零。 这里的技巧是
+
+of both some standard graph traversal code, maybe a depth first as well as some iterative
+结合使用一些标准的图遍历代码，可能是深度优先以及一些迭代
+
+code. So I'll do along the left hand side is just list out all of my different nodes.
+代码。 所以我会在左边列出我所有的不同节点。
+
+And what I'll do is start by iterating, through every node of this list. And what I'm going
+我要做的是从迭代开始，遍历这个列表的每个节点。 我
+
+to do is when I'm currently at some note of this iterative list, I'm going to start a
+要做的是，当我当前在这个迭代列表的某个注释处时，我将
+
+traversal at that node. So right now starting at the node of one, I begin, let's say a depth
+在那个节点处开始遍历。 所以现在从一个节点开始，假设是深度
+
+first traversal, you can really implement this pattern using either a depth first or
+优先遍历，你可以使用深度优先或
+
+breadth first. So let's say I start at the one node over here. What I should do now is
+广度优先来真正实现这个模式。 所以假设我从这里的一个节点开始。 我现在应该做的就是
+
+continue this traversal as far as possible, that's the key to victory here. So from this
+尽可能地继续这个遍历，这才是这里取胜的关键。 所以从
+
+one node, I can move to a neighbor of two. And of course, as I travel through these nodes,
+这个节点，我可以移动到两个邻居。当然，当我穿过这些节点时，
+
+I want to make sure that I mark things as visited, so I can avoid loops. And marking
+我想确保将事物标记为已访问，这样我就可以避免循环。 并且将
+
+things as visited will also ensure that we don't double count any components here. Once
+事物标记为已访问也将确保我们不会在这里重复计算任何组件。 一旦
+
+I hit that to note, I've actually completed this full component, there's nowhere else
+我注意到这一点，我实际上已经完成了这个完整的组件，我无处
+
+I can explore. So at this point, I should increment my count by one. So whenever I complete
+可探索。 所以在这一点上，我应该将我的计数加一。 因此，每当我
+
+a new traversal on some region of the graph, I need to increment my count. At this point,
+在图表的某个区域完成新的遍历时，我都需要增加计数。 此时，
+
+I now fall back to my iterative code on the left hand side, and I iterate through the
+我现在回到左侧的迭代代码，并迭代
+
+next node. So I now look at node number two. If I take a look at node number two, I see
+下一个节点。 所以我现在看看第二个节点。如果我看一下节点二，我
+
+that I already have it marked as visited. So that means I don't need to start a traversal
+发现我已经将它标记为已访问。所以这意味着我不需要
+
+at that node. So effectively skip the two and keep the count the same. next iteration
+在那个节点开始遍历。 所以有效地跳过这两个并保持计数相同。 下一次迭代
+
+I have a three, three is unvisited right now. So I should begin a new traversal starting
+我有一个三个，三个现在未访问。所以我应该
+
+at this three node, which means I just mark it as visited. And since this three is a singleton
+从这三个节点开始新的遍历，这意味着我只是将它标记为已访问。 而且由于这三个是单例
+
+node, right, it's not connected to anyone, I would actually complete their traversal,
+节点，对，它没有连接到任何人，我实际上会完成他们的遍历，
+
+just on the three node. At this point, I've completed a traversal. So I increment my count
+就在三个节点上。 至此，我已经完成了一次遍历。 所以我将计数
+
+by one. So now I have a total count of two, I fall back to my iterative code. So I moved
+加一。 所以现在我总共有两个，我回退到我的迭代代码。 所以我
+
+from the three node to the four node. And I see that this four node is unvisited, which
+从三节点搬到了四节点。我看到这四个节点未被访问，这
+
+again means I must begin a traversal from this four node. And I'm going to expand this
+再次意味着我必须从这四个节点开始遍历。 我将扩展这个
+
+traversal. Starting at four as far as I can, before I go back to my iterative code, right,
+遍历。 尽可能从四开始，在我回到我的迭代代码之前，对，
+
+so I'm going to explore the six, explore this five, explore the seven, and finally explore
+所以我要探索六，探索这五个，探索七，最后探索
+
+this eight. At this point, I've completed a traversal. So I can increment my count up
+这八。 至此，我已经完成了一次遍历。 所以我可以将我的计数
+
+to three. And then I have to continue and fall back to my iterative code. So look at
+增加到三。 然后我必须继续并退回到我的迭代代码。 于是
+
+the five node, I see that the five note is already marked as visited, so I don't start
+查看五节点，我看到五注已经标记为已访问，所以不开始
+
+traversal. And I see that the six node, same thing don't need to start traversal seven
+遍历。 而且我看到这六个节点，同样的事情不需要开始遍历
+
+note already visited, eight nodes already visited. At this point, I would be done with
+已经访问过的七个节点，已经访问过的八个节点。 至此，我将
+
+the entire algorithm. And there's my final count of three. So a few interesting mechanics
+完成整个算法。 这是我最后数到的三。 所以这里有一些有趣的机制
+
+here, right, you're going to need to definitely implement some code or some function that
+，对，你肯定需要实现一些代码或一些函数
+
+does a traversal through some component as far as possible, then you also need some iterative
+，尽可能遍历某个组件，然后你还需要一些迭代
+
+code just to potentially begin a traversal at every single starting point. And what you
+代码，以便潜在地开始遍历每个 单一的起点。 您
+
+want to do is be sure to mark nodes as visited as you traverse them, because only when you
+要做的是确保在遍历节点时将节点标记为已访问，因为只有当您
+
+marked a new node as visited and complete that traversal should you increment your count.
+将新节点标记为已访问并完成遍历时，您才应该增加计数。
+
+You're probably wondering the exact details of how we implement this in some code, but
+你可能想知道我们如何在一些代码中实现它的确切细节，
+
+don't worry, you'll realize that it's really just a spin off of our previous graph algorithms
+但别担心，你会意识到这实际上只是我们在演练视频中之前的图形算法的衍生
+
+in the walkthrough video, but for now, we see that n is a number of nodes And he has
+，但现在，我们看到 那 n 是许多节点，他
+
+a number of edges like usual, we know that this is really just traversing through the
+像往常一样有许多边，我们知道这实际上只是遍历
+
+entire graph. So we can say the time complexity is just o v, and the space complexity is O
+整个图。 所以我们可以说时间复杂度只是 ov，空间复杂度
+
+of n, right, depending on whether you do a breadth first or depth first, you're going
+是 n 的 O，对，这取决于你是先做广度还是先做深度，你
+
+to use that space, then in terms of your stack or cube. And we can also consider using the
+将使用那个空间，然后根据你的堆栈或 立方体。
+
+space within our set if you use a set to mark your nodes as visited, but overall, it still
+如果您使用集合将您的节点标记为已访问，我们也可以考虑使用我们集合中的空间，但总的来说，它仍然
+
+will lead to a linear time and linear space solution. Alright, I think I'm ready to code
+会导致线性时间和线性空间解决方案。 好吧，我想我已经准备好编写
+
+this one up. I'll see you in the walkthrough video. Hey, programmers, Alvin here, right,
+这个代码了。 我会在演练视频中见到你。 嘿，程序员们，这里是 Alvin，对，
+
+now let's go over a JavaScript solution for this connected components count problem. And
+现在让我们来看看这个连接组件计数问题的 JavaScript 解决方案。
+
+so we'll implement exactly the strategy we spoke about in the approach video. So make
+因此，我们将完全实施我们在进场视频中谈到的策略。 所以请
+
+sure you watch that first, we know that this is going to require really two different mechanisms
+确保您首先观看，我们知道这将需要两种不同的
+
+are going to need our interactive code just to hop to different connected components.
+机制，需要我们的交互式代码才能跳到不同的连接组件。
+
+And we also need some traversal code to just explore some single component as far as possible.
+而且我们还需要一些遍历代码来尽可能地探索一些单个组件。
+
+And so what I'll do here is let me start with the iterative code. So I need to begin a traversal
+所以我在这里要做的是让我从迭代代码开始。 所以我需要
+
+at every potential node. So I can say for let node of my graph really say in my graph
+在每个潜在节点开始遍历。 所以我可以说让我的图表的节点真的在我的图表中
+
+here, because for this problem we're given looks like JavaScript objects. So if I say
+说，因为对于这个问题，我们给出的看起来像 JavaScript 对象。 所以如果我说
+
+for let node in graph that would give me each of these keys like 015, and so on. And so
+for let node in graph 这会给我每个键，比如 015，等等。 所以
+
+for every node of the graph, what I want to do is begin a traversal. So we're going to
+对于图中的每个节点，我想做的是开始遍历。 所以我们
+
+assume I have a function here, I'll call it explore. I'm gonna pass in, of course, the
+假设我在这里有一个函数，我称之为探索。 当然，我会传入
+
+graph, as well as that node. And what I want that function to do is do like a, we'll say,
+图表以及那个节点。 我希望这个函数做的是，我们会说
+
+a depth first traversal, from that node as far as possible, right, so probably going
+，深度优先遍历，尽可能从那个节点开始，对，所以
+
+to need to add more logic into this main function. But for now, I think it's about time to actually
+可能需要在这个主函数中添加更多逻辑。但就目前而言，我认为是时候真正
+
+flesh out explore. So I'll choose to do this explore method recursively. So we'll define
+充实探索了。 所以我会选择递归地做这个探索方法。 所以我们将定义
+
+explore, it's going to take in a graph, as well as my current node, I'll just call it
+探索，它会包含一个图表，以及我当前的节点，我就称它为
+
+current, right. And then from there, I want to solve this one, using a depth first. So
+当前的，对吧。 然后从那里，我想解决这个问题，首先使用深度。 所以
+
+recursion is fine. And not much to do here, but really go through my neighbors want to
+递归很好。 而且这里没什么可做的，但是真的要通过我的邻居来
+
+iterate through every neighbor of this node. So I can say like neighbor of graph of current,
+遍历这个节点的每个邻居。所以我可以说就像当前图的邻居一样，
+
+I recall that graph would be an adjacency list. So if current is spread this out. So
+我记得图将是一个邻接表。 因此，如果将电流分散开来。 因此，
+
+if current was a node like eight, then on the first iteration neighbor would be zero,
+如果 current 是一个像 8 这样的节点，那么在第一次迭代时邻居将为零，
+
+next iteration neighbor would be five. So here, I'm just going through all the neighbors
+下一次迭代邻居将是 5。 所以在这里，我只是遍历
+
+of my current node, I just need to not traverse to them. So I can call explore, pass along
+当前节点的所有邻居，我只需要不遍历它们。 所以我可以调用 explore，
+
+the same graph, that doesn't change. But now my new current node would be that neighbor,
+传递相同的图表，这不会改变。 但是现在我的新当前节点将是那个邻居，
+
+just like that, and this will perform the baseline of just the kind of depth first traversal.
+就像那样，这将执行深度优先遍历的基线。
+
+But we need to also mark things as visited, like we said, in the approach video, that's
+但是我们还需要将事物标记为已访问，就像我们在方法视频中所说的那样，这
+
+a really important a part of the solution. And I want this like visited set to be global
+是解决方案中非常重要的一部分。我希望这个喜欢访问的集合在
+
+for my entire traversal. So I'm gonna have to create it, maybe my main function over
+我的整个遍历中都是全局的。 所以我将不得不创建它，也许我的主要功能在
+
+here. So I can create my constant visited, make it a JavaScript set, because JavaScript
+这里。 所以我可以创建我的常量访问，使其成为一个 JavaScript 集，因为 JavaScript
+
+sets off for me O of one lookup, and o of one addition, I can pass this visited set
+为我设置了一个查找和一个添加，我可以将这个访问集传递给
+
+my reference until all of these calls over here. So I know I'm gonna receive visited
+我的引用，直到所有这些调用都在这里。 所以我知道我现在会
+
+over here now. Now I want to actually start using visited. So a few things to note, right,
+在这里接受访问。 现在我想真正开始使用visited。 所以有几点需要注意，对了，
+
+I definitely want to use visited to prevent cycles, right? That's one of the main reasons
+我肯定是想用visited来防止循环的吧？ 这是
+
+we always had visited to our graph traversals. So some familiar code here. If I've already
+我们一直访问图遍历的主要原因之一。所以这里有一些熟悉的代码。 如果我已经
+
+visited this node, so if visited, has this current node, then nothing much to do here,
+访问过这个节点，所以如果访问过，有这个当前节点，那么这里没什么可做的，
+
+maybe just return false. Later on, we'll see. The really cool trick we use here by returning
+也许只是返回 false。 稍后，我们会看到。我们在这里使用的非常酷的技巧是返回
+
+false, right, actually serves two purposes. return false because this might be a cycle.
+false，对，实际上有两个目的。返回 false 因为这可能是一个循环。
+
+And then I need to make sure that I pass as visited set along over here as well. Nice.
+然后我需要确保我也通过了这里的访问集。 好的。
+
+And let's say that we have a current node that is not visited. So this statement is
+假设我们有一个未访问的当前节点。 所以这个说法是
+
+false. Well, then, it seems to be that we're visiting this node right now. So now we should
+错误的。 那么，看来我们现在正在访问这个节点。 所以现在我们应该
+
+add it into the visited set. Nice. And then beyond that, we need to make sure that our
+将它添加到访问集中。 好的。除此之外，我们还需要确保我们的
+
+explorer function is consistent in its type, right? So I'm going to have my explorer function
+explorer 函数的类型是一致的，对吧？ 所以我要让我的资源管理器函数
+
+do is it's going to return true whenever it explores like a new node return true. So if
+做的是，只要它像一个新节点返回 true 一样进行探索，它就会返回 true。 所以如果
+
+you take a look at this code, for my function to hit this line 17 return true, then it must
+你看一下这段代码，如果我的函数在第 17 行返回 true，
+
+be the case that it has already finished exploring all of its neighbors, right, because I know
+那么它肯定已经完成了对所有邻居的探索，对，因为我
+
+that this for loop does the job of exploring all of the neighbors, right? So only after
+知道这个 for 循环可以完成这项工作 探索所有的邻居，对吧？ 因此，只有在
+
+all of those neighbor calls returned. Will I return true? And that must mean that I've
+所有这些邻居呼叫都返回之后。我会回归真实吗？ 这一定意味着我已经
+
+explored this component as far as possible. Right? And that seems good to go. And what
+尽可能地探索了这个组件。正确的？ 这似乎很好。
+
+I can do is now in my main function, when I call explore it, now it's going to give
+我现在能做的是在我的 main 函数中，当我调用 explore 它时，现在它会给
+
+me boolean data, right? If it's exploring a new island, or a new component, it's going
+我布尔数据，对吧？ 如果它正在探索一个新的岛屿或一个新的组件，它将
+
+to return true. So I can check. All right, if explorer returns true, then that's a new
+返回 true。 所以我可以检查。 好吧，如果 explorer 返回 true，那么这是一个新
+
+component. So I can probably increment some count here, I should have created. So I'll
+组件。 所以我可能可以在这里增加一些计数，我应该已经创建了。 所以我会
+
+say 11, counts equals zero, I'm going to increment that count, when I find a new component and
+说 11，计数等于 0，我将增加该计数，当我找到一个新组件并且
+
+plus equals one by the end, I should of course, return that counts. And what you'll notice
+到最后加上等于 1 时，我当然应该返回该计数。 你会
+
+is, for scenarios where we, let's say iterate into a node that we already explored, when
+注意到，对于我们的场景，比如说迭代到我们已经探索过的节点，当
+
+I make this call, I know that that call is going to return false, because if something's
+我进行这个调用时，我知道那个调用将返回 false，因为如果
+
+already explored, it would have been added to visited. So that's why I'm using some Boolean
+已经探索过某些东西，它会 已添加到访问。 所以这就是我
+
+return values for this recursive function. So that code is looking pretty good. I think
+为这个递归函数使用一些布尔返回值的原因。所以这段代码看起来很不错。 我想
+
+at this point, we might be ready to test this one, let's give it a shot here. So some pretty
+在这一点上，我们可能已经准备好测试这个了，让我们在这里试一试。 所以一些非常
+
+tricky codes, not very long. And this is a really core pattern here. Looks like I'm getting
+棘手的代码，不是很长。 这是一个真正的核心模式。 看起来我
+
+an error, we have something wrong here. So looks like the answer should have been two,
+遇到了错误，我们这里有问题。 所以看起来答案应该是两个，
+
+but I gave back seven. So I'm counting way too high. So what I'll do to debug This one
+但我给了七个。 所以我算得太高了。 所以我会做些什么来调试
+
+is really just maybe print out my visited. So this is a very common mistake in JavaScript
+这个真的只是可能打印出我访问过的。所以这是 JavaScript 想要引入的一个很常见的错误
+
+want to bring in, I think this example, I could test it manually. What I want to be
+，我想这个例子，我可以手动测试一下。 我要
+
+sure to do is maybe at every iteration of, let's say this this for loop, I console dot
+确保做的可能是在每次迭代中，比如说这个 for 循环，我每次都
+
+log with visited associate visited changes every time. And I'll run this manually by
+使用访问的关联访问更改来控制台点日志。 我将
+
+just hitting run. And let's see what we get here. So a few things to note, it looks like
+通过点击运行手动运行它。 让我们看看我们在这里得到了什么。 所以有几点需要注意，看起来
+
+some of our keys, or some of our items of the set are strings or the zeros a string.
+我们的一些键，或者我们集合中的一些项目是字符串，或者零是一个字符串。
+
+And other times they're actually numbers, notice that they're missing quotes, that has
+有时它们实际上是数字，请注意它们缺少引号，这
+
+to do with, you know, kind of just JavaScript objects, technically, keys of a JavaScript
+与你知道的只是 JavaScript对象有关，从技术上讲，JavaScript
+
+object are going to be always converted as strings, although the data within these arrays
+对象的键将始终转换为字符串，尽管 这些数组中的数据
+
+over here is going to be number. And sets can actually store both types. And so if you
+将是数字。 集合实际上可以存储这两种类型。 因此，如果
+
+have like two different types, it's not gonna be able to figure out like that those really
+你有两种不同的类型，它就无法弄清楚它们真的
+
+represent the same node. For example, looking at this visited set over here, I have like
+代表同一个节点。 比如这里看这个visited set，我
+
+the number one, as well as the string of one, which is no good. So let's just convert them
+喜欢数字一，还有一串，不好。 因此，让我们将它们
+
+all to maybe strings. So I'll check visited if it has the string version of my current
+全部转换为字符串。 所以我会检查visited是否有我当前节点的字符串版本
+
+node. So I'll just do the conversion for me. And likewise, I want to add the string version
+。 所以我会为我做转换。同样，我想
+
+of the current node over here. That way, I have very consistent types. So let's run that
+在此处添加当前节点的字符串版本。 这样，我就有了非常一致的类型。 所以让我们
+
+manually, again, should just see all of our strings now. Awesome. And I think we can run
+再次手动运行它，现在应该只看到我们所有的字符串。 惊人的。 而且我认为我们可以运行
+
+all the test cases. So that's a really important thing to watch out for in JavaScript. And
+所有的测试用例。 所以这是在 JavaScript 中需要注意的非常重要的事情。
+
+JavaScript is pretty unique in that regard. It just automatically converts all of your
+JavaScript 在这方面非常独特。它只是自动将所有
+
+keys into strings. Awesome. All right, programmers, it's all I got for this connected components
+键转换为字符串。 惊人的。 好吧，程序员，这就是连接组件
+
+count problem, what you want to do is really practice this problem. It's actually a very,
+计数问题的全部内容，你要做的就是真正练习这个问题。 这实际上是一个非常
+
+very common interview question. And there are many variations of this problem that we're
+非常常见的面试问题。我们将在未来解决这个问题的许多变体
+
+going to do in the future. Hey, programmers, Alvin here, right? Now I want to go over an
+。 嘿，程序员，Alvin 在这里，对吧？ 现在我想介绍
+
+approach we can use for this largest component problem. So in this problem, we're going to
+一种我们可以用来解决这个最大的组件问题的方法。 所以在这个问题中，我们将
+
+take in a graph, just like we've been doing as of late. And the first thing you should
+使用一个图表，就像我们最近一直在做的那样。 您
+
+probably do is think of this graph as a picture. So hopefully, you drew it out. So you can
+可能应该做的第一件事就是将此图表视为图片。所以希望你把它画出来。 所以你可以
+
+really understand what this is asking. Our graph information is already given as an adjacency
+真正理解这是在问什么。 我们的图信息已经作为邻接
+
+list. So it's pretty easy to draw out. So since I have a graph like this, the first
+列表给出。 所以很容易画出来。 因此，既然我有这样的图表，
+
+thing I should notice is it could contain multiple components, right. So here, I kind
+我首先应该注意的是它可能包含多个组件，对吧。 所以在这里，
+
+of see two separate islands, two separate components. And I want to consider the sizes
+我看到了两个独立的岛屿，两个独立的组件。 我想考虑
+
+of each respective component. So if I look at my first component, spanning the nodes,
+每个组件的大小。 因此，如果我查看我的第一个组件，跨越节点
+
+015, and eight, I know that they have a size of four, they're the four represents the number
+015 和 8，我知道它们的大小为 4，它们是 4 表示
+
+of nodes within that component. So I'm really interested in a number of nodes have a component,
+该组件中的节点数。 所以我真正感兴趣的是有多少节点有一个分量，
+
+not necessarily the number of edges. If I look at the other component that spans the
+不一定是边的数量。 如果我查看跨越节点的另一个组件，即
+
+nodes, two, three, and four, that definitely has a node group of three. And this problem
+两个、三个和四个，它肯定有一个三个节点组。 这个问题
+
+really cares about the largest component, so I should just return four, because it's
+真的很关心最大的组件，所以我应该只返回四个，因为它
+
+the largest component size. So when it comes to what this question is asking, you do have
+是最大的组件大小。 因此，当涉及到这个问题要问什么时，如果您一直按顺序关注这些问题，那么您确实有
+
+some familiar patterns if you've been following these problems in order and of course, I always
+一些熟悉的模式，当然，我总是
+
+recommend that you do these problems in order. So how can we go about solving this one? Well,
+建议您按顺序解决这些问题。那么我们该如何解决这个问题呢？ 好吧，
+
+I know I'm gonna need some sort of iterative code that way I can travel and hop to different
+我知道我需要某种迭代代码，这样我就可以旅行并跳到不同的
+
+components or different islands, I can probably do some depth first traversal variation that
+组件或不同的岛，我可能可以做一些深度优先遍历变化，
+
+also finds the size of a connected component. So let's step through how this algorithm might
+也可以找到连接组件的大小。因此，让我们逐步了解该算法的
+
+run. On the side. I'm going to list out my nodes to represent how I'm going to do the
+运行方式。 在一边。 我将列出我的节点以表示我将如何进行
+
+iterations to be In a traversal at every node as my starting point, so I'm going to start
+迭代以在每个节点的遍历中作为我的起点，所以我将从
+
+at node zero. And since node zero is unvisited right, now, I'm going to begin a brand new
+节点零开始。 由于节点 0 未被访问，现在，我将开始一个全新的
+
+traversal, starting at node zero. And I'm going to mark my nodes as visited as I go,
+遍历，从节点 0 开始。我将标记我的节点为访问过的，
+
+because like usual for our undirected graphs, you want to watch out and prevent any cycles
+因为像往常一样我们的无向图，你想注意并防止
+
+that you may get trapped in. And I know that this depth first traversal, is going to explore
+你可能陷入的任何循环。而且我知道这种深度优先遍历正在发生 尽可能探索
+
+this full region as far as possible. And by the power of recursion, it'll be pretty easy
+这个完整的区域。 并且通过递归的力量，很
+
+to implement some pattern that can count every node as we traverse through it. So I'm going
+容易实现一些模式，可以在我们遍历它时计算每个节点。 当然，我
+
+to treat each of these nodes as just being a single note, of course. And eventually,
+将把这些节点中的每一个都视为一个音符。 最终，
+
+those ones are going to return to my top level call, in which case, I can add them all up,
+这些将返回到我的顶级呼叫，在这种情况下，我可以将它们全部加起来，
+
+getting me a grand total of four. If this feels very hand wavy, and you're wondering,
+总共得到四个。 如果这感觉非常混乱，并且您
+
+like how the heck are we going to code up that pattern, don't worry, it's actually a
+想知道我们将如何编写该模式，请不要担心，这实际上是
+
+pattern we've seen before. And so I'll cover that in detail in the code. Just know for
+我们以前见过的模式。 因此，我将在代码中详细介绍这一点。 现在只知道
+
+now, it's actually not a big deal to get the count of nodes, right. So now that I know
+，获得节点的数量实际上并不是什么大问题，对吧。 所以现在我知道
+
+that the size of this component is four, what I should do is I guess store it as my current
+这个组件的大小是 4，我应该做的就是将它存储为
+
+largest island or component I've seen so far, because it's the first component that I've
+我目前看到的最大的岛或组件，因为它是我考虑的第一个组件
+
+considered. At this point, I should fall back to my intuitive code. So I look at the node
+。 在这一点上，我应该回到我的直观代码。 所以我看了一下
+
+of one, what I should notice is this node one is already checked off, it's already visited.
+节点一，我应该注意到这个节点一已经被勾选了，它已经被访问过了。
+
+So there's no reason to start another traversal from this node, because if it's visited, that
+所以没有理由从这个节点开始另一个遍历，因为如果它被访问过，那
+
+means I have already explored the component that node one is a member of, so I can basically
+意味着我已经探索了节点一所属的组件，所以我基本上可以
+
+skip it, go on to node two in my iteration, since node two is unvisited, I should begin
+跳过它，在我的迭代中继续到节点二，因为 节点二未访问，我应该
+
+a new traversal. Over here, I know that this depth first traversal is going to explore
+开始新的遍历。 在这里，我知道这种深度优先遍历将尽可能地探索
+
+that component as far as possible, it's going to go ahead and count all of those nodes as
+该组件，它将继续并将所有这些节点计为
+
+one. And eventually some of those counts together, giving me a count of three. And so this next
+一个。 最终，其中一些计数在一起，让我数到三。 所以下一个
+
+component has a size of three, I need to compare that three against my current largest four,
+组件的大小为 3，我需要将这三个与我当前最大的四个进行比较，
+
+obviously, the four is bigger, so the four gets to stay as the largest. When I fall back
+显然，四个更大，所以四个保持最大。 当我
+
+to my iterative code, I get to my note of three threes already visited, so no reason
+回到我的迭代代码时，我注意到我已经访问过三个三，所以没有理由
+
+to start anew. traversal, four is already visited, so nothing to do, five is visited.
+重新开始。 遍历，四已经被访问过，所以什么都不做，五已经被访问过。
+
+And of course, eight is visited as well. At this point, we're done looking at every single
+当然，也访问了八个。至此，我们已经完成
+
+node within our graph, and we must have explored every single component, so we can just return
+了对图中每个节点的查看，并且我们必须已经探索了每个单独的组件，因此我们可以返回
+
+the final value that we have stored in that largest variable. Awesome. When it comes to
+我们存储在那个最大变量中的最终值。 惊人的。 当谈到
+
+the complexity of this algorithm, it's pretty straightforward. It's basically exactly all
+该算法的复杂性时，它非常简单。 它基本上是
+
+of the algorithms we've seen so far, we see that n is the number of nodes and e is a number
+我们目前看到的所有算法，我们看到 n 是节点数，e
+
+of edges, we know that the time complexity is going to be roughly o of the number of
+是边数，我们知道时间复杂度将大约是边数的 o
+
+edges really just exploring through the entire graph, we can also see that the space complexity
+浏览整个图，我们还可以看到空间复杂
+
+is also going to be linear, really just O of n. Because through all of this, we're probably
+度也将是线性的，实际上只是n 的 O。 因为通过所有这些，
+
+going to be storing all of our nodes in a set right to track visited. And depending
+我们可能会将所有节点存储在一组权限中以跟踪访问。
+
+on how you implement your traversal algorithm, whether you use depth first or breadth first,
+根据您实现遍历算法的方式，无论您是使用深度优先还是广度优先，
+
+you're also going to use a linear amount of space through your stack or your queue. So
+您还将通过堆栈或队列使用线性空间量。 所以
+
+overall, we're looking at a very efficient, linear solution. And so with that, I think
+总的来说，我们正在寻找一个非常有效的线性解决方案。 因此，我想
+
+I'm ready to code this one up. What I want you to do though, first is possibly give this
+我已经准备好编写这个代码了。不过，我希望你做的，首先可能
+
+one a shot on your own first cluster, really just utilizing some code that we've seen in
+是在你自己的第一个集群上试一试，实际上只是利用我们过去见过的一些代码
+
+the past. So give it a go on your own. If you get stuck, you can find me in the walkthrough
+。 因此，请自行尝试。 如果您遇到困难，可以在演练
+
+video. I'll see you there. Hey, programmers, Alvin here, right now let's go over a JavaScript
+视频中找到我。 我会在那里见你。 嘿，程序员们，这里是 Alvin，现在让我们来看看
+
+solution for this largest component problem. So this problem is going to be really just
+这个最大的组件问题的 JavaScript 解决方案。所以这个问题实际上只是
+
+a spin off of our last problem. So we'll hop right into it. And as always, make sure you
+我们上一个问题的衍生。 所以我们会直接跳进去。 和往常一样，请务必
+
+watch the approach video first. And we'll start by building our code that will help
+先观看进场视频。 我们将从构建我们的代码开始，这将帮助
+
+us start a traversal on disconnected islands here, right? This is connected components,
+我们在这里开始在不连贯的岛屿上进行遍历，对吧？ 我们应该说这是连接组件
+
+we should say. And so I'll start my iterating through every node of the graph, that means
+。 因此，我将开始遍历图形的每个节点，这意味着
+
+I just iterate through the keys of my input object here. Because remember, we're given
+我只是在这里遍历输入对象的键。 因为请记住，我们
+
+this graph as already an adjacency list. So I can say for let node in the graph. So I'll
+已经将此图作为邻接列表。 所以我可以说 for let node in the graph。 所以我
+
+give me the nodes like 015, and so on. And what I'll do is I'm going to start a traversal
+会给我像015这样的节点，等等。我要做的是在这里开始遍历
+
+here, right? So we're going to pretend I had a function, I'll call it explore size. And
+，对吧？ 所以我们要假装我有一个函数，我称之为探索大小。
+
+if I give it the graph information, as well as the node that I want to traverse through,
+如果我给它图形信息，以及我想要遍历的节点，
+
+hopefully, it actually does a traversal through that entire connected component, right. And
+希望它实际上遍历整个连接的组件，对。
+
+what I'm going to assume is, let me assume that this function actually returns the size
+我要假设的是，让我假设这个函数实际上返回
+
+of that entire component. So that would be a number right, representing the number of
+了整个组件的大小。 所以这将是一个正确的数字，代表
+
+nodes in that component. And so if I have that should receive it here, call it size.
+该组件中的节点数。 因此，如果我有它应该在这里接收，称之为尺寸。
+
+And I know I need some like max value logic for this entire for loop. So I'm going to
+而且我知道对于整个 for 循环，我需要一些类似最大值的逻辑。 所以我要
+
+create longest, initialize it to zero. And then from there, I can check. All right, if
+创建最长的，将它初始化为零。然后从那里，我可以检查。 好吧，如果
+
+the size of the component I just found, if it's bigger than the longest, then I can replace
+我刚刚找到的组件的大小，如果它大于最长的，那么我可以
+
+the longest simply longest equals size, that after the for loop, I would just read Turn
+替换最长的简单地最长等于大小，在for循环之后，我会读
+
+the longest course I need to write this explore size function. So I'll implement this as a
+转最长的课程我需要写这个 探索尺寸函数。 因此，我将首先将其作为
+
+type of depth first. So I'm going to make it recursive, as for size, taking the graph,
+一种深度来实现。 所以我要让它递归，至于大小，取图，
+
+as well as our current node. And a few things I should watch out for here, they tell us
+以及我们当前的节点。 还有一些我应该注意的事情，它们告诉
+
+that we have an undirected graph. And so we need to make sure that we avoid any cycles.
+我们我们有一个无向图。 因此，我们需要确保避免任何循环。
+
+So we're also set up here is some classic structure, I'm going to use a visited set,
+所以我们在这里也设置了一些经典的结构，我将使用一个访问集，
+
+we're going to use a set because it gives me O of one lookup and o of one insertion.
+我们将使用一个集合，因为它给了我一次查找的 O 和一次插入的 O。
+
+So now that I have my visited set, I can pass it along, as I start the traversals. And now
+所以现在我有了我的访问集，我可以在开始遍历时传递它。 现在
+
+let's work on a base case, as well do to get going is check if I visited this node already.
+让我们处理一个基本案例，以及检查我是否已经访问过这个节点。
+
+So if the visited set already has this current node that I need to return, basically avoid
+所以如果访问集已经有这个我需要返回的当前节点，基本上
+
+a recursive call. But I also want a consistent type here, right, so I'm assuming that this
+避免递归调用。 但是我在这里也想要一个一致的类型，对，所以我假设这个
+
+function gives back a number representing the size at some point in my traversal. If
+函数返回一个数字，代表我遍历中某个点的大小。 如果
+
+I get to a node that has already been visited, that means I counted it already. And so I'll
+我到达一个已经被访问过的节点，那意味着我已经数过了。 所以我
+
+treat it as zero right now, because I don't want to double count my nodes, right otherwise
+现在把它当作零，因为我不想重复计算我的节点，否则
+
+would be inaccurate here. And now beyond that, what I can do is maybe create a variable here,
+在这里会不准确。 现在除此之外，我能做的也许是在这里创建一个变量，
+
+I'll call it size, I'm going to set that equal to one to represent the current node I'm on
+我称之为大小，我将把它设置为等于 1 来表示我现在所在的当前节点
+
+right now, right? If this condition is not true, then it's the first time I'm seeing
+，对吧？ 如果这个条件不成立，那么我是第一次看到
+
+this node, so I need to count it. And we'll also be sure to do is add it to visited that
+这个节点，所以我需要数一下。 而且我们还确保将其添加到访问中，
+
+way I don't get into a cycle into the node later on. Nice. And at this point, I need
+这样我以后就不会进入节点的循环。 好的。 在这一点上，我需要
+
+to make my recursive call on the neighbors of this node. So like we usually do could
+对这个节点的邻居进行递归调用。 所以就像我们通常做的那样，可以
+
+say for let neighbor of graph of node. So remember your shape of data here. So if node
+说让节点图的邻居。 所以在这里记住你的数据形状。 因此，如果节点
+
+was a key, like five, when I say, Neighbor of graph node, that would iterate through
+是一个键，比如 5，当我说图节点的邻居时，它会
+
+the neighbors a five, zero, and then eight, and so on. And so here, I make my recursive
+遍历邻居一个 5、0、然后是 8，依此类推。 所以在这里，我进行递归
+
+calls, I'm gonna call the same function explore sighs, pass along the same graph. But now
+调用，我将调用同一个函数 explore叹息，传递同一个图表。 但是现在
+
+you're situated at your neighbor, and you can provide the same visited set. And here's
+你位于你的邻居，你可以提供相同的访问集。 这
+
+where I do my recursive leap of faith, right, I'm going to assume that this explore size
+就是我的信念递归飞跃的地方，对，我将假设这个探索大小
+
+function is working. So if it was working, what would it give back, it would give me
+函数正在工作。 因此，如果它正在工作，它会回馈什么，它会给
+
+back a number representing the size of that graph, right beginning at my neighbor. So
+我一个代表该图大小的数字，从我的邻居开始。 所以
+
+whatever number I get back here, I just want to increment my size by that, right. And that
+无论我回到这里的数字是多少，我只想增加我的大小，对吧。 这
+
+would accumulate a basically a count of all of the nodes in this fully connected component.
+将基本上积累这个完全连接的组件中所有节点的计数。
+
+And after I'm done exploring my neighbors, I would have explored the entire component
+在我探索完邻居之后，我会充分探索整个组件
+
+fully. So I can just return my final answer, which would just be the size over here, really
+。 所以我可以返回我的最终答案，这就是这里的尺寸，
+
+important thing you need to do is make sure if you follow this kind of strategy, you start
+你需要做的真正重要的事情是确保如果你遵循这种策略，你开始
+
+your size equal to one, and you add to it over time, because this one represents the
+你的尺寸等于一，然后你添加到它 时间，因为这个代表
+
+current node that I'm at, I know that every call is going to count its own node. So over
+我所在的当前节点，所以我知道每个调用都会计算自己的节点。 所以随着
+
+time, this will actually accumulate everything I need. So feels pretty good, have our nice
+时间的推移，这实际上会积累我需要的一切。 所以感觉很好，有我们很好的
+
+visited logic. And we already wrote our main function here. Notice how we're splitting
+访问逻辑。 我们已经在这里编写了我们的 main函数。 请注意我们是如何在这里将
+
+up this code in a nice little helper function here, I think it's the best way to express
+这段代码拆分为一个不错的小辅助函数，我认为这是表达
+
+this, it's very similar to some previous problems that we've done. Right, I think at this point,
+这一点的最佳方式，它与我们之前完成的一些问题非常相似。 对，我想在这一点上
+
+let's go ahead and give this a shot. See, what we get, should be able to put it through
+，让我们继续尝试一下。 看，我们得到的，应该可以
+
+a few different test cases. Nice. And there, we have the largest component to problem.
+通过几个不同的测试用例。 好的。 在那里，我们有最大的问题。
+
+So a few things, I want to draw your eye to remember that for your graph problems, or
+所以有几件事，我想让你记住，对于你的图形问题，或者
+
+you have disconnected components, you're going to need not only your traversal code, but
+你有断开连接的组件，你不仅需要遍历代码，还需要
+
+some just iterative mechanism, usually just a loop to make sure you can hop to different
+一些迭代机制，通常只是一个循环来确保 你可以跳到不同的
+
+components, right? Because if you only had your regular like traversal function, by definition,
+组件，对吧？ 因为如果您只有常规的遍历函数，根据定义，
+
+there is no edge between separate components. So you would never be able to explore the
+单独的组件之间就没有边缘。因此，您将永远无法探索
+
+full graph. Otherwise, alright, programmers practices, and I'll catch you in the next
+完整的图表。 否则，好吧，程序员练习，我会在下
+
+one. Hey, programmers, Alvin here, right. Now let's go over an approach we can use for
+一个中抓住你。 嘿，程序员，这里是 Alvin，对。现在让我们讨论一种可以
+
+the shortest path problem. So here we have another graph problem, and your graph is going
+用于最短路径问题的方法。 所以这里我们有另一个图形问题，您的图形
+
+to be given as an edge list. So the first thing we should probably do is, of course,
+将作为边列表给出。 所以我们应该做的第一件事当然是
+
+visualize this graph. And in the context of your code, it probably would be best if you
+可视化这个图表。 在您的代码上下文中，最好
+
+convert it into an adjacency list. Since we've seen that pattern a few times in some recent
+将其转换为邻接列表。 因为我们在最近的一些问题中已经多次看到这种模式
+
+problems. I'll leave that part to you. But we're going to end up with a graph that looks
+。 我会把那部分留给你。 但我们最终会得到一个看起来像这样的图表
+
+like this. And in this problem, we're also going to be given a two nodes here, let's
+。 在这个问题中，我们也会在这里得到两个节点，
+
+say W and z, what I want to do is return the smallest path between these two nodes. And
+比如说 W 和 z，我想要做的是返回这两个节点之间的最小路径。
+
+here I have two obvious paths, right? One way I can get from W to z would be to go through
+在这里，我有两条明显的路径，对吧？我可以从 W 到 z 的一种方法是通过
+
+x and y. And there I can see that that path length would be three. Do note here that we're
+x 和 y。 在那里我可以看到路径长度为三。 请注意，我们
+
+going to consider the path link as the number of edges within the path. So not the number
+将路径链接视为路径中的边数。 所以不是
+
+of nodes, right? So that means how do I calculate three here? What's really just three lines,
+节点的数量，对吧？ 所以这意味着我如何在这里计算三个？ 实际上只有三条线，
+
+right, three edges. That's one way to get from WC another obvious way to get from W
+对，三条边。 这是从 WC 获得的一种方法，从 W 到 z 的另一种明显
+
+to z would be to go through VI, which case, I would only need to use two edges. So that
+方法是通过 VI，在这种情况下，我只需要使用两条边。 所以那条
+
+path line is of course two. And this problem, what I want to do is return the smallest possible
+路径线当然是两条。 而这个问题，我想做的是返回尽可能小的
+
+path length. So I should return the final answer of two here. So we know that this problem
+路径长度。 所以我应该在这里返回两个的最终答案。 所以我们知道这个
+
+is going to require us to do a graph pathfinding algorithm. The question is, which one should
+问题需要我们做一个图寻路算法。 问题是，我们应该采取哪一个
+
+we take, we either can choose, of course, a depth first traversal, or a breadth first
+，我们可以选择，当然，深度优先遍历，或者广度优先
+
+traversal, I'll cut to the chase here. And both of them would actually give you a strategy
+遍历，我这里就切入正题。他们两个实际上都会给你一个有效的策略
+
+that works, meaning you can solve this with either a depth first or a breadth first strategy.
+，这意味着你可以用深度优先或广度优先策略来解决这个问题。
+
+But maybe one of these algorithms would be better than the other. So let's consider the
+但也许其中一种算法会比另一种更好。 所以让我们考虑一下
+
+possibilities. So let's say I had some large graph, well think abstractly right now. So
+可能性。 所以假设我有一些大图，现在抽象地思考一下。 所以
+
+kind of just looking at an abstract example. And let's say I was stepping through some
+有点只是看一个抽象的例子。假设我正在经历一些
+
+depth first traversal. Let me say I have my starting node in yellow, and I'll have my
+深度优先遍历。 假设我的起始节点是黄色的，我的
+
+target node in blue. So what I want to do is, again, figure out what's the minimum path
+目标节点是蓝色的。 所以我要做的是，再次，弄清楚
+
+distance between these two nodes, obviously, you know, just in the long run, you should
+这两个节点之间的最小路径距离是多少，显然，你知道，从长远来看，你应该
+
+get an answer like two here, right, because two is definitely the shortest path between
+在这里得到一个像两个这样的答案，对，因为两个绝对是最短的
+
+these two nodes. If we did a depth first traversal, I know that depth first would force me to
+这两个节点之间的路径。 如果我们进行深度优先遍历，我知道深度优先会迫使我
+
+look in one direction as far as possible, until I have to switch directions, right.
+尽可能地朝一个方向看，直到我不得不切换方向，对吧。
+
+So for my starting on yellow, let's say we move to the right, that'd be one edge and
+所以对于我从黄色开始，假设我们向右移动，那将是一个边缘，然后
+
+move to the right again, two edges move to the right, again, three edges. At this point,
+再次向右移动，两个边缘向右移动，再次，三个边缘。 在这一点上，
+
+I can't move right anymore. So let's say you move downward, so at 456 have to switch directions,
+我不能再向右移动了。 所以假设你向下移动，所以在 456 处必须再次切换方向
+
+again, seven, eight. And at this point, we kind of already see that this is going to
+，七，八。 在这一点上，我们已经看到这
+
+end up possibly getting to the blue target node. But that wouldn't be the shortest path.
+最终可能会到达蓝色目标节点。 但这不会是最短的路径。
+
+Something unfortunate here is although my star and nodes are really close together,
+不幸的是，虽然我的星形和节点非常靠近
+
+a depth first traversal could be unlucky in that it may search in a totally wrong direction,
+，但深度优先遍历可能是不幸的，因为它可能会在完全错误的方向上搜索，
+
+and snake all the way through the graph until it eventually finds my target node, at which
+并一直蜿蜒穿过图形，直到最终找到我的目标节点，在
+
+point I definitely don't have the shortest path. So I think a breadth first traversal
+点我绝对没有最短路径。 所以我认为广度优先遍历
+
+is going to be more useful here. So let's say start at my green node, still my same
+在这里会更有用。 所以让我们说从我的绿色节点开始，仍然是我的同一
+
+starting point. And if I did a breadth first traversal, I know that breadth first means
+起点。 如果我进行了广度优先遍历，我知道广度优先意味着
+
+I'm going to explore all the directions very evenly. So it would look like this. So I would
+我将非常均匀地探索所有方向。 所以它看起来像这样。 所以我会
+
+explore all nodes one edge away from my starting point. And then from there, I would begin
+探索离我的起点一个边缘的所有节点。 然后从那里，我将
+
+to explore all nodes two edges away from my starting point. And at some point, I'm going
+开始探索距离我的起点两个边缘的所有节点。 在某个时候，我会
+
+to hit my target node. And if it's the first time I'm seeing my target node, then by definition,
+到达我的目标节点。 如果这是我第一次看到我的目标节点，那么根据定义，
+
+I must have just found the shortest path, right, the shortest path would just be two.
+我一定是找到了最短路径，对，最短路径应该是两条。
+
+So that's my high level argument for why a breadth first search is going to be more useful,
+所以这就是我为什么广度优先搜索会更有用的高级论点，
+
+in my opinion, for this problem, let's step through this process a little more algorithmically.
+在我看来，对于这个问题，让我们在算法上逐步完成这个过程。
+
+So let's say I had my original graph. And if I'm gonna do a breadth first traversal,
+所以假设我有我的原始图表。如果我要进行广度优先遍历，
+
+I know that I have to use a queue right no matter what a queue is what gives you that
+我知道我必须正确使用队列，无论队列是什么给你的
+
+breadth first order. And what I'll do is eyes the items of my queue, I'm going to store
+广度优先顺序。 我要做的是查看队列中的项目，我不仅要存储
+
+not only the nodes, but also the distance from my starting point, that means I'm going
+节点，还要存储与起点的距离，这意味着我将
+
+to initialize my starting note on the queue along with the distance of zero. And that
+在队列中初始化我的起始注释距离为零。 这
+
+represents the fact that all right, that note of W is zero edges away from the starting
+代表了一个事实，好吧，那个W 的音符离起点零边缘
+
+point, because it itself is the starting point. So at any point in time, the items of my queue
+，因为它本身就是起点。因此，在任何时间点，我的队列中的项目
+
+are always going to be pairs, right of node comma distance. So now we're going to begin
+总是成对的，在节点逗号距离的右边。 所以现在我们将开始
+
+our general algorithm, I'm going to keep iterating. While my queue is not empty, a single iteration
+我们的通用算法，我将继续迭代。虽然我的队列不是空的，但一次一次
+
+of breathless would remove the front end of my queue, and I'll label it as my current
+的气喘吁吁的迭代会删除我队列的前端，我会将它标记为我的当前
+
+node. At this point, I should check Alright, is my current node of W, the thing I'm looking
+节点。 此时，我应该检查一下 好吧，我当前的 W 节点是我正在寻找的东西
+
+for? It's not, so I need to explore W's neighbors. So I can look at the x node. And I know I
+吗？ 不是，所以我需要探索 W 的邻居。所以我可以看看 x 节点。 而且我知道我
+
+need to add it into my queue. But when I add it into my queue, I want to make sure I tag
+需要将它添加到我的队列中。 但是当我将它添加到我的队列中时，我想确保我
+
+it with a distance. So if my current node has this zero, I know that a neighbor of this
+用距离标记它。 所以如果我当前的节点有这个零，我知道这个节点的邻居
+
+node would have distance one, so I just increment the current distance by one. So onto my queue,
+会有距离一，所以我只是将当前距离增加一。 所以在我的队列上，
+
+I put an item that says x comma one. And I have a similar scenario for this V node. It's
+我放了一个项目，上面写着 x 逗号一个。对于这个 V 节点，我也有类似的情况。 它
+
+also a neighbor of W. And so I put v comma one on my queue as well. At this point, I
+也是 W 的邻居。所以我也将 v逗号放在我的队列中。 此时，
+
+can go to my next iteration, or move the front of my queue. So I look at the x. And then
+我可以进行下一次迭代，或者移动队列的前面。 所以我看了一下x。 然后
+
+I look at X's neighbors do bear in mind that because I have an undirected graph here, x
+我看看 X 的邻居确实记住，因为我在这里有一个无向图，所以 x
+
+really has two neighbors, right, it has w as a neighbor, as well as y. So something
+确实有两个邻居，对，它有 w作为邻居，还有 y。 因此，
+
+you should already know is I need to track visited. In other words, when x is going to
+您应该已经知道我需要跟踪访问过的内容。 换句话说，当 x 要
+
+consider its neighbors, it should really only care about the Y, right, I don't want X to
+考虑它的邻居时，它应该只关心 Y，对，我不希望 X
+
+put w back on the queue, because then I would get an infinite cycle. So I'm just gonna look
+将 w 放回队列中，因为那样我会得到一个无限循环。 所以我只想
+
+at the Y over here. I'm going to add it to my queue. Because I know my current note of
+看看这里的Y。 我要把它添加到我的队列中。 因为我知道我当前的
+
+X has a distance of one y must have a distance of two always just incrementing the distance
+X 音符的距离为 1，y 的距离必须为 2，始终只是将距离
+
+by one. Cool. And then I carry on with this algorithm. I removed the front of my queue
+增加 1。 凉爽的。 然后我继续这个算法。 我现在删除了队列的前面
+
+now, which would be the V note. And at this point, I can consider V's neighbors, and I
+，这将是 V 音符。 在这一点上，我可以考虑 V 的邻居，我
+
+do See that one of its neighbors is actually the Xena, that's the only unvisited neighbor,
+确实看到它的一个邻居实际上是 Xena，这是唯一未访问的邻居，
+
+I'm going to be sure to add z into my queue and tag it with a distance of two, right,
+我将确保将 z 添加到我的队列中并用距离标记它 两个，对，
+
+because if my v has distance one, its neighbor would have a distance of one grader. At this
+因为如果我的 v 距离为 1，则它的邻居的距离为 1。 在这
+
+point, you can already see how this algorithm is going to work out. Eventually, this z nodes
+一点上，你已经可以看到这个算法是如何工作的。 最终，这个 z 节点
+
+going to leave the queue, and that would actually be my target node. So since I've added a node
+将离开队列，这实际上是我的目标节点。 因此，由于我已将一个节点添加
+
+into the queue that matches my target, I know I have my final answer. The two here does
+到与我的目标匹配的队列中，我知道我有我的最终答案。 这里的两个确实
+
+represent the number of edges we took in that logical path. And I would, of course, just
+代表了我们在该逻辑路径中采用的边数。 当然，我也会将其
+
+return that too. So for the most part, this algorithm just sounds like a classic breadth
+退回。 所以在大多数情况下，这个算法听起来就像一个经典的广度
+
+first traversal. Using a queue on a graph, the only interesting bit is now we're also
+优先遍历。 在图上使用队列，唯一有趣的一点是现在我们
+
+going to track the current distance. You know, when it comes to counting the length of a
+还将跟踪当前距离。 您知道，在计算路径长度时
+
+path, you need some counting mechanism. And so if you begin your queue with your starting
+，您需要一些计数机制。因此，如果您从
+
+node with a distance of zero, every time something leaves a cube, and adds its neighbors, it
+距离为零的起始节点开始队列，则每次离开立方体并添加其邻居时，它
+
+should increment that distance by one. And like you already guessed, this algorithm is
+应该将该距离增加一。就像你已经猜到的那样，这个算法
+
+pretty efficient, because we don't have to traverse through the graph more than one.
+非常有效，因为我们不必遍历图形不止一个。
+
+So we'll see that this has a linear complexity. Alright, I think I have everything I need
+所以我们会看到这具有线性复杂性。好吧，我想我已经拥有
+
+to code up this one, I'm sure you're wondering about these implementation details. So what
+了编写这个代码所需的一切，我相信你想知道这些实现细节。 所以
+
+you want to do is possibly give this implementation a shot on your own. And if you need some help,
+你想要做的可能是你自己给这个实现一个机会。 如果您需要帮助，
+
+you can find me in those walkthrough videos. See you there. Hey, programmers, Alan here,
+可以在这些演练视频中找到我。到时候那里见。 嘿，程序员，艾伦在这里，
+
+right. Now let's go over a JavaScript solution for the shortest path problem. So we'll jump
+对。 现在让我们看一下最短路径问题的 JavaScript 解决方案。 因此，我们将
+
+right in, hopefully, you watch the approach video. And so we'll start by converting our
+直接进入，希望您观看进场视频。 因此，我们首先将
+
+edge list input into something more useful for our traversal like an adjacency list,
+边列表输入转换为对遍历更有用的东西，例如邻接列表，
+
+we're going to write a very classic function. When I call it build graph, like you expect
+我们将编写一个非常经典的函数。当我称它为构建图时，就像您期望的那样，
+
+it takes in the edges. And I want it to return an adjacency list. For me, that means a JavaScript
+它包含边缘。 我希望它返回一个邻接列表。 对我来说，这意味着一个 JavaScript
+
+object, I'll call it graph, by the end of this function, this will help I'm going to
+对象，我将其称为图形，在此函数结束时，这将有助于我
+
+return the graph and some common code, I'm going to iterate through every pair, right,
+返回图形和一些通用代码，我将遍历每一对，对 ，
+
+basically every edge, I'll say, for left edge of edges. As I'm iterating, through every
+基本上每个边缘，我会说，对于边缘的左边缘。 当我遍历每条
+
+edge, when I want to do is unpack that edge into its component nodes, I'll call it a and
+边时，我想做的是将边解压缩到其组件节点中，我将其称为 a 和
+
+b. And now I can start formatting my adjacency list. So I know I want the keys of this graph
+b。 现在我可以开始格式化我的邻接列表了。 所以我知道我希望这个图的
+
+to be obviously the nodes, I want the values to be an array of the neighbors of that node.
+键显然是节点，我希望值是该节点的邻居的数组。
+
+So what I'll do is, it's the first time encountering a node, I'll check. Alright, if this a node
+所以我要做的是，这是第一次遇到节点，我会检查。 好吧，如果这是一个节点，
+
+if it's not in the graph yet as a key, then I should create it for the first time. So
+如果它还没有在图中作为键，那么我应该第一次创建它。 因此，
+
+use it as a key and initialize its value to an empty array, basically, at the start is
+将其用作键并将其值初始化为一个空数组，基本上，一开始
+
+going to have no neighbors. Likewise for B. And then, at this point, I know that A and
+将没有邻居。  B 也是如此。然后，在这一点上，我知道 A 和
+
+B now definitely exist as keys within the graph. And so I just want to add those neighbors.
+B 现在肯定作为图中的键存在。 所以我只想添加那些邻居。
+
+So if I have an edge, like w comma x, I know x is a neighbor of w, and w is a neighbor
+所以如果我有一条边，比如 w 逗号 x，我知道x 是 w 的邻居，而 w 是 x 的邻居
+
+of x. So simply put in say, graph a dot push B, and then just the inverse of that should
+。 所以简单地说，画一个点推B，然后正好
+
+be good to go. Cool. So that should give us our graph. Let's go ahead and use that in
+相反。 凉爽的。 所以这应该给我们我们的图表。 让我们继续在
+
+our main function now. So we'll just say graph equals build graph on the edges. And what
+我们的 main 函数中使用它。 所以我们只会说图等于在边上构建图。
+
+we want to do now is actually work in our breadth first logic, like we said from the
+我们现在要做的实际上是在我们的广度优先逻辑中工作，就像我们在
+
+approach video. So a few things I'm going to do, I'm going to definitely set up my queue,
+方法视频中所说的那样。 所以我要做的几件事，我肯定会设置我的队列，
+
+we said that the key to victory here was to not only store the node in your queue, but
+我们说过这里胜利的关键是不仅将节点存储在队列中，而且对于
+
+for every like frame inside of your queue also store its distance from node A. So I'll
+队列中的每个类似帧 还存储它与节点 A 的距离。所以我会
+
+just use like a pair of things. So the elements of my queue are going to be always a pair.
+像一对东西一样使用。 所以我队列中的元素总是成对的。
+
+And I'll throw on the initial node A, and also the number zero, because at the start,
+我将抛出初始节点 A以及数字零，因为在开始时，
+
+right, this node A is zero edges away from itself. So that's good to go. And over time,
+正确的，这个节点 A 与自身相距零边缘。 所以这很好。 随着时间的推移，
+
+I'm going to be incrementing. This number, it seems nice. And so let's keep on keepin
+我会增加。 这个数字，看起来不错。 所以让我们继续
+
+on here. All right, a while loop, classic condition would be all right, while your queue
+在这里。 好吧，一个while循环，经典条件就可以了，当你的
+
+is not empty, then I shall remove something from the queue. So always remove from the
+队列不为空时，我会从队列中删除一些东西。 因此，
+
+front if you want to follow a true breadth first order. So I can do do dot shift. And
+如果您想遵循真正的广度优先顺序，请始终从前面移除。 所以我可以做点移位。
+
+that will give me back an array or give me back one of these sub arrays here. I know
+这将给我一个数组或在这里给我这些子数组之一。 我知道
+
+it's always going to be a pair so I can just unpack. And I'll just say alright, grab the
+它总是一对，所以我可以打开包装。 我会说好吧，抓住
+
+current node as well as the distance. Nice. I'm going to check the node here that I just
+当前节点以及距离。 好的。我将在这里检查刚刚
+
+removed from the queue. If that node is node B, that I must have just found a path and
+从队列中删除的节点。 如果那个节点是节点B，那我一定是刚刚找到了一条路径并且
+
+I know the distance in that path, I can just return it. But if this condition is not true,
+我知道该路径中的距离，我可以返回它。 但如果这个条件不成立，
+
+then I need to keep searching through my graph. Since that means I need to add this nodes
+那么我需要继续搜索我的图表。因为这意味着我需要将此节点
+
+neighbors to the back of the queue. So I'm going to iterate remember that we have adjacency
+邻居添加到队列的后面。 所以我要迭代记住我们一直都有邻接
+
+lists the entire time. So I'm going to say, for, let's say, Neighbor of graph of node.
+列表。 所以我要说，比方说，节点图的邻居。
+
+So get all the neighbors of this node. And what I'll do is just add those neighbors into
+所以得到这个节点的所有邻居。我要做的就是将这些邻居添加到
+
+my queue. So q dot push, neighbor, try to remember what the form of our graph is over
+我的队列中。 所以 q dot push，neighbor，试着记住我们的图的形式在
+
+here. Maybe as a quick little spot check, make sure on the same page, let me just console
+这里。 也许作为一个快速的小抽查，确保在同一页面上，让我只是控制台
+
+dot log, the adjacency lists, let's say we took this example manually, just paste it
+点日志，邻接列表，假设我们手动拿了这个例子，把它贴
+
+down below. And I'll just give it nice little manual runs, I'm not running the test cases
+在下面。 我只是给它一些很好的手动运行，我还没有运行测试用例
+
+quite yet. So we converted this edge list into this adjacency list, right. And when
+。 所以我们把这个边缘列表转换成这个邻接列表，对。 当
+
+we say no to something like W, when we say graph, square bracket, no, that would give
+我们对 W 之类的东西说不时，当我们说图形，方括号，不，这会给
+
+us this array, co authored sorters, iterating, through all the neighbors of this node and
+我们这个数组，共同创作的排序器，迭代，遍历这个节点的所有邻居
+
+adding them to the queue, one thing we should watch out for is when we push things back
+并将它们添加到队列中，我们的一件事 应该注意的是，当我们将事物推
+
+onto the queue, we want to maintain the same format. So I actually still want to maintain
+回队列时，我们希望保持相同的格式。 所以我实际上仍然想保持
+
+pairs. So I'll make the first element of the pair, the neighboring node on the second element
+对。 所以我会做对的第一个元素，第二个元素上的相邻节点
+
+needs to be the distance. And since it's a neighbor, its distance would be plus one over
+需要是距离。 而且因为是邻居，所以这里的距离会加一
+
+here. So that's how I'm growing and counting the distance. So let's give this a test run.
+。 所以这就是我成长和计算距离的方式。 所以让我们来测试一下。
+
+There are a few things we need to work on still, though. But we'll pass a few of these
+不过，我们仍然需要做一些事情。 但是我们将传递其中的一些
+
+examples, at least until we timeout on a particular example. One thing this code is missing is
+示例，至少在我们对特定示例超时之前。 这段代码缺少的一件事是
+
+any cycle prevention, right? I know that it's going to be a very common scenario, because
+任何循环预防，对吧？ 我知道这将是一个非常常见的场景，因为
+
+I have an undirected graph, right. And so what I'll be sure to do is maintain a visited
+我有一个无向图，对吧。 所以我肯定会做的是维护一个访问过的
+
+set, sort of pattern that you're used to, we're just gonna implemented for our iterative,
+集合，一种你习惯的模式，我们现在要实现我们的迭代，
+
+breathless right now. So start out with a set. And when you do this iteratively, the
+喘不过气来。 所以从一组开始。 当您反复执行此操作时，
+
+move would be to make sure that if something is added to the queue, it should also be marked
+将确保如果将某些内容添加到队列中，也应将其标记
+
+as visited. So if I initialize my queue with node A, then I also want to initialize my
+为已访问。 所以如果我用节点 A 初始化我的队列，那么我也想用节点 A 初始化我的
+
+visited set with node A, just like so. So if you're unfamiliar with the set constructor
+访问集，就像这样。 所以如果你不熟悉 JavaScript 中的 set 构造函数
+
+in JavaScript, if you want to initialize it with some values, you actually have to pass
+，如果你想用一些值来初始化它，你实际上必须
+
+in an array containing those values. So the values of my visited set are just going to
+传入一个包含这些值的数组。 所以我访问集的值
+
+be the nodes write the node IDs. Cool. And then I want to work that logic into my while
+只是节点写入节点 ID。 凉爽的。然后我想将该逻辑应用到我的 while
+
+loop. And so whenever I'm about to add something into the queue, that is, I'm going to add
+循环中。 所以每当我要向队列中添加一些东西时，也就是说，我要向
+
+a neighbor into the queue, first check if that neighbor is not visited yet, so only
+队列中添加一个邻居，首先检查那个邻居是否还没有被访问过，所以只有
+
+if not visited has neighbor. Right, so only if this neighbor has not yet been visited,
+当没有访问过时才有邻居。 对，所以只有当这个邻居还没有被访问过时
+
+then I should add it to my queue. And if I'm about to add it to the queue, like we just
+，我才应该把它添加到我的队列中。 如果我要将它添加到队列中，就像我们刚才
+
+said anything that interest, the queue should immediately be marked as visited. So here
+所说的任何感兴趣的东西一样，应该立即将队列标记为已访问。 所以在这里
+
+I'll say visited, add, the neighbor net should avoid adding any particular node more than
+我会说visited, add，邻居网络应该避免将任何特定节点多次添加
+
+once into the queue, avoiding any cycles. Awesome. So that feels pretty good. Let's
+到队列中，避免任何循环。惊人的。 所以感觉还不错。
+
+give that a test run. Now. We hope to not timeout at least, all that same example, we're
+让我们测试一下。 现在。 我们希望至少不要超时，所有同样的例子，我们
+
+actually returning undefined where we expect negative one. So if you look at the actual
+实际上在我们期望负数的地方返回未定义。 因此，如果您查看实际
+
+prompt, they tell us that, alright, if you can't find a path between A and B, then you
+提示，他们会告诉我们，好吧，如果您找不到 A 和 B 之间的路径，那么您
+
+should return negative one. Let's look at an example or test 04. And you kind of drew
+应该返回负数。 让我们看一个例子或测试 04。然后你把
+
+it out, you would see that there would be no such path that connects B to G. The reason
+它画出来，你会看到没有连接 B 到 G 的路径。
+
+we're returning undefined right now is we're gonna finish our traversal mean, meaning our
+我们现在返回 undefined 的原因是我们要完成遍历 意思是，这意味着我们的
+
+queue is going to empty out. And then we're just going to hit the end of this function.
+队列将被清空。 然后我们将结束这个函数。
+
+And if I don't hit a return line by default in JavaScript, I'm going to get undefined.
+如果我在 JavaScript 中默认没有点击返回行，我会得到未定义的。
+
+So we know if we finish the while loop, and we never found node B, then we can just return
+所以我们知道如果我们完成了while循环，并且我们从未找到节点B，那么我们可以返回
+
+negative one, that must mean that there is no such path that connects a to b. So let's
+负一，这一定意味着没有这样的路径将a连接到b。 所以让我们来
+
+give this a test run. Now. This should be our final version of our shortest path algorithm.
+测试一下。 现在。 这应该是我们最短路径算法的最终版本。
+
+Awesome. So be sure to practice this algorithm before you move on. And do make sure that
+惊人的。 因此，请务必在继续之前练习此算法。 并且请确保
+
+you understand the choice of breadth first here over depth first, for most of your basic
+您首先了解广度的选择，而不是深度的选择，因为大多数基本的
+
+just graph problems that require you to calculate a shortest path path meaning just the number
+仅图形问题都需要您计算最短路径路径，这意味着仅意味着
+
+of edges. Typically, you'll find breadth first easiest way to calculate that hey programmers,
+边的数量。 通常，您会发现广度优先最简单的方法来计算嘿程序员，
+
+Alvin here, right now let's go over to the approach for this island count problem. So
+这里是 Alvin，现在让我们来看看这个岛屿计数问题的方法。 所以
+
+in this problem, we're going to be given a 2d array representing a grid of land and waters
+在这个问题中，我们将得到一个表示陆地和水域网格的二维数组，
+
+here we have l characters representing land, and W characters representing water. Let's
+这里有 l 个字符表示陆地，W 个字符表示水。 让我们
+
+try to visualize this. In this problem we want to do is return a number representing
+试着想象一下。 在这个问题中，我们要做的是返回一个
+
+the number of islands on the grid. We're going to consider an island as a vertical or horizontal
+表示网格上岛屿数量的数字。 我们将把岛屿视为垂直或水平
+
+connected region of land. So in this particular example, we should return four. Because there
+连接的陆地区域。 所以在这个特定的例子中，我们应该返回四个。 因为
+
+are four different islands, we can label them as such, this is going to be any type of problems
+有四个不同的岛屿，我们可以这样标记它们，这对我们来说将是任何类型的
+
+for us. And we should really think about it as if we have a graph, I'm going to refer
+问题。 我们真的应该把它当作一个图表来考虑，我
+
+to these style problems as a grid graph. And so although we're not given any explicit like
+将把这些样式问题称为网格图。因此，尽管我们没有给出任何明确的
+
+nodes and edges, I can still think about positions of this graph as nodes. So for example, let's
+节点和边，但我仍然可以将此图的位置视为节点。 例如，让我们
+
+consider the indices here. So I have my row indices along the left hand side, and my column
+考虑这里的索引。 所以我在左侧有我的行索引，在顶部有我的列
+
+indices along the top. And I can designate any position of this grid using a pair of
+索引。 我可以使用一对行和列来指定这个网格的任何位置
+
+row and column. So for example, if I looked at position three comma four, that would be
+。 例如，如果我查看位置 3 逗号 4，那就是
+
+this position over here. And what I should do is mentally think about a position as if
+这里的位置。 而我应该做的是将一个位置想象
+
+it's a node. And if I met some node, I do have some potential neighbors. given any position
+成一个节点。 如果我遇到了一些节点，我确实有一些潜在的邻居。 给定
+
+of the spread, I have at most four neighbors in the up down left and right directions.
+传播的任何位置，我在上下左右方向上最多有四个邻居。
+
+given any position of the grid, it's really easy to determine what our potential neighbors
+给定网格的任何位置，很容易确定我们的潜在邻居
+
+are, it's really just a matter of adding or subtracting one from either the row or the
+是什么，实际上只是从行或列中添加或减去一个
+
+column. Let's generalize this formula. So let's say I was at some position, we'll call
+。 让我们概括一下这个公式。 所以假设我在某个位置，我们
+
+it our see, if I want it to go upward, that would mean you decrement, the row by one,
+称之为我们的看到，如果我想让它向上，那就意味着你递减，一行一行，
+
+keep the column the same. If you went down, that would mean increasing the row by one,
+保持列不变。 如果你往下走，那将意味着将行增加一，
+
+if you went to the right, that would be increasing the column by one. And if you want to go left,
+如果你往右走，那将意味着将列增加一。 如果你想向左走，
+
+then you should just decrease the column by one, do bear in mind that the top left position
+那么你应该把列减一，记住
+
+of our grid is going to be 00. And that's why we have this type of arithmetic rule.
+我们网格的左上角是00。这就是我们有这种算术规则的原因。
+
+So now that we're starting to frame this grid problem, as if it's a graph, we can use some
+所以现在我们开始构架这个网格问题，就好像它是一个图一样，我们可以使用一些
+
+common patterns, I know that this problem is really asked me to count the number of
+常见的模式，我知道这个问题真的是要求我计算这个网格上的
+
+connected components or the number of islands on this grid. So I'm going to need some iterative
+连通分量的数量或者岛屿的数量. 所以我需要一些迭代
+
+code, probably some nested loops to just iterate through every potential Island and start some
+代码，可能需要一些嵌套循环来迭代每个潜在的岛屿并
+
+traversal at that island. So when it comes to our iterative code, we just want nested
+在那个岛上开始一些遍历。 因此，当涉及到我们的迭代代码时，我们只希望嵌套
+
+loops to iterate through every row column. That means the iterations should look something
+循环遍历每一行列。这意味着迭代应该看起来
+
+like this, just moving left to right. until we finish around which case we can go to the
+像这样，只是从左向右移动。 直到我们完成了哪种情况，我们可以进入
+
+next row. Let's actually iron out the main logic that we need in our algorithm. So let's
+下一行。 让我们真正解决我们算法中需要的主要逻辑。 所以
+
+say we start or nested loops from the very beginning, what I do is check my current position,
+假设我们从一开始就开始或嵌套循环，我要做的是检查我的当前位置，
+
+what I want to do is check if my current position is land right now it's water, so I can just
+我想做的是检查我当前的位置是否是陆地，现在是水，所以我可以
+
+continue. On the next iteration, I do have some land position. And since I'm on a piece
+继续。 在下一次迭代中，我确实有一些土地位置。 既然我在
+
+of land, right now, what I want to do is explore this land region as far as possible, probably
+一块土地上，现在，我想做的就是尽可能地探索这个陆地区域，可能
+
+using some depth first traversal. And do bear in mind, like most of our undirected graph
+使用一些深度优先遍历。 请记住，就像我们的大多数无向图
+
+problems, we're going to need to be sure to mark things as visited, so we don't get trapped
+问题一样，我们需要确保将事物标记为已访问，这样我们就不会
+
+in any infinite cycles. So for example, if I started a traversal, at this position, I
+陷入任何无限循环。 例如，如果我开始遍历，在这个位置，我
+
+can go downward. But I can also go upward from here. And I can bounce back between the
+可以向下走。 但我也可以从这里往上走。 而且我可以在上下两者之间反弹
+
+two going up and down, giving me an infinite cycle. So we know how to fix this using all
+，给我一个无限循环。 所以我们知道如何使用我们所有的图机制来解决这个问题
+
+of our graph mechanics, right, just use a visited set. So if I do a depth first traversal,
+，对，只需使用访问集。 因此，如果我进行深度优先遍历，
+
+starting at this position, I know I'm going to mark off all of these land pieces as visited.
+从这个位置开始，我知道我会将所有这些陆地块标记为已访问。
+
+And what I also want to do is make sure that I increments accounts, representing the fact
+我还想做的是确保我增加账户，代表
+
+that I've just explored some new island fully. So right now, my count zero, since I just
+我刚刚完全探索了一些新岛屿的事实。所以现在，我的计数为零，因为我刚刚
+
+finished exploring something now my count is one. And at this point, I can fall back
+完成了一些探索，现在我的计数是一。 在这一点上，我可以回
+
+to my iterative code to scan for another island. So I move to the right, it's water. So continue,
+退到我的迭代代码来扫描另一个岛。所以我向右移动，是水。 所以继续，
+
+water continue. Now I have another island. And again, I just do some depth first traversal
+水继续。 现在我有了另一个岛。再一次，我只是先做一些深度
+
+through it. And of course I increment my count. This pattern will follow right? Eventually,
+遍历。 当然，我会增加计数。这种模式会遵循吗？ 最终，
+
+when I hit the new row, I could be at a land position. But I should also make sure that
+当我击中新行时，我可能处于陆地位置。 但我也应该确保
+
+this land position is unexplored, right. So since I'm at position one, comma zero, and
+这个土地位置是未开发的，对吧。 所以由于我在位置一，逗号零，并且
+
+this land has already been explored, I don't need to begin a depth first traversal. And
+这片土地已经被探索过，我不需要开始深度优先遍历。 而且
+
+I also don't need to begin a traversal here. And this continues, avoiding starting a traversal.
+我也不需要在这里开始遍历。这继续，避免开始遍历。
+
+Wherever I have a visited piece of land, we know eventually, we're going to hit a new
+无论我在哪里参观过一块土地，我们最终都知道，我们会去到一个像这样的新
+
+island like this one, where I have a piece of land that is unvisited. So at that point,
+岛屿，在那里我有一块未被参观过的土地。 所以到那时，
+
+that's my criteria for starting a new depth first traversal, I explore this region, increment
+这就是我开始新的深度优先遍历的标准，我探索这个区域，增加
+
+my count, and continue business as usual until I hit this final island that is unvisited.
+我的计数，并像往常一样继续工作，直到我到达最后一个未被访问的岛屿。
+
+And so I visit it and increment my count. And by the end of my iterations, I should
+所以我访问它并增加我的计数。在我的迭代结束时，
+
+have my final count of four. So that logic is actually pretty straightforward, just a
+我的最终数应该是四。 所以这个逻辑实际上非常简单，只是
+
+variation of our classic connected component, counting logic, except now we're adjusting
+我们经典连接组件的一种变体，计数逻辑，除了现在我们正在调整
+
+the criteria we use for looking at neighbors, right, our neighbors are actually going to
+我们用于查看邻居的标准，对，我们的邻居实际上
+
+just be either above downward to the left or to the right of our current position. We
+只是要么高于向下我们当前位置的左侧或右侧。 我们
+
+talked about the complexity of this algorithm, we should consider the size of the input and
+谈到了这个算法的复杂性，我们应该考虑输入的大小和
+
+the fact that it has two dimensions, right? So if I say that R is a number of rows, and
+它有两个维度的事实，对吧？因此，如果我说 R 是多行，
+
+C is a number of columns, well and the iterative codes pretty straightforward, I know that's
+C 是多列，那么迭代代码非常简单，我知道
+
+going to give me r times C iterations. And if I also consider any potential in depth
+这将给我 r 次 C 迭代。如果我还考虑任何潜在的深度
+
+first traversal I do starting at some land. In the worst case, I could have one Giant
+第一次遍历，我会从一些土地开始。在最坏的情况下，我可以拥有一个巨人
+
+Island, which is also going to be our time to see. So the overall complexity, it's just
+岛，这也将是我们参观的时间。 所以整体复杂度，这
+
+going to be our time See, the space complexity for very similar reason is our time see, because
+只是我们的时间看，空间复杂度非常相似的原因是我们的时间看，因为
+
+imagine that we mark all of these positions as visited, that probably means we'd have
+假设我们将所有这些位置标记为已访问，这可能意味着我们
+
+to add them to some set. Right, so we have our time see different positions. And by the
+必须将它们添加到一些 放。 对，所以我们有时间看到不同的立场。
+
+end, I could add each and every one of them into my set, the space complexity of our time.
+最后，我可以将它们中的每一个都添加到我的集合中，这是我们这个时代的空间复杂性。
+
+See also includes any traversal related data structures like stacks, or queues, depending
+See 还包括任何与遍历相关的数据结构，如堆栈或队列，具体
+
+on how you implement this one. So overall, this is going to be a very efficient solution
+取决于您如何实现这一点。 所以总的来说，这将是解决这个问题的一个非常有效的解决方案
+
+to solve this one, what you should do is probably give it a shot on your own first, if you get
+，你应该做的可能是先自己试一试，如果你遇到
+
+stuck, you can find me in the walkthrough videos. I'll see you there. Hey, programmers,
+困难，你可以在演练视频中找到我。 我会在那里见你。 嘿，程序员们，
+
+Alvin here, right now, let's go over a JavaScript walkthrough for this island count problem.
+Alvin 在这里，现在，让我们回顾一下这个岛屿计数问题的 JavaScript 演练。
+
+So as always, make sure you watch the approach video first. And we'll jump right in. So we
+因此，请务必先观看进场视频。 我们将直接进入。所以我们
+
+know that this is really just a spin off of our kind of graph connected components problems,
+知道这实际上只是我们这种图连接组件问题的衍生，
+
+except now we have a grid graph, right? I can still think about like this grid as if
+除了现在我们有一个网格图，对吧？ 我仍然可以把这个网格想象
+
+it's a graph, because if I think about any particular position of this grid, I know I
+成一个图表，因为如果我考虑这个网格的任何特定位置，我知道我
+
+have some neighboring positions that I can travel through mainly, my four neighbors Up,
+有一些我可以主要通过的相邻位置，我的四个邻居上、
+
+down, left and right for me, let me start my laying down some iterative code that can
+下、左和右 对我来说，让我开始编写一些迭代代码，这些代码可以
+
+begin a traversal at every node or every position of this grid. That way, I can start considering
+在这个网格的每个节点或每个位置开始遍历。 这样，我就可以开始考虑
+
+different islands, right. So I'm going to use just a for loop for this, I'm going to
+不同的岛屿了，对吧。 因此，我将为此只使用一个 for 循环，我将
+
+iterate through every possible row column combinations every position. So I'll say R
+遍历每个位置的每个可能的行列组合。 所以我会说 R
+
+equals zero, iterate up to the length of the grid, so grid dot length to our plus equals
+等于 0，迭代到网格的长度，所以网格点长度到我们的加号等于
+
+one, and do something very similar for my columns nested inside, right? Watch out for
+1，并且对嵌套在里面的列做一些非常相似的事情，对吧？ 不过要注意
+
+some details here though, looking at the examples, we can't actually assume that we're always
+这里的一些细节，看看这些例子，我们实际上不能假设我们总是
+
+get a square shaped grid square meaning like as if the number of rows was the same as the
+得到一个方形的方格，意思就像行
+
+number of columns, because sometimes I'll have like an asymmetric grid occasionally,
+数和列数一样，因为有时我 '偶尔会有一个不对称的网格，
+
+right? If I look at this very first one, it looks like the width is going to be five here,
+对吧？ 如果我看第一个，这里的宽度看起来是五，
+
+but the height is six. So separately for the columns, I want to reference the column lines
+但高度是六。 因此，对于列，我想在这里引用列线
+
+over here. So we're gonna say grid, zero length. Nice. And so at this point, I have some row
+。 所以我们要说网格，零长度。好的。 所以在这一点上，我有一些行
+
+composition, I want to begin a traversal, let's say a depth first traversal at that
+组合，我想开始遍历，比如说在那个位置进行深度优先遍历
+
+position. So here's where I invoke some like helper function, that will make it a little
+。 所以在这里我调用了一些类似的辅助函数，这将使它
+
+bit, I'll call it explore. And what's going to do is, of course, taking the grid information,
+有点，我称之为探索。当然，接下来要做的是获取网格信息，
+
+as well as the row column I want to traverse through nice. And at this point, I think we'll
+以及我想要遍历的行列。 在这一点上，我认为我们
+
+actually hop to building this this helper function, then we probably need to fill out
+实际上会构建这个辅助函数，然后我们可能需要
+
+some more logic within our main driver function here. So let's bake this explore helper function.
+在我们的主驱动函数中填写更多逻辑。 所以让我们烘焙这个探索辅助函数。
+
+So taking the grid and your row column, and something I should also consider is because
+所以拿网格和你的行列来说，我还应该考虑的是因为
+
+I know that this is really a type of graph problem, right? I want to prevent infinite
+我知道这确实是一种图形问题，对吧？ 我想防止无限
+
+cycles, right? So consider this, let's say I was somewhere in the middle of my traversal,
+循环，对吗？ 所以考虑一下，假设我正在穿越的某个地方，
+
+let's say I was at this piece of land, I know that this piece of land is going to travel
+假设我在这片土地上，我知道这片土地将
+
+through its right neighbor. And it could be the case that this piece of land now travels
+穿过它的右邻。可能是这块土地现在从
+
+its left neighbor, so I go left and then right and then left and right. Now it gives me an
+它的左邻中移动，所以我先左后右再左后右。 现在它给了我一个
+
+infinite loop, right. So whenever you have this notion of like undirected graph or undirected
+无限循环，对吧。 因此，每当您有类似无向图或无向
+
+connections, then always guard with a visited set. We've seen this pattern before. So maybe
+连接的概念时，请始终使用已访问集进行保护。 我们以前见过这种模式。 所以也许
+
+up top globally, for the entire traversal, I'll create a visited set. So in JavaScript,
+在全球范围内，对于整个遍历，我将创建一个访问集。 所以在 JavaScript 中，
+
+just a new set, you're probably wondering, you know, what am I going to make the members
+只是一个新的集合，你可能想知道，你知道，我要如何创建
+
+of this set? Well, I need to designate positions, right? Think about it as if positions are
+这个集合的成员？ 好吧，我需要指定职位，对吗？ 把它想象成位置
+
+like the nodes in this grid in this graph, right. And so what I'll do is pass along this
+就像这个图表中这个网格中的节点，对吧。 所以我要做的是传递这个
+
+visit set, so I can accept it as an org over here. And when it comes to using your visited
+访问集，所以我可以在这里接受它作为一个组织。 在使用访问
+
+set, what you want to do is make sure you combine your row and column because together
+集时，您要做的是确保将行和列组合在一起，因为
+
+they designate your actual position. I think this is actually worth going through specifically
+它们一起指定了您的实际位置。 与其他编程语言相比，我认为这实际上更值得一读
+
+more of like a language thing in JavaScript, compared to other programming languages. So
+，更像是 JavaScript中的一种语言。 这么
+
+quick aside over here, let me get myself some more room might be a while. Because if you're
+快就在这里，让我自己多一些空间可能需要一段时间。 因为如果你
+
+unfamiliar with sets, and you don't kind of know, their nuances, might actually hit you
+不熟悉套装，而且你不知道它们的细微差别，以后可能真的会打击你
+
+in the butt later on. So let's say I had a set so I'll create an offset. So can you set
+。 所以假设我有一个集合，所以我将创建一个偏移量。 那么你可以设置
+
+and let's say I added I don't know, like an array containing a row column position. So
+并假设我添加了我不知道，比如包含行列位置的数组。 所以
+
+I'm gonna say is, alright, maybe I had position, I don't know, one comma three. And I added
+我要说的是，好吧，也许我有位置，我不知道，一个逗号三。 我把
+
+that into my set. So I do s dot add that position. This is actually a common gotcha in JavaScript.
+它添加到我的集合中。 所以我确实添加了那个位置。这实际上是 JavaScript 中的一个常见问题。
+
+If you put any like reference types, like an array or like an object into your set,
+如果您将任何类似的引用类型（如数组或对象）放入您的集合中，
+
+it's actually going to check for reference equality when you check for existence later
+那么当您稍后检查是否存在时，它实际上会检查引用是否相等
+
+on. In other words, now I can't really do console dot log s dot has one three, because
+。 换句话说，现在我不能真正做到控制台点日志的点有一个三，因为
+
+this array literal is technically a different array in memory. So I wish I could get like
+这个数组字面量在技术上是内存中的一个不同的数组。 所以我希望我能
+
+true back in this scenario, but I'm not going to get a true. So we'll just run that manually
+在这种情况下恢复真实，但我不会得到真实的。 所以我们将手动运行它，
+
+see what we get. So like, we say, we're gonna get a false here, which is not so good. So
+看看我们得到了什么。 所以就像，我们说，我们会在这里得到一个假的，这不是很好。
+
+instead, your Fix would be to actually convert this into some string data. So instead, maybe
+因此，您的解决方法是将其实际转换为一些字符串数据。 所以相反，也许
+
+write as if you had one comma three, because strings are primitive types, and I would actually
+写得好像你有一个逗号三，因为字符串是原始类型，我实际上
+
+be able to store that string. So whenever I say the string literal, this would actually
+可以存储那个字符串。 所以每当我说字符串文字时，这实际上
+
+give me a match now, so I should get a nice true here. Awesome. So we'll want to use that
+会给我一个匹配，所以我应该在这里得到一个很好的true。 惊人的。 所以我们要利用这种
+
+pattern to our advantage. And so maybe I'll start by creating some position variable,
+模式来发挥我们的优势。 所以也许我会从创建一些位置变量开始，
+
+that's going to be like the string of FIDE a version of our position. So just take my
+这就像 FIDE 的字符串一样，是我们位置的一个版本。 所以就拿我的
+
+row, maybe add a comma, and also put the column here. Nice. And the reason I want to comma
+行，也许加一个逗号，然后把列放在这里。 好的。 我想用逗号分开的原因
+
+separate is, I need to have different bounds for my row and column. In other words, imagine
+是，我的行和列需要有不同的界限。 换句话说，
+
+I had a row of let's say, 12. And I had a column of four. If I turn that into a key,
+假设我有一排比方说 12。我有一列四。 如果我把它变成一个键
+
+or a position, that would give me position as looks like 12, comma for another scenario,
+或一个位置，这会给我一个看起来像 12 的位置，另一个场景是逗号，
+
+let's say I had row one, and then column 24, that would give me a position of this right?
+假设我有第一行，然后是第 24 列，这会给我一个这样的位置吗？
+
+one comma 24. Right, it's really important that you put a comma to separate your row
+一个逗号 24. 对，用逗号分隔行
+
+and column positions, because imagine, I didn't put the comma, then it would have a collision
+和列位置非常重要，因为想象一下，我没有放逗号，那么这里就会发生冲突
+
+here, I have two totally distinct positions, right? 12, four, and 124. And if I don't put
+，我有两个完全不同的位置，对吧？  12、4 和 124。如果我不
+
+a comma, they look like they have the same position key. So that's why I need to comma
+加逗号，它们看起来就像具有相同的位置键。 所以这就是为什么我需要用逗号
+
+separate them. Common gotcha there. But now that I have this position, I can use it to
+分隔它们。 常见的问题。 但是现在我有了这个位置，我可以
+
+my advantage in this visited set. So if I've already visited this position, so if my visited
+在这个被访问的集合中利用它来发挥我的优势。 所以如果我已经访问过这个位置，那么如果我访问过的
+
+has this position, then I should exit, right, I need to return something. And I want this
+有这个位置，那么我应该退出，对，我需要返回一些东西。 我希望这个
+
+explorer function do something similar, like we've done in our old component problems,
+explorer 函数做一些类似的事情，就像我们在旧组件问题中所做的那样，
+
+I want it to return a Boolean indicating whether or not this is a new island that I'm exploring.
+我希望它返回一个布尔值，指示这是否是我正在探索的新岛屿。
+
+So if it's visited already, that's definitely not new, right. So just return false, meaning
+所以如果它已经被访问过，那绝对不是新的，对吧。 所以只需返回 false，这意味着
+
+it's not a new island. If I make it past this if statement, in other words, if position
+它不是一个新岛。 如果我通过了这个if 语句，换句话说，如果
+
+is not in visited, that I need to mark it as visited right now, second, do visited,
+位置没有被访问，我需要现在将它标记为已访问，第二，做访问，
+
+add this position. So now I have my core like cycle prevention logic. Beyond that, I have
+添加这个位置。 所以现在我有了我的核心，比如循环预防逻辑。 除此之外，我
+
+a few other scenarios, we know that in our traversal, we're going to look at our different
+还有其他一些场景，我们知道在遍历过程中，我们将看到我们不同的
+
+like neighbors. And so what I want to do is make sure that I'm in bounds here. So I'm
+相似邻居。 所以我想做的是确保我在这个范围内。 所以我
+
+going to check, like to split this up into variables, I'll say, one, a boolean variable
+要检查一下，比如把它分解成变量，我会说，一个，一个
+
+called row in bounds. And I'll do is just check if zero is less than or equal to the
+叫做边界行的布尔变量。 我要做的只是检查零是否小于或等于该
+
+row. And that row is strictly less than will say, the length of my grid. So I'm just checking
+行。 而且那行严格小于我的网格长度。 所以我只是检查
+
+to see if my opposition is in bounds here, I do a quick check, I need to be inclusive
+我的反对是否在这里，我做一个快速检查，我需要
+
+with zero because zero is a totally valid index, right? I need to be exclusive with
+包含零，因为零是一个完全有效的索引，对吗？ 我需要排他
+
+the length because imagine I had a grid with length five, it's last valid index is four.
+的长度，因为想象我有一个长度为 5 的网格，它的最后一个有效索引是 4。
+
+So I need to be strictly less than here. And I'll write a similar variable for my column
+所以我需要严格低于这里。我会为我的列写一个类似
+
+in bounds, just like this. And at this point, I can write a nice semantic if statement check,
+的变量，就像这样。 在这一点上，我可以写一个很好的语义 if 语句检查，
+
+all right, if your row is not in bounds, or your column is not in bounds, then exit, right?
+好吧，如果你的行不在边界内，或者你的列不在边界内，那么退出，对吗？
+
+So return like before I can return false, right? Because I should not consider like
+所以在我可以返回 false 之前返回，对吧？ 因为我不应该
+
+an invalid position and a balanced position as an island, right? So that's looking good.
+将无效位置和平衡位置视为孤岛，对吗？ 所以看起来不错。
+
+Final base case I need though is, what if my current position is water, right? I only
+我需要的最后一个基本情况是，如果我当前的位置是水怎么办，对吧？
+
+want to do my traversal through land. And so I'll add another statement for that. So
+我只想穿越陆地。因此，我将为此添加另一个声明。 所以
+
+up here, I can check. All right, if my grid at row column, if it's equal to water, then
+在这里，我可以检查。 好吧，如果我的网格在行列，如果它等于水，那么
+
+also return false. No reason to count it, it's really important that you put this in
+也返回 false。 没有理由计算它，
+
+bounds check before you index into your grid, right? Because imagine that your row and column
+在索引到网格之前将其放入边界检查非常重要，对吧？ 因为想象你的行和
+
+were out of bounds. If you write line 15 like this, immediately, you're going to get an
+列超出了界限。 如果你像这样写第 15 行，你马上就会得到
+
+out of bounds error. So start with your guard to check if you're in bounds if you want it
+一个越界错误。 因此，如果您愿意，请从您的警卫开始检查您是否在界限内
+
+to because most of these conditionals they all return false have the same consequence.
+，因为大多数这些条件它们都返回 false 具有相同的后果。
+
+You can probably or them together. Typically I like to keep them separate. That way I always
+你可能或他们在一起。 通常我喜欢把它们分开。 这样我总是
+
+remember to write them typically for like your grid graph problems. This is very canonical
+记得写它们通常是为了像你的网格图问题。 这是非常规范的
+
+code. Alright, so if I make it past all of these base cases, and I have the recursive
+代码。 好吧，所以如果我通过了所有这些基本情况，并且我有递归
+
+case, so I must be at an unvisited piece of land. And when I want to do is do my depth
+情况，那么我必须在一块未访问的土地上。 而当我想做的是做我的深度
+
+first traversal, right. So here's where I explore my neighbors and I have four neighbors.
+优先遍历，对吧。 所以这里是我探索邻居的地方，我有四个邻居。
+
+If I wanted to go above that I decrement, my row by one, keep the column the same, pass
+如果我想超过这个值，我将逐行递减，保持列不变，
+
+along the same visited, because remember, we have like the array indices here. So this
+传递相同的访问，因为请记住，我们在这里有数组索引。 所以这
+
+is row zero, this is row one. So we'll lower row numbers mean upward, in the same way,
+是第 0 行，这是第 1 行。 所以我们将较低的行号表示向上，以同样的方式，
+
+lower column numbers mean to the left. So this is up, this is down by do just minus
+较低的列号表示向左。 所以这是向上的，这是向下的，在这里只需减去
+
+one over here, that would be to the left, then plus one on the column would be to the
+一，即在左侧，然后在列上加一将在
+
+right. Cool, and I can keep this code very flat as it is something that I'm a huge proponent
+右侧。 很酷，而且我可以保持这段代码非常平坦，因为当你编写递归时，我非常支持它
+
+of when you write recursion, for the most part, I always try to make sure that I don't
+，在大多数情况下，我总是试图确保
+
+look before I leap. In other words, just from this logic alone, it couldn't be the case
+在我跳跃之前我不看。 换句话说，仅从这个逻辑来看，
+
+that row minus one is out of bounds. But that's okay. Because if it's out of bounds, when
+行减一不可能超出界限。 但没关系。 因为如果它越界，当
+
+I evaluate this call, it's going to immediately be caught by this base case, right. And if
+我评估这个调用时，它会立即被这个基本情况捕获，对吧。 如果
+
+I express my logic like this, if I don't look, before I leave, if I just leap and then catch
+我这样表达我的逻辑，如果我不看，在我离开之前，如果我只是跳跃然后抓住
+
+myself with the base case, you don't have to write repetitive code. In other words,
+基本情况，你就不必编写重复的代码。 换句话说，
+
+some people write code like this, where it's like, Alright, if row minus one inbounds kind
+有些人编写这样的代码，就像，好吧，如果行减去一个入站
+
+of using pseudocode. Here, they would have to write row plus one inbounds. And you would
+类型使用伪代码。 在这里，他们必须写行加一个入站。 而且您
+
+have to write a guarding if statement around every recursive call, instead, just write
+必须在每个递归调用周围编写一个保护 if 语句，而不是只编写
+
+one base case. And you can catch all of these different out of bounds, right. So that's
+一个基本情况。 你可以捕捉到所有这些不同的界限，对吧。 所以这就是
+
+why I prefer it this way. And so I know that by the time I return out of these recursive
+为什么我更喜欢这种方式。 所以我知道，当我从这些递归
+
+calls, I'm back at this segment of my code. And what I can do is return true because I
+调用中返回时，我又回到了我的代码的这一部分。我能做的就是返回 true，因为我
+
+must be finished with that traversal. And the reason I'm returning true is true symbolizes
+必须完成该遍历。 而我返回true的原因是true象征
+
+that I've just finished exploring a brand new island, so I need to count it. Nice. It's
+着我刚刚探索完一个全新的岛屿，所以我需要数一数。 好的。 它
+
+also consistent with the data type, I have Boolean for this explore function. So for
+也与数据类型一致，我为这个探索功能设置了布尔值。 所以
+
+the most part, this looks like really just a spin off of our previous like graph, depth
+在大多数情况下，这看起来真的只是我们之前的类似图、深度
+
+first code. And now I want to use that boolean data in my main function here. So here's where
+优先代码的衍生。 现在我想在我的主要功能中使用该布尔数据。 所以这里是
+
+I can actually count my islands. So guess I really need some logic here that says initialize
+我可以实际计算我的岛屿的地方。 所以我想我真的需要一些逻辑来说明初始化
+
+some counts equal to zero. And whenever you find a new island, increment that count. So
+一些计数为零。 每当您找到一个新岛屿时，就增加该计数。 因此，
+
+if I just have found a new island, we're going to get back true from this this call, right?
+如果我刚刚找到了一个新岛屿，我们将从这个电话中恢复过来，对吧？
+
+Because remember that I'm beginning a traversal, starting at this row column position. So if
+因为请记住，我正在开始遍历，从该行列位置开始。 因此，如果
+
+it gives me back true, then I can totally increment my count by one. Notice that whenever
+它让我返回 true，那么我可以完全将我的计数加一。 请注意，每当
+
+I begin a traversal on a position I've seen before, it would have been added to visited
+我开始遍历我之前见过的位置时，它都会被添加到
+
+before. So I would return via this if statement on line 21, I return false. If I return false,
+之前访问过的位置。 所以我会通过第 21 行的这个 if 语句返回，我返回 false。 如果我返回 false，
+
+then I don't double count that island. So I do need a combination of both iterative
+那么我不会重复计算那个岛。 所以我确实需要结合使用这两种迭代
+
+code to potentially leap to different islands. But I can use a visited set to prevent myself
+代码来潜在地跳转到不同的岛屿。但我可以使用已访问集来防止
+
+from double counting any particular Island. So this is looking pretty good. Let's not
+自己重复计算任何特定的岛屿。所以这看起来很不错。
+
+forget to of course, return our counts at the end. Let's give this a run. This will
+当然，我们不要忘记最后返回我们的计数。 让我们试一试。 这
+
+probably be the first in a series of these like grid graph problems. Really try to understand
+可能是一系列类似网格图问题中的第一个。 真正尝试
+
+how we can think about still a grid as if it's a graph, right? We just have different
+理解我们如何将网格视为图形，对吗？ 我们只是有不同的
+
+rules for how we look at our neighbors. Right? Now, a node is really a position and its neighbors
+规则来看待我们的邻居。 正确的？现在，一个节点实际上是一个位置，它的邻居
+
+are its four neighbors Up, down, left and right. Alright programmers, I want you to
+是它的四个邻居上、下、左和右。 好的程序员，我希望你们
+
+practice this pattern because we're going to see it in the next few problems. I'll leave
+练习这个模式，因为我们将在接下来的几个问题中看到它。 我
+
+it to you see in the next one. Hey, programmers outlane here, right now let's go over an approach
+留给你看下一篇。 嘿，程序员们跑到这里了，现在让我们来看看
+
+for this minimum Island problem. So we're going to be given here a grid containing a
+这个最小岛问题的方法。 所以我们将在这里得到一个包含内陆水域的网格，
+
+water inland really just some characters inside of our grid. So of course, as always, let's
+实际上只是我们网格内的一些字符。 所以当然，像往常一样，让我们
+
+visualize this. And what I want to do in this problem is return a number representing the
+一下。 在这个问题中我想要做的是返回一个代表
+
+minimum Island size, we're going to consider an island, a connected region of vertical
+最小岛屿大小的数字，我们将考虑一个岛屿，一个垂直
+
+or horizontally connected pieces of land. So for this particular input, our answer should
+或水平连接的土地块的连接区域。所以对于这个特定的输入，我们的答案应该
+
+be to looking at our grid, I have three separate islands. And they all have different sizes,
+是查看我们的网格，我有三个独立的岛屿。 而且它们都有不同的尺寸，
+
+right? sizes, a four, two and five, I just choose the smallest of the islands. So that
+对吧？ 大小，四，二和五，我只选择最小的岛屿。 那
+
+would be the two over here. So how can I actually come up with a strategy for this one, you
+就是这里的两个人。 那么我如何才能真正想出一个策略呢，你
+
+should already know that this is just a spin off of our previous a grid graph problem,
+应该已经知道这只是我们之前的网格图问题的一个衍生，
+
+where instead of doing just a count of the number of islands, now I want to find the
+而不是只计算岛屿的数量，现在我想 找出
+
+sizes of islands. I know to actually look at different islands, I'm gonna need some
+岛屿的大小。 我知道要实际查看不同的岛屿，我需要一些
+
+nested code, but I'm also gonna need some depth first traversal code to explore a single
+嵌套代码，但我还需要一些深度优先遍历代码来探索单个
+
+Island. So overall, this should be a pretty classic strategy for us. So let's say we start
+岛屿。 所以总的来说，这对我们来说应该是一个非常经典的策略。 所以假设我们开始
+
+attacking this we know we're going to begin our nested loops in the top left corner And
+攻击这个我们知道我们将在左上角开始我们的嵌套循环
+
+if our current position is water, then we actually don't need to do anything. next iteration,
+如果我们当前的位置是水，那么我们实际上不需要做任何事情。 下一次迭代，
+
+I have some land. At this point, I could begin on my depth first traversal. And I know that
+我有一些土地。 在这一点上，我可以开始我的深度优先遍历。 而且我知道
+
+I should be marking things as visited to avoid any infinite loops, right. So by the time
+我应该将事物标记为已访问以避免任何无限循环，对。 因此，
+
+this traversal completes, I'm going to mark all of these guys as visited. But I also wanted
+当遍历完成时，我将把所有这些人都标记为已访问。 但我也
+
+to determine the size of this entire island region. So every time I get a position that
+想确定整个岛屿区域的大小。 所以每次我得到一个位置
+
+is land, I should treat it as one. And then when it comes to how I implement on my traversal,
+是土地，我应该把它当作一个。 然后当谈到我如何实现遍历时，
+
+I can just gather up these ones, right, just add them all up. So that would look something
+我可以把这些收集起来，对，把它们都加起来。 所以看起来
+
+like this. And for my top level call for that traversal, I should get an island size of
+像这样。 对于我对遍历的顶级调用，我应该得到一个大小为 4 的岛
+
+four. And so if that kind of traversal algorithm, especially how we compute the size of the
+。 因此，如果这种遍历算法，尤其是我们如何计算岛的大小
+
+island, is pretty hand wavy, don't worry that when we actually go through the code walkthrough,
+，是相当复杂的，不用担心当我们真正进行代码遍历时，
+
+it's just a matter of some recursion, and some recursion we've actually seen before
+这只是一些递归的问题，而一些递归我们 '
+
+in past problems of the course. But any case, now that I have this island size of four,
+在过去的课程问题中实际上已经看到过。 但无论如何，现在我有了这个大小为四个的岛，
+
+it's actually the first island that I've seen. And so I'm going to consider it the mid size
+它实际上是我见过的第一个岛。因此，到目前为止，我将其视为中等大小
+
+so far. But I need to keep looking in case something is smaller. So move to the right.
+。 但我需要继续寻找以防万一。 所以向右移动。
+
+So if it's water, I do nothing, water again, do nothing. Now I have another islands, I
+所以如果是水，我什么都不做，再水，什么也不做。 现在我有另一个岛屿，我
+
+begin my traversal market these as visited. And when I find the size of this island, of
+开始我的遍历市场这些访问。当我找到这个岛的大小时，
+
+course, it's going to give me two, I compare that to to my current mid size two is smaller,
+当然，它会给我两个，我将它与我目前的中号比较，两个更小，
+
+so I store two as the mid size so far. And we just continue business as usual. Note that
+所以到目前为止我存储了两个作为中号。我们只是照常营业。 请注意，
+
+when we get to a piece of land, we really want to make sure that it's land, but also
+当我们到达一块土地时，我们真的想确保它是土地，但也是
+
+a piece of unvisited land. So right now on that piece of land, but it's visited, so I
+一块未被访问的土地。 所以现在就在那块土地上，但它被访问过，所以我
+
+should not wear I don't need to start traversal here. Likewise, for this position. Eventually,
+不应该穿我不需要从这里开始遍历。 同样，对于这个职位。 最终，
+
+I'm going to hit some new unvisited land, in which case I should begin my traversal
+我要去一些新的未被访问过的土地，在这种情况下，我应该开始我的
+
+at Explorer, this region, and I want to count up all of these pieces of land. And I should
+穿越探险家，这个地区，我想计算所有这些土地。 而且我应该
+
+realize that the final size of this island would be five, I can compare that five against
+意识到这个岛的最终大小将是五，我可以将这个五与
+
+my current min, five is bigger, so the size of two gets to stay. And I can just end up
+我目前的最小值进行比较，五更大，所以两个的大小可以保留。 我可以
+
+returning the minimum size by the end of this algorithm, basically representing this island
+在这个算法结束时返回最小大小，基本上代表这个
+
+of size two, the complexity of this algorithm is straightforward, we should say that the
+大小为 2 的岛，这个算法的复杂性很简单，我们应该说
+
+size of our input is r times C, because we have our rows and C columns, in which case
+我们输入的大小是 r 乘以 C，因为我们有 我们的行和 C 列，在这种情况下
+
+a time complexity is simply our time C, right, we have to iterate through every row column
+，时间复杂度就是我们的时间 C，对，我们必须遍历
+
+within the grid. And even when we begin a traversal, in the worst case, we could have
+网格中的每一行列。 甚至当我们开始遍历时，在最坏的情况下，我们可能会有
+
+an island that spans the entire grid, in which case it would also be our C. Right. So overall,
+一个跨越整个网格的岛，在这种情况下，它也是我们的 C.Right。 所以总的来说，
+
+our full complexities are time c space complexities are time C as well. And do know that this
+我们的全部复杂性是时间 c 空间复杂性也是时间 C。 并且确实知道这
+
+is technically a linear solution in the size of the grid, right because the grid itself
+在技术上是网格大小的线性解决方案，因为网格本身
+
+is exactly r times C positions. So with that, I think we're ready to code this one up and
+正好是 r 乘以 C 个位置。 因此，我认为我们已经准备好编写这个代码并
+
+try it on your own first. And if you get stuck, I'll catch you in the walkthrough videos.
+首先自己尝试一下。 如果你遇到困难，我会在演练视频中抓住你。
+
+See you there. Hey, programmers, Alvin here, right now let's go over a JavaScript walkthrough
+到时候那里见。 嘿，程序员，这里是 Alvin，现在让我们来看看
+
+for this minimum Island problem. So we'll jump right in, make sure you watch the approach
+这个最小岛问题的 JavaScript 演练。 所以我们会直接进入，确保你观看进场
+
+video. As always, this is just a nice spin off of our classic island hopping logic. But
+视频。 与往常一样，这只是我们经典跳岛逻辑的一个很好的衍生。 但是
+
+for a grid graph, right. And so let's start with the iterative code that can help us begin
+对于网格图，对。 因此，让我们从可以帮助我们开始遍历的迭代代码开始
+
+a traversal. Starting at every different position of our grids, that just means some nested
+。 从我们网格的每个不同位置开始，这仅意味着一些嵌套
+
+loops. So start by iterating through all of the rows and columns. So r equals zero, go
+循环。 因此，首先遍历所有行和列。 所以 r 等于 0，
+
+up to while r is less than length of the grid, also do our plus equals one and very similar
+直到 r 小于网格的长度，也为我的列做我们的 plus 等于 1 和非常相似的
+
+loop for my column. But do make sure that you reference your inner column line because
+循环。 但是请确保您参考了您的内列线，因为
+
+you could have like a rectangular shaped grid over here. And what I want to do now is begin
+您可能在这里有一个矩形网格。 我现在要做的是
+
+a traversal starting at every row column. So I'm going to assume I have a helper function
+从每一行列开始遍历。所以我假设我
+
+here that does that traversal, I'm going to call it explore size. That's because in the
+在这里有一个辅助函数来进行遍历，我将把它称为探索大小。 那是因为从
+
+long run, I'm interested in the size of that island, right, so like a number representing
+长远来看，我对那个岛的大小很感兴趣，对，就像一个代表
+
+how big or how many positions that island spans. So I'm going to pass along the grid
+这个岛有多大或有多少位置的数字。 所以我将传递网格
+
+information as well as the position. And I know when it comes to all of these like undirected
+信息以及位置。 而且我知道当涉及到所有这些无向
+
+graph, traversals should probably guard against your loops. And I have some foresight here.
+图时，遍历可能应该防止你的循环。 我在这里有一些远见。
+
+So I'm going to pass along a nice visited set, which I can maintain globally for the
+所以我将传递一个很好的访问集，我可以在
+
+entire traversal because there's only a good reason to explore a position once right. So
+整个遍历过程中全局维护它，因为只有一个很好的理由来探索一个正确的位置。 所以
+
+I'll create const visited gonna make it my neighs JavaScript set. And a few reasons for
+我将创建 const visitor 将其作为我的neighs JavaScript 集。 以及一些
+
+that. Well, for one JavaScript set, gives me O of one lookup, but also o of one insertion.
+原因。 好吧，对于一个 JavaScript 集，给我一次查找的 O，但也给我一次插入的 O。
+
+So it's going to be a really quick data structure to use. And from there, we probably have to
+所以这将是一个非常快速的数据结构。 从那里开始，我们可能必须
+
+add some more logic over here to actually do something with the size but for now, I
+在此处添加更多逻辑才能实际对大小做一些事情，但现在，我
+
+think I'm going to switch gears and actually take a look at building this helper function,
+想我要换个角度，实际看看构建这个辅助函数，
+
+right. So I think the best way to build this traversal is to use is a deaf purse, typically
+对吧。 所以我认为构建这种遍历的最好方法是使用一个聋钱包，通常
+
+just my go to for problem like this, it's going to take in I know the grid, the row
+只是我去解决这样的问题，它会接受我知道网格，
+
+in the column and also visited, I need some a base case is very classic base cases, I'm
+列中的行并且也访问过，我需要一些基本情况是非常经典的基本情况，我
+
+going to start by checking if this row column position is inbounds. So my favorite pattern
+将首先检查此行列位置是否为入站。 所以我最喜欢的
+
+for that is to split up in some variables just makes it easier to read and debug. So
+模式是拆分一些变量，这样更容易阅读和调试。 所以
+
+I'm going to say is my row inbounds and just make that like a boolean variable. So I'll
+我要说的是我的行入站，只是让它像一个布尔变量。 所以我会
+
+check if, let's say, zero is less than or equal to the row, I need to say and right,
+检查，比如说，零是否小于或等于行，我需要说对，
+
+and that row should be strictly less than the grid length. So this Boolean would only
+并且该行应该严格小于网格长度。 所以这个布尔值
+
+be true if it's in bounds, right? And something very similar for my column bounds should be
+只有在界限内才是真的，对吧？ 与我的列边界非常相似的东西应该
+
+between zero and grid zero length. Nice just like this, I believe. And then I can write
+在零和网格零长度之间。像这样很好，我相信。 然后我可以
+
+a nice if statement using both clauses. So I can say, all right, if let's say your row
+使用这两个子句编写一个不错的 if 语句。 所以我可以说，好吧，如果假设你的
+
+is not in balance, or your column is not in balance, then you're definitely at a bound.
+行不平衡，或者你的列不平衡，那么你肯定是有界限的。
+
+So you should probably use some base case here, right? So we're all choose to return
+所以你可能应该在这里使用一些基本情况，对吧？ 所以我们这里都选择返回
+
+here is zero, because I want to keep a consistent number, right consistent return type. That
+为零，因为我想保持一致的数字，对一致的返回类型。
+
+is, I know that this function has a kind of goal of returning the size of the explored
+也就是说，我知道这个函数的目标是返回探索
+
+islands sizes a number. So even in my base case, I need to make sure I return some type
+岛屿的大小一个数字。 所以即使在我的基本情况下，我也需要确保我返回某种类型
+
+of number, returning zero to represent that, hey, if this is out of bounds, it's not going
+的数字，返回零来表示，嘿，如果这超出范围，它不会
+
+to contribute anything into the count of the size, right, which is good to go. I need some
+对大小的计数做出任何贡献，对， 很好去。 我需要一些
+
+other base case here. What if my position is inbounds. But what if it's actually water,
+其他的基本情况。 如果我的位置是入站怎么办。 但如果它真的是水呢，
+
+I don't want to count that as well. I only want to count islands. So land right. So quick
+我也不想计算它。 我只想数岛屿。 所以正确着陆。 所以快速
+
+fix, what I'll do is add a new base case, I can check if my grid at row column, if it's
+修复，我要做的是添加一个新的基本情况，我可以检查我的网格是否在行列，如果它
+
+equal to the water character. So a capital W can also return zero. If you want it to,
+等于水字符。 所以大写的W 也可以返回零。 如果您愿意，
+
+you can also maybe merge these into like a single if statement, just write a bunch of
+您也可以将它们合并成一个 if 语句，只需编写一堆
+
+ORS, I kind of like them separate because it's just easy for me to remember what each
+ORS，我有点喜欢将它们分开，因为我很容易记住
+
+of them does write a final conditional have here is alright, if I make it past both of
+它们每个人都写了什么最后的条件有没关系，如果我通过了这
+
+these base cases, it might be the case that this position is land, but it's land I've
+两个基本情况，可能是这个位置是土地，但它是我
+
+already visited. So here's why I work in my visited logic, I'm going to represent a position,
+已经访问过的土地。 所以这就是我在访问逻辑中工作的原因，我将表示一个位置，
+
+like we said in the last episode as really just a string. So I can put it as the members
+就像我们在上一集中所说的那样，实际上只是一个字符串。 所以我可以把它作为
+
+of my visited set. So I'm going to say position to have to be the row plus a comma plus the
+我访问集的成员。 所以我要说位置必须是行加逗号加
+
+column. So just representing the position, that's because I can't add like an array into
+列。 所以只是代表位置，那是因为我不能像数组一样添加
+
+a visited set, and then look it up later. And so if visited has the position, then it's
+到访问集中，然后再查找它。因此，如果visited 具有该位置，那么它
+
+a duplicate position that I've explored. So return zero. Otherwise, it's not been visited
+就是我探索过的重复位置。 所以归零。 否则，它还没有被访问过
+
+yet. So I must be visiting it right now. So I can add it. Nice. So I have my base cases
+。 所以我现在一定要去参观。 所以我可以添加它。 好的。 所以我已经制定了我的基本案例
+
+laid down. Now I'll need my actual recursive code. So I'll explore my four neighbors. By
+。 现在我需要我的实际递归代码。 所以我会探索我的四个邻居。
+
+now you should be familiar with this pattern. So go upwards, a row minus one column pass
+到目前为止，您应该熟悉这种模式。所以往上走，一行减去一列就传递
+
+on the same visited. So I'm going to explore my up down left right neighbors respectively.
+给同一个访问者。 所以我将分别探索我的上下左右邻居。
+
+And I do my recursively buffet theory, right. So what type do I expect back from these calls,
+我做我的递归自助餐理论，对。那么我希望从这些电话中得到什么类型的电话，
+
+they're going to give me back a number representing the size of the island that my neighbor is
+他们会给我一个数字，代表我的邻居所在的岛屿的大小
+
+a part of. But if my neighbor is part of some larger Island, then I am too because we're
+。 但如果我的邻居是某个更大岛屿的一部分，那么我也是，因为
+
+connected right to our neighbors. And so I want to create the grand total of all of these
+我们与邻居直接相连。 所以我想创建所有这些
+
+return values. So I'm going to create some size variable, let's say let size, I'm going
+返回值的总和。 所以我要创建一些大小变量，比如说让大小，我
+
+to initialize it to one over here, it's going to be one and not zero, because the one represents
+要在这里将它初始化为一，它将是一而不是零，因为一代表
+
+my current position, my row column. And whatever these calls return, whatever number I'm just
+我当前的位置，我的行列。 无论这些调用返回什么，无论是什么数字，我
+
+going to increment my size by that number, like so. Then finally, I can return our total
+都会将我的大小增加那个数字，就像这样。 最后，我可以在这里返回我们的总
+
+size over here. So that will do my depth first traversal, because it's recursive, but we'll
+大小。 所以这将做我的深度优先遍历，因为它是递归的，但我们
+
+also tally up the size of this island region. Cool. So now that I have a working explore
+也会计算这个岛区域的大小。凉爽的。 所以现在我有了一个有效的探索
+
+size helper, let's use it in our main function here. So I'm going to get back a number from
+尺寸助手，让我们在这里的主要功能中使用它。 所以我要从这个电话中取回一个号码
+
+this call. I'll call it my respective size. And what's great about this logic is if I
+。 我会称它为我各自的大小。这个逻辑的好处是，如果我
+
+have a Island or position I've already seen before, and I encounter it again in this this
+有一个岛或位置，我以前已经见过，并且我在这个
+
+for loop, then I would just return early because I would hit this base case, right? If something
+for 循环中再次遇到它，那么我会提前返回，因为我会遇到这个基本情况，对吧？ 如果某个东西
+
+has already been visited, just automatically return zero, because I've already considered
+已经被访问过，就自动返回零，因为我已经考虑过
+
+it, no reason to consider it again. But now I need my minimization logic, right, I want
+了，没有理由再考虑它。 但是现在我需要我的最小化逻辑，对，我想要
+
+the size of the smallest Island. And they tell us in the problem that we can totally
+最小岛的大小。 他们在问题中告诉我们，我们完全可以
+
+assume that your grid contains at least one island. So I think a great default value here
+假设您的网格至少包含一个岛。 所以我认为这里的一个很好的默认值
+
+is to use positive infinity so I can set some will say min size variable To be positive
+是使用正无穷大，所以我可以设置一些会说最小尺寸变量要成为正
+
+infinity, JavaScript, if I make it positive infinity, I know when I encounter any like
+无穷大，JavaScript，如果我将其设为正无穷大，我知道当我遇到任何类似的
+
+valid Island size, it's going to be less than infinity. And it should replace it. So now
+有效岛大小时，它会继续 小于无穷大。 它应该取代它。 所以现在
+
+I can do some min logic here and check. All right, if the size of this island is less
+我可以在这里做一些最小逻辑并检查。好吧，如果这个岛的大小
+
+than the minimum size I have seen so far, then just replace that min size with that
+小于我目前看到的最小大小，那么只需用那个岛替换那个最小大小
+
+island. Then after I'm done with all of these traversals potential reversals, I'll return
+。 然后在我完成所有这些遍历潜在逆转之后，我将返回
+
+my mid size. So some classic patterns here. There's one nuance that we're not considering
+我的中号。 所以这里有一些经典的模式。有一个细微差别是我们没有考虑
+
+how to run the code, and we can debug it together. So it looks like we failed example. 00. So
+如何运行代码，我们可以一起调试它。所以看起来我们失败的例子。  00.
+
+the very first example we expected to answer to, we accidentally gave back zero. If you
+所以我们期望回答的第一个例子，我们不小心给了零。 如果你
+
+look at that first example, it's pretty obvious that Yeah, the minimum size is two representing
+看第一个例子，很明显，是的，最小尺寸是两个，代表
+
+this island over here. The reason we're giving back zero is according to our code. Let's
+这里的这个岛。 我们返回零的原因是根据我们的代码。 让我们
+
+see we're on like the very first iteration, I'm going to respond it, I know that row is
+看看我们就像第一次迭代一样，我要回应它，我知道
+
+going to be zero column is going to be zero, that means my position would be this w over
+行将为零，列将为零，这意味着我的位置将是这里的 w
+
+here. When I make the recursive call, and I pass along position 00, I know that it's
+。 当我进行递归调用并传递位置 00 时，我知道
+
+going to immediately return zero because that position is water. And I'm going to check
+它将立即返回零，因为该位置是水。 我要检查
+
+Alright, is that zero, less than infinity it is, so I'm going to replace min size with
+一下，是不是零，小于无穷大，所以我要用零替换最小尺寸
+
+zero. But if I think about it, zero doesn't even represent a real Island. If an island
+。 但如果我仔细想想，零甚至不代表一个真正的岛屿。 如果一个
+
+has a size of zero, then it's not an island at all, it was a piece of water, right? And
+岛的大小为零，那么它根本就不是一个岛，它是一片水，对吧？
+
+so I want to add some additional logic here to only actually look at nonzero quantities.
+所以我想在这里添加一些额外的逻辑，只实际查看非零数量。
+
+So only do the comparison if that size is also valid. So size should be greater than
+因此，仅当该大小也有效时才进行比较。 所以大小当然应该大于
+
+zero, of course. And we'll want to add these together. So let's try that again. Just a
+零。 我们想把这些加在一起。 所以让我们再试一次。
+
+little, little detail over there that we need. Awesome. And there we have a solution for
+只是我们需要的一些小细节。惊人的。 对于这个最小岛问题，我们有一个解决方案
+
+this minimum Island problem. So we've seen this pattern a few times now, right or classic
+。 所以我们现在已经多次看到这种模式，正确或经典的
+
+island hopping logic. So when you think about islands are like connected components of a
+跳岛逻辑。 因此，当您将岛屿视为图的连接组件时
+
+graph, this should be your first kind of go to algorithm. Alright programmers. So that
+，这应该是您的第一种算法。 好的程序员。
+
+wraps up our course on graphs. I hope you learned a ton during the course. I definitely
+这样我们的图表课程就结束了。 我希望你在课程中学到了很多东西。
+
+had a blast making it Be sure to head to Shruti dotnet, where you can continue to practice
+一定要去 Shrutidotnet，在那里你可以继续练习
+
+more graph problems, as well as explore any other data structure algorithm topics. I'll
+更多的图形问题，以及探索任何其他数据结构算法主题。 我会
+
+see you there.
+在那里见你。

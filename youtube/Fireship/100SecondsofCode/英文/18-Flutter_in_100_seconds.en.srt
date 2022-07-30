@@ -1,0 +1,355 @@
+1
+00:00:00,000 --> 00:00:02,220
+flutter a UI framework for building apps
+
+
+2
+00:00:02,220 --> 00:00:04,830
+on iOS Android the web and desktop at
+
+
+3
+00:00:04,830 --> 00:00:06,540
+its core flutter combines a high
+
+
+4
+00:00:06,540 --> 00:00:08,189
+performance graphics engine with the
+
+
+5
+00:00:08,189 --> 00:00:10,200
+dart programming language in development
+
+
+6
+00:00:10,200 --> 00:00:11,940
+dart provides full type safety and
+
+
+7
+00:00:11,940 --> 00:00:13,950
+stateful hot reload to help you build
+
+
+8
+00:00:13,950 --> 00:00:16,379
+reliable apps quickly in production dart
+
+
+9
+00:00:16,379 --> 00:00:18,090
+compiles to native machine code which
+
+
+10
+00:00:18,090 --> 00:00:19,500
+means your graphics will render
+
+
+11
+00:00:19,500 --> 00:00:21,779
+beautifully on any platform install
+
+
+12
+00:00:21,779 --> 00:00:23,460
+flutter then run flutter create to
+
+
+13
+00:00:23,460 --> 00:00:25,350
+create a new project now open the main
+
+
+14
+00:00:25,350 --> 00:00:27,060
+dart file this is where you build your
+
+
+15
+00:00:27,060 --> 00:00:29,460
+app the UI is laid out as a tree of
+
+
+16
+00:00:29,460 --> 00:00:30,840
+widgets and the framework provides
+
+
+17
+00:00:30,840 --> 00:00:32,730
+hundreds of pre-built widgets to handle
+
+
+18
+00:00:32,730 --> 00:00:34,440
+things like animations scrolling
+
+
+19
+00:00:34,440 --> 00:00:36,630
+responsive layout and more you can build
+
+
+20
+00:00:36,630 --> 00:00:38,160
+your own widget by extending the
+
+
+21
+00:00:38,160 --> 00:00:40,020
+stateless widget class you then define
+
+
+22
+00:00:40,020 --> 00:00:41,969
+your UI by overriding its build method
+
+
+23
+00:00:41,969 --> 00:00:43,770
+now it's important to understand that
+
+
+24
+00:00:43,770 --> 00:00:45,780
+everything in flutter is a widget this
+
+
+25
+00:00:45,780 --> 00:00:47,340
+method returns a widget and it's
+
+
+26
+00:00:47,340 --> 00:00:48,780
+children return widgets and their
+
+
+27
+00:00:48,780 --> 00:00:50,430
+children return widgets giving us an
+
+
+28
+00:00:50,430 --> 00:00:52,410
+expressive declarative UI structure
+
+
+29
+00:00:52,410 --> 00:00:54,030
+which you can easily Traverse using
+
+
+30
+00:00:54,030 --> 00:00:56,370
+flutters awesome tool whenever the input
+
+
+31
+00:00:56,370 --> 00:00:58,350
+data to this widget changes flutter will
+
+
+32
+00:00:58,350 --> 00:01:00,090
+rebuild the UI by calling your build
+
+
+33
+00:01:00,090 --> 00:01:01,770
+method stateless widgets are immutable
+
+
+34
+00:01:01,770 --> 00:01:03,899
+and don't have any internal data when
+
+
+35
+00:01:03,899 --> 00:01:05,250
+you have an interactive widgets where
+
+
+36
+00:01:05,250 --> 00:01:06,810
+the internal data might change based on
+
+
+37
+00:01:06,810 --> 00:01:08,820
+user input you can extend a stateful
+
+
+38
+00:01:08,820 --> 00:01:10,799
+widget properties defined on this class
+
+
+39
+00:01:10,799 --> 00:01:12,930
+can be reactive for example we might
+
+
+40
+00:01:12,930 --> 00:01:14,909
+have a counter that starts at zero then
+
+
+41
+00:01:14,909 --> 00:01:16,350
+in our build method we have one of
+
+
+42
+00:01:16,350 --> 00:01:17,939
+flutters built-in buttons that cause a
+
+
+43
+00:01:17,939 --> 00:01:19,530
+function whenever it's pressed it
+
+
+44
+00:01:19,530 --> 00:01:21,360
+increments the counter by coin set state
+
+
+45
+00:01:21,360 --> 00:01:22,710
+which tells the framework that the
+
+
+46
+00:01:22,710 --> 00:01:24,630
+widgets data has changed causing the UI
+
+
+47
+00:01:24,630 --> 00:01:26,640
+to re-render with the latest data you
+
+
+48
+00:01:26,640 --> 00:01:27,869
+can now play with this app on a real
+
+
+49
+00:01:27,869 --> 00:01:29,640
+device using the flutter run command
+
+
+50
+00:01:29,640 --> 00:01:31,380
+that's cool and all but let's make some
+
+
+51
+00:01:31,380 --> 00:01:33,150
+changes we'll go back to our source code
+
+
+52
+00:01:33,150 --> 00:01:34,680
+and Center the button on the middle of
+
+
+53
+00:01:34,680 --> 00:01:36,509
+the screen instead of writing code just
+
+
+54
+00:01:36,509 --> 00:01:38,009
+click on the button and hit control
+
+
+55
+00:01:38,009 --> 00:01:39,689
+shift R then wrap your button with a
+
+
+56
+00:01:39,689 --> 00:01:41,520
+center widget next change the color of
+
+
+57
+00:01:41,520 --> 00:01:42,810
+the button and notice how flutter
+
+
+58
+00:01:42,810 --> 00:01:44,640
+previews that color directly in your IDE
+
+
+59
+00:01:44,640 --> 00:01:47,009
+now too hot reload the app simply type
+
+
+60
+00:01:47,009 --> 00:01:48,810
+or into the command line it only took a
+
+
+61
+00:01:48,810 --> 00:01:50,490
+few milliseconds to build a new version
+
+
+62
+00:01:50,490 --> 00:01:52,079
+of our app and notice how the state of
+
+
+63
+00:01:52,079 --> 00:01:53,820
+the counter was unchanged that's what I
+
+
+64
+00:01:53,820 --> 00:01:55,409
+like to call an awesome developer
+
+
+65
+00:01:55,409 --> 00:01:57,869
+experience this has been flutter in 100
+
+
+66
+00:01:57,869 --> 00:01:59,310
+seconds if you want to learn more check
+
+
+67
+00:01:59,310 --> 00:02:01,229
+out my newly updated flutter fire based
+
+
+68
+00:02:01,229 --> 00:02:03,030
+course on fire ship i/o thanks for
+
+
+69
+00:02:03,030 --> 00:02:04,829
+watching and I will see you in the next
+
+
+70
+00:02:04,829 --> 00:02:05,580
+one
+
+
+71
+00:02:05,580 --> 00:02:07,640
+you
+
+

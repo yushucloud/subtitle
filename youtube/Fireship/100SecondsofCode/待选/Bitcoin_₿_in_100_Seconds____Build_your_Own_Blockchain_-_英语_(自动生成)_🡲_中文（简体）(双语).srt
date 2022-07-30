@@ -1,0 +1,1173 @@
+1
+00:00:00,719 --> 00:00:03,919
+bitcoin a peer-to-peer electronic cash system
+比特币是一种点对点电子现金系统
+
+2
+00:00:03,919 --> 00:00:08,240
+first described in a 2008 white paper authored by the mysterious satoshi
+，在 2008 年由神秘的中本
+
+3
+00:00:08,240 --> 00:00:12,480
+nakamoto the modern financial system relies on our trust of big centralized
+聪撰写的白皮书中首次描述 现代金融系统依赖于我们对大型
+
+4
+00:00:12,480 --> 00:00:16,640
+banks to hold our fiat currencies and execute transactions but trust is a
+中央银行的信任来持有我们的法定货币并执行交易，但信任最终是一个
+
+5
+00:00:16,640 --> 00:00:20,560
+weakness that eventually requires intervention by lawyers and government
+弱点 需要律师和政府的干预
+
+6
+00:00:20,560 --> 00:00:23,920
+bitcoin allows two parties to make reliable transactions
+比特币允许两方根据加密证明进行可靠交易
+
+7
+00:00:23,920 --> 00:00:27,760
+based on cryptographic proof eliminating the need for a trustee middleman
+，无需受托
+
+8
+00:00:27,760 --> 00:00:31,119
+the optimists call it digital gold the pessimists call it fool's gold
+中间人 乐观主义者称其为数字黄金悲观者称其为傻瓜黄金，
+
+9
+00:00:31,119 --> 00:00:35,200
+but in reality it's just software and like all software its purpose is to
+但实际上它只是软件，就像所有软件一样，它的目的是
+
+10
+00:00:35,200 --> 00:00:37,600
+arrange ones and zeros in a meaningful way
+以有意义的方式安排 1 和 0
+
+11
+00:00:37,600 --> 00:00:41,280
+the protocol that makes it meaningful is blockchain which allows two parties to
+使其有意义的协议是区块链，它允许两方
+
+12
+00:00:41,280 --> 00:00:44,000
+engage in transactions denominated in bitcoins
+进行以比特币
+
+13
+00:00:44,000 --> 00:00:47,520
+or satoshi's and just like dollars and cents they have value
+或 satoshi 计价的交易，就像美元和美分一样，它们具有价值，
+
+14
+00:00:47,520 --> 00:00:51,280
+because we believe they do from a financial perspective the blockchain
+因为我们相信它们从财务角度来看区块链
+
+15
+00:00:51,280 --> 00:00:55,280
+is like a shared public ledger that contains all transactions from all
+就像一个共享的公共账本，包含所有交易 nsactions 来自所有
+
+16
+00:00:55,280 --> 00:00:58,079
+bitcoin users and is distributed and synchronized
+比特币用户，并
+
+17
+00:00:58,079 --> 00:01:01,760
+around the world which eliminates the need for a central authority to maintain
+在全球范围内分布和同步，这消除了中央机构对其维护
+
+18
+00:01:01,760 --> 00:01:04,320
+and validate it from a technical perspective think of
+和验证的需要从技术角度
+
+19
+00:01:04,320 --> 00:01:08,320
+the blockchain as a database structured as a linked list where each
+将区块链视为一个结构为链表的数据库，其中每个
+
+20
+00:01:08,320 --> 00:01:11,520
+record or block represents a group of transactions that
+记录或块代表一个组
+
+21
+00:01:11,520 --> 00:01:13,840
+have been permanently committed to the database
+对于永久提交到数据库的事务，
+
+22
+00:01:13,840 --> 00:01:17,680
+it works kind of like a git repo that can never be rebased the important thing
+它的工作方式有点像 git repo，永远不会被重新设置基址，重要的
+
+23
+00:01:17,680 --> 00:01:20,479
+is that each new block is linked to the previous one in the
+是每个新区块都与区块链中的前一个区块链接，
+
+24
+00:01:20,479 --> 00:01:24,880
+blockchain and its creation goes through a very strict set of cryptographic rules
+并且它的创建经历了一组非常严格的 加密规则
+
+25
+00:01:24,880 --> 00:01:28,640
+each user or wallet has a unique public key for receiving money
+每个用户或钱包都有一个用于接收
+
+26
+00:01:28,640 --> 00:01:32,479
+kind of like a username and a unique private key for spending money
+资金的唯一公钥（类似于用户名）和一个用于
+
+27
+00:01:32,479 --> 00:01:36,240
+kind of like a password but before you can spend money you'll need to prove
+花钱的唯一私钥（类似于密码），但在您花钱之前，您需要
+
+28
+00:01:36,240 --> 00:01:40,079
+that you're the owner of a public key that money has been sent to in the past
+证明您是所有者过去已向其发送资金的公钥的数量
+
+29
+00:01:40,079 --> 00:01:43,759
+each transaction contains a hash or encrypted representation
+每笔交易都包含上一笔交易的哈希或加密
+
+30
+00:01:43,759 --> 00:01:46,960
+of the previous transaction and the new owner's public key
+表示 找到新所有者的公钥
+
+31
+00:01:46,960 --> 00:01:50,000
+the hash is then signed with the previous owner's private key
+，然后使用前所有者的私钥对哈希进行签名，
+
+32
+00:01:50,000 --> 00:01:53,520
+this makes it possible to validate the chain of ownership without the need to
+这使得无需公开私钥即可验证所有权链，
+
+33
+00:01:53,520 --> 00:01:55,680
+expose the private key and the signature makes
+并且签名使得
+
+34
+00:01:55,680 --> 00:01:58,960
+it virtually impossible to alter the transaction after it's been
+在交易发出后几乎不可能更改交易
+
+35
+00:01:58,960 --> 00:02:02,880
+issued but what if somebody tries to pay two different people with bitcoin at the
+但是，如果有人试图同时用比特币向两个不同的人付款，
+
+36
+00:02:02,880 --> 00:02:05,520
+exact same time or double spend their money that's where
+或者双花他们的钱怎么办？
+
+37
+00:02:05,520 --> 00:02:09,440
+mining comes in which is a system that allows multiple computers around the
+这就是挖矿的用武之地
+
+38
+00:02:09,440 --> 00:02:11,920
+world to agree on the appropriate state of the
+
+
+39
+00:02:11,920 --> 00:02:15,840
+entire system or ledger each new transaction is broadcast to all
+每个新交易都被广播到
+
+40
+00:02:15,840 --> 00:02:18,480
+nodes in the network the transactions are packaged into a
+网络中的所有节点 交易被打包到一个
+
+41
+00:02:18,480 --> 00:02:22,800
+block then miners will expend computing power to validate proof of work
+块中，然后矿工将花费计算能力来验证工作量
+
+42
+00:02:22,800 --> 00:02:26,400
+they compute a proof for a random problem that is very difficult to solve
+证明 他们计算一个随机问题的证明，这个问题很难解决，
+
+43
+00:02:26,400 --> 00:02:29,920
+but very easy to verify the first miner to solve the proof which
+但很容易验证第一个问题 矿工解决
+
+44
+00:02:29,920 --> 00:02:32,959
+happens via dumb luck gets a portion of the bitcoin as a
+通过愚蠢的运气发生的证明获得一部分比特币作为
+
+45
+00:02:32,959 --> 00:02:35,599
+reward the block is then broadcast back to all
+奖励，然后广播该块 回到
+
+46
+00:02:35,599 --> 00:02:38,800
+other nodes where it's permanently confirmed on the blockchain this has
+在区块链上永久确认的所有其他节点，这
+
+47
+00:02:38,800 --> 00:02:42,080
+been bitcoin in 100 seconds if you want to see more short videos
+已经是 100 秒内的比特币如果您想观看更多这样的短视频，
+
+48
+00:02:42,080 --> 00:02:44,080
+like this make sure to like and subscribe
+请确保喜欢并订阅
+
+49
+00:02:44,080 --> 00:02:47,599
+and if you really want to learn how blockchain technology works stay tuned
+，如果您真的想了解区块链技术的工作原理，请继续关注，
+
+50
+00:02:47,599 --> 00:02:50,879
+because today we're going beyond 100 seconds to build a blockchain from
+因为今天 我们用 node.js 和typescript 从头开始构建区块链的时间超过 100 秒，在
+
+51
+00:02:50,879 --> 00:02:53,680
+scratch with node.js and typescript and in the process
+此过程中，您将
+
+52
+00:02:53,680 --> 00:02:56,959
+you'll learn all kinds of useful information about cryptography
+学习有关密码学的各种有用信息，无论
+
+53
+00:02:56,959 --> 00:03:00,000
+whether you're into cryptocurrency or not there's many concepts in
+您是否喜欢加密货币，密码
+
+54
+00:03:00,000 --> 00:03:02,800
+cryptography that you should know about as a developer
+学中有很多概念是您应该了解的 作为开发人员
+
+55
+00:03:02,800 --> 00:03:06,640
+things like encryption and signing hashing functions and algorithms like
+了解加密和签名哈希函数和算法（如
+
+56
+00:03:06,640 --> 00:03:10,080
+sha rsa and md5 that make all this stuff
+sharsa 和 md5）在接下来的几分钟内使所有这些事情成为
+
+57
+00:03:10,080 --> 00:03:12,000
+possible over the next few minutes you'll learn
+可能，您将
+
+58
+00:03:12,000 --> 00:03:15,440
+about these concepts by implementing your own blockchain from scratch
+通过使用node.js 从头开始实现自己的区块链来了解这些概念
+
+59
+00:03:15,440 --> 00:03:19,840
+using nothing but node.js and typescript our blockchain will contain wallets
+和typescript 我们的区块链将包含钱包
+
+60
+00:03:19,840 --> 00:03:22,000
+where users can send money back and forth
+，用户可以在其中来回汇款
+
+61
+00:03:22,000 --> 00:03:26,720
+each transaction is added into a block then that block is mined with a proof of
+每笔交易都添加到一个块中然后使用
+
+62
+00:03:26,720 --> 00:03:29,040
+work system at which point it can be added and
+工作量证明系统挖掘该块，此时可以在区块
+
+63
+00:03:29,040 --> 00:03:31,760
+confirmed on the blockchain and throughout this process you'll learn
+链上添加和确认它，在整个过程中，您将了解
+
+64
+00:03:31,760 --> 00:03:33,760
+about all kinds of important concepts and how
+各种重要概念以及
+
+65
+00:03:33,760 --> 00:03:36,239
+they apply to different areas of development
+它们如何应用于不同的开发领域
+
+66
+00:03:36,239 --> 00:03:39,519
+to get started you'll need node.js installed on your system
+以开始您 '将需要在您的系统上安装 node.js
+
+67
+00:03:39,519 --> 00:03:44,159
+then we'll open up vs code to an empty directory run npm init y
+然后我们将打开 vs 代码到一个空目录运行 npm init y
+
+68
+00:03:44,159 --> 00:03:48,080
+to create a new node.js project i'll be using typescript in this code
+以创建一个新的 node.js 项目我将在此代码中使用 typescript
+
+69
+00:03:48,080 --> 00:03:51,840
+because we'll be using object-oriented programming principles to implement the
+因为我们将使用对象面向实现
+
+70
+00:03:51,840 --> 00:03:55,120
+blockchain and having types will just make our code a bit more readable
+区块链和类型的编程原则只会使我们的代码更具可读性，
+
+71
+00:03:55,120 --> 00:03:58,640
+you can install it with npm then create a ts config file
+您可以使用 npm 安装它，然后创建一个 ts 配置文件
+
+72
+00:03:58,640 --> 00:04:02,560
+and copy and paste the values from the main source code from there we can go
+并从那里复制并粘贴主源代码中的值，我们可以
+
+73
+00:04:02,560 --> 00:04:06,400
+into our package json and create a script called dev that runs
+进入我们的 打包 json并创建一个名为 dev 的脚本，该脚本运行
+
+74
+00:04:06,400 --> 00:04:08,879
+the typescript compiler with the watch flag
+带有 watch 标志的 typescript 编译器，
+
+75
+00:04:08,879 --> 00:04:12,480
+to constantly compile our code in the background to plain javascript from
+以不断在后台将我们的代码编译为纯 javascript 从
+
+76
+00:04:12,480 --> 00:04:16,160
+there you should be able to run npm run dev from the command line to
+那里你应该能够从命令运行 npm run dev
+
+77
+00:04:16,160 --> 00:04:18,400
+keep typescript running in the background
+保持打字稿在后台运行的行
+
+78
+00:04:18,400 --> 00:04:22,000
+now we'll write all of our source code in the index cs file
+现在我们将在该文件顶部的索引cs文件
+
+79
+00:04:22,000 --> 00:04:26,560
+at the top of that file we will import the crypto library which is a built-in
+中编写所有源代码我们将导入
+
+80
+00:04:26,560 --> 00:04:31,040
+in node.js as the name implies it's a modular node that handles a bunch of
+node.js中内置的加密库，顾名思义它是 一个模块化节点，处理一系列
+
+81
+00:04:31,040 --> 00:04:34,960
+different functionality for cryptography our simple blockchain implementation
+不同的密码学功能我们在这里的简单区块链实现
+
+82
+00:04:34,960 --> 00:04:39,600
+here has four classes a transaction a block a chain and a
+有四个类一个交易 一个区块 一个区块链和一个
+
+83
+00:04:39,600 --> 00:04:41,680
+wallet let's start by implementing the
+钱包让我们从实现交易开始，
+
+84
+00:04:41,680 --> 00:04:45,280
+transaction which is the fundamental purpose of any cryptocurrency
+这是任何加密货币
+
+85
+00:04:45,280 --> 00:04:49,280
+transfer funds from one user to another user in a transaction
+将资金从一个用户转移到另一个用户的基本目的交易中
+
+86
+00:04:49,280 --> 00:04:53,600
+a transaction object has three properties the amount of the transaction
+的用户 交易对象具有三个属性
+
+87
+00:04:53,600 --> 00:04:58,240
+denominated in bitcoins or fire coins or whatever you want to call your coin
+以比特币或火币或任何您想称呼您的硬币的交易
+
+88
+00:04:58,240 --> 00:05:01,360
+along with the person paying the money and the person receiving the money
+金额以及付款人和收款人
+
+89
+00:05:01,360 --> 00:05:04,960
+eventually we'll set up public keys for these users which you can think of as a
+最终我们将设置公钥 对于这些用户，您可以
+
+90
+00:05:04,960 --> 00:05:08,720
+username that will eventually set as these values in the transaction
+将其视为最终将在交易中设置为这些值的用户名，
+
+91
+00:05:08,720 --> 00:05:12,400
+one final thing we'll do here is add a method to the class to convert the
+我们将在这里做的最后一件事是 s在类中添加一个方法来将
+
+92
+00:05:12,400 --> 00:05:15,199
+object to a string as we go through the tutorial we're
+对象转换为字符串，我们将在教程中将
+
+93
+00:05:15,199 --> 00:05:18,880
+going to serialize everything as strings just to make the cryptographic
+所有内容序列化为字符串，以使加密
+
+94
+00:05:18,880 --> 00:05:21,840
+objects easier to work with and now we're ready to move on to the
+对象更易于使用，现在我们准备继续
+
+95
+00:05:21,840 --> 00:05:26,240
+block implementation a block is like a container for multiple
+块实现 块就像一个容器，用于多个
+
+96
+00:05:26,240 --> 00:05:29,440
+transactions or in our case just a single transaction
+事务，或者在我们的例子中只是一个事务，
+
+97
+00:05:29,440 --> 00:05:32,479
+to keep things simple you can think of a block like an element
+以保持简单，您可以将块视为
+
+98
+00:05:32,479 --> 00:05:35,440
+in an array or more accurately a linked list
+数组中的元素或更准确地说是链表，
+
+99
+00:05:35,440 --> 00:05:39,759
+because each block has a reference or link to the previous block in the chain
+因为每个块都有一个引用或链接到 链中
+
+100
+00:05:39,759 --> 00:05:44,080
+with the previous hash property and that brings up a good cryptographic question
+具有前一个散列属性的前一个块，这带来了一个很好的密码学问题
+
+101
+00:05:44,080 --> 00:05:48,960
+what is a hash a hashing function allows you to take a value of an arbitrary size
+什么是散列散列函数允许您获取任意大小的值，
+
+102
+00:05:48,960 --> 00:05:52,000
+like say a transaction then map it to a value
+例如交易，然后将其映射到
+
+103
+00:05:52,000 --> 00:05:56,000
+with a fixed length like a hexadecimal string the value returned from the
+具有固定长度的值 像十六进制字符串一样，从散列函数返回的
+
+104
+00:05:56,000 --> 00:05:59,600
+hashing function is often called a hash or a hash digest
+值通常称为散列或散列摘要，
+
+105
+00:05:59,600 --> 00:06:02,880
+when you create a hash it cannot be reversed to reconstruct the
+当您创建散列时，它无法反转以重建
+
+106
+00:06:02,880 --> 00:06:07,199
+contents of the original value but what you can do is validate that two values
+原始 val 的内容 但是您可以做的是通过比较它们的哈希值来验证两个值
+
+107
+00:06:07,199 --> 00:06:10,000
+are identical by comparing their hashes and that's
+是否相同，这
+
+108
+00:06:10,000 --> 00:06:13,440
+important for a blockchain because it ensures that two blocks can be linked
+对于区块链很重要，因为它确保两个块可以链接
+
+109
+00:06:13,440 --> 00:06:17,120
+together without being manipulated now to create a hash of a block we're
+在一起而无需现在被操纵以创建我们将要实现的块的哈希
+
+110
+00:06:17,120 --> 00:06:20,560
+going to implement a getter that will first stringify the object
+一个getter 将首先对对象本身进行字符串化，
+
+111
+00:06:20,560 --> 00:06:24,240
+itself then we'll use the create hash function from node crypto
+然后我们将使用 node crypto 的 create hash函数，
+
+112
+00:06:24,240 --> 00:06:28,360
+which specifies a specific hashing algorithm in this case
+它在这种情况下指定一个特定的散列算法
+
+113
+00:06:28,360 --> 00:06:31,919
+sha-256 it stands for secure hash algorithm
+sha-256 它代表
+
+114
+00:06:31,919 --> 00:06:37,039
+with a length of 256 bits it was developed by the nsa back in 2001
+长度为 256 位的安全散列算法，它是由 nsa 早在 2001 年
+
+115
+00:06:37,039 --> 00:06:40,240
+and it's what's known as a one-way cryptographic function
+，它就是所谓的单向加密函数
+
+116
+00:06:40,240 --> 00:06:43,680
+which means that it can encrypt data but it cannot decrypt data back to its
+，这意味着它可以加密数据，但不能将数据解密回
+
+117
+00:06:43,680 --> 00:06:46,560
+original form we can use the function to hash the
+原始形式，我们可以使用该函数对块的字符串版本进行哈希处理，
+
+118
+00:06:46,560 --> 00:06:50,560
+string version of the block then return the hash value or digest as
+然后返回哈希值 或摘要
+
+119
+00:06:50,560 --> 00:06:53,759
+a hexadecimal string and that's all it takes to build a block
+为十六进制字符串，这就是构建块所需的全部，
+
+120
+00:06:53,759 --> 00:06:56,880
+in this case it's a transaction that has a link to the previous
+在这种情况下，它是一个交易，它以哈希的形式链接到前一个
+
+121
+00:06:56,880 --> 00:07:00,800
+transaction in the form of a hash and it also contains a timestamp because
+交易，它是 lso 包含一个时间戳，因为
+
+122
+00:07:00,800 --> 00:07:03,680
+all blocks will be placed in chronological order
+所有块都将按时间顺序放置，
+
+123
+00:07:03,680 --> 00:07:07,680
+now we can move on to the chain which again is like a linked list of blocks
+现在我们可以移动到链上，这又是一个块的链表
+
+124
+00:07:07,680 --> 00:07:11,520
+there should only be one blockchain so we'll go ahead and make it a singleton
+，应该只有一个区块链，所以我们将继续通过设置使其成为单例
+
+125
+00:07:11,520 --> 00:07:14,880
+instance by setting up a static instance property
+实例设置一个静态实例属性
+
+126
+00:07:14,880 --> 00:07:18,400
+that is equal to a new chain instance that'll just ensure that we
+，该属性等于一个新的链实例，这将确保我们
+
+127
+00:07:18,400 --> 00:07:21,680
+have one chain instance instantiated before anything else
+先实例化一个链实例，
+
+128
+00:07:21,680 --> 00:07:25,520
+now we can declare a property for the chain itself which is just an array of
+现在我们可以为链本身声明一个属性，它只是
+
+129
+00:07:25,520 --> 00:07:27,599
+blocks in the constructor we'll define the
+构造函数中的一组块，我们' 将定义
+
+130
+00:07:27,599 --> 00:07:30,639
+first block in the chain which is called the genesis block
+链中的第一个块，称为创世
+
+131
+00:07:30,639 --> 00:07:33,919
+the previous hash is null because there's nothing for it to link to
+块，前一个哈希为空，因为它没有任何链接，
+
+132
+00:07:33,919 --> 00:07:37,840
+then it instantiates a new transaction that transfers a hundred coins to
+然后它实例化一个新的交易，将一百个硬币转移到中本
+
+133
+00:07:37,840 --> 00:07:40,080
+satoshi notice how we're creating money out of
+聪注意我们是如何从稀薄中创造货币的
+
+134
+00:07:40,080 --> 00:07:43,280
+thin air here that's no different than when the central bankers or federal
+这里的空气与中央银行家或美联储
+
+135
+00:07:43,280 --> 00:07:46,800
+reserve turn on the money printer now in the blockchain class we'll often
+现在在区块链类中打开货币打印机时没有什么不同，我们经常
+
+136
+00:07:46,800 --> 00:07:50,800
+need to grab the last block in the chain so we'll go ahead and create a getter to
+需要抓住链中的最后一个块，所以 我们将继续创建一个 getter 来
+
+137
+00:07:50,800 --> 00:07:54,080
+help us out with that then we'll define a new method named add
+帮助我们解决这个问题，然后我们将定义一个名为 add block 的新方法
+
+138
+00:07:54,080 --> 00:07:59,039
+block that takes a transaction the sender's public key and a signature
+，该方法接受交易发送者的公钥和签名
+
+139
+00:07:59,039 --> 00:08:02,080
+that we can verify before adding a new block to the chain a
+，我们可以在将新块添加到链之前验证该签名
+
+140
+00:08:02,080 --> 00:08:04,879
+naive and simple implementation might look like this
+天真和简单的实现可能看起来像这样
+
+141
+00:08:04,879 --> 00:08:09,039
+we instantiate a new block taking the last block's hash and this new
+我们实例化一个新块，获取最后一个块的哈希和这个新
+
+142
+00:08:09,039 --> 00:08:11,520
+transaction then we push that new block onto the
+交易，然后我们将该新块推送到链上，
+
+143
+00:08:11,520 --> 00:08:15,199
+chain but the problem is that there's no way to know that this is a legitimate
+但问题是没有办法知道这是
+
+144
+00:08:15,199 --> 00:08:18,080
+transaction anybody could send arbitrary transaction
+任何人都可以发送的合法交易 任意交易
+
+145
+00:08:18,080 --> 00:08:21,599
+data to transfer coin to someone else we can allow people
+数据将硬币转移给其他人 我们可以允许人们
+
+146
+00:08:21,599 --> 00:08:25,120
+to securely send coin back and forth by implementing a wallet
+通过实施钱包来安全地来回发送硬币，钱包
+
+147
+00:08:25,120 --> 00:08:28,800
+which is essentially just a wrapper for a public key and a private key
+本质上只是公钥和私钥
+
+148
+00:08:28,800 --> 00:08:32,560
+the public key is for receiving money the private key is for spending money
+的包装器 公钥用于接收资金 私钥用于
+
+149
+00:08:32,560 --> 00:08:36,320
+to generate a public and private key we're going to use a different algorithm
+花钱生成公钥和私钥我们将使用一种称为 rsa 的不同算法
+
+150
+00:08:36,320 --> 00:08:39,279
+called rsa which stands for the names of the guys
+，它代表创建它的人的名字
+
+151
+00:08:39,279 --> 00:08:43,599
+that created it and unlike sha this is a full encryption algorithm
+，与 sha 不同，这是一个 完整的加密算法
+
+152
+00:08:43,599 --> 00:08:46,560
+that can encrypt data and then decrypt it if you have the
+，可以加密数据然后解密它，如果你有
+
+153
+00:08:46,560 --> 00:08:50,800
+proper key to do so to encrypt a value you would use the public key to convert
+适当的密钥来加密一个值，你将使用公钥将
+
+154
+00:08:50,800 --> 00:08:55,040
+it to ciphertext which is an unreadable version of the original value then you
+其转换为密文，这是原始值的不可读版本，然后你
+
+155
+00:08:55,040 --> 00:08:58,880
+would use the private key to decrypt it back to its original form
+将使用私有将其解密回原始形式的密钥，
+
+156
+00:08:58,880 --> 00:09:02,720
+but what we're actually more interested in is using the key pair to create a
+但我们实际上更感兴趣的是使用密钥对创建带有
+
+157
+00:09:02,720 --> 00:09:05,600
+digital signature with signing we don't need to encrypt
+签名的数字签名，我们不需要
+
+158
+00:09:05,600 --> 00:09:09,440
+the message but instead create a hash of it we then sign the hash with our
+加密消息，而是创建它的哈希，然后我们签署 使用我们的私钥散列，
+
+159
+00:09:09,440 --> 00:09:12,000
+private key then the message can be verified later
+然后可以稍后使用公钥验证消息，
+
+160
+00:09:12,000 --> 00:09:15,600
+using the public key if anybody tried to change the message it would produce a
+如果有人试图更改消息，它将产生
+
+161
+00:09:15,600 --> 00:09:18,480
+different hash in which case the verification would fail
+不同的散列，在这种情况下，验证将失败
+
+162
+00:09:18,480 --> 00:09:21,519
+and that's really important for a coin because if we didn't have a signature
+，这对于硬币来说非常重要，因为如果我们没有 一个签名，
+
+163
+00:09:21,519 --> 00:09:24,880
+then someone could intercept the transaction message and change the
+然后有人可以拦截交易消息并更改
+
+164
+00:09:24,880 --> 00:09:28,480
+amount or change the payee with no way to detect that anything was
+金额或更改收款人
+
+165
+00:09:28,480 --> 00:09:31,440
+out of the ordinary now when generating the key pair with
+，而现在在生成密钥对时无法检测到任何异常情况 h
+
+166
+00:09:31,440 --> 00:09:34,560
+node crypto i'm going to format them as strings
+node crypto 我要将它们格式化为字符串
+
+167
+00:09:34,560 --> 00:09:37,920
+and to do that i'm going to add some extra options here for encoding the
+，为此我将在此处添加一些额外的选项来进行编码
+
+168
+00:09:37,920 --> 00:09:40,480
+important one to know is the format pem which you would
+
+
+169
+00:09:40,480 --> 00:09:43,839
+normally save to a file on the user's computer system where it
+
+
+170
+00:09:43,839 --> 00:09:46,640
+could be reused in the future now that we have a public key and
+既然我们有公钥和
+
+171
+00:09:46,640 --> 00:09:50,160
+private key we can use it to send money to another user
+私钥，将来可以重用它，我们可以使用它向另一个用户汇款，
+
+172
+00:09:50,160 --> 00:09:53,760
+the way we do that is by specifying an amount and the public key
+我们这样做的方式是指定金额和
+
+173
+00:09:53,760 --> 00:09:58,000
+of the user being paid we can then use node crypto to create a signature
+被支付用户的公钥，然后我们可以 使用节点加密再次创建签名
+
+174
+00:09:58,000 --> 00:10:02,640
+again an sha 256 format using the transaction data as the value
+使用交易数据作为值的 sha 256 格式
+
+175
+00:10:02,640 --> 00:10:05,839
+we can then create a signature by signing it with a private key
+然后我们可以通过使用私钥对其进行签名来创建签名
+
+176
+00:10:05,839 --> 00:10:10,000
+this is kind of like creating a one-time password it allows us to verify our
+这有点像创建一次性密码 它允许我们验证我们的
+
+177
+00:10:10,000 --> 00:10:13,760
+identity with the private key without actually having to expose the private
+身份 使用私钥而实际上不必公开
+
+178
+00:10:13,760 --> 00:10:17,680
+key the signature depends on both the transaction data and the private key
+私钥签名取决于交易数据和私钥，
+
+179
+00:10:17,680 --> 00:10:21,440
+but it can be verified as authentic using the public key we can now attempt
+但可以使用公钥验证它是真实的，我们现在可以尝试
+
+180
+00:10:21,440 --> 00:10:24,720
+to add that block to the blockchain by passing the transaction
+将该块添加到区块链中
+
+181
+00:10:24,720 --> 00:10:28,640
+the public key and the signature in real life those values would be transferred
+在现实生活中传递交易公钥和签名这些值将通过互联网传输
+
+182
+00:10:28,640 --> 00:10:31,440
+over the internet then the signature could be verified
+然后可以验证签名
+
+183
+00:10:31,440 --> 00:10:34,240
+let's go ahead and refactor the add block method
+让我们继续并重构
+
+184
+00:10:34,240 --> 00:10:38,959
+in the chain class it'll use node crypto to create a signature verification
+链类中的添加块方法它将使用节点加密来创建签名验证
+
+185
+00:10:38,959 --> 00:10:42,720
+then pass the same transaction data to the verifier we can then validate it
+然后将相同的交易数据传递给验证者，然后我们可以
+
+186
+00:10:42,720 --> 00:10:45,760
+by verifying that the transaction data has not been tampered with
+通过
+
+187
+00:10:45,760 --> 00:10:48,959
+using the sender's public key and the signature itself
+使用发送者的公钥和签名本身验证交易数据没有被篡改
+
+188
+00:10:48,959 --> 00:10:52,800
+and we're now able to securely verify that that user is actually trying to
+来验证它，我们现在能够安全地验证该用户实际上是在尝试
+
+189
+00:10:52,800 --> 00:10:55,600
+spend that amount of money to the other user
+把这么多钱花给另一个用户，
+
+190
+00:10:55,600 --> 00:10:58,880
+but there's still one more big issue with our blockchain and that is the
+但我们的区块链还有一个更大的问题，那就是
+
+191
+00:10:58,880 --> 00:11:02,160
+double spend issue imagine the spender tried to send money
+双重支付问题，想象一下消费者试图
+
+192
+00:11:02,160 --> 00:11:05,760
+to two different users at the same time they could potentially spend more money
+同时向两个不同的用户汇款，他们可能会花费比实际更多的钱
+
+193
+00:11:05,760 --> 00:11:09,040
+than they actually own before their transaction is confirmed on the
+在他们的交易在区块链上确认之前拥有
+
+194
+00:11:09,040 --> 00:11:11,680
+blockchain the way bitcoin addresses that issue is
+比特币解决该问题的方式是
+
+195
+00:11:11,680 --> 00:11:14,000
+with a proof of work system which requires
+使用工作量证明系统，该系统要求 要求
+
+196
+00:11:14,000 --> 00:11:17,760
+each new block to go through a process called mining where a difficult
+每个新块通过一个称为挖掘的过程，在该过程
+
+197
+00:11:17,760 --> 00:11:21,120
+computational problem is solved in order to confirm the block
+中解决了一个困难的计算问题以确认该块，
+
+198
+00:11:21,120 --> 00:11:25,200
+but it's very easy to verify that work by multiple other nodes on the system
+但是当挖掘分布在世界各地时，很容易验证系统上多个其他节点的工作，
+
+199
+00:11:25,200 --> 00:11:28,720
+when mining is distributed around the world it means you have multiple nodes
+这意味着你有 多个节点
+
+200
+00:11:28,720 --> 00:11:31,680
+competing to confirm a block on the blockchain and
+竞争确认区块链上的一个区块，
+
+201
+00:11:31,680 --> 00:11:35,440
+works like a big lottery the winner of the lottery earns a portion of the coin
+并像大彩票一样工作 彩票中奖者获得一部分硬币
+
+202
+00:11:35,440 --> 00:11:38,079
+as incentive which motivates people to invest in the
+作为激励，激励人们投资
+
+203
+00:11:38,079 --> 00:11:41,920
+computing resources to mine a coin and also to pump the price of the coin
+计算资源以开采硬币并提高价格 硬币
+
+204
+00:11:41,920 --> 00:11:44,880
+higher and higher because the higher the price the more money you make
+越来越高，因为价格越高，你赚的钱就越多，
+
+205
+00:11:44,880 --> 00:11:48,560
+you can think of it like converting cloud computing resources into money
+你可以把它想象成现在将云计算资源转化为
+
+206
+00:11:48,560 --> 00:11:52,240
+now to implement a basic proof of work system we'll go back into our block
+金钱来实现一个基本的工作量证明系统，我们将回到我们的块
+
+207
+00:11:52,240 --> 00:11:54,720
+class and add a nonce value which is a
+类并添加一个 nonce 值 是
+
+208
+00:11:54,720 --> 00:11:58,240
+one-time use random number then in the chain class we'll add a
+一次性使用的随机数，然后在链类中我们将添加一个
+
+209
+00:11:58,240 --> 00:12:01,600
+method called mine that takes that nonce as an argument
+名为 mine 的方法，该方法将该随机数作为
+
+210
+00:12:01,600 --> 00:12:05,279
+what this method will do is attempt to find a number that when added to the
+参数，该方法将尝试查找 一个数字，当添加到
+
+211
+00:12:05,279 --> 00:12:07,600
+nonce will produce a hash that starts with
+nonce 时将产生一个以四个零开头的哈希
+
+212
+00:12:07,600 --> 00:12:11,600
+four zeros the only real way to figure out that value is with brute force by
+找出该值的唯一真正方法是通过
+
+213
+00:12:11,600 --> 00:12:14,079
+creating a while loop that goes digit by digit
+创建一个 while 循环，逐位运行，
+
+214
+00:12:14,079 --> 00:12:17,920
+until we find the requested value to handle the brute force computation
+直到我们找到处理暴力的请求值强制计算
+
+215
+00:12:17,920 --> 00:12:22,320
+we'll create a while loop that creates a hash with the md5 algorithm
+我们将创建一个 while 循环，它使用 md5 算法创建一个散列
+
+216
+00:12:22,320 --> 00:12:26,880
+it's very similar to sha-256 but is only 128 bits
+它与 sha-256 非常相似，但只有128 位
+
+217
+00:12:26,880 --> 00:12:30,000
+and is faster to compute we'll continue to create new hashes
+并且计算速度更快 我们将继续
+
+218
+00:12:30,000 --> 00:12:33,360
+inside the while loop until we find one that starts with four zeros
+在 while 循环中创建新的散列，直到我们找到一个
+
+219
+00:12:33,360 --> 00:12:36,800
+when we find it we can return the solution and then send it off to other
+当我们找到它时从四个零开始，我们可以返回解决方案，然后将其发送到
+
+220
+00:12:36,800 --> 00:12:39,920
+nodes where it can be verified and the block can finally be confirmed
+可以验证的其他节点，并且最终可以在区块
+
+221
+00:12:39,920 --> 00:12:43,519
+on the blockchain and that takes care of our blockchain implementation
+链上确认该块，如果我们继续下去，它会负责我们的区块链
+
+222
+00:12:43,519 --> 00:12:47,839
+if we go down to the example usage here you can see we instantiate a few wallets
+实施 这里的示例用法你可以看到我们为不同的用户实例化了几个钱包
+
+223
+00:12:47,839 --> 00:12:51,360
+for different users then allow those users to send money to
+然后允许这些用户
+
+224
+00:12:51,360 --> 00:12:53,680
+each other using their various public keys
+使用他们的各种公钥相互汇款，
+
+225
+00:12:53,680 --> 00:12:56,959
+if we go ahead and log out the chain itself you can see we have a bunch of
+如果我们继续注销链本身，你可以 看到我们有一堆基于前一个块的哈希
+
+226
+00:12:56,959 --> 00:12:59,519
+blocks or transactions linked to each other
+相互链接的块或交易
+
+227
+00:12:59,519 --> 00:13:03,120
+based on a hash of the previous block now this blockchain is obviously not
+现在这个区块链显然不是
+
+228
+00:13:03,120 --> 00:13:04,800
+perfect and something that i just hacked
+完美的，我只是一起破解了一些东西
+
+229
+00:13:04,800 --> 00:13:07,440
+together to teach you the gist of how a blockchain works
+来教你区块链如何工作的要点
+
+230
+00:13:07,440 --> 00:13:10,880
+feel free to grab the full source code on github if you learned something in
+随意抓住github 上的完整源代码如果您在此过程中学到了一些东西，
+
+231
+00:13:10,880 --> 00:13:13,120
+the process please make sure to like and subscribe
+请确保喜欢并订阅
+
+232
+00:13:13,120 --> 00:13:17,200
+and consider sending me some bitcoin or sponsoring me on github for just one
+并考虑向我发送一些比特币或在 github 上赞助我，每月只需 1
+
+233
+00:13:17,200 --> 00:13:20,720
+dollar a fiat per month i use all that income to sponsor other
+美元一个法定货币我用所有的收入来赞助其他
+
+234
+00:13:20,720 --> 00:13:23,680
+developers myself thanks for watching and i will see you
+开发人员自己感谢 看，我会在下一个见到你
+
+235
+00:13:23,680 --> 00:13:30,079
+in the next one

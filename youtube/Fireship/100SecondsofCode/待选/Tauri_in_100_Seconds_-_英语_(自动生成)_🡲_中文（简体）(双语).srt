@@ -1,0 +1,204 @@
+1
+00:00:00,240 --> 00:00:04,000
+towri a toolkit for building native desktop apps with rented web
+towri 一个工具包，用于使用租用的 Web
+
+2
+00:00:04,000 --> 00:00:08,080
+technologies and a lightweight rust back end it allows you to use your favorite
+技术和轻量级 rust 后端构建本地桌面应用
+
+3
+00:00:08,080 --> 00:00:12,880
+javascript framework to design a ui then package it for mac os windows and linux
+
+
+4
+00:00:12,880 --> 00:00:16,480
+from a single code base since the dawn of time javascript developers have been
+程序 在过去的十年中，javascript 开发人员一直
+
+5
+00:00:16,480 --> 00:00:20,400
+searching for the perfect way to build cross-platform apps for the last decade
+在寻找构建跨平台应用程序的完美方式，
+
+6
+00:00:20,400 --> 00:00:23,439
+electron has been the leader in this space which provides a back-end in
+electron 一直是这个领域的领导者，它提供
+
+7
+00:00:23,439 --> 00:00:26,960
+node.js and a front-end with the chromium browser the main criticism of
+node.js 的后端和chromium 浏览器的前端，主要批评
+
+8
+00:00:26,960 --> 00:00:30,560
+this approach is that it results in a very large executable file that consumes
+这种方法是它会导致一个非常大的可执行文件，这会
+
+9
+00:00:30,560 --> 00:00:34,320
+a lot of memory on the machine towri takes a different approach by replacing
+在机器上消耗大量内存 towri采用不同的方法，将
+
+10
+00:00:34,320 --> 00:00:38,800
+node.js with rust and chromium with libraries like tau and rye to provide a
+node.js 替换为 rust 和 chromium，使用 tau 和 rye 等库来提供
+
+11
+00:00:38,800 --> 00:00:42,719
+lightweight webview the end result is a smaller bundle size and more efficient
+轻量级 webview 最终结果是更小的包大小和更有效的
+
+12
+00:00:42,719 --> 00:00:46,399
+memory consumption it also takes security very seriously and provides an
+内存消耗它还非常重视安全性并提供
+
+13
+00:00:46,399 --> 00:00:50,320
+isolation pattern to prevent untrusted scripts from accessing the backend from
+隔离模式以防止不受信任的脚本访问 来自
+
+14
+00:00:50,320 --> 00:00:54,239
+a webview the towery api provides a secure way to access native
+web 视图的后端 塔式 API 提供了一种安全的方式来访问
+
+15
+00:00:54,239 --> 00:00:59,359
+functionality like the file system http and system notifications it's secure by
+文件系统 http和系统通知等原生功能，默认情况下它是安全的
+
+16
+00:00:59,359 --> 00:01:02,879
+default and the only way for the front end to call back and code is when the
+，前端回调和代码的唯一方法是
+
+17
+00:01:02,879 --> 00:01:07,680
+developer explicitly allows it to get started install rust nodejs then create
+开发人员明确允许它获取开始安装 rust nodejs 然后创建
+
+18
+00:01:07,680 --> 00:01:11,119
+a new towry app choose your favorite javascript framework to build the front
+一个新的 towry 应用程序 选择你最喜欢的JavaScript 框架来构建
+
+19
+00:01:11,119 --> 00:01:15,439
+end it looks identical to a web project except for the source towry directory
+前端 它看起来与 Web 项目相同，除了源 towry 目录
+
+20
+00:01:15,439 --> 00:01:19,119
+this is the back end for your native desktop app inside of which you'll find
+这是你的本地桌面应用程序的后端，你会在其中找到
+
+21
+00:01:19,119 --> 00:01:22,240
+icons that will be displayed when the app is installed the icons are
+安装应用程序时将显示的图标 这些图标
+
+22
+00:01:22,240 --> 00:01:25,520
+referenced in the tower config file which also contains important
+在 tower 配置文件中被引用，该文件还包含重要
+
+23
+00:01:25,520 --> 00:01:30,000
+information like the bundle identifier as well as build settings for mac os
+信息，例如包标识符以及 mac os
+
+24
+00:01:30,000 --> 00:01:34,479
+windows and linux now the entry point for your back end is in the main.rs file
+windows 和 linux 的构建设置，现在后端的入口点位于 main.rs 文件
+
+25
+00:01:34,479 --> 00:01:37,680
+from here we can customize the experience on the native operating
+从这里我们可以通过导入菜单类型来自定义本机操作系统上的体验
+
+26
+00:01:37,680 --> 00:01:41,759
+system by importing the menu types we can create a custom native menu that
+我们可以创建自定义本机菜单 hat
+
+27
+00:01:41,759 --> 00:01:46,159
+will work seamlessly on all platforms in addition we can define code and rust
+将在所有平台上无缝工作，此外，我们可以定义代码和 rust
+
+28
+00:01:46,159 --> 00:01:49,439
+that can then be invoked from the javascript front end and it has its own
+，然后可以从javascript 前端调用它，它有自己的
+
+29
+00:01:49,439 --> 00:01:53,439
+custom event system that allows complex message passing from the front end to
+自定义事件系统，允许复杂的消息从前端传递
+
+30
+00:01:53,439 --> 00:01:57,600
+the back end and vice versa now in the front end code a variety of native apis
+到后端，反之亦然 在前端代码中，
+
+31
+00:01:57,600 --> 00:02:01,600
+can be accessed with javascript for example we might import right file from
+可以使用 javascript 访问各种原生 api，例如，我们可以从文件系统导入正确的文件，
+
+32
+00:02:01,600 --> 00:02:05,600
+the file system then simply bind that function to the click event on a button
+然后简单地将该函数绑定到按钮上的单击事件
+
+33
+00:02:05,600 --> 00:02:09,440
+and now the app has the ability to create a file on the user's hard drive
+，现在应用程序可以在其上创建文件 用户的硬盘驱动器
+
+34
+00:02:09,440 --> 00:02:13,120
+after that we may want to show a native dialog which we can accomplish with a
+之后，我们可能希望显示一个本机对话框，我们可以使用来自高耸 api 的一行代码来完成，并且现在
+
+35
+00:02:13,120 --> 00:02:17,520
+single line of code from the towering api and access to any api method can be
+可以从 tow reconfig 文件中的允许列表中控制对任何 api 方法的访问以
+
+36
+00:02:17,520 --> 00:02:21,520
+controlled from the allow list in the tow reconfig file now to compile and
+进行编译和
+
+37
+00:02:21,520 --> 00:02:24,959
+build the app run the tow rebuild command this will create an executable
+构建应用程序 运行 tow rebuild命令，这将创建一个可执行文件
+
+38
+00:02:24,959 --> 00:02:28,879
+and the target directory congratulations you just built a high performance native
+和目标目录 恭喜您刚刚构建了一个
+
+39
+00:02:28,879 --> 00:02:33,519
+desktop app that can run on any platform this has been towri in 100 seconds if
+可以在任何平台上运行的高性能原生桌面应用程序就像 100 秒内的 towri 如果
+
+40
+00:02:33,519 --> 00:02:36,800
+you want to see a full tutorial let me know in the comments thanks for watching
+你想看一个完整的教程，请在评论中告诉我谢谢观看
+
+41
+00:02:36,800 --> 00:02:41,239
+and i will see you in the next one
+，我会在下一个看到你

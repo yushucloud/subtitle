@@ -1,0 +1,310 @@
+1
+00:00:00,079 --> 00:00:02,250
+pseudo elements there's more to your
+
+
+2
+00:00:02,250 --> 00:00:04,230
+HTML than meets the eye there are parts
+
+
+3
+00:00:04,230 --> 00:00:05,850
+of the UI that you can style with CSS
+
+
+4
+00:00:05,850 --> 00:00:07,470
+that don't actually exist in your HTML
+
+
+5
+00:00:07,470 --> 00:00:09,809
+markup take for example a form input
+
+
+6
+00:00:09,809 --> 00:00:11,460
+that has some placeholder text the
+
+
+7
+00:00:11,460 --> 00:00:13,110
+placeholder value is defined as an
+
+
+8
+00:00:13,110 --> 00:00:14,880
+attribute on the element so how do we
+
+
+9
+00:00:14,880 --> 00:00:16,770
+get ahold of the placeholder to style it
+
+
+10
+00:00:16,770 --> 00:00:18,750
+the answer is we target a pseudo element
+
+
+11
+00:00:18,750 --> 00:00:20,699
+in our CSS they always have a double
+
+
+12
+00:00:20,699 --> 00:00:22,470
+colon to distinguish them from pseudo
+
+
+13
+00:00:22,470 --> 00:00:24,570
+classes the difference is that a pseudo
+
+
+14
+00:00:24,570 --> 00:00:26,490
+element represents an actual part of the
+
+
+15
+00:00:26,490 --> 00:00:28,680
+Dom whereas a pseudo class represents
+
+
+16
+00:00:28,680 --> 00:00:30,390
+the state of an element based on the
+
+
+17
+00:00:30,390 --> 00:00:31,859
+user's interaction with it pseudo
+
+
+18
+00:00:31,859 --> 00:00:33,270
+elements can make your code much more
+
+
+19
+00:00:33,270 --> 00:00:35,160
+efficient take for example this HTML
+
+
+20
+00:00:35,160 --> 00:00:37,110
+where the first letter in each paragraph
+
+
+21
+00:00:37,110 --> 00:00:39,030
+is being wrapped in a span so it can be
+
+
+22
+00:00:39,030 --> 00:00:41,070
+styled a far more efficient way to solve
+
+
+23
+00:00:41,070 --> 00:00:42,600
+this problem is by targeting the first
+
+
+24
+00:00:42,600 --> 00:00:44,610
+letter on the paragraph element the end
+
+
+25
+00:00:44,610 --> 00:00:46,739
+result is much cleaner semantic HTML
+
+
+26
+00:00:46,739 --> 00:00:48,629
+that's cool but by far the most powerful
+
+
+27
+00:00:48,629 --> 00:00:50,550
+pseudo elements are before and after
+
+
+28
+00:00:50,550 --> 00:00:53,250
+many but not all HTML elements can have
+
+
+29
+00:00:53,250 --> 00:00:55,440
+content inserted before or after their
+
+
+30
+00:00:55,440 --> 00:00:57,420
+inner content handled entirely from your
+
+
+31
+00:00:57,420 --> 00:00:59,550
+CSS code for example we can target
+
+
+32
+00:00:59,550 --> 00:01:01,620
+before and provide an empty string as
+
+
+33
+00:01:01,620 --> 00:01:03,270
+the content property now that we've
+
+
+34
+00:01:03,270 --> 00:01:04,710
+targeted this element you'll notice that
+
+
+35
+00:01:04,710 --> 00:01:06,390
+it shows up in the browser's inspector
+
+
+36
+00:01:06,390 --> 00:01:08,070
+we can style this element as if it were
+
+
+37
+00:01:08,070 --> 00:01:10,260
+an empty span or div in our HTML and
+
+
+38
+00:01:10,260 --> 00:01:11,520
+that can be very useful for creating
+
+
+39
+00:01:11,520 --> 00:01:13,200
+advanced animations without polluting
+
+
+40
+00:01:13,200 --> 00:01:15,540
+your HTML markup imagine we have a big
+
+
+41
+00:01:15,540 --> 00:01:17,580
+unordered list and before each list item
+
+
+42
+00:01:17,580 --> 00:01:19,619
+we have an emoji character instead of
+
+
+43
+00:01:19,619 --> 00:01:21,270
+duplicating it in the markup we can
+
+
+44
+00:01:21,270 --> 00:01:23,220
+simply add it as the content property to
+
+
+45
+00:01:23,220 --> 00:01:25,259
+the before selector and once again we're
+
+
+46
+00:01:25,259 --> 00:01:26,369
+left with code that is far more
+
+
+47
+00:01:26,369 --> 00:01:28,170
+maintainable there's a few other pseudo
+
+
+48
+00:01:28,170 --> 00:01:29,040
+elements that you should know about
+
+
+49
+00:01:29,040 --> 00:01:31,049
+selection allows you to change the
+
+
+50
+00:01:31,049 --> 00:01:33,030
+background and color of highlighted text
+
+
+51
+00:01:33,030 --> 00:01:34,680
+in some browsers like chrome but not
+
+
+52
+00:01:34,680 --> 00:01:36,600
+Firefox you can customize the scroll bar
+
+
+53
+00:01:36,600 --> 00:01:38,640
+on scrollable elements before using the
+
+
+54
+00:01:38,640 --> 00:01:40,170
+pseudo element always check for browser
+
+
+55
+00:01:40,170 --> 00:01:42,060
+compatibility ones like spelling error
+
+
+56
+00:01:42,060 --> 00:01:43,380
+might sound cool but they don't really
+
+
+57
+00:01:43,380 --> 00:01:45,149
+have any browser support yet this has
+
+
+58
+00:01:45,149 --> 00:01:47,310
+been pseudo elements in 100 seconds make
+
+
+59
+00:01:47,310 --> 00:01:48,899
+sure to also check out pseudo classes
+
+
+60
+00:01:48,899 --> 00:01:50,939
+thanks for watching and I will see you
+
+
+61
+00:01:50,939 --> 00:01:52,940
+in the next one
+
+
+62
+00:01:52,940 --> 00:01:55,000
+you
+
+

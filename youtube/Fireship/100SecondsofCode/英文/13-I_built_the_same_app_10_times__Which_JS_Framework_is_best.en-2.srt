@@ -1,0 +1,3330 @@
+1
+00:00:00,080 --> 00:00:02,080
+which javascript framework is the best
+
+
+2
+00:00:02,080 --> 00:00:04,480
+if we go off of downloads react wins but
+
+
+3
+00:00:04,480 --> 00:00:06,640
+based on github stars view is the best
+
+
+4
+00:00:06,640 --> 00:00:08,480
+but svelt is the most loved framework
+
+
+5
+00:00:08,480 --> 00:00:10,719
+according to the 2021 stack overflow
+
+
+6
+00:00:10,719 --> 00:00:12,160
+survey and some people out there might
+
+
+7
+00:00:12,160 --> 00:00:13,440
+even tell you that you don't need a
+
+
+8
+00:00:13,440 --> 00:00:14,960
+javascript framework and whether you're
+
+
+9
+00:00:14,960 --> 00:00:16,560
+a new developer or have 20 years of
+
+
+10
+00:00:16,560 --> 00:00:18,320
+experience it can be very difficult to
+
+
+11
+00:00:18,320 --> 00:00:19,840
+choose which framework you want to marry
+
+
+12
+00:00:19,840 --> 00:00:21,119
+which is the single most important
+
+
+13
+00:00:21,119 --> 00:00:22,640
+decision you'll make related to your
+
+
+14
+00:00:22,640 --> 00:00:24,560
+frontend code there's no absolute best
+
+
+15
+00:00:24,560 --> 00:00:26,000
+framework and the only way to find out
+
+
+16
+00:00:26,000 --> 00:00:27,760
+which one will make you happy is to
+
+
+17
+00:00:27,760 --> 00:00:29,199
+build something with all of them in
+
+
+18
+00:00:29,199 --> 00:00:30,960
+today's video we'll build the same app
+
+
+19
+00:00:30,960 --> 00:00:32,880
+with 10 different javascript frameworks
+
+
+20
+00:00:32,880 --> 00:00:36,079
+including angular react vue svelt lit
+
+
+21
+00:00:36,079 --> 00:00:39,280
+alpine solid stencil mithril and vanilla
+
+
+22
+00:00:39,280 --> 00:00:40,480
+in the process you'll learn the
+
+
+23
+00:00:40,480 --> 00:00:41,760
+trade-offs between each of these
+
+
+24
+00:00:41,760 --> 00:00:43,200
+frameworks so you can make the best
+
+
+25
+00:00:43,200 --> 00:00:45,280
+choice for your next project this video
+
+
+26
+00:00:45,280 --> 00:00:46,879
+was a ton of work so make sure to
+
+
+27
+00:00:46,879 --> 00:00:48,480
+subscribe and hit the like button then
+
+
+28
+00:00:48,480 --> 00:00:49,920
+leave a comment below with your favorite
+
+
+29
+00:00:49,920 --> 00:00:51,440
+framework and i'll choose a few random
+
+
+30
+00:00:51,440 --> 00:00:53,520
+ones to win a free t-shirt next week the
+
+
+31
+00:00:53,520 --> 00:00:55,280
+first thing we'll do is build a basic
+
+
+32
+00:00:55,280 --> 00:00:57,360
+to-do app with vanilla javascript about
+
+
+33
+00:00:57,360 --> 00:00:59,520
+once a year a hot take will go viral
+
+
+34
+00:00:59,520 --> 00:01:01,199
+saying that you don't need a javascript
+
+
+35
+00:01:01,199 --> 00:01:02,719
+framework at all any expert web
+
+
+36
+00:01:02,719 --> 00:01:04,320
+developer needs to have a solid
+
+
+37
+00:01:04,320 --> 00:01:06,640
+understanding of vanilla js but even if
+
+
+38
+00:01:06,640 --> 00:01:08,479
+you're a javascript god attempting to
+
+
+39
+00:01:08,479 --> 00:01:10,560
+build a non-trivial app with it is a
+
+
+40
+00:01:10,560 --> 00:01:12,479
+recipe for disaster what you'll end up
+
+
+41
+00:01:12,479 --> 00:01:14,000
+doing is building your own shitty
+
+
+42
+00:01:14,000 --> 00:01:15,520
+javascript framework and the last thing
+
+
+43
+00:01:15,520 --> 00:01:17,360
+the world needs is another javascript
+
+
+44
+00:01:17,360 --> 00:01:19,119
+framework to build an app from scratch
+
+
+45
+00:01:19,119 --> 00:01:21,759
+all we have to do is create an html file
+
+
+46
+00:01:21,759 --> 00:01:23,680
+then add a script tag to the body what
+
+
+47
+00:01:23,680 --> 00:01:25,439
+we want to build here is a to do app
+
+
+48
+00:01:25,439 --> 00:01:27,600
+where the user can write some text into
+
+
+49
+00:01:27,600 --> 00:01:29,759
+a form input then submit the form and
+
+
+50
+00:01:29,759 --> 00:01:31,759
+have that item appear in the list in
+
+
+51
+00:01:31,759 --> 00:01:33,840
+addition we'll save those items to local
+
+
+52
+00:01:33,840 --> 00:01:36,159
+storage as kind of a mock database so
+
+
+53
+00:01:36,159 --> 00:01:38,000
+that when the user refreshes the page
+
+
+54
+00:01:38,000 --> 00:01:40,000
+those items are still present pretty
+
+
+55
+00:01:40,000 --> 00:01:41,759
+simple concept but there's actually a
+
+
+56
+00:01:41,759 --> 00:01:44,159
+lot going on there like state management
+
+
+57
+00:01:44,159 --> 00:01:46,560
+data binding events and the application
+
+
+58
+00:01:46,560 --> 00:01:48,479
+life cycle to think about the one thing
+
+
+59
+00:01:48,479 --> 00:01:50,560
+that all frameworks do and vanilla js
+
+
+60
+00:01:50,560 --> 00:01:53,040
+doesn't is provide a way to bind or
+
+
+61
+00:01:53,040 --> 00:01:55,360
+connect your html to the javascript
+
+
+62
+00:01:55,360 --> 00:01:57,439
+automatically in vanilla we need to
+
+
+63
+00:01:57,439 --> 00:01:59,600
+imperatively grab the html elements that
+
+
+64
+00:01:59,600 --> 00:02:01,360
+we're working with from the dom and i
+
+
+65
+00:02:01,360 --> 00:02:03,040
+can tell you right now this is a very
+
+
+66
+00:02:03,040 --> 00:02:04,799
+annoying way to build a complex
+
+
+67
+00:02:04,799 --> 00:02:06,560
+application as you can see here in the
+
+
+68
+00:02:06,560 --> 00:02:08,800
+dom we have an unordered list for the to
+
+
+69
+00:02:08,800 --> 00:02:11,360
+do's and then below that we have a form
+
+
+70
+00:02:11,360 --> 00:02:13,760
+with an input and a button to submit the
+
+
+71
+00:02:13,760 --> 00:02:15,920
+form now going into the javascript the
+
+
+72
+00:02:15,920 --> 00:02:18,080
+first thing i'll do is write some code
+
+
+73
+00:02:18,080 --> 00:02:20,640
+using document query selector to grab
+
+
+74
+00:02:20,640 --> 00:02:22,720
+each one of these items from the dom now
+
+
+75
+00:02:22,720 --> 00:02:24,959
+that we have access to the html elements
+
+
+76
+00:02:24,959 --> 00:02:27,040
+i'm setting up an empty array here to
+
+
+77
+00:02:27,040 --> 00:02:29,200
+represent the actual to-do items in the
+
+
+78
+00:02:29,200 --> 00:02:31,040
+list in addition to keeping track of the
+
+
+79
+00:02:31,040 --> 00:02:33,440
+data we also need to update the actual
+
+
+80
+00:02:33,440 --> 00:02:35,760
+ui when that data changes for that i'm
+
+
+81
+00:02:35,760 --> 00:02:38,319
+defining a function called add to do
+
+
+82
+00:02:38,319 --> 00:02:40,160
+that takes a new to-do item as its
+
+
+83
+00:02:40,160 --> 00:02:41,760
+argument now this is where things start
+
+
+84
+00:02:41,760 --> 00:02:43,760
+to get ugly with vanilla in order to
+
+
+85
+00:02:43,760 --> 00:02:46,480
+update the ui we need to manually create
+
+
+86
+00:02:46,480 --> 00:02:48,560
+a new list item element by calling
+
+
+87
+00:02:48,560 --> 00:02:50,640
+document create element then we need to
+
+
+88
+00:02:50,640 --> 00:02:53,040
+imperatively update its inner html to
+
+
+89
+00:02:53,040 --> 00:02:55,440
+the to-do text and finally append it to
+
+
+90
+00:02:55,440 --> 00:02:57,680
+the unordered list in the dom and as an
+
+
+91
+00:02:57,680 --> 00:02:59,920
+added touch i'll save the data to local
+
+
+92
+00:02:59,920 --> 00:03:01,920
+storage so we can access it when the
+
+
+93
+00:03:01,920 --> 00:03:03,680
+page is refreshed the problem with this
+
+
+94
+00:03:03,680 --> 00:03:05,920
+code is that the application data or
+
+
+95
+00:03:05,920 --> 00:03:08,080
+state is completely decoupled from the
+
+
+96
+00:03:08,080 --> 00:03:10,239
+ui itself and that makes it very hard to
+
+
+97
+00:03:10,239 --> 00:03:12,480
+keep the data in sync with the ui now
+
+
+98
+00:03:12,480 --> 00:03:14,000
+that we have this function in place we
+
+
+99
+00:03:14,000 --> 00:03:15,840
+need a way to call it when the user
+
+
+100
+00:03:15,840 --> 00:03:17,920
+submits the form for that we need to
+
+
+101
+00:03:17,920 --> 00:03:19,680
+register an event listener on the
+
+
+102
+00:03:19,680 --> 00:03:22,000
+forum's on submit event when that event
+
+
+103
+00:03:22,000 --> 00:03:23,680
+is fired we'll first call prevent
+
+
+104
+00:03:23,680 --> 00:03:25,519
+default to prevent it from refreshing
+
+
+105
+00:03:25,519 --> 00:03:27,360
+the page then call the add to do
+
+
+106
+00:03:27,360 --> 00:03:29,519
+function with the current value in the
+
+
+107
+00:03:29,519 --> 00:03:31,599
+text input at this point we should have
+
+
+108
+00:03:31,599 --> 00:03:33,440
+a working to-do list but one important
+
+
+109
+00:03:33,440 --> 00:03:35,040
+thing to notice here is that if you look
+
+
+110
+00:03:35,040 --> 00:03:37,280
+at the html markup you really have no
+
+
+111
+00:03:37,280 --> 00:03:39,200
+idea what it's doing there's no way to
+
+
+112
+00:03:39,200 --> 00:03:40,720
+tell this form has an event listener
+
+
+113
+00:03:40,720 --> 00:03:42,400
+attached to it unless you go search
+
+
+114
+00:03:42,400 --> 00:03:44,000
+through the javascript code itself which
+
+
+115
+00:03:44,000 --> 00:03:45,920
+is extremely difficult in a complex
+
+
+116
+00:03:45,920 --> 00:03:47,840
+application now one final thing to think
+
+
+117
+00:03:47,840 --> 00:03:49,920
+about is the application lifecycle when
+
+
+118
+00:03:49,920 --> 00:03:51,680
+the app is first initialized what we
+
+
+119
+00:03:51,680 --> 00:03:54,000
+want to do here is grab the existing
+
+
+120
+00:03:54,000 --> 00:03:56,640
+to-do items from the local storage and
+
+
+121
+00:03:56,640 --> 00:03:58,319
+render them in the to-do list if they
+
+
+122
+00:03:58,319 --> 00:04:00,319
+exist if there are existing to-do's in
+
+
+123
+00:04:00,319 --> 00:04:02,159
+local storage we can loop over them with
+
+
+124
+00:04:02,159 --> 00:04:03,840
+four each and call the add to do
+
+
+125
+00:04:03,840 --> 00:04:05,280
+function for each one of them
+
+
+126
+00:04:05,280 --> 00:04:07,280
+congratulations you just built a to-do
+
+
+127
+00:04:07,280 --> 00:04:09,760
+app with vanilla js but this code is not
+
+
+128
+00:04:09,760 --> 00:04:11,760
+going to scale complexity very well and
+
+
+129
+00:04:11,760 --> 00:04:13,360
+there's likely many other features we'd
+
+
+130
+00:04:13,360 --> 00:04:15,760
+want to add like routing or animation
+
+
+131
+00:04:15,760 --> 00:04:17,600
+that we'd have to implement from scratch
+
+
+132
+00:04:17,600 --> 00:04:18,799
+and that's why the vast majority of
+
+
+133
+00:04:18,799 --> 00:04:20,400
+developers choose to build their apps
+
+
+134
+00:04:20,400 --> 00:04:22,240
+with a framework first we have react
+
+
+135
+00:04:22,240 --> 00:04:23,600
+which most people would consider the
+
+
+136
+00:04:23,600 --> 00:04:25,280
+most popular framework some people call
+
+
+137
+00:04:25,280 --> 00:04:26,720
+it a library but it doesn't really
+
+
+138
+00:04:26,720 --> 00:04:28,400
+matter because it's a tool that becomes
+
+
+139
+00:04:28,400 --> 00:04:30,080
+the main driver of your project
+
+
+140
+00:04:30,080 --> 00:04:31,840
+requiring you the developer to do
+
+
+141
+00:04:31,840 --> 00:04:33,520
+everything the react way i don't mean
+
+
+142
+00:04:33,520 --> 00:04:35,280
+that in a bad way because react was
+
+
+143
+00:04:35,280 --> 00:04:37,280
+created by very smart people at facebook
+
+
+144
+00:04:37,280 --> 00:04:39,440
+to build complex uis like the facebook
+
+
+145
+00:04:39,440 --> 00:04:42,160
+ui react is minimal by design and relies
+
+
+146
+00:04:42,160 --> 00:04:44,240
+on the open source community to handle
+
+
+147
+00:04:44,240 --> 00:04:46,720
+other concerns like routing animation
+
+
+148
+00:04:46,720 --> 00:04:48,639
+state management and so on it's not
+
+
+149
+00:04:48,639 --> 00:04:50,400
+opinionated about how you organize your
+
+
+150
+00:04:50,400 --> 00:04:52,160
+code which requires you to make a lot of
+
+
+151
+00:04:52,160 --> 00:04:54,000
+decisions about which libraries to bring
+
+
+152
+00:04:54,000 --> 00:04:55,759
+in and how to make things maintainable
+
+
+153
+00:04:55,759 --> 00:04:57,919
+and scalable react is by far the most
+
+
+154
+00:04:57,919 --> 00:04:59,759
+popular framework with over 10 million
+
+
+155
+00:04:59,759 --> 00:05:03,039
+weekly downloads on npm and over 170 000
+
+
+156
+00:05:03,039 --> 00:05:05,199
+github stars its popularity alone makes
+
+
+157
+00:05:05,199 --> 00:05:06,800
+it a great skill to learn because there
+
+
+158
+00:05:06,800 --> 00:05:08,400
+are many employers out there looking to
+
+
+159
+00:05:08,400 --> 00:05:10,320
+hire react developers and you'll find
+
+
+160
+00:05:10,320 --> 00:05:12,000
+tons of other react developers in the
+
+
+161
+00:05:12,000 --> 00:05:14,160
+industry to collaborate with react has
+
+
+162
+00:05:14,160 --> 00:05:16,639
+an official cli called create react app
+
+
+163
+00:05:16,639 --> 00:05:18,479
+we can create a new react project by
+
+
+164
+00:05:18,479 --> 00:05:20,160
+running the create react app command
+
+
+165
+00:05:20,160 --> 00:05:22,080
+from the terminal now it's worth noting
+
+
+166
+00:05:22,080 --> 00:05:24,000
+that many people opt for other tools
+
+
+167
+00:05:24,000 --> 00:05:26,080
+when building a react project like next
+
+
+168
+00:05:26,080 --> 00:05:28,240
+js or gatsby that would replace the
+
+
+169
+00:05:28,240 --> 00:05:30,080
+default cli when you generate a new
+
+
+170
+00:05:30,080 --> 00:05:31,759
+project with create react app you'll
+
+
+171
+00:05:31,759 --> 00:05:33,759
+notice it has a package json and the
+
+
+172
+00:05:33,759 --> 00:05:35,199
+root of the project inside of which
+
+
+173
+00:05:35,199 --> 00:05:36,960
+there's a start script to serve the app
+
+
+174
+00:05:36,960 --> 00:05:38,960
+locally under the hood it uses a tool
+
+
+175
+00:05:38,960 --> 00:05:40,960
+called webpack to bundle all your code
+
+
+176
+00:05:40,960 --> 00:05:43,120
+together into a single javascript file
+
+
+177
+00:05:43,120 --> 00:05:45,360
+in react and most other frameworks your
+
+
+178
+00:05:45,360 --> 00:05:47,680
+application is organized as a tree of
+
+
+179
+00:05:47,680 --> 00:05:49,520
+components these components encapsulate
+
+
+180
+00:05:49,520 --> 00:05:51,440
+parts of the ui and have ways to
+
+
+181
+00:05:51,440 --> 00:05:53,120
+communicate with each other this allows
+
+
+182
+00:05:53,120 --> 00:05:54,400
+you to organize your app in a
+
+
+183
+00:05:54,400 --> 00:05:56,560
+declarative way where for a given set of
+
+
+184
+00:05:56,560 --> 00:05:58,560
+application data the end result of the
+
+
+185
+00:05:58,560 --> 00:06:00,800
+ui will always be the same now in the
+
+
+186
+00:06:00,800 --> 00:06:02,880
+app.js file you'll first notice a
+
+
+187
+00:06:02,880 --> 00:06:04,800
+function called app that function
+
+
+188
+00:06:04,800 --> 00:06:06,960
+represents a component in the ui and
+
+
+189
+00:06:06,960 --> 00:06:09,039
+personally i love the simplicity of that
+
+
+190
+00:06:09,039 --> 00:06:11,199
+now the return value of the function is
+
+
+191
+00:06:11,199 --> 00:06:14,400
+jsx which itself looks like html but has
+
+
+192
+00:06:14,400 --> 00:06:16,479
+been extended with an additional syntax
+
+
+193
+00:06:16,479 --> 00:06:18,560
+allowing you to insert javascript into
+
+
+194
+00:06:18,560 --> 00:06:20,720
+your html for the to-do list we can
+
+
+195
+00:06:20,720 --> 00:06:22,880
+define reactive state on the component
+
+
+196
+00:06:22,880 --> 00:06:25,039
+with the use state hook the hook is just
+
+
+197
+00:06:25,039 --> 00:06:27,199
+a function that will return us with two
+
+
+198
+00:06:27,199 --> 00:06:29,360
+values the first item is the value of
+
+
+199
+00:06:29,360 --> 00:06:31,680
+the to-do list as reactive state which
+
+
+200
+00:06:31,680 --> 00:06:34,160
+means any time it's updated the ui will
+
+
+201
+00:06:34,160 --> 00:06:36,160
+re-render to show the latest state and
+
+
+202
+00:06:36,160 --> 00:06:38,319
+then the second item is a function to
+
+
+203
+00:06:38,319 --> 00:06:40,080
+update the state now if we go back down
+
+
+204
+00:06:40,080 --> 00:06:42,639
+to the jsx we can loop over the to do
+
+
+205
+00:06:42,639 --> 00:06:44,800
+items in the array and render them out
+
+
+206
+00:06:44,800 --> 00:06:47,440
+directly in the ui as a list item then
+
+
+207
+00:06:47,440 --> 00:06:49,919
+below that we have an html form but the
+
+
+208
+00:06:49,919 --> 00:06:51,840
+cool thing about react is that we can
+
+
+209
+00:06:51,840 --> 00:06:54,000
+bind an event directly to this form
+
+
+210
+00:06:54,000 --> 00:06:55,919
+using on submit then on the right side
+
+
+211
+00:06:55,919 --> 00:06:57,919
+of it we can reference a function that
+
+
+212
+00:06:57,919 --> 00:07:00,000
+will be called whenever the submit event
+
+
+213
+00:07:00,000 --> 00:07:02,080
+fires and that function will update the
+
+
+214
+00:07:02,080 --> 00:07:04,240
+state and store the result and local
+
+
+215
+00:07:04,240 --> 00:07:05,919
+storage you'll also notice that i'm
+
+
+216
+00:07:05,919 --> 00:07:08,240
+using the usref hook to grab the current
+
+
+217
+00:07:08,240 --> 00:07:10,400
+value of the form input one thing to
+
+
+218
+00:07:10,400 --> 00:07:12,800
+notice here is that the html is a lot
+
+
+219
+00:07:12,800 --> 00:07:14,479
+more descriptive we know exactly which
+
+
+220
+00:07:14,479 --> 00:07:16,319
+elements our data and events are bound
+
+
+221
+00:07:16,319 --> 00:07:18,160
+to now the final thing we need to do
+
+
+222
+00:07:18,160 --> 00:07:20,479
+here is run a life cycle hook in react
+
+
+223
+00:07:20,479 --> 00:07:22,240
+that can be handled with the use effect
+
+
+224
+00:07:22,240 --> 00:07:23,759
+hook which will grab the items from
+
+
+225
+00:07:23,759 --> 00:07:25,440
+local storage when the component is
+
+
+226
+00:07:25,440 --> 00:07:27,360
+first initialized this hook can be
+
+
+227
+00:07:27,360 --> 00:07:28,880
+really confusing though if you're just
+
+
+228
+00:07:28,880 --> 00:07:30,639
+getting started to only run it when the
+
+
+229
+00:07:30,639 --> 00:07:32,639
+component is first initialized i need to
+
+
+230
+00:07:32,639 --> 00:07:34,880
+add an array as the second argument and
+
+
+231
+00:07:34,880 --> 00:07:36,560
+in my opinion this code is just really
+
+
+232
+00:07:36,560 --> 00:07:38,240
+hard to look at unless you really know
+
+
+233
+00:07:38,240 --> 00:07:40,000
+what's going on with the use effect hook
+
+
+234
+00:07:40,000 --> 00:07:42,160
+in any case react is the gold standard
+
+
+235
+00:07:42,160 --> 00:07:44,080
+for declarative ui frameworks but
+
+
+236
+00:07:44,080 --> 00:07:45,840
+there's more than one way to get the job
+
+
+237
+00:07:45,840 --> 00:07:48,319
+done next we have react's arch nemesis
+
+
+238
+00:07:48,319 --> 00:07:49,759
+angular which is developed and
+
+
+239
+00:07:49,759 --> 00:07:51,919
+maintained by google and unlike react is
+
+
+240
+00:07:51,919 --> 00:07:54,000
+very opinionated about how to organize
+
+
+241
+00:07:54,000 --> 00:07:56,319
+and structure a project it has 75 000
+
+
+242
+00:07:56,319 --> 00:07:58,160
+github stars and as the second most
+
+
+243
+00:07:58,160 --> 00:08:00,319
+downloaded framework on npm it comes
+
+
+244
+00:08:00,319 --> 00:08:02,000
+with officially supported libraries for
+
+
+245
+00:08:02,000 --> 00:08:03,919
+routing animation and server side
+
+
+246
+00:08:03,919 --> 00:08:05,599
+rendering and because it follows a set
+
+
+247
+00:08:05,599 --> 00:08:07,440
+of predictable conventions all angular
+
+
+248
+00:08:07,440 --> 00:08:09,199
+projects are structured relatively the
+
+
+249
+00:08:09,199 --> 00:08:10,879
+same and have awesome tooling to go
+
+
+250
+00:08:10,879 --> 00:08:12,879
+along with them in fact you are actually
+
+
+251
+00:08:12,879 --> 00:08:14,960
+required to use typescript google uses
+
+
+252
+00:08:14,960 --> 00:08:16,560
+it internally to build hundreds of
+
+
+253
+00:08:16,560 --> 00:08:17,840
+different web apps throughout their
+
+
+254
+00:08:17,840 --> 00:08:19,680
+product line it's a great option for big
+
+
+255
+00:08:19,680 --> 00:08:21,440
+teams but may be a little overwhelming
+
+
+256
+00:08:21,440 --> 00:08:23,120
+if you're a beginner to start an angular
+
+
+257
+00:08:23,120 --> 00:08:25,520
+project run ng-new from the command line
+
+
+258
+00:08:25,520 --> 00:08:27,120
+that'll give us a fairly large project
+
+
+259
+00:08:27,120 --> 00:08:28,879
+to get started that's already configured
+
+
+260
+00:08:28,879 --> 00:08:30,800
+with typescript we can build a component
+
+
+261
+00:08:30,800 --> 00:08:33,200
+in the appcomponent.ts file or we could
+
+
+262
+00:08:33,200 --> 00:08:35,200
+use the cli to generate a brand new
+
+
+263
+00:08:35,200 --> 00:08:37,440
+component automatically in fact angular
+
+
+264
+00:08:37,440 --> 00:08:39,360
+has the most powerful cli of all the
+
+
+265
+00:08:39,360 --> 00:08:41,200
+frameworks by a pretty wide margin and
+
+
+266
+00:08:41,200 --> 00:08:42,959
+you'll notice the component itself is
+
+
+267
+00:08:42,959 --> 00:08:45,120
+represented as a typescript class that
+
+
+268
+00:08:45,120 --> 00:08:47,519
+has a component decorator on top of it
+
+
+269
+00:08:47,519 --> 00:08:49,760
+now it is possible to define an entire
+
+
+270
+00:08:49,760 --> 00:08:52,080
+component in this ts file however most
+
+
+271
+00:08:52,080 --> 00:08:54,080
+angular apps break components down into
+
+
+272
+00:08:54,080 --> 00:08:55,920
+at least three separate files one for
+
+
+273
+00:08:55,920 --> 00:08:58,240
+your typescript one for the html and
+
+
+274
+00:08:58,240 --> 00:09:00,080
+another for the css
+
+
+275
+00:09:00,080 --> 00:09:02,240
+to add reactive state to the component
+
+
+276
+00:09:02,240 --> 00:09:05,120
+simply define a property on the class
+
+
+277
+00:09:05,120 --> 00:09:06,959
+from there we can define a method on the
+
+
+278
+00:09:06,959 --> 00:09:09,360
+class to update the state in addition we
+
+
+279
+00:09:09,360 --> 00:09:10,720
+can manage the lifecycle of the
+
+
+280
+00:09:10,720 --> 00:09:12,800
+component in the class by implementing
+
+
+281
+00:09:12,800 --> 00:09:15,120
+special methods like ng on init this
+
+
+282
+00:09:15,120 --> 00:09:16,560
+method will be called whenever that
+
+
+283
+00:09:16,560 --> 00:09:18,720
+component is first initialized now if we
+
+
+284
+00:09:18,720 --> 00:09:20,480
+go into the template you'll notice this
+
+
+285
+00:09:20,480 --> 00:09:22,880
+looks like html but it's been extended
+
+
+286
+00:09:22,880 --> 00:09:24,720
+or empowered with a special templating
+
+
+287
+00:09:24,720 --> 00:09:26,959
+language that makes it possible to loop
+
+
+288
+00:09:26,959 --> 00:09:29,360
+over an array of items using the ng4
+
+
+289
+00:09:29,360 --> 00:09:31,920
+directory unlike react which brings html
+
+
+290
+00:09:31,920 --> 00:09:33,760
+into your javascript angular does the
+
+
+291
+00:09:33,760 --> 00:09:35,920
+opposite and brings javascript into your
+
+
+292
+00:09:35,920 --> 00:09:38,880
+html then in the form itself we can bind
+
+
+293
+00:09:38,880 --> 00:09:40,800
+to the submit event and run the add to
+
+
+294
+00:09:40,800 --> 00:09:42,800
+do method whenever that event is fired
+
+
+295
+00:09:42,800 --> 00:09:44,560
+then to get the actual value from the
+
+
+296
+00:09:44,560 --> 00:09:46,720
+form input we can use two-way data
+
+
+297
+00:09:46,720 --> 00:09:49,200
+binding using the ng model directive
+
+
+298
+00:09:49,200 --> 00:09:51,440
+this binds the form value to the to do
+
+
+299
+00:09:51,440 --> 00:09:53,760
+text property on the class however to
+
+
+300
+00:09:53,760 --> 00:09:55,600
+use this we need to go into the app
+
+
+301
+00:09:55,600 --> 00:09:57,760
+module and import the angular forms
+
+
+302
+00:09:57,760 --> 00:09:59,600
+module there because it's required for
+
+
+303
+00:09:59,600 --> 00:10:01,440
+that directive to work and for that
+
+
+304
+00:10:01,440 --> 00:10:03,440
+reason among many others it tends to
+
+
+305
+00:10:03,440 --> 00:10:05,120
+have a much higher learning curve than
+
+
+306
+00:10:05,120 --> 00:10:07,040
+other frameworks but everything is here
+
+
+307
+00:10:07,040 --> 00:10:08,640
+for a reason and angular is very
+
+
+308
+00:10:08,640 --> 00:10:10,560
+opinionated about how to structure a
+
+
+309
+00:10:10,560 --> 00:10:12,240
+project that will scale well and that
+
+
+310
+00:10:12,240 --> 00:10:13,920
+tends to make it very popular with
+
+
+311
+00:10:13,920 --> 00:10:15,760
+enterprise applications and that brings
+
+
+312
+00:10:15,760 --> 00:10:17,839
+me to vue.js which is independently
+
+
+313
+00:10:17,839 --> 00:10:19,920
+developed and maintained by evan yu and
+
+
+314
+00:10:19,920 --> 00:10:22,160
+feels very similar to angular but in a
+
+
+315
+00:10:22,160 --> 00:10:23,839
+package that's more approachable for
+
+
+316
+00:10:23,839 --> 00:10:25,680
+independent developers it has official
+
+
+317
+00:10:25,680 --> 00:10:27,600
+packages for things like routing and
+
+
+318
+00:10:27,600 --> 00:10:29,839
+state management and a huge ecosystem of
+
+
+319
+00:10:29,839 --> 00:10:31,519
+third-party packages it has the most
+
+
+320
+00:10:31,519 --> 00:10:33,279
+github stars at a hundred and eighty
+
+
+321
+00:10:33,279 --> 00:10:35,120
+seven thousand and is basically tied
+
+
+322
+00:10:35,120 --> 00:10:37,440
+with angular for second place on npm
+
+
+323
+00:10:37,440 --> 00:10:39,760
+downloads vue also has a very powerful
+
+
+324
+00:10:39,760 --> 00:10:42,480
+cli for example we can hit the view ui
+
+
+325
+00:10:42,480 --> 00:10:44,240
+command which will bring up an actual
+
+
+326
+00:10:44,240 --> 00:10:46,480
+browser window and walk us through all
+
+
+327
+00:10:46,480 --> 00:10:48,720
+the different dependencies and features
+
+
+328
+00:10:48,720 --> 00:10:50,399
+that we can add when generating the
+
+
+329
+00:10:50,399 --> 00:10:52,079
+initial app this creates a really nice
+
+
+330
+00:10:52,079 --> 00:10:53,600
+developer experience but it doesn't
+
+
+331
+00:10:53,600 --> 00:10:55,279
+generate components and is just not
+
+
+332
+00:10:55,279 --> 00:10:57,440
+quite as powerful as the angular cli
+
+
+333
+00:10:57,440 --> 00:10:59,200
+you'll notice it generates a far more
+
+
+334
+00:10:59,200 --> 00:11:01,200
+simplified project structure but in the
+
+
+335
+00:11:01,200 --> 00:11:03,120
+main.js file we can add additional
+
+
+336
+00:11:03,120 --> 00:11:05,120
+plugins for other functionality like
+
+
+337
+00:11:05,120 --> 00:11:06,880
+routing or state management as it
+
+
+338
+00:11:06,880 --> 00:11:09,040
+becomes needed components are defined in
+
+
+339
+00:11:09,040 --> 00:11:11,440
+files that end in dot view the code is
+
+
+340
+00:11:11,440 --> 00:11:14,320
+organized into three parts a template a
+
+
+341
+00:11:14,320 --> 00:11:16,800
+script and the styles the component
+
+
+342
+00:11:16,800 --> 00:11:18,560
+itself is represented as a plain
+
+
+343
+00:11:18,560 --> 00:11:20,560
+javascript object and we can define
+
+
+344
+00:11:20,560 --> 00:11:22,959
+reactive data or state on it using that
+
+
+345
+00:11:22,959 --> 00:11:25,519
+data property now to change the state we
+
+
+346
+00:11:25,519 --> 00:11:27,120
+have the methods property where we can
+
+
+347
+00:11:27,120 --> 00:11:29,360
+define our add to do method that can be
+
+
+348
+00:11:29,360 --> 00:11:31,120
+called when certain events are triggered
+
+
+349
+00:11:31,120 --> 00:11:32,720
+then to tap into the component life
+
+
+350
+00:11:32,720 --> 00:11:34,720
+cycle we have methods like mounted that
+
+
+351
+00:11:34,720 --> 00:11:36,320
+will be called when the component is
+
+
+352
+00:11:36,320 --> 00:11:38,560
+first initialized very similar concepts
+
+
+353
+00:11:38,560 --> 00:11:40,399
+to react in angular the main difference
+
+
+354
+00:11:40,399 --> 00:11:41,600
+being that we're working within the
+
+
+355
+00:11:41,600 --> 00:11:43,839
+context of a plain javascript object
+
+
+356
+00:11:43,839 --> 00:11:45,839
+instead of a function or class in the
+
+
+357
+00:11:45,839 --> 00:11:47,600
+template we have a setup that's very
+
+
+358
+00:11:47,600 --> 00:11:49,839
+similar to angular that uses directives
+
+
+359
+00:11:49,839 --> 00:11:52,720
+to handle things like v4 to loop over
+
+
+360
+00:11:52,720 --> 00:11:56,079
+the to do items or v on submit to handle
+
+
+361
+00:11:56,079 --> 00:11:57,600
+the form submission one thing that's
+
+
+362
+00:11:57,600 --> 00:11:59,360
+nice here is that you can automatically
+
+
+363
+00:11:59,360 --> 00:12:01,200
+prevent the default behavior by just
+
+
+364
+00:12:01,200 --> 00:12:03,360
+adding dot prevent to this directive
+
+
+365
+00:12:03,360 --> 00:12:04,959
+instead of implementing that code in the
+
+
+366
+00:12:04,959 --> 00:12:06,480
+method itself you'll find a lot of
+
+
+367
+00:12:06,480 --> 00:12:08,000
+little things like that in view that
+
+
+368
+00:12:08,000 --> 00:12:10,160
+make your life easier and lastly we have
+
+
+369
+00:12:10,160 --> 00:12:12,480
+the v model directive to bind the to-do
+
+
+370
+00:12:12,480 --> 00:12:14,880
+text to the form input value view is
+
+
+371
+00:12:14,880 --> 00:12:16,800
+awesome and has a big community but
+
+
+372
+00:12:16,800 --> 00:12:18,880
+another independent option is spelt it
+
+
+373
+00:12:18,880 --> 00:12:20,959
+was the most loved framework on the 2021
+
+
+374
+00:12:20,959 --> 00:12:23,200
+stack overflow survey and has about 50
+
+
+375
+00:12:23,200 --> 00:12:25,279
+000 github stars it's not as common as
+
+
+376
+00:12:25,279 --> 00:12:26,959
+the other three in the wild but is very
+
+
+377
+00:12:26,959 --> 00:12:28,800
+well loved by the people who do use it
+
+
+378
+00:12:28,800 --> 00:12:30,880
+like react it's designed as a minimal
+
+
+379
+00:12:30,880 --> 00:12:32,639
+library and relies on the open source
+
+
+380
+00:12:32,639 --> 00:12:34,320
+community for other features like
+
+
+381
+00:12:34,320 --> 00:12:35,760
+routing one thing that makes it unique
+
+
+382
+00:12:35,760 --> 00:12:37,200
+from the other frameworks is that it
+
+
+383
+00:12:37,200 --> 00:12:39,440
+doesn't ship a runtime like virtual dom
+
+
+384
+00:12:39,440 --> 00:12:41,440
+to the browser instead it works as a
+
+
+385
+00:12:41,440 --> 00:12:43,760
+compiler to turn your code into plain
+
+
+386
+00:12:43,760 --> 00:12:45,279
+javascript when you generate a new
+
+
+387
+00:12:45,279 --> 00:12:47,360
+project you'll have a rollup or webpack
+
+
+388
+00:12:47,360 --> 00:12:49,200
+config if you choose which is used to
+
+
+389
+00:12:49,200 --> 00:12:51,519
+bundle your code and all the other cli
+
+
+390
+00:12:51,519 --> 00:12:53,600
+tools attempt to abstract that part away
+
+
+391
+00:12:53,600 --> 00:12:55,360
+from you when building a smelt project
+
+
+392
+00:12:55,360 --> 00:12:56,720
+you may need to learn a little bit about
+
+
+393
+00:12:56,720 --> 00:12:58,399
+module bundlers whereas the other
+
+
+394
+00:12:58,399 --> 00:13:00,240
+frameworks try to hide that detail from
+
+
+395
+00:13:00,240 --> 00:13:02,560
+you components are defined in dot spell
+
+
+396
+00:13:02,560 --> 00:13:04,720
+files and just like view they have three
+
+
+397
+00:13:04,720 --> 00:13:07,120
+parts the script the template and the
+
+
+398
+00:13:07,120 --> 00:13:09,200
+styles to create reactive state on the
+
+
+399
+00:13:09,200 --> 00:13:11,360
+component just declare a variable with
+
+
+400
+00:13:11,360 --> 00:13:13,440
+the let keyword then to modify the state
+
+
+401
+00:13:13,440 --> 00:13:15,600
+define a plain javascript function what
+
+
+402
+00:13:15,600 --> 00:13:17,360
+i like about this is that it feels very
+
+
+403
+00:13:17,360 --> 00:13:19,360
+natural it looks like regular javascript
+
+
+404
+00:13:19,360 --> 00:13:21,120
+with minimal abstractions going on
+
+
+405
+00:13:21,120 --> 00:13:23,200
+compared to something like react now to
+
+
+406
+00:13:23,200 --> 00:13:25,279
+deal with lifecycle hooks we can import
+
+
+407
+00:13:25,279 --> 00:13:27,040
+the on mount function from svelt and
+
+
+408
+00:13:27,040 --> 00:13:28,480
+register a callback for when the
+
+
+409
+00:13:28,480 --> 00:13:30,560
+component is first initialized now down
+
+
+410
+00:13:30,560 --> 00:13:32,639
+in the template we have a special syntax
+
+
+411
+00:13:32,639 --> 00:13:34,720
+that makes it easy to loop over things
+
+
+412
+00:13:34,720 --> 00:13:37,040
+like each to loop over each to do in the
+
+
+413
+00:13:37,040 --> 00:13:39,199
+array then to handle the form submission
+
+
+414
+00:13:39,199 --> 00:13:41,680
+we have on submit and we can also add a
+
+
+415
+00:13:41,680 --> 00:13:43,920
+bar with preventdefault to avoid
+
+
+416
+00:13:43,920 --> 00:13:45,920
+implementing that detail in the function
+
+
+417
+00:13:45,920 --> 00:13:47,839
+and lastly we'll implement two-way data
+
+
+418
+00:13:47,839 --> 00:13:50,240
+binding using the bind directive with
+
+
+419
+00:13:50,240 --> 00:13:52,079
+value followed by the to do text
+
+
+420
+00:13:52,079 --> 00:13:53,839
+variable in my opinion this is the
+
+
+421
+00:13:53,839 --> 00:13:55,199
+cleanest implementation that we've
+
+
+422
+00:13:55,199 --> 00:13:56,959
+looked at it has the fewest lines of
+
+
+423
+00:13:56,959 --> 00:13:58,720
+code and is fairly easy to read if
+
+
+424
+00:13:58,720 --> 00:14:00,399
+you're a javascript developer that has
+
+
+425
+00:14:00,399 --> 00:14:02,079
+never used spelt before the drawback
+
+
+426
+00:14:02,079 --> 00:14:03,760
+though is that the community is much
+
+
+427
+00:14:03,760 --> 00:14:05,760
+smaller than something like react so if
+
+
+428
+00:14:05,760 --> 00:14:07,519
+you need to use a supporting library or
+
+
+429
+00:14:07,519 --> 00:14:09,040
+if you're looking to get a job you might
+
+
+430
+00:14:09,040 --> 00:14:10,639
+run into some more roadblocks than if
+
+
+431
+00:14:10,639 --> 00:14:12,560
+you used a more popular framework and
+
+
+432
+00:14:12,560 --> 00:14:13,839
+the same goes for all the other
+
+
+433
+00:14:13,839 --> 00:14:15,360
+frameworks that we'll look at from here
+
+
+434
+00:14:15,360 --> 00:14:17,440
+starting with lit lit is a google
+
+
+435
+00:14:17,440 --> 00:14:19,199
+sponsored project that's focused on
+
+
+436
+00:14:19,199 --> 00:14:20,880
+building web components if you're not
+
+
+437
+00:14:20,880 --> 00:14:23,120
+familiar web components are a browser
+
+
+438
+00:14:23,120 --> 00:14:24,880
+standard that allows you to create
+
+
+439
+00:14:24,880 --> 00:14:26,800
+custom elements that can work across
+
+
+440
+00:14:26,800 --> 00:14:28,720
+multiple frameworks sounds great but the
+
+
+441
+00:14:28,720 --> 00:14:30,800
+web components api is notoriously
+
+
+442
+00:14:30,800 --> 00:14:32,240
+difficult to work with the cool thing
+
+
+443
+00:14:32,240 --> 00:14:33,839
+about lit is that when you define a
+
+
+444
+00:14:33,839 --> 00:14:35,920
+component it's creating a standard
+
+
+445
+00:14:35,920 --> 00:14:37,920
+custom element under the hood now other
+
+
+446
+00:14:37,920 --> 00:14:39,680
+frameworks can do that as well but for
+
+
+447
+00:14:39,680 --> 00:14:41,279
+most of them it's just an afterthought
+
+
+448
+00:14:41,279 --> 00:14:42,959
+and the developer experience is usually
+
+
+449
+00:14:42,959 --> 00:14:44,880
+not ideal if your goal is to build
+
+
+450
+00:14:44,880 --> 00:14:46,800
+standard web components lit doesn't have
+
+
+451
+00:14:46,800 --> 00:14:48,800
+a cli of its own but there is a starter
+
+
+452
+00:14:48,800 --> 00:14:50,480
+project to get us going i'm using the
+
+
+453
+00:14:50,480 --> 00:14:52,399
+typescript version here but that part is
+
+
+454
+00:14:52,399 --> 00:14:54,720
+optional inside the lit app ts file
+
+
+455
+00:14:54,720 --> 00:14:56,399
+you'll notice that it's calling window
+
+
+456
+00:14:56,399 --> 00:14:58,480
+custom elements which is part of the web
+
+
+457
+00:14:58,480 --> 00:15:00,240
+components api in the browser that's
+
+
+458
+00:15:00,240 --> 00:15:01,680
+just a unique point that you won't see
+
+
+459
+00:15:01,680 --> 00:15:03,199
+in other frameworks by default
+
+
+460
+00:15:03,199 --> 00:15:05,120
+components themselves are defined as a
+
+
+461
+00:15:05,120 --> 00:15:07,519
+class that extends lit element reactive
+
+
+462
+00:15:07,519 --> 00:15:09,680
+data can be defined as properties on the
+
+
+463
+00:15:09,680 --> 00:15:12,160
+class using the property decorator then
+
+
+464
+00:15:12,160 --> 00:15:14,079
+methods can be defined on the class to
+
+
+465
+00:15:14,079 --> 00:15:16,079
+update the state lifecycle hooks are
+
+
+466
+00:15:16,079 --> 00:15:17,920
+based on the ones defined in the actual
+
+
+467
+00:15:17,920 --> 00:15:20,000
+web components api like connected
+
+
+468
+00:15:20,000 --> 00:15:21,680
+callback by implementing the
+
+
+469
+00:15:21,680 --> 00:15:23,920
+connectedcallback method we can run code
+
+
+470
+00:15:23,920 --> 00:15:26,000
+when the component is first initialized
+
+
+471
+00:15:26,000 --> 00:15:27,440
+now one thing that's really interesting
+
+
+472
+00:15:27,440 --> 00:15:29,279
+about lit is the way that it handles
+
+
+473
+00:15:29,279 --> 00:15:31,600
+templates it uses the existing template
+
+
+474
+00:15:31,600 --> 00:15:33,600
+literals that we have in javascript or
+
+
+475
+00:15:33,600 --> 00:15:35,600
+in other words a string that starts with
+
+
+476
+00:15:35,600 --> 00:15:37,759
+backticks this allows you to interpolate
+
+
+477
+00:15:37,759 --> 00:15:40,240
+javascript into an html string using
+
+
+478
+00:15:40,240 --> 00:15:42,560
+dollar sign braces the end result is
+
+
+479
+00:15:42,560 --> 00:15:44,320
+something that feels kind of similar to
+
+
+480
+00:15:44,320 --> 00:15:47,440
+jsx and react but the html can also have
+
+
+481
+00:15:47,440 --> 00:15:50,639
+directives like submit or dot value to
+
+
+482
+00:15:50,639 --> 00:15:52,639
+bind to the form submit event or the
+
+
+483
+00:15:52,639 --> 00:15:54,959
+input value and as far as i can tell it
+
+
+484
+00:15:54,959 --> 00:15:56,959
+doesn't support two-way data binding so
+
+
+485
+00:15:56,959 --> 00:15:59,040
+i had to set up an event listener here
+
+
+486
+00:15:59,040 --> 00:16:01,199
+on the input change event to update the
+
+
+487
+00:16:01,199 --> 00:16:03,360
+to-do text whenever that event fires the
+
+
+488
+00:16:03,360 --> 00:16:04,880
+bottom line with lit is that you get a
+
+
+489
+00:16:04,880 --> 00:16:06,560
+much nicer way to build standard web
+
+
+490
+00:16:06,560 --> 00:16:08,000
+components without having to be an
+
+
+491
+00:16:08,000 --> 00:16:10,160
+expert on the underlying apis and that
+
+
+492
+00:16:10,160 --> 00:16:11,839
+brings me to an alternative framework
+
+
+493
+00:16:11,839 --> 00:16:13,680
+that is also focused on web components
+
+
+494
+00:16:13,680 --> 00:16:15,600
+called stencil this one comes from the
+
+
+495
+00:16:15,600 --> 00:16:17,440
+team behind the ionic framework which
+
+
+496
+00:16:17,440 --> 00:16:19,279
+itself is actually a component library
+
+
+497
+00:16:19,279 --> 00:16:21,199
+for mobile development that's built with
+
+
+498
+00:16:21,199 --> 00:16:23,279
+stencil they use web components for the
+
+
+499
+00:16:23,279 --> 00:16:25,440
+purpose of making ionic compatible with
+
+
+500
+00:16:25,440 --> 00:16:27,600
+react angular and vue out of the box
+
+
+501
+00:16:27,600 --> 00:16:29,519
+create a new app by running npm init
+
+
+502
+00:16:29,519 --> 00:16:30,959
+stencil and that will give you a
+
+
+503
+00:16:30,959 --> 00:16:32,880
+typescript project to get started just
+
+
+504
+00:16:32,880 --> 00:16:34,880
+like lit it will take each component and
+
+
+505
+00:16:34,880 --> 00:16:36,639
+compile it down to a standard web
+
+
+506
+00:16:36,639 --> 00:16:39,040
+component a component itself is a class
+
+
+507
+00:16:39,040 --> 00:16:40,880
+with the component decorator which looks
+
+
+508
+00:16:40,880 --> 00:16:42,880
+very similar to angular then reactive
+
+
+509
+00:16:42,880 --> 00:16:44,959
+data can be defined as properties with
+
+
+510
+00:16:44,959 --> 00:16:46,959
+the state decorator custom methods can
+
+
+511
+00:16:46,959 --> 00:16:48,959
+be defined to update the state then we
+
+
+512
+00:16:48,959 --> 00:16:50,800
+have life cycle hooks like component
+
+
+513
+00:16:50,800 --> 00:16:52,959
+will load to run code when the component
+
+
+514
+00:16:52,959 --> 00:16:55,120
+is first initialized at this point this
+
+
+515
+00:16:55,120 --> 00:16:56,880
+component looks almost exactly like an
+
+
+516
+00:16:56,880 --> 00:16:59,199
+angular component but for templating it
+
+
+517
+00:16:59,199 --> 00:17:01,680
+uses jsx like react that gives you the
+
+
+518
+00:17:01,680 --> 00:17:03,440
+best or worst of both worlds depending
+
+
+519
+00:17:03,440 --> 00:17:05,439
+on who you ask the template looks almost
+
+
+520
+00:17:05,439 --> 00:17:07,199
+exactly like the react app but it
+
+
+521
+00:17:07,199 --> 00:17:08,959
+doesn't appear to support two-way data
+
+
+522
+00:17:08,959 --> 00:17:10,720
+binding which means i've also added an
+
+
+523
+00:17:10,720 --> 00:17:12,959
+extra event listener for on input to
+
+
+524
+00:17:12,959 --> 00:17:14,559
+update the to-do text when the user
+
+
+525
+00:17:14,559 --> 00:17:16,640
+types into the form stencil is another
+
+
+526
+00:17:16,640 --> 00:17:18,480
+great option for building web components
+
+
+527
+00:17:18,480 --> 00:17:19,760
+but now we're going to move on to a
+
+
+528
+00:17:19,760 --> 00:17:21,280
+framework that i get a ton of requests
+
+
+529
+00:17:21,280 --> 00:17:24,160
+for solid js it's a tool for building ui
+
+
+530
+00:17:24,160 --> 00:17:26,000
+components and feels very inspired by
+
+
+531
+00:17:26,000 --> 00:17:28,000
+react but the main difference is that it
+
+
+532
+00:17:28,000 --> 00:17:30,000
+doesn't use the virtual dom instead it
+
+
+533
+00:17:30,000 --> 00:17:31,919
+compiles your code down to native dom
+
+
+534
+00:17:31,919 --> 00:17:33,919
+nodes similar to spelt and because of
+
+
+535
+00:17:33,919 --> 00:17:35,919
+this it hits very high performance marks
+
+
+536
+00:17:35,919 --> 00:17:37,760
+across every benchmark you can think of
+
+
+537
+00:17:37,760 --> 00:17:39,840
+it like a faster more developer friendly
+
+
+538
+00:17:39,840 --> 00:17:41,679
+version of react but the drawback is
+
+
+539
+00:17:41,679 --> 00:17:43,600
+that it has a smaller community to draw
+
+
+540
+00:17:43,600 --> 00:17:45,520
+from when you generate a new project it
+
+
+541
+00:17:45,520 --> 00:17:47,440
+uses veet as the build tool which is
+
+
+542
+00:17:47,440 --> 00:17:49,600
+cool then you have components defined in
+
+
+543
+00:17:49,600 --> 00:17:52,160
+jsx files just like react components are
+
+
+544
+00:17:52,160 --> 00:17:54,240
+defined as functions then to define
+
+
+545
+00:17:54,240 --> 00:17:56,400
+reactive state on the component we use
+
+
+546
+00:17:56,400 --> 00:17:58,400
+something very similar to a react hook
+
+
+547
+00:17:58,400 --> 00:18:00,320
+called a signal it returns us with a
+
+
+548
+00:18:00,320 --> 00:18:02,720
+reactive value and a function to update
+
+
+549
+00:18:02,720 --> 00:18:04,880
+that value we can then define a function
+
+
+550
+00:18:04,880 --> 00:18:06,880
+to update the state and if we want to
+
+
+551
+00:18:06,880 --> 00:18:08,960
+use a life cycle hook instead of use
+
+
+552
+00:18:08,960 --> 00:18:11,120
+effect we have the much more readable on
+
+
+553
+00:18:11,120 --> 00:18:12,720
+mount hook that will run when the
+
+
+554
+00:18:12,720 --> 00:18:14,799
+component is first initialized now for
+
+
+555
+00:18:14,799 --> 00:18:17,280
+the ui itself we use jsx it looks pretty
+
+
+556
+00:18:17,280 --> 00:18:19,360
+much identical to the react code but
+
+
+557
+00:18:19,360 --> 00:18:20,960
+i've noticed that solid does things to
+
+
+558
+00:18:20,960 --> 00:18:23,120
+make your life easier for example we can
+
+
+559
+00:18:23,120 --> 00:18:25,280
+bind the form value to a variable using
+
+
+560
+00:18:25,280 --> 00:18:27,520
+ref and unlike react we don't need to
+
+
+561
+00:18:27,520 --> 00:18:29,280
+import the used ref hook to do that
+
+
+562
+00:18:29,280 --> 00:18:31,679
+overall solid js feels like a more well
+
+
+563
+00:18:31,679 --> 00:18:33,840
+thought out and faster version of react
+
+
+564
+00:18:33,840 --> 00:18:35,440
+but now let's look at something totally
+
+
+565
+00:18:35,440 --> 00:18:38,400
+different alpine js it's a tiny library
+
+
+566
+00:18:38,400 --> 00:18:40,320
+at around four kilobytes that allows you
+
+
+567
+00:18:40,320 --> 00:18:42,640
+to extend your existing html with
+
+
+568
+00:18:42,640 --> 00:18:44,640
+reactive data and many of the features
+
+
+569
+00:18:44,640 --> 00:18:45,840
+that you would find in the frameworks
+
+
+570
+00:18:45,840 --> 00:18:47,200
+we've already looked at instead of
+
+
+571
+00:18:47,200 --> 00:18:49,120
+primarily focusing on javascript with
+
+
+572
+00:18:49,120 --> 00:18:51,919
+alpine you generally focus on your html
+
+
+573
+00:18:51,919 --> 00:18:54,160
+if you've ever used tailwind for css you
+
+
+574
+00:18:54,160 --> 00:18:56,400
+can think of alpine as the equivalent in
+
+
+575
+00:18:56,400 --> 00:18:58,880
+javascript it has over 17 000 github
+
+
+576
+00:18:58,880 --> 00:19:01,039
+stars and is a popular replacement for
+
+
+577
+00:19:01,039 --> 00:19:03,520
+jquery to get started create an html
+
+
+578
+00:19:03,520 --> 00:19:05,600
+file then add the alpine script to the
+
+
+579
+00:19:05,600 --> 00:19:07,440
+head reactive data can be stored
+
+
+580
+00:19:07,440 --> 00:19:09,919
+directly in a dom node using the x data
+
+
+581
+00:19:09,919 --> 00:19:11,679
+attribute that data can then be used in
+
+
+582
+00:19:11,679 --> 00:19:14,240
+a child element with something like x4
+
+
+583
+00:19:14,240 --> 00:19:16,640
+to loop over the array of to do's then
+
+
+584
+00:19:16,640 --> 00:19:19,200
+down in the form we can use x on submit
+
+
+585
+00:19:19,200 --> 00:19:21,600
+and also prevent default and then bind
+
+
+586
+00:19:21,600 --> 00:19:23,679
+it to a function in our javascript the
+
+
+587
+00:19:23,679 --> 00:19:25,440
+concepts here are very similar to the
+
+
+588
+00:19:25,440 --> 00:19:26,960
+other frameworks that we've looked at
+
+
+589
+00:19:26,960 --> 00:19:28,799
+but in this case we're working with raw
+
+
+590
+00:19:28,799 --> 00:19:30,799
+html as opposed to some custom
+
+
+591
+00:19:30,799 --> 00:19:33,200
+templating language or jsx now if we do
+
+
+592
+00:19:33,200 --> 00:19:34,880
+want to write some plain javascript we
+
+
+593
+00:19:34,880 --> 00:19:37,120
+can do that in a script tag and alpine
+
+
+594
+00:19:37,120 --> 00:19:39,200
+actually has a mechanism called alpine
+
+
+595
+00:19:39,200 --> 00:19:41,679
+store that allows us to store data and
+
+
+596
+00:19:41,679 --> 00:19:43,440
+share it between multiple components in
+
+
+597
+00:19:43,440 --> 00:19:45,200
+the ui that's what we'll need to do for
+
+
+598
+00:19:45,200 --> 00:19:46,880
+our to-do's so that we can load them
+
+
+599
+00:19:46,880 --> 00:19:48,960
+from local storage to handle that when
+
+
+600
+00:19:48,960 --> 00:19:50,640
+the component is first initialized we
+
+
+601
+00:19:50,640 --> 00:19:53,039
+can call document add event listener to
+
+
+602
+00:19:53,039 --> 00:19:55,440
+the custom alpine init event and then
+
+
+603
+00:19:55,440 --> 00:19:56,960
+update the data from the store when that
+
+
+604
+00:19:56,960 --> 00:19:59,039
+event fires and that gives us a complete
+
+
+605
+00:19:59,039 --> 00:20:01,440
+app with very minimal code in my opinion
+
+
+606
+00:20:01,440 --> 00:20:03,280
+alpine feels like an awesome option when
+
+
+607
+00:20:03,280 --> 00:20:04,799
+you just want to add a little bit of
+
+
+608
+00:20:04,799 --> 00:20:06,960
+javascript interactivity to an existing
+
+
+609
+00:20:06,960 --> 00:20:09,440
+html page but at the same time i don't
+
+
+610
+00:20:09,440 --> 00:20:11,120
+think alpine could replace something
+
+
+611
+00:20:11,120 --> 00:20:13,039
+like react view or angular so if you're
+
+
+612
+00:20:13,039 --> 00:20:14,799
+building a very complicated single page
+
+
+613
+00:20:14,799 --> 00:20:16,720
+application it might be best to stick
+
+
+614
+00:20:16,720 --> 00:20:18,400
+with one of those and that brings us to
+
+
+615
+00:20:18,400 --> 00:20:20,080
+the final wild wildcard framework
+
+
+616
+00:20:20,080 --> 00:20:22,320
+mithril it's also very lightweight and
+
+
+617
+00:20:22,320 --> 00:20:23,840
+tends to perform better than the big
+
+
+618
+00:20:23,840 --> 00:20:25,760
+frameworks it uses virtual dom like
+
+
+619
+00:20:25,760 --> 00:20:28,000
+react and view but the overall developer
+
+
+620
+00:20:28,000 --> 00:20:29,760
+experience is a lot different to get
+
+
+621
+00:20:29,760 --> 00:20:32,080
+started create an index.html file then
+
+
+622
+00:20:32,080 --> 00:20:34,159
+add the mithral script tag to it you can
+
+
+623
+00:20:34,159 --> 00:20:35,360
+actually create components from
+
+
+624
+00:20:35,360 --> 00:20:37,919
+functions classes or as we're doing here
+
+
+625
+00:20:37,919 --> 00:20:40,080
+a plain javascript object we can add
+
+
+626
+00:20:40,080 --> 00:20:42,320
+data and methods to the component as
+
+
+627
+00:20:42,320 --> 00:20:44,480
+properties on the object there are also
+
+
+628
+00:20:44,480 --> 00:20:46,799
+special properties like on init which is
+
+
+629
+00:20:46,799 --> 00:20:48,320
+the life cycle hook for when the
+
+
+630
+00:20:48,320 --> 00:20:50,400
+component is first initialized then we
+
+
+631
+00:20:50,400 --> 00:20:52,559
+have view to define the ui itself to
+
+
+632
+00:20:52,559 --> 00:20:55,440
+define a dom node we use the m function
+
+
+633
+00:20:55,440 --> 00:20:57,440
+and pass the name of that node as the
+
+
+634
+00:20:57,440 --> 00:20:59,360
+first argument then options about the
+
+
+635
+00:20:59,360 --> 00:21:01,200
+node as the second argument like the
+
+
+636
+00:21:01,200 --> 00:21:03,120
+class name for example or you can pass
+
+
+637
+00:21:03,120 --> 00:21:04,960
+children as a second argument like we're
+
+
+638
+00:21:04,960 --> 00:21:07,520
+doing here to map an array of list items
+
+
+639
+00:21:07,520 --> 00:21:09,039
+then down on the form element we're
+
+
+640
+00:21:09,039 --> 00:21:11,360
+defining a handler for the on submit
+
+
+641
+00:21:11,360 --> 00:21:12,880
+event what you have here is something
+
+
+642
+00:21:12,880 --> 00:21:14,960
+that is kind of similar to jsx but the
+
+
+643
+00:21:14,960 --> 00:21:17,520
+ui is truly defined in pure javascript
+
+
+644
+00:21:17,520 --> 00:21:19,440
+if you hate html and never want to touch
+
+
+645
+00:21:19,440 --> 00:21:21,120
+it you might like this system but
+
+
+646
+00:21:21,120 --> 00:21:22,960
+personally i found it a bit awkward and
+
+
+647
+00:21:22,960 --> 00:21:24,480
+the mithril app actually took me the
+
+
+648
+00:21:24,480 --> 00:21:26,400
+longest amount of time to build but like
+
+
+649
+00:21:26,400 --> 00:21:28,080
+i said before it really comes down to
+
+
+650
+00:21:28,080 --> 00:21:29,600
+personal preference and i could see why
+
+
+651
+00:21:29,600 --> 00:21:31,280
+someone would really like this and there
+
+
+652
+00:21:31,280 --> 00:21:33,039
+you have 10 different ways to build the
+
+
+653
+00:21:33,039 --> 00:21:34,880
+exact same javascript app there are new
+
+
+654
+00:21:34,880 --> 00:21:36,640
+frameworks popping up every couple days
+
+
+655
+00:21:36,640 --> 00:21:38,159
+so this video will likely be very
+
+
+656
+00:21:38,159 --> 00:21:39,919
+outdated by the time you finish watching
+
+
+657
+00:21:39,919 --> 00:21:41,440
+it the bottom line is that all these
+
+
+658
+00:21:41,440 --> 00:21:43,120
+frameworks can do the same basic thing
+
+
+659
+00:21:43,120 --> 00:21:44,480
+it's really just a matter of choosing
+
+
+660
+00:21:44,480 --> 00:21:45,760
+the one that makes you and your
+
+
+661
+00:21:45,760 --> 00:21:47,200
+teammates happy if you want to see
+
+
+662
+00:21:47,200 --> 00:21:48,960
+frameworks like angular react and view
+
+
+663
+00:21:48,960 --> 00:21:51,039
+in action consider becoming a pro member
+
+
+664
+00:21:51,039 --> 00:21:53,360
+at fireship io to get access to my full
+
+
+665
+00:21:53,360 --> 00:21:55,360
+courses thanks for watching and i will
+
+
+666
+00:21:55,360 --> 00:21:59,159
+see you in the next one
+
+

@@ -1,0 +1,320 @@
+1
+00:00:00,160 --> 00:00:03,360
+post css a tool for transforming styles
+
+
+2
+00:00:03,360 --> 00:00:05,359
+with javascript plugins when you build a
+
+
+3
+00:00:05,359 --> 00:00:08,000
+website the css code you write is rarely
+
+
+4
+00:00:08,000 --> 00:00:09,760
+the code that you actually want to ship
+
+
+5
+00:00:09,760 --> 00:00:11,759
+to the browser the developer wants to
+
+
+6
+00:00:11,759 --> 00:00:13,440
+write code with modern features that
+
+
+7
+00:00:13,440 --> 00:00:15,839
+maximize productivity but end users want
+
+
+8
+00:00:15,839 --> 00:00:18,160
+fast minified code that supports legacy
+
+
+9
+00:00:18,160 --> 00:00:20,560
+browsers post css is a build tool that
+
+
+10
+00:00:20,560 --> 00:00:22,960
+makes everybody happy it can take a css
+
+
+11
+00:00:22,960 --> 00:00:24,800
+file and convert it to an abstract
+
+
+12
+00:00:24,800 --> 00:00:27,199
+syntax tree then provides an api where
+
+
+13
+00:00:27,199 --> 00:00:29,039
+plugins written in javascript can
+
+
+14
+00:00:29,039 --> 00:00:31,279
+produce a different output for example
+
+
+15
+00:00:31,279 --> 00:00:33,360
+by using the auto prefixer plugin you'll
+
+
+16
+00:00:33,360 --> 00:00:34,960
+never have to worry about writing vendor
+
+
+17
+00:00:34,960 --> 00:00:37,200
+prefixes on your styles ever again or
+
+
+18
+00:00:37,200 --> 00:00:39,360
+with the preset enb plugin you can write
+
+
+19
+00:00:39,360 --> 00:00:41,760
+modern css while post css will
+
+
+20
+00:00:41,760 --> 00:00:43,520
+automatically add the polyfills needed
+
+
+21
+00:00:43,520 --> 00:00:46,079
+to support your targeted browsers or you
+
+
+22
+00:00:46,079 --> 00:00:48,000
+might drop in a tool like style and to
+
+
+23
+00:00:48,000 --> 00:00:50,239
+detect issues before they break your ui
+
+
+24
+00:00:50,239 --> 00:00:51,440
+and there are tons of other useful
+
+
+25
+00:00:51,440 --> 00:00:53,520
+plugins in the ecosystem to try out and
+
+
+26
+00:00:53,520 --> 00:00:55,039
+if none of them meet your needs you can
+
+
+27
+00:00:55,039 --> 00:00:56,719
+always build your own you might use the
+
+
+28
+00:00:56,719 --> 00:00:58,559
+plugin api to find all the color
+
+
+29
+00:00:58,559 --> 00:01:00,320
+declarations in the code then write some
+
+
+30
+00:01:00,320 --> 00:01:02,160
+javascript to transform them to a
+
+
+31
+00:01:02,160 --> 00:01:03,840
+different format you probably already
+
+
+32
+00:01:03,840 --> 00:01:06,080
+use post css without even realizing it
+
+
+33
+00:01:06,080 --> 00:01:08,240
+as it generates more npm downloads than
+
+
+34
+00:01:08,240 --> 00:01:10,400
+typescript and webpack can bind it's
+
+
+35
+00:01:10,400 --> 00:01:12,080
+used under the hood by frameworks like
+
+
+36
+00:01:12,080 --> 00:01:14,159
+veed and next js to provide a
+
+
+37
+00:01:14,159 --> 00:01:16,000
+streamlined developer experience and
+
+
+38
+00:01:16,000 --> 00:01:17,520
+it's also used by some of the world's
+
+
+39
+00:01:17,520 --> 00:01:19,840
+most popular websites like wikipedia and
+
+
+40
+00:01:19,840 --> 00:01:22,240
+twitter now despite its name it also
+
+
+41
+00:01:22,240 --> 00:01:24,159
+handles pre-processing similar to
+
+
+42
+00:01:24,159 --> 00:01:26,799
+frameworks like sas less and stylus it
+
+
+43
+00:01:26,799 --> 00:01:28,640
+can be used in conjunction with existing
+
+
+44
+00:01:28,640 --> 00:01:30,880
+preprocessors or as an alternative to
+
+
+45
+00:01:30,880 --> 00:01:33,040
+them altogether if you want to write css
+
+
+46
+00:01:33,040 --> 00:01:35,600
+with nesting or mixins there are plugins
+
+
+47
+00:01:35,600 --> 00:01:37,200
+that can enable those features in your
+
+
+48
+00:01:37,200 --> 00:01:39,040
+code so it's like configuring your own
+
+
+49
+00:01:39,040 --> 00:01:41,360
+css preprocessor by including your
+
+
+50
+00:01:41,360 --> 00:01:43,200
+favorite features and avoiding the ones
+
+
+51
+00:01:43,200 --> 00:01:45,439
+that tend to lead to bad practices on
+
+
+52
+00:01:45,439 --> 00:01:47,360
+top of that it tends to produce much
+
+
+53
+00:01:47,360 --> 00:01:49,439
+faster build times to get started
+
+
+54
+00:01:49,439 --> 00:01:51,600
+install it into your project with npm
+
+
+55
+00:01:51,600 --> 00:01:54,159
+then create a post css config file
+
+
+56
+00:01:54,159 --> 00:01:55,920
+inside of it customize the array of
+
+
+57
+00:01:55,920 --> 00:01:57,920
+plugins that you want to use and finally
+
+
+58
+00:01:57,920 --> 00:01:59,520
+run it from the command line as part of
+
+
+59
+00:01:59,520 --> 00:02:01,680
+your build process to make your styles
+
+
+60
+00:02:01,680 --> 00:02:04,000
+production ready this has been post css
+
+
+61
+00:02:04,000 --> 00:02:05,920
+in 100 seconds if you want to see more
+
+
+62
+00:02:05,920 --> 00:02:07,520
+short videos like this hit the like
+
+
+63
+00:02:07,520 --> 00:02:09,679
+button and subscribe thanks for watching
+
+
+64
+00:02:09,679 --> 00:02:13,840
+and i will see you in the next one
+
+

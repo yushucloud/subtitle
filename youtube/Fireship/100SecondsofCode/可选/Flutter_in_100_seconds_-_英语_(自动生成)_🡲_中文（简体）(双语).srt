@@ -1,0 +1,178 @@
+1
+00:00:00,000 --> 00:00:04,830
+flutter a UI framework for building apps on iOS Android the web and desktop at
+Flutter 一个用于在 iOS 上构建应用程序的 UI 框架Android Web 和桌面
+
+2
+00:00:04,830 --> 00:00:08,189
+its core flutter combines a high performance graphics engine with the
+的核心 Flutter 在开发中结合了高性能图形引擎和
+
+3
+00:00:08,189 --> 00:00:11,940
+dart programming language in development dart provides full type safety and
+dart 编程语言dart 提供完整的类型安全和
+
+4
+00:00:11,940 --> 00:00:16,379
+stateful hot reload to help you build reliable apps quickly in production dart
+有状态的热重载，以帮助您在生产中快速构建可靠的应用程序 dart
+
+5
+00:00:16,379 --> 00:00:19,500
+compiles to native machine code which means your graphics will render
+编译为本地机器代码，这意味着您的图形将
+
+6
+00:00:19,500 --> 00:00:23,460
+beautifully on any platform install flutter then run flutter create to
+在任何平台上呈现精美安装flutter然后运行flutter create
+
+7
+00:00:23,460 --> 00:00:27,060
+create a new project now open the main dart file this is where you build your
+创建一个新项目现在打开主dart文件这是您构建
+
+8
+00:00:27,060 --> 00:00:30,840
+app the UI is laid out as a tree of widgets and the framework provides
+应用程序的地方UI被布置为小部件树和 该框架提供了
+
+9
+00:00:30,840 --> 00:00:34,440
+hundreds of pre-built widgets to handle things like animations scrolling
+数百个预构建的小部件来处理诸如动画滚动
+
+10
+00:00:34,440 --> 00:00:38,160
+responsive layout and more you can build your own widget by extending the
+响应布局之类的事情，您可以通过扩展
+
+11
+00:00:38,160 --> 00:00:41,969
+stateless widget class you then define your UI by overriding its build method
+无状态小部件类来构建自己的小部件，然后通过覆盖其构建方法来定义您的 UI
+
+12
+00:00:41,969 --> 00:00:45,780
+now it's important to understand that everything in flutter is a widget this
+现在重要的是要了解一切都在颤动 是一个小部件，此
+
+13
+00:00:45,780 --> 00:00:48,780
+method returns a widget and it's children return widgets and their
+方法返回一个小部件，它的孩子返回小部件，他们的
+
+14
+00:00:48,780 --> 00:00:52,410
+children return widgets giving us an expressive declarative UI structure
+孩子重新 turn 小部件为我们提供了一个富有表现力的声明式 UI 结构
+
+15
+00:00:52,410 --> 00:00:56,370
+which you can easily Traverse using flutters awesome tool whenever the input
+，您可以使用 Flutters 轻松遍历，每当
+
+16
+00:00:56,370 --> 00:01:00,090
+data to this widget changes flutter will rebuild the UI by calling your build
+此小部件的输入数据发生变化时，flutter 将通过调用您的构建方法重建 UI
+
+17
+00:01:00,090 --> 00:01:03,899
+method stateless widgets are immutable and don't have any internal data when
+无状态小部件是不可变的，并且在您使用时没有任何内部数据
+
+18
+00:01:03,899 --> 00:01:06,810
+you have an interactive widgets where the internal data might change based on
+有一个交互式小部件，其中内部数据可能会根据
+
+19
+00:01:06,810 --> 00:01:10,799
+user input you can extend a stateful widget properties defined on this class
+用户输入而更改您可以扩展在此类上定义的有状态小部件属性
+
+20
+00:01:10,799 --> 00:01:14,909
+can be reactive for example we might have a counter that starts at zero then
+可以是反应性的，例如我们可能有一个从零开始的计数器然后
+
+21
+00:01:14,909 --> 00:01:17,939
+in our build method we have one of flutters built-in buttons that cause a
+在我们的构建方法中我们构建了一个颤振 -in 按钮会在
+
+22
+00:01:17,939 --> 00:01:21,360
+function whenever it's pressed it increments the counter by coin set state
+按下时触发功能，它会通过硬币设置状态增加计数器，
+
+23
+00:01:21,360 --> 00:01:24,630
+which tells the framework that the widgets data has changed causing the UI
+这会告诉框架小部件数据已更改，导致
+
+24
+00:01:24,630 --> 00:01:27,869
+to re-render with the latest data you can now play with this app on a real
+UI 使用最新数据重新呈现，您现在可以在真实设备上使用此应用程序播放
+
+25
+00:01:27,869 --> 00:01:31,380
+device using the flutter run command that's cool and all but let's make some
+使用很酷的颤振运行命令，但让我们进行一些
+
+26
+00:01:31,380 --> 00:01:34,680
+changes we'll go back to our source code and Center the button on the middle of
+更改，我们将返回到我们的源代码并将中间的按钮居中
+
+27
+00:01:34,680 --> 00:01:38,009
+the screen instead of writing code just click on the button and hit control
+屏幕的 dle 而不是编写代码只需单击按钮并点击 control
+
+28
+00:01:38,009 --> 00:01:41,520
+shift R then wrap your button with a center widget next change the color of
+shift R 然后用中心小部件包裹您的按钮接下来更改
+
+29
+00:01:41,520 --> 00:01:44,640
+the button and notice how flutter previews that color directly in your IDE
+按钮的颜色并注意颤振如何直接在您的 IDE 中预览该颜色
+
+30
+00:01:44,640 --> 00:01:48,810
+now too hot reload the app simply type or into the command line it only took a
+现在太热了重新加载应用程序 只需在命令行中输入或输入，只需
+
+31
+00:01:48,810 --> 00:01:52,079
+few milliseconds to build a new version of our app and notice how the state of
+几毫秒即可构建我们的应用程序的新版本，并注意
+
+32
+00:01:52,079 --> 00:01:55,409
+the counter was unchanged that's what I like to call an awesome developer
+计数器的状态如何保持不变，这就是我喜欢称之为很棒的开发人员
+
+33
+00:01:55,409 --> 00:01:59,310
+experience this has been flutter in 100 seconds if you want to learn more check
+体验 如果你在 100秒内颤动 想了解更多信息，请
+
+34
+00:01:59,310 --> 00:02:03,030
+out my newly updated flutter fire based course on fire ship i/o thanks for
+查看我最近更新的关于 Fire Ship i/o 的基于 Flutter Fire 的课程 感谢
+
+35
+00:02:03,030 --> 00:02:05,580
+watching and I will see you in the next one
+收看，我们下期再见
+
+36
+00:02:05,580 --> 00:02:07,640
+you

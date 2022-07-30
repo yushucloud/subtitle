@@ -1,0 +1,194 @@
+1
+00:00:00,160 --> 00:00:04,480
+bash a command language interpreter for interacting with a computer from the
+bash 一种用于从命令行与计算机交互的命令语言解释器，
+
+2
+00:00:04,480 --> 00:00:08,080
+command line it's also called a shell because it surrounds the operating
+它也被称为 shell，因为它围绕着
+
+3
+00:00:08,080 --> 00:00:11,679
+system kernel to hide its intricate details while allowing you the
+操作系统内核以隐藏其复杂的细节，同时允许
+
+4
+00:00:11,679 --> 00:00:16,160
+programmer to do important stuff like access data and write files by typing
+程序员通过输入简单的命令来执行重要的事情，例如访问数据和写入文件
+
+5
+00:00:16,160 --> 00:00:19,600
+simple commands this was a revolutionary concept when it was developed in the
+这是一个革命性的概念，它是在 70 年代初开发的，
+
+6
+00:00:19,600 --> 00:00:23,279
+early 70s back when programmers were still using punch cards the shell
+当时程序员仍在使用打孔卡。shell
+
+7
+00:00:23,279 --> 00:00:26,640
+concept evolved over the years with the bourne shell being the most popular
+概念经过多年演变，bourne shell 是最受欢迎的
+
+8
+00:00:26,640 --> 00:00:31,359
+version that is until 1989 when the born-again shell or bash came about when
+版本，直到 1989 年重生的 shell 或 bash 出现 关于当
+
+9
+00:00:31,359 --> 00:00:35,600
+you open up the terminal on a unix machine like mac os and most linux
+你在像 mac os 和大多数 Linux
+
+10
+00:00:35,600 --> 00:00:40,000
+distros the default shell is usually bash it provides a prompt where you can
+发行版这样的 unix 机器上打开终端时，默认的 shell 通常是bash 它提供了一个提示，你可以在其中
+
+11
+00:00:40,000 --> 00:00:43,520
+type a command which will then be interpreted by the shell and executed on
+键入一个命令，然后由 shell 解释并在操作系统上执行
+
+12
+00:00:43,520 --> 00:00:47,440
+the operating system to find out if you're running bash type in which dollar
+以查找 如果你在命令行中运行 bash 类型的美元
+
+13
+00:00:47,440 --> 00:00:51,199
+sign shell from the command line it's like any other application that lives in
+符号 shell，它就像任何其他应用程序一样存在于
+
+14
+00:00:51,199 --> 00:00:55,360
+the binaries directory but bash is also a programming language that allows us to
+t 他是二进制目录，但 bash 也是一种允许我们编写脚本的编程语言，
+
+15
+00:00:55,360 --> 00:00:58,960
+write scripts which means anything we type manually into the command line can
+这意味着我们在命令行中手动键入的任何内容都
+
+16
+00:00:58,960 --> 00:01:02,480
+be automated with code when you first launch the shell it actually runs a
+可以在您首次启动 shell 时使用代码自动化，它实际上运行
+
+17
+00:01:02,480 --> 00:01:07,200
+startup script that's defined in the bash profile or bashrc file on your
+在bash 配置文件中定义的启动脚本或 bashrc 文件，
+
+18
+00:01:07,200 --> 00:01:10,880
+system this allows you to customize the behavior and appearance of the shell
+这允许您在启动新会话时自定义shell 的行为和外观，
+
+19
+00:01:10,880 --> 00:01:14,720
+whenever you start a new session you can add your own custom bash scripts to any
+您可以通过创建一个以点 sh 结尾的文件来将您自己的自定义 bash 脚本添加到任何
+
+20
+00:01:14,720 --> 00:01:19,600
+project by creating a file that ends in dot sh for no file extension at all the
+项目中，完全没有文件扩展名
+
+21
+00:01:19,600 --> 00:01:23,439
+first line in that file should always be a shebang followed by the path to the
+该文件中的第一行应该始终是 shebang，后跟
+
+22
+00:01:23,439 --> 00:01:27,119
+application that should run it below that we can start writing commands like
+应该运行它的应用程序的路径，我们可以开始编写诸如
+
+23
+00:01:27,119 --> 00:01:30,880
+echo to print something and they'll be interpreted line by line to create a
+echo 之类的命令来打印某些内容，它们将逐行解释以创建
+
+24
+00:01:30,880 --> 00:01:34,320
+variable type a name in all caps followed by the equal sign then
+变量类型名称 所有大写字母后跟等号，然后
+
+25
+00:01:34,320 --> 00:01:38,320
+reference it later in the script using a dollar sign in front of the name now to
+在脚本中稍后在名称前使用美元符号引用它现在
+
+26
+00:01:38,320 --> 00:01:42,640
+execute the script simply type the file name into the shell that was easy but
+执行脚本只需将文件名输入到 shell 这很简单，
+
+27
+00:01:42,640 --> 00:01:45,759
+what if we want to pass in some arguments when we run the script
+但是如果我们想在运行脚本时传递一些参数，
+
+28
+00:01:45,759 --> 00:01:50,320
+positional arguments will automatically be assigned variable names of 1 2 3 and
+位置参数将自动分配变量名 1 2 3
+
+29
+00:01:50,320 --> 00:01:54,479
+so on now in other cases you may need additional user input in the middle of a
+等等，现在在其他情况下，您可能需要在脚本中间进行额外的用户输入
+
+30
+00:01:54,479 --> 00:01:58,640
+script you can create loops in bash like a do while loop here that will prompt
+您可以在 bash 中创建循环，如 do while 循环，这将
+
+31
+00:01:58,640 --> 00:02:03,200
+the user to continue the script on a yes answer or exit on a no answer from there
+提示用户在是回答时继续脚本或在否回答时退出，
+
+32
+00:02:03,200 --> 00:02:06,880
+we can implement conditional logic with an if statement which will test if the
+我们可以使用 if 语句实现条件逻辑，该语句将测试
+
+33
+00:02:06,880 --> 00:02:11,440
+value on the left side is less than the value on the right side if true then run
+值是否在 左侧小于右侧的值，如果为 true，则运行
+
+34
+00:02:11,440 --> 00:02:15,440
+this command otherwise run the else command another cool feature is that if
+此命令，否则运行 else命令另一个很酷的功能是，如果
+
+35
+00:02:15,440 --> 00:02:18,879
+you have multiple long running processes you can run them in parallel in the
+您有多个长时间运行的进程，您可以
+
+36
+00:02:18,879 --> 00:02:22,959
+background by adding an ampersand after the command this has been bash the
+通过在命令后添加 & 号在后台并行运行它们这已经
+
+37
+00:02:22,959 --> 00:02:26,879
+born-again shell in 100 seconds if you want to see more short videos like this
+是 100 秒内重生的外壳，如果你想看更多这样的短视频，请
+
+38
+00:02:26,879 --> 00:02:30,720
+make sure to hit the like button and subscribe thanks for watching and i will
+确保点击喜欢按钮并订阅感谢观看，我
+
+39
+00:02:30,720 --> 00:02:34,599
+see you in the next one
+会在下一个 o 氖

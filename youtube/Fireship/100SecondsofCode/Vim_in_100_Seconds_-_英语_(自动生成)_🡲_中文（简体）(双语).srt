@@ -1,0 +1,794 @@
+1
+00:00:00,160 --> 00:00:03,520
+them a text editor for writing code where you navigate around the screen
+它们是用于编写代码的文本编辑器，您可以在其中
+
+2
+00:00:03,520 --> 00:00:07,759
+with a keyboard instead of a mouse it's based on the original unix text editor
+使用键盘而不是鼠标在屏幕上
+
+3
+00:00:07,759 --> 00:00:14,639
+vi which came about in 1976 then vi improved or vim followed it in 1991 with
+
+
+4
+00:00:14,639 --> 00:00:18,800
+a bunch of improvements but why in the age of modern ides would you ever want
+导航 在现代 IDE 时代，您是否
+
+5
+00:00:18,800 --> 00:00:22,800
+to use a keyboard-based text editor when you write code all day every day your
+愿意使用基于键盘的文本编辑器？每天整天写代码时，每次触摸鼠标时，您的
+
+6
+00:00:22,800 --> 00:00:26,160
+fingers should be glued to the keyboard at all times every time you touch the
+手指都应该始终粘在键盘上，
+
+7
+00:00:26,160 --> 00:00:29,599
+mouse your productivity declines learning to code with them is like
+您的工作效率会下降学习编码 它们就像
+
+8
+00:00:29,599 --> 00:00:33,360
+learning to play an instrument it'll be painful at first but that pain will lead
+学习演奏乐器一样，一开始会很痛苦，但这种痛苦会导致
+
+9
+00:00:33,360 --> 00:00:37,120
+to more precise and productive code editing in the future them runs in the
+将来更精确和更高效的代码编辑它们在
+
+10
+00:00:37,120 --> 00:00:40,559
+terminal and it's installed on almost every machine and at some point you'll
+终端中运行，并且几乎安装在每台机器上，在某些时候你
+
+11
+00:00:40,559 --> 00:00:45,840
+likely find yourself accidentally dropped into them with no way to escape
+可能会 发现自己不小心掉入其中，无法逃脱
+
+12
+00:00:47,200 --> 00:00:50,960
+if you find yourself there you can quit them by typing colonqueue that will
+如果您发现自己在那里，您可以通过键入冒号退出它们，这将
+
+13
+00:00:50,960 --> 00:00:55,120
+close an unmodified file or if it has been modified you can use cubebang to
+关闭未修改的文件，或者如果它已被修改，您可以 使用 cubebang
+
+14
+00:00:55,120 --> 00:01:00,160
+throw away your changes or wq to write the changes and then quit now that we're
+丢弃您的更改或使用 wq编写更改，然后退出，因为我们已经
+
+15
+00:01:00,160 --> 00:01:04,640
+out let's use them to open up a file currently we're in normal mode but we
+退出了让我们使用它们打开当前处于正常模式的文件，但我们
+
+16
+00:01:04,640 --> 00:01:09,280
+can toggle between different modes like insert visual and command line depending
+可以在不同模式之间切换，例如插入视觉和命令行
+
+17
+00:01:09,280 --> 00:01:12,560
+on what we're trying to do we can move around the text with the arrow keys or
+取决于我们要做什么，我们可以使用箭头键
+
+18
+00:01:12,560 --> 00:01:16,960
+the letters h j k l if we find a character we want to delete we can hit x
+或字母 h j k l 在文本中移动如果我们找到要删除的字符，我们可以按 x
+
+19
+00:01:16,960 --> 00:01:22,080
+or double d to quickly delete an entire line if that was a mistake hit u to undo
+或双 d 快速删除整行，如果这是一个错误 现在点击 u 撤消
+
+20
+00:01:22,080 --> 00:01:25,920
+it now currently the document is kind of hard to read so let's add line numbers
+它当前文档有点难以阅读所以让我们
+
+21
+00:01:25,920 --> 00:01:29,920
+by running colon set number and now we can navigate to any line with colon
+通过运行冒号集号添加行号现在我们可以导航到带有冒号
+
+22
+00:01:29,920 --> 00:01:33,600
+number now if we want to change some text we need to go into insert mode by
+号的任何行如果我们想更改一些我们需要进入插入的文本 模式通过
+
+23
+00:01:33,600 --> 00:01:37,680
+hitting i and that frees up the keyboard for us to type into the document once
+点击 i 并释放键盘让
+
+24
+00:01:37,680 --> 00:01:41,920
+we're done modifying our code we can hit the escape key to go back to normal mode
+我们在完成修改代码后输入文档，我们可以点击退出键返回正常模式，
+
+25
+00:01:41,920 --> 00:01:45,759
+but now like any good developer we need to copy and paste some code in here from
+但现在像任何优秀的开发人员一样，我们需要复制和粘贴一些 这里的代码来自
+
+26
+00:01:45,759 --> 00:01:50,079
+stack overflow we can paste from the system clipboard by entering plus p into
+堆栈溢出，我们 可以通过在 vim 中输入 plus p 来从系统剪贴板粘贴
+
+27
+00:01:50,079 --> 00:01:54,240
+vim and now that our software is complete we can hit colon w to save it
+，现在我们的软件已经完成，我们可以点击冒号 w 保存它，
+
+28
+00:01:54,240 --> 00:01:58,159
+then run the program directly from bim with colon bang followed by the shell
+然后直接从 bim 运行程序，用冒号 bang 后跟
+
+29
+00:01:58,159 --> 00:02:02,399
+command we want to run congratulations you're no longer a soy dev but a true
+我们要运行的 shell 命令，恭喜你 不再是大豆开发人员，而是真正的
+
+30
+00:02:02,399 --> 00:02:06,880
+software engineer this has been vim in 100 seconds but stay tuned because you
+软件工程师，这已经在 100 秒内完成了 vim，但请继续关注，因为您
+
+31
+00:02:06,880 --> 00:02:10,959
+don't need to ditch vs code to get the benefits of vim that's why i invited a
+无需放弃 vs 代码即可获得vim 的好处，这就是为什么我邀请了
+
+32
+00:02:10,959 --> 00:02:15,440
+true expert and the instructor of the vim for vs code course joe previt to
+真正的专家和vim 讲师 vs 代码课程 joe previt
+
+33
+00:02:15,440 --> 00:02:21,760
+take us beyond 100 seconds of them hello everyone i'm joe and i will be
+带我们超过 100 秒大家好，我是 joe，我将成为
+
+34
+00:02:21,760 --> 00:02:27,520
+your guide as we go beyond 100 seconds to discuss why you should learn vim and
+你的向导，因为我们超过 100 秒来讨论为什么你应该学习 vim 以及
+
+35
+00:02:27,520 --> 00:02:32,800
+how you can leverage it inside your favorite editor vs code first let's talk
+如何在你最喜欢的编辑器中利用它 vs 代码 首先让我们
+
+36
+00:02:32,800 --> 00:02:37,519
+about why you should learn vim vim is an evergreen skill meaning you can learn it
+谈谈为什么要学习 vim vim 是一项常青的技能，这意味着您可以学习
+
+37
+00:02:37,519 --> 00:02:41,120
+once and the knowledge will last with you for the rest of your career it
+一次，并且该知识将在您的整个职业生涯中持续使用它
+
+38
+00:02:41,120 --> 00:02:44,959
+allows you to work faster and more efficiently within your editor here's a
+使您可以在编辑器中更快，更有效地工作这里是
+
+39
+00:02:44,959 --> 00:02:50,319
+side-by-side comparison on the left we have editing with vim on the right we
+左侧的并排比较 我们在右侧使用 vim 进行编辑 我们
+
+40
+00:02:50,319 --> 00:02:54,800
+have editing without vim as you can see bim lets you do more from
+在没有 vim 的情况下进行编辑，如您所见，bim 让您可以从键盘上做更多的事情，
+
+41
+00:02:54,800 --> 00:02:59,120
+the keyboard meaning you get to spend less time editing and more time coding
+这意味着您可以花更少的时间编辑和更多的时间编码
+
+42
+00:02:59,120 --> 00:03:05,440
+now let's talk about how to set up vim with vs code once you're inside vs code
+现在让我们谈谈 如何使用 vs 代码设置 vim 一旦你进入 vs 代码
+
+43
+00:03:05,440 --> 00:03:09,760
+head over to the extension panel and search vim
+前往扩展面板并搜索 vim
+
+44
+00:03:09,760 --> 00:03:13,440
+you should see the first extension called vim and to make sure it's the
+你应该看到第一个名为 vim 的扩展并确保它是
+
+45
+00:03:13,440 --> 00:03:19,840
+right version double check that it's vs code vim.vim and it should have around 2
+正确的版本仔细检查它是 vs代码 vim.vim 和 它应该有大约 200
+
+46
+00:03:19,840 --> 00:03:24,720
+million installations go ahead and install this extension the
+万次安装并安装这个扩展
+
+47
+00:03:24,720 --> 00:03:27,360
+next thing we're going to do is set up key repeat
+接下来我们要做的是设置密钥重复
+
+48
+00:03:27,360 --> 00:03:32,959
+so head over to google and look up vs code vim github you should see the first
+所以前往谷歌并查找 vscode vim github 你应该看到第一个
+
+49
+00:03:32,959 --> 00:03:37,200
+link which is a github repository called vs code vim vim
+链接是 github 存储库 调用vs code vim vim
+
+50
+00:03:37,200 --> 00:03:42,000
+there you're going to scroll down to the installation section
+在那里你将向下滚动到安装部分
+
+51
+00:03:42,000 --> 00:03:45,280
+in here you'll see instructions for how to
+在这里你会看到有关如何
+
+52
+00:03:45,280 --> 00:03:50,879
+enable key repeating this is a handy thing to add especially
+启用键重复的说明这是一个方便添加的东西，特别是
+
+53
+00:03:50,879 --> 00:03:55,840
+when you're new to vim because it'll allow you to hit the key and it will
+当你是 vim 的新手时，因为它允许 你打 他键，它会
+
+54
+00:03:55,840 --> 00:03:58,640
+repeat as in if you were to hit
+重复，如果你按
+
+55
+00:03:58,640 --> 00:04:04,319
+j to move down find your operating system i'm on mac
+j 向下移动找到你的操作系统，我在 mac 上
+
+56
+00:04:04,319 --> 00:04:10,400
+and then run this in your terminal and now for the changes to take effect
+，然后在你的终端中运行它，现在为了使更改生效，
+
+57
+00:04:10,400 --> 00:04:17,519
+you're going to want to restart vs code to verify that it worked go ahead and
+你将要重新启动 vs验证它是否工作的代码继续
+
+58
+00:04:17,519 --> 00:04:22,320
+create a new file and now you should see that your cursor is a little bit wider
+创建一个新文件，现在你应该看到你的光标有点宽
+
+59
+00:04:22,320 --> 00:04:27,600
+go ahead and hit i this will put us in insert mode and then hit return a bunch
+继续点击 i 这将使我们进入插入模式，然后点击返回一堆
+
+60
+00:04:27,600 --> 00:04:30,240
+of times then hit escape
+然后点击转义
+
+61
+00:04:30,240 --> 00:04:35,520
+and now try hitting and holding k and see if your cursor moves up
+和 现在尝试按住 k 键，看看你的光标是否向上移动，
+
+62
+00:04:35,520 --> 00:04:39,520
+if it moves like this pretty smooth then you've enabled key
+如果它像这样平滑移动，那么你已经启用了重复键，
+
+63
+00:04:39,520 --> 00:04:44,880
+repeating if it gets stuck then you may want to try restarting vs code again or
+如果它卡住了，那么你可能想再次尝试重新启动 vs 代码或
+
+64
+00:04:44,880 --> 00:04:49,600
+revisiting the installation instructions great now that we have our editor set up
+重新访问安装说明，因为我们很好 设置好我们的编辑器，
+
+65
+00:04:49,600 --> 00:04:53,840
+i'd like to teach you a few different commands in vim so we'll review some of
+我想教你一些 vim 中的不同命令，所以我们将
+
+66
+00:04:53,840 --> 00:04:57,040
+the ones that jeff mentioned earlier in the video and then we'll also learn a
+回顾 jeff 在视频中前面提到的一些命令，然后我们还将学习
+
+67
+00:04:57,040 --> 00:05:02,840
+few new ones so inside vs code go ahead and create a new file and save it as
+一些新命令，所以在 vs code go 中 前进并创建一个新文件并将其保存为
+
+68
+00:05:02,840 --> 00:05:07,680
+hello.md now what i want you to do is hit i to enter insert mode and hit
+hello.md n 我想让你做的是点击 i 进入插入模式并点击
+
+69
+00:05:07,680 --> 00:05:11,919
+returns we add a few lines for us to work with and then hit escape great so
+返回，我们添加了几行供我们使用，然后点击 escape，
+
+70
+00:05:11,919 --> 00:05:16,800
+the first commands that we're going to talk about are for navigation and they
+所以我们要讨论的第一个命令是用于导航，它们
+
+71
+00:05:16,800 --> 00:05:21,680
+will be h j k and l so right now we're in command mode so if
+将 是 h j k 和 l所以现在我们处于命令模式所以如果
+
+72
+00:05:21,680 --> 00:05:26,800
+we hit k we'll start moving up if we hit j we'll move down
+我们点击 k 我们将开始向上移动 如果我们点击j 我们将向下移动
+
+73
+00:05:26,800 --> 00:05:31,680
+so remember we just learned k for moving up i like to think of it as kicking a
+所以记住我们刚刚学会了 k向上移动我喜欢把它想象成踢 一个
+
+74
+00:05:31,680 --> 00:05:36,880
+soccer ball up i'm kicking upwards on my editor and j for jumping down use
+足球向上，我在我的编辑器上向上踢，j 用于跳下使用
+
+75
+00:05:36,880 --> 00:05:40,880
+whatever mnemonic comes to mind to help you remember those
+想到的任何助记符来帮助你
+
+76
+00:05:40,880 --> 00:05:47,199
+the next we'll talk about are h and l so i'm going to write hello world here
+记住接下来我们要讨论的是 h 和 l，所以我要在这里写下 hello world
+
+77
+00:05:47,199 --> 00:05:51,440
+and you can do the same so again the way that i did that was i for
+和 您可以再次执行相同的操作，就像我在
+
+78
+00:05:51,440 --> 00:05:57,199
+insert mode start typing hello world and then when you're done hit escape and
+插入模式下开始输入 hello world 一样，然后当您完成点击转义后，
+
+79
+00:05:57,199 --> 00:06:01,600
+you'll be back in command mode so the first one we'll talk about is h so if
+您将回到命令模式，所以我们要讨论的第一个是 h 因此，如果
+
+80
+00:06:01,600 --> 00:06:04,479
+you hit h you'll start moving to the left
+您按 h，您将开始向左移动，
+
+81
+00:06:04,479 --> 00:06:06,960
+as in you're moving to the beginning of the line
+就像您正在移动到行首一样
+
+82
+00:06:06,960 --> 00:06:11,520
+also the h in hello world now once we're there if we want to go
+，现在在 hello world 中的 h如果我们想
+
+83
+00:06:11,520 --> 00:06:16,960
+back right we start hitting l and that will move us towards the ellen world so
+回到正确的位置，我们就在那里，我们开始击中 l，这将把我们推向艾伦世界，所以
+
+84
+00:06:16,960 --> 00:06:21,680
+again figure out a mnemonic that's going to help you remember those for me
+再次找出一个助记符，它可以帮助你记住那些对我来说
+
+85
+00:06:21,680 --> 00:06:25,280
+i like to think of h as in i'm going home to the left
+我喜欢把 h 想成 i' 我回到左边
+
+86
+00:06:25,280 --> 00:06:28,319
+and then l you would think that would be
+，然后 l你会认为
+
+87
+00:06:28,319 --> 00:06:33,039
+l for left but it's actually the opposite of that so l for right great so
+l 代表左边，但实际上恰恰相反，所以 l 代表右边很棒，所以
+
+88
+00:06:33,039 --> 00:06:37,039
+now we're feeling comfortable with navigating in vim again we're in command
+现在我们再次在 vim 中导航感到很舒服，我们处于命令
+
+89
+00:06:37,039 --> 00:06:40,960
+mode we're moving up and down with j and k
+模式，我们' 用 j 和 k 上下移动，
+
+90
+00:06:40,960 --> 00:06:45,199
+and left and right with h and l the other thing to to remember is if you
+用 h 和 l 左右移动 要记住的另一件事是，如果你
+
+91
+00:06:45,199 --> 00:06:49,199
+take a look pause for a second look at your keyboard see where the keys are on
+看一下，暂停一下，看看你的键盘，看看键盘上的键在哪里，
+
+92
+00:06:49,199 --> 00:06:54,479
+your keyboard you should see the h to the left of j and k so that also
+你应该看到 h在 j 和 k 的左边，这也
+
+93
+00:06:54,479 --> 00:06:58,960
+helps me remember and then l is to the right of j and k so it'll take
+有助于我记住，然后l 在 j 和 k 的右边，所以这需要
+
+94
+00:06:58,960 --> 00:07:04,000
+some time but once you got those down you'll be able to navigate seamlessly
+一些时间，但是一旦你把它们写下来，你就可以
+
+95
+00:07:04,000 --> 00:07:08,160
+throughout your editor using vim so the other thing i want to point out is you
+使用 vim 在整个编辑器中无缝导航 所以我要指出的另一件事是您
+
+96
+00:07:08,160 --> 00:07:12,080
+still have access to your mouse so you can click to move around
+仍然可以使用鼠标，因此您可以单击 t  o 四处走动，
+
+97
+00:07:12,080 --> 00:07:15,759
+so there's no need to worry about getting stuck in vim i'm sure you've
+因此无需担心卡在 vim 中我敢肯定你
+
+98
+00:07:15,759 --> 00:07:20,639
+heard horror stories people not being able to exit them luckily using them
+听说过人们无法幸运地在 vs 代码中使用它们无法退出的恐怖故事
+
+99
+00:07:20,639 --> 00:07:25,120
+inside of vs code we're really just using the them key bindings so we don't
+我们实际上只是使用它们的键绑定所以我们
+
+100
+00:07:25,120 --> 00:07:28,400
+have to worry we can close a file we can navigate
+不用担心我们可以关闭一个可以导航的文件 现在
+
+101
+00:07:28,400 --> 00:07:33,199
+no need to to fear being stuck in vim now the next thing i want to point out
+不用担心卡在 vim 中我要指出的下一件事
+
+102
+00:07:33,199 --> 00:07:36,960
+is some editing commands so we will talk about i
+是一些编辑命令，所以我们将讨论 i
+
+103
+00:07:36,960 --> 00:07:39,120
+capital i a
+大写 ia
+
+104
+00:07:39,120 --> 00:07:43,919
+and capital a for editing in a line so we're going to go back to our hello
+和大写 a 用于编辑 一行，所以我们要回到我们的 hello
+
+105
+00:07:43,919 --> 00:07:48,639
+world and you'll see right now the cursor is at the end of the line if i
+world，你现在会看到光标
+
+106
+00:07:48,639 --> 00:07:53,520
+hit shift i or capital i it'll move me in insert mode at the beginning so i
+在行尾 我
+
+107
+00:07:53,520 --> 00:07:56,160
+could write a word like i don't know
+可以写一个词，就像我不认识
+
+108
+00:07:56,160 --> 00:08:00,879
+joe and then if i hit escape i'm back in command mode where i can move around
+joe 一样，然后如果我点击退出，我会回到命令模式，在那里我可以四处走动，
+
+109
+00:08:00,879 --> 00:08:03,680
+so you'll notice the one thing that i want to point out
+所以你会注意到我想指出
+
+110
+00:08:03,680 --> 00:08:09,599
+to a tip is a lot of vim users remap their caps lock key to escape so instead
+的一件事是很多 的 vim 用户重新映射他们的大写锁定键以转义，因此
+
+111
+00:08:09,599 --> 00:08:12,080
+of caps lock being caps lock when i hit the
+当我按下键时，大写锁定不是大写锁定，
+
+112
+00:08:12,080 --> 00:08:16,639
+key it actually is escape and so it's a lot more accessible it's closer it's
+它实际上是转义 d 所以它更容易访问它更接近它就
+
+113
+00:08:16,639 --> 00:08:20,240
+right next to my pinky rather than having to reach to the corner of the
+在我的小指旁边，而不是必须到达键盘的角落
+
+114
+00:08:20,240 --> 00:08:24,800
+keyboard and hit escape so that's one thing i'd encourage you to look into
+并点击转义所以这是一件事我鼓励你考虑
+
+115
+00:08:24,800 --> 00:08:29,440
+remapping your caps lock key to escape if you're serious about learning vim so
+重新映射你的大写锁定键以逃避如果你 '认真学习vim所以
+
+116
+00:08:29,440 --> 00:08:33,279
+we just covered capital i we know that lowercase i
+我们刚刚介绍了大写i我们知道小写i
+
+117
+00:08:33,279 --> 00:08:37,760
+is insert mode right so now what i want to talk about is lowercase a the thing
+是插入模式所以现在我要谈论的是小写a
+
+118
+00:08:37,760 --> 00:08:40,959
+that you got to pay attention to here is the cursor
+你需要注意的事情是光标
+
+119
+00:08:40,959 --> 00:08:46,000
+right now it's on top of the exclamation point so if i hit i it'll move to the
+现在它在顶部 的感叹号所以如果我点击我它会移动到
+
+120
+00:08:46,000 --> 00:08:52,320
+left and now if i go back now if i hit a it'll enter into insert mode but after
+左边现在如果我现在回去如果我点击a它会进入插入模式但是
+
+121
+00:08:52,320 --> 00:08:55,440
+the cursor so like this
+在光标之后就像
+
+122
+00:08:55,440 --> 00:09:00,800
+so again uh if we have like a number two here and we want to add to the beginning
+这样再次呃如果我们有一个数字 两个在这里，我们想添加到开头
+
+123
+00:09:00,800 --> 00:09:05,519
+and make it 22 we'll hit i that'll let us enter at the beginning and now if we
+并使其成为 22 我们将点击 i 让我们在开头输入，现在如果我们
+
+124
+00:09:05,519 --> 00:09:09,600
+want to add to the end like say i wanted to add a
+想添加到末尾，比如我想添加一个
+
+125
+00:09:09,600 --> 00:09:16,000
+period 22 so 22 22 then i can use lowercase a so those are very handy when
+句点 22 所以 22 22 然后我可以使用小写字母 a 这样在
+
+126
+00:09:16,000 --> 00:09:19,680
+you're inserting letters or making changes
+您插入字母或进行
+
+127
+00:09:19,680 --> 00:09:26,000
+in a line now the next one that i want to talk about is capital a and so this
+更改时非常方便 现在有一行，我要谈论的下一行是大写a，所以
+
+128
+00:09:26,000 --> 00:09:30,399
+is like appending to the end of the line so you'll enter insert mode at the end
+这就像附加到行尾，所以你将在行尾进入插入模式，
+
+129
+00:09:30,399 --> 00:09:33,760
+of a line so here i am and i want to add more exclamation points at the end of
+所以我在这里，我想添加更多 hello world末尾的感叹号
+
+130
+00:09:33,760 --> 00:09:38,160
+hello world so if i hit shift a it will move the cursor to the end and it will
+所以如果我按shift a它会将光标移动到末尾并
+
+131
+00:09:38,160 --> 00:09:43,040
+enter into insert mode so now that i can enter a few exclamation points now if we
+进入插入模式所以现在我可以输入几个感叹号如果我们
+
+132
+00:09:43,040 --> 00:09:47,279
+go back to the beginning we can do shift i now we're insert mode
+回到开头我们可以做 shift i 现在我们
+
+133
+00:09:47,279 --> 00:09:50,399
+at the beginning of the line so as you can see
+在行首插入模式，因此您可以
+
+134
+00:09:50,399 --> 00:09:56,640
+the i capital i a capital a are very handy for editing in a line
+看到 i 大写 i 大写 a 非常方便在一行中进行编辑
+
+135
+00:09:56,640 --> 00:09:59,519
+great we've talked about navigation we've
+我们已经讨论过导航 我们已经
+
+136
+00:09:59,519 --> 00:10:04,399
+talked about editing and align now the last two that i want to talk
+讨论过编辑和对齐现在 我要谈论的最后两个
+
+137
+00:10:04,399 --> 00:10:08,399
+about are x and r and these are handy for
+是 x 和 r，如果我们回到这里，它们对于
+
+138
+00:10:08,399 --> 00:10:14,959
+making changes while in command mode if we go back up right here and so i want
+在命令模式下进行更改很方便，所以我
+
+139
+00:10:14,959 --> 00:10:18,399
+to get to the beginning of the sentence so i'm going to hit shift i hit escape
+想回到句子的开头，所以我要按 shift 我点击了escape，
+
+140
+00:10:18,399 --> 00:10:22,640
+because i want to be in command mode so you'll see that i have four j's right i
+因为我想进入命令模式，所以你会看到我有四个j，我
+
+141
+00:10:22,640 --> 00:10:26,720
+don't really need all of those so what we're going to do is actually use x to
+不知道 ally 需要所有这些，所以我们要做的实际上是使用 x
+
+142
+00:10:26,720 --> 00:10:31,360
+delete those so x is kind of like x out of character so i'll hit it three times
+删除那些，所以 x 有点像 x的字符，所以我会击中它 3 次
+
+143
+00:10:31,360 --> 00:10:35,200
+one two three and now i have one j which is correct
+1 2 3 现在我有一个 j是正确的
+
+144
+00:10:35,200 --> 00:10:40,480
+so as you can see we're able to make edits without leaving command mode so we
+如您所见，我们可以在不离开命令模式的情况下进行编辑所以我们
+
+145
+00:10:40,480 --> 00:10:44,720
+just talked about x for exiting out characters now let's talk about r
+刚刚讨论了 x 用于退出字符现在让我们讨论 r
+
+146
+00:10:44,720 --> 00:10:49,040
+for replacing characters so i'm going to go to the h here and i want this to be
+用于替换字符所以我要在这里转到 h 我想要这个 是
+
+147
+00:10:49,040 --> 00:10:55,440
+capital so i'll hit r and then shift h which is just a a capital h and now it
+大写，所以我会点击 r 然后将 h这只是一个大写 h 现在
+
+148
+00:10:55,440 --> 00:11:00,079
+will replace it and again i haven't left command mode here let's do this for 22
+它将替换它，我还没有离开这里的命令模式让我们为 22 22 执行此操作
+
+149
+00:11:00,079 --> 00:11:07,200
+22. let's change this to uh 52 22 so we'll hit r and then five
+。让我们将其更改为uh 52 22 所以我们 ' 将按 r 然后按 5
+
+150
+00:11:07,200 --> 00:11:11,519
+and so basically what it does is it replaces the character
+，所以基本上它的作用是将
+
+151
+00:11:11,519 --> 00:11:16,560
+under the cursor with the new character that you type in so we've talked about
+光标下的字符替换为您输入的新字符，所以我们已经讨论过
+
+152
+00:11:16,560 --> 00:11:22,720
+navigation with hjkl we've talked about editing in line with i capital i a and
+使用 hjkl 进行导航，我们已经讨论过根据 i 大写 i a 进行编辑 和
+
+153
+00:11:22,720 --> 00:11:25,600
+capital a and now i've talked about making changes while in command mode
+大写a，现在我已经谈到了在x和r的命令模式下进行更改，
+
+154
+00:11:25,600 --> 00:11:30,720
+with x and r i hope you enjoyed that brief introduction to them inside vs
+希望你喜欢t
+
+155
+00:11:30,720 --> 00:11:35,839
+code if you'd like to learn more head over to vimfovsco.com
+如果您想了解更多内容
+
+156
+00:11:35,839 --> 00:11:40,880
+and check out my course it's got 100 exercises to help you learn how to use
+，请访问 vimfovsco.com，查看我的课程
+
+157
+00:11:40,880 --> 00:11:45,120
+vim inside vs code and we teach you 22 different commands
+
+
+158
+00:11:45,120 --> 00:11:49,680
+use the coupon code fireship for five dollars off thanks for watching and i
+优惠券代码 fireship 可减五美元 感谢收看，
+
+159
+00:11:49,680 --> 00:11:53,800
+will see you in the next one
+我们下期再见

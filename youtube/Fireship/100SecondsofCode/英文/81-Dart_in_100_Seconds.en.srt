@@ -1,0 +1,390 @@
+1
+00:00:00,240 --> 00:00:02,399
+dart a type safe general purpose
+
+
+2
+00:00:02,399 --> 00:00:03,919
+programming language designed for
+
+
+3
+00:00:03,919 --> 00:00:06,480
+building fast apps on multiple platforms
+
+
+4
+00:00:06,480 --> 00:00:08,080
+it was developed by google and first
+
+
+5
+00:00:08,080 --> 00:00:10,320
+appeared in 2011 and was intended to be
+
+
+6
+00:00:10,320 --> 00:00:12,240
+an alternative to javascript by shipping
+
+
+7
+00:00:12,240 --> 00:00:14,480
+its own virtual machine to run apps in
+
+
+8
+00:00:14,480 --> 00:00:16,080
+the browser but things got off to a
+
+
+9
+00:00:16,080 --> 00:00:17,680
+rocky start and it was never really
+
+
+10
+00:00:17,680 --> 00:00:18,960
+embraced by the web development
+
+
+11
+00:00:18,960 --> 00:00:21,199
+community however it bounced back in a
+
+
+12
+00:00:21,199 --> 00:00:23,039
+big way after being adopted by the
+
+
+13
+00:00:23,039 --> 00:00:24,880
+flutter framework and today it's one of
+
+
+14
+00:00:24,880 --> 00:00:26,400
+the most loved programming languages in
+
+
+15
+00:00:26,400 --> 00:00:28,400
+the industry it's unique for its ability
+
+
+16
+00:00:28,400 --> 00:00:30,800
+to compile to multiple targets like arm
+
+
+17
+00:00:30,800 --> 00:00:33,520
+and x64 machine code for mobile devices
+
+
+18
+00:00:33,520 --> 00:00:35,440
+javascript for web browsers and
+
+
+19
+00:00:35,440 --> 00:00:37,920
+self-contained executables for windows
+
+
+20
+00:00:37,920 --> 00:00:40,960
+mac os and linux it also has a just in
+
+
+21
+00:00:40,960 --> 00:00:43,440
+time or jit compiler which compiles your
+
+
+22
+00:00:43,440 --> 00:00:45,440
+source code to machine code on the fly
+
+
+23
+00:00:45,440 --> 00:00:47,120
+which can boost developer productivity
+
+
+24
+00:00:47,120 --> 00:00:48,719
+with features like hot reload and
+
+
+25
+00:00:48,719 --> 00:00:50,800
+flutter all dark code runs inside of an
+
+
+26
+00:00:50,800 --> 00:00:52,719
+isolate which is like a chunk of memory
+
+
+27
+00:00:52,719 --> 00:00:54,399
+running a single threaded event loop
+
+
+28
+00:00:54,399 --> 00:00:55,920
+this makes it possible to perform
+
+
+29
+00:00:55,920 --> 00:00:57,840
+asynchronous background work on a single
+
+
+30
+00:00:57,840 --> 00:00:59,760
+thread but you can also spawn multiple
+
+
+31
+00:00:59,760 --> 00:01:01,840
+isolates to run code in parallel the
+
+
+32
+00:01:01,840 --> 00:01:04,080
+language itself is type safe which means
+
+
+33
+00:01:04,080 --> 00:01:06,320
+that a variable's value always matches
+
+
+34
+00:01:06,320 --> 00:01:08,000
+its static type and that generally
+
+
+35
+00:01:08,000 --> 00:01:09,840
+results in fewer runtime errors for your
+
+
+36
+00:01:09,840 --> 00:01:11,680
+app in production however the type
+
+
+37
+00:01:11,680 --> 00:01:13,680
+system is flexible allowing you to use
+
+
+38
+00:01:13,680 --> 00:01:15,680
+dynamic types and runtime checks when
+
+
+39
+00:01:15,680 --> 00:01:17,759
+required it also provides null safety
+
+
+40
+00:01:17,759 --> 00:01:19,680
+which means that values can't be null
+
+
+41
+00:01:19,680 --> 00:01:21,600
+unless you explicitly allow them to be
+
+
+42
+00:01:21,600 --> 00:01:23,360
+which can further cut down runtime
+
+
+43
+00:01:23,360 --> 00:01:25,520
+exceptions syntactically it's often
+
+
+44
+00:01:25,520 --> 00:01:28,159
+described as combining elements of java
+
+
+45
+00:01:28,159 --> 00:01:30,479
+and javascript a dart program always
+
+
+46
+00:01:30,479 --> 00:01:32,320
+starts with a main function that has no
+
+
+47
+00:01:32,320 --> 00:01:34,240
+return value so it's annotated with the
+
+
+48
+00:01:34,240 --> 00:01:36,479
+void type inside of it we might declare
+
+
+49
+00:01:36,479 --> 00:01:38,799
+a variable with var and set it equal to
+
+
+50
+00:01:38,799 --> 00:01:40,720
+a string dart will automatically infer
+
+
+51
+00:01:40,720 --> 00:01:42,720
+this as a string type however we could
+
+
+52
+00:01:42,720 --> 00:01:44,799
+explicitly type it by replacing var
+
+
+53
+00:01:44,799 --> 00:01:46,479
+anything you can store in a variable is
+
+
+54
+00:01:46,479 --> 00:01:48,720
+an object and every object is an
+
+
+55
+00:01:48,720 --> 00:01:50,320
+instance of a class the only thing
+
+
+56
+00:01:50,320 --> 00:01:52,479
+that's not an object in dart is null
+
+
+57
+00:01:52,479 --> 00:01:54,079
+this opens the door to multiple
+
+
+58
+00:01:54,079 --> 00:01:56,320
+programming paradigms functions are also
+
+
+59
+00:01:56,320 --> 00:01:58,000
+first-class objects which means they can
+
+
+60
+00:01:58,000 --> 00:01:59,520
+be passed around for functional
+
+
+61
+00:01:59,520 --> 00:02:01,520
+programming or you can define classes
+
+
+62
+00:02:01,520 --> 00:02:03,439
+with mixin-based inheritance for
+
+
+63
+00:02:03,439 --> 00:02:05,680
+object-oriented patterns on top of that
+
+
+64
+00:02:05,680 --> 00:02:07,600
+it has a package manager called pub
+
+
+65
+00:02:07,600 --> 00:02:09,200
+providing thousands of open source
+
+
+66
+00:02:09,200 --> 00:02:10,959
+packages to help you get things done
+
+
+67
+00:02:10,959 --> 00:02:13,200
+this has been dart in 100 seconds hit
+
+
+68
+00:02:13,200 --> 00:02:14,640
+the like button and subscribe if you
+
+
+69
+00:02:14,640 --> 00:02:16,239
+want to see more short videos like this
+
+
+70
+00:02:16,239 --> 00:02:17,360
+and if you want to get really good at
+
+
+71
+00:02:17,360 --> 00:02:19,280
+dart i just released a brand new full
+
+
+72
+00:02:19,280 --> 00:02:21,120
+course for pro members it teaches the
+
+
+73
+00:02:21,120 --> 00:02:22,720
+fundamentals of dart from the ground up
+
+
+74
+00:02:22,720 --> 00:02:24,400
+to get you ready for flutter development
+
+
+75
+00:02:24,400 --> 00:02:26,239
+and my upcoming flutter 2 course which
+
+
+76
+00:02:26,239 --> 00:02:27,920
+will be out later this year thanks for
+
+
+77
+00:02:27,920 --> 00:02:29,920
+watching and i will see you in the next
+
+
+78
+00:02:29,920 --> 00:02:32,160
+one
+
+

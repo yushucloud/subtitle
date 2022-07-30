@@ -1,0 +1,1220 @@
+1
+00:00:00,000 --> 00:00:00,320
+[Music]
+
+
+2
+00:00:00,320 --> 00:00:02,879
+progressive web apps build websites that
+
+
+3
+00:00:02,879 --> 00:00:05,040
+deliver an experience indistinguishable
+
+
+4
+00:00:05,040 --> 00:00:07,200
+from native mobile apps when smartphones
+
+
+5
+00:00:07,200 --> 00:00:09,360
+first hit the scene back in 2008 they
+
+
+6
+00:00:09,360 --> 00:00:10,639
+brought with them all kinds of new
+
+
+7
+00:00:10,639 --> 00:00:12,160
+features that weren't available on the
+
+
+8
+00:00:12,160 --> 00:00:14,400
+web like offline mode push notifications
+
+
+9
+00:00:14,400 --> 00:00:16,640
+cameras geolocation and more internet
+
+
+10
+00:00:16,640 --> 00:00:18,400
+explorer powered the web back then and
+
+
+11
+00:00:18,400 --> 00:00:20,720
+web developers had no way to access most
+
+
+12
+00:00:20,720 --> 00:00:22,800
+in-device features in the 2020s though
+
+
+13
+00:00:22,800 --> 00:00:24,800
+the game has changed the web platform
+
+
+14
+00:00:24,800 --> 00:00:26,480
+has reached near feature parity with
+
+
+15
+00:00:26,480 --> 00:00:28,560
+native apps notice how the twitter pwa
+
+
+16
+00:00:28,560 --> 00:00:30,320
+can be installed just like a native app
+
+
+17
+00:00:30,320 --> 00:00:31,920
+it works without a connection it can
+
+
+18
+00:00:31,920 --> 00:00:33,360
+interact with the device camera and
+
+
+19
+00:00:33,360 --> 00:00:35,440
+receive push notifications and on top of
+
+
+20
+00:00:35,440 --> 00:00:36,880
+that the web offers much better
+
+
+21
+00:00:36,880 --> 00:00:38,800
+distribution than app stores and doesn't
+
+
+22
+00:00:38,800 --> 00:00:40,960
+take a 30 cut of your revenue not to
+
+
+23
+00:00:40,960 --> 00:00:42,879
+mention your app will work on ios
+
+
+24
+00:00:42,879 --> 00:00:44,800
+android and the web from a single code
+
+
+25
+00:00:44,800 --> 00:00:46,719
+base if you own a website turning it
+
+
+26
+00:00:46,719 --> 00:00:48,559
+into a progressive web app is easier
+
+
+27
+00:00:48,559 --> 00:00:50,399
+than you might think first open up the
+
+
+28
+00:00:50,399 --> 00:00:52,160
+lighthouse tool in chrome dev tools to
+
+
+29
+00:00:52,160 --> 00:00:54,079
+run an audit on your site it'll tell you
+
+
+30
+00:00:54,079 --> 00:00:55,600
+how well your site performs and what
+
+
+31
+00:00:55,600 --> 00:00:58,320
+needs to change to qualify as a pwa at a
+
+
+32
+00:00:58,320 --> 00:01:00,000
+bare minimum the site needs to load
+
+
+33
+00:01:00,000 --> 00:01:02,239
+quickly and be accessible on mobile most
+
+
+34
+00:01:02,239 --> 00:01:03,920
+sites already check this box the more
+
+
+35
+00:01:03,920 --> 00:01:05,680
+difficult requirement is making the app
+
+
+36
+00:01:05,680 --> 00:01:08,080
+work offline normally a website runs on
+
+
+37
+00:01:08,080 --> 00:01:09,840
+a single thread while the tab is open
+
+
+38
+00:01:09,840 --> 00:01:12,159
+however modern websites can now register
+
+
+39
+00:01:12,159 --> 00:01:14,320
+a service worker which is just a script
+
+
+40
+00:01:14,320 --> 00:01:15,920
+that runs in the background it can
+
+
+41
+00:01:15,920 --> 00:01:18,080
+perform caching background sync and
+
+
+42
+00:01:18,080 --> 00:01:20,080
+listen to push notifications among other
+
+
+43
+00:01:20,080 --> 00:01:22,000
+things the implementation is actually
+
+
+44
+00:01:22,000 --> 00:01:23,680
+very simple we just check if the browser
+
+
+45
+00:01:23,680 --> 00:01:25,600
+supports this feature then register a
+
+
+46
+00:01:25,600 --> 00:01:27,600
+javascript file as the worker once
+
+
+47
+00:01:27,600 --> 00:01:29,520
+registered you'll find it activated in
+
+
+48
+00:01:29,520 --> 00:01:31,680
+the application tab in chrome devtools
+
+
+49
+00:01:31,680 --> 00:01:33,119
+from there you can write your own code
+
+
+50
+00:01:33,119 --> 00:01:35,040
+in the worker file or use a library like
+
+
+51
+00:01:35,040 --> 00:01:36,960
+workbox to do everything for you most
+
+
+52
+00:01:36,960 --> 00:01:38,479
+importantly you'll want to cache the
+
+
+53
+00:01:38,479 --> 00:01:40,320
+urls in your app so they can be viewed
+
+
+54
+00:01:40,320 --> 00:01:42,240
+offline you can inspect the cache and
+
+
+55
+00:01:42,240 --> 00:01:43,759
+other background services here in the
+
+
+56
+00:01:43,759 --> 00:01:45,920
+application tab the final step is to
+
+
+57
+00:01:45,920 --> 00:01:48,079
+create a manifest.json file which
+
+
+58
+00:01:48,079 --> 00:01:50,240
+contains icons and other metadata about
+
+
+59
+00:01:50,240 --> 00:01:51,920
+the app once the requirements have been
+
+
+60
+00:01:51,920 --> 00:01:54,320
+met you'll unlock the pwa achievement
+
+
+61
+00:01:54,320 --> 00:01:56,079
+and lighthouse at which point your app
+
+
+62
+00:01:56,079 --> 00:01:58,159
+can be installed on most native devices
+
+
+63
+00:01:58,159 --> 00:02:00,159
+and can even be listed on google play or
+
+
+64
+00:02:00,159 --> 00:02:01,759
+the microsoft store this has been
+
+
+65
+00:02:01,759 --> 00:02:03,920
+progressive web apps in 100 seconds if
+
+
+66
+00:02:03,920 --> 00:02:05,360
+you want to learn more hang out for a
+
+
+67
+00:02:05,360 --> 00:02:07,439
+minute while we go beyond 100 seconds to
+
+
+68
+00:02:07,439 --> 00:02:08,800
+learn a bunch of cool things that you'll
+
+
+69
+00:02:08,800 --> 00:02:11,039
+definitely want to know about pwas first
+
+
+70
+00:02:11,039 --> 00:02:12,800
+of all make sure to like and subscribe
+
+
+71
+00:02:12,800 --> 00:02:14,319
+because it really helps out the short
+
+
+72
+00:02:14,319 --> 00:02:16,239
+videos what i want to do now is just
+
+
+73
+00:02:16,239 --> 00:02:17,840
+rattle off a bunch of cool things you
+
+
+74
+00:02:17,840 --> 00:02:20,160
+should know about when it comes to pwas
+
+
+75
+00:02:20,160 --> 00:02:21,520
+first you'll definitely want to get
+
+
+76
+00:02:21,520 --> 00:02:23,360
+familiar with the chrome lighthouse tool
+
+
+77
+00:02:23,360 --> 00:02:25,760
+it analyzes performance accessibility
+
+
+78
+00:02:25,760 --> 00:02:27,520
+seo and determines whether or not your
+
+
+79
+00:02:27,520 --> 00:02:30,080
+app is installable as a pwa you can run
+
+
+80
+00:02:30,080 --> 00:02:31,920
+this tool on any site you want and
+
+
+81
+00:02:31,920 --> 00:02:33,440
+should be available under the lighthouse
+
+
+82
+00:02:33,440 --> 00:02:35,360
+tab in chrome devtools even if you're
+
+
+83
+00:02:35,360 --> 00:02:37,599
+not building a pwa it can be useful to
+
+
+84
+00:02:37,599 --> 00:02:39,440
+run an audit on your site and while
+
+
+85
+00:02:39,440 --> 00:02:40,800
+we're here you'll also want to know
+
+
+86
+00:02:40,800 --> 00:02:42,879
+about the application tab which allows
+
+
+87
+00:02:42,879 --> 00:02:44,879
+you to analyze and debug information
+
+
+88
+00:02:44,879 --> 00:02:47,120
+related to your app every pwa has a
+
+
+89
+00:02:47,120 --> 00:02:49,360
+manifest file which defines metadata
+
+
+90
+00:02:49,360 --> 00:02:51,440
+about the app and you can view that here
+
+
+91
+00:02:51,440 --> 00:02:54,239
+such as the app name and icons but more
+
+
+92
+00:02:54,239 --> 00:02:55,920
+importantly it tells you whether or not
+
+
+93
+00:02:55,920 --> 00:02:58,080
+a service worker is up and running you
+
+
+94
+00:02:58,080 --> 00:03:00,159
+can also manually trigger events here to
+
+
+95
+00:03:00,159 --> 00:03:02,159
+test things like push notifications and
+
+
+96
+00:03:02,159 --> 00:03:04,159
+background sync your service worker will
+
+
+97
+00:03:04,159 --> 00:03:06,159
+likely cache pages and you can view the
+
+
+98
+00:03:06,159 --> 00:03:08,000
+cache from this tab as well now when you
+
+
+99
+00:03:08,000 --> 00:03:09,680
+hear me talk about service workers and
+
+
+100
+00:03:09,680 --> 00:03:11,440
+caching that may sound like a lot of
+
+
+101
+00:03:11,440 --> 00:03:12,959
+code that you have to write but that's
+
+
+102
+00:03:12,959 --> 00:03:14,959
+actually not the case most of these jobs
+
+
+103
+00:03:14,959 --> 00:03:17,360
+fall into very common use cases and can
+
+
+104
+00:03:17,360 --> 00:03:19,120
+be implemented with minimal code if you
+
+
+105
+00:03:19,120 --> 00:03:21,360
+use a library like workbox as the name
+
+
+106
+00:03:21,360 --> 00:03:23,120
+implies it's a collection of different
+
+
+107
+00:03:23,120 --> 00:03:25,680
+libraries to help you build pwas quickly
+
+
+108
+00:03:25,680 --> 00:03:28,400
+and reliably and it even has a cli tool
+
+
+109
+00:03:28,400 --> 00:03:30,720
+to automatically generate the files and
+
+
+110
+00:03:30,720 --> 00:03:32,720
+assets that you need if you're using a
+
+
+111
+00:03:32,720 --> 00:03:34,239
+front-end framework like react or
+
+
+112
+00:03:34,239 --> 00:03:36,400
+angular you can install it as an npm
+
+
+113
+00:03:36,400 --> 00:03:38,799
+package or you can import it directly
+
+
+114
+00:03:38,799 --> 00:03:40,959
+into your service worker over a cdn
+
+
+115
+00:03:40,959 --> 00:03:43,440
+using the import scripts function but an
+
+
+116
+00:03:43,440 --> 00:03:45,040
+awesome new feature in workbox is
+
+
+117
+00:03:45,040 --> 00:03:47,040
+recipes it allows you to implement
+
+
+118
+00:03:47,040 --> 00:03:49,040
+features very quickly often with just a
+
+
+119
+00:03:49,040 --> 00:03:50,959
+single line of code want to add offline
+
+
+120
+00:03:50,959 --> 00:03:52,720
+fallback to your app it's just a single
+
+
+121
+00:03:52,720 --> 00:03:54,640
+function call and the same goes for an
+
+
+122
+00:03:54,640 --> 00:03:56,879
+image cache google fonts cache and many
+
+
+123
+00:03:56,879 --> 00:03:58,879
+others workbox is awesome but there are
+
+
+124
+00:03:58,879 --> 00:04:00,560
+other libraries out there as well if you
+
+
+125
+00:04:00,560 --> 00:04:02,400
+use a framework like angular it has a
+
+
+126
+00:04:02,400 --> 00:04:04,480
+service worker module built into it and
+
+
+127
+00:04:04,480 --> 00:04:06,720
+when you use the create react app tool
+
+
+128
+00:04:06,720 --> 00:04:08,400
+it automatically generates a service
+
+
+129
+00:04:08,400 --> 00:04:09,840
+worker for you and speaking of
+
+
+130
+00:04:09,840 --> 00:04:11,840
+frameworks if you want to see how pwas
+
+
+131
+00:04:11,840 --> 00:04:13,360
+are implemented in a variety of
+
+
+132
+00:04:13,360 --> 00:04:14,959
+different frameworks check out the
+
+
+133
+00:04:14,959 --> 00:04:17,759
+hacker news pwa site it's a showcase of
+
+
+134
+00:04:17,759 --> 00:04:19,600
+different framework implementations and
+
+
+135
+00:04:19,600 --> 00:04:21,280
+how well they perform compared to each
+
+
+136
+00:04:21,280 --> 00:04:23,120
+other if you're learning to code a great
+
+
+137
+00:04:23,120 --> 00:04:25,199
+project is implementing your own version
+
+
+138
+00:04:25,199 --> 00:04:27,840
+of a hacker news pwa or if you want to
+
+
+139
+00:04:27,840 --> 00:04:29,280
+start with something easier let's go
+
+
+140
+00:04:29,280 --> 00:04:31,759
+ahead and build a pwa right now we only
+
+
+141
+00:04:31,759 --> 00:04:34,320
+need four files an index.html for our
+
+
+142
+00:04:34,320 --> 00:04:36,560
+main webpage a logo
+
+
+143
+00:04:36,560 --> 00:04:39,680
+a manifest.json to describe our app and
+
+
+144
+00:04:39,680 --> 00:04:42,880
+then a serviceworker.js file the html
+
+
+145
+00:04:42,880 --> 00:04:45,040
+needs to reference the manifest and load
+
+
+146
+00:04:45,040 --> 00:04:46,880
+the service worker we can reference the
+
+
+147
+00:04:46,880 --> 00:04:48,880
+manifest with a link tag just like we
+
+
+148
+00:04:48,880 --> 00:04:51,199
+would with a css file then we can add a
+
+
+149
+00:04:51,199 --> 00:04:53,840
+script above the closing body tag and if
+
+
+150
+00:04:53,840 --> 00:04:55,840
+the service worker is supported in this
+
+
+151
+00:04:55,840 --> 00:04:58,080
+browser or in its navigator then we'll
+
+
+152
+00:04:58,080 --> 00:05:00,080
+go ahead and register our service worker
+
+
+153
+00:05:00,080 --> 00:05:02,639
+file now if we open up the manifest.json
+
+
+154
+00:05:02,639 --> 00:05:04,639
+file we can add some information about
+
+
+155
+00:05:04,639 --> 00:05:07,120
+our app which is mostly self-explanatory
+
+
+156
+00:05:07,120 --> 00:05:09,520
+but notice this icons array it's looking
+
+
+157
+00:05:09,520 --> 00:05:12,320
+for icons or images of different sizes
+
+
+158
+00:05:12,320 --> 00:05:14,320
+that can be used as the home screen icon
+
+
+159
+00:05:14,320 --> 00:05:16,160
+for our app we could create all of them
+
+
+160
+00:05:16,160 --> 00:05:18,400
+manually but that would take forever a
+
+
+161
+00:05:18,400 --> 00:05:20,880
+better option is to use the pwa asset
+
+
+162
+00:05:20,880 --> 00:05:24,080
+generator we'll go ahead and run npx pwa
+
+
+163
+00:05:24,080 --> 00:05:25,919
+asset generator then point it to the
+
+
+164
+00:05:25,919 --> 00:05:28,400
+logo file in our project and tell it to
+
+
+165
+00:05:28,400 --> 00:05:30,160
+output the results in the icons
+
+
+166
+00:05:30,160 --> 00:05:32,080
+directory that creates a bunch of images
+
+
+167
+00:05:32,080 --> 00:05:34,000
+for us in no time and if you look at the
+
+
+168
+00:05:34,000 --> 00:05:36,000
+terminal output it'll even give you the
+
+
+169
+00:05:36,000 --> 00:05:38,120
+json that you need to paste into your
+
+
+170
+00:05:38,120 --> 00:05:40,479
+manifest.json file now we just need to
+
+
+171
+00:05:40,479 --> 00:05:42,039
+write a little bit of code in our
+
+
+172
+00:05:42,039 --> 00:05:44,639
+serviceworker.js file to enable caching
+
+
+173
+00:05:44,639 --> 00:05:46,880
+we'll import workbox from a cdn by
+
+
+174
+00:05:46,880 --> 00:05:48,720
+adding a link to the file inside of this
+
+
+175
+00:05:48,720 --> 00:05:50,560
+import scripts function that'll give us
+
+
+176
+00:05:50,560 --> 00:05:52,720
+access to workbox then we can use the
+
+
+177
+00:05:52,720 --> 00:05:55,520
+routing module to register a route that
+
+
+178
+00:05:55,520 --> 00:05:57,280
+matches all the image files in our
+
+
+179
+00:05:57,280 --> 00:05:59,039
+project then once we've matched all the
+
+
+180
+00:05:59,039 --> 00:06:01,199
+files we need to decide on a caching
+
+
+181
+00:06:01,199 --> 00:06:03,520
+strategy in this case we'll use cache
+
+
+182
+00:06:03,520 --> 00:06:05,919
+first which means the pwa will attempt
+
+
+183
+00:06:05,919 --> 00:06:07,919
+to read from the cache instead of going
+
+
+184
+00:06:07,919 --> 00:06:09,440
+over the network if there's something
+
+
+185
+00:06:09,440 --> 00:06:11,039
+available in the cache
+
+
+186
+00:06:11,039 --> 00:06:12,479
+that's great for files that don't change
+
+
+187
+00:06:12,479 --> 00:06:14,400
+often like images but if you have
+
+
+188
+00:06:14,400 --> 00:06:16,160
+something that does change often you
+
+
+189
+00:06:16,160 --> 00:06:17,600
+might want to use a network for a
+
+
+190
+00:06:17,600 --> 00:06:19,600
+strategy which will use the network if
+
+
+191
+00:06:19,600 --> 00:06:21,360
+the app is connected to the internet or
+
+
+192
+00:06:21,360 --> 00:06:23,280
+if it's offline it will fall back to the
+
+
+193
+00:06:23,280 --> 00:06:24,240
+cache
+
+
+194
+00:06:24,240 --> 00:06:25,840
+now let's go ahead and serve the app by
+
+
+195
+00:06:25,840 --> 00:06:27,919
+running npx serve and then open the
+
+
+196
+00:06:27,919 --> 00:06:30,960
+browser to localhost 5000 once there hit
+
+
+197
+00:06:30,960 --> 00:06:33,120
+ctrl shift j to open up the chrome dev
+
+
+198
+00:06:33,120 --> 00:06:34,960
+tools let's start by going to the
+
+
+199
+00:06:34,960 --> 00:06:37,199
+application tab and making sure that we
+
+
+200
+00:06:37,199 --> 00:06:39,039
+have all the icons appearing in our
+
+
+201
+00:06:39,039 --> 00:06:41,600
+manifest that looks good now let's check
+
+
+202
+00:06:41,600 --> 00:06:43,199
+out the service worker and make sure
+
+
+203
+00:06:43,199 --> 00:06:45,280
+that it's up and running that looks good
+
+
+204
+00:06:45,280 --> 00:06:47,360
+as well now we can go to the lighthouse
+
+
+205
+00:06:47,360 --> 00:06:49,520
+tab and run an audit on the app as you
+
+
+206
+00:06:49,520 --> 00:06:51,520
+can see we get a score of 100 on pretty
+
+
+207
+00:06:51,520 --> 00:06:54,000
+much every metric and we get the pwa
+
+
+208
+00:06:54,000 --> 00:06:55,759
+achievement badge meaning this app is
+
+
+209
+00:06:55,759 --> 00:06:57,919
+installable on most mobile devices if
+
+
+210
+00:06:57,919 --> 00:06:59,199
+you already have a website that's
+
+
+211
+00:06:59,199 --> 00:07:00,960
+optimized for mobile it's incredibly
+
+
+212
+00:07:00,960 --> 00:07:03,680
+easy to turn it into a pwa from that
+
+
+213
+00:07:03,680 --> 00:07:05,120
+point you might consider adding an
+
+
+214
+00:07:05,120 --> 00:07:07,039
+install button to your site in different
+
+
+215
+00:07:07,039 --> 00:07:09,199
+locations to prompt the user to install
+
+
+216
+00:07:09,199 --> 00:07:10,720
+the app and there's a number of
+
+
+217
+00:07:10,720 --> 00:07:12,479
+different ux strategies to do that
+
+
+218
+00:07:12,479 --> 00:07:14,240
+successfully now that you know how to
+
+
+219
+00:07:14,240 --> 00:07:16,240
+build a pwa from scratch i want to leave
+
+
+220
+00:07:16,240 --> 00:07:18,240
+you with a few other resources that you
+
+
+221
+00:07:18,240 --> 00:07:20,800
+might use to go further first of all i'm
+
+
+222
+00:07:20,800 --> 00:07:23,199
+working on a new video called 7 things
+
+
+223
+00:07:23,199 --> 00:07:24,880
+you didn't know the web could do it'll
+
+
+224
+00:07:24,880 --> 00:07:26,639
+cover advanced implementations of
+
+
+225
+00:07:26,639 --> 00:07:29,360
+lesser-known browser apis like bluetooth
+
+
+226
+00:07:29,360 --> 00:07:31,919
+device motion idle detection and a bunch
+
+
+227
+00:07:31,919 --> 00:07:33,520
+of others i expect to have that out
+
+
+228
+00:07:33,520 --> 00:07:35,840
+early next week so stay tuned another
+
+
+229
+00:07:35,840 --> 00:07:38,160
+awesome resource is web.dev this
+
+
+230
+00:07:38,160 --> 00:07:39,840
+contains basically everything you would
+
+
+231
+00:07:39,840 --> 00:07:42,400
+ever want to know about pwas as well as
+
+
+232
+00:07:42,400 --> 00:07:45,120
+new and upcoming browser apis if you
+
+
+233
+00:07:45,120 --> 00:07:46,479
+want to make your app available on other
+
+
+234
+00:07:46,479 --> 00:07:48,160
+platforms beyond the web you might want
+
+
+235
+00:07:48,160 --> 00:07:50,000
+to do some research on trusted web
+
+
+236
+00:07:50,000 --> 00:07:52,560
+activities or twas which allow you to
+
+
+237
+00:07:52,560 --> 00:07:54,479
+market your app on the google play store
+
+
+238
+00:07:54,479 --> 00:07:56,960
+alongside android apps and you can also
+
+
+239
+00:07:56,960 --> 00:07:59,520
+market pwas in the microsoft store so
+
+
+240
+00:07:59,520 --> 00:08:01,120
+check out the official documentation for
+
+
+241
+00:08:01,120 --> 00:08:02,879
+that i'm gonna go ahead and wrap things
+
+
+242
+00:08:02,879 --> 00:08:04,560
+up there if this video helped you please
+
+
+243
+00:08:04,560 --> 00:08:06,479
+like and subscribe thanks for watching
+
+
+244
+00:08:06,479 --> 00:08:10,840
+and i will see you in the next one
+
+

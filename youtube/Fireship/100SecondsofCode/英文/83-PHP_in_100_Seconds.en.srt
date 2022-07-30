@@ -1,0 +1,360 @@
+1
+00:00:00,000 --> 00:00:00,240
+[Music]
+
+
+2
+00:00:00,240 --> 00:00:03,040
+php a dynamic interpreted scripting
+
+
+3
+00:00:03,040 --> 00:00:04,720
+language for building interactive
+
+
+4
+00:00:04,720 --> 00:00:06,480
+websites on the server despite the
+
+
+5
+00:00:06,480 --> 00:00:08,320
+haters pronouncing it dead it remains
+
+
+6
+00:00:08,320 --> 00:00:10,000
+one of the most popular languages for
+
+
+7
+00:00:10,000 --> 00:00:11,599
+back-end web development it powers
+
+
+8
+00:00:11,599 --> 00:00:12,960
+content management systems like
+
+
+9
+00:00:12,960 --> 00:00:14,559
+wordpress top-tier websites like
+
+
+10
+00:00:14,559 --> 00:00:16,480
+wikipedia and countless others via
+
+
+11
+00:00:16,480 --> 00:00:18,560
+frameworks like laravel and symphony
+
+
+12
+00:00:18,560 --> 00:00:20,560
+hell man even facebook uses it although
+
+
+13
+00:00:20,560 --> 00:00:22,400
+they built a custom compiler to convert
+
+
+14
+00:00:22,400 --> 00:00:24,080
+it to machine code on their servers it
+
+
+15
+00:00:24,080 --> 00:00:27,119
+was created in 1994 by rasmus lyrdorf to
+
+
+16
+00:00:27,119 --> 00:00:29,359
+manage his personal home page clever
+
+
+17
+00:00:29,359 --> 00:00:30,960
+acronym but it sounds lame for a
+
+
+18
+00:00:30,960 --> 00:00:32,640
+language that powers multi-billion
+
+
+19
+00:00:32,640 --> 00:00:34,640
+dollar enterprises so today we practice
+
+
+20
+00:00:34,640 --> 00:00:36,320
+cognitive dissonance to tell ourselves
+
+
+21
+00:00:36,320 --> 00:00:39,120
+php stands for hypertext preprocessor it
+
+
+22
+00:00:39,120 --> 00:00:40,960
+has a special place in history because
+
+
+23
+00:00:40,960 --> 00:00:42,559
+it predates javascript and was one of
+
+
+24
+00:00:42,559 --> 00:00:44,239
+the first languages to be embedded
+
+
+25
+00:00:44,239 --> 00:00:46,719
+directly in html allowing websites to be
+
+
+26
+00:00:46,719 --> 00:00:48,879
+built dynamically on a server it's open
+
+
+27
+00:00:48,879 --> 00:00:50,800
+source and was one of the technologies
+
+
+28
+00:00:50,800 --> 00:00:52,640
+that revolutionized the web by making
+
+
+29
+00:00:52,640 --> 00:00:54,480
+application development accessible to
+
+
+30
+00:00:54,480 --> 00:00:56,399
+the average person its interpreter is
+
+
+31
+00:00:56,399 --> 00:00:58,480
+implemented in c and has a syntax
+
+
+32
+00:00:58,480 --> 00:01:00,960
+inspired by perl to get started create a
+
+
+33
+00:01:00,960 --> 00:01:03,920
+php file and add some basic html to it
+
+
+34
+00:01:03,920 --> 00:01:06,240
+within this file you can go into php
+
+
+35
+00:01:06,240 --> 00:01:09,360
+mode by opening a question mark php tag
+
+
+36
+00:01:09,360 --> 00:01:10,799
+the code within these tags will be
+
+
+37
+00:01:10,799 --> 00:01:12,960
+rendered on the server use echo to
+
+
+38
+00:01:12,960 --> 00:01:14,799
+output a value and the location of the
+
+
+39
+00:01:14,799 --> 00:01:17,119
+tag to declare a variable give it a name
+
+
+40
+00:01:17,119 --> 00:01:18,799
+that starts with a dollar sign followed
+
+
+41
+00:01:18,799 --> 00:01:21,119
+by a value it's a weekly typed language
+
+
+42
+00:01:21,119 --> 00:01:23,280
+so no type annotations are necessary it
+
+
+43
+00:01:23,280 --> 00:01:24,799
+also comes with a large number of
+
+
+44
+00:01:24,799 --> 00:01:26,720
+predefined variables geared towards web
+
+
+45
+00:01:26,720 --> 00:01:28,880
+development like git post and cookie
+
+
+46
+00:01:28,880 --> 00:01:30,720
+which contain information about the
+
+
+47
+00:01:30,720 --> 00:01:33,200
+incoming http request now when this code
+
+
+48
+00:01:33,200 --> 00:01:34,799
+is rendered on your server it will
+
+
+49
+00:01:34,799 --> 00:01:37,439
+output an html string with the php tags
+
+
+50
+00:01:37,439 --> 00:01:39,280
+being replaced by whatever you echoed
+
+
+51
+00:01:39,280 --> 00:01:40,960
+the language also supports multiple
+
+
+52
+00:01:40,960 --> 00:01:42,640
+programming paradigms you have first
+
+
+53
+00:01:42,640 --> 00:01:44,479
+class functions which can be assigned to
+
+
+54
+00:01:44,479 --> 00:01:46,479
+variables or used anonymously as
+
+
+55
+00:01:46,479 --> 00:01:48,240
+arguments and it has tons and tons of
+
+
+56
+00:01:48,240 --> 00:01:50,000
+built-in functions to do pretty much
+
+
+57
+00:01:50,000 --> 00:01:51,759
+anything a web developer could ever
+
+
+58
+00:01:51,759 --> 00:01:53,920
+imagine doing it also has a complete
+
+
+59
+00:01:53,920 --> 00:01:55,439
+object model where you can define
+
+
+60
+00:01:55,439 --> 00:01:57,680
+classes with inheritance to implement
+
+
+61
+00:01:57,680 --> 00:01:59,600
+object-oriented patterns we're currently
+
+
+62
+00:01:59,600 --> 00:02:01,520
+on php version 8 which has all the
+
+
+63
+00:02:01,520 --> 00:02:03,280
+features you would expect from a modern
+
+
+64
+00:02:03,280 --> 00:02:05,200
+pragmatic language every web developer
+
+
+65
+00:02:05,200 --> 00:02:06,640
+should be familiar with it because
+
+
+66
+00:02:06,640 --> 00:02:09,679
+statistically there's a 78.5 chance that
+
+
+67
+00:02:09,679 --> 00:02:11,200
+your client's website is running the
+
+
+68
+00:02:11,200 --> 00:02:13,040
+personal homepage language this has been
+
+
+69
+00:02:13,040 --> 00:02:15,599
+php in 100 seconds hit the like button
+
+
+70
+00:02:15,599 --> 00:02:16,879
+if you want to see more short videos
+
+
+71
+00:02:16,879 --> 00:02:18,879
+like this thanks for watching and i will
+
+
+72
+00:02:18,879 --> 00:02:22,319
+see you in the next one
+
+

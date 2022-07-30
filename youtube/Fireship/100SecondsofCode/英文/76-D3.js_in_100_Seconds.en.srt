@@ -1,0 +1,345 @@
+1
+00:00:00,240 --> 00:00:03,120
+data driven documents or d3 is a
+
+
+2
+00:00:03,120 --> 00:00:04,880
+javascript library for creating
+
+
+3
+00:00:04,880 --> 00:00:06,879
+interactive data visualizations with
+
+
+4
+00:00:06,879 --> 00:00:08,800
+scalable vector graphics if you've ever
+
+
+5
+00:00:08,800 --> 00:00:11,040
+been to a website that has a graph map
+
+
+6
+00:00:11,040 --> 00:00:12,719
+scatter plot histogram dependency
+
+
+7
+00:00:12,719 --> 00:00:15,120
+diagram b swarm tree map or pie chart
+
+
+8
+00:00:15,120 --> 00:00:17,279
+it's probably powered by d3 under the
+
+
+9
+00:00:17,279 --> 00:00:19,840
+hood it was created in 2011 with the
+
+
+10
+00:00:19,840 --> 00:00:22,160
+goal of generating svg graphics from
+
+
+11
+00:00:22,160 --> 00:00:24,320
+data drawing a data visualization by
+
+
+12
+00:00:24,320 --> 00:00:26,800
+hand is extremely difficult with d3 you
+
+
+13
+00:00:26,800 --> 00:00:28,400
+start with some input data then write
+
+
+14
+00:00:28,400 --> 00:00:30,400
+some javascript to programmatically draw
+
+
+15
+00:00:30,400 --> 00:00:32,079
+the graphic for you which can then be
+
+
+16
+00:00:32,079 --> 00:00:34,160
+made interactive with things like labels
+
+
+17
+00:00:34,160 --> 00:00:35,840
+and controls and when the underlying
+
+
+18
+00:00:35,840 --> 00:00:37,920
+data changes it can interpolate and
+
+
+19
+00:00:37,920 --> 00:00:40,000
+animate between values resulting in a
+
+
+20
+00:00:40,000 --> 00:00:42,000
+beautiful visual for the end user that's
+
+
+21
+00:00:42,000 --> 00:00:43,920
+built entirely on web standards that you
+
+
+22
+00:00:43,920 --> 00:00:46,160
+already know like html css and
+
+
+23
+00:00:46,160 --> 00:00:48,960
+javascript its api allows you to select
+
+
+24
+00:00:48,960 --> 00:00:51,039
+and manipulate items in the dom not much
+
+
+25
+00:00:51,039 --> 00:00:52,640
+different than something like jquery
+
+
+26
+00:00:52,640 --> 00:00:54,559
+what makes d3 different is that you can
+
+
+27
+00:00:54,559 --> 00:00:56,559
+set properties as functions that
+
+
+28
+00:00:56,559 --> 00:00:58,399
+automatically draw different graphics
+
+
+29
+00:00:58,399 --> 00:01:00,480
+based on your data to get started you'll
+
+
+30
+00:01:00,480 --> 00:01:02,160
+first want to grab an element from the
+
+
+31
+00:01:02,160 --> 00:01:04,479
+dom with the select method like an empty
+
+
+32
+00:01:04,479 --> 00:01:06,880
+svg you could then draw a single shape
+
+
+33
+00:01:06,880 --> 00:01:08,960
+inside of it with the append method and
+
+
+34
+00:01:08,960 --> 00:01:10,880
+customize its appearance by chaining the
+
+
+35
+00:01:10,880 --> 00:01:12,720
+attribute method to it that draws a
+
+
+36
+00:01:12,720 --> 00:01:14,799
+single shape but the real power of d3
+
+
+37
+00:01:14,799 --> 00:01:16,720
+comes into play when you attach data to
+
+
+38
+00:01:16,720 --> 00:01:18,799
+a selection instead of using a for loop
+
+
+39
+00:01:18,799 --> 00:01:20,640
+to draw a bunch of shapes the select all
+
+
+40
+00:01:20,640 --> 00:01:22,799
+method allows you to describe how to
+
+
+41
+00:01:22,799 --> 00:01:24,400
+draw shape making your code more
+
+
+42
+00:01:24,400 --> 00:01:26,320
+declarative you can then attach data to
+
+
+43
+00:01:26,320 --> 00:01:27,920
+it in the form of an array or an
+
+
+44
+00:01:27,920 --> 00:01:29,840
+external file and it will draw a shape
+
+
+45
+00:01:29,840 --> 00:01:31,759
+for every point in your data set each
+
+
+46
+00:01:31,759 --> 00:01:34,159
+point has three possible states enter
+
+
+47
+00:01:34,159 --> 00:01:36,400
+update and exit enter is when you would
+
+
+48
+00:01:36,400 --> 00:01:38,560
+initially draw your shape but d3 also
+
+
+49
+00:01:38,560 --> 00:01:40,479
+keeps track of changes to the data set
+
+
+50
+00:01:40,479 --> 00:01:42,479
+allowing you to react when data is
+
+
+51
+00:01:42,479 --> 00:01:44,640
+updated or removed it also provides a
+
+
+52
+00:01:44,640 --> 00:01:46,399
+bunch of features to make your data look
+
+
+53
+00:01:46,399 --> 00:01:47,840
+beautiful like helpers that
+
+
+54
+00:01:47,840 --> 00:01:49,840
+automatically draw scales along the x
+
+
+55
+00:01:49,840 --> 00:01:52,479
+and y axis based on the domain and range
+
+
+56
+00:01:52,479 --> 00:01:54,479
+of the data or you might use transition
+
+
+57
+00:01:54,479 --> 00:01:56,479
+to create an animation as each data
+
+
+58
+00:01:56,479 --> 00:01:58,399
+point is added to the chart and finally
+
+
+59
+00:01:58,399 --> 00:02:00,079
+you might listen to events to add
+
+
+60
+00:02:00,079 --> 00:02:02,320
+tooltips or other interactive elements
+
+
+61
+00:02:02,320 --> 00:02:05,280
+to your chart this has been d3js in 100
+
+
+62
+00:02:05,280 --> 00:02:06,719
+seconds if you want to see more short
+
+
+63
+00:02:06,719 --> 00:02:08,560
+videos like this hit the like button and
+
+
+64
+00:02:08,560 --> 00:02:10,160
+subscribe and if you want to go beyond
+
+
+65
+00:02:10,160 --> 00:02:12,480
+100 seconds there's a new fireship pro
+
+
+66
+00:02:12,480 --> 00:02:14,480
+lesson about building a real-time chart
+
+
+67
+00:02:14,480 --> 00:02:16,480
+with d3 and firestore thanks for
+
+
+68
+00:02:16,480 --> 00:02:18,400
+watching and i will see you in the next
+
+
+69
+00:02:18,400 --> 00:02:21,400
+one
+
+

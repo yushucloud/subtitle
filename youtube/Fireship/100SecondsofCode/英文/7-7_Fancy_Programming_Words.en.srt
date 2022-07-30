@@ -1,0 +1,1430 @@
+1
+00:00:00,160 --> 00:00:01,839
+in a recent technical interview i was
+
+
+2
+00:00:01,839 --> 00:00:03,679
+asked to debug the redux effect for the
+
+
+3
+00:00:03,679 --> 00:00:05,200
+lunar wayne shaft on a turbo
+
+
+4
+00:00:05,200 --> 00:00:07,120
+encapsulator but i failed because my
+
+
+5
+00:00:07,120 --> 00:00:08,559
+asynchronous anonymous function
+
+
+6
+00:00:08,559 --> 00:00:10,480
+abstraction was not item potent or
+
+
+7
+00:00:10,480 --> 00:00:12,320
+ephemeral and failed to memorize the
+
+
+8
+00:00:12,320 --> 00:00:14,240
+predicate and serialize the output
+
+
+9
+00:00:14,240 --> 00:00:15,759
+it's one thing if your code doesn't work
+
+
+10
+00:00:15,759 --> 00:00:17,680
+but it's impossible to fix if you don't
+
+
+11
+00:00:17,680 --> 00:00:19,119
+understand the words that describe the
+
+
+12
+00:00:19,119 --> 00:00:19,600
+problem
+
+
+13
+00:00:19,600 --> 00:00:21,039
+when you learn the code you not only
+
+
+14
+00:00:21,039 --> 00:00:22,800
+have to learn a programming language but
+
+
+15
+00:00:22,800 --> 00:00:24,320
+also a bunch of fancy words
+
+
+16
+00:00:24,320 --> 00:00:25,760
+that you would never use in a normal
+
+
+17
+00:00:25,760 --> 00:00:27,599
+conversation in today's video
+
+
+18
+00:00:27,599 --> 00:00:29,599
+we'll unpack and define a variety of
+
+
+19
+00:00:29,599 --> 00:00:31,119
+different technical words that you'll
+
+
+20
+00:00:31,119 --> 00:00:32,880
+definitely need to know for interviews
+
+
+21
+00:00:32,880 --> 00:00:34,800
+and your day-to-day work as a programmer
+
+
+22
+00:00:34,800 --> 00:00:37,440
+but first a quick word from our sponsor
+
+
+23
+00:00:37,440 --> 00:00:39,120
+work has been proceeding on the crudely
+
+
+24
+00:00:39,120 --> 00:00:40,879
+conceived idea of an instrument that
+
+
+25
+00:00:40,879 --> 00:00:42,000
+would not only provide
+
+
+26
+00:00:42,000 --> 00:00:43,920
+inverse reactive current for use in
+
+
+27
+00:00:43,920 --> 00:00:46,399
+unilateral phase detractors
+
+
+28
+00:00:46,399 --> 00:00:48,000
+but would also be capable of
+
+
+29
+00:00:48,000 --> 00:00:49,600
+automatically synchronizing cardinal
+
+
+30
+00:00:49,600 --> 00:00:50,640
+gram meters
+
+
+31
+00:00:50,640 --> 00:00:53,440
+rockwell automation's retro encapsulator
+
+
+32
+00:00:53,440 --> 00:00:55,039
+it's available soon
+
+
+33
+00:00:55,039 --> 00:00:56,879
+wherever rockwell automation products
+
+
+34
+00:00:56,879 --> 00:00:58,640
+are sold
+
+
+35
+00:00:58,640 --> 00:01:01,680
+item potent item potent the key part of
+
+
+36
+00:01:01,680 --> 00:01:02,239
+this word
+
+
+37
+00:01:02,239 --> 00:01:04,559
+is item which is latin for same the word
+
+
+38
+00:01:04,559 --> 00:01:06,479
+was coined in the 1800s in the context
+
+
+39
+00:01:06,479 --> 00:01:08,640
+of mathematics and it means an operation
+
+
+40
+00:01:08,640 --> 00:01:10,320
+that when applied multiple times will
+
+
+41
+00:01:10,320 --> 00:01:11,840
+always produce the same result for
+
+
+42
+00:01:11,840 --> 00:01:12,400
+example
+
+
+43
+00:01:12,400 --> 00:01:14,400
+multiplying by one multiple times always
+
+
+44
+00:01:14,400 --> 00:01:15,759
+produces the same result
+
+
+45
+00:01:15,759 --> 00:01:17,840
+that's an item potent operation unlike
+
+
+46
+00:01:17,840 --> 00:01:19,840
+multiplying by two which always produces
+
+
+47
+00:01:19,840 --> 00:01:20,960
+a different result
+
+
+48
+00:01:20,960 --> 00:01:22,880
+think of a crosswalk button if you push
+
+
+49
+00:01:22,880 --> 00:01:24,960
+it multiple times does it go any faster
+
+
+50
+00:01:24,960 --> 00:01:26,880
+no that's because it's an item potent
+
+
+51
+00:01:26,880 --> 00:01:28,880
+system in programming it means the same
+
+
+52
+00:01:28,880 --> 00:01:29,200
+thing
+
+
+53
+00:01:29,200 --> 00:01:31,040
+an operation or function that can be
+
+
+54
+00:01:31,040 --> 00:01:32,799
+called multiple times creating the same
+
+
+55
+00:01:32,799 --> 00:01:34,079
+output or side effect
+
+
+56
+00:01:34,079 --> 00:01:36,079
+for example if we have an array and we
+
+
+57
+00:01:36,079 --> 00:01:37,840
+push a new element to that array it's
+
+
+58
+00:01:37,840 --> 00:01:39,360
+making the array longer even if it's the
+
+
+59
+00:01:39,360 --> 00:01:40,079
+same element
+
+
+60
+00:01:40,079 --> 00:01:42,560
+so that is not item potent if we use a
+
+
+61
+00:01:42,560 --> 00:01:43,600
+set on the other hand
+
+
+62
+00:01:43,600 --> 00:01:45,280
+we can run the same operation multiple
+
+
+63
+00:01:45,280 --> 00:01:47,040
+times and it only keeps the unique
+
+
+64
+00:01:47,040 --> 00:01:47,600
+element
+
+
+65
+00:01:47,600 --> 00:01:49,759
+therefore adding an item to a set is
+
+
+66
+00:01:49,759 --> 00:01:51,759
+item potent this term comes to play most
+
+
+67
+00:01:51,759 --> 00:01:52,240
+often
+
+
+68
+00:01:52,240 --> 00:01:55,360
+in the context of apis the http verbs of
+
+
+69
+00:01:55,360 --> 00:01:55,759
+git
+
+
+70
+00:01:55,759 --> 00:01:57,360
+put and delete should always be
+
+
+71
+00:01:57,360 --> 00:01:59,280
+implemented in an item-potent way
+
+
+72
+00:01:59,280 --> 00:02:00,960
+in addition if you have an e-commerce
+
+
+73
+00:02:00,960 --> 00:02:02,560
+app where a user can submit a payment
+
+
+74
+00:02:02,560 --> 00:02:04,240
+you likely want that operation to be
+
+
+75
+00:02:04,240 --> 00:02:06,079
+item potent as well because posting the
+
+
+76
+00:02:06,079 --> 00:02:06,719
+same form
+
+
+77
+00:02:06,719 --> 00:02:08,399
+shouldn't result in multiple charges to
+
+
+78
+00:02:08,399 --> 00:02:10,560
+that customer ephemeral
+
+
+79
+00:02:10,560 --> 00:02:12,560
+ephemeral it comes from the greek word
+
+
+80
+00:02:12,560 --> 00:02:15,200
+ephemeros which means lasting only a day
+
+
+81
+00:02:15,200 --> 00:02:16,879
+think of an ephemeral plant like a
+
+
+82
+00:02:16,879 --> 00:02:18,959
+daylily whose flowers only last for a
+
+
+83
+00:02:18,959 --> 00:02:19,280
+day
+
+
+84
+00:02:19,280 --> 00:02:21,440
+in programming it's an antonym for terms
+
+
+85
+00:02:21,440 --> 00:02:23,200
+like persistent and immutable
+
+
+86
+00:02:23,200 --> 00:02:24,800
+at the hardware level your ram is
+
+
+87
+00:02:24,800 --> 00:02:26,480
+ephemeral while the hard disk is
+
+
+88
+00:02:26,480 --> 00:02:27,200
+persistent
+
+
+89
+00:02:27,200 --> 00:02:28,640
+when you shut down your computer any
+
+
+90
+00:02:28,640 --> 00:02:30,319
+memory in the ram is lost
+
+
+91
+00:02:30,319 --> 00:02:32,000
+while the data in the hard disk can be
+
+
+92
+00:02:32,000 --> 00:02:34,000
+retrieved later the term is also used to
+
+
+93
+00:02:34,000 --> 00:02:35,840
+define data structures within our code
+
+
+94
+00:02:35,840 --> 00:02:36,640
+for example
+
+
+95
+00:02:36,640 --> 00:02:38,720
+a plain javascript object is considered
+
+
+96
+00:02:38,720 --> 00:02:40,480
+ephemeral that's because we can mutate
+
+
+97
+00:02:40,480 --> 00:02:42,160
+its properties and have no way to get
+
+
+98
+00:02:42,160 --> 00:02:43,680
+back to the original object
+
+
+99
+00:02:43,680 --> 00:02:45,680
+however we can make it persistent or
+
+
+100
+00:02:45,680 --> 00:02:47,840
+immutable there's a bonus word for you
+
+
+101
+00:02:47,840 --> 00:02:49,840
+by calling object freeze which will
+
+
+102
+00:02:49,840 --> 00:02:51,840
+prevent any future modifications to the
+
+
+103
+00:02:51,840 --> 00:02:52,480
+object
+
+
+104
+00:02:52,480 --> 00:02:53,920
+but the place you might hear ephemeral
+
+
+105
+00:02:53,920 --> 00:02:56,000
+used most often is within the context of
+
+
+106
+00:02:56,000 --> 00:02:57,040
+cloud computing
+
+
+107
+00:02:57,040 --> 00:02:58,480
+many things in the cloud are becoming
+
+
+108
+00:02:58,480 --> 00:03:00,480
+serverless instead of a persistent
+
+
+109
+00:03:00,480 --> 00:03:02,239
+server always running in the cloud
+
+
+110
+00:03:02,239 --> 00:03:17,760
+we can use ephemeral servers
+
+
+111
+00:03:17,760 --> 00:03:19,760
+anonymous first and foremost the word is
+
+
+112
+00:03:19,760 --> 00:03:21,440
+used to describe a global group of
+
+
+113
+00:03:21,440 --> 00:03:22,959
+hacktivists that fight against things
+
+
+114
+00:03:22,959 --> 00:03:24,720
+like censorship and big government i
+
+
+115
+00:03:24,720 --> 00:03:26,080
+would highly recommend that you sign up
+
+
+116
+00:03:26,080 --> 00:03:27,920
+and put that on your resume today
+
+
+117
+00:03:27,920 --> 00:03:29,920
+but the word anonymous is also used in
+
+
+118
+00:03:29,920 --> 00:03:32,239
+our code primarily to define functions
+
+
+119
+00:03:32,239 --> 00:03:34,400
+that don't have a name take for example
+
+
+120
+00:03:34,400 --> 00:03:35,680
+a javascript function
+
+
+121
+00:03:35,680 --> 00:03:37,519
+or a python function if you prefer that
+
+
+122
+00:03:37,519 --> 00:03:39,519
+takes an argument and multiplies it by
+
+
+123
+00:03:39,519 --> 00:03:39,840
+two
+
+
+124
+00:03:39,840 --> 00:03:41,840
+what we have here is a named function
+
+
+125
+00:03:41,840 --> 00:03:43,680
+but it becomes cumbersome to pass name
+
+
+126
+00:03:43,680 --> 00:03:44,879
+functions around everywhere
+
+
+127
+00:03:44,879 --> 00:03:46,239
+especially as your code grows in
+
+
+128
+00:03:46,239 --> 00:03:47,920
+complexity and that's where anonymous
+
+
+129
+00:03:47,920 --> 00:03:49,760
+functions come in they're just functions
+
+
+130
+00:03:49,760 --> 00:03:51,840
+that don't have a name instead the
+
+
+131
+00:03:51,840 --> 00:03:53,840
+function is defined as the argument
+
+
+132
+00:03:53,840 --> 00:03:54,959
+therefore it doesn't need to be
+
+
+133
+00:03:54,959 --> 00:03:56,959
+referenced by a name in javascript we
+
+
+134
+00:03:56,959 --> 00:03:58,560
+can use an anonymous function with the
+
+
+135
+00:03:58,560 --> 00:03:59,680
+arrow syntax
+
+
+136
+00:03:59,680 --> 00:04:02,080
+but many other languages like python use
+
+
+137
+00:04:02,080 --> 00:04:03,760
+the lambda keyword to define an
+
+
+138
+00:04:03,760 --> 00:04:04,799
+anonymous function
+
+
+139
+00:04:04,799 --> 00:04:06,799
+the syntax feels a little weird at first
+
+
+140
+00:04:06,799 --> 00:04:08,560
+but is incredibly useful for small
+
+
+141
+00:04:08,560 --> 00:04:09,519
+simple functions as
+
+
+142
+00:04:09,519 --> 00:04:12,000
+arguments now speaking of functions that
+
+
+143
+00:04:12,000 --> 00:04:13,680
+brings us to our next fancy word
+
+
+144
+00:04:13,680 --> 00:04:15,519
+predicate the word has its roots in
+
+
+145
+00:04:15,519 --> 00:04:17,199
+latin for something declared or
+
+
+146
+00:04:17,199 --> 00:04:18,160
+proclaimed
+
+
+147
+00:04:18,160 --> 00:04:20,000
+in programming it most often means a
+
+
+148
+00:04:20,000 --> 00:04:22,000
+function that returns a single boolean
+
+
+149
+00:04:22,000 --> 00:04:22,560
+value
+
+
+150
+00:04:22,560 --> 00:04:24,800
+true or false by convention you'll often
+
+
+151
+00:04:24,800 --> 00:04:26,400
+see these functions start with the word
+
+
+152
+00:04:26,400 --> 00:04:28,880
+is is the value a turkey it's a simple
+
+
+153
+00:04:28,880 --> 00:04:30,000
+yes or no question
+
+
+154
+00:04:30,000 --> 00:04:32,080
+so we can return a boolean you might see
+
+
+155
+00:04:32,080 --> 00:04:33,759
+the word predicate come up more often
+
+
+156
+00:04:33,759 --> 00:04:35,199
+and strongly type languages like
+
+
+157
+00:04:35,199 --> 00:04:37,280
+typescript one cool thing we can do is
+
+
+158
+00:04:37,280 --> 00:04:37,919
+set up type
+
+
+159
+00:04:37,919 --> 00:04:40,000
+guards take for example this code where
+
+
+160
+00:04:40,000 --> 00:04:41,520
+we have an interface of a dog that can
+
+
+161
+00:04:41,520 --> 00:04:42,000
+bark
+
+
+162
+00:04:42,000 --> 00:04:44,000
+and a cat that can meow then we have a
+
+
+163
+00:04:44,000 --> 00:04:45,600
+function called make sound
+
+
+164
+00:04:45,600 --> 00:04:48,000
+that can take either a cat or a dog a
+
+
+165
+00:04:48,000 --> 00:04:48,720
+union type
+
+
+166
+00:04:48,720 --> 00:04:50,400
+as its argument the problem with this
+
+
+167
+00:04:50,400 --> 00:04:51,840
+code is that we don't know whether we
+
+
+168
+00:04:51,840 --> 00:04:54,240
+have a cat or a dog in the function body
+
+
+169
+00:04:54,240 --> 00:04:56,400
+however we can overcome this limitation
+
+
+170
+00:04:56,400 --> 00:04:58,080
+by setting up a predicate function
+
+
+171
+00:04:58,080 --> 00:04:59,840
+that checks whether or not the animal is
+
+
+172
+00:04:59,840 --> 00:05:01,840
+a cat if we then use the predicate or
+
+
+173
+00:05:01,840 --> 00:05:03,600
+type guard in our function body
+
+
+174
+00:05:03,600 --> 00:05:05,520
+typescript is smart enough to infer the
+
+
+175
+00:05:05,520 --> 00:05:07,120
+types based on this condition
+
+
+176
+00:05:07,120 --> 00:05:09,280
+if it's a cat we meow otherwise it has
+
+
+177
+00:05:09,280 --> 00:05:11,759
+to be a dog in which case we bark
+
+
+178
+00:05:11,759 --> 00:05:15,039
+memoization memoization i'm not sure if
+
+
+179
+00:05:15,039 --> 00:05:16,720
+this word means memo like a written
+
+
+180
+00:05:16,720 --> 00:05:17,280
+message
+
+
+181
+00:05:17,280 --> 00:05:19,360
+or memo like memory and although it
+
+
+182
+00:05:19,360 --> 00:05:20,639
+sounds like a scary word
+
+
+183
+00:05:20,639 --> 00:05:22,560
+it just means to cache the return value
+
+
+184
+00:05:22,560 --> 00:05:24,000
+of a function if you've ever used
+
+
+185
+00:05:24,000 --> 00:05:25,919
+react you might be familiar with the use
+
+
+186
+00:05:25,919 --> 00:05:28,479
+memo hook it creates a memoized value
+
+
+187
+00:05:28,479 --> 00:05:30,320
+by only re-running the function when its
+
+
+188
+00:05:30,320 --> 00:05:31,520
+dependencies change
+
+
+189
+00:05:31,520 --> 00:05:33,680
+the classic example is the fibonacci
+
+
+190
+00:05:33,680 --> 00:05:35,360
+sequence here we have a recursive
+
+
+191
+00:05:35,360 --> 00:05:35,919
+function
+
+
+192
+00:05:35,919 --> 00:05:37,680
+this function works but it needs to
+
+
+193
+00:05:37,680 --> 00:05:39,680
+recompute the same values over and over
+
+
+194
+00:05:39,680 --> 00:05:40,080
+again
+
+
+195
+00:05:40,080 --> 00:05:42,240
+we can optimize it by creating an empty
+
+
+196
+00:05:42,240 --> 00:05:44,240
+object and then when our function runs a
+
+
+197
+00:05:44,240 --> 00:05:45,120
+computation
+
+
+198
+00:05:45,120 --> 00:05:47,680
+it will save the value in this object
+
+
+199
+00:05:47,680 --> 00:05:49,039
+that means when we encounter the same
+
+
+200
+00:05:49,039 --> 00:05:49,919
+value again
+
+
+201
+00:05:49,919 --> 00:05:51,680
+we can use the value in memory instead
+
+
+202
+00:05:51,680 --> 00:05:53,680
+of recomputing it multiple times
+
+
+203
+00:05:53,680 --> 00:05:55,840
+when you hear the word memoization just
+
+
+204
+00:05:55,840 --> 00:05:57,039
+think memorization
+
+
+205
+00:05:57,039 --> 00:05:59,199
+of a return value from a function
+
+
+206
+00:05:59,199 --> 00:06:00,319
+abstraction
+
+
+207
+00:06:00,319 --> 00:06:02,639
+abstraction this word is derived from
+
+
+208
+00:06:02,639 --> 00:06:05,120
+the latin abs which means from
+
+
+209
+00:06:05,120 --> 00:06:06,960
+here which means draw so it roughly
+
+
+210
+00:06:06,960 --> 00:06:08,800
+translates to drawn from
+
+
+211
+00:06:08,800 --> 00:06:10,240
+in the most general sense it's the
+
+
+212
+00:06:10,240 --> 00:06:12,479
+process of hiding implementation details
+
+
+213
+00:06:12,479 --> 00:06:13,680
+from the end user
+
+
+214
+00:06:13,680 --> 00:06:15,759
+programming is like an onion it's layer
+
+
+215
+00:06:15,759 --> 00:06:17,520
+upon layer of abstractions
+
+
+216
+00:06:17,520 --> 00:06:19,039
+when you build an application you're
+
+
+217
+00:06:19,039 --> 00:06:20,960
+doing it on top of programming languages
+
+
+218
+00:06:20,960 --> 00:06:21,840
+and apis
+
+
+219
+00:06:21,840 --> 00:06:23,919
+that sit on top of networks and hardware
+
+
+220
+00:06:23,919 --> 00:06:25,440
+that sit on top of transistors and
+
+
+221
+00:06:25,440 --> 00:06:27,199
+electricity and so on
+
+
+222
+00:06:27,199 --> 00:06:28,800
+as a programmer you've likely heard the
+
+
+223
+00:06:28,800 --> 00:06:30,800
+phrase do not repeat yourself or
+
+
+224
+00:06:30,800 --> 00:06:33,199
+write dry code in this example we have a
+
+
+225
+00:06:33,199 --> 00:06:35,440
+shark and a tuna and both classes have
+
+
+226
+00:06:35,440 --> 00:06:37,360
+the same implementation details for
+
+
+227
+00:06:37,360 --> 00:06:38,560
+their swim method
+
+
+228
+00:06:38,560 --> 00:06:40,400
+rather than duplicate this code for each
+
+
+229
+00:06:40,400 --> 00:06:42,240
+class definition we can create an
+
+
+230
+00:06:42,240 --> 00:06:43,840
+abstract class called phish
+
+
+231
+00:06:43,840 --> 00:06:45,919
+the abstract keyword means this class
+
+
+232
+00:06:45,919 --> 00:06:47,919
+will never be instantiated on its own
+
+
+233
+00:06:47,919 --> 00:06:49,360
+because there is no such thing as a
+
+
+234
+00:06:49,360 --> 00:06:50,479
+generic fish
+
+
+235
+00:06:50,479 --> 00:06:52,639
+instead it's used to hide implementation
+
+
+236
+00:06:52,639 --> 00:06:54,720
+details that can be inherited from other
+
+
+237
+00:06:54,720 --> 00:06:55,440
+classes
+
+
+238
+00:06:55,440 --> 00:06:57,280
+which we can do by extending them with
+
+
+239
+00:06:57,280 --> 00:06:58,720
+the abstract class
+
+
+240
+00:06:58,720 --> 00:07:00,400
+and that's just one of many ways you can
+
+
+241
+00:07:00,400 --> 00:07:02,240
+create an abstraction in your code
+
+
+242
+00:07:02,240 --> 00:07:03,840
+the word itself really just means to
+
+
+243
+00:07:03,840 --> 00:07:06,840
+hide unnecessary implementation details
+
+
+244
+00:07:06,840 --> 00:07:10,000
+serialization serialization
+
+
+245
+00:07:10,000 --> 00:07:11,520
+this word comes from the english word
+
+
+246
+00:07:11,520 --> 00:07:13,360
+series which is just a collection of
+
+
+247
+00:07:13,360 --> 00:07:14,960
+items in a fixed order
+
+
+248
+00:07:14,960 --> 00:07:16,400
+in the programming world there's all
+
+
+249
+00:07:16,400 --> 00:07:18,240
+kinds of different languages and formats
+
+
+250
+00:07:18,240 --> 00:07:20,319
+and we often need to interop between
+
+
+251
+00:07:20,319 --> 00:07:21,599
+these different tools
+
+
+252
+00:07:21,599 --> 00:07:23,759
+java doesn't know how to understand php
+
+
+253
+00:07:23,759 --> 00:07:25,280
+code but what we can do
+
+
+254
+00:07:25,280 --> 00:07:27,199
+is take code from either language and
+
+
+255
+00:07:27,199 --> 00:07:28,960
+serialize it into a format that they
+
+
+256
+00:07:28,960 --> 00:07:30,000
+both understand
+
+
+257
+00:07:30,000 --> 00:07:32,319
+like binary then it can be deserialized
+
+
+258
+00:07:32,319 --> 00:07:34,639
+back into code that can be used natively
+
+
+259
+00:07:34,639 --> 00:07:36,800
+take for example a javascript app and a
+
+
+260
+00:07:36,800 --> 00:07:39,280
+python app that communicate over an api
+
+
+261
+00:07:39,280 --> 00:07:41,199
+we have a javascript object that we want
+
+
+262
+00:07:41,199 --> 00:07:43,520
+to use in our python app as a dictionary
+
+
+263
+00:07:43,520 --> 00:07:44,800
+before we send the object from
+
+
+264
+00:07:44,800 --> 00:07:47,840
+javascript we serialize it as a string
+
+
+265
+00:07:47,840 --> 00:07:49,840
+json is a standard format that can be
+
+
+266
+00:07:49,840 --> 00:07:51,440
+understood by virtually all modern
+
+
+267
+00:07:51,440 --> 00:07:52,400
+languages
+
+
+268
+00:07:52,400 --> 00:07:54,160
+that's how we serialize a javascript
+
+
+269
+00:07:54,160 --> 00:07:56,080
+object then we can go back into our
+
+
+270
+00:07:56,080 --> 00:07:56,960
+python code
+
+
+271
+00:07:56,960 --> 00:08:00,000
+and deserialize it by using json loads
+
+
+272
+00:08:00,000 --> 00:08:01,280
+the bottom line here is that
+
+
+273
+00:08:01,280 --> 00:08:03,039
+serialization is the process
+
+
+274
+00:08:03,039 --> 00:08:05,280
+of taking data from one format and
+
+
+275
+00:08:05,280 --> 00:08:07,120
+converting it to a more generic form
+
+
+276
+00:08:07,120 --> 00:08:09,280
+that can be used by other programs i'm
+
+
+277
+00:08:09,280 --> 00:08:10,319
+going to go ahead and wrap things up
+
+
+278
+00:08:10,319 --> 00:08:10,639
+there
+
+
+279
+00:08:10,639 --> 00:08:12,080
+if this video helped you please like and
+
+
+280
+00:08:12,080 --> 00:08:13,759
+subscribe thanks for watching
+
+
+281
+00:08:13,759 --> 00:08:15,919
+and i will see you in the next one the
+
+
+282
+00:08:15,919 --> 00:08:17,680
+lineup consisted simply of six
+
+
+283
+00:08:17,680 --> 00:08:19,759
+hydrocoptic marshall veins
+
+
+284
+00:08:19,759 --> 00:08:22,080
+so fitted to the ambifacent lunar wane
+
+
+285
+00:08:22,080 --> 00:08:24,000
+shaft that side fumbling was
+
+
+286
+00:08:24,000 --> 00:08:27,120
+effectively prevented
+
+

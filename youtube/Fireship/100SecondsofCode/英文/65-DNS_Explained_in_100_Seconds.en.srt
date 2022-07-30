@@ -1,0 +1,385 @@
+1
+00:00:00,320 --> 00:00:02,879
+the domain name system or dns is like
+
+
+2
+00:00:02,879 --> 00:00:04,799
+the phone book of the internet it maps
+
+
+3
+00:00:04,799 --> 00:00:09,320
+human readable urls or host names like
+
+
+4
+00:00:09,320 --> 00:00:10,480
+www.fireship.io
+
+
+5
+00:00:10,480 --> 00:00:12,719
+to the ip address of the server that
+
+
+6
+00:00:12,719 --> 00:00:14,960
+hosts that site when you type a url into
+
+
+7
+00:00:14,960 --> 00:00:15,599
+the browser
+
+
+8
+00:00:15,599 --> 00:00:18,000
+it makes a dns query to figure out which
+
+
+9
+00:00:18,000 --> 00:00:19,199
+unique ip address
+
+
+10
+00:00:19,199 --> 00:00:21,520
+is associated with that hostname first
+
+
+11
+00:00:21,520 --> 00:00:22,960
+it'll attempt to look in the local
+
+
+12
+00:00:22,960 --> 00:00:25,119
+browser or operating system cache
+
+
+13
+00:00:25,119 --> 00:00:26,880
+but if the cache is empty then we need
+
+
+14
+00:00:26,880 --> 00:00:28,640
+to look up the ip address in the phone
+
+
+15
+00:00:28,640 --> 00:00:30,480
+book which is the job of a server
+
+
+16
+00:00:30,480 --> 00:00:33,200
+known as the dns recursive resolver it's
+
+
+17
+00:00:33,200 --> 00:00:33,920
+recursive
+
+
+18
+00:00:33,920 --> 00:00:35,280
+because it needs to make multiple
+
+
+19
+00:00:35,280 --> 00:00:37,360
+requests to other servers starting with
+
+
+20
+00:00:37,360 --> 00:00:39,440
+the root name server which itself will
+
+
+21
+00:00:39,440 --> 00:00:41,360
+respond with the address of a top level
+
+
+22
+00:00:41,360 --> 00:00:43,760
+domain dns server which stores data
+
+
+23
+00:00:43,760 --> 00:00:45,520
+about top level domains like
+
+
+24
+00:00:45,520 --> 00:00:47,520
+com or dot io the resolver makes a
+
+
+25
+00:00:47,520 --> 00:00:49,440
+request there which will respond with
+
+
+26
+00:00:49,440 --> 00:00:51,680
+the ip address of the authoritative name
+
+
+27
+00:00:51,680 --> 00:00:52,239
+server
+
+
+28
+00:00:52,239 --> 00:00:53,840
+that's the final source of truth that
+
+
+29
+00:00:53,840 --> 00:00:55,920
+contains the requested website's ip
+
+
+30
+00:00:55,920 --> 00:00:57,600
+address that gets sent back down to the
+
+
+31
+00:00:57,600 --> 00:00:58,000
+client
+
+
+32
+00:00:58,000 --> 00:01:00,160
+and is cached for future use that sounds
+
+
+33
+00:01:00,160 --> 00:01:02,079
+complicated but it all happens within a
+
+
+34
+00:01:02,079 --> 00:01:03,199
+fraction of a second
+
+
+35
+00:01:03,199 --> 00:01:04,720
+you can think of it as a globally
+
+
+36
+00:01:04,720 --> 00:01:06,560
+distributed database that handles more
+
+
+37
+00:01:06,560 --> 00:01:08,320
+requests than any other database in the
+
+
+38
+00:01:08,320 --> 00:01:08,720
+world
+
+
+39
+00:01:08,720 --> 00:01:10,479
+when you register a domain name it's
+
+
+40
+00:01:10,479 --> 00:01:12,000
+handled by a registrar
+
+
+41
+00:01:12,000 --> 00:01:13,439
+accredited by the non-profit
+
+
+42
+00:01:13,439 --> 00:01:15,680
+organization icann the record is then
+
+
+43
+00:01:15,680 --> 00:01:18,000
+maintained by a registry operator who
+
+
+44
+00:01:18,000 --> 00:01:20,159
+stores your dns settings and propagates
+
+
+45
+00:01:20,159 --> 00:01:20,720
+them to
+
+
+46
+00:01:20,720 --> 00:01:22,799
+other dns servers around the world as
+
+
+47
+00:01:22,799 --> 00:01:24,720
+the registrant you'll be assigned a zone
+
+
+48
+00:01:24,720 --> 00:01:26,000
+file where you can configure
+
+
+49
+00:01:26,000 --> 00:01:28,240
+the settings of your domain every zone
+
+
+50
+00:01:28,240 --> 00:01:29,840
+has a startup authority record
+
+
+51
+00:01:29,840 --> 00:01:31,840
+to tell other dns servers who's in
+
+
+52
+00:01:31,840 --> 00:01:32,960
+charge of that domain
+
+
+53
+00:01:32,960 --> 00:01:34,799
+but most importantly we have the a
+
+
+54
+00:01:34,799 --> 00:01:36,240
+record it means address
+
+
+55
+00:01:36,240 --> 00:01:38,880
+and maps a domain or subdomain to the ip
+
+
+56
+00:01:38,880 --> 00:01:39,840
+address of its host
+
+
+57
+00:01:39,840 --> 00:01:41,520
+in other cases though we may want to
+
+
+58
+00:01:41,520 --> 00:01:43,680
+forward a domain to another domain on
+
+
+59
+00:01:43,680 --> 00:01:44,320
+the internet
+
+
+60
+00:01:44,320 --> 00:01:46,560
+instead of an ip address in which case a
+
+
+61
+00:01:46,560 --> 00:01:48,720
+canonical name or cname record would be
+
+
+62
+00:01:48,720 --> 00:01:49,119
+used
+
+
+63
+00:01:49,119 --> 00:01:51,439
+we have mx records for email and we can
+
+
+64
+00:01:51,439 --> 00:01:53,600
+store arbitrary data with text records
+
+
+65
+00:01:53,600 --> 00:01:54,000
+which is
+
+
+66
+00:01:54,000 --> 00:01:55,680
+often used to communicate with third
+
+
+67
+00:01:55,680 --> 00:01:57,680
+parties to verify ownership of the
+
+
+68
+00:01:57,680 --> 00:02:00,000
+domain and finally we have the ns or
+
+
+69
+00:02:00,000 --> 00:02:01,920
+name server record a url that the
+
+
+70
+00:02:01,920 --> 00:02:04,079
+internet can ping to find our ip address
+
+
+71
+00:02:04,079 --> 00:02:05,520
+and there's almost always two of them
+
+
+72
+00:02:05,520 --> 00:02:06,880
+for better reliability
+
+
+73
+00:02:06,880 --> 00:02:08,720
+this has been the domain name system in
+
+
+74
+00:02:08,720 --> 00:02:10,640
+100 seconds hit the like button if you
+
+
+75
+00:02:10,640 --> 00:02:12,160
+want to see more short videos like this
+
+
+76
+00:02:12,160 --> 00:02:14,080
+thanks for watching and i will see you
+
+
+77
+00:02:14,080 --> 00:02:17,120
+in the next one
+
+

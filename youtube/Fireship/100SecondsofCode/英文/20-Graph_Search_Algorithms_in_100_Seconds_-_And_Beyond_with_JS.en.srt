@@ -1,0 +1,1690 @@
+1
+00:00:00,000 --> 00:00:02,310
+a graph is a nonlinear data structure
+
+
+2
+00:00:02,310 --> 00:00:04,740
+that contains nodes and edges a node or
+
+
+3
+00:00:04,740 --> 00:00:06,930
+vertex is just a single unique value
+
+
+4
+00:00:06,930 --> 00:00:08,970
+while an edge represents a connection or
+
+
+5
+00:00:08,970 --> 00:00:10,559
+relationship between two of these nodes
+
+
+6
+00:00:10,559 --> 00:00:12,599
+think of something like Instagram every
+
+
+7
+00:00:12,599 --> 00:00:14,670
+user is a node every time you follow a
+
+
+8
+00:00:14,670 --> 00:00:16,710
+user you create a new edge connecting
+
+
+9
+00:00:16,710 --> 00:00:18,480
+two nodes together this is known as a
+
+
+10
+00:00:18,480 --> 00:00:20,310
+directed graph because the relationship
+
+
+11
+00:00:20,310 --> 00:00:22,289
+flows one way the follower follows the
+
+
+12
+00:00:22,289 --> 00:00:24,060
+following and not vice-versa
+
+
+13
+00:00:24,060 --> 00:00:26,010
+now consider facebook your edges in the
+
+
+14
+00:00:26,010 --> 00:00:27,900
+graph are friendships this relationship
+
+
+15
+00:00:27,900 --> 00:00:29,789
+goes both ways which is known as an
+
+
+16
+00:00:29,789 --> 00:00:31,740
+undirected graph graphs can also be
+
+
+17
+00:00:31,740 --> 00:00:33,480
+weighted which means the node has some
+
+
+18
+00:00:33,480 --> 00:00:35,190
+additional data about the relationship
+
+
+19
+00:00:35,190 --> 00:00:37,260
+like the distance between two airports a
+
+
+20
+00:00:37,260 --> 00:00:39,570
+node might also point to itself like an
+
+
+21
+00:00:39,570 --> 00:00:41,190
+airplane that takes off and comes back
+
+
+22
+00:00:41,190 --> 00:00:42,960
+to land at the same airport this is
+
+
+23
+00:00:42,960 --> 00:00:45,059
+known as a cycle graphs are used in many
+
+
+24
+00:00:45,059 --> 00:00:46,710
+real-life software products and you'll
+
+
+25
+00:00:46,710 --> 00:00:48,329
+often be asked to represent a graphic
+
+
+26
+00:00:48,329 --> 00:00:50,430
+code in a technical interview one way to
+
+
+27
+00:00:50,430 --> 00:00:52,500
+represent a graph is with a 2d array or
+
+
+28
+00:00:52,500 --> 00:00:54,719
+adjacency matrix create one row and one
+
+
+29
+00:00:54,719 --> 00:00:56,940
+column for every node when two nodes
+
+
+30
+00:00:56,940 --> 00:00:59,250
+have an edge or connection add a one at
+
+
+31
+00:00:59,250 --> 00:01:00,989
+the point they intersect this makes it
+
+
+32
+00:01:00,989 --> 00:01:02,910
+fast and easy to look up a specific age
+
+
+33
+00:01:02,910 --> 00:01:05,460
+or to add a new edge but as a 2d array
+
+
+34
+00:01:05,460 --> 00:01:07,680
+it takes quadratic space complexity and
+
+
+35
+00:01:07,680 --> 00:01:09,780
+quadratic time to insert a new node into
+
+
+36
+00:01:09,780 --> 00:01:11,520
+the graph an alternative approach is an
+
+
+37
+00:01:11,520 --> 00:01:13,890
+adjacency list in this representation we
+
+
+38
+00:01:13,890 --> 00:01:15,570
+start with a collection of nodes then
+
+
+39
+00:01:15,570 --> 00:01:17,430
+each item has its own array of its
+
+
+40
+00:01:17,430 --> 00:01:18,900
+neighbors this makes it faster to
+
+
+41
+00:01:18,900 --> 00:01:21,030
+iterate over a nodes edges and is more
+
+
+42
+00:01:21,030 --> 00:01:22,560
+efficient with memory especially when
+
+
+43
+00:01:22,560 --> 00:01:24,540
+you have many nodes and few edges in
+
+
+44
+00:01:24,540 --> 00:01:26,340
+your interview you'll likely need to
+
+
+45
+00:01:26,340 --> 00:01:28,229
+traverse your graph one option is a
+
+
+46
+00:01:28,229 --> 00:01:30,150
+depth-first search start with any random
+
+
+47
+00:01:30,150 --> 00:01:32,280
+node go to its first child then its
+
+
+48
+00:01:32,280 --> 00:01:33,930
+first child and do that for as long as
+
+
+49
+00:01:33,930 --> 00:01:35,549
+you can when there are no more children
+
+
+50
+00:01:35,549 --> 00:01:37,710
+backtrack to the last node and continue
+
+
+51
+00:01:37,710 --> 00:01:39,630
+the process this algorithm is usually
+
+
+52
+00:01:39,630 --> 00:01:41,130
+implemented with a recursive function
+
+
+53
+00:01:41,130 --> 00:01:43,500
+another option is a breadth-first search
+
+
+54
+00:01:43,500 --> 00:01:45,360
+from your starting node add all of the
+
+
+55
+00:01:45,360 --> 00:01:47,070
+direct children to a queue once they've
+
+
+56
+00:01:47,070 --> 00:01:48,329
+been visited move on to the
+
+
+57
+00:01:48,329 --> 00:01:49,950
+grandchildren and continue following
+
+
+58
+00:01:49,950 --> 00:01:51,750
+this pattern and layers this has been
+
+
+59
+00:01:51,750 --> 00:01:54,000
+graphs in 100 seconds but hang out for a
+
+
+60
+00:01:54,000 --> 00:01:55,200
+few minutes because now we're going to
+
+
+61
+00:01:55,200 --> 00:01:57,119
+implement these algorithms in JavaScript
+
+
+62
+00:01:57,119 --> 00:01:58,740
+if you're new here like and subscribe
+
+
+63
+00:01:58,740 --> 00:02:00,840
+hit the like button open your IDE and
+
+
+64
+00:02:00,840 --> 00:02:05,430
+get ready to go beyond 100 seconds as a
+
+
+65
+00:02:05,430 --> 00:02:06,840
+developer you'll come across all kinds
+
+
+66
+00:02:06,840 --> 00:02:08,759
+of different real-life implementations
+
+
+67
+00:02:08,759 --> 00:02:10,770
+of graphs I mentioned Facebook social
+
+
+68
+00:02:10,770 --> 00:02:12,150
+graph at the beginning of the video and
+
+
+69
+00:02:12,150 --> 00:02:13,590
+they're commonly used for recommend
+
+
+70
+00:02:13,590 --> 00:02:15,870
+engines like Yelp for example to connect
+
+
+71
+00:02:15,870 --> 00:02:18,120
+businesses to users to reviews or
+
+
+72
+00:02:18,120 --> 00:02:19,830
+Netflix to connect the movies that you
+
+
+73
+00:02:19,830 --> 00:02:21,510
+watch two movies that you might want to
+
+
+74
+00:02:21,510 --> 00:02:23,819
+watch in the future they're also used to
+
+
+75
+00:02:23,819 --> 00:02:26,069
+represent Geographic data for example on
+
+
+76
+00:02:26,069 --> 00:02:27,569
+Google Maps you can think of every
+
+
+77
+00:02:27,569 --> 00:02:29,730
+intersection as a node and then every
+
+
+78
+00:02:29,730 --> 00:02:31,319
+Road and its distance as the edge
+
+
+79
+00:02:31,319 --> 00:02:33,629
+connecting these two nodes over the next
+
+
+80
+00:02:33,629 --> 00:02:35,310
+few minutes we'll implement a basic
+
+
+81
+00:02:35,310 --> 00:02:37,200
+graph in JavaScript based on the flight
+
+
+82
+00:02:37,200 --> 00:02:39,510
+connections between airports in this
+
+
+83
+00:02:39,510 --> 00:02:41,489
+case every airport is a node and the
+
+
+84
+00:02:41,489 --> 00:02:43,049
+edge represents whether or not you can
+
+
+85
+00:02:43,049 --> 00:02:45,269
+fly from one Airport to another this
+
+
+86
+00:02:45,269 --> 00:02:46,230
+edge could contain additional
+
+
+87
+00:02:46,230 --> 00:02:48,120
+information like the kilometers between
+
+
+88
+00:02:48,120 --> 00:02:49,950
+the two airports in which case that
+
+
+89
+00:02:49,950 --> 00:02:51,720
+would give us a weighted graph the
+
+
+90
+00:02:51,720 --> 00:02:53,220
+routes between two airports could be
+
+
+91
+00:02:53,220 --> 00:02:55,290
+one-way or two-way when they go one way
+
+
+92
+00:02:55,290 --> 00:02:57,209
+we have a directed graph if they go both
+
+
+93
+00:02:57,209 --> 00:02:57,480
+ways
+
+
+94
+00:02:57,480 --> 00:02:59,879
+it's an undirected graph for this demo
+
+
+95
+00:02:59,879 --> 00:03:01,470
+we'll try to keep things simple we'll
+
+
+96
+00:03:01,470 --> 00:03:03,209
+make an undirected graph assuming that
+
+
+97
+00:03:03,209 --> 00:03:04,950
+when an airplane has a route it can fly
+
+
+98
+00:03:04,950 --> 00:03:06,720
+back and forth between the two airports
+
+
+99
+00:03:06,720 --> 00:03:08,579
+it'll be unweighted so the routes
+
+
+100
+00:03:08,579 --> 00:03:10,319
+between the two airports won't carry any
+
+
+101
+00:03:10,319 --> 00:03:12,329
+additional data and we'll assume cycles
+
+
+102
+00:03:12,329 --> 00:03:14,459
+are not possible the first thing we'll
+
+
+103
+00:03:14,459 --> 00:03:16,049
+need to do is represent our graphing
+
+
+104
+00:03:16,049 --> 00:03:17,819
+code most programming interviews will
+
+
+105
+00:03:17,819 --> 00:03:19,109
+have you write code in whatever language
+
+
+106
+00:03:19,109 --> 00:03:21,269
+you prefer we'll be using Java Script
+
+
+107
+00:03:21,269 --> 00:03:22,799
+here but the most important tip I can
+
+
+108
+00:03:22,799 --> 00:03:24,600
+give you is to simply explain your
+
+
+109
+00:03:24,600 --> 00:03:26,280
+thinking process as you're writing your
+
+
+110
+00:03:26,280 --> 00:03:28,019
+code most technical interviewers are
+
+
+111
+00:03:28,019 --> 00:03:29,489
+trying to get some insight into your
+
+
+112
+00:03:29,489 --> 00:03:31,470
+thinking process and care less if you
+
+
+113
+00:03:31,470 --> 00:03:33,480
+write perfectly formatted code let's go
+
+
+114
+00:03:33,480 --> 00:03:34,739
+ahead and walk through a few examples
+
+
+115
+00:03:34,739 --> 00:03:36,090
+you might get a question like this
+
+
+116
+00:03:36,090 --> 00:03:38,220
+here's a list of airports and it was two
+
+
+117
+00:03:38,220 --> 00:03:39,930
+routes connecting these airports now
+
+
+118
+00:03:39,930 --> 00:03:42,269
+represent this data as a graph so given
+
+
+119
+00:03:42,269 --> 00:03:44,069
+this data we can represent the graph in
+
+
+120
+00:03:44,069 --> 00:03:46,829
+two ways a matrix or an adjacency list a
+
+
+121
+00:03:46,829 --> 00:03:49,019
+matrix takes up more space but is
+
+
+122
+00:03:49,019 --> 00:03:50,669
+generally easier to visualize and
+
+
+123
+00:03:50,669 --> 00:03:52,109
+represent because it's just a
+
+
+124
+00:03:52,109 --> 00:03:53,730
+two-dimensional array filled with ones
+
+
+125
+00:03:53,730 --> 00:03:56,010
+and zeros now looking at this data I can
+
+
+126
+00:03:56,010 --> 00:03:57,450
+see there are not very many routes
+
+
+127
+00:03:57,450 --> 00:03:59,280
+relative to the number of possible
+
+
+128
+00:03:59,280 --> 00:04:01,739
+combinations between these airports that
+
+
+129
+00:04:01,739 --> 00:04:03,450
+means our matrix would be very sparse or
+
+
+130
+00:04:03,450 --> 00:04:04,980
+in other words filled with a bunch of
+
+
+131
+00:04:04,980 --> 00:04:06,780
+zeros and take up a lot of unnecessary
+
+
+132
+00:04:06,780 --> 00:04:09,060
+space and it would be less efficient to
+
+
+133
+00:04:09,060 --> 00:04:10,650
+iterate over and search through
+
+
+134
+00:04:10,650 --> 00:04:12,480
+therefore I choose to represent my graph
+
+
+135
+00:04:12,480 --> 00:04:15,150
+as an adjacency list we can implement an
+
+
+136
+00:04:15,150 --> 00:04:16,979
+adjacency list as a set of key value
+
+
+137
+00:04:16,979 --> 00:04:19,109
+pairs where the key is the name of the
+
+
+138
+00:04:19,109 --> 00:04:21,479
+airport or the node and the value is an
+
+
+139
+00:04:21,479 --> 00:04:23,370
+array of edges or the other airports
+
+
+140
+00:04:23,370 --> 00:04:24,900
+that it's connected to we could
+
+
+141
+00:04:24,900 --> 00:04:26,640
+implement this with a regular JavaScript
+
+
+142
+00:04:26,640 --> 00:04:27,160
+object
+
+
+143
+00:04:27,160 --> 00:04:29,350
+but a better option might be a map when
+
+
+144
+00:04:29,350 --> 00:04:30,580
+you're doing algorithm problems in
+
+
+145
+00:04:30,580 --> 00:04:32,500
+JavaScript a map tends to be a better
+
+
+146
+00:04:32,500 --> 00:04:34,600
+option than a regular object it has some
+
+
+147
+00:04:34,600 --> 00:04:36,070
+additional API methods that can be
+
+
+148
+00:04:36,070 --> 00:04:38,080
+useful for problems like this and it
+
+
+149
+00:04:38,080 --> 00:04:39,400
+just behaves more like a regular
+
+
+150
+00:04:39,400 --> 00:04:41,170
+dictionary or hash map that you'll find
+
+
+151
+00:04:41,170 --> 00:04:43,150
+in other languages so the map is our
+
+
+152
+00:04:43,150 --> 00:04:45,100
+graph and at this point it's empty the
+
+
+153
+00:04:45,100 --> 00:04:46,300
+first thing we'll do is define a
+
+
+154
+00:04:46,300 --> 00:04:48,490
+function that can add a node to the map
+
+
+155
+00:04:48,490 --> 00:04:50,500
+this function takes the airport code as
+
+
+156
+00:04:50,500 --> 00:04:52,420
+its argument and then calls adjacency
+
+
+157
+00:04:52,420 --> 00:04:54,940
+list set on the airport and starts it
+
+
+158
+00:04:54,940 --> 00:04:56,620
+off with an empty array and that's all
+
+
+159
+00:04:56,620 --> 00:04:57,970
+it takes to represent a node on the
+
+
+160
+00:04:57,970 --> 00:05:00,130
+graph to add an edge we need to update
+
+
+161
+00:05:00,130 --> 00:05:02,110
+the entries for both the origin Airport
+
+
+162
+00:05:02,110 --> 00:05:03,970
+and the destination first we'll grab the
+
+
+163
+00:05:03,970 --> 00:05:05,800
+entry for the origin Airport and then
+
+
+164
+00:05:05,800 --> 00:05:07,840
+push the destination onto its list and
+
+
+165
+00:05:07,840 --> 00:05:09,610
+then we'll do the inverse of that by
+
+
+166
+00:05:09,610 --> 00:05:11,410
+getting the destination and then pushing
+
+
+167
+00:05:11,410 --> 00:05:13,390
+the origin onto its list and that's our
+
+
+168
+00:05:13,390 --> 00:05:15,520
+entire API for building a graph as an
+
+
+169
+00:05:15,520 --> 00:05:17,710
+adjacency list the next step is to use
+
+
+170
+00:05:17,710 --> 00:05:20,320
+this API with our source data we can
+
+
+171
+00:05:20,320 --> 00:05:21,760
+loop over the airport's with for each
+
+
+172
+00:05:21,760 --> 00:05:23,830
+and for each one call the add node
+
+
+173
+00:05:23,830 --> 00:05:26,320
+method to add a node to the graph once
+
+
+174
+00:05:26,320 --> 00:05:27,880
+we have our nodes we can then loop over
+
+
+175
+00:05:27,880 --> 00:05:29,890
+the routes and add an edge for each
+
+
+176
+00:05:29,890 --> 00:05:32,110
+route in that array that function takes
+
+
+177
+00:05:32,110 --> 00:05:33,880
+two arguments so I'm going to use the
+
+
+178
+00:05:33,880 --> 00:05:36,250
+rest syntax here 2d structure them now
+
+
+179
+00:05:36,250 --> 00:05:37,420
+you can go ahead and console.log this
+
+
+180
+00:05:37,420 --> 00:05:39,460
+graph by running it and ojs and you
+
+
+181
+00:05:39,460 --> 00:05:40,750
+should get an output that looks similar
+
+
+182
+00:05:40,750 --> 00:05:42,910
+to this congratulations you just got
+
+
+183
+00:05:42,910 --> 00:05:44,050
+through the first part of the interview
+
+
+184
+00:05:44,050 --> 00:05:45,580
+but that was the easy part
+
+
+185
+00:05:45,580 --> 00:05:47,050
+now the interviewer wants you to
+
+
+186
+00:05:47,050 --> 00:05:49,030
+implement an algorithm to figure out if
+
+
+187
+00:05:49,030 --> 00:05:50,650
+there's a route between Phoenix and
+
+
+188
+00:05:50,650 --> 00:05:53,050
+Bangkok and as you know from earlier in
+
+
+189
+00:05:53,050 --> 00:05:54,640
+the video there are two main ways we can
+
+
+190
+00:05:54,640 --> 00:05:56,410
+approach this depth-first search or
+
+
+191
+00:05:56,410 --> 00:05:58,600
+breadth-first search i think the easier
+
+
+192
+00:05:58,600 --> 00:06:01,240
+one to understand is BFS you know in
+
+
+193
+00:06:01,240 --> 00:06:02,590
+order to search a graph you have to
+
+
+194
+00:06:02,590 --> 00:06:03,190
+start somewhere
+
+
+195
+00:06:03,190 --> 00:06:04,510
+in this case we'll start with the
+
+
+196
+00:06:04,510 --> 00:06:06,700
+phoenix node so we need a function that
+
+
+197
+00:06:06,700 --> 00:06:08,290
+takes a starting node as its argument
+
+
+198
+00:06:08,290 --> 00:06:10,450
+write that out on the whiteboard or as
+
+
+199
+00:06:10,450 --> 00:06:12,160
+pseudocode in whatever editing toy
+
+
+200
+00:06:12,160 --> 00:06:13,990
+you're using for the interview from the
+
+
+201
+00:06:13,990 --> 00:06:15,580
+starting node you want to visit all the
+
+
+202
+00:06:15,580 --> 00:06:17,140
+children and see if any of them are
+
+
+203
+00:06:17,140 --> 00:06:19,540
+bankok if not you'll want to visit their
+
+
+204
+00:06:19,540 --> 00:06:21,370
+children and do the same thing and then
+
+
+205
+00:06:21,370 --> 00:06:22,720
+you'll continue doing this in layers
+
+
+206
+00:06:22,720 --> 00:06:24,250
+until you find the airport you're
+
+
+207
+00:06:24,250 --> 00:06:25,810
+looking for we can represent this
+
+
+208
+00:06:25,810 --> 00:06:27,970
+process as a queue which in JavaScript
+
+
+209
+00:06:27,970 --> 00:06:29,980
+is just an array where the first item in
+
+
+210
+00:06:29,980 --> 00:06:32,230
+is the first item out and of course the
+
+
+211
+00:06:32,230 --> 00:06:33,700
+first item in your queue should be the
+
+
+212
+00:06:33,700 --> 00:06:35,650
+starting node now while the queue has
+
+
+213
+00:06:35,650 --> 00:06:37,540
+items in it or the length is greater
+
+
+214
+00:06:37,540 --> 00:06:39,669
+than 0 we'll grab the first item in the
+
+
+215
+00:06:39,669 --> 00:06:40,750
+array using the
+
+
+216
+00:06:40,750 --> 00:06:42,700
+Raye shift method this method will
+
+
+217
+00:06:42,700 --> 00:06:44,500
+mutate the original array by removing
+
+
+218
+00:06:44,500 --> 00:06:46,000
+the first item in it and then return
+
+
+219
+00:06:46,000 --> 00:06:47,950
+that item to us here that we set as the
+
+
+220
+00:06:47,950 --> 00:06:50,230
+airport variable our next step is to
+
+
+221
+00:06:50,230 --> 00:06:52,420
+grab all the edges for this node in the
+
+
+222
+00:06:52,420 --> 00:06:53,890
+graph we can do that by calling
+
+
+223
+00:06:53,890 --> 00:06:56,200
+adjacency lists to get with that airport
+
+
+224
+00:06:56,200 --> 00:06:58,120
+name as the key that'll give us all the
+
+
+225
+00:06:58,120 --> 00:06:59,950
+destinations for the airport where it's
+
+
+226
+00:06:59,950 --> 00:07:01,930
+children so we can loop over them and
+
+
+227
+00:07:01,930 --> 00:07:03,940
+add them to the queue as well we can
+
+
+228
+00:07:03,940 --> 00:07:05,470
+also go ahead and log out if any of
+
+
+229
+00:07:05,470 --> 00:07:07,300
+these airports are Bangkok the airport
+
+
+230
+00:07:07,300 --> 00:07:09,520
+we're looking for now one major problem
+
+
+231
+00:07:09,520 --> 00:07:10,690
+with this code at the moment is that
+
+
+232
+00:07:10,690 --> 00:07:12,910
+airports have many interconnected routes
+
+
+233
+00:07:12,910 --> 00:07:14,650
+and that means our algorithm will be
+
+
+234
+00:07:14,650 --> 00:07:16,390
+visiting the same nodes over and over
+
+
+235
+00:07:16,390 --> 00:07:18,250
+again and in our case this creates an
+
+
+236
+00:07:18,250 --> 00:07:19,900
+infinite loop because the queue is never
+
+
+237
+00:07:19,900 --> 00:07:21,550
+emptied we can avoid that by keeping
+
+
+238
+00:07:21,550 --> 00:07:23,440
+track of the airports that we visited in
+
+
+239
+00:07:23,440 --> 00:07:25,270
+the past an easy way to do that in
+
+
+240
+00:07:25,270 --> 00:07:27,130
+JavaScript is with a set which is
+
+
+241
+00:07:27,130 --> 00:07:28,990
+basically an array but all the values in
+
+
+242
+00:07:28,990 --> 00:07:31,480
+it are unique we set it up as an empty
+
+
+243
+00:07:31,480 --> 00:07:32,890
+set when the function is first called
+
+
+244
+00:07:32,890 --> 00:07:34,720
+then we can use it to set up some
+
+
+245
+00:07:34,720 --> 00:07:36,730
+conditional logic in our loop we will
+
+
+246
+00:07:36,730 --> 00:07:38,470
+only in queue an item if it does not
+
+
+247
+00:07:38,470 --> 00:07:40,960
+have this destination a set has a has
+
+
+248
+00:07:40,960 --> 00:07:43,060
+method where you can pass a value to see
+
+
+249
+00:07:43,060 --> 00:07:44,710
+if it exists currently in the set and
+
+
+250
+00:07:44,710 --> 00:07:46,510
+then we'll mark the destination as
+
+
+251
+00:07:46,510 --> 00:07:48,550
+visited by adding it to the set then
+
+
+252
+00:07:48,550 --> 00:07:49,750
+we'll move the line of code that adds
+
+
+253
+00:07:49,750 --> 00:07:51,520
+this item to the queue inside of our
+
+
+254
+00:07:51,520 --> 00:07:53,500
+condition here so an item only gets in
+
+
+255
+00:07:53,500 --> 00:07:55,120
+queued if it has not been visited
+
+
+256
+00:07:55,120 --> 00:07:56,860
+already now let's go ahead and call our
+
+
+257
+00:07:56,860 --> 00:07:58,720
+function using Phoenix as the starting
+
+
+258
+00:07:58,720 --> 00:08:00,610
+node what you'll notice is that it goes
+
+
+259
+00:08:00,610 --> 00:08:02,290
+through nine airports before it finally
+
+
+260
+00:08:02,290 --> 00:08:04,330
+finds Bangkok it starts with all the
+
+
+261
+00:08:04,330 --> 00:08:05,919
+connections to Phoenix then all the
+
+
+262
+00:08:05,919 --> 00:08:08,320
+connections to JFK then from Mexico City
+
+
+263
+00:08:08,320 --> 00:08:10,390
+it finds a route to Bangkok and then it
+
+
+264
+00:08:10,390 --> 00:08:12,100
+also finds a second route through Lima
+
+
+265
+00:08:12,100 --> 00:08:13,990
+Peru so breadth-first search would be
+
+
+266
+00:08:13,990 --> 00:08:15,729
+really good for finding all the possible
+
+
+267
+00:08:15,729 --> 00:08:17,260
+routes to determine which one is the
+
+
+268
+00:08:17,260 --> 00:08:18,940
+most efficient at this point your
+
+
+269
+00:08:18,940 --> 00:08:21,160
+interviewer is super impressed but then
+
+
+270
+00:08:21,160 --> 00:08:23,500
+he or she says our only concern is if a
+
+
+271
+00:08:23,500 --> 00:08:26,020
+route from Phoenix to Bangkok exists we
+
+
+272
+00:08:26,020 --> 00:08:27,130
+don't care if there are multiple routes
+
+
+273
+00:08:27,130 --> 00:08:28,900
+we don't care if it's the best route we
+
+
+274
+00:08:28,900 --> 00:08:30,700
+just want to find a route as quickly as
+
+
+275
+00:08:30,700 --> 00:08:31,180
+possible
+
+
+276
+00:08:31,180 --> 00:08:32,710
+how can you traverse this graph more
+
+
+277
+00:08:32,710 --> 00:08:34,120
+efficiently to meet that need an
+
+
+278
+00:08:34,120 --> 00:08:35,620
+approach that would be more efficient
+
+
+279
+00:08:35,620 --> 00:08:37,180
+for this particular requirement is a
+
+
+280
+00:08:37,180 --> 00:08:39,219
+depth-first search instead of going
+
+
+281
+00:08:39,219 --> 00:08:40,930
+through all the children or destinations
+
+
+282
+00:08:40,930 --> 00:08:42,880
+for each Airport will go to its first
+
+
+283
+00:08:42,880 --> 00:08:44,560
+child and then to its first child and
+
+
+284
+00:08:44,560 --> 00:08:46,750
+its first child and so on until we hit
+
+
+285
+00:08:46,750 --> 00:08:48,580
+Bangkok and if we don't find it will
+
+
+286
+00:08:48,580 --> 00:08:50,020
+backtrack to the top of the graph and
+
+
+287
+00:08:50,020 --> 00:08:51,760
+follow the same pattern in the last
+
+
+288
+00:08:51,760 --> 00:08:53,530
+example we used a queue but in this
+
+
+289
+00:08:53,530 --> 00:08:54,380
+example we're
+
+
+290
+00:08:54,380 --> 00:08:56,420
+- use a recursive function or in other
+
+
+291
+00:08:56,420 --> 00:08:58,460
+words a function that calls itself until
+
+
+292
+00:08:58,460 --> 00:08:59,960
+it reaches some kind of stopping point
+
+
+293
+00:08:59,960 --> 00:09:01,670
+this function will take a starting node
+
+
+294
+00:09:01,670 --> 00:09:03,830
+as its first argument and then a set as
+
+
+295
+00:09:03,830 --> 00:09:05,600
+a second argument that keeps track of
+
+
+296
+00:09:05,600 --> 00:09:07,310
+the different cities that we visited
+
+
+297
+00:09:07,310 --> 00:09:09,380
+because again we don't want to visit the
+
+
+298
+00:09:09,380 --> 00:09:11,240
+same node more than once from there
+
+
+299
+00:09:11,240 --> 00:09:13,220
+we'll grab the edges or destinations
+
+
+300
+00:09:13,220 --> 00:09:15,380
+from our adjacency list we'll loop over
+
+
+301
+00:09:15,380 --> 00:09:16,970
+them just like we did before and when we
+
+
+302
+00:09:16,970 --> 00:09:18,350
+find what we're looking for we'll just
+
+
+303
+00:09:18,350 --> 00:09:19,910
+return from the function now here's the
+
+
+304
+00:09:19,910 --> 00:09:21,710
+interesting part if a node has not been
+
+
+305
+00:09:21,710 --> 00:09:23,390
+visited then we'll go ahead and call the
+
+
+306
+00:09:23,390 --> 00:09:25,250
+same function or in other words call it
+
+
+307
+00:09:25,250 --> 00:09:26,720
+recursively with the current destination
+
+
+308
+00:09:26,720 --> 00:09:28,970
+and the loop as well as our visited set
+
+
+309
+00:09:28,970 --> 00:09:30,680
+that means this function call will be
+
+
+310
+00:09:30,680 --> 00:09:31,820
+pushed to the top of the call stack
+
+
+311
+00:09:31,820 --> 00:09:33,650
+making the algorithm go deeper and
+
+
+312
+00:09:33,650 --> 00:09:35,360
+deeper into the tree until it reaches a
+
+
+313
+00:09:35,360 --> 00:09:37,070
+stopping point and that means this
+
+
+314
+00:09:37,070 --> 00:09:38,600
+function will continue calling itself
+
+
+315
+00:09:38,600 --> 00:09:40,430
+recursively until all the airports have
+
+
+316
+00:09:40,430 --> 00:09:42,260
+been visited or until it finds Bangkok
+
+
+317
+00:09:42,260 --> 00:09:44,390
+in this example it only takes three
+
+
+318
+00:09:44,390 --> 00:09:46,220
+steps or three function calls to find
+
+
+319
+00:09:46,220 --> 00:09:48,200
+the route as opposed to eight in our
+
+
+320
+00:09:48,200 --> 00:09:49,940
+previous algorithm but the interviewer
+
+
+321
+00:09:49,940 --> 00:09:51,890
+has one last question what is the time
+
+
+322
+00:09:51,890 --> 00:09:53,570
+complexity of the algorithm that you
+
+
+323
+00:09:53,570 --> 00:09:55,940
+just implemented as expressed in Big O
+
+
+324
+00:09:55,940 --> 00:09:58,250
+notation for both breadth-first and
+
+
+325
+00:09:58,250 --> 00:10:00,650
+depth-first search Big O is expressed as
+
+
+326
+00:10:00,650 --> 00:10:02,750
+V Plus E which is the total number of
+
+
+327
+00:10:02,750 --> 00:10:04,910
+nodes or vertices plus the number of
+
+
+328
+00:10:04,910 --> 00:10:06,860
+edges or in other words the time
+
+
+329
+00:10:06,860 --> 00:10:08,660
+performance of the algorithm will scale
+
+
+330
+00:10:08,660 --> 00:10:10,550
+linear based on the number of nodes and
+
+
+331
+00:10:10,550 --> 00:10:12,590
+edges that are added to the graph I'm
+
+
+332
+00:10:12,590 --> 00:10:13,910
+gonna go ahead and wrap things up there
+
+
+333
+00:10:13,910 --> 00:10:15,590
+but there are many other algorithms you
+
+
+334
+00:10:15,590 --> 00:10:17,360
+can use to traverse a graph so if you
+
+
+335
+00:10:17,360 --> 00:10:18,920
+want to see more videos like this let me
+
+
+336
+00:10:18,920 --> 00:10:20,720
+know in the comments thanks for watching
+
+
+337
+00:10:20,720 --> 00:10:23,450
+and I will see you in the next
+
+
+338
+00:10:23,450 --> 00:10:31,660
+[Music]
+
+

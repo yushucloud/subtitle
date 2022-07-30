@@ -1,0 +1,219 @@
+1
+00:00:00,240 --> 00:00:03,760
+assembly a low-level programming language designed to simplify the
+汇编 一种低级编程语言，旨在简化
+
+2
+00:00:03,760 --> 00:00:08,000
+instructions fed into a computer's cpu in other words it's a human-readable
+输入计算机 cpu的指令，换句话说，它
+
+3
+00:00:08,000 --> 00:00:11,759
+abstraction on top of machine code so programmers don't have to manually count
+是机器代码之上的人类可读抽象，因此程序员不必手动计算
+
+4
+00:00:11,759 --> 00:00:15,519
+ones and zeroes the first assembly language was created by kathleen booth
+1 和 0 第一个汇编语言是由 kathleen
+
+5
+00:00:15,519 --> 00:00:20,320
+in 1947 for the all-purpose electronic computer over the next decade it evolved
+于 1947 年为通用电子计算机展台，在接下来的十年里，它演变
+
+6
+00:00:20,320 --> 00:00:24,480
+into many different formats to power the super computers of the day like the ibm
+成许多不同的格式，为当时的超级计算机提供动力，例如 ibm
+
+7
+00:00:24,480 --> 00:00:28,880
+7090 which had a 20 million dollar price tag in today's dollars writing code and
+7090，以今天的美元计算，其标价为 2000 万美元，并且
+
+8
+00:00:28,880 --> 00:00:32,160
+assembly was standard until the emergence of high level languages like
+装配是标准配置 直到
+
+9
+00:00:32,160 --> 00:00:36,480
+fortran a few years later however assembly is still used today for direct
+几年后出现了像 fortran 这样的高级语言，但是今天仍然使用汇编来直接
+
+10
+00:00:36,480 --> 00:00:40,239
+access to the bare metal hardware and to address low-level performance issues
+访问裸机硬件并解决
+
+11
+00:00:40,239 --> 00:00:43,840
+often on device drivers and embedded systems and it's also used to run native
+设备驱动程序和嵌入式系统上经常出现的低级性能问题，它还用于运行本机
+
+12
+00:00:43,840 --> 00:00:47,280
+software in a web browser via webassembly what's tricky is that each
+软件 在通过 webassembly 的 Web 浏览器中，棘手的是每种
+
+13
+00:00:47,280 --> 00:00:51,600
+assembly language only works on a specific cpu architecture like arm for
+汇编语言只适用于特定的 cpu 架构，如 ar  m 用于
+
+14
+00:00:51,600 --> 00:00:56,079
+apple silicon and raspberry pi or x86 for intel chips to get started you'll
+苹果硅和树莓派或 x86用于英特尔芯片 开始您
+
+15
+00:00:56,079 --> 00:01:00,320
+first need an assembler like the net wide assembler for x86 chips an assembly
+首先需要一个汇编器，例如用于 x86 芯片的网络宽汇编器 一个汇编
+
+16
+00:01:00,320 --> 00:01:04,159
+program is divided into three sections the text section contains the actual
+程序分为三个部分 文本部分按惯例包含程序的实际
+
+17
+00:01:04,159 --> 00:01:07,840
+logic for the program by convention it contains an entry point called start
+逻辑 它包含一个名为 start 的入口点
+
+18
+00:01:07,840 --> 00:01:10,720
+which is where the code will start executing next we have the block
+，这是代码接下来将开始执行的地方 我们有块
+
+19
+00:01:10,720 --> 00:01:13,760
+starting symbol section which contains variables that might change throughout
+起始符号部分，其中包含可能
+
+20
+00:01:13,760 --> 00:01:17,520
+the lifecycle of the app and finally the data section is where we can initialize
+在应用程序的整个生命周期中发生变化的变量，最后数据部分是我们可以初始化
+
+21
+00:01:17,520 --> 00:01:21,360
+constants or data that does not change to declare a constant like a string we
+常量或数据的地方 不改变声明像字符串一样的常量，我们
+
+22
+00:01:21,360 --> 00:01:25,200
+start with a label then use db for defined byte to place the hello world
+以标签开头，然后使用 db定义字节，将 hello world
+
+23
+00:01:25,200 --> 00:01:28,720
+string into memory by itself it doesn't do anything and to print it to the
+字符串本身放入内存它不做任何事情并将其打印到
+
+24
+00:01:28,720 --> 00:01:32,400
+standard output we will also need it to length we can use equate to convert a
+标准输出，我们也需要它长度我们可以使用equate将
+
+25
+00:01:32,400 --> 00:01:35,920
+symbol into a constant the dollar sign will subtract the current position from
+符号转换为常数美元符号
+
+26
+00:01:35,920 --> 00:01:39,119
+the hello label providing the length of the string and now these constants can
+将从hello标签中减去当前位置提供字符串a的长度 现在
+
+27
+00:01:39,119 --> 00:01:42,079
+be referenced from the start label in the main program each line of code
+可以从主程序的开始标签中引用这些常量，每行代码都
+
+28
+00:01:42,079 --> 00:01:45,600
+contains an instruction along with one or more operands and there are hundreds
+包含一条指令以及一个或多个操作数，现在
+
+29
+00:01:45,600 --> 00:01:49,280
+of instructions built into the language now to perform operations quickly the
+语言中内置了数百条指令来快速执行操作，
+
+30
+00:01:49,280 --> 00:01:53,680
+cpu has a limited number of registers which are like 64-bit chunks of memory
+cpu 的数量有限寄存器就像
+
+31
+00:01:53,680 --> 00:01:57,360
+built directly into the cpu instead of the ram we can insert data into a
+直接内置在 cpu 而不是 ram 中的 64 位内存块 我们可以使用移动指令将数据插入到
+
+32
+00:01:57,360 --> 00:02:01,280
+register with the move instruction by providing operands for the register name
+寄存器中，方法是提供寄存器名称的操作数
+
+33
+00:02:01,280 --> 00:02:04,320
+and the data to store there in this case number one is used because it
+和要存储在那里的数据，在这种情况下使用第一个 因为它
+
+34
+00:02:04,320 --> 00:02:08,319
+corresponds to system write on linux next we need to tell the system where to
+对应于 linux 上的系统写入，所以我们需要告诉系统在哪里
+
+35
+00:02:08,319 --> 00:02:12,400
+write in which case we'll move one into the rdi register which corresponds to
+写入，在这种情况下，我们会将一个移动到 rdi 寄存器中，该寄存器对应
+
+36
+00:02:12,400 --> 00:02:15,680
+the standard output in the terminal the next register stores the message to
+于终端中的标准输出，下一个寄存器将消息
+
+37
+00:02:15,680 --> 00:02:19,520
+right along with its length now execute the code stored in the cpu by calling
+与其一起存储到右侧 length 现在通过调用操作系统内核来执行存储在 cpu 中的代码
+
+38
+00:02:19,520 --> 00:02:23,120
+the operating system kernel almost done but we'll get a segmentation fault if we
+几乎完成了，但是如果我们此时尝试运行它，我们会遇到分段错误
+
+39
+00:02:23,120 --> 00:02:26,800
+try to run it at this point update the racks register with 60 for system exit
+将机架寄存器更新为 60 以退出系统，
+
+40
+00:02:26,800 --> 00:02:30,480
+and provide an error code of zero for a success now use the assembler to compile
+并提供零错误代码以表示成功 现在使用汇编
+
+41
+00:02:30,480 --> 00:02:34,080
+or assemble your code into an object file then use the linker to convert it
+器将代码编译或汇编到目标文件中，然后使用链接器将其
+
+42
+00:02:34,080 --> 00:02:37,920
+into the final executable this has been assembly language in 100 seconds if you
+转换为最终的可执行文件，这是汇编语言 100秒如果你
+
+43
+00:02:37,920 --> 00:02:41,200
+want to see more short videos like this hit the like button and subscribe thanks
+想看更多这样的短视频点击喜欢按钮并订阅
+
+44
+00:02:41,200 --> 00:02:45,680
+for watching and i will see you in the next one
+感谢观看，我会在下一个看到你

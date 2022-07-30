@@ -1,0 +1,173 @@
+1
+00:00:00,589 --> 00:00:04,799
+denim a brand new way to write server-side JavaScript it solves many of
+denim 一种编写服务器端 JavaScript 的全新方法，它解决了许多
+
+2
+00:00:04,799 --> 00:00:08,730
+the same problems as nodejs and was even created by the same guy like node it
+与 nodejs 相同的问题，甚至是由像 node 这样的人创建的，它在底层
+
+3
+00:00:08,730 --> 00:00:12,179
+uses the v8 JavaScript engine under the hood but the rest of the runtime is
+使用 v8 JavaScript 引擎，但运行时的其余部分
+
+4
+00:00:12,179 --> 00:00:16,139
+implemented in rust and typescript our journey into denna land begins in a
+是在 rust 和 typescript 我们进入 denna 领域的旅程
+
+5
+00:00:16,139 --> 00:00:19,439
+single type script file in this file we have access to all the types in the
+始于此文件中的单个类型脚本文件我们可以访问运行时中的所有类型，
+
+6
+00:00:19,439 --> 00:00:22,170
+runtime which means we can write strongly typed code and get
+这意味着我们可以直接在 IDE 中编写强类型代码并获取
+
+7
+00:00:22,170 --> 00:00:26,070
+documentation and intellisense directly in the IDE without ever needing to touch
+文档和智能感知，而无需
+
+8
+00:00:26,070 --> 00:00:30,150
+a TS config file the features in the runtime can be accessed from this demo
+接触 TS 配置文件运行时中的功能可以从这个演示
+
+9
+00:00:30,150 --> 00:00:34,350
+namespace let's console.log the current working directory of the filesystem we
+命名空间访问让我们控制台记录文件系统的当前工作目录我们
+
+10
+00:00:34,350 --> 00:00:37,649
+can execute our script with demo run from the command line but you'll notice
+可以从命令行使用演示运行我们的脚本但是你会
+
+11
+00:00:37,649 --> 00:00:41,129
+the throws an error and that's because demo is secure by default you the
+注意到抛出一个错误，这是因为演示 默认情况下是安全的，您
+
+12
+00:00:41,129 --> 00:00:44,399
+developer need to give permission to perform different actions in the runtime
+开发人员需要授予在运行时执行不同操作的权限，
+
+13
+00:00:44,399 --> 00:00:49,200
+in this case we can use the allow read flag to allow this operation security is
+在这种情况下，我们可以使用允许读取标志来允许此操作安全 ity
+
+14
+00:00:49,200 --> 00:00:52,620
+great but my favorite thing is how everything asynchronous is promise based
+很棒，但我最喜欢的是所有异步都是基于承诺的，
+
+15
+00:00:52,620 --> 00:00:56,280
+we can make a network request using the fetch API just like we would in the
+我们可以像在
+
+16
+00:00:56,280 --> 00:00:59,550
+browser and because it supports top-level wait we don't even need an
+浏览器中一样使用 fetch API 发出网络请求，因为它支持顶级等待，我们甚至不需要
+
+17
+00:00:59,550 --> 00:01:02,699
+async function here we can start resolving promises without any extra
+异步函数 可以在没有任何额外样板代码的情况下开始解决承诺
+
+18
+00:01:02,699 --> 00:01:06,060
+boilerplate code denno attempts to make your code as browser compatible as
+denno 尝试使您的代码尽可能与浏览器兼容
+
+19
+00:01:06,060 --> 00:01:09,390
+possible it contains a window object with lifecycle events that you can
+它包含一个带有生命周期事件的窗口对象，您可以
+
+20
+00:01:09,390 --> 00:01:12,659
+listen to allowing developers to more easily write code that can interrupt
+收听它允许开发人员更轻松地编写可以
+
+21
+00:01:12,659 --> 00:01:16,860
+between browsers and servers not to mention it can also execute web assembly
+在浏览器和服务器之间中断的代码，更不用说 它还可以执行 Web 程序集
+
+22
+00:01:16,860 --> 00:01:21,030
+binaries but one thing that won't work in demo are your NPM packages instead
+二进制文件，但在演示中不起作用的一件事是你的 NPM 包，而不是
+
+23
+00:01:21,030 --> 00:01:25,350
+you import packages using the modern yes module syntax with remote modules being
+你使用现代 yes 模块语法导入包，
+
+24
+00:01:25,350 --> 00:01:28,799
+referenced by their URL when you run your script for the first time it will
+当你第一次运行脚本时，远程模块由它们的 URL 引用它会
+
+25
+00:01:28,799 --> 00:01:32,460
+download this code locally and cache it there's no package JSON and code can be
+在本地下载此代码并缓存它没有 JSON 包，并且可以
+
+26
+00:01:32,460 --> 00:01:36,329
+referenced from any URL very similar to how things work in the browser demo
+从任何 URL 引用代码，这与事情的工作方式非常相似 浏览器演示
+
+27
+00:01:36,329 --> 00:01:40,110
+provides a set of standard modules to solve common use cases for example we
+提供了一组标准模块来解决常见用例，例如我们
+
+28
+00:01:40,110 --> 00:01:44,130
+can import serve from the HTTP module we can use it to create a server that's
+可以从 HTTP 模块导入 serve 我们可以使用它来创建一个
+
+29
+00:01:44,130 --> 00:01:48,090
+treated as an async iterable we can then await every request from the server and
+被视为异步迭代的服务器，然后我们可以等待来自服务器的每个请求并
+
+30
+00:01:48,090 --> 00:01:51,509
+respond to it accordingly and that's an awesome starting point for a server-side
+响应它 因此，对于服务器端 JavaScript 应用程序来说，这是一个很棒的起点，
+
+31
+00:01:51,509 --> 00:01:55,950
+JavaScript app now then au 1.0 just hit release candidate 1 so if you start
+然后 au 1.0 刚刚发布候选版本 1，所以如果你
+
+32
+00:01:55,950 --> 00:01:58,560
+using it today consider yourself an early adopter do
+今天开始使用它，认为自己是早期采用者，
+
+33
+00:01:58,560 --> 00:02:00,990
+you think denno is the future of server-side JavaScript let me know in
+你认为 denno 是服务器端 JavaScript 的未来吗？让我知道 在
+
+34
+00:02:00,990 --> 00:02:04,229
+the comments below thanks for watching hit the like button and I will see you
+下面的评论中感谢您的观看点击喜欢按钮，我会在下一个看到你
+
+35
+00:02:04,229 --> 00:02:06,799
+in the next one

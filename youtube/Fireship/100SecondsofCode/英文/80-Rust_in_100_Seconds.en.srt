@@ -1,0 +1,370 @@
+1
+00:00:00,240 --> 00:00:02,639
+rust a memory safe compiled programming
+
+
+2
+00:00:02,639 --> 00:00:04,080
+language that delivers high-level
+
+
+3
+00:00:04,080 --> 00:00:06,160
+simplicity with low-level performance
+
+
+4
+00:00:06,160 --> 00:00:07,839
+it's a popular choice for building
+
+
+5
+00:00:07,839 --> 00:00:09,920
+systems where performance is absolutely
+
+
+6
+00:00:09,920 --> 00:00:12,559
+critical like game engines databases or
+
+
+7
+00:00:12,559 --> 00:00:14,480
+operating systems and is an excellent
+
+
+8
+00:00:14,480 --> 00:00:16,240
+choice when targeting webassembly it
+
+
+9
+00:00:16,240 --> 00:00:18,320
+started as a side project of great on
+
+
+10
+00:00:18,320 --> 00:00:20,640
+in 2007 who named it after the
+
+
+11
+00:00:20,640 --> 00:00:22,800
+rust fungus it was sponsored by mozilla
+
+
+12
+00:00:22,800 --> 00:00:25,039
+in 2009 and has been ranked the most
+
+
+13
+00:00:25,039 --> 00:00:26,720
+loved programming language every year
+
+
+14
+00:00:26,720 --> 00:00:29,279
+since 2016 with its fans being known as
+
+
+15
+00:00:29,279 --> 00:00:31,439
+rust stations traditionally high level
+
+
+16
+00:00:31,439 --> 00:00:33,760
+languages provide a garbage collector to
+
+
+17
+00:00:33,760 --> 00:00:35,840
+nerf your control over memory management
+
+
+18
+00:00:35,840 --> 00:00:37,600
+while lower level languages provide
+
+
+19
+00:00:37,600 --> 00:00:39,840
+functions like free and allocate to
+
+
+20
+00:00:39,840 --> 00:00:41,600
+shoot yourself in the foot rust takes a
+
+
+21
+00:00:41,600 --> 00:00:43,280
+different approach it has no garbage
+
+
+22
+00:00:43,280 --> 00:00:45,039
+collector but achieves memory safety
+
+
+23
+00:00:45,039 --> 00:00:47,360
+with a concept known as ownership and
+
+
+24
+00:00:47,360 --> 00:00:49,680
+borrowing by default every variable in
+
+
+25
+00:00:49,680 --> 00:00:51,760
+rust is immutable this allows values to
+
+
+26
+00:00:51,760 --> 00:00:53,440
+be used in the stack memory which has
+
+
+27
+00:00:53,440 --> 00:00:55,360
+minimal performance overhead however
+
+
+28
+00:00:55,360 --> 00:00:57,199
+mutable values or objects with an
+
+
+29
+00:00:57,199 --> 00:00:59,600
+unknown size at compile time are stored
+
+
+30
+00:00:59,600 --> 00:01:01,920
+in the heap memory every value in a rust
+
+
+31
+00:01:01,920 --> 00:01:04,239
+program is assigned to a single variable
+
+
+32
+00:01:04,239 --> 00:01:06,080
+known as its owner when that variable
+
+
+33
+00:01:06,080 --> 00:01:07,920
+goes out of scope the memory allocated
+
+
+34
+00:01:07,920 --> 00:01:10,080
+to it is dropped automatically in some
+
+
+35
+00:01:10,080 --> 00:01:11,760
+cases though you may want to pass a
+
+
+36
+00:01:11,760 --> 00:01:13,119
+reference to a different part of the
+
+
+37
+00:01:13,119 --> 00:01:15,840
+program borrowing allows you to access a
+
+
+38
+00:01:15,840 --> 00:01:17,520
+reference in memory without taking
+
+
+39
+00:01:17,520 --> 00:01:19,439
+ownership of it there are a ton of rules
+
+
+40
+00:01:19,439 --> 00:01:21,040
+to go along with this system that the
+
+
+41
+00:01:21,040 --> 00:01:22,960
+rus borrow checker will validate at
+
+
+42
+00:01:22,960 --> 00:01:24,960
+compile time these rules keep your code
+
+
+43
+00:01:24,960 --> 00:01:27,040
+safe while providing absolute control
+
+
+44
+00:01:27,040 --> 00:01:29,280
+over performance rust also has a package
+
+
+45
+00:01:29,280 --> 00:01:30,880
+manager called cargo where each
+
+
+46
+00:01:30,880 --> 00:01:33,040
+individual package is a crate to get
+
+
+47
+00:01:33,040 --> 00:01:35,439
+started install rest then run cargo new
+
+
+48
+00:01:35,439 --> 00:01:37,680
+from the command line in the main.rs
+
+
+49
+00:01:37,680 --> 00:01:39,759
+file you'll find a main function which
+
+
+50
+00:01:39,759 --> 00:01:41,040
+is where the program will start
+
+
+51
+00:01:41,040 --> 00:01:43,439
+executing declare a variable with let
+
+
+52
+00:01:43,439 --> 00:01:45,680
+followed by its name and type the value
+
+
+53
+00:01:45,680 --> 00:01:47,200
+can't be changed or reassigned by
+
+
+54
+00:01:47,200 --> 00:01:49,360
+default so add mutt to make it mutable
+
+
+55
+00:01:49,360 --> 00:01:51,360
+the name of the variable is the owner a
+
+
+56
+00:01:51,360 --> 00:01:53,200
+reference to its location in memory can
+
+
+57
+00:01:53,200 --> 00:01:54,640
+be borrowed by other parts of the
+
+
+58
+00:01:54,640 --> 00:01:56,560
+program by prefixing it with an
+
+
+59
+00:01:56,560 --> 00:01:58,560
+ampersand then use a macro like print
+
+
+60
+00:01:58,560 --> 00:02:00,560
+line to log the value to the standard
+
+
+61
+00:02:00,560 --> 00:02:02,320
+output rest also comes with a standard
+
+
+62
+00:02:02,320 --> 00:02:04,640
+library that contains modules to handle
+
+
+63
+00:02:04,640 --> 00:02:07,360
+io the file system concurrency among
+
+
+64
+00:02:07,360 --> 00:02:09,360
+many other things now compile your code
+
+
+65
+00:02:09,360 --> 00:02:11,440
+to an executable with the rust compiler
+
+
+66
+00:02:11,440 --> 00:02:13,520
+you just built a memory safe executable
+
+
+67
+00:02:13,520 --> 00:02:14,959
+that can handle the most performance
+
+
+68
+00:02:14,959 --> 00:02:16,959
+intensive system requirements this has
+
+
+69
+00:02:16,959 --> 00:02:19,200
+been rust in 100 seconds hit the like
+
+
+70
+00:02:19,200 --> 00:02:20,720
+button and subscribe if you want to see
+
+
+71
+00:02:20,720 --> 00:02:22,400
+more short videos like this and leave a
+
+
+72
+00:02:22,400 --> 00:02:24,080
+comment if you want to see a full rust
+
+
+73
+00:02:24,080 --> 00:02:26,239
+tutorial thanks for watching and i will
+
+
+74
+00:02:26,239 --> 00:02:30,120
+see you in the next one
+
+

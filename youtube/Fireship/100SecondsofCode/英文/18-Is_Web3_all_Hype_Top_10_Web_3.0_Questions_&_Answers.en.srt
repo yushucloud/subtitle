@@ -1,0 +1,1535 @@
+1
+00:00:00,080 --> 00:00:02,639
+in the beginning god created web 1.0 it
+
+
+2
+00:00:02,639 --> 00:00:04,480
+was an information superhighway of
+
+
+3
+00:00:04,480 --> 00:00:06,000
+documents connected together by
+
+
+4
+00:00:06,000 --> 00:00:08,639
+hyperlinks and it was good around 2004
+
+
+5
+00:00:08,639 --> 00:00:10,719
+we saw the emergence of web 2.0 where
+
+
+6
+00:00:10,719 --> 00:00:12,240
+more people started participating in the
+
+
+7
+00:00:12,240 --> 00:00:14,000
+web through platforms like facebook
+
+
+8
+00:00:14,000 --> 00:00:15,920
+youtube twitter and many others it led
+
+
+9
+00:00:15,920 --> 00:00:18,080
+to massive centralized tech corporations
+
+
+10
+00:00:18,080 --> 00:00:20,080
+that dominate the flow of information
+
+
+11
+00:00:20,080 --> 00:00:21,760
+and money on the internet we live in
+
+
+12
+00:00:21,760 --> 00:00:23,279
+interesting times because we're at the
+
+
+13
+00:00:23,279 --> 00:00:26,080
+tipping point of web 3.0 a decentralized
+
+
+14
+00:00:26,080 --> 00:00:27,680
+but secure internet where people can
+
+
+15
+00:00:27,680 --> 00:00:29,599
+exchange money and information without
+
+
+16
+00:00:29,599 --> 00:00:31,439
+the need for an unnecessary middleman
+
+
+17
+00:00:31,439 --> 00:00:33,680
+like a bank or tech corporation today's
+
+
+18
+00:00:33,680 --> 00:00:35,680
+video is a complete introduction into
+
+
+19
+00:00:35,680 --> 00:00:38,160
+the wild world of web 3.0 as an
+
+
+20
+00:00:38,160 --> 00:00:39,840
+experienced developer it's humbling to
+
+
+21
+00:00:39,840 --> 00:00:41,360
+get into because it makes you feel like
+
+
+22
+00:00:41,360 --> 00:00:42,879
+you know nothing again we'll take a look
+
+
+23
+00:00:42,879 --> 00:00:44,800
+at the ecosystem from a high level and
+
+
+24
+00:00:44,800 --> 00:00:46,559
+try to answer all the stupid questions
+
+
+25
+00:00:46,559 --> 00:00:48,000
+that you'll have when you first get into
+
+
+26
+00:00:48,000 --> 00:00:50,000
+it like is web 3 all hype and should i
+
+
+27
+00:00:50,000 --> 00:00:51,600
+even bother getting into it i would say
+
+
+28
+00:00:51,600 --> 00:00:53,280
+yes to both there's obviously a ton of
+
+
+29
+00:00:53,280 --> 00:00:55,199
+hype around web3 but not everybody's
+
+
+30
+00:00:55,199 --> 00:00:56,960
+buying it even papa elon said that it
+
+
+31
+00:00:56,960 --> 00:00:59,120
+sounds like bs just a few days ago i
+
+
+32
+00:00:59,120 --> 00:01:00,800
+love the vision of putting the web back
+
+
+33
+00:01:00,800 --> 00:01:02,079
+in the hands of the people but the
+
+
+34
+00:01:02,079 --> 00:01:03,840
+reality is that many of these companies
+
+
+35
+00:01:03,840 --> 00:01:05,600
+and the cryptocurrencies that they issue
+
+
+36
+00:01:05,600 --> 00:01:07,280
+are controlled by vulture capitalists
+
+
+37
+00:01:07,280 --> 00:01:09,119
+and silicon valley insiders that's not
+
+
+38
+00:01:09,119 --> 00:01:10,880
+always the case but much of the industry
+
+
+39
+00:01:10,880 --> 00:01:12,640
+is propped up by fomo and there's a lot
+
+
+40
+00:01:12,640 --> 00:01:14,560
+of scams and shady stuff to watch out
+
+
+41
+00:01:14,560 --> 00:01:16,240
+for and there are smart people out there
+
+
+42
+00:01:16,240 --> 00:01:18,080
+making a very good argument about how
+
+
+43
+00:01:18,080 --> 00:01:19,920
+web 3 doesn't have the computing power
+
+
+44
+00:01:19,920 --> 00:01:22,240
+bandwidth or storage to scale on any
+
+
+45
+00:01:22,240 --> 00:01:23,680
+practical level the shills out there
+
+
+46
+00:01:23,680 --> 00:01:24,960
+will tell you that crypto is growing
+
+
+47
+00:01:24,960 --> 00:01:26,720
+faster than the internet was in the 90s
+
+
+48
+00:01:26,720 --> 00:01:28,400
+but that's a dumb argument because
+
+
+49
+00:01:28,400 --> 00:01:30,159
+crypto is built on top of the internet
+
+
+50
+00:01:30,159 --> 00:01:31,920
+itself you could use the same logic for
+
+
+51
+00:01:31,920 --> 00:01:33,520
+tick tock crypto is never going to be as
+
+
+52
+00:01:33,520 --> 00:01:35,280
+revolutionary as the internet was but
+
+
+53
+00:01:35,280 --> 00:01:36,640
+that doesn't mean it's not going to be a
+
+
+54
+00:01:36,640 --> 00:01:38,320
+big deal here's how i look at it i think
+
+
+55
+00:01:38,320 --> 00:01:39,920
+the best case scenario is that it's like
+
+
+56
+00:01:39,920 --> 00:01:42,399
+1992 and things are just getting started
+
+
+57
+00:01:42,399 --> 00:01:44,079
+web 3 is going to grow for another 10
+
+
+58
+00:01:44,079 --> 00:01:45,840
+years and completely revolutionize the
+
+
+59
+00:01:45,840 --> 00:01:47,680
+way the world works on the other hand
+
+
+60
+00:01:47,680 --> 00:01:48,960
+the worst case is that the
+
+
+61
+00:01:48,960 --> 00:01:50,880
+cryptocurrency bubble has already burst
+
+
+62
+00:01:50,880 --> 00:01:52,640
+and as it crashes it's going to take web
+
+
+63
+00:01:52,640 --> 00:01:54,479
+3 down with it for perspective when the
+
+
+64
+00:01:54,479 --> 00:01:56,479
+dot-com bubble burst the stock of amazon
+
+
+65
+00:01:56,479 --> 00:01:58,320
+declined by 90 and they were one of the
+
+
+66
+00:01:58,320 --> 00:02:00,000
+lucky companies that actually survived
+
+
+67
+00:02:00,000 --> 00:02:02,240
+if ethereum declines 90 just imagine
+
+
+68
+00:02:02,240 --> 00:02:04,560
+what that will do to hashtag web3 but my
+
+
+69
+00:02:04,560 --> 00:02:06,320
+next question is do we even need
+
+
+70
+00:02:06,320 --> 00:02:08,399
+cryptocurrency to build decentralized
+
+
+71
+00:02:08,399 --> 00:02:10,319
+apps i built a decentralized app on this
+
+
+72
+00:02:10,319 --> 00:02:12,160
+channel just a few months ago with gun
+
+
+73
+00:02:12,160 --> 00:02:14,239
+js it uses cryptography and web
+
+
+74
+00:02:14,239 --> 00:02:16,080
+technologies and has no requirement for
+
+
+75
+00:02:16,080 --> 00:02:17,520
+blockchain technology at all
+
+
+76
+00:02:17,520 --> 00:02:18,800
+decentralized tech has been around
+
+
+77
+00:02:18,800 --> 00:02:20,480
+forever like peer-to-peer file sharing
+
+
+78
+00:02:20,480 --> 00:02:22,080
+with napster back in the 90s or
+
+
+79
+00:02:22,080 --> 00:02:23,920
+bittorrent which has a hundred million
+
+
+80
+00:02:23,920 --> 00:02:25,840
+monthly active users that being said
+
+
+81
+00:02:25,840 --> 00:02:27,360
+cryptocurrency is still kind of
+
+
+82
+00:02:27,360 --> 00:02:28,879
+essential because you need some form of
+
+
+83
+00:02:28,879 --> 00:02:30,959
+payment to build up a creator economy
+
+
+84
+00:02:30,959 --> 00:02:32,800
+and banks are not an acceptable solution
+
+
+85
+00:02:32,800 --> 00:02:34,720
+there it also provides the incentive for
+
+
+86
+00:02:34,720 --> 00:02:36,000
+people to provide the computing
+
+
+87
+00:02:36,000 --> 00:02:37,680
+infrastructure that make the whole thing
+
+
+88
+00:02:37,680 --> 00:02:39,599
+possible speaking of which how does a
+
+
+89
+00:02:39,599 --> 00:02:41,519
+decentralized app or dap on the
+
+
+90
+00:02:41,519 --> 00:02:43,280
+blockchain work let's use the ethereum
+
+
+91
+00:02:43,280 --> 00:02:44,959
+blockchain as our example although there
+
+
+92
+00:02:44,959 --> 00:02:46,239
+are many alternatives with different
+
+
+93
+00:02:46,239 --> 00:02:48,319
+trade-offs out there ethereum is like a
+
+
+94
+00:02:48,319 --> 00:02:50,080
+giant network of computers where all the
+
+
+95
+00:02:50,080 --> 00:02:52,080
+participants agree on the same state of
+
+
+96
+00:02:52,080 --> 00:02:53,680
+the data throughout the network now
+
+
+97
+00:02:53,680 --> 00:02:55,280
+ether is the cryptocurrency on the
+
+
+98
+00:02:55,280 --> 00:02:57,200
+ethereum network which is used to create
+
+
+99
+00:02:57,200 --> 00:02:59,120
+transactions that change the state of
+
+
+100
+00:02:59,120 --> 00:03:00,480
+the data when you broadcast a
+
+
+101
+00:03:00,480 --> 00:03:02,640
+transaction you also offer up a small
+
+
+102
+00:03:02,640 --> 00:03:04,560
+amount of ether which provides incentive
+
+
+103
+00:03:04,560 --> 00:03:06,319
+for another computer in the network to
+
+
+104
+00:03:06,319 --> 00:03:08,239
+execute the transaction this is also
+
+
+105
+00:03:08,239 --> 00:03:10,319
+called a gas fee and conceptually it's
+
+
+106
+00:03:10,319 --> 00:03:12,319
+similar to paying aws for cloud
+
+
+107
+00:03:12,319 --> 00:03:14,080
+computing resources if you want things
+
+
+108
+00:03:14,080 --> 00:03:16,560
+done faster you pay more gas normally
+
+
+109
+00:03:16,560 --> 00:03:18,400
+when you build a web application you
+
+
+110
+00:03:18,400 --> 00:03:20,400
+write some back-end code then deploy it
+
+
+111
+00:03:20,400 --> 00:03:22,879
+to a centralized server like aws for a
+
+
+112
+00:03:22,879 --> 00:03:24,799
+decentralized app on the blockchain your
+
+
+113
+00:03:24,799 --> 00:03:26,799
+backend code is contained in a smart
+
+
+114
+00:03:26,799 --> 00:03:28,720
+contract usually written in the solidity
+
+
+115
+00:03:28,720 --> 00:03:30,560
+language which is just an application
+
+
+116
+00:03:30,560 --> 00:03:32,159
+that lives on the blockchain that can
+
+
+117
+00:03:32,159 --> 00:03:33,840
+govern the behavior between multiple
+
+
+118
+00:03:33,840 --> 00:03:35,680
+accounts a decentralized app also needs
+
+
+119
+00:03:35,680 --> 00:03:37,280
+to have a front end which can be built
+
+
+120
+00:03:37,280 --> 00:03:39,120
+just like a normal website except for
+
+
+121
+00:03:39,120 --> 00:03:41,040
+the fact that user authentication works
+
+
+122
+00:03:41,040 --> 00:03:42,799
+in a completely different way so how
+
+
+123
+00:03:42,799 --> 00:03:44,480
+does user identity work in a
+
+
+124
+00:03:44,480 --> 00:03:47,280
+decentralized app unlike web 2.0 the end
+
+
+125
+00:03:47,280 --> 00:03:49,280
+user owns all of their data there's no
+
+
+126
+00:03:49,280 --> 00:03:51,280
+need for you the developer to collect a
+
+
+127
+00:03:51,280 --> 00:03:53,439
+username and password the end user has a
+
+
+128
+00:03:53,439 --> 00:03:55,120
+public wallet address that can receive
+
+
+129
+00:03:55,120 --> 00:03:57,200
+payments and a private key that can sign
+
+
+130
+00:03:57,200 --> 00:03:59,280
+transactions to send payments to someone
+
+
+131
+00:03:59,280 --> 00:04:01,040
+else the user can connect their wallet
+
+
+132
+00:04:01,040 --> 00:04:03,360
+to a browser plugin like metamask your
+
+
+133
+00:04:03,360 --> 00:04:05,519
+friend application like a react app for
+
+
+134
+00:04:05,519 --> 00:04:07,040
+example can then interact with that
+
+
+135
+00:04:07,040 --> 00:04:08,560
+user's wallet to do something
+
+
+136
+00:04:08,560 --> 00:04:10,640
+interesting in the ui like purchase and
+
+
+137
+00:04:10,640 --> 00:04:13,840
+nft um but what is an nft well actually
+
+
+138
+00:04:13,840 --> 00:04:16,079
+what is a token a token is just a
+
+
+139
+00:04:16,079 --> 00:04:18,000
+digital asset we already looked at one
+
+
+140
+00:04:18,000 --> 00:04:20,560
+example in this video ether the currency
+
+
+141
+00:04:20,560 --> 00:04:22,639
+of ethereum it's a digital asset that
+
+
+142
+00:04:22,639 --> 00:04:24,160
+you can trade with other people but the
+
+
+143
+00:04:24,160 --> 00:04:26,000
+cool thing is that developers can create
+
+
+144
+00:04:26,000 --> 00:04:27,840
+their own tokens in the form of smart
+
+
+145
+00:04:27,840 --> 00:04:29,840
+contracts it's basically just a number
+
+
+146
+00:04:29,840 --> 00:04:32,000
+in a smart contract mapped to a wallet
+
+
+147
+00:04:32,000 --> 00:04:34,160
+address in fact if i wanted to create my
+
+
+148
+00:04:34,160 --> 00:04:36,080
+own cryptocurrency i could do so by
+
+
+149
+00:04:36,080 --> 00:04:37,840
+writing a smart contract that gives
+
+
+150
+00:04:37,840 --> 00:04:39,360
+myself an initial balance of 1
+
+
+151
+00:04:39,360 --> 00:04:41,199
+quadrillion tokens which i can then sell
+
+
+152
+00:04:41,199 --> 00:04:43,040
+to you for one dollar a pop then you
+
+
+153
+00:04:43,040 --> 00:04:44,560
+sell it to your friends for two dollars
+
+
+154
+00:04:44,560 --> 00:04:45,840
+then they sell it to their friends for
+
+
+155
+00:04:45,840 --> 00:04:47,759
+three dollars and we all get super rich
+
+
+156
+00:04:47,759 --> 00:04:49,120
+now i know that sounds like a ponzi
+
+
+157
+00:04:49,120 --> 00:04:51,360
+scheme but everything is a goddamn ponzi
+
+
+158
+00:04:51,360 --> 00:04:52,880
+scheme with the us dollar being the
+
+
+159
+00:04:52,880 --> 00:04:54,479
+leader in this space so no need to worry
+
+
+160
+00:04:54,479 --> 00:04:56,400
+about ethics or anything in this example
+
+
+161
+00:04:56,400 --> 00:04:58,240
+we've created a fungible token which
+
+
+162
+00:04:58,240 --> 00:05:00,320
+means that one token is always the same
+
+
+163
+00:05:00,320 --> 00:05:02,880
+value as another token of the same size
+
+
+164
+00:05:02,880 --> 00:05:04,880
+one coin is always worth the exact same
+
+
+165
+00:05:04,880 --> 00:05:07,199
+as another coin but tokens can also
+
+
+166
+00:05:07,199 --> 00:05:09,120
+represent assets that are not exactly
+
+
+167
+00:05:09,120 --> 00:05:11,360
+alike like baseball cards real estate
+
+
+168
+00:05:11,360 --> 00:05:13,199
+digital artwork and stuff like that
+
+
+169
+00:05:13,199 --> 00:05:14,960
+these are examples of non-fungible
+
+
+170
+00:05:14,960 --> 00:05:16,800
+tokens each token is unique and
+
+
+171
+00:05:16,800 --> 00:05:18,639
+represents a different item which means
+
+
+172
+00:05:18,639 --> 00:05:20,320
+that its actual market value might be
+
+
+173
+00:05:20,320 --> 00:05:22,160
+different when you go to trade it in for
+
+
+174
+00:05:22,160 --> 00:05:23,520
+some other kind of currency you've
+
+
+175
+00:05:23,520 --> 00:05:25,440
+probably seen the nft craze with entire
+
+
+176
+00:05:25,440 --> 00:05:27,600
+marketplaces like open seas popping up
+
+
+177
+00:05:27,600 --> 00:05:29,759
+to sell digital artwork as non-fungible
+
+
+178
+00:05:29,759 --> 00:05:31,759
+tokens which is actually a great example
+
+
+179
+00:05:31,759 --> 00:05:34,080
+of a highly polished web 3 app now i
+
+
+180
+00:05:34,080 --> 00:05:35,520
+want to switch gears and talk about
+
+
+181
+00:05:35,520 --> 00:05:37,520
+technology what does the front end of a
+
+
+182
+00:05:37,520 --> 00:05:39,520
+web3 application look like for the most
+
+
+183
+00:05:39,520 --> 00:05:41,120
+part it's not much different than a
+
+
+184
+00:05:41,120 --> 00:05:42,960
+normal web app you'll likely use a ui
+
+
+185
+00:05:42,960 --> 00:05:45,039
+library like react along with all your
+
+
+186
+00:05:45,039 --> 00:05:46,639
+other favorite front-end tools things
+
+
+187
+00:05:46,639 --> 00:05:48,160
+become different when we start talking
+
+
+188
+00:05:48,160 --> 00:05:50,160
+about user authentication because like i
+
+
+189
+00:05:50,160 --> 00:05:52,400
+mentioned earlier the end user uses a
+
+
+190
+00:05:52,400 --> 00:05:54,320
+plugin like meta mask to make their
+
+
+191
+00:05:54,320 --> 00:05:56,400
+public wallet details available to a
+
+
+192
+00:05:56,400 --> 00:05:58,080
+decentralized app now the question
+
+
+193
+00:05:58,080 --> 00:06:00,240
+becomes how do we as developers connect
+
+
+194
+00:06:00,240 --> 00:06:02,319
+to meta mask it's actually really easy
+
+
+195
+00:06:02,319 --> 00:06:04,720
+because metamask creates a global object
+
+
+196
+00:06:04,720 --> 00:06:06,639
+on the browser window that we can use to
+
+
+197
+00:06:06,639 --> 00:06:08,479
+access details about the wallet now
+
+
+198
+00:06:08,479 --> 00:06:10,080
+figuring out what to do with this data
+
+
+199
+00:06:10,080 --> 00:06:11,840
+is actually pretty complicated but
+
+
+200
+00:06:11,840 --> 00:06:13,520
+luckily there's libraries out there to
+
+
+201
+00:06:13,520 --> 00:06:14,960
+make our lives easier the two most
+
+
+202
+00:06:14,960 --> 00:06:17,639
+popular options are web3.js and
+
+
+203
+00:06:17,639 --> 00:06:19,440
+ethers.js they provide a
+
+
+204
+00:06:19,440 --> 00:06:21,440
+javascript-based api making it much
+
+
+205
+00:06:21,440 --> 00:06:23,600
+easier to interact with the end user and
+
+
+206
+00:06:23,600 --> 00:06:25,520
+smart contracts on the blockchain here's
+
+
+207
+00:06:25,520 --> 00:06:27,199
+an example of how the process might look
+
+
+208
+00:06:27,199 --> 00:06:28,880
+we create a provider with the window
+
+
+209
+00:06:28,880 --> 00:06:30,720
+ethereum object which is used to then
+
+
+210
+00:06:30,720 --> 00:06:32,639
+create a signer you can think of that as
+
+
+211
+00:06:32,639 --> 00:06:34,400
+the current user we then connect to a
+
+
+212
+00:06:34,400 --> 00:06:36,240
+smart contract then change the state of
+
+
+213
+00:06:36,240 --> 00:06:37,600
+it which will require the user's
+
+
+214
+00:06:37,600 --> 00:06:39,520
+approval and is based on the logic and
+
+
+215
+00:06:39,520 --> 00:06:41,199
+the smart contract itself and that's all
+
+
+216
+00:06:41,199 --> 00:06:42,479
+it really takes to initiate a
+
+
+217
+00:06:42,479 --> 00:06:44,000
+transaction on the front end the front
+
+
+218
+00:06:44,000 --> 00:06:45,680
+end stuff is pretty simple but what does
+
+
+219
+00:06:45,680 --> 00:06:47,280
+the back end look like in a web web3
+
+
+220
+00:06:47,280 --> 00:06:49,280
+application well it's probably a lot
+
+
+221
+00:06:49,280 --> 00:06:50,800
+different than what you're used to as an
+
+
+222
+00:06:50,800 --> 00:06:52,720
+old-timey web developer instead of a
+
+
+223
+00:06:52,720 --> 00:06:55,599
+server and database like php and mysql
+
+
+224
+00:06:55,599 --> 00:06:57,840
+you'll be writing smart contracts there
+
+
+225
+00:06:57,840 --> 00:06:59,440
+are frameworks out there designed to
+
+
+226
+00:06:59,440 --> 00:07:01,120
+streamline development two of the most
+
+
+227
+00:07:01,120 --> 00:07:03,680
+popular options are hard hat and truffle
+
+
+228
+00:07:03,680 --> 00:07:05,039
+when you add them to your project
+
+
+229
+00:07:05,039 --> 00:07:06,479
+they'll give you a place to write a
+
+
+230
+00:07:06,479 --> 00:07:08,400
+smart contract in the solidity
+
+
+231
+00:07:08,400 --> 00:07:10,479
+programming language i have a 100 second
+
+
+232
+00:07:10,479 --> 00:07:12,160
+video if you want to learn more but it's
+
+
+233
+00:07:12,160 --> 00:07:14,240
+basically an object oriented language
+
+
+234
+00:07:14,240 --> 00:07:16,000
+designed specifically for writing smart
+
+
+235
+00:07:16,000 --> 00:07:17,759
+contracts on the blockchain that may
+
+
+236
+00:07:17,759 --> 00:07:19,759
+sound intimidating but there's a project
+
+
+237
+00:07:19,759 --> 00:07:21,360
+out there called open zeppelin that
+
+
+238
+00:07:21,360 --> 00:07:22,880
+provides templates for writing smart
+
+
+239
+00:07:22,880 --> 00:07:24,960
+contracts that comply to industry
+
+
+240
+00:07:24,960 --> 00:07:27,120
+standards making it extremely easy to
+
+
+241
+00:07:27,120 --> 00:07:29,039
+implement reliable code out of the gate
+
+
+242
+00:07:29,039 --> 00:07:30,479
+now the other thing a development tool
+
+
+243
+00:07:30,479 --> 00:07:32,080
+chain will do for you is provide a
+
+
+244
+00:07:32,080 --> 00:07:34,240
+script to deploy your smart contract to
+
+
+245
+00:07:34,240 --> 00:07:36,160
+the blockchain it's just a simple node
+
+
+246
+00:07:36,160 --> 00:07:38,080
+script that signs a contract with your
+
+
+247
+00:07:38,080 --> 00:07:39,919
+credentials and deploys it to an address
+
+
+248
+00:07:39,919 --> 00:07:41,440
+on the blockchain now you might be
+
+
+249
+00:07:41,440 --> 00:07:43,280
+wondering how do i test this code before
+
+
+250
+00:07:43,280 --> 00:07:45,039
+i deploy it because i have no idea if
+
+
+251
+00:07:45,039 --> 00:07:46,960
+this thing actually works that's another
+
+
+252
+00:07:46,960 --> 00:07:48,800
+thing that hardhat and truffle can help
+
+
+253
+00:07:48,800 --> 00:07:50,479
+you out with they can create a testing
+
+
+254
+00:07:50,479 --> 00:07:52,400
+network on localhost then generate a
+
+
+255
+00:07:52,400 --> 00:07:54,000
+bunch of wallet addresses loaded up with
+
+
+256
+00:07:54,000 --> 00:07:56,319
+fake crypto that you can use for testing
+
+
+257
+00:07:56,319 --> 00:07:58,160
+in the browser you can connect metamask
+
+
+258
+00:07:58,160 --> 00:07:59,759
+to your testing network instead of
+
+
+259
+00:07:59,759 --> 00:08:01,759
+operating on the actual ethereum network
+
+
+260
+00:08:01,759 --> 00:08:03,599
+in addition if you're building a serious
+
+
+261
+00:08:03,599 --> 00:08:04,879
+app you should consider writing
+
+
+262
+00:08:04,879 --> 00:08:06,479
+automated tests for it and there's a
+
+
+263
+00:08:06,479 --> 00:08:08,160
+library called waffle that can help you
+
+
+264
+00:08:08,160 --> 00:08:09,520
+do that that's what a basic
+
+
+265
+00:08:09,520 --> 00:08:11,520
+decentralized app looks like but one
+
+
+266
+00:08:11,520 --> 00:08:13,360
+more stupid question you might have is
+
+
+267
+00:08:13,360 --> 00:08:15,440
+do i store all my data in the blockchain
+
+
+268
+00:08:15,440 --> 00:08:17,599
+the answer is no it's not efficient or
+
+
+269
+00:08:17,599 --> 00:08:19,360
+necessary to store everything in the
+
+
+270
+00:08:19,360 --> 00:08:21,039
+blockchain and that's where off-chain
+
+
+271
+00:08:21,039 --> 00:08:23,120
+storage comes in in some cases data
+
+
+272
+00:08:23,120 --> 00:08:24,479
+might be too large to store on the
+
+
+273
+00:08:24,479 --> 00:08:26,319
+blockchain or it might need to be
+
+
+274
+00:08:26,319 --> 00:08:27,919
+modified or deleted which is not
+
+
+275
+00:08:27,919 --> 00:08:29,599
+possible in a blockchain where all the
+
+
+276
+00:08:29,599 --> 00:08:31,360
+data is read only the most common
+
+
+277
+00:08:31,360 --> 00:08:33,440
+solution is the interplanetary file
+
+
+278
+00:08:33,440 --> 00:08:36,320
+system or ipfs it's a decentralized way
+
+
+279
+00:08:36,320 --> 00:08:38,479
+to share files very similar to the way
+
+
+280
+00:08:38,479 --> 00:08:40,000
+bittorrent works and there's also
+
+
+281
+00:08:40,000 --> 00:08:42,479
+databases built on top of ipfs like
+
+
+282
+00:08:42,479 --> 00:08:44,959
+orbitdb and threaddb which is kind of
+
+
+283
+00:08:44,959 --> 00:08:47,360
+like a peer-to-peer version of mongodb
+
+
+284
+00:08:47,360 --> 00:08:48,720
+if you've made it this far in the video
+
+
+285
+00:08:48,720 --> 00:08:50,800
+you might be thinking web3 looks awesome
+
+
+286
+00:08:50,800 --> 00:08:52,720
+but how do i get started i'm working on
+
+
+287
+00:08:52,720 --> 00:08:54,560
+a full step-by-step tutorial that will
+
+
+288
+00:08:54,560 --> 00:08:56,240
+be out on the channel soon so make sure
+
+
+289
+00:08:56,240 --> 00:08:57,680
+you're subscribed to catch that the
+
+
+290
+00:08:57,680 --> 00:08:59,200
+easiest way to start messing around with
+
+
+291
+00:08:59,200 --> 00:09:01,600
+smart contracts is with the remix ide
+
+
+292
+00:09:01,600 --> 00:09:03,120
+it's a browser-based tool that will
+
+
+293
+00:09:03,120 --> 00:09:04,480
+handle all the compilation and
+
+
+294
+00:09:04,480 --> 00:09:05,839
+everything for you so you don't have to
+
+
+295
+00:09:05,839 --> 00:09:07,440
+mess around with any javascript on
+
+
+296
+00:09:07,440 --> 00:09:08,880
+youtube there are a couple of really
+
+
+297
+00:09:08,880 --> 00:09:10,399
+good channels that i want to mention one
+
+
+298
+00:09:10,399 --> 00:09:12,640
+is hash libs for working with nfts and
+
+
+299
+00:09:12,640 --> 00:09:14,640
+the other one is nader dabit just for
+
+
+300
+00:09:14,640 --> 00:09:16,880
+all around wisdom related to web3 i'm
+
+
+301
+00:09:16,880 --> 00:09:18,240
+gonna go ahead and wrap things up there
+
+
+302
+00:09:18,240 --> 00:09:19,920
+if you have more questions about web3
+
+
+303
+00:09:19,920 --> 00:09:21,279
+let me know in the comments and i'm
+
+
+304
+00:09:21,279 --> 00:09:22,640
+curious to know if you think web 3 is
+
+
+305
+00:09:22,640 --> 00:09:24,080
+the future or if you think it's just a
+
+
+306
+00:09:24,080 --> 00:09:25,839
+big nothing burger thanks for watching
+
+
+307
+00:09:25,839 --> 00:09:29,839
+and i will see you in the next one
+
+

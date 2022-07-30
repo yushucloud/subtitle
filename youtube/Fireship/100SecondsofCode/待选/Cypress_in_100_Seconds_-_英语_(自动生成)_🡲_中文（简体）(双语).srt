@@ -1,0 +1,198 @@
+1
+00:00:00,240 --> 00:00:04,080
+cypress a testing solution for web applications famous for making
+cypress 一种针对 Web 应用程序的测试解决方案，以使
+
+2
+00:00:04,080 --> 00:00:07,440
+test-driven development fun for javascript developers we all know
+javascript 开发人员的测试驱动开发变得有趣而闻名我们都知道
+
+3
+00:00:07,440 --> 00:00:10,719
+testing is the right thing to do but actually doing it in a front-end
+测试是正确的事情，但实际上在前端
+
+4
+00:00:10,719 --> 00:00:15,120
+javascript project can be complicated slow and just not fun for many the
+javascript 项目中进行测试可能会很复杂，速度很慢，而且对许多人来说并不有趣
+
+5
+00:00:15,120 --> 00:00:19,359
+obvious solution is to simply not test anything at all that's not ideal cyprus
+显而易见的解决方案是根本不测试任何不理想的东西 塞浦路斯
+
+6
+00:00:19,359 --> 00:00:22,880
+provides an open source browser-based test runner that can experience your
+提供了一个基于浏览器的开源测试运行器，可以
+
+7
+00:00:22,880 --> 00:00:26,560
+website just like the end user would it might fill out a login form click the
+像最终用户一样体验您的网站，它可能会填写登录表单单击
+
+8
+00:00:26,560 --> 00:00:29,920
+submit button then navigate to the user dashboard all of which happens
+提交按钮然后导航到用户仪表板所有这些都
+
+9
+00:00:29,920 --> 00:00:33,600
+programmatically based on code you define every test is recorded and a
+基于您定义的代码以编程方式发生，每个测试都被记录并
+
+10
+00:00:33,600 --> 00:00:37,280
+snapshot is saved at each step this makes it possible to time travel through
+在每个步骤中保存一个快照，这使得可以通过用户体验进行时间旅行，
+
+11
+00:00:37,280 --> 00:00:41,280
+the user experience to figure out precisely why your code sucks and unlike
+以准确找出您的代码糟糕的原因，并且与
+
+12
+00:00:41,280 --> 00:00:45,039
+traditional testing utilities debugging can be performed directly from the
+传统的测试实用程序不同，调试可以是 直接从
+
+13
+00:00:45,039 --> 00:00:48,719
+browser dev tools not only does it work for end-to-end testing of an entire
+浏览器开发工具执行，它不仅适用于整个应用程序的端到端测试，
+
+14
+00:00:48,719 --> 00:00:52,960
+application but it's also great for integration testing and unit testing of
+而且是一个 非常适合集成测试和
+
+15
+00:00:52,960 --> 00:00:57,039
+isolated components or javascript business logic to get started install it
+独立组件或 javascript业务逻辑的单元测试以开始将其安装
+
+16
+00:00:57,039 --> 00:01:01,760
+into your project then run npx cypress open notice how this pulls up the test
+到您的项目中，然后运行 npx cypress open意它如何自动启动测试运行器并在
+
+17
+00:01:01,760 --> 00:01:05,119
+runner automatically and creates a folder in the root of your project named
+项目的根目录中创建一个名为 cypre
+
+18
+00:01:05,119 --> 00:01:08,400
+cypress that contains all of your testing code fixtures is where you would
+s 的文件夹 包含您所有的测试代码夹具是您
+
+19
+00:01:08,400 --> 00:01:12,799
+define mock data plugins allow you to hook into the testing life cycle support
+定义模拟数据的地方插件允许您连接到测试生命周期支持
+
+20
+00:01:12,799 --> 00:01:16,479
+is for your global configuration then your main testing code lives in the
+是针对您的全局配置然后您的主要测试代码存在于
+
+21
+00:01:16,479 --> 00:01:20,400
+integration file we can create a test suite with describe then before each
+集成文件中我们可以使用之前的描述创建一个测试套件 每个
+
+22
+00:01:20,400 --> 00:01:25,119
+test we can run some setup code like tell cyprus to visit a specific url from
+测试我们都可以运行一些设置代码，比如告诉塞浦路斯从那里访问一个特定的 url
+
+23
+00:01:25,119 --> 00:01:29,280
+there use it to describe a test case where you might verify that the web page
+使用它来描述一个测试用例，您可以在其中验证网页是否
+
+24
+00:01:29,280 --> 00:01:32,960
+contains a certain piece of content the get method will grab an element from the
+包含特定内容get 方法将从 dom 中获取一个元素
+
+25
+00:01:32,960 --> 00:01:36,880
+dom and allow you to run assertions on it like it should have the text to log
+并 允许你在它上面运行断言，就像它应该有登录的文本
+
+26
+00:01:36,880 --> 00:01:40,880
+in it bundles the chai assertion library for behavior-driven development which
+一样捆绑了 chai 断言库，用于行为驱动的开发 w
+
+27
+00:01:40,880 --> 00:01:44,880
+will autocomplete with intellisense from there you may want to find a form input
+hich 将从那里使用智能感知自动完成您可能想要找到一个表单输入
+
+28
+00:01:44,880 --> 00:01:48,560
+and type something into it after the form is filled out submit it to update
+并在填写表单后在其中输入一些内容提交它以更新
+
+29
+00:01:48,560 --> 00:01:51,680
+your database the great thing about cypress is that it will automatically
+您的数据库关于cypress 的好处是它会自动
+
+30
+00:01:51,680 --> 00:01:55,200
+wait for async events which means you don't need to add a bunch of sleepers in
+等待异步事件，这意味着您不需要 不需要在
+
+31
+00:01:55,200 --> 00:01:58,719
+your test code things just work naturally now run your tests to watch
+您的测试代码中添加一堆睡眠者 事情自然而然地工作 现在运行您的测试以观察
+
+32
+00:01:58,719 --> 00:02:03,119
+everything go down visually a snapshot of the dom is taken for every event if
+一切都在视觉上下降如果断言失败，则为每个事件拍摄 dom 的快照
+
+33
+00:02:03,119 --> 00:02:06,719
+an assertion fails you can easily inspect the dom to see what went wrong
+您可以轻松检查 dom 以查看什么
+
+34
+00:02:06,719 --> 00:02:10,720
+on top of that you can open the selector playground to easily grab any element on
+最重要的是，您可以打开选择器游乐场以轻松获取页面上的任何元素
+
+35
+00:02:10,720 --> 00:02:15,360
+the page by default it runs in chrome but you can also run in firefox edge or
+，默认情况下它在 chrome 中运行，但您也可以在 Firefox Edge 或
+
+36
+00:02:15,360 --> 00:02:19,680
+electron for desktop apps this has been cypress in 100 seconds hit the like
+Electron 中运行桌面应用程序，这已在 100 秒内被 cypress 点击“赞”
+
+37
+00:02:19,680 --> 00:02:22,800
+button and subscribe if you want to see more short videos like this and if you
+按钮 如果你想看更多这样的短视频，如果你
+
+38
+00:02:22,800 --> 00:02:26,000
+want to learn more about testing my friend bartow's just launched a free
+想了解更多关于测试我的朋友 bartow 刚刚推出了免费
+
+39
+00:02:26,000 --> 00:02:29,599
+end-to-end testing course thanks for watching and i will see you in the next
+的端到端测试课程，请订阅，感谢观看和 我会在下一个见到你
+
+40
+00:02:29,599 --> 00:02:32,160
+one

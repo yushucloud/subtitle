@@ -1,0 +1,375 @@
+1
+00:00:02,480 --> 00:00:03,600
+raspberry pi
+
+
+2
+00:00:03,600 --> 00:00:05,600
+a computer that fits in the palm of your
+
+
+3
+00:00:05,600 --> 00:00:06,879
+hand with a price tag
+
+
+4
+00:00:06,879 --> 00:00:08,960
+as low as five dollars the idea was born
+
+
+5
+00:00:08,960 --> 00:00:11,200
+in 2006 and the first commercial unit
+
+
+6
+00:00:11,200 --> 00:00:12,559
+was launched in 2012
+
+
+7
+00:00:12,559 --> 00:00:14,480
+and since then it's evolved into one of
+
+
+8
+00:00:14,480 --> 00:00:16,240
+the best selling computers in the world
+
+
+9
+00:00:16,240 --> 00:00:18,000
+it's named raspberry because computer
+
+
+10
+00:00:18,000 --> 00:00:19,680
+companies like to name themselves after
+
+
+11
+00:00:19,680 --> 00:00:20,400
+fruit and
+
+
+12
+00:00:20,400 --> 00:00:22,560
+pie for the python programming language
+
+
+13
+00:00:22,560 --> 00:00:24,480
+not only is the computer tiny but it can
+
+
+14
+00:00:24,480 --> 00:00:25,760
+also be quite powerful
+
+
+15
+00:00:25,760 --> 00:00:27,840
+with a quad core processor and up to
+
+
+16
+00:00:27,840 --> 00:00:29,439
+eight gigabytes of ram they're great for
+
+
+17
+00:00:29,439 --> 00:00:32,079
+building your own iot prototypes robots
+
+
+18
+00:00:32,079 --> 00:00:34,399
+security cameras web servers and many
+
+
+19
+00:00:34,399 --> 00:00:35,600
+other fun projects
+
+
+20
+00:00:35,600 --> 00:00:37,520
+when you unbox your raspberry pi 4
+
+
+21
+00:00:37,520 --> 00:00:39,120
+you'll notice a bunch of little chips
+
+
+22
+00:00:39,120 --> 00:00:40,000
+and connectors
+
+
+23
+00:00:40,000 --> 00:00:42,480
+in the center we have our cpu and ram
+
+
+24
+00:00:42,480 --> 00:00:44,559
+that is the brain of the operation
+
+
+25
+00:00:44,559 --> 00:00:46,960
+nearby is the wi-fi bluetooth module
+
+
+26
+00:00:46,960 --> 00:00:48,719
+that can wirelessly connect to the
+
+
+27
+00:00:48,719 --> 00:00:49,760
+outside world
+
+
+28
+00:00:49,760 --> 00:00:51,600
+at the top we have a general purpose
+
+
+29
+00:00:51,600 --> 00:00:52,960
+input output connector
+
+
+30
+00:00:52,960 --> 00:00:55,039
+for connecting other electrical devices
+
+
+31
+00:00:55,039 --> 00:00:56,480
+to the right we have an ethernet
+
+
+32
+00:00:56,480 --> 00:00:58,800
+connection along with four usb ports
+
+
+33
+00:00:58,800 --> 00:01:00,960
+on the bottom we have an audio jack two
+
+
+34
+00:01:00,960 --> 00:01:02,640
+connect speakers or headphones
+
+
+35
+00:01:02,640 --> 00:01:04,879
+a csi camera connector for building your
+
+
+36
+00:01:04,879 --> 00:01:06,159
+own custom camera
+
+
+37
+00:01:06,159 --> 00:01:08,799
+micro hdmi ports for connecting multiple
+
+
+38
+00:01:08,799 --> 00:01:09,520
+monitors
+
+
+39
+00:01:09,520 --> 00:01:12,000
+and finally a usb c port to provide
+
+
+40
+00:01:12,000 --> 00:01:13,600
+power to the computer but most
+
+
+41
+00:01:13,600 --> 00:01:14,159
+importantly
+
+
+42
+00:01:14,159 --> 00:01:16,159
+flip the raspberry pi over to find the
+
+
+43
+00:01:16,159 --> 00:01:17,439
+micro sd slot
+
+
+44
+00:01:17,439 --> 00:01:18,960
+think of it as a hard drive that
+
+
+45
+00:01:18,960 --> 00:01:21,040
+contains the operating system required
+
+
+46
+00:01:21,040 --> 00:01:21,360
+to
+
+
+47
+00:01:21,360 --> 00:01:23,200
+interface with the hardware you can use
+
+
+48
+00:01:23,200 --> 00:01:25,280
+the raspberry pi like a normal desktop
+
+
+49
+00:01:25,280 --> 00:01:25,920
+computer
+
+
+50
+00:01:25,920 --> 00:01:27,759
+by connecting a keyboard mouse and
+
+
+51
+00:01:27,759 --> 00:01:29,280
+monitor when you power it up the first
+
+
+52
+00:01:29,280 --> 00:01:30,400
+time you can install
+
+
+53
+00:01:30,400 --> 00:01:32,240
+any operating system you'd like but most
+
+
+54
+00:01:32,240 --> 00:01:33,920
+beginners will take advantage of the
+
+
+55
+00:01:33,920 --> 00:01:34,880
+noobs installer
+
+
+56
+00:01:34,880 --> 00:01:36,880
+which installs a flavor of linux called
+
+
+57
+00:01:36,880 --> 00:01:38,479
+raspberry pi os
+
+
+58
+00:01:38,479 --> 00:01:40,479
+now that you're in you can program it to
+
+
+59
+00:01:40,479 --> 00:01:41,920
+take over the world you might connect
+
+
+60
+00:01:41,920 --> 00:01:44,000
+some leds to the gpio header then
+
+
+61
+00:01:44,000 --> 00:01:46,079
+control them with a python script or you
+
+
+62
+00:01:46,079 --> 00:01:48,000
+might add a camera then connect to wi-fi
+
+
+63
+00:01:48,000 --> 00:01:49,759
+to build your own home security system
+
+
+64
+00:01:49,759 --> 00:01:50,479
+from scratch
+
+
+65
+00:01:50,479 --> 00:01:52,479
+the possibilities are limited only by
+
+
+66
+00:01:52,479 --> 00:01:53,520
+your imagination
+
+
+67
+00:01:53,520 --> 00:01:55,600
+this has been raspberry pi in 100
+
+
+68
+00:01:55,600 --> 00:01:57,520
+seconds if you enjoy these short videos
+
+
+69
+00:01:57,520 --> 00:01:59,119
+please make sure to hit the like button
+
+
+70
+00:01:59,119 --> 00:02:00,000
+and subscribe
+
+
+71
+00:02:00,000 --> 00:02:01,520
+it really helps out and if you want to
+
+
+72
+00:02:01,520 --> 00:02:03,360
+see more raspberry pi content let me
+
+
+73
+00:02:03,360 --> 00:02:04,399
+know in the comments
+
+
+74
+00:02:04,399 --> 00:02:06,320
+thanks for watching and i will see you
+
+
+75
+00:02:06,320 --> 00:02:09,200
+in the next one
+
+

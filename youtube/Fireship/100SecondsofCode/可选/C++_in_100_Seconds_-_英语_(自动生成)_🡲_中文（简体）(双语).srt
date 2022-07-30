@@ -1,0 +1,214 @@
+1
+00:00:00,399 --> 00:00:04,640
+c plus plus a statically typed compiled programming language famous for its
+c plus 是一种静态类型编译的编程语言，以其
+
+2
+00:00:04,640 --> 00:00:07,759
+widespread use and software infrastructure and infamous for its
+广泛的使用和软件基础设施而闻名，并因其
+
+3
+00:00:07,759 --> 00:00:12,880
+steep learning curve it was created in 1979 by bjorn strausstrup at at t bell
+陡峭的学习曲线而臭名昭著。它于1979 年由 t bell 实验室的 bjorn strausstrup 创建，
+
+4
+00:00:12,880 --> 00:00:16,480
+labs he was inspired by the object-oriented nature of simula but
+他受到simula 的面向对象特性的启发，但
+
+5
+00:00:16,480 --> 00:00:20,000
+needed a language with a high performance of c and thus c with classes
+需要 一种具有c 高性能的语言，因此带有类的 c
+
+6
+00:00:20,000 --> 00:00:24,080
+was born it's designed as a superset of c which means that virtually any c
+诞生了，它被设计为 c 的超集，这意味着几乎任何 c
+
+7
+00:00:24,080 --> 00:00:28,640
+program is also a valid c plus plus program but it also adds zero overhead
+程序也是有效的 c plus plus程序，但它还增加了零开销
+
+8
+00:00:28,640 --> 00:00:33,280
+abstractions such as object oriented patterns like polymorphism encapsulation
+抽象，例如面向对象的模式，如 多态性封装
+
+9
+00:00:33,280 --> 00:00:36,960
+and inheritance today it's used in a wide variety of systems with constrained
+和继承今天它被用于各种内存需求受限的系统，
+
+10
+00:00:36,960 --> 00:00:41,200
+memory demands like the unreal engine for aaa video games programs like adobe
+如用于 aaa 视频游戏的虚幻引擎程序，如
+
+11
+00:00:41,200 --> 00:00:45,120
+after effects that were used to edit this video databases like mysql and
+adobe，用于编辑此视频数据库如 mysql 和
+
+12
+00:00:45,120 --> 00:00:48,640
+mongodb embedded systems like the display on your smart toaster and is
+mongodb 嵌入式系统，如智能显示器 烤面包机，
+
+13
+00:00:48,640 --> 00:00:52,239
+used to implement much of our low-level infrastructure like language compilers
+用于实现我们的许多低级基础设施，如语言编译器
+
+14
+00:00:52,239 --> 00:00:55,840
+and virtual machines it's so popular because it provides low-level memory and
+和虚拟机 achines 它之所以如此受欢迎，是因为它提供了像 c 一样的低级内存和
+
+15
+00:00:55,840 --> 00:00:59,760
+hardware control like c but with high level abstractions like classes and
+硬件控制，但具有像类和智能指针这样的高级抽象，
+
+16
+00:00:59,760 --> 00:01:03,199
+smart pointers c plus plus makes it harder to shoot yourself in the foot but
+c plus plus 使得你更难射中自己的脚，
+
+17
+00:01:03,199 --> 00:01:06,159
+when you do it'll blow your whole leg off
+但当你这样做时，它会炸掉你的整条腿
+
+18
+00:01:06,159 --> 00:01:11,119
+to get started install a c plus compiler like gcc or clang then create a file
+开始安装像 gcc 或 clang 这样的 c plus 编译器然后创建一个
+
+19
+00:01:11,119 --> 00:01:15,520
+ending in cpp include io stream from the standard library to handle input and
+以 cpp 结尾的文件包含来自标准库的 io 流以处理输入和
+
+20
+00:01:15,520 --> 00:01:18,960
+output your code will start executing from the main function to print hello
+输出您的代码将从主函数开始执行以打印 hello
+
+21
+00:01:18,960 --> 00:01:22,560
+world we simply use standard character output followed by the bitwise shift
+world 我们只需使用标准字符输出 通过按位
+
+22
+00:01:22,560 --> 00:01:26,479
+left operator and a string literal we can get rid of this std though by adding
+左移运算符和字符串文字，我们可以通过
+
+23
+00:01:26,479 --> 00:01:30,079
+a namespace to the top of the file now if we want to create a string variable
+在文件顶部添加命名空间来摆脱这个std，但是如果我们想创建一个字符串变量，
+
+24
+00:01:30,079 --> 00:01:34,400
+we can do so by typing it as an array of characters however if we include string
+我们可以通过将其键入为字符数组来实现如果我们
+
+25
+00:01:34,400 --> 00:01:37,920
+from the standard library we can use the string type instead the real game
+包含标准库中的字符串，我们可以使用字符串类型而不是真正的游戏
+
+26
+00:01:37,920 --> 00:01:41,200
+changer though is the fact that c plus plus supports object-oriented
+规则改变者，尽管 c plusplus 支持
+
+27
+00:01:41,200 --> 00:01:45,680
+programming with classes a class is just a blueprint for an object inside a class
+带有类 a 的面向对象编程 类只是类内对象的蓝图，
+
+28
+00:01:45,680 --> 00:01:49,280
+you can define attributes and methods that will be private by default or make
+您可以定义默认情况下为私有的属性和方法，或者
+
+29
+00:01:49,280 --> 00:01:53,040
+them public by adding them under the public specifier it's also possible to
+通过在公共说明符下添加它们使它们成为公共的，也可以
+
+30
+00:01:53,040 --> 00:01:56,880
+define methods outside the class definition using a double colon methods
+使用双冒号定义类定义之外的方法方法
+
+31
+00:01:56,880 --> 00:02:00,320
+can also be defined multiple times with different parameters which is known as
+可以 也可以使用不同的参数多次定义，这被称为
+
+32
+00:02:00,320 --> 00:02:03,759
+overloading and is a form of polymorphism in addition we can define
+重载，是一种多态形式此外，我们可以定义
+
+33
+00:02:03,759 --> 00:02:08,160
+constructors and destructors to run code when an object is created or destroyed
+构造函数和析构函数以在创建或销毁对象时运行代码
+
+34
+00:02:08,160 --> 00:02:11,520
+classes also support inheritance allowing developers to more efficiently
+类还支持继承，允许开发人员更有效地
+
+35
+00:02:11,520 --> 00:02:14,959
+share logic throughout a program to instantiate an object type the class
+在整个应用程序中共享逻辑实例化对象类型的类
+
+36
+00:02:14,959 --> 00:02:18,400
+name followed by the name of your object and optionally any parameters for the
+名，后跟对象的名称以及可选的
+
+37
+00:02:18,400 --> 00:02:22,080
+constructor when it comes to memory we could manage everything manually with
+构造函数的任何参数，当涉及到内存时，我们可以使用指针和引用手动管理所有内容，
+
+38
+00:02:22,080 --> 00:02:26,080
+pointers and references however tools like unique pointer can get the job done
+但是像唯一指针这样的工具可以
+
+39
+00:02:26,080 --> 00:02:29,760
+in a way that's easier and safer by ensuring that only one object can be
+以某种方式完成工作 通过确保只能分配一个对象，这更容易、更安全
+
+40
+00:02:29,760 --> 00:02:33,680
+allocated to memory now to run your code open up the terminal and use a tool like
+记忆现在运行你的代码打开终端并使用像
+
+41
+00:02:33,680 --> 00:02:39,040
+clang plus plus to compile it this has been c plus in 100 seconds hit
+clang plus plus这样的工具来编译它这已经是c plus在100秒内
+
+42
+00:02:39,040 --> 00:02:41,840
+the like button and subscribe if you want to see more short videos like this
+点击like按钮并订阅如果你想看到更多这样的短视频
+
+43
+00:02:41,840 --> 00:02:47,080
+thanks for watching and i will see you in the next one
+感谢观看和 我会在下一个见到你

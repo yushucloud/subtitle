@@ -1,0 +1,194 @@
+1
+00:00:00,160 --> 00:00:04,880
+redux a single source of truth for all the data in your javascript application
+redux 是javascript 应用程序中所有数据的单一事实来源
+
+2
+00:00:04,880 --> 00:00:09,040
+modern web applications are represented as a complex tree of components
+现代 Web 应用程序被表示为一个复杂的组件树，这些
+
+3
+00:00:09,040 --> 00:00:12,960
+components that constantly produce and share data called state and when state
+组件不断产生和共享称为状态的数据，当
+
+4
+00:00:12,960 --> 00:00:17,279
+is decentralized it can become difficult to understand and test redux is both a
+状态分散时，它可能变得难以理解和测试 redux 既是 一个
+
+5
+00:00:17,279 --> 00:00:20,720
+pattern and library that helps developers implement complex state
+模式和库，可帮助开发人员大规模实现复杂的状态
+
+6
+00:00:20,720 --> 00:00:25,119
+management requirements at scale it was created by dan abramov and andrew clark
+管理需求它由 facebook 的 dan abramov 和 andrew clark 创建
+
+7
+00:00:25,119 --> 00:00:28,720
+at facebook and is one of the most loved and hated libraries in the react
+，是 react 生态系统中最受欢迎和最讨厌的库之一，
+
+8
+00:00:28,720 --> 00:00:32,640
+ecosystem it relies on a single immutable object to store all of the
+它依赖于单个不可变对象来存储所有
+
+9
+00:00:32,640 --> 00:00:36,399
+application state kind of like a client-side database to change the state
+应用程序状态有点像客户端数据库来更改状态，
+
+10
+00:00:36,399 --> 00:00:40,320
+like when a button is clicked an action will be dispatched which has a name like
+例如单击按钮时将调度一个动作，该动作的名称
+
+11
+00:00:40,320 --> 00:00:43,920
+an event and a payload with the data that it wants to change remember the
+类似于事件和带有要更改的数据的有效负载记住
+
+12
+00:00:43,920 --> 00:00:47,920
+store is immutable so to change the state of the application an entirely new
+存储是不可变的，所以 要更改应用程序的状态，
+
+13
+00:00:47,920 --> 00:00:51,840
+object is created by passing the current state and the action payload into a
+通过传递当前状态和操作负载 i 创建一个全新的对象 nto 一个
+
+14
+00:00:51,840 --> 00:00:56,000
+reducer function which returns a new object with the entire application state
+reducer 函数，它返回一个包含整个应用程序状态的新对象，
+
+15
+00:00:56,000 --> 00:01:00,079
+the end result is a one-way data flow that is predictable and testable and it
+最终结果是一个可预测和可测试的单向数据流，
+
+16
+00:01:00,079 --> 00:01:03,680
+also opens the door to awesome dev tools that allow you to time travel through
+它还为令人敬畏的开发工具打开了大门，允许
+
+17
+00:01:03,680 --> 00:01:07,760
+your application's data but it comes at a cost of additional boilerplate code
+您在应用程序的数据中进行时间旅行，但是 它是以额外的样板代码为代价的，
+
+18
+00:01:07,760 --> 00:01:11,520
+that might add too much complexity to a smaller project to get started create a
+这可能会给较小的项目增加太多的复杂性，以便开始
+
+19
+00:01:11,520 --> 00:01:15,600
+react app with your favorite tool then install the redux toolkit first use
+使用您最喜欢的工具创建一个反应应用程序，然后安装 redux 工具包首先使用
+
+20
+00:01:15,600 --> 00:01:19,520
+configure store to set up the global store object which will register any
+配置商店来设置全局商店对象，该对象将注册任何
+
+21
+00:01:19,520 --> 00:01:23,040
+reducers defined elsewhere in the code then provider will make its data
+在代码中其他地方定义的减速器，然后提供者将使其数据
+
+22
+00:01:23,040 --> 00:01:27,520
+accessible to the entire component tree next create a slice like pizza to
+可供整个组件树访问接下来创建一个像披萨一样的切片来
+
+23
+00:01:27,520 --> 00:01:30,960
+represent some data in the store it should have a unique name and initial
+表示存储中的一些数据它应该有一个唯一的名称和初始
+
+24
+00:01:30,960 --> 00:01:34,960
+state but most importantly it contains a collection of reducers which are
+状态，但最重要的是它包含一个减速器的集合， 是
+
+25
+00:01:34,960 --> 00:01:39,520
+functions that take the old state and an action then define the logic required to
+采用旧状态和操作的函数，然后定义更改状态所需的逻辑
+
+26
+00:01:39,520 --> 00:01:43,200
+change the state redux toolkit will automatically generate actions that
+redux 工具包将自动 生成
+
+27
+00:01:43,200 --> 00:01:47,200
+correspond to the names of these reducer functions we can export them then put
+与这些 reducer 函数名称对应的操作，我们可以将它们导出，然后将
+
+28
+00:01:47,200 --> 00:01:51,119
+them to use in an actual ui component the beauty of redux is that we can
+它们用于实际的 ui 组件redux 的美妙之处在于我们可以
+
+29
+00:01:51,119 --> 00:01:55,200
+select data anywhere in the application without the need for context or prop
+在应用程序的任何位置选择数据，而无需上下文或道具
+
+30
+00:01:55,200 --> 00:01:59,280
+drilling instead we can grab any reactive value or slice in the store
+钻取，而是我们可以 现在使用 use 选择器钩子获取存储中的任何反应值或切片以
+
+31
+00:01:59,280 --> 00:02:03,439
+with the use selector hook now to change the application's data an action needs
+更改应用程序的数据
+
+32
+00:02:03,439 --> 00:02:07,040
+to be dispatched to the store that can be accomplished with the use dispatch
+需要将操作分派到存储区，这可以通过使用分派钩子完成，
+
+33
+00:02:07,040 --> 00:02:11,360
+hook which might send an action name and data payload on a normal browser event
+这可能会在正常情况下发送操作名称和数据有效负载 浏览器事件（
+
+34
+00:02:11,360 --> 00:02:14,879
+like a button click now serve the application and install the redux
+例如单击按钮）现在为应用程序提供服务并安装 redux
+
+35
+00:02:14,879 --> 00:02:18,879
+devtools browser extension unlike a normal project you're able to inspect
+devtools 浏览器扩展 与普通项目不同，您可以检查
+
+36
+00:02:18,879 --> 00:02:23,040
+and debug the entire timeline of actions and state changes in your application
+和调试应用程序中动作和状态更改的整个时间线
+
+37
+00:02:23,040 --> 00:02:26,959
+this has been redux in 100 seconds upgrade to fireship pro if you want to
+这已经在 100 秒内完成了 redux升级到 fireship 亲，如果您想以
+
+38
+00:02:26,959 --> 00:02:30,239
+learn all kinds of other react concepts in a format like this thanks for
+这样的格式学习各种其他 React 概念，谢谢
+
+39
+00:02:30,239 --> 00:02:34,800
+watching and i will see you in the next one
+观看，我会在下一个

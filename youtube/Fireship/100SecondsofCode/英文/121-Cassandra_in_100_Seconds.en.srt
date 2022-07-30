@@ -1,0 +1,365 @@
+1
+00:00:00,000 --> 00:00:00,240
+[Music]
+
+
+2
+00:00:00,240 --> 00:00:02,879
+cassandra a wide column store nosql
+
+
+3
+00:00:02,879 --> 00:00:04,720
+database famous for its ability to
+
+
+4
+00:00:04,720 --> 00:00:06,399
+distribute petabytes of data with
+
+
+5
+00:00:06,399 --> 00:00:08,559
+unmatched reliability and performance it
+
+
+6
+00:00:08,559 --> 00:00:11,280
+was created in 2008 by avinash lakshman
+
+
+7
+00:00:11,280 --> 00:00:12,880
+who was responsible for scaling
+
+
+8
+00:00:12,880 --> 00:00:15,280
+facebook's inbox search feature by 2010
+
+
+9
+00:00:15,280 --> 00:00:17,359
+it became a top-level apache project and
+
+
+10
+00:00:17,359 --> 00:00:19,199
+today is used at scale by big companies
+
+
+11
+00:00:19,199 --> 00:00:21,279
+like apple which manages a staggering
+
+
+12
+00:00:21,279 --> 00:00:23,519
+100 petabytes of data across hundreds of
+
+
+13
+00:00:23,519 --> 00:00:25,279
+thousands of server instances it's a
+
+
+14
+00:00:25,279 --> 00:00:27,279
+general purpose database with use cases
+
+
+15
+00:00:27,279 --> 00:00:29,439
+for e-commerce content management audit
+
+
+16
+00:00:29,439 --> 00:00:31,439
+logging and everything in between each
+
+
+17
+00:00:31,439 --> 00:00:33,280
+instance of cassandra is called a node
+
+
+18
+00:00:33,280 --> 00:00:35,120
+and typically stores about two terabytes
+
+
+19
+00:00:35,120 --> 00:00:36,800
+of data what makes it special though is
+
+
+20
+00:00:36,800 --> 00:00:38,879
+that nodes can be easily distributed to
+
+
+21
+00:00:38,879 --> 00:00:41,120
+scale horizontally every node has the
+
+
+22
+00:00:41,120 --> 00:00:43,040
+same read write capabilities of another
+
+
+23
+00:00:43,040 --> 00:00:44,800
+node but is responsible for its own
+
+
+24
+00:00:44,800 --> 00:00:46,559
+partition of data nodes are grouped
+
+
+25
+00:00:46,559 --> 00:00:48,960
+together in a cluster or ring and data
+
+
+26
+00:00:48,960 --> 00:00:50,640
+is typically replicated on multiple
+
+
+27
+00:00:50,640 --> 00:00:52,160
+nodes which means no single point of
+
+
+28
+00:00:52,160 --> 00:00:54,879
+failure and 100 uptime the data is
+
+
+29
+00:00:54,879 --> 00:00:56,640
+wrapped in a key space giving developers
+
+
+30
+00:00:56,640 --> 00:00:58,399
+control over how it replicates in the
+
+
+31
+00:00:58,399 --> 00:01:00,480
+cluster each key space contains one or
+
+
+32
+00:01:00,480 --> 00:01:02,559
+more tables which represent tabular data
+
+
+33
+00:01:02,559 --> 00:01:04,159
+like you might find in a relational
+
+
+34
+00:01:04,159 --> 00:01:06,159
+database however it's schema-less and
+
+
+35
+00:01:06,159 --> 00:01:08,000
+can handle unstructured data which
+
+
+36
+00:01:08,000 --> 00:01:09,840
+developers can manage with the cassandra
+
+
+37
+00:01:09,840 --> 00:01:11,520
+query language the easiest way to get
+
+
+38
+00:01:11,520 --> 00:01:13,840
+started is by creating a free serverless
+
+
+39
+00:01:13,840 --> 00:01:15,920
+database with astra it deploys to the
+
+
+40
+00:01:15,920 --> 00:01:17,360
+cloud of your choice then scales
+
+
+41
+00:01:17,360 --> 00:01:19,439
+automatically on demand first we'll need
+
+
+42
+00:01:19,439 --> 00:01:21,360
+to define a key space which acts as a
+
+
+43
+00:01:21,360 --> 00:01:23,520
+container for replication next we'll
+
+
+44
+00:01:23,520 --> 00:01:25,040
+need to connect to the database which
+
+
+45
+00:01:25,040 --> 00:01:26,960
+can be accomplished in a variety of ways
+
+
+46
+00:01:26,960 --> 00:01:29,360
+it has sdks for major languages and a
+
+
+47
+00:01:29,360 --> 00:01:31,119
+tool called stargate that makes data
+
+
+48
+00:01:31,119 --> 00:01:34,400
+accessible via ras graphql and grpc or
+
+
+49
+00:01:34,400 --> 00:01:36,799
+you can execute raw cql code which is a
+
+
+50
+00:01:36,799 --> 00:01:39,520
+subset of sql create a table and include
+
+
+51
+00:01:39,520 --> 00:01:42,159
+a primary key to uniquely identify every
+
+
+52
+00:01:42,159 --> 00:01:44,159
+row then each column will have its own
+
+
+53
+00:01:44,159 --> 00:01:46,399
+name and data type now add data to that
+
+
+54
+00:01:46,399 --> 00:01:48,560
+table with the insert into statement
+
+
+55
+00:01:48,560 --> 00:01:50,799
+then you select to read data from the
+
+
+56
+00:01:50,799 --> 00:01:52,560
+table it's also possible to use the
+
+
+57
+00:01:52,560 --> 00:01:54,479
+where clause to filter and query the
+
+
+58
+00:01:54,479 --> 00:01:56,479
+data but an index will be required on
+
+
+59
+00:01:56,479 --> 00:01:58,240
+the column on the surface this may look
+
+
+60
+00:01:58,240 --> 00:02:00,159
+a lot like a relational database but it
+
+
+61
+00:02:00,159 --> 00:02:01,920
+doesn't support joins and that's by
+
+
+62
+00:02:01,920 --> 00:02:04,159
+design instead of modeling data into
+
+
+63
+00:02:04,159 --> 00:02:06,479
+small normalized tables in cassandra
+
+
+64
+00:02:06,479 --> 00:02:08,560
+it's denormalized to match the structure
+
+
+65
+00:02:08,560 --> 00:02:10,560
+of known queries making reads much
+
+
+66
+00:02:10,560 --> 00:02:12,560
+faster at scale and it's also possible
+
+
+67
+00:02:12,560 --> 00:02:14,720
+to implement storage attached indexing
+
+
+68
+00:02:14,720 --> 00:02:16,720
+to handle complex relational queries
+
+
+69
+00:02:16,720 --> 00:02:19,040
+this has been cassandra in 100 seconds
+
+
+70
+00:02:19,040 --> 00:02:20,239
+let me know if you want to see a full
+
+
+71
+00:02:20,239 --> 00:02:21,920
+tutorial in the comments thanks for
+
+
+72
+00:02:21,920 --> 00:02:23,920
+watching and i will see you in the next
+
+
+73
+00:02:23,920 --> 00:02:26,920
+one
+
+

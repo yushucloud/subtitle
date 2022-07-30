@@ -1,0 +1,194 @@
+1
+00:00:00,160 --> 00:00:04,480
+binary search an algorithm for finding an element in a sorted array by
+二进制搜索 一种通过
+
+2
+00:00:04,480 --> 00:00:08,320
+continuously chopping the search area in half the first known implementation took
+将搜索区域连续切成两半来在排序数组中查找元素的算法第一个已知实现
+
+3
+00:00:08,320 --> 00:00:13,040
+place around 200 bc and ancient babylon on clay tablets used for record keeping
+发生在公元前 200 年左右，古代巴比伦在用于记录保存的粘土板上，
+
+4
+00:00:13,040 --> 00:00:16,640
+but your brain has likely implemented binary search in everyday life without
+但您的大脑可能已经在日常生活中实现了二进制搜索 在
+
+5
+00:00:16,640 --> 00:00:20,240
+you even knowing it imagine looking for a word like magic in the dictionary you
+你甚至不知道它的情况下想象在字典中寻找一个像魔法这样的词你
+
+6
+00:00:20,240 --> 00:00:24,080
+wouldn't flip every page until you get to m instead you open it in the middle
+不会翻动每一页直到你到达 m 相反你在中间打开它
+
+7
+00:00:24,080 --> 00:00:27,760
+if you overshoot to the cues then you go to the middle of that chunk this time
+如果你超过提示然后你去那个块的中间这个 当
+
+8
+00:00:27,760 --> 00:00:31,039
+you undershoot to the js so you do the same thing again but in the other
+你低于 js 时，你再次做同样的事情，但在另一个
+
+9
+00:00:31,039 --> 00:00:34,399
+direction until finally you find the page you're looking for easy enough now
+方向，直到最后你找到你正在寻找的页面很容易
+
+10
+00:00:34,399 --> 00:00:37,920
+it's time for your technical interview you might be given a question like given
+现在是你的技术面试的时候了，你可能会遇到一个问题，比如给定
+
+11
+00:00:37,920 --> 00:00:41,840
+a sorted array write a function that returns the index for the given element
+一个排序数组 write返回给定元素索引的函数
+
+12
+00:00:41,840 --> 00:00:45,520
+the easy way to solve that problem is with a simple for loop just loop over
+解决该问题的简单方法是使用简单的 for 循环，只需遍历
+
+13
+00:00:45,520 --> 00:00:48,559
+every element in the array until you find the one you're looking for that
+数组中的每个元素，直到找到 一个你正在寻找的
+
+14
+00:00:48,559 --> 00:00:51,920
+works but you failed the interview because you need to go faster a regular
+工作，但你没有通过面试，因为你需要走得更快一个常规
+
+15
+00:00:51,920 --> 00:00:55,280
+loop results in linear time complexity but you can do better than that here's
+循环会导致线性时间复杂度，但你可以做得更好这是
+
+16
+00:00:55,280 --> 00:00:58,960
+how we might map out a binary search on a whiteboard first we need to figure out
+我们首先在白板上绘制二进制搜索的方法，我们需要
+
+17
+00:00:58,960 --> 00:01:02,640
+the middle index instead of starting at index 0 we start in the middle if it's
+找出中间索引而不是从索引 0 开始我们从中间开始
+
+18
+00:01:02,640 --> 00:01:06,159
+equal to the target then we return that index but if that element is greater
+
+
+19
+00:01:06,159 --> 00:01:09,439
+than the target we know the target must be somewhere on the left so we find the
+
+
+20
+00:01:09,439 --> 00:01:12,640
+middle of that slice of the array but if it's less than the target then we know
+在数组的那个切片的中间，但是如果它小于目标，那么我们
+
+21
+00:01:12,640 --> 00:01:15,920
+the target is somewhere on the right so we repeat the process for that slice of
+知道目标在右边的某个地方，所以我们对数组的那个切片重复这个过程，
+
+22
+00:01:15,920 --> 00:01:19,280
+the array the result is a much faster algorithm with logarithmic time
+结果是一个更快的算法，具有对数时间
+
+23
+00:01:19,280 --> 00:01:23,280
+complexity because it's able to divide and conquer now to implement the code we
+复杂度，因为它能够现在分而治之来实现代码，我们
+
+24
+00:01:23,280 --> 00:01:26,960
+could use an iterative approach with a while loop or a recursive function
+可以使用带有while循环或递归函数的迭代方法，
+
+25
+00:01:26,960 --> 00:01:30,079
+either way is acceptable but let's define a recursive function in
+任何一种方式都是可以接受的，但是让我们在javascript中定义一个递归函数
+
+26
+00:01:30,079 --> 00:01:33,840
+javascript the function takes the target value as an argument as well as a
+函数ta 将目标值作为参数以及
+
+27
+00:01:33,840 --> 00:01:37,759
+starting and ending index first we have a base condition to stop looping when it
+开始和结束索引首先我们有一个基本条件，当它
+
+28
+00:01:37,759 --> 00:01:41,360
+reaches the end of the array at which point we know the target is not in the
+到达数组的末尾时停止循环，此时我们知道目标不在
+
+29
+00:01:41,360 --> 00:01:44,720
+array from there we compute the middle index then we check to see if that
+数组中，从那里我们计算中间index 然后我们检查该
+
+30
+00:01:44,720 --> 00:01:48,159
+middle index is equal to the target at which point we can return because we
+中间索引是否等于我们可以返回的目标，因为我们
+
+31
+00:01:48,159 --> 00:01:51,520
+found the element we're looking for otherwise we need to continue searching
+找到了我们正在寻找的元素，否则我们需要继续搜索
+
+32
+00:01:51,520 --> 00:01:54,720
+and that's where recursion comes into play if the middle value is greater than
+，如果中间值更大，这就是递归发挥作用的地方
+
+33
+00:01:54,720 --> 00:01:57,840
+the target then we'll call the same function but this time we'll put the
+比目标值，那么我们将调用相同的函数，但这次我们将
+
+34
+00:01:57,840 --> 00:02:01,920
+ending index at the middle the other possibility is that the middle value is
+结束索引放在中间另一种可能性是中间值
+
+35
+00:02:01,920 --> 00:02:05,759
+less than the target in which case we can also recurse but this time we'll put
+小于目标值，在这种情况下我们也可以递归，但这次我们将
+
+36
+00:02:05,759 --> 00:02:09,039
+the starting index in the middle and now we have an algorithm that can find an
+将起始索引放在中间，现在我们有了一个算法，它可以比常规循环
+
+37
+00:02:09,039 --> 00:02:12,319
+element in a sorted array much faster than a regular loop if you want to see
+更快地在排序数组中找到一个元素
+
+38
+00:02:12,319 --> 00:02:15,440
+more videos about algorithms on this channel hit the like button and let me
+
+
+39
+00:02:15,440 --> 00:02:21,280
+know in the comments thanks for watching and i will see you in the next one
+现在在评论中感谢观看，我会在下一个看到你

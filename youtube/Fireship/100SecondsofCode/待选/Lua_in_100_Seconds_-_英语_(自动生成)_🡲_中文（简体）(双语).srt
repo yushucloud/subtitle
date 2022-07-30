@@ -1,0 +1,189 @@
+1
+00:00:00,160 --> 00:00:04,799
+lua a fast multi-paradigm scripting language famous for being so underrated
+lua 一种快速的多范式脚本语言，以被低估而闻名
+
+2
+00:00:04,799 --> 00:00:08,160
+imagine a language that's easier to learn than python while also being
+想象一种比 python 更容易学习，同时
+
+3
+00:00:08,160 --> 00:00:11,840
+faster and more portable than python lua was named after the moon when it was
+比 python 更快、更便携的语言 lua以月球命名，当时它是
+
+4
+00:00:11,840 --> 00:00:15,519
+designed by a team of computer scientists in brazil in 1993 it's
+由巴西的一组计算机科学家设计的 1993 它是
+
+5
+00:00:15,519 --> 00:00:19,199
+lightweight and extremely fast because its virtual machine maps very closely to
+轻量级且速度极快的，因为它的虚拟机与 c 非常接近，
+
+6
+00:00:19,199 --> 00:00:22,480
+c and when used with its just-in-time compiler it's widely considered the
+并且当与它的即时编译器一起使用时，它被广泛认为
+
+7
+00:00:22,480 --> 00:00:26,080
+fastest scripting language in the world this makes it ideal for embedding into
+是世界上最快的脚本语言，这使得它非常适合嵌入到
+
+8
+00:00:26,080 --> 00:00:29,840
+other applications like world of warcraft or roblox for example where
+其他应用程序中，如魔兽世界或 例如 roblox，
+
+9
+00:00:29,840 --> 00:00:33,440
+users can write lua to build their own games and features because the language
+用户可以编写 lua 来构建自己的游戏和功能，因为该
+
+10
+00:00:33,440 --> 00:00:37,600
+is embedded into the base game it's easy to learn because it has only 21 reserved
+语言嵌入到基础游戏中，它很容易学习，因为它只有 21 个保留
+
+11
+00:00:37,600 --> 00:00:41,200
+words and has only one data structuring mechanism called a table that can
+字，并且只有一个称为表的数据结构机制，可以
+
+12
+00:00:41,200 --> 00:00:45,360
+represent arrays dictionaries graphs trees and more it also supports
+表示数组字典 图形树等等它还支持
+
+13
+00:00:45,360 --> 00:00:48,800
+collaborative multitasking with co-routines its standard library is very
+与协同程序的协作多任务它的标准库非常
+
+14
+00:00:48,800 --> 00:00:52,559
+minimal but it does have a large ecosystem of packages with the lua rocks
+迷你 mal 但它确实有一个庞大的包生态系统，使用 lua Rocks
+
+15
+00:00:52,559 --> 00:00:56,879
+package manager to get started install it then create a file ending in.lua
+包管理器开始安装它，然后创建一个以.lua 结尾的文件，
+
+16
+00:00:56,879 --> 00:01:01,039
+declare a variable by providing a name and value by default variables are
+通过提供名称和值来声明一个变量，默认情况下变量是
+
+17
+00:01:01,039 --> 00:01:04,799
+global but make them local with the local keyword it's a dynamic language so
+全局的，但使用本地使它们成为本地的 关键字它是一种动态语言，因此
+
+18
+00:01:04,799 --> 00:01:08,400
+no type annotations are required we can then use print to output the value to
+不需要类型注释我们可以使用 print 将值输出
+
+19
+00:01:08,400 --> 00:01:12,240
+the standard output there are no classes in lua but anything you can imagine can
+到标准输出在 lua 中没有类，但是你可以想象的任何事情都
+
+20
+00:01:12,240 --> 00:01:15,680
+be done with functions and tables a function is declared with the function
+可以用函数和表来完成一个函数是用 function 关键字声明的
+
+21
+00:01:15,680 --> 00:01:19,360
+keyword then closed with the end keyword functions are first class objects which
+然后用 end 关键字关闭函数是第一类对象，这
+
+22
+00:01:19,360 --> 00:01:22,479
+means they can be passed around to other functions to support functional
+意味着它们可以传递给其他函数以支持函数式
+
+23
+00:01:22,479 --> 00:01:26,640
+programming patterns now to structure data you create tables with braces a
+编程模式现在可以构造数据您使用大括号创建表一个
+
+24
+00:01:26,640 --> 00:01:30,400
+table is actually an associative array which means the index in the array can
+表实际上是一个关联数组，这意味着数组中的索引可以
+
+25
+00:01:30,400 --> 00:01:34,159
+be replaced with different values by default it uses integer values and the
+默认情况下被不同的值替换它使用整数值，
+
+26
+00:01:34,159 --> 00:01:37,759
+craziest thing about this language is that it starts the index at 1 instead of
+关于这种语言最疯狂的事情是它开始索引 在 1 而不是
+
+27
+00:01:37,759 --> 00:01:41,439
+0 like most languages that gives us a conventional array but we can also
+0 像大多数语言一样给我们一个传统的数组但是我们也
+
+28
+00:01:41,439 --> 00:01:45,920
+easily create a dictionary by giving the keys a string value now we can use 4 to
+可以通过给键一个字符串值来轻松地创建一个字典现在我们可以使用 4
+
+29
+00:01:45,920 --> 00:01:49,520
+loop over every key value pair in the table the language is single threaded
+循环表中的每个键值对语言是单线程的
+
+30
+00:01:49,520 --> 00:01:53,680
+but we can use coroutines to pause and resume a function create a co-routine
+但是 我们可以使用协程来暂停和恢复一个函数创建一个协程
+
+31
+00:01:53,680 --> 00:01:57,759
+then use yield to suspend its execution now somewhere else in the code use
+然后使用yield在代码中的其他地方暂停它的执行使用
+
+32
+00:01:57,759 --> 00:02:01,600
+co-routine resume to continue execution until you get to the return statement
+协程恢复继续执行，直到你现在进入return语句
+
+33
+00:02:01,600 --> 00:02:05,280
+now if you're a c programmer you'll be happy to know that lua has a very simple
+如果你是一个c程序员 你会很高兴知道 lua 有一个非常简单的
+
+34
+00:02:05,280 --> 00:02:10,479
+c api it allows us to run lua code inside a c program or vice versa run c
+c api 它允许我们在 c 程序中运行 lua 代码，反之亦然
+
+35
+00:02:10,479 --> 00:02:14,400
+code from a lua program now to execute your code open up the terminal and run
+现在从 lua 程序运行 c 代码来执行你的代码 打开终端并
+
+36
+00:02:14,400 --> 00:02:18,400
+the lua interpreter this has been lua in 100 seconds hit the like button and
+运行 lua 解释器 已经在100 秒内 lua 点击喜欢按钮并
+
+37
+00:02:18,400 --> 00:02:21,760
+subscribe if you want to see more short videos like this thanks for watching and
+订阅如果你想看更多这样的短视频感谢观看，
+
+38
+00:02:21,760 --> 00:02:25,760
+i will see you in the next one
+我会在下一个看到你

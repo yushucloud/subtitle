@@ -1,0 +1,198 @@
+1
+00:00:00,240 --> 00:00:05,359
+scalable vector graphics or svg is an image format that's like html for
+可缩放矢量图形或 svg 是一种图像格式，类似于用于 2d 图形的 html，
+
+2
+00:00:05,359 --> 00:00:09,760
+2d graphics they differ from raster images like png or jpeg
+它们与使用微小像素网格来创建图像的光栅图像（如 png 或 jpeg）不同
+
+3
+00:00:09,760 --> 00:00:13,840
+that use a grid of tiny pixels to create an image and as you zoom in the pixels
+，并且当您放大像素时，像素
+
+4
+00:00:13,840 --> 00:00:18,160
+become larger making the image grainy in contrast a vector image can be scaled to
+会变大，从而使图像具有颗粒感 矢量图像可以缩放到
+
+5
+00:00:18,160 --> 00:00:22,080
+any size without losing its resolution because instead of fixed pixels its
+任何大小而不会丢失其分辨率，因为它的外观不是基于固定像素，而是
+
+6
+00:00:22,080 --> 00:00:25,760
+appearance is based on geometry you can create svgs with tools like
+基于几何图形，您可以使用 figma 或 illustrator 等工具创建 svg，
+
+7
+00:00:25,760 --> 00:00:29,039
+figma or illustrator or by writing the code directly which is
+或者直接编写代码，这
+
+8
+00:00:29,039 --> 00:00:32,079
+easier than you might think and opens the door to animation and
+比您想象的要容易并打开 动画和
+
+9
+00:00:32,079 --> 00:00:35,280
+interactivity create one by opening an svg tag
+交互性的门通过打开一个 svg 标签来创建一个，
+
+10
+00:00:35,280 --> 00:00:38,480
+then define a coordinate system with the view box attribute
+然后定义一个带有 view box 属性的坐标系，
+
+11
+00:00:38,480 --> 00:00:42,800
+that gives us a frame with a width and height of 100 units on which we can draw
+它为我们提供了一个宽度和高度为 100 单位的框架，我们可以在其上绘制
+
+12
+00:00:42,800 --> 00:00:46,160
+graphics draw basic shapes by adding elements like rectangle
+图形通过添加矩形圆等元素来绘制基本形状
+
+13
+00:00:46,160 --> 00:00:50,480
+circle and polygon position the rectangle by defining its x-y value
+和多边形通过在视图框上定义其 x-y 值来定位矩形，
+
+14
+00:00:50,480 --> 00:00:54,160
+on the view box then give it a size which can take values that are either
+然后给它一个可以采用
+
+15
+00:00:54,160 --> 00:00:57,280
+explicit or responsive we can change the color of the shape by
+显式或响应值的大小我们可以通过定义它的填充来改变形状的颜色，
+
+16
+00:00:57,280 --> 00:01:01,120
+defining its fill or define an outline with the stroke attribute and if our
+或者用 stroke 属性定义一个轮廓，如果我们的
+
+17
+00:01:01,120 --> 00:01:04,960
+styling gets too complex we can extract everything into a separate css
+样式变得太复杂，我们可以通过对它应用一个类来将所有内容提取到一个单独的 css
+
+18
+00:01:04,960 --> 00:01:07,760
+stylesheet by applying a class to it just like any
+样式表中，就像
+
+19
+00:01:07,760 --> 00:01:10,960
+html element we have the full power of css at our
+我们拥有的任何 html 元素一样 css 的全部功能
+
+20
+00:01:10,960 --> 00:01:14,400
+fingertips which means we can react to events on the shapes and then change
+触手可及，这意味着我们可以对形状上的事件做出反应，然后相应地更改
+
+21
+00:01:14,400 --> 00:01:18,560
+their styling or animation accordingly but most graphics are more than just
+它们的样式或动画，但大多数图形不仅仅是
+
+22
+00:01:18,560 --> 00:01:22,080
+basic shapes they contain complex artwork with all kinds of twists and
+基本形状，它们包含复杂的艺术作品和各种
+
+23
+00:01:22,080 --> 00:01:24,400
+turns and that's where the path element comes in
+曲折，这就是 路径元素
+
+24
+00:01:24,400 --> 00:01:27,439
+the shape of a path is determined by one attribute d
+以路径的形状出现 路径由一个属性 d
+
+25
+00:01:27,439 --> 00:01:30,960
+for draw coding a path is like controlling the tip of a pen with a
+用于绘制 编码路径就像用一系列命令控制笔尖
+
+26
+00:01:30,960 --> 00:01:34,400
+series of commands the most basic command is m for move
+最基本的命令是 m 移动
+
+27
+00:01:34,400 --> 00:01:36,880
+which will move the pen tip to an x y coordinate
+，它将笔尖移动到 x y
+
+28
+00:01:36,880 --> 00:01:40,880
+an uppercase letter means move relative to the view box and lowercase means
+坐标大写字母表示相对于视图框移动，小写表示
+
+29
+00:01:40,880 --> 00:01:44,720
+move relative to the last point in the path but move doesn't actually draw
+相对于路径中的最后一个点移动，但移动实际上并没有绘制
+
+30
+00:01:44,720 --> 00:01:47,119
+anything to put the pen tip down on the paper and
+任何东西来放置笔尖 d 自己在纸上并
+
+31
+00:01:47,119 --> 00:01:51,360
+draw something use the l command it works exactly like move but draws a
+使用 l 命令绘制一些东西，它的工作原理与 move 完全一样，但是绘制
+
+32
+00:01:51,360 --> 00:01:54,159
+line that can be styled straight lines are cool but what if we
+一条可以设置为直线样式的线很酷，但是如果我们
+
+33
+00:01:54,159 --> 00:01:57,680
+wanted to add a curve like we would with the handles in illustrator
+想添加一条曲线，就像我们在 illustrator 中使用手柄
+
+34
+00:01:57,680 --> 00:02:01,920
+create bezier curves with the c and q commands define the position of two
+创建贝塞尔曲线一样 c 和 q命令定义两个控制点的位置，
+
+35
+00:02:01,920 --> 00:02:04,240
+control points then the x and y coordinates where the
+然后定义曲线应该结束的 x 和 y 坐标，
+
+36
+00:02:04,240 --> 00:02:08,160
+curve should end then svg will automatically calculate a smooth curve
+然后 svg 将自动为您计算任意比例的平滑曲线
+
+37
+00:02:08,160 --> 00:02:10,640
+for you at any scale this has been scalable
+
+
+38
+00:02:10,640 --> 00:02:14,239
+vector graphics in 100 seconds if you want to see more short videos like this
+如果您想查看更多，这已在 100 秒内可缩放矢量图形像这样的短视频
+
+39
+00:02:14,239 --> 00:02:17,920
+hit the like button and subscribe thanks for watching and i will see you
+点击喜欢按钮并订阅感谢观看，我会在下一个看到你
+
+40
+00:02:17,920 --> 00:02:21,040
+in the next one

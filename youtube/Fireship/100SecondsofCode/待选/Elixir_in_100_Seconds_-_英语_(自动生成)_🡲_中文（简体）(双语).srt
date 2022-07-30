@@ -1,0 +1,203 @@
+1
+00:00:00,000 --> 00:00:04,080
+Elixir a dynamic general purpose programming language designed to build
+Elixir 是一种动态通用编程语言，旨在
+
+2
+00:00:04,080 --> 00:00:08,160
+scalable concurrent applications with a beautiful functional syntax it was
+使用优美的函数式语法构建
+
+3
+00:00:08,160 --> 00:00:12,660
+created by Jose velim and first released in 2012 and today it consistently ranks
+
+
+4
+00:00:12,660 --> 00:00:16,199
+among the most loved programming languages it runs on top of the erlang
+
+
+5
+00:00:16,199 --> 00:00:20,160
+beam virtual machine which itself is developed in the 1980s to scale the
+可扩展的并发应用程序 它本身是在 1980 年代开发的，以扩展
+
+6
+00:00:20,160 --> 00:00:24,119
+massive demands of phone switching which it did with extreme reliability and bolt
+电话切换的大量需求，它具有极高的可靠性和螺栓
+
+7
+00:00:24,119 --> 00:00:28,140
+tolerance Elixir was created to make this powerful technology accessible to
+耐受性 Elixir 的创建是为了
+
+8
+00:00:28,140 --> 00:00:31,679
+the modern developer it's dynamically typed with a minimal ruby-inspired
+使现代开发人员可以使用
+
+9
+00:00:31,679 --> 00:00:34,980
+syntax making it more approachable than statically type functional languages
+这项强大的技术 比 Haskell 等静态类型的函数式语言
+
+10
+00:00:34,980 --> 00:00:39,059
+like Haskell however because it's compiled to beam by code it delivers
+更容易接近，但是因为它是按代码编译的，所以与 Discord 等公司使用的解释性语言相比，它提供了
+
+11
+00:00:39,059 --> 00:00:42,660
+better performance and scalability compared to interpreted languages it's
+更好的性能和可扩展性，它
+
+12
+00:00:42,660 --> 00:00:46,680
+used by companies like Discord to handle massive amounts of concurrent users by
+被摩托罗拉用来处理大量并发用户，
+
+13
+00:00:46,680 --> 00:00:50,640
+Motorola to build fault tolerant communication systems by Pinterest to
+以构建Pinterest 的容错通信系统 o
+
+14
+00:00:50,640 --> 00:00:54,120
+scale up their real-time notification system and The Elixir based Phoenix
+扩展他们的实时通知系统和基于 Elixir 的 Phoenix
+
+15
+00:00:54,120 --> 00:00:58,320
+framework is responsible for thousands of full stack web applications to get
+框架负责数以千计的全栈 Web 应用程序
+
+16
+00:00:58,320 --> 00:01:03,000
+started install erlang Andy Lex mixer then create a file ending in dot EXs to
+开始安装 erlang Andy Lex 混合器然后创建一个以点 EXs 结尾的文件来
+
+17
+00:01:03,000 --> 00:01:06,659
+create a variable give it a name followed by a value it's Dynamic so no
+创建一个变量，给它一个名称，然后 一个值，它是动态的，所以
+
+18
+00:01:06,659 --> 00:01:10,920
+type annotations are necessary now print it to the standard output with i o puts
+不需要类型注释现在用 i o puts 将它打印到标准输出
+
+19
+00:01:10,920 --> 00:01:14,700
+and like Ruby parentheses are usually optional alternatively you might create
+，就像 Ruby 括号通常是可选的，或者你可以创建
+
+20
+00:01:14,700 --> 00:01:18,960
+an atom which is a constant whose value is its own name Anonymous functions can
+一个原子，它是一个常量，其值是它自己的名字匿名函数可以
+
+21
+00:01:18,960 --> 00:01:22,799
+be created with the FN keyword which can then be assigned to variables or passed
+用 FN 关键字，然后可以分配给变量或
+
+22
+00:01:22,799 --> 00:01:26,100
+around to other functions and you can even simplify this expression further
+传递给其他函数，您甚至可以在使用函数表达式
+
+23
+00:01:26,100 --> 00:01:29,700
+using the Ampersand shorthand when working with function Expressions you
+时使用与符号简写进一步简化此表达式，您
+
+24
+00:01:29,700 --> 00:01:33,060
+can use the pipe operator to pass the value of one expression to another
+可以使用管道运算符将一个表达式的值传递给另一个表达式，
+
+25
+00:01:33,060 --> 00:01:36,840
+without the need for a deeply nested function calls create a list of items
+而无需 对于深度嵌套的函数调用，创建一个带括号的项目列表
+
+26
+00:01:36,840 --> 00:01:40,619
+with brackets or create a map to represent key value pairs the equal sign
+或创建一个映射来表示键值 p 等号
+
+27
+00:01:40,619 --> 00:01:44,340
+can be used to assign variables but it's actually called the match operator to
+可用于分配变量，但它实际上称为匹配运算符以
+
+28
+00:01:44,340 --> 00:01:48,240
+support pattern matching features for example we might destructure a list into
+支持模式匹配功能，例如，如果模式不匹配，我们可能会将列表解构为
+
+29
+00:01:48,240 --> 00:01:52,140
+a set of variables if a pattern doesn't match it will raise an error and this
+一组变量，它将引发错误，并且此
+
+30
+00:01:52,140 --> 00:01:56,219
+Behavior can be used to implement Advanced control flow logic if and its
+行为可以 用于实现高级控制流逻辑 if 及其
+
+31
+00:01:56,219 --> 00:01:59,880
+inverse and less can be used for basic situations but the case keyword allow
+逆和 less 可用于基本情况，但 case 关键字
+
+32
+00:01:59,880 --> 00:02:03,659
+allows us to compare a value against many patterns until we find a matching
+允许我们将一个值与许多模式进行比较，直到找到匹配的
+
+33
+00:02:03,659 --> 00:02:07,740
+one application code can be organized and shared with modules inside a module
+一个应用程序代码可以组织并与内部模块共享 一个
+
+34
+00:02:07,740 --> 00:02:11,160
+we can Define multiple functions but one of the killer features of this language
+我们可以定义多个函数的模块，但是这种语言的杀手级特性之一
+
+35
+00:02:11,160 --> 00:02:15,360
+is its concurrency model thanks to the erlang VM all code runs in processes
+是它的并发模型，这要归功于erlang VM 所有代码都在彼此隔离的进程中运行，这些进程
+
+36
+00:02:15,360 --> 00:02:19,260
+that are isolated from each other which communicate by passing messages they are
+通过传递消息进行通信，它们
+
+37
+00:02:19,260 --> 00:02:22,080
+extremely lightweight and your application can run thousands of them
+非常轻量级，您的应用程序可以运行 数千个它们
+
+38
+00:02:22,080 --> 00:02:25,860
+simultaneously resulting in high performance fault tolerant execution
+同时导致高性能容错执行
+
+39
+00:02:25,860 --> 00:02:29,700
+this has been elixir in 100 seconds if you want to see more short videos like
+如果这在 100 秒内是灵丹妙药想看更多
+
+40
+00:02:29,700 --> 00:02:33,300
+this hit the like button and subscribe thanks for watching and I will see you
+像这样的短视频点击点赞订阅感谢收看我们下期再见
+
+41
+00:02:33,300 --> 00:02:35,900
+in the next one

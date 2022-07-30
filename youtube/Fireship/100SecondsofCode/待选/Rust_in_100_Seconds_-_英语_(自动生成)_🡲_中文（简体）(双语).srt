@@ -1,0 +1,184 @@
+1
+00:00:00,240 --> 00:00:04,080
+rust a memory safe compiled programming language that delivers high-level
+rust 一种内存安全的编译编程语言，提供高级别的
+
+2
+00:00:04,080 --> 00:00:07,839
+simplicity with low-level performance it's a popular choice for building
+简单性和低级性能它是构建系统的流行选择，这些
+
+3
+00:00:07,839 --> 00:00:12,559
+systems where performance is absolutely critical like game engines databases or
+系统的性能是绝对关键的，如游戏引擎数据库或
+
+4
+00:00:12,559 --> 00:00:16,240
+operating systems and is an excellent choice when targeting webassembly it
+操作系统，并且是针对 web 组装它
+
+5
+00:00:16,240 --> 00:00:20,640
+started as a side project of great on in 2007 who named it after the
+开始作为一个方面的绝佳选择2007 年的一个伟大的妓女项目，
+
+6
+00:00:20,640 --> 00:00:25,039
+rust fungus it was sponsored by mozilla in 2009 and has been ranked the most
+它以 2009 年由 mozilla 赞助的锈菌命名，自 2016 年以来每年都被评为
+
+7
+00:00:25,039 --> 00:00:29,279
+loved programming language every year since 2016 with its fans being known as
+最受欢迎的编程语言，其粉丝被称为
+
+8
+00:00:29,279 --> 00:00:33,760
+rust stations traditionally high level languages provide a garbage collector to
+锈站传统上高级语言提供垃圾收集器 为了
+
+9
+00:00:33,760 --> 00:00:37,600
+nerf your control over memory management while lower level languages provide
+削弱您对内存管理的控制，而较低级别的语言
+
+10
+00:00:37,600 --> 00:00:41,600
+functions like free and allocate to shoot yourself in the foot rust takes a
+提供诸如 free 和 allocate 之类的功能以使自己陷入脚锈采取了
+
+11
+00:00:41,600 --> 00:00:45,039
+different approach it has no garbage collector but achieves memory safety
+不同的方法，它没有垃圾收集器，但通过
+
+12
+00:00:45,039 --> 00:00:49,680
+with a concept known as ownership and borrowing by default every variable in
+称为所有权和默认借用的概念来实现内存安全
+
+13
+00:00:49,680 --> 00:00:53,440
+rust is immutable this allows values to be used in the stack memory which has
+rust 是不可变的，这允许在 stac 中使用值 k 内存，它具有
+
+14
+00:00:53,440 --> 00:00:57,199
+minimal performance overhead however mutable values or objects with an
+最小的性能开销，但是
+
+15
+00:00:57,199 --> 00:01:01,920
+unknown size at compile time are stored in the heap memory every value in a rust
+在编译时可变值或大小未知的对象存储在
+
+16
+00:01:01,920 --> 00:01:06,080
+program is assigned to a single variable known as its owner when that variable
+
+
+17
+00:01:06,080 --> 00:01:10,080
+goes out of scope the memory allocated to it is dropped automatically in some
+堆内存中在某些情况下，分配给它的对象会自动删除，
+
+18
+00:01:10,080 --> 00:01:13,119
+cases though you may want to pass a reference to a different part of the
+尽管您可能希望将引用传递给程序的不同部分
+
+19
+00:01:13,119 --> 00:01:17,520
+program borrowing allows you to access a reference in memory without taking
+借用允许您访问内存中的引用而不取得
+
+20
+00:01:17,520 --> 00:01:21,040
+ownership of it there are a ton of rules to go along with this system that the
+它的所有权 这个系统有很多规则
+
+21
+00:01:21,040 --> 00:01:24,960
+rus borrow checker will validate at compile time these rules keep your code
+rus 借用检查器将在编译时验证这些规则可确保您的代码
+
+22
+00:01:24,960 --> 00:01:29,280
+safe while providing absolute control over performance rust also has a package
+安全，同时提供对性能的绝对控制 rust 还有一个
+
+23
+00:01:29,280 --> 00:01:33,040
+manager called cargo where each individual package is a crate to get
+名为 cargo 的包管理器，其中每个单独的包都是一个板条箱，
+
+24
+00:01:33,040 --> 00:01:37,680
+started install rest then run cargo new from the command line in the main.rs
+开始安装 rest 然后从命令行运行 cargo new在 main.rs
+
+25
+00:01:37,680 --> 00:01:41,040
+file you'll find a main function which is where the program will start
+文件中，您会找到一个 main函数，程序将在该函数中开始
+
+26
+00:01:41,040 --> 00:01:45,680
+executing declare a variable with let followed by its name and type the value
+执行声明一个变量，后面跟着 let 根据其名称和类型
+
+27
+00:01:45,680 --> 00:01:49,360
+can't be changed or reassigned by default so add mutt to make it mutable
+，默认情况下无法更改或重新分配值，因此添加 mutt 以使其可变
+
+28
+00:01:49,360 --> 00:01:53,200
+the name of the variable is the owner a reference to its location in memory can
+变量的名称是所有者对其在内存中位置的引用可以
+
+29
+00:01:53,200 --> 00:01:56,560
+be borrowed by other parts of the program by prefixing it with an
+通过添加前缀被程序的其他部分借用 使用
+
+30
+00:01:56,560 --> 00:02:00,560
+ampersand then use a macro like print line to log the value to the standard
+＆符号，然后使用类似打印行的宏将值记录到标准
+
+31
+00:02:00,560 --> 00:02:04,640
+output rest also comes with a standard library that contains modules to handle
+输出 rest 还附带一个标准库，其中包含处理
+
+32
+00:02:04,640 --> 00:02:09,360
+io the file system concurrency among many other things now compile your code
+io 文件系统并发以及许多其他事情的模块 现在使用 rust 编译器将您的代码编译
+
+33
+00:02:09,360 --> 00:02:13,520
+to an executable with the rust compiler you just built a memory safe executable
+为可执行文件您刚刚构建了一个内存安全的可执行文件
+
+34
+00:02:13,520 --> 00:02:16,959
+that can handle the most performance intensive system requirements this has
+，它可以处理性能最密集的系统要求，这
+
+35
+00:02:16,959 --> 00:02:20,720
+been rust in 100 seconds hit the like button and subscribe if you want to see
+已经在 100 秒内生锈，如果您想看更多这样的短视频，请点击“赞”按钮并订阅，如果您想看完整的
+
+36
+00:02:20,720 --> 00:02:24,080
+more short videos like this and leave a comment if you want to see a full rust
+视频，请发表评论 rust
+
+37
+00:02:24,080 --> 00:02:30,120
+tutorial thanks for watching and i will see you in the next one
+教程感谢观看，下一篇再见

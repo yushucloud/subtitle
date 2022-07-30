@@ -1,0 +1,1734 @@
+1
+00:00:00,799 --> 00:00:05,120
+content platforms treat the content on your website or app like data in the
+内容平台将您网站或应用程序上的内容视为数据 一
+
+2
+00:00:05,120 --> 00:00:09,040
+beginning we had html websites where content was embedded directly in the
+开始我们有 html 网站，其中内容直接嵌入在
+
+3
+00:00:09,040 --> 00:00:12,799
+code but that was never going to scale well the next generation of websites
+代码中，但这永远不会很好地扩展下一代网站
+
+4
+00:00:12,799 --> 00:00:17,760
+used a content management system or cms where content is stored in a database
+使用内容管理系统或内容所在的 cms 存储在数据库中
+
+5
+00:00:17,760 --> 00:00:22,240
+then injected into an html template this works great until you decide you want to
+然后注入到 html 模板中，直到您决定要将
+
+6
+00:00:22,240 --> 00:00:25,920
+migrate your app into a fancy new javascript framework or maybe you want
+应用程序迁移到花哨的新javascript 框架中，或者您可能想
+
+7
+00:00:25,920 --> 00:00:30,400
+to display the same content on ios palm os and android or you may just have
+在 ios palm os 和 android 上显示相同的内容，或者您可能只有多个
+
+8
+00:00:30,400 --> 00:00:33,920
+multiple views for the same content within a single application these
+视图 对于单个应用程序中的相同内容，这些
+
+9
+00:00:33,920 --> 00:00:38,160
+demands gave rise to the headless cms a tool that turns your content into a
+需求产生了无头 cms 一种工具，可将您的内容转换为
+
+10
+00:00:38,160 --> 00:00:42,719
+cloud-based api so it can be accessed from any application today a content
+基于云的 API，因此可以从当今的任何应用程序访问内容
+
+11
+00:00:42,719 --> 00:00:46,399
+platform is a critical layer of the modern tech stack where it serves as a
+平台是现代技术堆栈的关键层，其中 它是
+
+12
+00:00:46,399 --> 00:00:49,840
+single source of truth for your brand and because it's completely decoupled
+您品牌的单一事实来源，因为它与
+
+13
+00:00:49,840 --> 00:00:53,199
+from your application code and user database you can take it with you
+您的应用程序代码和用户数据库完全分离，您可以随身携带 u
+
+14
+00:00:53,199 --> 00:00:57,120
+anywhere in addition it gives you the ability to model and custom tailor your
+此外，它使您能够为任何情况建模和定制您的
+
+15
+00:00:57,120 --> 00:01:01,199
+content for any situation rather than start from a cookie cutter solution you
+内容，而不是从千篇一律的解决方案开始您
+
+16
+00:01:01,199 --> 00:01:05,360
+can build your own schema with different fields for things like text and images
+可以为文本和图像等内容构建具有不同字段的自己的模式，
+
+17
+00:01:05,360 --> 00:01:09,040
+and create relationships between items like you might in a relational database
+并像您可能一样创建项目之间的关系在关系数据库中，
+
+18
+00:01:09,040 --> 00:01:12,479
+it's a win for marketers because they have a single polished interface for
+这对营销人员来说是一个胜利，因为他们有一个用于
+
+19
+00:01:12,479 --> 00:01:16,560
+managing content but it's an even bigger win for us developers because we can now
+管理内容的精美界面，但对于我们开发人员来说，这是一个更大的胜利，因为我们现在可以
+
+20
+00:01:16,560 --> 00:01:20,799
+query content from any code base in a consistent and structured way one tool
+以一致且结构化的方式从任何代码库中查询内容，一个工具
+
+21
+00:01:20,799 --> 00:01:24,799
+that makes that possible is sanity a popular choice for jam stack
+使这成为可能 sanity是 jam stack 应用程序的流行选择，
+
+22
+00:01:24,799 --> 00:01:30,479
+applications which stands for javascript apis and markup sanity is part of the a
+它代表 javascriptapis 和 markup sanity 是 a 的一部分，
+
+23
+00:01:30,479 --> 00:01:34,079
+and the jam stack it provides an open source studio where you can model your
+并且 jam stack 它提供了一个开源工作室，您可以在其中使用 javascript 建模您的
+
+24
+00:01:34,079 --> 00:01:38,560
+content with javascript and manage it in the browser meanwhile the actual data is
+内容并在浏览器中管理它，同时实际数据
+
+25
+00:01:38,560 --> 00:01:42,640
+stored in the cloud in what's known as a content lake which can then be queried
+存储在云中所谓的内容湖中，然后可以
+
+26
+00:01:42,640 --> 00:01:46,560
+from a friend application quickly with its built-in ctn while supporting
+从朋友应用程序中快速查询它的内置 ctn 同时支持
+
+27
+00:01:46,560 --> 00:01:50,799
+features like graphql web hooks and real-time updates this has been content
+graphql 网络钩子和实时更新等功能，这已经
+
+28
+00:01:50,799 --> 00:01:55,119
+platforms in 100 seconds but stay tuned because today i've invited cap from
+是 100 秒内的内容平台，但请继续关注，因为今天我邀请了
+
+29
+00:01:55,119 --> 00:01:59,600
+sanity to take us beyond 100 seconds and show us exactly how a content platform
+理智的 cap 让我们超过 100 秒，并准确地向我们展示内容 平台
+
+30
+00:01:59,600 --> 00:02:03,600
+can fit into our tech stack thank you so much for that intro aloha
+可以融入我们的技术堆栈非常感谢大家的介绍 aloha
+
+31
+00:02:03,600 --> 00:02:06,840
+everyone my name is cap and i do developer relations at
+大家我的名字是 cap 我在 sanity.io 做开发人员关系
+
+32
+00:02:06,840 --> 00:02:12,560
+sanity.io so sanity is a platform for structured content as a content platform
+所以 sanity 是结构化内容的平台，因为内容平台
+
+33
+00:02:12,560 --> 00:02:16,160
+sanity helps you manage and deliver your content in ways you may have not thought
+sanity 可以帮助您管理和交付您的内容
+
+34
+00:02:16,160 --> 00:02:20,560
+possible if you're thinking of adding a content platform to your project look no
+如果您正在考虑将内容平台添加到您的项目中，那么您可能
+
+35
+00:02:20,560 --> 00:02:24,720
+further than this fully customizable sanity project product i'm about to show
+没有想到的可能的方式就是我即将向您展示的这个完全可定制的健全项目产品
+
+36
+00:02:24,720 --> 00:02:28,480
+you so content can be a lot of different things it can be
+，因此内容可以是很多不同的东西，它可以
+
+37
+00:02:28,480 --> 00:02:33,360
+the content for a blog or a portfolio it could be the video content on a course
+是 博客或作品集的内容 它可能是课程平台上的视频内容
+
+38
+00:02:33,360 --> 00:02:38,800
+platform it could be the menu and the hours and the address of a restaurant
+它可能是餐厅的菜单、营业时间和地址
+
+39
+00:02:38,800 --> 00:02:42,879
+it could be a car manufacturer's content and the number of cars that were made in
+它可能是汽车制造商的内容和 四分之一内生产的汽车数量
+
+40
+00:02:42,879 --> 00:02:46,879
+a quarter how many were sent out and how many were purchased
+发送了多少辆，购买了多少辆
+
+41
+00:02:46,879 --> 00:02:50,160
+it could be the music tracks for a singer and they're trying to get their
+这可能是歌手的音乐曲目，他们正试图让自己的
+
+42
+00:02:50,160 --> 00:02:53,040
+name out in the world so they want to save it all in one spot
+名字在世界上广为流传，因此他们想将所有这些都保存在一个 发现
+
+43
+00:02:53,040 --> 00:02:56,239
+it could be the times and winners for each sporting event and a major
+它可能是每个体育赛事和大型
+
+44
+00:02:56,239 --> 00:03:00,560
+tournament you get the picture content is everywhere and we can find it all
+锦标赛的时间和获胜者，您会得到图片内容无处不在，我们可以
+
+45
+00:03:00,560 --> 00:03:04,480
+online within a couple of seconds so with most projects
+在几秒钟内在线找到所有内容，因此大多数项目
+
+46
+00:03:04,480 --> 00:03:08,720
+content is going to be present it's best to manage it and know where content is
+内容都会出现，最好管理它
+
+47
+00:03:08,720 --> 00:03:12,879
+going from the beginning incorporating a content platform saves you time in the
+从一开始就知道内容的去向 从长远来看，整合内容平台可以节省您的时间，
+
+48
+00:03:12,879 --> 00:03:16,239
+long run but there are many other benefits too
+但还有许多其他好处
+
+49
+00:03:16,239 --> 00:03:19,760
+and let me tell you about those so a content platform should allow you
+，让我来告诉您这些好处，因此内容平台应该允许您
+
+50
+00:03:19,760 --> 00:03:24,159
+freedom with your content one of the biggest reasons why most developers or
+自由使用您的内容，这是最大的原因之一 为什么大多数开发人员或
+
+51
+00:03:24,159 --> 00:03:28,720
+content creators hesitate to incorporate a content platform is that there's this
+内容创建者不愿合并内容平台是因为
+
+52
+00:03:28,720 --> 00:03:32,560
+fear of losing true ownership to your content to your stuff
+担心失去对内容的真正所有权，
+
+53
+00:03:32,560 --> 00:03:37,280
+a content platform should not steal ownership it should allow you to own it
+内容平台不应窃取所有权 它应该允许你拥有它
+
+54
+00:03:37,280 --> 00:03:41,440
+of course it's yours it should allow you to deliver your content however and
+，当然它是你的它应该允许你交付你的内容，
+
+55
+00:03:41,440 --> 00:03:45,599
+wherever you need it to go it should also allow you to structure and manage
+无论你需要它去哪里它还应该允许你组织和管理
+
+56
+00:03:45,599 --> 00:03:50,000
+it however it best fits your needs so let me show you how with sanity you
+它，但是它最适合你的需求，所以让我告诉你如何使用 理智，您
+
+57
+00:03:50,000 --> 00:03:54,720
+can accomplish all of those things built with react there is a sanity.io
+可以完成所有使用 react 构建的事情有一个
+
+58
+00:03:54,720 --> 00:04:00,959
+backend ui for the content called sanity studio the studio is fully customizable
+名为 sanity studio 的内容的 sanity.io 后端 ui该工作室是完全可定制的，
+
+59
+00:04:00,959 --> 00:04:04,720
+you structure your content or your data however you need and because it's built
+您可以根据需要构建内容或数据，因为
+
+60
+00:04:04,720 --> 00:04:08,480
+with react if you know react you can code it up to be however you want it to
+如果您知道 react，它是用 react 构建的 你可以把它编码成你希望它
+
+61
+00:04:08,480 --> 00:04:11,120
+look and then there's a nifty thing called
+看起来的样子，然后有一个漂亮的东西叫做
+
+62
+00:04:11,120 --> 00:04:16,639
+portable text portable text is storing your rich text in json format
+便携式文本便携式文本以 json 格式存储你的富文本
+
+63
+00:04:16,639 --> 00:04:20,000
+that json format can be reused everywhere
+，json 格式可以在任何地方重复使用，
+
+64
+00:04:20,000 --> 00:04:24,960
+mobile desktop a different front end etc more on that in a little
+移动桌面，不同的前端等等 一点点，
+
+65
+00:04:24,960 --> 00:04:28,960
+so we should be treating our content as data and because our content is data we
+所以我们应该将我们的内容视为数据，因为我们的内容是数据，所以我们
+
+66
+00:04:28,960 --> 00:04:34,240
+want to treat it as such so wherever you need your data to go or do with sanity
+希望将其视为数据，因此无论您需要数据去哪里或理智地做，
+
+67
+00:04:34,240 --> 00:04:39,040
+the possibilities are nearly endless using sanity allows for full
+可能性都是ne  arly 无限使用 sanity 允许完全
+
+68
+00:04:39,040 --> 00:04:44,160
+customization of how your structure content looks for editors developers
+自定义您的结构内容如何为编辑器开发人员
+
+69
+00:04:44,160 --> 00:04:48,400
+anyone manipulating the content it also allows for the ability to
+操作任何内容它还允许
+
+70
+00:04:48,400 --> 00:04:51,520
+reshape and present your content in any format
+以任何格式重塑和呈现您的内容，
+
+71
+00:04:51,520 --> 00:04:56,400
+so using sanity and the content like you now have a real-time database that gives
+因此使用 sanity 和像您现在这样的内容具有实时性 数据库可让
+
+72
+00:04:56,400 --> 00:05:00,000
+you access to your content however and wherever you need
+您访问您的内容，无论何时何地，
+
+73
+00:05:00,000 --> 00:05:02,960
+you know how you redesign your website every couple
+您都知道如何每隔几个月重新设计您的网站
+
+74
+00:05:02,960 --> 00:05:06,560
+of months just because or you want to try that new framework
+，只是因为或者您想尝试
+
+75
+00:05:06,560 --> 00:05:12,160
+with structured content you can redesign you can try a new framework at any time
+具有结构化内容的新框架，您可以重新设计您可以随时尝试新框架，
+
+76
+00:05:12,160 --> 00:05:16,240
+so go ahead use that new javascript framework and continue using your
+所以 继续使用新的 javascript框架并继续使用您的
+
+77
+00:05:16,240 --> 00:05:21,759
+content like you've been doing so let me show you how with sanity.io to
+内容，就像您一直在做的那样，让我向您展示如何使用 sanity.io
+
+78
+00:05:21,759 --> 00:05:25,520
+get a project up and running in just a few minutes remember what i show you
+在短短几分钟内启动并运行项目记住我今天向您展示的内容
+
+79
+00:05:25,520 --> 00:05:30,000
+today can be used on any front end i'll show you how to spin up a project and
+可以用于 任何前端，我都会向您展示如何启动一个项目以及
+
+80
+00:05:30,000 --> 00:05:34,960
+also a couple other cool things to get you going right out of the box so let's
+其他一些很酷的东西，让您开箱即用，所以让我们
+
+81
+00:05:34,960 --> 00:05:40,199
+go ahead and let's structure our content all right so to get started go to
+继续，让我们构建我们的 con 帐篷好吧，所以开始去
+
+82
+00:05:40,199 --> 00:05:45,039
+sanity.io here we're going to find these two buttons get started get started
+sanity.io这里我们会找到这两个按钮开始开始
+
+83
+00:05:45,039 --> 00:05:48,880
+click on either one of these so once we click on that we'll see
+点击其中任何一个，所以一旦我们点击，我们会看到
+
+84
+00:05:48,880 --> 00:05:52,960
+official starters you can choose one of these but we're actually going to do
+官方启动器，你可以选择其中一个 但我们实际上要做
+
+85
+00:05:52,960 --> 00:05:59,039
+this npm install so we're going to be installing globally this sanity cli and
+这个 npm install 所以我们将在全局安装这个 sanity cli 并且
+
+86
+00:05:59,039 --> 00:06:03,600
+we're going to be running the command sanity init that will start our very own
+我们将运行命令sanity init 它将启动我们自己的
+
+87
+00:06:03,600 --> 00:06:07,360
+sanity project so what i did is i copied that command
+sanity 项目所以我所做的就是我复制该命令
+
+88
+00:06:07,360 --> 00:06:10,400
+and i now went to my terminal and in my
+，我现在转到我的终端，在我的
+
+89
+00:06:10,400 --> 00:06:13,120
+terminal i'm going to paste that command in
+终端中，我将把该命令粘贴到
+
+90
+00:06:13,120 --> 00:06:17,280
+hit enter and then it will install the cli for me and it will initialize a
+回车中，然后它将为我安装 cli，
+
+91
+00:06:17,280 --> 00:06:21,280
+brand new project if you have not logged in using sanity
+如果您尚未使用 sanity 登录，它将初始化一个全新
+
+92
+00:06:21,280 --> 00:06:25,680
+on your local computer you will be prompted you may be prompted to log in
+的项目 您的本地计算机将提示您可能会提示您
+
+93
+00:06:25,680 --> 00:06:29,280
+using either google github or email password choose one of those remember
+使用 google github 或电子邮件密码登录 选择其中一个记住
+
+94
+00:06:29,280 --> 00:06:31,840
+what you choose because we're going to need that in the future
+您选择的内容，因为我们将来会需要它，
+
+95
+00:06:31,840 --> 00:06:34,880
+so i'm going to create new project i'll hit enter
+所以我将创建新项目 i  '将按回车键
+
+96
+00:06:34,880 --> 00:06:39,759
+and we're going to name our project so this is whatever you want it to be named
+，我们将命名 o 你的项目，所以这是你想要的任何名称
+
+97
+00:06:39,759 --> 00:06:43,520
+whatever you want your sanity project to be named i'm going to name it fireship
+
+
+98
+00:06:43,520 --> 00:06:46,400
+so i'm going to hit enter
+
+
+99
+00:06:46,560 --> 00:06:50,479
+and then we are going to be asked about the data set so we are going to be using
+我们将
+
+100
+00:06:50,479 --> 00:06:54,639
+the default data set so i'm just going to hit y for yes it will be called
+使用默认数据集，所以我将按 y 表示是的，它将被称为
+
+101
+00:06:54,639 --> 00:06:59,039
+production so we're going to want that is that path correct it is so i'm going
+生产，所以我们希望那是正确的路径，所以我现在
+
+102
+00:06:59,039 --> 00:07:02,319
+to hit enter now we can choose from movie e-commerce
+要按 Enter我们 可以从电影电子商务
+
+103
+00:07:02,319 --> 00:07:06,560
+blog or clean project we are going to do blog for this one the
+博客或干净的项目中选择，我们将为这个做
+
+104
+00:07:06,560 --> 00:07:11,120
+other ones have like uh so they'll have like pre-built
+
+
+105
+00:07:11,120 --> 00:07:15,039
+schemas with um some data in it the blog one is
+
+
+106
+00:07:15,039 --> 00:07:18,880
+a pre-built schema with no data in it and then the clean one of course has
+博客 架构中没有数据，然后干净的架构当然
+
+107
+00:07:18,880 --> 00:07:22,080
+nothing so you would just build your own schemas out
+没有任何内容，因此您只需使用此架构构建自己的架构
+
+108
+00:07:22,080 --> 00:07:26,000
+with this one we don't want any pre-built data we just want pre-built
+，我们不需要任何预构建的数据，我们只需要预构建的
+
+109
+00:07:26,000 --> 00:07:29,520
+schemas and it is done all right so we're going
+架构，一切都很好 所以我们
+
+110
+00:07:29,520 --> 00:07:34,080
+to cd into our project and now we are in it we can run other
+要 cd 进入我们的项目，现在我们在其中，我们可以运行其他
+
+111
+00:07:34,080 --> 00:07:39,199
+either sanity docs manage help any of those but we actually want to open this
+任何 sanity docs 管理帮助其中任何一个，但 w 我实际上想
+
+112
+00:07:39,199 --> 00:07:43,599
+up in our text editor of choice so i'm going to actually open it in vs code
+在我们选择的文本编辑器中打开它，所以我将在 vs 代码中实际打开它
+
+113
+00:07:43,599 --> 00:07:48,160
+there's a shortcut that i have installed code space period if you have that use
+有一个快捷方式，我已经安装了代码空间，如果你有这个使用
+
+114
+00:07:48,160 --> 00:07:53,840
+that if not go to your vs code or text editor and open yours up
+，如果不去你的 vs 代码或文本编辑器并打开你的，
+
+115
+00:07:53,840 --> 00:07:59,759
+now i'm going to make this big all right so let's go through a little
+现在我要把它做得很大，所以让我们看
+
+116
+00:07:59,759 --> 00:08:04,639
+bit of this file structure so the sanity.json if we go here we actually
+一下这个文件结构，所以如果我们去这里，sanity.json 实际上
+
+117
+00:08:04,639 --> 00:08:09,120
+can find our project id and the name of it so we named it fireship
+可以找到我们的项目 ID 和它的名称，所以我们 将其命名为 fireship
+
+118
+00:08:09,120 --> 00:08:13,039
+we have that this project id is what you will need
+，
+
+119
+00:08:13,039 --> 00:08:18,639
+if you need something else to speak to your content link so say you have your
+如果您需要其他内容来与您的内容链接对话，那么您将需要此项目 ID，因此假设您拥有
+
+120
+00:08:18,639 --> 00:08:22,240
+react front end or your next js front end and you want
+react 前端或下一个 js 前端，并且您希望
+
+121
+00:08:22,240 --> 00:08:26,240
+it to speak to this data set then you will need this project
+它与该数据集对话 您将需要此项目
+
+122
+00:08:26,240 --> 00:08:30,639
+id so that is an easy way to find it now i also want to point out the schemas
+ID，以便现在可以轻松找到它
+
+123
+00:08:30,639 --> 00:08:35,360
+folder in here if we did the clean project when we were
+
+
+124
+00:08:35,360 --> 00:08:38,640
+answering those questions this would pretty much be empty just a couple
+
+
+125
+00:08:38,640 --> 00:08:44,000
+things would be in here but like author category post those would not be here
+。 在这里，但喜欢作者类别的帖子
+
+126
+00:08:44,000 --> 00:08:49,200
+now if we went to schema.js here's where we import and use all of
+如果我们去 schema.js，现在就不在这里了，这里是我们导入和使用
+
+127
+00:08:49,200 --> 00:08:53,440
+our different schema files so we have block content category post
+所有不同模式文件的地方，所以我们有块内容类别帖子
+
+128
+00:08:53,440 --> 00:08:57,519
+author that also matches up with all these over here and then down here
+作者，它也与这里的所有这些匹配，然后这里
+
+129
+00:08:57,519 --> 00:09:01,040
+is when we use it so we import it and then use it
+是我们使用它的时候所以我们导入它，然后
+
+130
+00:09:01,040 --> 00:09:05,120
+if you make a new file make sure you come in here and import and use
+在你创建一个新文件时使用它确保你来到这里并导入和使用
+
+131
+00:09:05,120 --> 00:09:11,120
+now i'm going to go to post this is our document type now sanity
+现在我要去发布这是我们的文档类型现在理智
+
+132
+00:09:11,120 --> 00:09:15,440
+uses schema types and in schema types document is one of them there's also
+使用模式类型并且在模式类型中文档是一个 其中还有
+
+133
+00:09:15,440 --> 00:09:17,680
+string slug
+字符串slug
+
+134
+00:09:17,680 --> 00:09:20,480
+reference image and we'll go through a couple of these and i'll show you what
+参考图像，我们将通过其中的几个，我将向您展示
+
+135
+00:09:20,480 --> 00:09:23,519
+they look like this one is a our document type post and
+它们的外观这是我们的文档类型帖子，
+
+136
+00:09:23,519 --> 00:09:28,720
+it has an array of fields so there's title there's slug
+它有一个字段数组，所以有标题，有 slug
+
+137
+00:09:28,720 --> 00:09:32,560
+but let me actually just show you what this looks like on the browser side on
+但让 我实际上只是
+
+138
+00:09:32,560 --> 00:09:36,640
+the sanity studio front-end side the ui side of it so i'm
+在 sanity Studio前端的浏览器端向你展示它的 ui 端的样子，所以我
+
+139
+00:09:36,640 --> 00:09:41,600
+going to open up my uh terminal i used ctrl tilde to open it up within
+要打开我的终端我使用 ctrl 波浪号在 vs 代码中打开它，
+
+140
+00:09:41,600 --> 00:09:46,000
+vs code you can open it up however you want and i'm going to run the command
+你可以随心所欲地打开它，我将运行命令
+
+141
+00:09:46,000 --> 00:09:50,399
+sanity start so run that command hit enter
+sanit  y start 所以运行该命令按回车
+
+142
+00:09:50,399 --> 00:09:56,399
+and it's starting up our studio and it will live at localhost 3333 so
+，它正在启动我们的工作室，它将在 localhost 3333 上运行，所以
+
+143
+00:09:56,399 --> 00:10:02,320
+it's ready let's go back to our browser localhost 3333
+它准备好了让我们回到我们的浏览器localhost 3333
+
+144
+00:10:02,320 --> 00:10:06,480
+and here remember whatever you chose when you did the login at the beginning
+，在这里记住你在开始登录时
+
+145
+00:10:06,480 --> 00:10:10,880
+choose here so i'm going to do google
+选择的任何内容，所以我选择这里 '要做谷歌
+
+146
+00:10:11,120 --> 00:10:15,120
+and i am now authorized so because it is
+，我现在被授权所以因为它是
+
+147
+00:10:15,120 --> 00:10:19,279
+mine i have authorization to it if you want to give someone else
+我的，如果你想给别人
+
+148
+00:10:19,279 --> 00:10:22,320
+authorization to it go to manage.sanity.io
+授权去manage.sanity.io
+
+149
+00:10:22,320 --> 00:10:26,560
+and you can add more users so this is what our studio looks like it
+，你可以添加更多用户，所以这就是我们的工作室 看起来它
+
+150
+00:10:26,560 --> 00:10:30,320
+has the name you can search through your content desk vision we'll get to the
+有你可以通过你的内容台视觉搜索的名字我们将
+
+151
+00:10:30,320 --> 00:10:36,240
+vision plugin in a little bit but here are our three document types so post
+在一点点进入视觉插件但这里是我们的三种文档类型所以
+
+152
+00:10:36,240 --> 00:10:41,279
+nothing let's actually add a new post so
+什么都不发布让我们实际添加一个新帖子所以
+
+153
+00:10:41,600 --> 00:10:47,839
+let's do my first blog post we will generate a slug
+让我们做我的第一篇博客文章我们 将生成一个 slug
+
+154
+00:10:47,839 --> 00:10:50,320
+author is
+作者
+
+155
+00:10:50,320 --> 00:10:54,800
+let me pull this down author is a
+让我把这个拉下来作者是一个
+
+156
+00:10:54,800 --> 00:10:57,839
+reference it's referencing
+参考它正在引用
+
+157
+00:10:57,839 --> 00:11:02,000
+this author document so before we actually
+这个作者文档 所以在我们实际上
+
+158
+00:11:02,000 --> 00:11:06,320
+can see anything in this drop down we need to go make an author so we can
+可以在这个下拉列表中看到任何东西之前，我们需要去创建一个作者，这样我们就可以
+
+159
+00:11:06,320 --> 00:11:11,519
+leave all this here i'm gonna go back to content click on author and let's make
+把这一切留在这里 我要去 b 确认内容点击作者，让我们
+
+160
+00:11:11,519 --> 00:11:13,680
+sure i'm gonna click on this little pencil
+确保我要点击这支小铅笔
+
+161
+00:11:13,680 --> 00:11:17,120
+i'm going to make a new author we'll just do my name
+我要创建一个新作者我们只需生成我的名字
+
+162
+00:11:17,120 --> 00:11:20,640
+generate and
+
+
+163
+00:11:20,640 --> 00:11:24,000
+i am cap
+
+
+164
+00:11:24,000 --> 00:11:26,959
+and then publish that
+，然后我就可以发布了，
+
+165
+00:11:27,200 --> 00:11:31,200
+awesome so now that's published let's go back to our post
+所以现在已经发布了让我们回到我们的帖子
+
+166
+00:11:31,200 --> 00:11:35,760
+back to the one that we were working on and if i do the drop down we now see
+回到我们正在处理的那个，如果我做下拉，我们现在看到
+
+167
+00:11:35,760 --> 00:11:40,160
+that author i just made if we had a picture if i had added a picture to that
+我刚刚制作的作者如果我们有一张照片如果我添加了一张照片
+
+168
+00:11:40,160 --> 00:11:43,279
+this would be the little thumbnail of that picture
+这将是那个的小缩略图 图片，
+
+169
+00:11:43,279 --> 00:11:47,680
+then we have main image and let's add a main image then we have
+然后我们有主图像，让我们添加一个主图像，然后我们有
+
+170
+00:11:47,680 --> 00:11:51,440
+categories publish that and body so with main image let me actually make
+类别发布它和正文，所以使用主图像让我实际上把
+
+171
+00:11:51,440 --> 00:11:54,880
+this just a little bit smaller
+它缩小一点
+
+172
+00:11:55,040 --> 00:11:59,519
+main image there are three ways to upload a main image you can click on
+主图像有三种上传主图像的方法，你可以点击
+
+173
+00:11:59,519 --> 00:12:03,120
+upload and it will bring down the file structure like the files from your own
+上传 它会降低文件结构，就像您自己计算机中的文件一样，
+
+174
+00:12:03,120 --> 00:12:07,680
+computer you can drop in an image so just like drag and drop or you can paste
+您可以拖放到图像中，就像拖放一样，或者您可以粘贴
+
+175
+00:12:07,680 --> 00:12:11,040
+in an image and we're going to do that so i'm going to go to unsplash
+到图像中，我们将这样做，所以我要去 unsplash
+
+176
+00:12:11,040 --> 00:12:13,920
+and let's look up
+，让我们查找
+
+177
+00:12:14,000 --> 00:12:16,800
+cats we'll do this cat with the butterfly so
+猫，我们将用 b 做这只猫 完全如此，所以
+
+178
+00:12:16,800 --> 00:12:19,920
+we're going to copy image
+我们要复制图像
+
+179
+00:12:21,040 --> 00:12:27,519
+go back here and i'm going to do command v to paste it in and now we have
+回到这里，我将执行命令v 将其粘贴，现在我们有了
+
+180
+00:12:27,519 --> 00:12:31,600
+our cat and butterfly image and
+猫和蝴蝶的图像，
+
+181
+00:12:31,600 --> 00:12:35,279
+there we go now let me show you a really cool thing about
+现在让我向您展示一个非常酷的关于
+
+182
+00:12:35,279 --> 00:12:40,240
+sanity and images so i just unzoom this a little bit more because i need to show
+理智和 图像，所以我只是将其放大一点，因为我需要向
+
+183
+00:12:40,240 --> 00:12:45,680
+you everything that's going on but if i click on edit details
+您展示正在发生的一切，但是如果我单击此处的编辑详细信息
+
+184
+00:12:45,680 --> 00:12:49,120
+in here i have
+，我会
+
+185
+00:12:49,120 --> 00:12:53,120
+some views of my image so this is a really cool thing about
+看到我的图像的一些视图，所以这是关于理智的一件非常酷的事情，
+
+186
+00:12:53,120 --> 00:12:59,279
+sanity is i upload once and it will work for all these aspect ratios
+我上传一次然后 它适用于
+
+187
+00:12:59,279 --> 00:13:05,360
+i can crop here and this is the crop and i can do hotspot
+我可以在这里裁剪的所有这些纵横比，这就是裁剪，我可以做热点
+
+188
+00:13:05,360 --> 00:13:10,160
+hot spot is making sure let me actually show you the thumbnail as i'm doing it
+热点确保让我实际向您展示缩略图，因为我正在这样做
+
+189
+00:13:10,160 --> 00:13:14,959
+so hot spot is making sure that whatever is in this hot spot is always in view no
+所以热点确保无论在
+
+190
+00:13:14,959 --> 00:13:20,320
+matter what type of aspect ratio my image is so if i want to make sure that
+无论我的图像是什么类型的纵横比，这个热点总是在视野中，所以如果我想
+
+191
+00:13:20,320 --> 00:13:23,519
+the cat's ear is always in view notice how the
+确保猫的耳朵总是在视野中，请注意
+
+192
+00:13:23,519 --> 00:13:26,959
+panorama changed or if i want the cat's nose always in
+全景图是如何变化的，或者如果我希望猫的鼻子总是在
+
+193
+00:13:26,959 --> 00:13:30,560
+view notice how it's changing so i don't have to do
+视野中，请注意它是如何变化的 改变所以我
+
+194
+00:13:30,560 --> 00:13:36,079
+um like multiple uploads to make sure that my that my crop is good that my hot
+不必像多次上传到妈妈那样做确保我的收成很好，我的
+
+195
+00:13:36,079 --> 00:13:39,760
+spot's always on sanity will make sure that this spot
+热点始终处于正常状态，将
+
+196
+00:13:39,760 --> 00:13:42,320
+that your hot spot is on is always in view
+确保您的热点所在的这个位置始终在视野中
+
+197
+00:13:42,320 --> 00:13:46,800
+and that's how that works so then you just exit out and there's my
+，这就是它的工作原理，所以您只需退出，那里就是我的
+
+198
+00:13:46,800 --> 00:13:52,000
+hot spot and crop for my image so here is the body of my first blog
+热点和收割 对于我的图片，这里是我的第一篇博客文章的正文，
+
+199
+00:13:52,000 --> 00:13:54,959
+post now
+现在
+
+200
+00:13:54,959 --> 00:14:00,000
+this is the rich text editor and in here we'll live our portable text
+这是富文本编辑器，在这里我们将使用便携式文本，
+
+201
+00:14:00,000 --> 00:14:03,760
+here is the body of my blog
+这里是我的博客文章的正文，
+
+202
+00:14:03,760 --> 00:14:07,519
+post i hope you like it old-fashioned smiley
+我希望你喜欢它老式的笑脸
+
+203
+00:14:07,519 --> 00:14:11,120
+face and so here is our portable text
+等等 这是我们的可移植文本
+
+204
+00:14:11,120 --> 00:14:15,040
+portable text will live in this rich text editor and
+可移植文本将存在于这个富文本编辑器中，
+
+205
+00:14:15,040 --> 00:14:19,920
+this is the sanity way of storing our rich text
+这是存储富文本的明智方式，
+
+206
+00:14:19,920 --> 00:14:24,000
+so you know how when you get html and you want to put it into react
+因此您知道如何获取 html并将其放入反应
+
+207
+00:14:24,000 --> 00:14:27,040
+application it kind of
+应用程序中，这
+
+208
+00:14:27,040 --> 00:14:29,760
+isn't very intuitive because you have to do
+不是很直观 因为你必须
+
+209
+00:14:29,760 --> 00:14:34,320
+the dangerously set prop and then you kind of lose control of it so because
+做危险设置的道具然后你有点失去对它的控制所以因为
+
+210
+00:14:34,320 --> 00:14:39,920
+portable text is data it becomes json and so you can actually put it into your
+可移植文本是数据它变成了json 所以你实际上可以把它放到你的
+
+211
+00:14:39,920 --> 00:14:45,199
+react application it makes it more intuitive as you pass it along to
+反应应用程序中它使它在你传递到
+
+212
+00:14:45,199 --> 00:14:49,839
+mobile to desktop to react to view
+移动时更直观 到桌面对 vi 做出反应 ew
+
+213
+00:14:49,839 --> 00:14:54,000
+if you want to use a native app and you're using html it would be harder
+如果您想使用本机应用程序并且您正在使用 html 会更难
+
+214
+00:14:54,000 --> 00:14:56,720
+json would make it easier and this is saved
+json会使其更容易并且这会保存
+
+215
+00:14:56,720 --> 00:15:01,680
+as a json format so this means that you can now query for
+为 json 格式，因此这意味着您现在可以查询
+
+216
+00:15:01,680 --> 00:15:06,000
+your content so say you wanted to find out all the blog posts that had
+您的内容所以说您想找出 所有包含
+
+217
+00:15:06,000 --> 00:15:09,839
+code blocks in it you can do that because all of this is stored as data
+代码块的博客文章您都可以这样做，因为所有这些都存储为数据，
+
+218
+00:15:09,839 --> 00:15:14,160
+your content is your data and that is portable text
+您的内容就是您的数据，这是可移植的文本
+
+219
+00:15:14,160 --> 00:15:20,320
+now let me actually show you so here's our first blog post let's publish it
+现在让我实际向您展示这是我们的第一篇博客文章让我们发布它
+
+220
+00:15:20,560 --> 00:15:24,720
+let me actually show you the inspect to our blog post if you
+让我实际如果您
+
+221
+00:15:24,720 --> 00:15:30,399
+click on those three dots click on inspect here is all of the json of our
+单击这三个点，请向您展示我们博客文章的检查 单击检查这里是我们
+
+222
+00:15:30,399 --> 00:15:34,320
+blog post we have our main image we have the title
+博客文章的所有 json 我们有我们的主图像 我们有标题
+
+223
+00:15:34,320 --> 00:15:38,079
+we have all of our rich text so that is how it looks that's how it's
+我们有我们所有的富文本，所以它看起来是这样的 这就是它的
+
+224
+00:15:38,079 --> 00:15:42,959
+sort and this is how we can query for it things like this all right so let me
+排序方式，这就是我们可以查询它的方式，所以让我
+
+225
+00:15:42,959 --> 00:15:47,519
+show you a really cool feature about main image i know we already had hotspot
+向您展示一个关于主图像的非常酷的功能，我知道我们已经
+
+226
+00:15:47,519 --> 00:15:50,560
+on crop but let me show you another thing so if
+在裁剪上设置了热点，但让我向您展示另一件事
+
+227
+00:15:50,560 --> 00:15:54,000
+i go to my vision plugin wait before i do that i actually have to go to the
+我的视觉插件在我这样做之前等待我实际上有 去
+
+228
+00:15:54,000 --> 00:15:56,560
+three dots
+三点
+
+229
+00:15:56,880 --> 00:16:00,959
+inspect and i need to find my main image
+检查，我需要找到我的主图像
+
+230
+00:16:00,959 --> 00:16:05,120
+reference this is the id to my image so i'm going
+参考这是我的图像的 id 所以我
+
+231
+00:16:05,120 --> 00:16:10,399
+to copy that so under my main image the asset ref
+要复制它所以在我的主图像下资产参考
+
+232
+00:16:10,399 --> 00:16:14,800
+i'm going to come to my vision plugin now the vision plug-in this is where we
+我现在要来我的视觉插件 视觉插件 这是我们
+
+233
+00:16:14,800 --> 00:16:19,600
+can query for our own content we're going to use grok today
+可以查询我们自己的内容的地方我们今天
+
+234
+00:16:19,600 --> 00:16:24,639
+you can use either graphql or grok with sanity grok is an in-house sanity made
+将使用 grok 您可以使用 graphql 或 grok理智 grok 是一种内部理智的
+
+235
+00:16:24,639 --> 00:16:28,480
+query language and i will show you how it's done just a little bit there are
+查询语言，我将向您展示它是如何完成的 只是一点点，
+
+236
+00:16:28,480 --> 00:16:31,120
+definitely more places that you can learn about grok
+肯定有更多的地方可以让你了解
+
+237
+00:16:31,120 --> 00:16:35,519
+but yeah let me start off so by doing the asterisk i am grabbing
+grok 但是是的，让我开始吧
+
+238
+00:16:35,519 --> 00:16:40,399
+all of my content link i'm going to do the square brackets to filter down so
+
+
+239
+00:16:40,399 --> 00:16:44,320
+i'm going to do underscore id is equal to and i'm going to paste in the id that
+要做下划线id 等于，我将
+
+240
+00:16:44,320 --> 00:16:50,160
+i grabbed from the image okay i'm going to run that query and in
+粘贴我从图像
+
+241
+00:16:50,160 --> 00:16:55,279
+here this is all of the content we get back from that image so create it at
+中获取的 id
+
+242
+00:16:55,279 --> 00:16:58,959
+the id of it the id will match what we just had over here
+它的 id 将与我们刚刚在这里
+
+243
+00:16:58,959 --> 00:17:02,000
+the type but i really want to point this part out
+的类型匹配，但我真的想指出 这
+
+244
+00:17:02,000 --> 00:17:06,799
+so under the metadata we get dimensions but we also get the palette
+部分在元数据下我们得到了尺寸，但我们也得到了调色板
+
+245
+00:17:06,799 --> 00:17:11,199
+this palette is pretty awesome in here we get our
+这个调色板非常棒在这里我们得到了我们的
+
+246
+00:17:11,199 --> 00:17:15,199
+dark muted dark vibrant light vibrant muted all the colors that are part of
+黑暗柔和的黑暗充满活力的光充满活力的静音所有颜色是
+
+247
+00:17:15,199 --> 00:17:19,839
+this image and a optimal foreground color for it
+这个图像的一部分和一个最佳的前景色
+
+248
+00:17:19,839 --> 00:17:25,039
+so dark vibrant takes up 1.93 of the image
+所以 黑暗的活力占据了图像的 1.93
+
+249
+00:17:25,039 --> 00:17:28,799
+this is the color and this would be a good foreground color for it so if you
+这是颜色，这将是一个很好的前景色，所以如果你
+
+250
+00:17:28,799 --> 00:17:32,880
+put text over this part of the image it would be really great for
+把文本放在图像的这一部分上，那么
+
+251
+00:17:32,880 --> 00:17:37,679
+accessibility this color for the text let's look at
+对于文本的这种颜色的可访问性来说真的很棒让我们来
+
+252
+00:17:37,679 --> 00:17:40,880
+light vibrant so it takes up that much of the image
+看看充满活力的所以它占据了图像的大部分，
+
+253
+00:17:40,880 --> 00:17:44,480
+this is the color and this would be a good foreground color so that's just a
+这是颜色，这将是一个很好的前景色，所以这是一件
+
+254
+00:17:44,480 --> 00:17:47,760
+really awesome thing to to note
+非常棒的事情，需要注意的
+
+255
+00:17:47,760 --> 00:17:52,080
+that you can have that you have this at your fingertips with all the images so
+是，你可以拥有所有图像的触手可及的东西，这样
+
+256
+00:17:52,080 --> 00:17:57,120
+you can find that go to your vision plug plugin query for that id and you have
+你就可以找到 去你的视觉插件插件查询那个id，你有
+
+257
+00:17:57,120 --> 00:18:01,840
+all this at your fingertips so really great
+这一切在你的指尖，所以真的很棒，
+
+258
+00:18:02,080 --> 00:18:08,240
+okay so let's actually add a couple things to our studio so we have what it
+所以让我们向我们的工作室添加一些东西，所以我们有它
+
+259
+00:18:08,240 --> 00:18:14,000
+comes with but let's add a couple things so i'm going to go back to my code
+附带的东西，但让我们添加一些 事情所以我要回到我的代码
+
+260
+00:18:14,000 --> 00:18:18,799
+and under title within the post.js file in the schemas folder let's go
+并在schemas 文件夹中 post.js 文件中的标题下让我们
+
+261
+00:18:18,799 --> 00:18:23,520
+underneath here and type in description and we'll do
+在下面输入描述，我们会
+
+262
+00:18:23,520 --> 00:18:27,360
+keep titles short and sweet
+保持标题简短而甜美
+
+263
+00:18:27,360 --> 00:18:31,520
+let's do a smiley face save that
+让我们做一个笑脸保存
+
+264
+00:18:31,520 --> 00:18:34,559
+and if we go back keep titles short and sweet so it's just
+如果我们回去保持标题简短而甜蜜，那么它只是
+
+265
+00:18:34,559 --> 00:18:37,360
+a quick little description that you can have
+一个快速的小描述，您可以拥有
+
+266
+00:18:37,360 --> 00:18:40,000
+and you can start customizing your studio
+并且您可以开始自定义您的工作室，
+
+267
+00:18:40,000 --> 00:18:43,679
+but let's create a whole new schema type so if we go to
+但是让我们创建一个全新的模式类型，所以如果我们
+
+268
+00:18:43,679 --> 00:18:47,840
+the schema types in the docs for sanity we will find
+为了理智而转到文档中的模式类型，我们 将
+
+269
+00:18:47,840 --> 00:18:51,679
+an entire list of all of the schema types that we can use
+找到我们可以使用的所有模式类型的完整列表，
+
+270
+00:18:51,679 --> 00:18:58,000
+so we've been working in document we've done the string we have done image
+所以我们一直在文档中工作，我们已经完成了我们已经完成的字符串图像
+
+271
+00:18:58,000 --> 00:19:00,799
+let's add a number
+让我们添加一个数字，
+
+272
+00:19:00,799 --> 00:19:04,320
+so if we go to number is what it will look like
+所以如果我们去数字，它会是什么样
+
+273
+00:19:04,320 --> 00:19:08,320
+and there's the properties there's options
+子 有属性，有选项
+
+274
+00:19:08,320 --> 00:19:12,559
+and then invalidation but here's what we need for our schema
+，然后失效，但这是我们的模式需要的，
+
+275
+00:19:12,559 --> 00:19:16,799
+so i'm going to copy that take it over
+所以我要复制它来接管它，
+
+276
+00:19:16,799 --> 00:19:22,240
+let's do it right after this the slug
+让我们在这之后立即做，slug
+
+277
+00:19:23,120 --> 00:19:27,200
+add a comma to separate those objects and let's change the title so we just
+添加一个逗号来分隔这些对象，让我们更改标题所以我们只是
+
+278
+00:19:27,200 --> 00:19:30,720
+need the title name and type for our
+需要标题名称和为我们的
+
+279
+00:19:30,720 --> 00:19:36,480
+new schema type so title will do time time to read
+新模式类型键入，因此标题将花时间阅读
+
+280
+00:19:36,480 --> 00:19:42,000
+that is the title that will live within our studio so this is the title this is
+这是将存在于我们工作室中的标题所以这是标题这是
+
+281
+00:19:42,000 --> 00:19:46,000
+the title the name is the name of the field
+标题名称是字段的名称
+
+282
+00:19:46,000 --> 00:19:49,440
+time to read type will keep as number i'm going to
+时间阅读类型将保留为数字 i  '我要把它
+
+283
+00:19:49,440 --> 00:19:53,760
+save that come back here and now we have
+保存回来，现在我们有
+
+284
+00:19:53,760 --> 00:19:58,480
+a brand new time to read notice how these little arrows come up i could add
+一个全新的时间来阅读注意这些小箭头是
+
+285
+00:19:58,480 --> 00:20:01,760
+that way or i could edit
+
+
+286
+00:20:01,760 --> 00:20:06,000
+this way so let's actually add a validation let's make sure that you
+
+
+287
+00:20:06,000 --> 00:20:10,559
+can't do longer than 20 minutes time to read okay
+如何出现的阅读时间不会超过 20 分钟，
+
+288
+00:20:10,559 --> 00:20:13,600
+so i'm going to come up here and these are all the different types of
+所以我会来到这里，这些都是
+
+289
+00:20:13,600 --> 00:20:17,760
+validations we can do required min number less than
+我们可以做的所有不同类型的验证，所需的最少数量比
+
+290
+00:20:17,760 --> 00:20:21,679
+let's learn more about validation and if we come down here
+让我们了解更多关于验证的信息，如果我们来到这里，
+
+291
+00:20:21,679 --> 00:20:25,840
+we want this line so validation and i'll actually just go just to required
+我们想要这个 行所以验证，我实际上只是去要求，
+
+292
+00:20:25,840 --> 00:20:29,520
+because we want required i'm going to copy that line
+因为我们想要要求我要复制那行
+
+293
+00:20:29,520 --> 00:20:34,400
+go back to my number and paste that in
+回到我的号码并将其粘贴，
+
+294
+00:20:34,400 --> 00:20:38,000
+and then let's also add the less than [Music]
+然后让我们也添加小于[Music]
+
+295
+00:20:38,000 --> 00:20:40,320
+20. so
+20.所以
+
+296
+00:20:40,320 --> 00:20:43,760
+no matter what we can't make the number go above 20 otherwise we'll get a
+不管 我们不能让这个数字超过 20 否则 我们会得到一个
+
+297
+00:20:43,760 --> 00:20:47,520
+warning come back here and last number we put in
+警告回到这里，我们输入的最后一个数字
+
+298
+00:20:47,520 --> 00:20:51,039
+was 88 and sure enough it's giving us an error must be less
+是 88，果然它给我们的错误必须
+
+299
+00:20:51,039 --> 00:20:54,720
+than 20. so no matter what if we just keep going down
+小于 20。所以无论如何，如果我们继续下降
+
+300
+00:20:54,720 --> 00:21:00,880
+until we get it below 20 it's not gonna be happy with this 19
+直到低于 20，它就不会 对这个 19 感到满意
+
+301
+00:21:00,880 --> 00:21:05,200
+and if i go up error again so if you want 20 to be included
+，如果我再次出现错误，所以如果您希望包含 20，
+
+302
+00:21:05,200 --> 00:21:09,039
+then we would change this to 21
+那么我们会将其更改为 21
+
+303
+00:21:10,559 --> 00:21:13,760
+and we don't get the error but the moment we go go up we get that error
+，我们不会收到错误，但是当我们上升时，我们会再次收到该错误
+
+304
+00:21:13,760 --> 00:21:18,559
+again so that is a validation rule to make sure that it stays within the
+，所以 一个验证规则，以确保它保持在你想要的数字范围内，
+
+305
+00:21:18,559 --> 00:21:21,360
+numbers that you want all right so now that that's all done
+所以现在一切都完成了，
+
+306
+00:21:21,360 --> 00:21:25,360
+let's publish that and let's get our
+让我们发布它，让我们部署我们的
+
+307
+00:21:25,360 --> 00:21:29,520
+sanity studio deployed so what we need to do is we need to go
+健全工作室，所以我们需要做的是我们需要
+
+308
+00:21:29,520 --> 00:21:34,400
+back to our code and in here i'm going to keep this
+回到我们的代码并进入 在这里，我要保留这个，
+
+309
+00:21:34,400 --> 00:21:38,559
+i'm going to create a new one and we need to run the command sanity deploy
+我要创建一个新的，我们需要运行命令 sanity deploy
+
+310
+00:21:38,559 --> 00:21:42,799
+hit enter now studio host name this is now unique
+hit enternow studio host name 这现在是唯一的，
+
+311
+00:21:42,799 --> 00:21:45,280
+so when you created the project with me you
+所以当你和我一起创建项目时，你
+
+312
+00:21:45,280 --> 00:21:48,400
+could have used the name fireship alongside me because that's local but
+可以使用这个名称与我并肩的火船，因为那是本地的，但是
+
+313
+00:21:48,400 --> 00:21:53,120
+this one is unique i am going to use the name fireship see if that's available
+这艘是独一无二的，我将使用命名 fireship 看看它是否可用
+
+314
+00:21:53,120 --> 00:21:55,360
+and it looks like it is
+，它看起来是
+
+315
+00:21:55,360 --> 00:22:00,080
+because it's not giving me an error so now fire ship is now taken so you can't
+因为它没有给我一个错误所以现在火船现在被占用了所以你不能
+
+316
+00:22:00,080 --> 00:22:03,520
+use that and by the time you're watching this maybe fire ship one and fire ship
+使用它，当你看这个的时候可能火船一号和火船
+
+317
+00:22:03,520 --> 00:22:06,960
+two are also taken so it has to be unique
+二号 也被拍摄了，所以它必须是独一无二的
+
+318
+00:22:06,960 --> 00:22:12,240
+and once it is done my studio will now live at fireship.sanity.studio
+，一旦完成，我的工作室现在将住在 fireship.sanity.studio
+
+319
+00:22:12,240 --> 00:22:16,880
+and i will have i will have authorization to view it and anyone else
+，我将拥有查看它的授权，我授权的其他任何人都
+
+320
+00:22:16,880 --> 00:22:20,720
+i give authorization can view it so there's my new url
+可以查看它，所以这是我的新网址
+
+321
+00:22:20,720 --> 00:22:24,679
+come back here fireship.sanity.studio
+回到这里
+
+322
+00:22:25,440 --> 00:22:28,720
+and here is my
+fireship.sanity.studio 这是我
+
+323
+00:22:28,720 --> 00:22:33,280
+newly deployed studio with all my stuff first blog post
+新部署的工作室，里面有我所有的东西 第一篇博客文章
+
+324
+00:22:33,280 --> 00:22:37,919
+everything that i have now let me show you a really cool thing i'm gonna
+我现在拥有的一切 让我向你展示一个非常酷的东西 我要
+
+325
+00:22:37,919 --> 00:22:43,120
+shrink this a little bit pull this one out
+缩小一点把它拉
+
+326
+00:22:43,120 --> 00:22:48,000
+and now i have my local one version my local version running and i have my
+出来 现在 我有我的本地版本 我的本地版本正在运行，我现在
+
+327
+00:22:48,000 --> 00:22:52,159
+deployed version running now these two
+正在运行我的部署版本这两个
+
+328
+00:22:52,159 --> 00:22:57,120
+are the same studio but watch this
+是同一个工作室，但是请注意这个，
+
+329
+00:22:57,120 --> 00:23:01,600
+so anything i do in my local version shows up in my
+所以我在本地版本中所做的任何事情都会显示在我的
+
+330
+00:23:01,600 --> 00:23:05,760
+deployed version anything i do in my deployed version shows up in my local
+部署版本中 我在部署版本中所做的任何事情都会显示出来 在我的本地
+
+331
+00:23:05,760 --> 00:23:10,320
+version and if i do anything
+版本中如果我做任何事情，
+
+332
+00:23:10,320 --> 00:23:14,159
+you can see these little pencils show up on both sides if i click on that little
+你会看到这些小铅笔出现在
+
+333
+00:23:14,159 --> 00:23:19,120
+pencil it will show what has happened and we can see who made that change and
+
+
+334
+00:23:19,120 --> 00:23:23,440
+if i come over here click on review changes
+
+
+335
+00:23:23,440 --> 00:23:27,280
+we can revert that change from either side
+两边 任何一方
+
+336
+00:23:27,280 --> 00:23:30,240
+revert that change we don't want it and it disappears
+的变化都会恢复我们不想要的变化，它会消失，
+
+337
+00:23:30,240 --> 00:23:36,799
+so that is live preview insanity to see both the local side and the deployed
+所以这是实时预览的疯狂，看到本地端和部署
+
+338
+00:23:36,799 --> 00:23:41,039
+side working together live and if i publish
+端都在现场一起工作，如果我
+
+339
+00:23:41,039 --> 00:23:44,720
+will be published on both sides and yeah
+发布将在双方都发布，是的
+
+340
+00:23:44,720 --> 00:23:50,360
+and that is how you build your first project with sanity.io
+，那 是你如何用 sanity.io 构建你的第一个项目，
+
+341
+00:23:50,559 --> 00:23:53,760
+all right so we have our own content like up and running that we can query
+所以我们有自己的内容，比如启动和运行，我们可以
+
+342
+00:23:53,760 --> 00:23:57,520
+against we have the json for all of our content and the content can be used
+查询我们所有内容的 json，并且内容可以
+
+343
+00:23:57,520 --> 00:24:01,520
+across all platforms we're not limited to anything so thank you so much for
+在我们没有的所有平台上使用 仅限于任何东西，所以非常感谢您的
+
+344
+00:24:01,520 --> 00:24:05,760
+watching if you have more questions about content platforms or about sanity
+观看，如果您对内容平台或理智有更多疑问，
+
+345
+00:24:05,760 --> 00:24:10,320
+you can find me on twitter at kapeh underscore okay or you can find an
+您可以在 twitter 上的 kapeh 下划线找到我，或者您可以
+
+346
+00:24:10,320 --> 00:24:15,600
+entire sanity slack community at slack.sanity.io thank you so much for
+在 slack.sanity.io 找到整个理智的 slack 社区非常感谢你的
+
+347
+00:24:15,600 --> 00:24:19,720
+watching and i'll see you around
+观看，我会看到你的

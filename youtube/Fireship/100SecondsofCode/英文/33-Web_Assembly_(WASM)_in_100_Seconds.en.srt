@@ -1,0 +1,380 @@
+1
+00:00:00,560 --> 00:00:02,639
+web assembly write applications for the
+
+
+2
+00:00:02,639 --> 00:00:04,720
+web and languages other than javascript
+
+
+3
+00:00:04,720 --> 00:00:06,080
+imagine a world where you could build
+
+
+4
+00:00:06,080 --> 00:00:09,120
+software with c plus plus rust python go
+
+
+5
+00:00:09,120 --> 00:00:10,800
+or even cobalt then deliver that
+
+
+6
+00:00:10,800 --> 00:00:12,400
+software to the end user in a web
+
+
+7
+00:00:12,400 --> 00:00:14,160
+browser without any installation
+
+
+8
+00:00:14,160 --> 00:00:15,759
+and near native performance that world
+
+
+9
+00:00:15,759 --> 00:00:18,080
+became a reality in december 2019
+
+
+10
+00:00:18,080 --> 00:00:20,640
+when webassembly became an official w3c
+
+
+11
+00:00:20,640 --> 00:00:21,199
+standard
+
+
+12
+00:00:21,199 --> 00:00:22,960
+it includes a low-level language similar
+
+
+13
+00:00:22,960 --> 00:00:24,880
+to assembly that can be represented with
+
+
+14
+00:00:24,880 --> 00:00:25,359
+text
+
+
+15
+00:00:25,359 --> 00:00:27,279
+then converted to a binary format that
+
+
+16
+00:00:27,279 --> 00:00:28,800
+runs on all modern browsers
+
+
+17
+00:00:28,800 --> 00:00:30,400
+however you won't actually write this
+
+
+18
+00:00:30,400 --> 00:00:32,320
+code directly but rather use it as a
+
+
+19
+00:00:32,320 --> 00:00:33,440
+compilation target
+
+
+20
+00:00:33,440 --> 00:00:35,440
+for programs written in other languages
+
+
+21
+00:00:35,440 --> 00:00:37,280
+for example you might build a game with
+
+
+22
+00:00:37,280 --> 00:00:38,559
+unity and c-sharp
+
+
+23
+00:00:38,559 --> 00:00:40,399
+then compile it to webassembly where it
+
+
+24
+00:00:40,399 --> 00:00:41,920
+can be delivered in the browser
+
+
+25
+00:00:41,920 --> 00:00:43,520
+now it's important to note that it's not
+
+
+26
+00:00:43,520 --> 00:00:45,200
+intended to replace javascript
+
+
+27
+00:00:45,200 --> 00:00:46,800
+in fact the two work well together side
+
+
+28
+00:00:46,800 --> 00:00:48,640
+by side figma for example
+
+
+29
+00:00:48,640 --> 00:00:51,360
+uses react.js for its outer ui then on
+
+
+30
+00:00:51,360 --> 00:00:53,360
+the inside you have a high performance c
+
+
+31
+00:00:53,360 --> 00:00:55,520
+plus plus design tool that feels just as
+
+
+32
+00:00:55,520 --> 00:00:56,960
+fast as native software
+
+
+33
+00:00:56,960 --> 00:00:58,480
+as a developer there are many different
+
+
+34
+00:00:58,480 --> 00:01:00,239
+ways you can build a webassembly app
+
+
+35
+00:01:00,239 --> 00:01:02,000
+with many more under development one of
+
+
+36
+00:01:02,000 --> 00:01:04,000
+the most popular tools is mscriptin
+
+
+37
+00:01:04,000 --> 00:01:05,360
+which can convert a c
+
+
+38
+00:01:05,360 --> 00:01:07,760
+or c plus plus program to webassembly as
+
+
+39
+00:01:07,760 --> 00:01:09,680
+it did by bringing autocad to the web
+
+
+40
+00:01:09,680 --> 00:01:11,439
+which is a 30 year old codebase
+
+
+41
+00:01:11,439 --> 00:01:14,240
+no way one of the best ways to get
+
+
+42
+00:01:14,240 --> 00:01:16,080
+started is with assembly script which is
+
+
+43
+00:01:16,080 --> 00:01:17,680
+a language that looks like typescript
+
+
+44
+00:01:17,680 --> 00:01:19,360
+but compiles to webassembly we can
+
+
+45
+00:01:19,360 --> 00:01:20,960
+easily start a new assembly script
+
+
+46
+00:01:20,960 --> 00:01:21,439
+project
+
+
+47
+00:01:21,439 --> 00:01:23,759
+using node.js and npm then we'll write
+
+
+48
+00:01:23,759 --> 00:01:25,280
+our first webassembly module
+
+
+49
+00:01:25,280 --> 00:01:28,000
+in the index ts file unlike javascript a
+
+
+50
+00:01:28,000 --> 00:01:29,759
+dynamic interpreted language
+
+
+51
+00:01:29,759 --> 00:01:31,600
+webassembly is a static compiled
+
+
+52
+00:01:31,600 --> 00:01:33,520
+language with strict type guarantees
+
+
+53
+00:01:33,520 --> 00:01:35,680
+for example our code can't use the any
+
+
+54
+00:01:35,680 --> 00:01:37,200
+type when it comes to numbers
+
+
+55
+00:01:37,200 --> 00:01:40,000
+we need to specify a 32-bit integer or a
+
+
+56
+00:01:40,000 --> 00:01:41,439
+64-bit floating point
+
+
+57
+00:01:41,439 --> 00:01:43,680
+in addition we can't use dynamic objects
+
+
+58
+00:01:43,680 --> 00:01:45,200
+instead we use maps where we can
+
+
+59
+00:01:45,200 --> 00:01:47,119
+strongly type the key value pairs once
+
+
+60
+00:01:47,119 --> 00:01:48,479
+we're happy with our code we can then
+
+
+61
+00:01:48,479 --> 00:01:50,560
+compile it down to a binary which is a
+
+
+62
+00:01:50,560 --> 00:01:51,920
+file that ends in
+
+
+63
+00:01:51,920 --> 00:01:53,840
+wasm we can now run this binary in the
+
+
+64
+00:01:53,840 --> 00:01:56,000
+browser open an html page
+
+
+65
+00:01:56,000 --> 00:01:58,159
+and then use the webassembly api to
+
+
+66
+00:01:58,159 --> 00:01:59,520
+instantiate streaming
+
+
+67
+00:01:59,520 --> 00:02:01,280
+simply fetch the binary and when the
+
+
+68
+00:02:01,280 --> 00:02:03,439
+promise resolves do something with it
+
+
+69
+00:02:03,439 --> 00:02:05,680
+this has been webassembly in 100 seconds
+
+
+70
+00:02:05,680 --> 00:02:07,439
+if you want to see a more in-depth video
+
+
+71
+00:02:07,439 --> 00:02:08,239
+on this topic
+
+
+72
+00:02:08,239 --> 00:02:09,599
+please let me know in the comments and
+
+
+73
+00:02:09,599 --> 00:02:11,280
+make sure to subscribe and hit the like
+
+
+74
+00:02:11,280 --> 00:02:11,680
+button
+
+
+75
+00:02:11,680 --> 00:02:13,520
+thanks for watching and i will see you
+
+
+76
+00:02:13,520 --> 00:02:17,360
+in the next one
+
+

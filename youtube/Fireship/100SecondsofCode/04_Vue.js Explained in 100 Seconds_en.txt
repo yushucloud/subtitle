@@ -1,0 +1,63 @@
+view j/s it's a JavaScript framework for building front-end UIs in view you can
+
+start simple and then progressively add in the tools and features that you need
+
+to build a complex web application at its core it provides a way to build
+
+components that encapsulate data or state in your JavaScript and then
+
+connect that state reactively to a template in HTML we call these
+
+components declarative views because the same data inputs will always produce the
+
+same output in the visual UI when we declare data on this data object it
+
+links or binds it to the HTML on the template above when the value of the
+
+data changes the component will automatically rerender or in other words
+
+it's reactive and the framework does a ton of work under the hood to make sure
+
+that this process is performance across a huge component tree we can work with
+
+this data in the template thanks to views HTML based template syntax we can
+
+interpolate a value for expression using double braces and we also have a variety
+
+of directives to control the behavior of the HTML based on the data we can use VF
+
+to only render an element when the value on the right side is truthy and then we
+
+might have a fallback element after that that's only rendered when the values
+
+fall C with v-else we can make the app interactive by listening to events using
+
+the V on directive we can listen to an event on an element then run some code
+
+to handle that event on the right side we can do that directly in the template
+
+or define a custom method and the components methods object the method has
+
+access to our reactive data and that means all we have to do is change the
+
+value of the data and the component will automatically rerender and that's all it
+
+takes to build an interactive reactive declarative UI component with view the
+
+framework is loved by developers for the simplicity but also its ability to scale
+
+up in complexity incrementally its plugin system allows you to easily drop
+
+in things like a router state management firebase support and more and perhaps
+
+best of all it's not sponsored by some mega corporation it's not pressured to
+
+push out new releases all the time and does a great job listening to its
+
+community this has been GU Jas and 100 seconds stay tuned for a full length
+
+tutorial here on YouTube in the near future and check out my view firebase
+
+course on fire ship if you're ready to start building a full stack app thanks
+
+for watching and I will see you in the next one

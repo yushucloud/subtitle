@@ -1,0 +1,355 @@
+1
+00:00:00,240 --> 00:00:02,960
+go a statically typed compiled language
+
+
+2
+00:00:02,960 --> 00:00:05,520
+often described as c for the 21st
+
+
+3
+00:00:05,520 --> 00:00:07,520
+century it's a popular choice for
+
+
+4
+00:00:07,520 --> 00:00:09,040
+high-performance server-side
+
+
+5
+00:00:09,040 --> 00:00:10,880
+applications and is the language that
+
+
+6
+00:00:10,880 --> 00:00:13,599
+built tools like docker cockroachdb and
+
+
+7
+00:00:13,599 --> 00:00:16,560
+d-graph it was created at google in 2007
+
+
+8
+00:00:16,560 --> 00:00:18,400
+by legends who really know their stuff
+
+
+9
+00:00:18,400 --> 00:00:20,880
+like ken thompson the inventor of the b
+
+
+10
+00:00:20,880 --> 00:00:23,439
+and c programming languages version 1.0
+
+
+11
+00:00:23,439 --> 00:00:25,599
+was released as open source software in
+
+
+12
+00:00:25,599 --> 00:00:28,240
+2012. it was designed for simplicity and
+
+
+13
+00:00:28,240 --> 00:00:30,240
+efficiency and that's why we call it go
+
+
+14
+00:00:30,240 --> 00:00:32,320
+and not go lang the source code is
+
+
+15
+00:00:32,320 --> 00:00:33,920
+compiled down to machine code which
+
+
+16
+00:00:33,920 --> 00:00:35,280
+means it generally outperforms
+
+
+17
+00:00:35,280 --> 00:00:37,200
+interpreted languages but it's famous
+
+
+18
+00:00:37,200 --> 00:00:39,200
+for its extremely fast compile times
+
+
+19
+00:00:39,200 --> 00:00:40,960
+made possible by innovations to
+
+
+20
+00:00:40,960 --> 00:00:43,040
+dependency analysis and even though it's
+
+
+21
+00:00:43,040 --> 00:00:45,120
+a statically typed language it performs
+
+
+22
+00:00:45,120 --> 00:00:47,360
+type inference to deliver a syntax that
+
+
+23
+00:00:47,360 --> 00:00:49,440
+is very concise and practical it also
+
+
+24
+00:00:49,440 --> 00:00:51,760
+has a package and module system making
+
+
+25
+00:00:51,760 --> 00:00:54,000
+it easy to import and export code
+
+
+26
+00:00:54,000 --> 00:00:56,399
+between projects to get started install
+
+
+27
+00:00:56,399 --> 00:00:58,399
+go and then open an empty directory on
+
+
+28
+00:00:58,399 --> 00:01:01,039
+your system create a file ending in go
+
+
+29
+00:01:01,039 --> 00:01:03,440
+then add package main at the top to
+
+
+30
+00:01:03,440 --> 00:01:05,760
+create a standalone executable then
+
+
+31
+00:01:05,760 --> 00:01:07,680
+declare a main function which is where
+
+
+32
+00:01:07,680 --> 00:01:10,080
+your program will start executing go has
+
+
+33
+00:01:10,080 --> 00:01:12,400
+a standard library of core packages to
+
+
+34
+00:01:12,400 --> 00:01:14,479
+handle common requirements like math
+
+
+35
+00:01:14,479 --> 00:01:17,439
+networking or formatted io by importing
+
+
+36
+00:01:17,439 --> 00:01:19,920
+fmt we can print a line to the standard
+
+
+37
+00:01:19,920 --> 00:01:22,240
+output then run the go build command and
+
+
+38
+00:01:22,240 --> 00:01:23,920
+it quickly compiles the source code and
+
+
+39
+00:01:23,920 --> 00:01:26,320
+dependencies into an executable binary
+
+
+40
+00:01:26,320 --> 00:01:28,000
+when it comes to dependencies we can
+
+
+41
+00:01:28,000 --> 00:01:30,079
+also link to remote packages on github
+
+
+42
+00:01:30,079 --> 00:01:32,159
+run go mod init from the command line
+
+
+43
+00:01:32,159 --> 00:01:34,079
+and that creates a go module file that
+
+
+44
+00:01:34,079 --> 00:01:35,680
+enables dependency tracking
+
+
+45
+00:01:35,680 --> 00:01:37,680
+syntactically go is like a concise
+
+
+46
+00:01:37,680 --> 00:01:40,320
+version of c or c plus plus declare a
+
+
+47
+00:01:40,320 --> 00:01:42,079
+variable with the var keyword followed
+
+
+48
+00:01:42,079 --> 00:01:44,399
+by its name and type and initialize it
+
+
+49
+00:01:44,399 --> 00:01:46,320
+with a value or you might use the short
+
+
+50
+00:01:46,320 --> 00:01:48,720
+assignment syntax to replace var and let
+
+
+51
+00:01:48,720 --> 00:01:50,880
+go automatically infer the type and you
+
+
+52
+00:01:50,880 --> 00:01:52,640
+can define multiple variables from a
+
+
+53
+00:01:52,640 --> 00:01:54,320
+single line go has all the other
+
+
+54
+00:01:54,320 --> 00:01:55,360
+features you would expect in a
+
+
+55
+00:01:55,360 --> 00:01:57,360
+programming language like arrays maps
+
+
+56
+00:01:57,360 --> 00:01:59,439
+loops and control flow but also allows
+
+
+57
+00:01:59,439 --> 00:02:01,040
+you to store the memory address of a
+
+
+58
+00:02:01,040 --> 00:02:03,280
+value using pointers while disallowing
+
+
+59
+00:02:03,280 --> 00:02:05,360
+pointer arithmetic which often leads to
+
+
+60
+00:02:05,360 --> 00:02:07,600
+dangerous and unpredictable behavior in
+
+
+61
+00:02:07,600 --> 00:02:09,920
+addition it supports concurrency with go
+
+
+62
+00:02:09,920 --> 00:02:11,520
+routines which are functions that can
+
+
+63
+00:02:11,520 --> 00:02:13,680
+run at the same time as other functions
+
+
+64
+00:02:13,680 --> 00:02:16,319
+by utilizing multiple threads on a cpu
+
+
+65
+00:02:16,319 --> 00:02:18,720
+this has been go in 100 seconds hit the
+
+
+66
+00:02:18,720 --> 00:02:19,920
+like button if you want to see more
+
+
+67
+00:02:19,920 --> 00:02:21,520
+short videos like this and check out the
+
+
+68
+00:02:21,520 --> 00:02:23,440
+full article to write your first 100
+
+
+69
+00:02:23,440 --> 00:02:25,520
+lines of go on fireship io thanks for
+
+
+70
+00:02:25,520 --> 00:02:27,520
+watching and i will see you in the next
+
+
+71
+00:02:27,520 --> 00:02:30,520
+one
+
+

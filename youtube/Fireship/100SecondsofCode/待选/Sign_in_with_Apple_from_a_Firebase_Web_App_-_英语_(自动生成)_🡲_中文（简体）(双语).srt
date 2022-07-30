@@ -1,0 +1,139 @@
+1
+00:00:00,030 --> 00:00:04,080
+sign-in with Apple was a feature announced by Apple and 2019 and it
+使用 Apple 登录是Apple 和 2019 年宣布的一项功能，它
+
+2
+00:00:04,080 --> 00:00:08,040
+allows users to authenticate into a web or mobile application using their Apple
+允许用户使用他们的 Apple ID 对 Web 或移动应用程序进行身份验证，
+
+3
+00:00:08,040 --> 00:00:11,759
+ID it works just like other one-click social sign-in methods like Google
+它的工作原理与其他一键式社交登录方法（如 Google
+
+4
+00:00:11,759 --> 00:00:16,020
+Facebook Twitter etc to implement this method in your firebase app you'll first
+Facebook Twitter 等）一样来实现这一点在您的 Firebase 应用程序中使用方法，您首先
+
+5
+00:00:16,020 --> 00:00:19,800
+need to have an Apple Developer account which will run you about $99 per year
+需要拥有一个 Apple Developer 帐户，该帐户每年将运行您大约 99 美元
+
+6
+00:00:19,800 --> 00:00:24,210
+now head over to your Apple developer portal create a new app ID or update an
+现在前往您的 Apple 开发人员门户创建一个新的应用程序 ID 或更新现有的应用程序 ID
+
+7
+00:00:24,210 --> 00:00:28,109
+existing one to use the sign-in with Apple capability from there you'll
+以使用Apple 登录 从那里您将
+
+8
+00:00:28,109 --> 00:00:32,099
+create a new service ID and configure it to work with your domain enter the
+创建一个新的服务 ID 并将其配置为与您的域一起使用
+
+9
+00:00:32,099 --> 00:00:36,809
+hosting URLs from your firebase project then register the service ID now we need
+从您的 firebase 项目中输入托管 URL然后注册服务 ID 现在我们需要
+
+10
+00:00:36,809 --> 00:00:40,890
+to verify ownership of this domain with Apple go back to the configuration for
+向 Apple 验证该域的所有权返回到
+
+11
+00:00:40,890 --> 00:00:45,120
+the service ID you'll see the option to download a file save that file under the
+配置 服务 ID，您将看到下载文件的选项，将该文件保存
+
+12
+00:00:45,120 --> 00:00:49,020
+well-known directory in your public hosting folder then upload this file to
+在公共托管文件夹中的知名目录下，然后
+
+13
+00:00:49,020 --> 00:00:52,620
+firebase hosting by running firebase deploy from the command line click
+通过从 命令行单击
+
+14
+00:00:52,620 --> 00:00:56,219
+verify and you should get a green check mark now the last thing we need is a
+验证，您现在应该得到一个绿色复选标记我们需要的最后一件事是
+
+15
+00:00:56,219 --> 00:01:00,359
+private key click on keys and then generate a new one for Apple sign-in go
+私钥单击密钥然后为Apple登录生成一个新的
+
+16
+00:01:00,359 --> 00:01:03,629
+ahead and download this file somewhere securely on your system then open it in
+继续并将此文件安全地下载到系统上的某个位置然后打开它 此时在
+
+17
+00:01:03,629 --> 00:01:07,170
+your editor at this point we can go to the authentication tab on the firebase
+您的编辑器中，我们可以转到Firebase 控制台上的身份验证选项卡
+
+18
+00:01:07,170 --> 00:01:11,460
+console and click enable for Apple sign-in enter your team ID as well as
+，然后单击启用 Apple登录输入您的团队 ID 以及
+
+19
+00:01:11,460 --> 00:01:15,150
+the information from the private key and now we just need to add a little bit of
+来自私钥的信息，现在我们只需要添加一点
+
+20
+00:01:15,150 --> 00:01:18,210
+JavaScript to our front-end app with firebase initialized we'll make a
+JavaScript 到我们的前端应用程序初始化了firebase，我们将
+
+21
+00:01:18,210 --> 00:01:22,229
+reference to auth then we'll define an async function called sign in with Apple
+引用auth，然后我们将定义一个名为sign in with Apple的异步函数
+
+22
+00:01:22,229 --> 00:01:26,820
+it instantiates an auth provider for apple calm then awaits the auth sign in
+它实例化一个auth provider forapple静然后等待auth
+
+23
+00:01:26,820 --> 00:01:30,900
+with pop-up method this prompts the user to login with their Apple ID and when
+使用弹出方法登录 提示用户使用他们的 Apple ID 登录，
+
+24
+00:01:30,900 --> 00:01:34,049
+they're done they'll be logged into the firebase app and will have access to
+完成后他们将登录到firebase 应用程序，并可以访问
+
+25
+00:01:34,049 --> 00:01:38,130
+their user data on the result this has been Apple sign-in with firebase in 100
+他们的用户数据，结果是 Apple 在 100 秒内使用 firebase 登录
+
+26
+00:01:38,130 --> 00:01:42,150
+seconds and I realize that was super fast so head over to fire ship IO to get
+，我意识到 那是 超级快，所以前往发射船 IO 以获取
+
+27
+00:01:42,150 --> 00:01:45,780
+a full step-by-step breakdown of the process thanks for watching make sure to
+该过程的完整分步细分感谢您的观看，请务必
+
+28
+00:01:45,780 --> 00:01:50,360
+LIKE and subscribe and I will see you in the next one
+喜欢并订阅，我会在下一个看到你

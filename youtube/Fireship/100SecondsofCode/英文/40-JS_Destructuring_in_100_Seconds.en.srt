@@ -1,0 +1,615 @@
+1
+00:00:00,399 --> 00:00:02,480
+destructuring assignment take values
+
+
+2
+00:00:02,480 --> 00:00:04,640
+from arrays or properties from objects
+
+
+3
+00:00:04,640 --> 00:00:05,440
+and set them
+
+
+4
+00:00:05,440 --> 00:00:07,839
+as local variables it's a technique that
+
+
+5
+00:00:07,839 --> 00:00:09,440
+can make your javascript code more
+
+
+6
+00:00:09,440 --> 00:00:10,800
+concise and readable
+
+
+7
+00:00:10,800 --> 00:00:12,320
+imagine you have an array and you want
+
+
+8
+00:00:12,320 --> 00:00:14,320
+to assign some of its values to local
+
+
+9
+00:00:14,320 --> 00:00:15,120
+variables
+
+
+10
+00:00:15,120 --> 00:00:17,279
+one option is to assign each variable by
+
+
+11
+00:00:17,279 --> 00:00:19,520
+referencing its index in the array
+
+
+12
+00:00:19,520 --> 00:00:21,039
+that works fine but it's not very
+
+
+13
+00:00:21,039 --> 00:00:23,039
+elegant with destructuring we can do the
+
+
+14
+00:00:23,039 --> 00:00:25,039
+same thing with a single line of code
+
+
+15
+00:00:25,039 --> 00:00:27,199
+by using brackets after const we can
+
+
+16
+00:00:27,199 --> 00:00:28,320
+assign a variable name
+
+
+17
+00:00:28,320 --> 00:00:30,640
+to each index in the array the position
+
+
+18
+00:00:30,640 --> 00:00:31,679
+of the variable name
+
+
+19
+00:00:31,679 --> 00:00:33,840
+matches the values index in the array
+
+
+20
+00:00:33,840 --> 00:00:35,600
+the syntax may look familiar to you if
+
+
+21
+00:00:35,600 --> 00:00:37,280
+you've ever used react which relies on
+
+
+22
+00:00:37,280 --> 00:00:39,280
+destructuring for the used state hook
+
+
+23
+00:00:39,280 --> 00:00:40,960
+when working with arrays you may want to
+
+
+24
+00:00:40,960 --> 00:00:42,719
+emit a variable which you can do by
+
+
+25
+00:00:42,719 --> 00:00:44,559
+adding a comma without a variable name
+
+
+26
+00:00:44,559 --> 00:00:46,000
+to skip that index
+
+
+27
+00:00:46,000 --> 00:00:47,760
+in other cases you might want to name
+
+
+28
+00:00:47,760 --> 00:00:49,200
+the first couple variables
+
+
+29
+00:00:49,200 --> 00:00:50,640
+then put the remainder in their own
+
+
+30
+00:00:50,640 --> 00:00:52,399
+array that can be achieved by putting
+
+
+31
+00:00:52,399 --> 00:00:54,399
+three dots in front of the variable name
+
+
+32
+00:00:54,399 --> 00:00:55,840
+you might also want to set a default
+
+
+33
+00:00:55,840 --> 00:00:58,000
+value in case the value in the array is
+
+
+34
+00:00:58,000 --> 00:01:00,480
+undefined use the equal sign to provide
+
+
+35
+00:01:00,480 --> 00:01:01,600
+the fallback value
+
+
+36
+00:01:01,600 --> 00:01:03,840
+in addition to arrays destructuring also
+
+
+37
+00:01:03,840 --> 00:01:05,040
+applies to objects
+
+
+38
+00:01:05,040 --> 00:01:06,320
+notice how we're duplicating the
+
+
+39
+00:01:06,320 --> 00:01:08,400
+object's property name as a variable
+
+
+40
+00:01:08,400 --> 00:01:09,760
+with dot notation
+
+
+41
+00:01:09,760 --> 00:01:11,840
+by putting braces after const you can
+
+
+42
+00:01:11,840 --> 00:01:13,600
+reference property names which will
+
+
+43
+00:01:13,600 --> 00:01:15,600
+automatically become local variables
+
+
+44
+00:01:15,600 --> 00:01:17,119
+which is much cleaner than referencing
+
+
+45
+00:01:17,119 --> 00:01:19,200
+them line by line with dot notation
+
+
+46
+00:01:19,200 --> 00:01:20,880
+and just like arrays you can use the
+
+
+47
+00:01:20,880 --> 00:01:23,119
+equal sign to set a default value
+
+
+48
+00:01:23,119 --> 00:01:24,960
+but in some cases you may want to use a
+
+
+49
+00:01:24,960 --> 00:01:26,720
+different name than what's provided on
+
+
+50
+00:01:26,720 --> 00:01:27,840
+the object itself
+
+
+51
+00:01:27,840 --> 00:01:29,920
+adding a colon after the property name
+
+
+52
+00:01:29,920 --> 00:01:31,520
+allows you to rename it which is
+
+
+53
+00:01:31,520 --> 00:01:33,360
+especially useful when dealing with name
+
+
+54
+00:01:33,360 --> 00:01:35,200
+collisions or when working with objects
+
+
+55
+00:01:35,200 --> 00:01:37,040
+that use property names that are not
+
+
+56
+00:01:37,040 --> 00:01:38,400
+valid variable names
+
+
+57
+00:01:38,400 --> 00:01:40,560
+in addition to renaming you can also use
+
+
+58
+00:01:40,560 --> 00:01:41,840
+a colon to access
+
+
+59
+00:01:41,840 --> 00:01:44,000
+nested properties or in other words set
+
+
+60
+00:01:44,000 --> 00:01:45,840
+a variable from an object within an
+
+
+61
+00:01:45,840 --> 00:01:46,479
+object
+
+
+62
+00:01:46,479 --> 00:01:48,320
+in addition to destructuring top level
+
+
+63
+00:01:48,320 --> 00:01:50,640
+variables you can also use the syntax in
+
+
+64
+00:01:50,640 --> 00:01:51,360
+for loops
+
+
+65
+00:01:51,360 --> 00:01:52,960
+which is awesome when you have an array
+
+
+66
+00:01:52,960 --> 00:01:55,040
+of objects when working with functions
+
+
+67
+00:01:55,040 --> 00:01:57,040
+you can destructure arrays and objects
+
+
+68
+00:01:57,040 --> 00:01:58,240
+passed as arguments
+
+
+69
+00:01:58,240 --> 00:02:00,320
+providing yet another way to obliterate
+
+
+70
+00:02:00,320 --> 00:02:02,000
+unnecessary lines of javascript from
+
+
+71
+00:02:02,000 --> 00:02:02,799
+your code base
+
+
+72
+00:02:02,799 --> 00:02:04,320
+this has been destructuring assignment
+
+
+73
+00:02:04,320 --> 00:02:06,399
+in javascript in 100 seconds
+
+
+74
+00:02:06,399 --> 00:02:08,080
+make sure to hit the like button it
+
+
+75
+00:02:08,080 --> 00:02:09,599
+really helps out these short videos
+
+
+76
+00:02:09,599 --> 00:02:10,959
+thanks for watching and if you want to
+
+
+77
+00:02:10,959 --> 00:02:12,560
+learn more hang out for a minute while
+
+
+78
+00:02:12,560 --> 00:02:14,400
+we go over a few more advanced tricks
+
+
+79
+00:02:14,400 --> 00:02:16,160
+that you may not know about
+
+
+80
+00:02:16,160 --> 00:02:17,599
+one thing that array destructuring
+
+
+81
+00:02:17,599 --> 00:02:19,920
+enables is variable swapping without the
+
+
+82
+00:02:19,920 --> 00:02:22,000
+need for an intermediate variable it
+
+
+83
+00:02:22,000 --> 00:02:23,840
+doesn't come up often in javascript but
+
+
+84
+00:02:23,840 --> 00:02:25,280
+it is a useful thing to know for
+
+
+85
+00:02:25,280 --> 00:02:26,879
+computer science in general
+
+
+86
+00:02:26,879 --> 00:02:28,959
+normally to swap two variables you need
+
+
+87
+00:02:28,959 --> 00:02:30,720
+a temporary variable because once the
+
+
+88
+00:02:30,720 --> 00:02:32,640
+first variable is reassigned you lose
+
+
+89
+00:02:32,640 --> 00:02:33,519
+its value
+
+
+90
+00:02:33,519 --> 00:02:35,040
+but with a radius structuring we have
+
+
+91
+00:02:35,040 --> 00:02:37,040
+the syntax available to perform a swap
+
+
+92
+00:02:37,040 --> 00:02:38,640
+without the need for the intermediate
+
+
+93
+00:02:38,640 --> 00:02:39,280
+variable
+
+
+94
+00:02:39,280 --> 00:02:42,000
+use destructuring to reassign the values
+
+
+95
+00:02:42,000 --> 00:02:43,360
+by putting the original two
+
+
+96
+00:02:43,360 --> 00:02:46,000
+in an array but in reverse order you'll
+
+
+97
+00:02:46,000 --> 00:02:47,599
+probably almost never do that but you
+
+
+98
+00:02:47,599 --> 00:02:48,879
+might be able to use it to impress
+
+
+99
+00:02:48,879 --> 00:02:50,800
+someone on a technical interview someday
+
+
+100
+00:02:50,800 --> 00:02:52,160
+the other thing i wanted to show you is
+
+
+101
+00:02:52,160 --> 00:02:54,160
+that destructuring can also be used with
+
+
+102
+00:02:54,160 --> 00:02:55,280
+regular expressions
+
+
+103
+00:02:55,280 --> 00:02:56,720
+when you run the match function on a
+
+
+104
+00:02:56,720 --> 00:02:58,879
+string it returns an array of results
+
+
+105
+00:02:58,879 --> 00:03:00,480
+you can then easily provide descriptive
+
+
+106
+00:03:00,480 --> 00:03:01,920
+variable names for the regular
+
+
+107
+00:03:01,920 --> 00:03:03,360
+expression matches
+
+
+108
+00:03:03,360 --> 00:03:05,040
+that's cool but i have one last thing to
+
+
+109
+00:03:05,040 --> 00:03:06,959
+mention imagine you want to destructure
+
+
+110
+00:03:06,959 --> 00:03:07,760
+an object
+
+
+111
+00:03:07,760 --> 00:03:09,280
+but you don't know the property name
+
+
+112
+00:03:09,280 --> 00:03:11,599
+until runtime you can use computed
+
+
+113
+00:03:11,599 --> 00:03:13,040
+properties in destructuring
+
+
+114
+00:03:13,040 --> 00:03:15,680
+just like you can with object literals
+
+
+115
+00:03:15,680 --> 00:03:17,519
+by wrapping a property name in brackets
+
+
+116
+00:03:17,519 --> 00:03:19,840
+it now takes a variable as its value
+
+
+117
+00:03:19,840 --> 00:03:21,440
+instead of a static name
+
+
+118
+00:03:21,440 --> 00:03:24,000
+in other words it's computed at runtime
+
+
+119
+00:03:24,000 --> 00:03:25,599
+which you can then follow with a colon
+
+
+120
+00:03:25,599 --> 00:03:27,280
+to provide it with a static variable
+
+
+121
+00:03:27,280 --> 00:03:28,720
+name to use in your code and that's
+
+
+122
+00:03:28,720 --> 00:03:30,080
+pretty much everything i know about
+
+
+123
+00:03:30,080 --> 00:03:32,799
+destructuring
+
+

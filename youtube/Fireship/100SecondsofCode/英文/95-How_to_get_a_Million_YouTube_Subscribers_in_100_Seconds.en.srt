@@ -1,0 +1,455 @@
+1
+00:00:00,080 --> 00:00:01,920
+one million subscribers a youtube
+
+
+2
+00:00:01,920 --> 00:00:03,919
+milestone i never expected to reach but
+
+
+3
+00:00:03,919 --> 00:00:05,680
+here's the story of how i got here in
+
+
+4
+00:00:05,680 --> 00:00:08,320
+2017 i started the channel with no video
+
+
+5
+00:00:08,320 --> 00:00:10,639
+editing skills and zero expectations i
+
+
+6
+00:00:10,639 --> 00:00:12,160
+hated the sound of my own voice and have
+
+
+7
+00:00:12,160 --> 00:00:13,759
+been told i have the personality of a
+
+
+8
+00:00:13,759 --> 00:00:15,440
+carrot but i was like screw it i'm going
+
+
+9
+00:00:15,440 --> 00:00:17,039
+to try youtube and probably fail and
+
+
+10
+00:00:17,039 --> 00:00:18,880
+disappoint my mom again in the process i
+
+
+11
+00:00:18,880 --> 00:00:20,240
+found there was a need for developer
+
+
+12
+00:00:20,240 --> 00:00:22,560
+content around angular and firebase so i
+
+
+13
+00:00:22,560 --> 00:00:24,240
+created some really bad videos that were
+
+
+14
+00:00:24,240 --> 00:00:26,160
+very useful to this highly specialized
+
+
+15
+00:00:26,160 --> 00:00:28,320
+audience welcome to angularfirebase you
+
+
+16
+00:00:28,320 --> 00:00:30,880
+create a new app with the angular cli
+
+
+17
+00:00:30,880 --> 00:00:32,640
+then these files are going to be here by
+
+
+18
+00:00:32,640 --> 00:00:34,480
+default i even remember my very first
+
+
+19
+00:00:34,480 --> 00:00:36,160
+comment that motivated me to keep
+
+
+20
+00:00:36,160 --> 00:00:37,840
+pushing forward in the early game the
+
+
+21
+00:00:37,840 --> 00:00:39,840
+key is to find a specialized unmet need
+
+
+22
+00:00:39,840 --> 00:00:41,600
+in the market then create the useful
+
+
+23
+00:00:41,600 --> 00:00:43,360
+educational content that audience is
+
+
+24
+00:00:43,360 --> 00:00:44,879
+looking for if you're consistent
+
+
+25
+00:00:44,879 --> 00:00:46,719
+uploading a new video say once a week
+
+
+26
+00:00:46,719 --> 00:00:48,399
+that should take you to about 10 000
+
+
+27
+00:00:48,399 --> 00:00:50,480
+subscribers in about a year or so but
+
+
+28
+00:00:50,480 --> 00:00:52,399
+then you'll hit a ceiling by the mid
+
+
+29
+00:00:52,399 --> 00:00:54,480
+game my video editing skills were much
+
+
+30
+00:00:54,480 --> 00:00:56,160
+improved to grow further i created
+
+
+31
+00:00:56,160 --> 00:00:58,320
+videos targeted at a wider audience my
+
+
+32
+00:00:58,320 --> 00:01:00,800
+first real banger was firebase basics my
+
+
+33
+00:01:00,800 --> 00:01:02,559
+philosophy has always been to make the
+
+
+34
+00:01:02,559 --> 00:01:04,479
+next video better than the last one it
+
+
+35
+00:01:04,479 --> 00:01:06,400
+takes a lot of time and experimentation
+
+
+36
+00:01:06,400 --> 00:01:08,000
+to really optimize the content for what
+
+
+37
+00:01:08,000 --> 00:01:09,600
+your audience is looking for listen to
+
+
+38
+00:01:09,600 --> 00:01:11,280
+feedback and give the audience what they
+
+
+39
+00:01:11,280 --> 00:01:12,720
+want like i don't show my face in my
+
+
+40
+00:01:12,720 --> 00:01:14,320
+videos because my handsomeness is
+
+
+41
+00:01:14,320 --> 00:01:15,920
+distracting and it forces me to find
+
+
+42
+00:01:15,920 --> 00:01:17,680
+useful graphics that actually represent
+
+
+43
+00:01:17,680 --> 00:01:19,040
+what i'm talking about what you don't
+
+
+44
+00:01:19,040 --> 00:01:20,720
+want to do is copy somebody else not
+
+
+45
+00:01:20,720 --> 00:01:22,240
+only will that eat away at your soul but
+
+
+46
+00:01:22,240 --> 00:01:23,840
+in order to grow on youtube you really
+
+
+47
+00:01:23,840 --> 00:01:25,119
+need to find the thing that makes you
+
+
+48
+00:01:25,119 --> 00:01:27,640
+unique to reach 100k subscribers it took
+
+
+49
+00:01:27,640 --> 00:01:31,360
+675 days and 150 uploads the late game
+
+
+50
+00:01:31,360 --> 00:01:32,880
+is where things get difficult you'll be
+
+
+51
+00:01:32,880 --> 00:01:34,479
+extremely burned out at this point and
+
+
+52
+00:01:34,479 --> 00:01:36,400
+10xing the road to 100k might seem
+
+
+53
+00:01:36,400 --> 00:01:38,400
+impossible to keep growing though the
+
+
+54
+00:01:38,400 --> 00:01:40,400
+formula is simple keep uploading and
+
+
+55
+00:01:40,400 --> 00:01:42,000
+keep getting better at this point i
+
+
+56
+00:01:42,000 --> 00:01:43,360
+started taking a more scientific
+
+
+57
+00:01:43,360 --> 00:01:45,680
+approach by optimizing two metrics the
+
+
+58
+00:01:45,680 --> 00:01:47,520
+click-through rating and the watch time
+
+
+59
+00:01:47,520 --> 00:01:49,680
+to optimize clicks you need a good title
+
+
+60
+00:01:49,680 --> 00:01:51,360
+and thumbnail that's more of an art form
+
+
+61
+00:01:51,360 --> 00:01:52,799
+than anything you need to know what your
+
+
+62
+00:01:52,799 --> 00:01:54,560
+audience wants and how to surprise them
+
+
+63
+00:01:54,560 --> 00:01:55,920
+with something creative for me that
+
+
+64
+00:01:55,920 --> 00:01:57,600
+comes easy because i also have a lot of
+
+
+65
+00:01:57,600 --> 00:01:59,439
+fun and get really excited about every
+
+
+66
+00:01:59,439 --> 00:02:01,520
+video i create for watch time i have a
+
+
+67
+00:02:01,520 --> 00:02:03,200
+formula with three ingredients most
+
+
+68
+00:02:03,200 --> 00:02:04,640
+importantly the content needs to be
+
+
+69
+00:02:04,640 --> 00:02:06,560
+educational and useful the second
+
+
+70
+00:02:06,560 --> 00:02:08,479
+ingredient is storytelling there are so
+
+
+71
+00:02:08,479 --> 00:02:10,080
+many interesting stories to tell about
+
+
+72
+00:02:10,080 --> 00:02:11,760
+the history of software and the people
+
+
+73
+00:02:11,760 --> 00:02:14,000
+behind it the final ingredient is humor
+
+
+74
+00:02:14,000 --> 00:02:15,520
+i can tell jokes that are actually
+
+
+75
+00:02:15,520 --> 00:02:17,120
+encoded messages of things that i
+
+
+76
+00:02:17,120 --> 00:02:18,720
+couldn't say otherwise without sounding
+
+
+77
+00:02:18,720 --> 00:02:20,160
+like a total dick this has been how to
+
+
+78
+00:02:20,160 --> 00:02:22,480
+get 1 million youtube subscribers in 100
+
+
+79
+00:02:22,480 --> 00:02:24,160
+seconds and i want to send a huge thank
+
+
+80
+00:02:24,160 --> 00:02:25,760
+you to everybody who supported my
+
+
+81
+00:02:25,760 --> 00:02:27,440
+channel over the years it truly means
+
+
+82
+00:02:27,440 --> 00:02:28,879
+more to me than you'll ever know i've
+
+
+83
+00:02:28,879 --> 00:02:30,720
+learned so much met amazing people and
+
+
+84
+00:02:30,720 --> 00:02:32,239
+have the rare privilege of actually
+
+
+85
+00:02:32,239 --> 00:02:34,080
+enjoying what i do for work and now we
+
+
+86
+00:02:34,080 --> 00:02:35,920
+get to start down the road to 10 million
+
+
+87
+00:02:35,920 --> 00:02:37,440
+i'm not sure how we'll get there yet but
+
+
+88
+00:02:37,440 --> 00:02:39,360
+we will get there or die trying thanks
+
+
+89
+00:02:39,360 --> 00:02:41,200
+for watching and i will see you in the
+
+
+90
+00:02:41,200 --> 00:02:43,770
+next one
+
+
+91
+00:02:43,770 --> 00:02:46,020
+[Music]
+
+

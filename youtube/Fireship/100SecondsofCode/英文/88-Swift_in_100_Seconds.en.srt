@@ -1,0 +1,365 @@
+1
+00:00:00,240 --> 00:00:02,800
+swift a multi-paradigm compiled language
+
+
+2
+00:00:02,800 --> 00:00:04,720
+created by apple famous for building
+
+
+3
+00:00:04,720 --> 00:00:06,720
+apps that grow inside of apple's walled
+
+
+4
+00:00:06,720 --> 00:00:09,120
+garden it was first introduced in 2014
+
+
+5
+00:00:09,120 --> 00:00:10,880
+at the worldwide developers conference
+
+
+6
+00:00:10,880 --> 00:00:12,960
+and was designed as a modern successor
+
+
+7
+00:00:12,960 --> 00:00:14,880
+to objective-c the original apple
+
+
+8
+00:00:14,880 --> 00:00:16,480
+platform language that had been in use
+
+
+9
+00:00:16,480 --> 00:00:18,800
+since the 1980s swift interops with
+
+
+10
+00:00:18,800 --> 00:00:20,960
+objective-c but provides a shorter more
+
+
+11
+00:00:20,960 --> 00:00:23,199
+readable syntax and features like memory
+
+
+12
+00:00:23,199 --> 00:00:25,199
+safety and type inference to improve
+
+
+13
+00:00:25,199 --> 00:00:27,279
+developer productivity today it's used
+
+
+14
+00:00:27,279 --> 00:00:29,760
+to build mobile apps on ios desktop apps
+
+
+15
+00:00:29,760 --> 00:00:32,719
+on mac os wearable apps for watch os but
+
+
+16
+00:00:32,719 --> 00:00:34,640
+is also open source which means it can
+
+
+17
+00:00:34,640 --> 00:00:36,399
+be used to build software outside of
+
+
+18
+00:00:36,399 --> 00:00:38,559
+apple platforms it compiles to native
+
+
+19
+00:00:38,559 --> 00:00:40,399
+machine code and is built on top of the
+
+
+20
+00:00:40,399 --> 00:00:42,800
+llvm tool chain like many other modern
+
+
+21
+00:00:42,800 --> 00:00:44,879
+languages however it also supports a
+
+
+22
+00:00:44,879 --> 00:00:46,559
+readable print loop allowing you to
+
+
+23
+00:00:46,559 --> 00:00:47,920
+experiment with code in a playground
+
+
+24
+00:00:47,920 --> 00:00:50,160
+without needing to recompile making it a
+
+
+25
+00:00:50,160 --> 00:00:52,239
+great language for beginners in addition
+
+
+26
+00:00:52,239 --> 00:00:54,160
+it provides memory safety by preventing
+
+
+27
+00:00:54,160 --> 00:00:56,320
+you from writing unsafe code by default
+
+
+28
+00:00:56,320 --> 00:00:58,480
+and uses automatic reference counting to
+
+
+29
+00:00:58,480 --> 00:01:00,480
+manage memory automatically to get
+
+
+30
+00:01:00,480 --> 00:01:02,559
+started install it then create a file
+
+
+31
+00:01:02,559 --> 00:01:04,640
+ending in.swift your code will start
+
+
+32
+00:01:04,640 --> 00:01:06,640
+executing in the global scope there's no
+
+
+33
+00:01:06,640 --> 00:01:08,640
+need for a main function create a
+
+
+34
+00:01:08,640 --> 00:01:10,560
+variable with the var keyword followed
+
+
+35
+00:01:10,560 --> 00:01:12,960
+by its name and value var creates a
+
+
+36
+00:01:12,960 --> 00:01:14,880
+mutable variable which means its value
+
+
+37
+00:01:14,880 --> 00:01:16,640
+can change in the future let on the
+
+
+38
+00:01:16,640 --> 00:01:18,799
+other hand creates an immutable variable
+
+
+39
+00:01:18,799 --> 00:01:21,200
+or constant it uses type inference to
+
+
+40
+00:01:21,200 --> 00:01:23,280
+strongly type the value as a string but
+
+
+41
+00:01:23,280 --> 00:01:25,280
+we can explicitly type it by adding a
+
+
+42
+00:01:25,280 --> 00:01:27,520
+semicolon after the variable name every
+
+
+43
+00:01:27,520 --> 00:01:29,040
+variable must be initialized with a
+
+
+44
+00:01:29,040 --> 00:01:31,119
+value unless the type has a question
+
+
+45
+00:01:31,119 --> 00:01:32,880
+mark which makes it an optional type
+
+
+46
+00:01:32,880 --> 00:01:35,280
+allowing it to also contain a nil value
+
+
+47
+00:01:35,280 --> 00:01:37,040
+it also supports optional chaining
+
+
+48
+00:01:37,040 --> 00:01:38,960
+making it really easy to work with nil
+
+
+49
+00:01:38,960 --> 00:01:40,799
+values functions are declared with the
+
+
+50
+00:01:40,799 --> 00:01:42,320
+fun keyword and will use named
+
+
+51
+00:01:42,320 --> 00:01:43,920
+parameters by default place an
+
+
+52
+00:01:43,920 --> 00:01:45,360
+underscore before the name to use
+
+
+53
+00:01:45,360 --> 00:01:47,439
+positional arguments instead now use a
+
+
+54
+00:01:47,439 --> 00:01:49,040
+backslash with parentheses to
+
+
+55
+00:01:49,040 --> 00:01:51,040
+interpolate these values into a string
+
+
+56
+00:01:51,040 --> 00:01:52,720
+functions in swift are first class
+
+
+57
+00:01:52,720 --> 00:01:54,720
+objects they can be passed as arguments
+
+
+58
+00:01:54,720 --> 00:01:56,880
+used as return values and nested to
+
+
+59
+00:01:56,880 --> 00:01:58,719
+create closures it also supports
+
+
+60
+00:01:58,719 --> 00:02:00,880
+object-oriented patterns like classes
+
+
+61
+00:02:00,880 --> 00:02:02,960
+and inheritance to encapsulate the var
+
+
+62
+00:02:02,960 --> 00:02:04,799
+and fung keywords that you just learned
+
+
+63
+00:02:04,799 --> 00:02:06,240
+now pull up the terminal and run the
+
+
+64
+00:02:06,240 --> 00:02:08,399
+swift compiler to convert your code into
+
+
+65
+00:02:08,399 --> 00:02:10,000
+a high performance executable
+
+
+66
+00:02:10,000 --> 00:02:12,000
+congratulations your code is now ready
+
+
+67
+00:02:12,000 --> 00:02:14,160
+to seek approval on the apple app store
+
+
+68
+00:02:14,160 --> 00:02:15,520
+this has been the swift programming
+
+
+69
+00:02:15,520 --> 00:02:17,520
+language in 100 seconds if you want to
+
+
+70
+00:02:17,520 --> 00:02:19,040
+see more short videos like this make
+
+
+71
+00:02:19,040 --> 00:02:20,400
+sure to hit the like button and
+
+
+72
+00:02:20,400 --> 00:02:22,560
+subscribe thanks for watching and i will
+
+
+73
+00:02:22,560 --> 00:02:26,319
+see you in the next one
+
+

@@ -1,0 +1,219 @@
+1
+00:00:00,000 --> 00:00:02,080
+[Music] typescript validate your javascript
+[音乐]typescript 通过静态类型检查提前验证您的 javascript
+
+2
+00:00:02,080 --> 00:00:06,319
+ahead of time with static type checking javascript is a dynamic language where
+javascript 是一种动态语言，
+
+3
+00:00:06,319 --> 00:00:09,519
+we can do all kinds of crazy things like reference variables that don't
+我们可以在其中做各种疯狂的事情，例如不
+
+4
+00:00:09,519 --> 00:00:13,200
+exist or work with objects of an unknown shape the code is interpreted by a
+存在的引用变量或使用未知形状的对象代码由 a 解释
+
+5
+00:00:13,200 --> 00:00:15,360
+browser but if your code is broken you won't
+浏览器，但如果你的代码被破坏了，你
+
+6
+00:00:15,360 --> 00:00:18,000
+catch it until runtime when the browser rows an error
+直到运行时才会捕捉到它，当浏览器行错误
+
+7
+00:00:18,000 --> 00:00:21,119
+typescript prevents errors like this from ever happening by extending
+打字稿通过扩展带有类型的 javascript 来防止这样的错误发生时，
+
+8
+00:00:21,119 --> 00:00:24,320
+javascript with types the language is a strict superset of
+该语言是 javascript 的严格超集，
+
+9
+00:00:24,320 --> 00:00:28,480
+javascript which means when you open up a ts file you can write plain javascript
+这意味着当你打开一个 ts 文件，您可以编写普通的 javascript
+
+10
+00:00:28,480 --> 00:00:31,760
+with all of its extra features being completely optional but notice in
+，其所有额外功能都是完全可选的，但请注意
+
+11
+00:00:31,760 --> 00:00:35,200
+the code here how the ide is providing feedback about using a
+此处的代码中 ide如何提供有关使用
+
+12
+00:00:35,200 --> 00:00:38,399
+variable that doesn't exist instead of fixing this issue weeks later
+不存在的变量的反馈，而不是几周
+
+13
+00:00:38,399 --> 00:00:41,840
+in a stack trace after the company has lost millions of dollars we can fix it
+后在公司之后的堆栈跟踪中修复此问题 已经损失了数百万美元我们现在可以在这里修复它
+
+14
+00:00:41,840 --> 00:00:45,039
+right here right now the reason we get this instant feedback
+我们得到这个即时反馈的原因
+
+15
+00:00:45,039 --> 00:00:47,840
+is because typescript behaves like a compiled language
+是因为 typescript 的行为就像一个编译的 lang  uage
+
+16
+00:00:47,840 --> 00:00:51,199
+where javascript is the compilation target you can run the typescript
+，其中 javascript 是编译目标，您可以使用 tsc 命令运行 typescript
+
+17
+00:00:51,199 --> 00:00:54,000
+compiler using the tsc command it will take the
+编译器，它将获取
+
+18
+00:00:54,000 --> 00:00:57,120
+ts file and transpile it into vanilla javascript
+ts 文件并将其转换为 vanillajavascript
+
+19
+00:00:57,120 --> 00:00:59,920
+and you can choose any flavor of javascript you want if you need to
+，如果您需要
+
+20
+00:00:59,920 --> 00:01:02,800
+target ancient browsers and that means you can use the latest
+针对古代浏览器，您可以选择任何您想要的 javascript 风格，这意味着您 可以使用 javascript 的最新
+
+21
+00:01:02,800 --> 00:01:06,000
+and greatest syntax features of javascript without having to worry if
+和最好的语法特性，而不必担心
+
+22
+00:01:06,000 --> 00:01:09,360
+they'll be supported in an older environment your typescript project will
+它们是否会在旧环境中得到支持，你的 typescript 项目
+
+23
+00:01:09,360 --> 00:01:12,479
+likely have a ts config file which provides an infinite number of
+可能会有一个 ts 配置文件，它提供了无数种
+
+24
+00:01:12,479 --> 00:01:15,200
+ways to customize the behavior of the compiler
+方法来自定义编译器的行为，
+
+25
+00:01:15,200 --> 00:01:18,479
+but the primary goal of typescript is to enable static typing
+但是 typescript 的主要目标是启用静态类型，
+
+26
+00:01:18,479 --> 00:01:22,080
+one way it achieves that is by allowing you to annotate your code with types
+它实现的一种方式是允许您使用类型注释代码
+
+27
+00:01:22,080 --> 00:01:26,720
+we can strongly type a variable using a colon followed by its type like a string
+
+
+28
+00:01:26,720 --> 00:01:29,920
+boolean or number that's known as an explicit type if we
+
+
+29
+00:01:29,920 --> 00:01:33,119
+then try to assign its value as the wrong type we get an error
+然后我们尝试将它的值分配为错误的类型，
+
+30
+00:01:33,119 --> 00:01:37,200
+alternatively if we set an initial value it will implicitly infer the type
+如果我们设置一个初始值，则会得到一个错误，它会隐式推断 t 是的，
+
+31
+00:01:37,200 --> 00:01:40,400
+however there may be cases where you want to opt out of this behavior
+但是在某些情况下，您可能希望选择退出此行为，
+
+32
+00:01:40,400 --> 00:01:44,560
+in which case you can annotate with the any type that allows you to loosely type
+在这种情况下，您可以使用任何类型进行注释，以允许您在使用数组时轻松键入
+
+33
+00:01:44,560 --> 00:01:47,520
+or opt out of type checking when working with an array
+或选择退出类型检查
+
+34
+00:01:47,520 --> 00:01:51,840
+use brackets to strongly type a list in addition you can define your own custom
+此外，您可以定义自己的自定义
+
+35
+00:01:51,840 --> 00:01:54,720
+types and interfaces which is especially powerful when
+类型和接口，这在处理对象时特别强大，
+
+36
+00:01:54,720 --> 00:01:58,320
+working with objects the car interface here defines various types
+这里的汽车接口定义
+
+37
+00:01:58,320 --> 00:02:01,840
+of the properties on an object we can then apply the interface to a plain
+了对象上的各种类型的属性，然后我们可以将该接口应用于普通的
+
+38
+00:02:01,840 --> 00:02:05,119
+javascript object the beauty of having strongly typed code
+javascript 对象。强类型代码的美妙之处
+
+39
+00:02:05,119 --> 00:02:07,680
+is that we get autocomplete everywhere in our ide
+在于 我们在我们的 ide 中到处都可以自动完成
+
+40
+00:02:07,680 --> 00:02:11,039
+we don't have to jump back and forth to documentation or dig through stack
+我们不必来回跳转到文档或挖掘堆栈
+
+41
+00:02:11,039 --> 00:02:13,200
+traces to figure out why our code's not working
+跟踪来找出为什么我们的代码不起作用
+
+42
+00:02:13,200 --> 00:02:16,480
+if you like typescript as much as i do consider becoming a pro member at
+如果你喜欢 typescript 就像我考虑成为 fireship io 的专业会员一样
+
+43
+00:02:16,480 --> 00:02:20,239
+fireship io for the next few days everything will be 40 off including
+在接下来的几天里，包括终身会员在内的所有商品都将享受 40 折优惠，
+
+44
+00:02:20,239 --> 00:02:26,400
+lifetime memberships thanks for watching and i will see you in the next one
+感谢您的收看，我们下期再见

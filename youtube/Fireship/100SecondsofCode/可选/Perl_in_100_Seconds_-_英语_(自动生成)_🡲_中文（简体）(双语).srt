@@ -1,0 +1,199 @@
+1
+00:00:00,120 --> 00:00:04,560
+Pearl a dynamic interpreted scripting language famous for its powerful text
+Pearl 是一种动态解释脚本语言，以其强大的文本
+
+2
+00:00:04,560 --> 00:00:09,300
+processing abilities it was developed in 1987 by Larry wall a linguist who
+处理能力而闻名，它是由语言学家 Larry wall 于 1987 年开发的，当有人说 Pearl 他们通常谈论版本 5 时，他将其
+
+3
+00:00:09,300 --> 00:00:12,599
+designed it to feel more like a human language than a computer language when
+设计为更像人类语言而不是计算机语言
+
+4
+00:00:12,599 --> 00:00:15,839
+someone says Pearl they're usually talking about version 5. there was a
+。 有一个
+
+5
+00:00:15,839 --> 00:00:18,900
+version 6 under development but it evolved into another language called
+版本 6 正在开发中，但它演变成另一种称为
+
+6
+00:00:18,900 --> 00:00:22,920
+Raku Pearl is often referred to as a glue language and has been dubbed the
+Raku Pearl 的语言，通常被称为胶水语言，被称为
+
+7
+00:00:22,920 --> 00:00:26,699
+Swiss Army chainsaw of the Internet it's most commonly used to write CGI scripts
+Internet 的瑞士军电锯，它最常用于
+
+8
+00:00:26,699 --> 00:00:30,359
+that allow web servers to communicate with external programs its powerful
+编写允许 Web 服务器与之通信的 CGI 脚本 外部程序 其强大的
+
+9
+00:00:30,359 --> 00:00:34,020
+string parsing abilities has made it the language of choice on high traffic sites
+字符串解析能力使其成为
+
+10
+00:00:34,020 --> 00:00:38,399
+like DuckDuckGo booking.com and Craigslist syntactically it resembles C
+DuckDuckGo booking.com 和Craigslist 等高流量网站的首选语言 在语法上它类似于 C
+
+11
+00:00:38,399 --> 00:00:41,879
+but is far more compressed allowing developers to write very tourist code
+但压缩得多，允许开发人员编写非常旅游代码，
+
+12
+00:00:41,879 --> 00:00:44,879
+like one-liners that hack together a solution much quicker than other
+如将解决方案组合在一起的单行代码比
+
+13
+00:00:44,879 --> 00:00:48,059
+scripting languages like python it contains a large collection of language
+Python 等其他脚本语言快得多，它包含大量语言
+
+14
+00:00:48,059 --> 00:00:51,899
+Primitives and a ton of shortcuts for getting things done quickly you may find
+原语和大量快速完成工作的快捷方式你可能会觉得
+
+15
+00:00:51,899 --> 00:00:55,500
+it ugly and awkward but system administrators love it because it gets
+它丑陋和尴尬，但系统管理员喜欢它，因为它
+
+16
+00:00:55,500 --> 00:00:59,100
+the job done to get started install the Pearl interpreter then create a file
+完成了开始安装Pearl 解释器的工作，然后创建一个
+
+17
+00:00:59,100 --> 00:01:03,359
+ending in.pl it's a scripting language so we start with a shebang and point it
+以.pl 结尾的文件，它是一种脚本语言，所以我们 从 shebang 开始并将其
+
+18
+00:01:03,359 --> 00:01:07,020
+to the interpreter's binary declare a variable with a dollar sign then print
+指向解释器的二进制文件 声明一个带有美元符号的变量，然后将其
+
+19
+00:01:07,020 --> 00:01:10,320
+it to the standard output and the variable can be easily interpolated into
+打印到标准输出，该变量可以很容易地插入
+
+20
+00:01:10,320 --> 00:01:14,100
+another string variables can be scoped locally with the my keyword or globally
+另一个字符串变量可以使用 my 关键字在本地或全局
+
+21
+00:01:14,100 --> 00:01:18,000
+to an entire package with the hour keyword the dollar sign creates a scalar
+到整个包 使用 hour关键字，美元符号创建一个标量
+
+22
+00:01:18,000 --> 00:01:21,659
+variable which is a single value like a string or number if we change the dollar
+变量，它是一个单一的值，如字符串或数字，如果我们将美元
+
+23
+00:01:21,659 --> 00:01:25,560
+sign to the at symbol this variable becomes an array the index of any item
+符号更改为 at 符号，此变量将成为一个数组，现在可以使用括号访问数组中任何项目的索引
+
+24
+00:01:25,560 --> 00:01:28,979
+in the array can be accessed with brackets now name the variable with a
+用百分号命名变量
+
+25
+00:01:28,979 --> 00:01:33,540
+percent sign to get a hash or key value pair to access one of its Keys use
+以获得散列或键值对以访问其中一个键使用
+
+26
+00:01:33,540 --> 00:01:37,020
+braces one of the design principles of pearl is things that are different
+大括号珍珠的设计原则之一是 不同
+
+27
+00:01:37,020 --> 00:01:41,100
+should look different handle conditional logic using IF or unless then make it
+应该看起来不同使用 IF 处理条件逻辑，或者除非然后通过将其
+
+28
+00:01:41,100 --> 00:01:44,640
+more concise by refactoring it to one line then make it even more concise
+重构为一行使其更简洁，然后
+
+29
+00:01:44,640 --> 00:01:48,479
+using the ternary operator one of the most unusual things about Pearl is that
+使用三元运算符使其更简洁Pearl 最不寻常的事情之一是
+
+30
+00:01:48,479 --> 00:01:51,600
+your functions are defined as subroutines instead of defining
+您的函数被定义为子例程
+
+31
+00:01:51,600 --> 00:01:55,380
+parameters within parentheses like most other languages any arguments passed to
+像大多数其他语言一样，在括号内定义参数 任何传递
+
+32
+00:01:55,380 --> 00:01:58,979
+the function can be accessed with the at underscore array when it comes to
+给函数的参数都可以在解析文本时使用下划线数组访问
+
+33
+00:01:58,979 --> 00:02:03,180
+parsing text regex is built in and The Binding operator can easily match a
+内置正则表达式，并且绑定运算符可以轻松地将
+
+34
+00:02:03,180 --> 00:02:07,020
+string to a regular expression Pearl also has a lot of magic features like
+字符串与正则表达式匹配 很多神奇的功能，比如
+
+35
+00:02:07,020 --> 00:02:10,860
+Auto vivification where if we try to increment a value in an array that
+自动激活，如果我们尝试在一个不存在的数组中增加一个值，
+
+36
+00:02:10,860 --> 00:02:13,980
+doesn't exist it will automatically bring to life all the elements in
+它会自动使现在之间的所有元素恢复活力，
+
+37
+00:02:13,980 --> 00:02:17,580
+between now to render code open the terminal and run The Interpreter this
+以呈现代码打开终端并运行解释器，这
+
+38
+00:02:17,580 --> 00:02:21,300
+has been Pearl in 100 seconds hit the like button and subscribe if you want to
+已经是珍珠 100秒点击喜欢按钮并订阅如果你
+
+39
+00:02:21,300 --> 00:02:24,840
+see more short videos like this thanks for watching and I will see you in the
+想看到更多这样的短片谢谢观看，我会看到 你
+
+40
+00:02:24,840 --> 00:02:27,140
+next one
+在下一个

@@ -1,0 +1,1855 @@
+1
+00:00:00,080 --> 00:00:02,000
+it's hard to make predictions especially
+
+
+2
+00:00:02,000 --> 00:00:03,840
+about the future but that's exactly what
+
+
+3
+00:00:03,840 --> 00:00:06,319
+we'll try to do in this video 2021 was a
+
+
+4
+00:00:06,319 --> 00:00:07,919
+strange year there was a big regime
+
+
+5
+00:00:07,919 --> 00:00:09,679
+change we finally beat the pandemic and
+
+
+6
+00:00:09,679 --> 00:00:11,280
+everybody took off their masks and went
+
+
+7
+00:00:11,280 --> 00:00:13,120
+back to the office that was the original
+
+
+8
+00:00:13,120 --> 00:00:15,040
+plan anyway unfortunately it's your
+
+
+9
+00:00:15,040 --> 00:00:16,720
+conspiracy theorist uncle on facebook
+
+
+10
+00:00:16,720 --> 00:00:18,320
+who keeps making the right predictions
+
+
+11
+00:00:18,320 --> 00:00:20,240
+but as developers and entrepreneurs we
+
+
+12
+00:00:20,240 --> 00:00:21,840
+don't care about these externalities we
+
+
+13
+00:00:21,840 --> 00:00:23,279
+figure out ways to make money writing
+
+
+14
+00:00:23,279 --> 00:00:24,720
+code with the environment they give us
+
+
+15
+00:00:24,720 --> 00:00:26,320
+we thrive in the chaos if you're new
+
+
+16
+00:00:26,320 --> 00:00:27,920
+here like and subscribe then we'll start
+
+
+17
+00:00:27,920 --> 00:00:29,599
+things off by looking at major trends
+
+
+18
+00:00:29,599 --> 00:00:30,880
+that will influence the developer
+
+
+19
+00:00:30,880 --> 00:00:33,440
+landscape in 2022 then for each trend
+
+
+20
+00:00:33,440 --> 00:00:34,960
+i'll give you one of my personal weird
+
+
+21
+00:00:34,960 --> 00:00:36,800
+app ideas that you can use to build a
+
+
+22
+00:00:36,800 --> 00:00:38,480
+quadrillion dollar startup the first
+
+
+23
+00:00:38,480 --> 00:00:40,719
+trend we need to talk about is web3 or
+
+
+24
+00:00:40,719 --> 00:00:42,719
+the decentralized web some people think
+
+
+25
+00:00:42,719 --> 00:00:44,239
+web 3 is the point where all modern
+
+
+26
+00:00:44,239 --> 00:00:46,160
+technology converges out of which new
+
+
+27
+00:00:46,160 --> 00:00:48,160
+unimaginable technologies will diverge
+
+
+28
+00:00:48,160 --> 00:00:49,840
+in the future other people though think
+
+
+29
+00:00:49,840 --> 00:00:51,600
+that web 3 is just the latest buzzword
+
+
+30
+00:00:51,600 --> 00:00:54,079
+to pump crypto scams but what is web3
+
+
+31
+00:00:54,079 --> 00:00:56,800
+exactly a completely decentralized
+
+
+32
+00:00:56,800 --> 00:00:58,719
+version of our current internet with no
+
+
+33
+00:00:58,719 --> 00:01:01,600
+firewalls no tolls no
+
+
+34
+00:01:01,600 --> 00:01:03,680
+government regulation
+
+
+35
+00:01:03,680 --> 00:01:06,320
+you want to build a new internet
+
+
+36
+00:01:06,320 --> 00:01:08,560
+yes it's basically a vision for the
+
+
+37
+00:01:08,560 --> 00:01:09,680
+internet where everything is
+
+
+38
+00:01:09,680 --> 00:01:11,680
+decentralized and regulated with smart
+
+
+39
+00:01:11,680 --> 00:01:13,360
+contracts and crypto instead of the
+
+
+40
+00:01:13,360 --> 00:01:14,960
+current status quo where everything is
+
+
+41
+00:01:14,960 --> 00:01:17,200
+controlled by google facebook and amazon
+
+
+42
+00:01:17,200 --> 00:01:19,600
+in a decentralized app or dap the user
+
+
+43
+00:01:19,600 --> 00:01:21,520
+owns all their data instead of an email
+
+
+44
+00:01:21,520 --> 00:01:23,600
+password identity users are identified
+
+
+45
+00:01:23,600 --> 00:01:25,520
+by a blockchain wallet address that
+
+
+46
+00:01:25,520 --> 00:01:27,439
+usually connects with a browser plugin
+
+
+47
+00:01:27,439 --> 00:01:29,520
+like metamask while the app itself is
+
+
+48
+00:01:29,520 --> 00:01:31,040
+code that lives on the blockchain in the
+
+
+49
+00:01:31,040 --> 00:01:33,040
+form of a smart contract the idea is
+
+
+50
+00:01:33,040 --> 00:01:34,720
+really cool because it gives people real
+
+
+51
+00:01:34,720 --> 00:01:36,240
+control over their own slice of the
+
+
+52
+00:01:36,240 --> 00:01:38,240
+internet as opposed to using services
+
+
+53
+00:01:38,240 --> 00:01:40,079
+that are mediated by a central ivory
+
+
+54
+00:01:40,079 --> 00:01:41,840
+tower like a big tech corporation or
+
+
+55
+00:01:41,840 --> 00:01:43,439
+government on the other hand there are a
+
+
+56
+00:01:43,439 --> 00:01:45,280
+ton of ways one might criticize web3
+
+
+57
+00:01:45,280 --> 00:01:47,040
+it's chaotic hard to develop quality
+
+
+58
+00:01:47,040 --> 00:01:48,640
+apps with current tool chains it doesn't
+
+
+59
+00:01:48,640 --> 00:01:50,320
+benefit most mainstream businesses in
+
+
+60
+00:01:50,320 --> 00:01:52,079
+any practical way most of the tokens are
+
+
+61
+00:01:52,079 --> 00:01:53,920
+owned by silicon valley insiders so it's
+
+
+62
+00:01:53,920 --> 00:01:55,680
+not really decentralized at all and you
+
+
+63
+00:01:55,680 --> 00:01:57,200
+really don't need cryptocurrency to
+
+
+64
+00:01:57,200 --> 00:01:58,799
+build a decentralized app in the first
+
+
+65
+00:01:58,799 --> 00:02:00,479
+place if crypto prices collapse for
+
+
+66
+00:02:00,479 --> 00:02:01,759
+whatever reason i think a lot of the
+
+
+67
+00:02:01,759 --> 00:02:03,600
+excitement for web 3 would disappear i
+
+
+68
+00:02:03,600 --> 00:02:05,119
+could go on but one of my favorite
+
+
+69
+00:02:05,119 --> 00:02:07,280
+quotes is pessimist sounds smart but
+
+
+70
+00:02:07,280 --> 00:02:08,959
+optimists make money building a
+
+
+71
+00:02:08,959 --> 00:02:10,720
+decentralized internet is not an easy
+
+
+72
+00:02:10,720 --> 00:02:12,400
+thing to do there's a huge opportunity
+
+
+73
+00:02:12,400 --> 00:02:14,239
+for developers who are willing to tackle
+
+
+74
+00:02:14,239 --> 00:02:16,160
+the problems in this space a big part of
+
+
+75
+00:02:16,160 --> 00:02:18,239
+success is timing facebook google and
+
+
+76
+00:02:18,239 --> 00:02:19,680
+amazon were all in the right place at
+
+
+77
+00:02:19,680 --> 00:02:22,160
+the right time to capitalize on web 1.0
+
+
+78
+00:02:22,160 --> 00:02:23,840
+and 2.0 i think you should be skeptical
+
+
+79
+00:02:23,840 --> 00:02:26,000
+about web3 but if it does go mainstream
+
+
+80
+00:02:26,000 --> 00:02:27,840
+you'll be very glad you got in early a
+
+
+81
+00:02:27,840 --> 00:02:29,680
+full web 3 tutorial is on the way so
+
+
+82
+00:02:29,680 --> 00:02:30,879
+make sure you're subscribed to my
+
+
+83
+00:02:30,879 --> 00:02:33,360
+channel now here's my web3 startup idea
+
+
+84
+00:02:33,360 --> 00:02:34,800
+it's pretty obvious that the corporate
+
+
+85
+00:02:34,800 --> 00:02:36,480
+media is dying not many people in the
+
+
+86
+00:02:36,480 --> 00:02:38,400
+key demo actually trust or watch the
+
+
+87
+00:02:38,400 --> 00:02:40,239
+mainstream media but they can continue
+
+
+88
+00:02:40,239 --> 00:02:42,080
+to force feed us this content by making
+
+
+89
+00:02:42,080 --> 00:02:43,920
+it artificially rank high on platforms
+
+
+90
+00:02:43,920 --> 00:02:45,599
+like twitter and youtube and even by
+
+
+91
+00:02:45,599 --> 00:02:47,280
+removing things like the dislike button
+
+
+92
+00:02:47,280 --> 00:02:49,280
+to limit our ability to point out bad
+
+
+93
+00:02:49,280 --> 00:02:51,040
+content what i think would be awesome is
+
+
+94
+00:02:51,040 --> 00:02:53,120
+an entirely decentralized news network
+
+
+95
+00:02:53,120 --> 00:02:55,120
+where journalists could upload video
+
+
+96
+00:02:55,120 --> 00:02:57,120
+articles and other reporting and be
+
+
+97
+00:02:57,120 --> 00:02:59,200
+compensated based on its reach it would
+
+
+98
+00:02:59,200 --> 00:03:00,720
+incentivize good journalism and
+
+
+99
+00:03:00,720 --> 00:03:02,800
+eliminate the possibility of a top-down
+
+
+100
+00:03:02,800 --> 00:03:04,879
+propaganda machine journalists win
+
+
+101
+00:03:04,879 --> 00:03:06,720
+consumers win the only one who gets
+
+
+102
+00:03:06,720 --> 00:03:08,400
+is the establishment and now a
+
+
+103
+00:03:08,400 --> 00:03:10,239
+word from our sponsors hi my name is
+
+
+104
+00:03:10,239 --> 00:03:12,400
+jeff and i'm a 10x developer and you can
+
+
+105
+00:03:12,400 --> 00:03:14,239
+be one too if you start every day with a
+
+
+106
+00:03:14,239 --> 00:03:16,080
+hearty breakfast from mcdonald's like
+
+
+107
+00:03:16,080 --> 00:03:18,000
+the sausage egg mcmuffin value meal
+
+
+108
+00:03:18,000 --> 00:03:19,840
+available for a limited time for under
+
+
+109
+00:03:19,840 --> 00:03:22,640
+14 remember guys real developers eat at
+
+
+110
+00:03:22,640 --> 00:03:27,760
+mcdonald's i'm loving it
+
+
+111
+00:03:27,760 --> 00:03:29,519
+and that brings us to our next trend the
+
+
+112
+00:03:29,519 --> 00:03:31,120
+metaverse you likely saw mark
+
+
+113
+00:03:31,120 --> 00:03:32,640
+zuckerberg's ultra cringe i mean
+
+
+114
+00:03:32,640 --> 00:03:34,799
+inspiring vision about the metaverse i
+
+
+115
+00:03:34,799 --> 00:03:36,239
+pulled the channel and the majority of
+
+
+116
+00:03:36,239 --> 00:03:37,599
+you thought the vision was dumb i
+
+
+117
+00:03:37,599 --> 00:03:38,959
+totally agree with that because i would
+
+
+118
+00:03:38,959 --> 00:03:40,560
+never want to be involved in any kind of
+
+
+119
+00:03:40,560 --> 00:03:42,560
+metaverse run by facebook a company with
+
+
+120
+00:03:42,560 --> 00:03:44,400
+a terrible track record of abusing our
+
+
+121
+00:03:44,400 --> 00:03:46,319
+data and violating our privacy that
+
+
+122
+00:03:46,319 --> 00:03:48,159
+being said facebook is not the only
+
+
+123
+00:03:48,159 --> 00:03:49,519
+company building a metaverse they're
+
+
+124
+00:03:49,519 --> 00:03:51,200
+just trying to hijack the name the
+
+
+125
+00:03:51,200 --> 00:03:52,560
+general concept is to build an
+
+
+126
+00:03:52,560 --> 00:03:54,080
+internet-based platform that has
+
+
+127
+00:03:54,080 --> 00:03:56,319
+multiple access points like your phone
+
+
+128
+00:03:56,319 --> 00:03:58,959
+vr and ar then you have a single profile
+
+
+129
+00:03:58,959 --> 00:04:00,319
+that you can use to interact with
+
+
+130
+00:04:00,319 --> 00:04:01,920
+different businesses and apps within
+
+
+131
+00:04:01,920 --> 00:04:03,680
+that platform and communicate with other
+
+
+132
+00:04:03,680 --> 00:04:05,599
+users in a virtual environment like you
+
+
+133
+00:04:05,599 --> 00:04:07,760
+would in vrchat or an old school app
+
+
+134
+00:04:07,760 --> 00:04:09,439
+like second life the concept is actually
+
+
+135
+00:04:09,439 --> 00:04:11,360
+really cool but i don't think the vr
+
+
+136
+00:04:11,360 --> 00:04:12,959
+aspect of it will ever go super
+
+
+137
+00:04:12,959 --> 00:04:14,720
+mainstream vr has been around for a long
+
+
+138
+00:04:14,720 --> 00:04:16,239
+time now and the technology is really
+
+
+139
+00:04:16,239 --> 00:04:18,079
+good but most people just don't like
+
+
+140
+00:04:18,079 --> 00:04:19,440
+using it we already know we're addicted
+
+
+141
+00:04:19,440 --> 00:04:21,359
+to social media and video games the idea
+
+
+142
+00:04:21,359 --> 00:04:23,120
+of strapping on a headset to further
+
+
+143
+00:04:23,120 --> 00:04:24,800
+detach from the real world just doesn't
+
+
+144
+00:04:24,800 --> 00:04:26,560
+seem like something that humans will do
+
+
+145
+00:04:26,560 --> 00:04:28,560
+that being said metaverses are being
+
+
+146
+00:04:28,560 --> 00:04:30,000
+built and there will be opportunities
+
+
+147
+00:04:30,000 --> 00:04:31,600
+there for developers if you want to get
+
+
+148
+00:04:31,600 --> 00:04:33,600
+into it learning something like unity or
+
+
+149
+00:04:33,600 --> 00:04:35,199
+unreal engine would be a good place to
+
+
+150
+00:04:35,199 --> 00:04:37,040
+start or 3d modeling software like
+
+
+151
+00:04:37,040 --> 00:04:39,120
+blender here's my startup idea there's a
+
+
+152
+00:04:39,120 --> 00:04:40,639
+lot of hype and investment going into
+
+
+153
+00:04:40,639 --> 00:04:42,479
+the metaverse and during a gold rush
+
+
+154
+00:04:42,479 --> 00:04:44,479
+it's a good idea to sell shovels the
+
+
+155
+00:04:44,479 --> 00:04:46,000
+idea is to create something like a
+
+
+156
+00:04:46,000 --> 00:04:48,400
+squarespace or shopify for the metaverse
+
+
+157
+00:04:48,400 --> 00:04:50,479
+a platform where any business can build
+
+
+158
+00:04:50,479 --> 00:04:51,919
+some kind of digital metaverse
+
+
+159
+00:04:51,919 --> 00:04:54,000
+experience ar and vr apps are extremely
+
+
+160
+00:04:54,000 --> 00:04:55,919
+hard to develop if you can give brands a
+
+
+161
+00:04:55,919 --> 00:04:57,280
+way to get their foot into the door of
+
+
+162
+00:04:57,280 --> 00:04:58,960
+the metaverse there are likely millions
+
+
+163
+00:04:58,960 --> 00:05:00,479
+of potential customers out there that
+
+
+164
+00:05:00,479 --> 00:05:02,000
+will want to interact with customers on
+
+
+165
+00:05:02,000 --> 00:05:03,360
+the metaverse but don't have the
+
+
+166
+00:05:03,360 --> 00:05:05,280
+technical skills to get the job done now
+
+
+167
+00:05:05,280 --> 00:05:06,800
+let's switch gears to the next trend
+
+
+168
+00:05:06,800 --> 00:05:08,800
+artificial intelligence ai has come a
+
+
+169
+00:05:08,800 --> 00:05:10,400
+long way in the last couple years and in
+
+
+170
+00:05:10,400 --> 00:05:12,400
+2021 it affected us developers
+
+
+171
+00:05:12,400 --> 00:05:14,240
+personally with the release of github
+
+
+172
+00:05:14,240 --> 00:05:16,960
+co-pilot which is a tool that uses ai to
+
+
+173
+00:05:16,960 --> 00:05:18,720
+automatically write code for you it's
+
+
+174
+00:05:18,720 --> 00:05:19,759
+not to the point where it's going to
+
+
+175
+00:05:19,759 --> 00:05:21,360
+replace developers but i'm sure we'll
+
+
+176
+00:05:21,360 --> 00:05:22,960
+get there someday the one thing that's a
+
+
+177
+00:05:22,960 --> 00:05:24,560
+little disappointing about ai is that
+
+
+178
+00:05:24,560 --> 00:05:26,000
+it's kind of dominated now by big
+
+
+179
+00:05:26,000 --> 00:05:27,360
+companies that have control of these
+
+
+180
+00:05:27,360 --> 00:05:29,600
+algorithms like gpt3 it would be
+
+
+181
+00:05:29,600 --> 00:05:31,520
+extremely difficult as an individual or
+
+
+182
+00:05:31,520 --> 00:05:33,360
+startup to train ai models that can
+
+
+183
+00:05:33,360 --> 00:05:35,120
+compete with it for one you won't have
+
+
+184
+00:05:35,120 --> 00:05:36,720
+the massive amount of data needed and
+
+
+185
+00:05:36,720 --> 00:05:38,639
+two you won't have the computing power
+
+
+186
+00:05:38,639 --> 00:05:40,400
+point two will become especially true if
+
+
+187
+00:05:40,400 --> 00:05:42,160
+quantum computers ever become useful if
+
+
+188
+00:05:42,160 --> 00:05:44,080
+a quantum computer can train an ai model
+
+
+189
+00:05:44,080 --> 00:05:45,520
+then it's pretty much game over that
+
+
+190
+00:05:45,520 --> 00:05:47,120
+being said it's still a good idea to
+
+
+191
+00:05:47,120 --> 00:05:48,800
+learn data science because it's still
+
+
+192
+00:05:48,800 --> 00:05:50,800
+very difficult to process and analyze
+
+
+193
+00:05:50,800 --> 00:05:52,240
+huge amounts of data and that means
+
+
+194
+00:05:52,240 --> 00:05:53,759
+there's a lot of high paying jobs out
+
+
+195
+00:05:53,759 --> 00:05:55,440
+there for that role here's my startup
+
+
+196
+00:05:55,440 --> 00:05:57,680
+idea if you can't beat them join them
+
+
+197
+00:05:57,680 --> 00:06:00,639
+microsoft has exclusive access to gpt-3
+
+
+198
+00:06:00,639 --> 00:06:02,560
+but there's still a public api where you
+
+
+199
+00:06:02,560 --> 00:06:05,280
+can use gpt3 to build a product a lot of
+
+
+200
+00:06:05,280 --> 00:06:07,120
+people like to interact with psychics
+
+
+201
+00:06:07,120 --> 00:06:08,639
+but that business model doesn't scale
+
+
+202
+00:06:08,639 --> 00:06:09,919
+very well because you need to meet with
+
+
+203
+00:06:09,919 --> 00:06:11,680
+each client individually what you could
+
+
+204
+00:06:11,680 --> 00:06:14,560
+do is use gpt 3 to create an ai driven
+
+
+205
+00:06:14,560 --> 00:06:16,400
+psychic hotline where customers could
+
+
+206
+00:06:16,400 --> 00:06:18,800
+interact with lost loved ones and gpt3
+
+
+207
+00:06:18,800 --> 00:06:20,720
+would automatically generate responses
+
+
+208
+00:06:20,720 --> 00:06:22,560
+that come from the other side now i want
+
+
+209
+00:06:22,560 --> 00:06:24,000
+to take a minute to talk about something
+
+
+210
+00:06:24,000 --> 00:06:26,400
+a little more boring databases a trend
+
+
+211
+00:06:26,400 --> 00:06:28,400
+that i've noticed is that relational sql
+
+
+212
+00:06:28,400 --> 00:06:30,720
+databases are back in vogue sql has
+
+
+213
+00:06:30,720 --> 00:06:32,240
+always been the most widely adopted type
+
+
+214
+00:06:32,240 --> 00:06:33,919
+of database but now it's a cool
+
+
+215
+00:06:33,919 --> 00:06:35,520
+technology to use again we're also
+
+
+216
+00:06:35,520 --> 00:06:37,120
+seeing ai being implemented into
+
+
+217
+00:06:37,120 --> 00:06:39,600
+databases like mindsdb to make machine
+
+
+218
+00:06:39,600 --> 00:06:41,199
+learning workflows much easier in
+
+
+219
+00:06:41,199 --> 00:06:43,039
+addition you have tools like planetscale
+
+
+220
+00:06:43,039 --> 00:06:44,880
+and supabase who are making relational
+
+
+221
+00:06:44,880 --> 00:06:46,800
+databases much easier to work with at
+
+
+222
+00:06:46,800 --> 00:06:49,039
+the same time you have no sql databases
+
+
+223
+00:06:49,039 --> 00:06:50,960
+like mongodb becoming more and more
+
+
+224
+00:06:50,960 --> 00:06:52,720
+powerful which can now be deployed in a
+
+
+225
+00:06:52,720 --> 00:06:54,560
+serverless way and supports full text
+
+
+226
+00:06:54,560 --> 00:06:56,160
+search then you have redis becoming a
+
+
+227
+00:06:56,160 --> 00:06:58,240
+multi-model database to support graph
+
+
+228
+00:06:58,240 --> 00:06:59,759
+time series and full text search
+
+
+229
+00:06:59,759 --> 00:07:01,360
+features then you have firestore from
+
+
+230
+00:07:01,360 --> 00:07:02,960
+firebase which really didn't change in
+
+
+231
+00:07:02,960 --> 00:07:04,800
+2021 but i'm going to keep my fingers
+
+
+232
+00:07:04,800 --> 00:07:06,960
+crossed for some new features in 2022.
+
+
+233
+00:07:06,960 --> 00:07:09,199
+if not the serverless sql platforms are
+
+
+234
+00:07:09,199 --> 00:07:10,960
+looking very appealing here's my startup
+
+
+235
+00:07:10,960 --> 00:07:13,360
+idea databases are boring but boring
+
+
+236
+00:07:13,360 --> 00:07:15,520
+ideas are also ideas that can make money
+
+
+237
+00:07:15,520 --> 00:07:17,280
+if you identify a trend in the industry
+
+
+238
+00:07:17,280 --> 00:07:18,720
+that's going to require a lot of
+
+
+239
+00:07:18,720 --> 00:07:20,720
+specialized developers consider building
+
+
+240
+00:07:20,720 --> 00:07:22,720
+a job board it's a really easy app to
+
+
+241
+00:07:22,720 --> 00:07:24,479
+make and if you market it well it can
+
+
+242
+00:07:24,479 --> 00:07:26,319
+make a ton of money like over seven
+
+
+243
+00:07:26,319 --> 00:07:27,759
+figures you just need to find a
+
+
+244
+00:07:27,759 --> 00:07:29,360
+specialized segment of the market then
+
+
+245
+00:07:29,360 --> 00:07:31,360
+build up a big email list the next big
+
+
+246
+00:07:31,360 --> 00:07:33,440
+trade i want to talk about is javascript
+
+
+247
+00:07:33,440 --> 00:07:35,280
+always bet on javascript if you learn
+
+
+248
+00:07:35,280 --> 00:07:37,440
+javascript you'll never go hungry last
+
+
+249
+00:07:37,440 --> 00:07:39,280
+year i predicted that we're mostly done
+
+
+250
+00:07:39,280 --> 00:07:41,280
+seeing changes to the big frameworks of
+
+
+251
+00:07:41,280 --> 00:07:42,960
+react angular and vue and that
+
+
+252
+00:07:42,960 --> 00:07:44,800
+prediction has held true the core
+
+
+253
+00:07:44,800 --> 00:07:46,080
+frameworks are pretty much the same
+
+
+254
+00:07:46,080 --> 00:07:47,520
+react concurrent mode is still
+
+
+255
+00:07:47,520 --> 00:07:49,599
+experimental just as it was last year
+
+
+256
+00:07:49,599 --> 00:07:51,360
+while angular and vue remain solid and
+
+
+257
+00:07:51,360 --> 00:07:53,280
+stable all the exciting stuff is
+
+
+258
+00:07:53,280 --> 00:07:55,120
+happening with the meta frameworks next
+
+
+259
+00:07:55,120 --> 00:07:57,039
+js is the leader in the space and its
+
+
+260
+00:07:57,039 --> 00:07:58,800
+parent company versel is now a
+
+
+261
+00:07:58,800 --> 00:08:00,479
+multi-billion dollar company what we've
+
+
+262
+00:08:00,479 --> 00:08:02,400
+done over the last 20 years is come full
+
+
+263
+00:08:02,400 --> 00:08:04,319
+circle originally we had server rendered
+
+
+264
+00:08:04,319 --> 00:08:06,240
+applications then we went to client
+
+
+265
+00:08:06,240 --> 00:08:08,000
+rendered applications and now we have
+
+
+266
+00:08:08,000 --> 00:08:09,840
+things like next js which provide the
+
+
+267
+00:08:09,840 --> 00:08:12,240
+best of both worlds next version 3 and
+
+
+268
+00:08:12,240 --> 00:08:14,000
+the view ecosystem looks absolutely
+
+
+269
+00:08:14,000 --> 00:08:16,000
+incredible but it's not feature complete
+
+
+270
+00:08:16,000 --> 00:08:17,759
+at the time of this video we also have
+
+
+271
+00:08:17,759 --> 00:08:19,120
+react server components around the
+
+
+272
+00:08:19,120 --> 00:08:20,879
+corner and that's led to new frameworks
+
+
+273
+00:08:20,879 --> 00:08:23,039
+like hydrogen from shopify there's also
+
+
+274
+00:08:23,039 --> 00:08:24,479
+remix that we looked at in a previous
+
+
+275
+00:08:24,479 --> 00:08:25,840
+video but the most interesting
+
+
+276
+00:08:25,840 --> 00:08:27,440
+development in my opinion is the fact
+
+
+277
+00:08:27,440 --> 00:08:29,520
+that rich harris the creator of svelt
+
+
+278
+00:08:29,520 --> 00:08:31,680
+was hired by vercell to work on spelt
+
+
+279
+00:08:31,680 --> 00:08:33,839
+full-time everybody knows that svelt is
+
+
+280
+00:08:33,839 --> 00:08:35,680
+the greatest ui framework ever created
+
+
+281
+00:08:35,680 --> 00:08:37,039
+but it came a little too late in the
+
+
+282
+00:08:37,039 --> 00:08:38,880
+game and never had the financial backing
+
+
+283
+00:08:38,880 --> 00:08:40,719
+of a big company that's about to change
+
+
+284
+00:08:40,719 --> 00:08:42,479
+which makes me feel very optimistic
+
+
+285
+00:08:42,479 --> 00:08:44,320
+about the future of svelt kit a
+
+
+286
+00:08:44,320 --> 00:08:46,160
+framework for server side rendering in
+
+
+287
+00:08:46,160 --> 00:08:47,839
+addition to meta frameworks you'll also
+
+
+288
+00:08:47,839 --> 00:08:49,440
+want to keep your eye on meta meta
+
+
+289
+00:08:49,440 --> 00:08:51,839
+frameworks one example is blitz js which
+
+
+290
+00:08:51,839 --> 00:08:53,680
+is built on top of next and makes it
+
+
+291
+00:08:53,680 --> 00:08:55,839
+much easier to build a database driven
+
+
+292
+00:08:55,839 --> 00:08:57,440
+application another really cool
+
+
+293
+00:08:57,440 --> 00:08:59,120
+javascript tool worth mentioning is
+
+
+294
+00:08:59,120 --> 00:09:00,959
+astro which allows you to build a
+
+
+295
+00:09:00,959 --> 00:09:03,279
+website using one or multiple frameworks
+
+
+296
+00:09:03,279 --> 00:09:05,040
+at the same time without sending any
+
+
+297
+00:09:05,040 --> 00:09:06,880
+javascript down to the client build
+
+
+298
+00:09:06,880 --> 00:09:08,720
+tools for front-end developers also
+
+
+299
+00:09:08,720 --> 00:09:11,279
+improved a ton in 2021 the best example
+
+
+300
+00:09:11,279 --> 00:09:13,040
+is veet which provides a far simpler
+
+
+301
+00:09:13,040 --> 00:09:14,560
+developer experience compared to
+
+
+302
+00:09:14,560 --> 00:09:16,480
+something like webpack it's much faster
+
+
+303
+00:09:16,480 --> 00:09:18,160
+and way easier to work with here's one
+
+
+304
+00:09:18,160 --> 00:09:20,000
+way that you as an independent developer
+
+
+305
+00:09:20,000 --> 00:09:21,839
+can make money around meta frameworks
+
+
+306
+00:09:21,839 --> 00:09:23,279
+you might be familiar with sites like
+
+
+307
+00:09:23,279 --> 00:09:25,200
+themeforest that sell premium wordpress
+
+
+308
+00:09:25,200 --> 00:09:26,959
+templates many of which are based on
+
+
+309
+00:09:26,959 --> 00:09:28,959
+react vue and angular however if you're
+
+
+310
+00:09:28,959 --> 00:09:30,560
+building a server rendered application
+
+
+311
+00:09:30,560 --> 00:09:32,160
+with a meta framework these themes
+
+
+312
+00:09:32,160 --> 00:09:33,600
+aren't very useful i think there's an
+
+
+313
+00:09:33,600 --> 00:09:35,760
+opportunity here to create custom server
+
+
+314
+00:09:35,760 --> 00:09:37,279
+render templates that can help other
+
+
+315
+00:09:37,279 --> 00:09:39,360
+developers get things done faster like
+
+
+316
+00:09:39,360 --> 00:09:41,519
+next already has an ecommerce template
+
+
+317
+00:09:41,519 --> 00:09:42,640
+but there's an infinite number of
+
+
+318
+00:09:42,640 --> 00:09:44,560
+variations you can make on this and also
+
+
+319
+00:09:44,560 --> 00:09:46,480
+provide other templates for e-learning
+
+
+320
+00:09:46,480 --> 00:09:48,800
+small businesses enterprise dashboards
+
+
+321
+00:09:48,800 --> 00:09:50,399
+real estate and all kinds of other
+
+
+322
+00:09:50,399 --> 00:09:52,160
+industries now because next is server
+
+
+323
+00:09:52,160 --> 00:09:54,240
+rendered you can do things beyond the ui
+
+
+324
+00:09:54,240 --> 00:09:55,839
+like integrate stripe as a payment
+
+
+325
+00:09:55,839 --> 00:09:57,600
+solution or include sendgrid for
+
+
+326
+00:09:57,600 --> 00:09:59,279
+transactional email we now apparently
+
+
+327
+00:09:59,279 --> 00:10:00,880
+have microscopic robots that can
+
+
+328
+00:10:00,880 --> 00:10:02,800
+reproduce that being said here's some
+
+
+329
+00:10:02,800 --> 00:10:03,920
+other information that you'll want to
+
+
+330
+00:10:03,920 --> 00:10:06,160
+know going into 2022. jetbrains is
+
+
+331
+00:10:06,160 --> 00:10:08,399
+releasing a new lightweight ide fleet
+
+
+332
+00:10:08,399 --> 00:10:10,320
+that could compete with vs code the s
+
+
+333
+00:10:10,320 --> 00:10:12,000
+code itself is better than ever and you
+
+
+334
+00:10:12,000 --> 00:10:13,760
+can now run it directly in the browser
+
+
+335
+00:10:13,760 --> 00:10:15,600
+tailwind css is becoming more and more
+
+
+336
+00:10:15,600 --> 00:10:17,360
+popular and it got especially awesome in
+
+
+337
+00:10:17,360 --> 00:10:19,600
+2021 thanks to just in time mode
+
+
+338
+00:10:19,600 --> 00:10:21,279
+typescript is also more popular than
+
+
+339
+00:10:21,279 --> 00:10:22,800
+ever and we have some cool new features
+
+
+340
+00:10:22,800 --> 00:10:24,560
+coming to the javascript language like
+
+
+341
+00:10:24,560 --> 00:10:26,800
+at to get a negative index or the last
+
+
+342
+00:10:26,800 --> 00:10:28,720
+element in an array we have top level
+
+
+343
+00:10:28,720 --> 00:10:30,320
+weight standardized and a much more
+
+
+344
+00:10:30,320 --> 00:10:32,720
+ergonomic way to use object prototype
+
+
+345
+00:10:32,720 --> 00:10:35,760
+has own property in 2022 graphql is
+
+
+346
+00:10:35,760 --> 00:10:37,519
+still not going to replace rest and the
+
+
+347
+00:10:37,519 --> 00:10:39,200
+hype around it seems to have died down
+
+
+348
+00:10:39,200 --> 00:10:40,959
+quite a bit webassembly is not going to
+
+
+349
+00:10:40,959 --> 00:10:42,959
+replace javascript but it is quietly
+
+
+350
+00:10:42,959 --> 00:10:44,880
+changing the world one example is stack
+
+
+351
+00:10:44,880 --> 00:10:46,160
+blitz which brings server-side
+
+
+352
+00:10:46,160 --> 00:10:48,240
+capabilities to the browser no code is
+
+
+353
+00:10:48,240 --> 00:10:49,600
+still a trend to keep your eye on but
+
+
+354
+00:10:49,600 --> 00:10:50,959
+it's still not going to take your job as
+
+
+355
+00:10:50,959 --> 00:10:52,720
+a developer just like it hasn't for the
+
+
+356
+00:10:52,720 --> 00:10:54,560
+last 50 years when it comes to mobile
+
+
+357
+00:10:54,560 --> 00:10:56,480
+development flutter and react native
+
+
+358
+00:10:56,480 --> 00:10:57,680
+will continue to dominate the
+
+
+359
+00:10:57,680 --> 00:10:59,600
+cross-platform space you might see brain
+
+
+360
+00:10:59,600 --> 00:11:01,279
+interfaces like neurosity where you
+
+
+361
+00:11:01,279 --> 00:11:03,200
+write code they can react to changes in
+
+
+362
+00:11:03,200 --> 00:11:05,519
+your brain waves aws will continue to
+
+
+363
+00:11:05,519 --> 00:11:06,800
+release a bunch of products you don't
+
+
+364
+00:11:06,800 --> 00:11:08,399
+need while google cloud and azure
+
+
+365
+00:11:08,399 --> 00:11:09,839
+continue to play catch-up the only
+
+
+366
+00:11:09,839 --> 00:11:11,920
+prediction i'm 100 confident of though
+
+
+367
+00:11:11,920 --> 00:11:13,519
+is that things will change and when that
+
+
+368
+00:11:13,519 --> 00:11:14,800
+happens i'll be right here in your
+
+
+369
+00:11:14,800 --> 00:11:16,640
+computer screen with a new video about
+
+
+370
+00:11:16,640 --> 00:11:18,480
+it thanks for watching and i will see
+
+
+371
+00:11:18,480 --> 00:11:21,519
+you in the next one
+
+

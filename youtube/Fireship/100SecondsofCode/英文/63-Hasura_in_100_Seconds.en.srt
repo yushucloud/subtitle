@@ -1,0 +1,410 @@
+1
+00:00:00,160 --> 00:00:02,320
+hasura instantly turn your relational
+
+
+2
+00:00:02,320 --> 00:00:05,200
+database into a graphql or rest api
+
+
+3
+00:00:05,200 --> 00:00:07,200
+when building a full stack application
+
+
+4
+00:00:07,200 --> 00:00:09,360
+the end user likely needs to communicate
+
+
+5
+00:00:09,360 --> 00:00:10,240
+with a database
+
+
+6
+00:00:10,240 --> 00:00:12,000
+that means you need to build a secure
+
+
+7
+00:00:12,000 --> 00:00:13,920
+api in the middle so the client can tell
+
+
+8
+00:00:13,920 --> 00:00:15,360
+the server what it needs from the
+
+
+9
+00:00:15,360 --> 00:00:17,600
+database but building the perfect api
+
+
+10
+00:00:17,600 --> 00:00:19,279
+is easier said than done front-end
+
+
+11
+00:00:19,279 --> 00:00:21,199
+developers love using graphql but
+
+
+12
+00:00:21,199 --> 00:00:22,720
+back-end developers are faced with the
+
+
+13
+00:00:22,720 --> 00:00:23,840
+challenge of writing
+
+
+14
+00:00:23,840 --> 00:00:25,920
+efficient sql queries that resolve the
+
+
+15
+00:00:25,920 --> 00:00:27,920
+graphql schema the hasura engine
+
+
+16
+00:00:27,920 --> 00:00:29,119
+eliminates this problem
+
+
+17
+00:00:29,119 --> 00:00:31,119
+by automatically generating the schema
+
+
+18
+00:00:31,119 --> 00:00:32,559
+and resolvers for you
+
+
+19
+00:00:32,559 --> 00:00:34,320
+just point it to your postgres database
+
+
+20
+00:00:34,320 --> 00:00:36,079
+and it will use the existing tables and
+
+
+21
+00:00:36,079 --> 00:00:38,399
+views to generate an api that's ready to
+
+
+22
+00:00:38,399 --> 00:00:40,079
+roll in your frontend app if you don't
+
+
+23
+00:00:40,079 --> 00:00:41,760
+already have a database you can connect
+
+
+24
+00:00:41,760 --> 00:00:43,200
+one from anywhere in the cloud
+
+
+25
+00:00:43,200 --> 00:00:44,879
+then add tables and rows to it and
+
+
+26
+00:00:44,879 --> 00:00:46,640
+manage all of your data directly from
+
+
+27
+00:00:46,640 --> 00:00:47,440
+the web ui
+
+
+28
+00:00:47,440 --> 00:00:48,879
+and it can even help you configure
+
+
+29
+00:00:48,879 --> 00:00:50,480
+relationships between tables
+
+
+30
+00:00:50,480 --> 00:00:52,320
+in addition to databases you can also
+
+
+31
+00:00:52,320 --> 00:00:54,640
+connect third-party apis to your schema
+
+
+32
+00:00:54,640 --> 00:00:56,640
+to create a single source of truth for
+
+
+33
+00:00:56,640 --> 00:00:58,719
+all your data in some cases you may want
+
+
+34
+00:00:58,719 --> 00:01:00,320
+to extend the schema with your own
+
+
+35
+00:01:00,320 --> 00:01:02,160
+custom queries or mutations
+
+
+36
+00:01:02,160 --> 00:01:03,760
+actions provide a way to implement
+
+
+37
+00:01:03,760 --> 00:01:05,680
+custom business logic in an external
+
+
+38
+00:01:05,680 --> 00:01:07,360
+server or serverless function
+
+
+39
+00:01:07,360 --> 00:01:09,360
+to read and write data in more complex
+
+
+40
+00:01:09,360 --> 00:01:10,400
+ways in addition
+
+
+41
+00:01:10,400 --> 00:01:12,400
+you may want to trigger server-side code
+
+
+42
+00:01:12,400 --> 00:01:14,159
+when something changes in the database
+
+
+43
+00:01:14,159 --> 00:01:15,360
+like you may want to send a
+
+
+44
+00:01:15,360 --> 00:01:17,439
+transactional email when a new row is
+
+
+45
+00:01:17,439 --> 00:01:19,600
+added to a certain table hassura events
+
+
+46
+00:01:19,600 --> 00:01:21,439
+can be triggered based on operations to
+
+
+47
+00:01:21,439 --> 00:01:22,240
+a certain table
+
+
+48
+00:01:22,240 --> 00:01:23,840
+or scheduled with a cron job in the
+
+
+49
+00:01:23,840 --> 00:01:25,840
+background but one thing hysura doesn't
+
+
+50
+00:01:25,840 --> 00:01:26,320
+handle
+
+
+51
+00:01:26,320 --> 00:01:28,240
+is user authentication although you can
+
+
+52
+00:01:28,240 --> 00:01:29,520
+easily connect your favorite
+
+
+53
+00:01:29,520 --> 00:01:31,360
+authentication service and provide a
+
+
+54
+00:01:31,360 --> 00:01:32,880
+role session variable when the user
+
+
+55
+00:01:32,880 --> 00:01:33,759
+makes requests
+
+
+56
+00:01:33,759 --> 00:01:35,360
+which can then be used to implement
+
+
+57
+00:01:35,360 --> 00:01:37,200
+role-based access control with the click
+
+
+58
+00:01:37,200 --> 00:01:37,920
+of a button
+
+
+59
+00:01:37,920 --> 00:01:39,840
+now because the api is created with an
+
+
+60
+00:01:39,840 --> 00:01:41,680
+industry standard like graphql
+
+
+61
+00:01:41,680 --> 00:01:43,439
+you can use any graphql client that
+
+
+62
+00:01:43,439 --> 00:01:45,200
+you'd like to access the data on the
+
+
+63
+00:01:45,200 --> 00:01:46,720
+front end you might use something like
+
+
+64
+00:01:46,720 --> 00:01:47,360
+apollo
+
+
+65
+00:01:47,360 --> 00:01:49,759
+to query mutate and set up real-time
+
+
+66
+00:01:49,759 --> 00:01:51,360
+subscriptions to your database
+
+
+67
+00:01:51,360 --> 00:01:53,200
+in other words hasura is kind of like a
+
+
+68
+00:01:53,200 --> 00:01:54,880
+middleman that doesn't care what you use
+
+
+69
+00:01:54,880 --> 00:01:56,560
+on the front end or where you host your
+
+
+70
+00:01:56,560 --> 00:01:57,520
+actual database
+
+
+71
+00:01:57,520 --> 00:01:59,360
+and best of all it's an open source
+
+
+72
+00:01:59,360 --> 00:02:01,119
+project that can be self-hosted
+
+
+73
+00:02:01,119 --> 00:02:03,119
+or paid for as a fully managed service
+
+
+74
+00:02:03,119 --> 00:02:04,159
+with a free tier
+
+
+75
+00:02:04,159 --> 00:02:06,479
+this has been hasura in 100 seconds if
+
+
+76
+00:02:06,479 --> 00:02:07,840
+you want to see more short videos like
+
+
+77
+00:02:07,840 --> 00:02:08,160
+this
+
+
+78
+00:02:08,160 --> 00:02:09,759
+make sure to hit the like button and let
+
+
+79
+00:02:09,759 --> 00:02:11,120
+me know if you want to see a full
+
+
+80
+00:02:11,120 --> 00:02:13,120
+tutorial on this topic in the comments
+
+
+81
+00:02:13,120 --> 00:02:14,959
+thanks for watching and i will see you
+
+
+82
+00:02:14,959 --> 00:02:17,760
+in the next one
+
+

@@ -1,0 +1,405 @@
+1
+00:00:00,240 --> 00:00:02,399
+towri a toolkit for building native
+
+
+2
+00:00:02,399 --> 00:00:04,000
+desktop apps with rented web
+
+
+3
+00:00:04,000 --> 00:00:06,319
+technologies and a lightweight rust back
+
+
+4
+00:00:06,319 --> 00:00:08,080
+end it allows you to use your favorite
+
+
+5
+00:00:08,080 --> 00:00:10,320
+javascript framework to design a ui then
+
+
+6
+00:00:10,320 --> 00:00:12,880
+package it for mac os windows and linux
+
+
+7
+00:00:12,880 --> 00:00:14,639
+from a single code base since the dawn
+
+
+8
+00:00:14,639 --> 00:00:16,480
+of time javascript developers have been
+
+
+9
+00:00:16,480 --> 00:00:18,320
+searching for the perfect way to build
+
+
+10
+00:00:18,320 --> 00:00:20,400
+cross-platform apps for the last decade
+
+
+11
+00:00:20,400 --> 00:00:21,840
+electron has been the leader in this
+
+
+12
+00:00:21,840 --> 00:00:23,439
+space which provides a back-end in
+
+
+13
+00:00:23,439 --> 00:00:24,960
+node.js and a front-end with the
+
+
+14
+00:00:24,960 --> 00:00:26,960
+chromium browser the main criticism of
+
+
+15
+00:00:26,960 --> 00:00:28,480
+this approach is that it results in a
+
+
+16
+00:00:28,480 --> 00:00:30,560
+very large executable file that consumes
+
+
+17
+00:00:30,560 --> 00:00:32,480
+a lot of memory on the machine towri
+
+
+18
+00:00:32,480 --> 00:00:34,320
+takes a different approach by replacing
+
+
+19
+00:00:34,320 --> 00:00:36,480
+node.js with rust and chromium with
+
+
+20
+00:00:36,480 --> 00:00:38,800
+libraries like tau and rye to provide a
+
+
+21
+00:00:38,800 --> 00:00:40,800
+lightweight webview the end result is a
+
+
+22
+00:00:40,800 --> 00:00:42,719
+smaller bundle size and more efficient
+
+
+23
+00:00:42,719 --> 00:00:44,320
+memory consumption it also takes
+
+
+24
+00:00:44,320 --> 00:00:46,399
+security very seriously and provides an
+
+
+25
+00:00:46,399 --> 00:00:48,399
+isolation pattern to prevent untrusted
+
+
+26
+00:00:48,399 --> 00:00:50,320
+scripts from accessing the backend from
+
+
+27
+00:00:50,320 --> 00:00:52,480
+a webview the towery api provides a
+
+
+28
+00:00:52,480 --> 00:00:54,239
+secure way to access native
+
+
+29
+00:00:54,239 --> 00:00:57,199
+functionality like the file system http
+
+
+30
+00:00:57,199 --> 00:00:59,359
+and system notifications it's secure by
+
+
+31
+00:00:59,359 --> 00:01:01,120
+default and the only way for the front
+
+
+32
+00:01:01,120 --> 00:01:02,879
+end to call back and code is when the
+
+
+33
+00:01:02,879 --> 00:01:04,960
+developer explicitly allows it to get
+
+
+34
+00:01:04,960 --> 00:01:07,680
+started install rust nodejs then create
+
+
+35
+00:01:07,680 --> 00:01:09,439
+a new towry app choose your favorite
+
+
+36
+00:01:09,439 --> 00:01:11,119
+javascript framework to build the front
+
+
+37
+00:01:11,119 --> 00:01:13,280
+end it looks identical to a web project
+
+
+38
+00:01:13,280 --> 00:01:15,439
+except for the source towry directory
+
+
+39
+00:01:15,439 --> 00:01:17,280
+this is the back end for your native
+
+
+40
+00:01:17,280 --> 00:01:19,119
+desktop app inside of which you'll find
+
+
+41
+00:01:19,119 --> 00:01:20,720
+icons that will be displayed when the
+
+
+42
+00:01:20,720 --> 00:01:22,240
+app is installed the icons are
+
+
+43
+00:01:22,240 --> 00:01:24,159
+referenced in the tower config file
+
+
+44
+00:01:24,159 --> 00:01:25,520
+which also contains important
+
+
+45
+00:01:25,520 --> 00:01:27,840
+information like the bundle identifier
+
+
+46
+00:01:27,840 --> 00:01:30,000
+as well as build settings for mac os
+
+
+47
+00:01:30,000 --> 00:01:31,840
+windows and linux now the entry point
+
+
+48
+00:01:31,840 --> 00:01:34,479
+for your back end is in the main.rs file
+
+
+49
+00:01:34,479 --> 00:01:35,920
+from here we can customize the
+
+
+50
+00:01:35,920 --> 00:01:37,680
+experience on the native operating
+
+
+51
+00:01:37,680 --> 00:01:39,680
+system by importing the menu types we
+
+
+52
+00:01:39,680 --> 00:01:41,759
+can create a custom native menu that
+
+
+53
+00:01:41,759 --> 00:01:44,159
+will work seamlessly on all platforms in
+
+
+54
+00:01:44,159 --> 00:01:46,159
+addition we can define code and rust
+
+
+55
+00:01:46,159 --> 00:01:47,520
+that can then be invoked from the
+
+
+56
+00:01:47,520 --> 00:01:49,439
+javascript front end and it has its own
+
+
+57
+00:01:49,439 --> 00:01:51,680
+custom event system that allows complex
+
+
+58
+00:01:51,680 --> 00:01:53,439
+message passing from the front end to
+
+
+59
+00:01:53,439 --> 00:01:55,360
+the back end and vice versa now in the
+
+
+60
+00:01:55,360 --> 00:01:57,600
+front end code a variety of native apis
+
+
+61
+00:01:57,600 --> 00:01:59,520
+can be accessed with javascript for
+
+
+62
+00:01:59,520 --> 00:02:01,600
+example we might import right file from
+
+
+63
+00:02:01,600 --> 00:02:03,520
+the file system then simply bind that
+
+
+64
+00:02:03,520 --> 00:02:05,600
+function to the click event on a button
+
+
+65
+00:02:05,600 --> 00:02:07,360
+and now the app has the ability to
+
+
+66
+00:02:07,360 --> 00:02:09,440
+create a file on the user's hard drive
+
+
+67
+00:02:09,440 --> 00:02:11,200
+after that we may want to show a native
+
+
+68
+00:02:11,200 --> 00:02:13,120
+dialog which we can accomplish with a
+
+
+69
+00:02:13,120 --> 00:02:14,720
+single line of code from the towering
+
+
+70
+00:02:14,720 --> 00:02:17,520
+api and access to any api method can be
+
+
+71
+00:02:17,520 --> 00:02:19,200
+controlled from the allow list in the
+
+
+72
+00:02:19,200 --> 00:02:21,520
+tow reconfig file now to compile and
+
+
+73
+00:02:21,520 --> 00:02:23,200
+build the app run the tow rebuild
+
+
+74
+00:02:23,200 --> 00:02:24,959
+command this will create an executable
+
+
+75
+00:02:24,959 --> 00:02:27,120
+and the target directory congratulations
+
+
+76
+00:02:27,120 --> 00:02:28,879
+you just built a high performance native
+
+
+77
+00:02:28,879 --> 00:02:31,200
+desktop app that can run on any platform
+
+
+78
+00:02:31,200 --> 00:02:33,519
+this has been towri in 100 seconds if
+
+
+79
+00:02:33,519 --> 00:02:34,959
+you want to see a full tutorial let me
+
+
+80
+00:02:34,959 --> 00:02:36,800
+know in the comments thanks for watching
+
+
+81
+00:02:36,800 --> 00:02:41,239
+and i will see you in the next one
+
+

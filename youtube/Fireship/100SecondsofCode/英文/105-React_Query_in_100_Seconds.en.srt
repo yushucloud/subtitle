@@ -1,0 +1,410 @@
+1
+00:00:00,480 --> 00:00:02,960
+react query a react library that
+
+
+2
+00:00:02,960 --> 00:00:05,200
+simplifies the way we fetch cache and
+
+
+3
+00:00:05,200 --> 00:00:07,279
+synchronize data from a server react
+
+
+4
+00:00:07,279 --> 00:00:09,040
+itself has no opinions about how you
+
+
+5
+00:00:09,040 --> 00:00:10,960
+fetch data from the front end the most
+
+
+6
+00:00:10,960 --> 00:00:12,960
+basic approach is to use the browser
+
+
+7
+00:00:12,960 --> 00:00:15,120
+fetch api when a component first mounts
+
+
+8
+00:00:15,120 --> 00:00:16,880
+and use effect then manage the response
+
+
+9
+00:00:16,880 --> 00:00:18,880
+with use state that works but becomes
+
+
+10
+00:00:18,880 --> 00:00:20,720
+increasingly difficult when requirements
+
+
+11
+00:00:20,720 --> 00:00:23,119
+like caching retries and deduping come
+
+
+12
+00:00:23,119 --> 00:00:24,800
+into play react query not only
+
+
+13
+00:00:24,800 --> 00:00:26,800
+simplifies your data fetching code but
+
+
+14
+00:00:26,800 --> 00:00:28,880
+also handles these complex requirements
+
+
+15
+00:00:28,880 --> 00:00:30,640
+out of the box for example you might
+
+
+16
+00:00:30,640 --> 00:00:32,480
+want to refetch data when the user
+
+
+17
+00:00:32,480 --> 00:00:34,079
+leaves and then comes back to the same
+
+
+18
+00:00:34,079 --> 00:00:35,920
+window fetch on windowfocus handles that
+
+
+19
+00:00:35,920 --> 00:00:37,360
+for you if you're building an infinite
+
+
+20
+00:00:37,360 --> 00:00:39,360
+scroll feature the use infinite query
+
+
+21
+00:00:39,360 --> 00:00:41,200
+hook will make your life much easier or
+
+
+22
+00:00:41,200 --> 00:00:42,879
+if you're writing data to the server you
+
+
+23
+00:00:42,879 --> 00:00:44,480
+can make changes appear instantly in the
+
+
+24
+00:00:44,480 --> 00:00:46,719
+ui with optimistic updates and you can
+
+
+25
+00:00:46,719 --> 00:00:48,640
+debug all your data fetching logic with
+
+
+26
+00:00:48,640 --> 00:00:50,239
+its integrated dev tools they've thought
+
+
+27
+00:00:50,239 --> 00:00:51,760
+of pretty much everything and it's so
+
+
+28
+00:00:51,760 --> 00:00:53,199
+good at what it does that it might even
+
+
+29
+00:00:53,199 --> 00:00:55,039
+eliminate your need for a global state
+
+
+30
+00:00:55,039 --> 00:00:56,879
+management solution to get started
+
+
+31
+00:00:56,879 --> 00:00:58,879
+install it with npm then instantiate the
+
+
+32
+00:00:58,879 --> 00:01:00,879
+query client and provide it somewhere in
+
+
+33
+00:01:00,879 --> 00:01:02,640
+your component tree now every child
+
+
+34
+00:01:02,640 --> 00:01:04,400
+component will be able to fetch data
+
+
+35
+00:01:04,400 --> 00:01:06,240
+like a pro also add the react query
+
+
+36
+00:01:06,240 --> 00:01:08,240
+devtools here to debug and development
+
+
+37
+00:01:08,240 --> 00:01:09,920
+now define a function anywhere you'd
+
+
+38
+00:01:09,920 --> 00:01:11,760
+like to fetch data from your server and
+
+
+39
+00:01:11,760 --> 00:01:13,439
+the component that consumes that data
+
+
+40
+00:01:13,439 --> 00:01:15,360
+add the use query hook it takes a key
+
+
+41
+00:01:15,360 --> 00:01:17,119
+that allows react query to manage this
+
+
+42
+00:01:17,119 --> 00:01:18,799
+data efficiently then the data fetching
+
+
+43
+00:01:18,799 --> 00:01:20,560
+function as the second argument it will
+
+
+44
+00:01:20,560 --> 00:01:22,479
+make the request then return the data
+
+
+45
+00:01:22,479 --> 00:01:24,479
+and also the status of the request if
+
+
+46
+00:01:24,479 --> 00:01:26,240
+it's loading we show a loading screen if
+
+
+47
+00:01:26,240 --> 00:01:28,240
+the request fails it will actually retry
+
+
+48
+00:01:28,240 --> 00:01:30,079
+the request three times and if it still
+
+
+49
+00:01:30,079 --> 00:01:31,680
+fails at that point the status will
+
+
+50
+00:01:31,680 --> 00:01:33,759
+change to error now if it was a success
+
+
+51
+00:01:33,759 --> 00:01:35,759
+we can render out the data in the ui and
+
+
+52
+00:01:35,759 --> 00:01:37,680
+that's a lot of functionality with not a
+
+
+53
+00:01:37,680 --> 00:01:39,200
+lot of code but you might be wondering
+
+
+54
+00:01:39,200 --> 00:01:40,799
+what this key is all about well now
+
+
+55
+00:01:40,799 --> 00:01:42,560
+let's imagine that we want to update
+
+
+56
+00:01:42,560 --> 00:01:44,399
+this data on the server to handle that
+
+
+57
+00:01:44,399 --> 00:01:46,240
+we can bring in the use mutation hook
+
+
+58
+00:01:46,240 --> 00:01:47,920
+when data is written to the server we
+
+
+59
+00:01:47,920 --> 00:01:49,840
+can hook into it with the on success
+
+
+60
+00:01:49,840 --> 00:01:51,840
+function and automatically invalidate
+
+
+61
+00:01:51,840 --> 00:01:53,600
+the query we already made based on its
+
+
+62
+00:01:53,600 --> 00:01:55,920
+key this tells react query to invalidate
+
+
+63
+00:01:55,920 --> 00:01:57,920
+and refetch the original request and we
+
+
+64
+00:01:57,920 --> 00:01:59,439
+can even tap into the state of this
+
+
+65
+00:01:59,439 --> 00:02:01,439
+process by referencing is fetching from
+
+
+66
+00:02:01,439 --> 00:02:03,280
+use query to keep tabs on the loading
+
+
+67
+00:02:03,280 --> 00:02:04,799
+state now if you want to run multiple
+
+
+68
+00:02:04,799 --> 00:02:06,079
+queries in the same component you can
+
+
+69
+00:02:06,079 --> 00:02:07,759
+easily do that and it will automatically
+
+
+70
+00:02:07,759 --> 00:02:09,599
+run them in parallel to ensure optimal
+
+
+71
+00:02:09,599 --> 00:02:11,520
+performance but sometimes one query
+
+
+72
+00:02:11,520 --> 00:02:13,280
+might depend on data from another like
+
+
+73
+00:02:13,280 --> 00:02:15,440
+all the cars owned by a user that's also
+
+
+74
+00:02:15,440 --> 00:02:17,520
+made easy with the enabled option like i
+
+
+75
+00:02:17,520 --> 00:02:18,879
+said before they've thought of
+
+
+76
+00:02:18,879 --> 00:02:20,800
+everything this has been react query in
+
+
+77
+00:02:20,800 --> 00:02:22,400
+100 seconds if you want to see more
+
+
+78
+00:02:22,400 --> 00:02:24,160
+content like this enroll in my full
+
+
+79
+00:02:24,160 --> 00:02:26,239
+react course on fireship io that breaks
+
+
+80
+00:02:26,239 --> 00:02:28,080
+down a ton of react concepts in 100
+
+
+81
+00:02:28,080 --> 00:02:30,000
+seconds or less thanks for watching and
+
+
+82
+00:02:30,000 --> 00:02:34,000
+i will see you in the next one
+
+

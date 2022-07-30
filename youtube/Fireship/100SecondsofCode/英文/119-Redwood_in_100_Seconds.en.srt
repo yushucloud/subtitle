@@ -1,0 +1,390 @@
+1
+00:00:00,000 --> 00:00:02,700
+Redwood JS an opinionated full stack
+
+
+2
+00:00:02,700 --> 00:00:04,620
+JavaScript framework for building big
+
+
+3
+00:00:04,620 --> 00:00:06,839
+ambitious startups as we all know the
+
+
+4
+00:00:06,839 --> 00:00:08,519
+JavaScript ecosystem is incredibly
+
+
+5
+00:00:08,519 --> 00:00:10,380
+complex with millions of different tools
+
+
+6
+00:00:10,380 --> 00:00:12,120
+to choose from when architecting an app
+
+
+7
+00:00:12,120 --> 00:00:13,799
+Redwood takes a collection of the most
+
+
+8
+00:00:13,799 --> 00:00:15,900
+battle tested Technologies like react
+
+
+9
+00:00:15,900 --> 00:00:18,600
+Prisma graphql storybook and jest then
+
+
+10
+00:00:18,600 --> 00:00:20,460
+weaves them together so developers can
+
+
+11
+00:00:20,460 --> 00:00:22,439
+get things done quickly and reliably it
+
+
+12
+00:00:22,439 --> 00:00:24,000
+was developed by a team of software
+
+
+13
+00:00:24,000 --> 00:00:25,500
+Engineers that includes the co-founder
+
+
+14
+00:00:25,500 --> 00:00:28,380
+of GitHub and hit version 1.0 in 2022 it
+
+
+15
+00:00:28,380 --> 00:00:29,880
+has its own custom router for
+
+
+16
+00:00:29,880 --> 00:00:31,800
+server-side rendering but unlike many
+
+
+17
+00:00:31,800 --> 00:00:33,540
+other Frameworks it doesn't use the file
+
+
+18
+00:00:33,540 --> 00:00:35,700
+system and instead puts all routes in a
+
+
+19
+00:00:35,700 --> 00:00:37,140
+single file with automatic code
+
+
+20
+00:00:37,140 --> 00:00:39,239
+splitting for each page most importantly
+
+
+21
+00:00:39,239 --> 00:00:41,100
+though it provides abstractions to
+
+
+22
+00:00:41,100 --> 00:00:43,440
+connect your front-end UI to a back-end
+
+
+23
+00:00:43,440 --> 00:00:46,260
+relational database via a graphql API
+
+
+24
+00:00:46,260 --> 00:00:48,539
+its rails inspired CLI can quickly
+
+
+25
+00:00:48,539 --> 00:00:50,280
+generate the code required to build
+
+
+26
+00:00:50,280 --> 00:00:52,379
+complex features and not just build them
+
+
+27
+00:00:52,379 --> 00:00:54,360
+but also test them with jest and
+
+
+28
+00:00:54,360 --> 00:00:56,399
+storybook it ships with Apollo client by
+
+
+29
+00:00:56,399 --> 00:00:58,260
+default making it easy for the front end
+
+
+30
+00:00:58,260 --> 00:01:00,960
+to consume data from the graphql API and
+
+
+31
+00:01:00,960 --> 00:01:02,280
+when it comes time for deployment the
+
+
+32
+00:01:02,280 --> 00:01:03,899
+code can easily run on a standalone
+
+
+33
+00:01:03,899 --> 00:01:05,519
+server or your favorite serverless
+
+
+34
+00:01:05,519 --> 00:01:07,619
+infrastructure to get started generate a
+
+
+35
+00:01:07,619 --> 00:01:09,600
+new Redwood project with yarn the front
+
+
+36
+00:01:09,600 --> 00:01:11,460
+end code is managed in the web directory
+
+
+37
+00:01:11,460 --> 00:01:13,260
+it's a react app that's wrapped with the
+
+
+38
+00:01:13,260 --> 00:01:15,119
+Redwood provider with routes as the main
+
+
+39
+00:01:15,119 --> 00:01:16,860
+entry point for the UI the routes
+
+
+40
+00:01:16,860 --> 00:01:18,600
+component is a collection of URL
+
+
+41
+00:01:18,600 --> 00:01:20,159
+patterns that point to a specific
+
+
+42
+00:01:20,159 --> 00:01:22,320
+component which is defined in the Pages
+
+
+43
+00:01:22,320 --> 00:01:24,479
+directory all pages are automatically
+
+
+44
+00:01:24,479 --> 00:01:26,220
+imported here keeping your code nice and
+
+
+45
+00:01:26,220 --> 00:01:28,200
+concise in addition all pages are
+
+
+46
+00:01:28,200 --> 00:01:29,759
+automatically lazy loaded with code
+
+
+47
+00:01:29,759 --> 00:01:31,740
+splitting making your load times as fast
+
+
+48
+00:01:31,740 --> 00:01:33,720
+as possible it also contains a layout
+
+
+49
+00:01:33,720 --> 00:01:35,759
+system to share UI across different
+
+
+50
+00:01:35,759 --> 00:01:38,100
+routes now the back end is organized in
+
+
+51
+00:01:38,100 --> 00:01:40,380
+the API directory which uses Prisma to
+
+
+52
+00:01:40,380 --> 00:01:42,240
+manage the database schema but also
+
+
+53
+00:01:42,240 --> 00:01:44,159
+provides the tools required to build a
+
+
+54
+00:01:44,159 --> 00:01:46,619
+full-fledged graphql API to access your
+
+
+55
+00:01:46,619 --> 00:01:48,600
+data the back end can also Define its
+
+
+56
+00:01:48,600 --> 00:01:50,340
+own custom serverless functions or
+
+
+57
+00:01:50,340 --> 00:01:52,079
+directives which operate like middleware
+
+
+58
+00:01:52,079 --> 00:01:53,820
+to handle concerns like user
+
+
+59
+00:01:53,820 --> 00:01:55,320
+authentication what's really cool though
+
+
+60
+00:01:55,320 --> 00:01:57,000
+is Redwood provides an abstraction
+
+
+61
+00:01:57,000 --> 00:01:59,579
+called a cell to simplify complex data
+
+
+62
+00:01:59,579 --> 00:02:01,680
+fetching a cell is just a component that
+
+
+63
+00:02:01,680 --> 00:02:03,780
+manages a graphql query allowing you to
+
+
+64
+00:02:03,780 --> 00:02:05,280
+clearly Define different states like
+
+
+65
+00:02:05,280 --> 00:02:07,619
+loading error and success like angular
+
+
+66
+00:02:07,619 --> 00:02:09,360
+or rails Redwood provides strong
+
+
+67
+00:02:09,360 --> 00:02:11,760
+conventions and a CLI to generate the
+
+
+68
+00:02:11,760 --> 00:02:13,560
+boilerplate code for you use it to
+
+
+69
+00:02:13,560 --> 00:02:15,840
+quickly create a component page or cell
+
+
+70
+00:02:15,840 --> 00:02:17,520
+along with the code for jest and
+
+
+71
+00:02:17,520 --> 00:02:19,440
+storybook for testing and finally use
+
+
+72
+00:02:19,440 --> 00:02:21,239
+the CLI to deploy the app to your
+
+
+73
+00:02:21,239 --> 00:02:23,099
+favorite serverless Cloud platform this
+
+
+74
+00:02:23,099 --> 00:02:25,680
+has been Redwood JS in 100 seconds hit
+
+
+75
+00:02:25,680 --> 00:02:27,180
+the like button and subscribe if you
+
+
+76
+00:02:27,180 --> 00:02:28,620
+want to see more short videos like this
+
+
+77
+00:02:28,620 --> 00:02:30,660
+thanks for watching and I will see you
+
+
+78
+00:02:30,660 --> 00:02:33,379
+in the next one
+
+

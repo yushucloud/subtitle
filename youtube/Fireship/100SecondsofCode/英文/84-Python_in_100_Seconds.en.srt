@@ -1,0 +1,365 @@
+1
+00:00:00,160 --> 00:00:02,320
+python a high-level interpreted
+
+
+2
+00:00:02,320 --> 00:00:04,240
+programming language famous for its
+
+
+3
+00:00:04,240 --> 00:00:06,319
+zen-like code it's arguably the most
+
+
+4
+00:00:06,319 --> 00:00:08,080
+popular language in the world because
+
+
+5
+00:00:08,080 --> 00:00:10,320
+it's easy to learn yet practical for
+
+
+6
+00:00:10,320 --> 00:00:12,480
+serious projects in fact you're watching
+
+
+7
+00:00:12,480 --> 00:00:14,480
+this youtube video in a python web
+
+
+8
+00:00:14,480 --> 00:00:16,160
+application right now it was created by
+
+
+9
+00:00:16,160 --> 00:00:18,880
+guido van rossum and released in 1991
+
+
+10
+00:00:18,880 --> 00:00:21,119
+who named it after monty python's flying
+
+
+11
+00:00:21,119 --> 00:00:22,800
+circus which is why you'll sometimes
+
+
+12
+00:00:22,800 --> 00:00:24,800
+find spam and eggs instead of foo and
+
+
+13
+00:00:24,800 --> 00:00:27,039
+bar in code samples it's commonly used
+
+
+14
+00:00:27,039 --> 00:00:28,960
+to build server-side applications like
+
+
+15
+00:00:28,960 --> 00:00:30,800
+web apps with the django framework and
+
+
+16
+00:00:30,800 --> 00:00:32,719
+is the language of choice for big data
+
+
+17
+00:00:32,719 --> 00:00:34,719
+analysis and machine learning many
+
+
+18
+00:00:34,719 --> 00:00:36,559
+students choose python to start learning
+
+
+19
+00:00:36,559 --> 00:00:38,160
+to code because of its emphasis on
+
+
+20
+00:00:38,160 --> 00:00:40,559
+readability as outlined by the zen of
+
+
+21
+00:00:40,559 --> 00:00:42,640
+python beautiful is better than ugly
+
+
+22
+00:00:42,640 --> 00:00:44,879
+while explicit is better than implicit
+
+
+23
+00:00:44,879 --> 00:00:46,640
+python is very simple but avoids the
+
+
+24
+00:00:46,640 --> 00:00:48,640
+temptation to sprinkle in magic that
+
+
+25
+00:00:48,640 --> 00:00:50,879
+causes ambiguity its code is often
+
+
+26
+00:00:50,879 --> 00:00:52,480
+organized into notebooks where
+
+
+27
+00:00:52,480 --> 00:00:54,559
+individual cells can be executed then
+
+
+28
+00:00:54,559 --> 00:00:56,399
+documented in the same place we're
+
+
+29
+00:00:56,399 --> 00:00:58,160
+currently at version 3 of the language
+
+
+30
+00:00:58,160 --> 00:00:59,840
+and you can get started by creating a
+
+
+31
+00:00:59,840 --> 00:01:03,440
+file that ends in py or ipymb to create
+
+
+32
+00:01:03,440 --> 00:01:04,879
+an interactive notebook create a
+
+
+33
+00:01:04,879 --> 00:01:07,200
+variable by setting a name equal to a
+
+
+34
+00:01:07,200 --> 00:01:09,040
+value it's strongly typed which means
+
+
+35
+00:01:09,040 --> 00:01:11,040
+values won't change in unexpected ways
+
+
+36
+00:01:11,040 --> 00:01:13,200
+but dynamic so type annotations are not
+
+
+37
+00:01:13,200 --> 00:01:15,439
+required the syntax is highly efficient
+
+
+38
+00:01:15,439 --> 00:01:16,720
+allowing you to declare multiple
+
+
+39
+00:01:16,720 --> 00:01:18,720
+variables on a single line and define
+
+
+40
+00:01:18,720 --> 00:01:20,960
+tuples lists and dictionaries with a
+
+
+41
+00:01:20,960 --> 00:01:22,799
+literal syntax semicolons are not
+
+
+42
+00:01:22,799 --> 00:01:24,400
+required and if you use them and
+
+
+43
+00:01:24,400 --> 00:01:26,479
+experience pythonista will say that your
+
+
+44
+00:01:26,479 --> 00:01:28,159
+code is not pythonic instead of
+
+
+45
+00:01:28,159 --> 00:01:31,040
+semicolons python uses indentation to
+
+
+46
+00:01:31,040 --> 00:01:32,799
+terminate or determine the scope of a
+
+
+47
+00:01:32,799 --> 00:01:34,640
+line of code define a function with the
+
+
+48
+00:01:34,640 --> 00:01:36,720
+def keyword then indent the next line
+
+
+49
+00:01:36,720 --> 00:01:38,720
+usually by four spaces to define the
+
+
+50
+00:01:38,720 --> 00:01:40,479
+function body we might then add a for
+
+
+51
+00:01:40,479 --> 00:01:42,240
+loop to it and indent that by another
+
+
+52
+00:01:42,240 --> 00:01:44,399
+four spaces this eliminates the need for
+
+
+53
+00:01:44,399 --> 00:01:46,560
+curly braces and semicolons found in
+
+
+54
+00:01:46,560 --> 00:01:48,320
+many other languages python is a
+
+
+55
+00:01:48,320 --> 00:01:50,079
+multi-paradigm language we can apply
+
+
+56
+00:01:50,079 --> 00:01:51,600
+functional programming patterns with
+
+
+57
+00:01:51,600 --> 00:01:53,280
+things like anonymous functions using
+
+
+58
+00:01:53,280 --> 00:01:55,280
+lambda it also uses objects as an
+
+
+59
+00:01:55,280 --> 00:01:57,280
+abstraction for data allowing you to
+
+
+60
+00:01:57,280 --> 00:01:59,200
+implement object-oriented patterns with
+
+
+61
+00:01:59,200 --> 00:02:01,280
+things like classes and inheritance it
+
+
+62
+00:02:01,280 --> 00:02:03,680
+also has a huge ecosystem of third-party
+
+
+63
+00:02:03,680 --> 00:02:05,439
+libraries such as deep learning
+
+
+64
+00:02:05,439 --> 00:02:07,360
+frameworks like tensorflow and wrappers
+
+
+65
+00:02:07,360 --> 00:02:08,959
+for many high performance low level
+
+
+66
+00:02:08,959 --> 00:02:11,200
+packages like open computer vision which
+
+
+67
+00:02:11,200 --> 00:02:13,200
+are most often installed with the pip
+
+
+68
+00:02:13,200 --> 00:02:15,200
+package manager this has been the python
+
+
+69
+00:02:15,200 --> 00:02:17,280
+programming language in 100 seconds hit
+
+
+70
+00:02:17,280 --> 00:02:18,480
+the like button if you want to see more
+
+
+71
+00:02:18,480 --> 00:02:20,000
+short videos like this thanks for
+
+
+72
+00:02:20,000 --> 00:02:22,080
+watching and i will see you in the next
+
+
+73
+00:02:22,080 --> 00:02:25,080
+one
+
+

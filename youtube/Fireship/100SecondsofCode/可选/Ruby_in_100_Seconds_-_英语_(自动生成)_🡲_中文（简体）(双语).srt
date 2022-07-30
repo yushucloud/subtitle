@@ -1,0 +1,204 @@
+1
+00:00:00,000 --> 00:00:02,639
+[Music] ruby a dynamic interpreted scripting
+[音乐]ruby 一种动态解释脚本语言
+
+2
+00:00:02,639 --> 00:00:06,319
+language made famous for taking simplicity and code readability to the
+，以将简单性和代码可读性发挥到极致
+
+3
+00:00:06,319 --> 00:00:11,679
+extreme it was first conceived by yukihiro matsumoto aka mats in 1993 as
+而闻名，它最初由 yukihro matsumoto aka mats 在 1993 年构想为一种
+
+4
+00:00:11,679 --> 00:00:15,519
+an easy-to-use scripting language like python but with genuine object-oriented
+易于使用的脚本语言，如 pytho，但具有真正的面向对象功能
+
+5
+00:00:15,519 --> 00:00:19,920
+features like smalltalk it exploded in popularity after david hanemeyer hansen
+，如 small在 david hanemeyer hansen
+
+6
+00:00:19,920 --> 00:00:25,519
+aka dhh created rails in 2005 a model view controller framework at the time it
+aka dhh 在 2005 年创建了一个模型视图控制器框架 Rails 之后迅速流行起来，当时它
+
+7
+00:00:25,519 --> 00:00:29,039
+was a game changer for startups because it reduced the complexity required to
+是初创公司的游戏规则改变者，因为它降低了
+
+8
+00:00:29,039 --> 00:00:32,399
+build a full stack web application and has been used to build unicorns like
+构建全栈 Web 应用程序所需的复杂性，并已被用于构建独角兽 像
+
+9
+00:00:32,399 --> 00:00:36,800
+twitter shopify github and airbnb just to name a few ruby is often called a
+twitter shopify github 和 airbnb仅举几例 ruby 通常被称为程序
+
+10
+00:00:36,800 --> 00:00:40,399
+programmer's best friend thanks to its minimal syntax that relies on plain
+员最好的朋友，这要归功于它的最小语法，依赖于简单的英语
+
+11
+00:00:40,399 --> 00:00:44,320
+english words and the use of blocks to write concise functional code at the
+单词和使用块来编写简洁的功能代码，同时
+
+12
+00:00:44,320 --> 00:00:48,320
+same time it's a true object-oriented language where everything is an object
+它是一个真正的面向对象一切都是对象
+
+13
+00:00:48,320 --> 00:00:52,559
+and every object can be modified giving developers the flexibility to extend or
+并且每个对象都可以修改的语言，使开发人员可以灵活地扩展或
+
+14
+00:00:52,559 --> 00:00:56,399
+modify the behavior of the underlying language the developer ecosystem is
+修改 底层语言的行为 开发者生态系统
+
+15
+00:00:56,399 --> 00:01:00,000
+large and mature code is shared between developers with the rubygems package
+庞大且成熟的代码在开发者之间通过 rubygems 包管理
+
+16
+00:01:00,000 --> 00:01:03,600
+manager where a program is organized into a self-contained format called a
+器共享，其中程序被组织成一种称为 gem 的自包含格式开始
+
+17
+00:01:03,600 --> 00:01:08,400
+gem to get started install ruby then create a file ending in rb to declare a
+安装 ruby 然后创建一个以 rb 结尾的文件来声明 一
+
+18
+00:01:08,400 --> 00:01:12,080
+local variable give it a name followed by a value there's no variable keyword
+局部变量给它一个名称后跟一个值没有变量关键字，
+
+19
+00:01:12,080 --> 00:01:16,159
+but you can define constants in all caps or global variables with a dollar sign
+但是您可以在所有大写字母或带美元符号的全局变量中定义常量
+
+20
+00:01:16,159 --> 00:01:19,759
+every value is an instance of an object which means we can call methods directly
+每个值都是一个对象的实例，这意味着我们可以
+
+21
+00:01:19,759 --> 00:01:23,759
+on a string like so and parentheses are usually optional ruby is dynamically
+像这样直接在字符串上调用方法 和括号通常是可选的 ruby 是动态类型
+
+22
+00:01:23,759 --> 00:01:27,119
+typed which means there's no type annotations however modern tools like
+的，这意味着没有类型注释，但是像 rbs 这样的现代工具可以
+
+23
+00:01:27,119 --> 00:01:30,799
+rbs can add a type system on top of it kind of like how typescript does for
+在它上面添加一个类型系统，就像 typescript 现在为 javascript 所做的那样，使用
+
+24
+00:01:30,799 --> 00:01:34,880
+javascript now to print a value to the standard output use the puts method we
+puts 方法将值打印到标准输出 我们
+
+25
+00:01:34,880 --> 00:01:38,560
+can define our own custom methods using the def keyword which end with the end
+可以使用以 end 关键字结尾的 def 关键字定义自己的自定义方法，
+
+26
+00:01:38,560 --> 00:01:42,640
+keyword every method will always return exactly one object no return keyword is
+每个方法将始终只返回一个对象 否 return 关键字是
+
+27
+00:01:42,640 --> 00:01:46,240
+necessary or if you don't want a named method you might create a block with a
+必需的，或者如果您不想要命名方法，您可以使用 do 关键字创建一个块，
+
+28
+00:01:46,240 --> 00:01:50,240
+do keyword which works like an anonymous function blocks can also take arguments
+其工作方式类似于匿名函数块也可以采用
+
+29
+00:01:50,240 --> 00:01:53,759
+found in between the pipe characters now use the class keyword to create
+在管道字符之间找到的参数现在使用 class 关键字
+
+30
+00:01:53,759 --> 00:01:57,360
+blueprints for your own custom objects an interesting point is that ruby
+为您创建蓝图 自己的自定义对象一个有趣的点是 ruby
+
+31
+00:01:57,360 --> 00:02:00,640
+supports duct typing which means that if it walks like a duck and quacks like a
+管道类型，这意味着如果它像鸭子一样走路并像鸭子一样嘎嘎叫，那么
+
+32
+00:02:00,640 --> 00:02:03,759
+duck then it's a duck in other words it won't throw type errors based on the
+它就是鸭子，换句话说，它不会基于类本身抛出类型错误，而是
+
+33
+00:02:03,759 --> 00:02:06,880
+class itself but rather the methods that are implemented on it define the
+基于方法在其上实现定义
+
+34
+00:02:06,880 --> 00:02:10,720
+initialize method to run code when a new object is constructed any variable that
+初始化方法以在构造新对象时运行代码任何
+
+35
+00:02:10,720 --> 00:02:14,239
+starts with at belongs to an object instance while any variable with a
+以 at 开头的变量都属于对象实例，而任何带有
+
+36
+00:02:14,239 --> 00:02:18,239
+double at is static and belongs to the class itself you can easily add getters
+double at 的变量都是静态的并且属于类本身，您可以轻松添加 getter
+
+37
+00:02:18,239 --> 00:02:21,599
+and setters to a class using the attribute accessor method and now we can
+和 setter 使用属性访问器方法到一个类，现在我们可以
+
+38
+00:02:21,599 --> 00:02:25,360
+create a new object instance by calling the new method on the class now run your
+通过调用类上的新方法来创建一个新的对象实例现在
+
+39
+00:02:25,360 --> 00:02:28,800
+code with the ruby interpreter from the terminal this has been ruby in 100
+使用 ruby 解释器来运行你的代码 在终端上，这已经在 100
+
+40
+00:02:28,800 --> 00:02:31,680
+seconds hit the like button and subscribe if you want to see more short
+秒内变成了 ruby，如果您想观看更多这样的短视频，请点击“赞”按钮并订阅，谢谢
+
+41
+00:02:31,680 --> 00:02:37,720
+videos like this thanks for watching and i will see you in the next one
+观看，我们下期再见

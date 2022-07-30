@@ -1,0 +1,204 @@
+1
+00:00:00,480 --> 00:00:05,200
+react query a react library that simplifies the way we fetch cache and
+react query 一个简化了我们从服务器获取缓存和
+
+2
+00:00:05,200 --> 00:00:09,040
+synchronize data from a server react itself has no opinions about how you
+同步数据的方式的 react 库 react本身对如何
+
+3
+00:00:09,040 --> 00:00:12,960
+fetch data from the front end the most basic approach is to use the browser
+从前端获取数据没有意见最基本的方法是
+
+4
+00:00:12,960 --> 00:00:16,880
+fetch api when a component first mounts and use effect then manage the response
+在组件首次挂载和使用时使用浏览器获取 api效果然后
+
+5
+00:00:16,880 --> 00:00:20,720
+with use state that works but becomes increasingly difficult when requirements
+使用有效的使用状态管理响应，但是当
+
+6
+00:00:20,720 --> 00:00:24,800
+like caching retries and deduping come into play react query not only
+缓存重试和重复数据删除等要求发挥作用时变得越来越困难反应查询不仅
+
+7
+00:00:24,800 --> 00:00:28,880
+simplifies your data fetching code but also handles these complex requirements
+简化了您的数据获取代码，而且还可以处理这些
+
+8
+00:00:28,880 --> 00:00:32,480
+out of the box for example you might want to refetch data when the user
+开箱即用的复杂要求，例如您可能想要重新获取 当用户
+
+9
+00:00:32,480 --> 00:00:35,920
+leaves and then comes back to the same window fetch on windowfocus handles that
+离开然后返回到同一个窗口时，在 windowfocus 上获取数据，
+
+10
+00:00:35,920 --> 00:00:39,360
+for you if you're building an infinite scroll feature the use infinite query
+如果您正在构建无限滚动功能，则使用无限查询
+
+11
+00:00:39,360 --> 00:00:42,879
+hook will make your life much easier or if you're writing data to the server you
+挂钩将为您处理这些问题，或者如果您正在将数据写入服务器，则使用无限查询挂钩将使您的生活更加轻松 您
+
+12
+00:00:42,879 --> 00:00:46,719
+can make changes appear instantly in the ui with optimistic updates and you can
+可以通过乐观更新使更改立即出现在ui 中，您可以
+
+13
+00:00:46,719 --> 00:00:50,239
+debug all your data fetching logic with its integrated dev tools they've thought
+使用其集成的 d 调试所有数据获取逻辑ev 工具，他们已经想到
+
+14
+00:00:50,239 --> 00:00:53,199
+of pretty much everything and it's so good at what it does that it might even
+了几乎所有东西，它的功能非常出色，甚至可以
+
+15
+00:00:53,199 --> 00:00:56,879
+eliminate your need for a global state management solution to get started
+消除您对全局状态管理解决方案的需求，开始
+
+16
+00:00:56,879 --> 00:01:00,879
+install it with npm then instantiate the query client and provide it somewhere in
+使用 npm 安装它，然后实例化查询客户端并在组件中的某个位置提供它
+
+17
+00:01:00,879 --> 00:01:04,400
+your component tree now every child component will be able to fetch data
+树现在每个子组件都将能够
+
+18
+00:01:04,400 --> 00:01:08,240
+like a pro also add the react query devtools here to debug and development
+像专业人士一样获取数据还在此处添加反应查询devtools 以进行调试和开发
+
+19
+00:01:08,240 --> 00:01:11,760
+now define a function anywhere you'd like to fetch data from your server and
+现在在您想从服务器获取数据的任何地方定义一个函数
+
+20
+00:01:11,760 --> 00:01:15,360
+the component that consumes that data add the use query hook it takes a key
+，以及使用该数据的组件添加使用 查询钩子它需要一个
+
+21
+00:01:15,360 --> 00:01:18,799
+that allows react query to manage this data efficiently then the data fetching
+允许反应查询有效管理此数据的键，然后数据获取
+
+22
+00:01:18,799 --> 00:01:22,479
+function as the second argument it will make the request then return the data
+函数作为第二个参数，它将发出请求，然后返回数据
+
+23
+00:01:22,479 --> 00:01:26,240
+and also the status of the request if it's loading we show a loading screen if
+以及请求的状态，如果它正在加载，我们将显示一个加载屏幕，
+
+24
+00:01:26,240 --> 00:01:30,079
+the request fails it will actually retry the request three times and if it still
+如果 请求失败，它实际上会重试请求 3 次，如果此时仍然
+
+25
+00:01:30,079 --> 00:01:33,759
+fails at that point the status will change to error now if it was a success
+失败，则状态将变为错误，如果成功，
+
+26
+00:01:33,759 --> 00:01:37,680
+we can render out the data in the ui and that's a lot of functionality with not a
+我们可以渲染 用户界面中的数据，这是很多功能，没有
+
+27
+00:01:37,680 --> 00:01:40,799
+lot of code but you might be wondering what this key is all about well now
+很多代码，但你可能想知道这个键是什么现在
+
+28
+00:01:40,799 --> 00:01:44,399
+let's imagine that we want to update this data on the server to handle that
+让我们想象我们想要更新服务器上的这个数据来处理
+
+29
+00:01:44,399 --> 00:01:47,920
+we can bring in the use mutation hook when data is written to the server we
+我们可以引入使用当数据写入服务器时，我们
+
+30
+00:01:47,920 --> 00:01:51,840
+can hook into it with the on success function and automatically invalidate
+可以使用 on success 函数挂钩它，并
+
+31
+00:01:51,840 --> 00:01:55,920
+the query we already made based on its key this tells react query to invalidate
+根据其键自动使我们已经进行的查询无效，这告诉反应查询无效
+
+32
+00:01:55,920 --> 00:01:59,439
+and refetch the original request and we can even tap into the state of this
+并重新获取原始请求，我们甚至可以进入状态 这个
+
+33
+00:01:59,439 --> 00:02:03,280
+process by referencing is fetching from use query to keep tabs on the loading
+过程的引用是从使用查询中获取以保持对加载
+
+34
+00:02:03,280 --> 00:02:06,079
+state now if you want to run multiple queries in the same component you can
+状态的关注如果您想在同一个组件中运行多个查询，您可以
+
+35
+00:02:06,079 --> 00:02:09,599
+easily do that and it will automatically run them in parallel to ensure optimal
+轻松地做到这一点，它会自动并行运行它们以确保最佳
+
+36
+00:02:09,599 --> 00:02:13,280
+performance but sometimes one query might depend on data from another like
+性能，但有时一个查询可能取决于来自另一个用户的数据，比如
+
+37
+00:02:13,280 --> 00:02:17,520
+all the cars owned by a user that's also made easy with the enabled option like i
+用户拥有的所有汽车，就像我
+
+38
+00:02:17,520 --> 00:02:20,800
+said before they've thought of everything this has been react query in
+在他们想到这一切之前所说的那样，启用选项也很容易。
+
+39
+00:02:20,800 --> 00:02:24,160
+100 seconds if you want to see more content like this enroll in my full
+如果你想在 100 秒内看到更多这样的内容，请参加我
+
+40
+00:02:24,160 --> 00:02:28,080
+react course on fireship io that breaks down a ton of react concepts in 100
+关于 fireship io 的完整反应课程，该课程会在 100 秒或更短的时间内分解大量反应概念，
+
+41
+00:02:28,080 --> 00:02:34,000
+seconds or less thanks for watching and i will see you in the next one
+谢谢观看，我会在下一个

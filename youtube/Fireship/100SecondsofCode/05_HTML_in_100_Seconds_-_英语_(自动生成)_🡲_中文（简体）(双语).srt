@@ -1,0 +1,179 @@
+1
+00:00:00,080 --> 00:00:05,600
+hypertext markup language or html is a language that defines the structure of
+超文本标记语言或 html 是一种定义网页内容结构的语言，
+
+2
+00:00:05,600 --> 00:00:11,200
+content on a webpage development started in 1989 at cern by tim berners-lee who
+由 tim berners-lee 于 1989 年在欧洲核子研究中心开始开发，
+
+3
+00:00:11,200 --> 00:00:16,400
+had just invented the world's first web browser world wide web the origin of www
+他刚刚发明了世界上第一个网络浏览器万维网 www 的起源，
+
+4
+00:00:16,400 --> 00:00:20,320
+but he needed a publishing language to display content within it so he chose a
+但他需要一种发布语言 为了在其中显示内容，因此他选择了一种
+
+5
+00:00:20,320 --> 00:00:24,720
+syntax based on the standard generalized markup language which uses opening and
+基于标准通用标记语言的语法，该语言使用开始和
+
+6
+00:00:24,720 --> 00:00:29,119
+closing tags to provide meaning to otherwise unorganized text like h4
+结束标记为其他无组织的文本提供意义，例如 h4
+
+7
+00:00:29,119 --> 00:00:33,760
+heading p for paragraph and most importantly a for anchor to link to a
+标题 p 用于段落，最重要的是 a 用于链接到
+
+8
+00:00:33,760 --> 00:00:36,640
+different web page the language underwent many changes during the
+不同网页的锚点 语言
+
+9
+00:00:36,640 --> 00:00:41,120
+initial rise of the internet and was standardized as html5 in 2008 the
+在互联网最初兴起期间经历了许多变化，并在 2008 年被标准化为 html5
+
+10
+00:00:41,120 --> 00:00:45,680
+version we know and love today modern html contains tags to handle a variety
+我们今天所知道和喜爱的版本现代html 包含处理
+
+11
+00:00:45,680 --> 00:00:50,399
+of different media types like video audio and canvas to draw custom graphics
+各种不同媒体类型的标签，如视频音频和画布以动态绘制自定义
+
+12
+00:00:50,399 --> 00:00:54,960
+on the fly the typical html element starts with an opening and closing tag
+图形 典型的 html 元素以中间的开始和结束标记开始，
+
+13
+00:00:54,960 --> 00:00:58,879
+in the middle we have content which might be text or additional html
+我们的内容可能是文本或附加 html
+
+14
+00:00:58,879 --> 00:01:03,199
+elements called children the opening tag may also have one or more attributes
+称为子元素的元素 开始标签也可能有一个或多个属性
+
+15
+00:01:03,199 --> 00:01:06,880
+which are key value pairs that can customize the appearance or behavior of
+，这些属性是键值对，可以自定义元素的外观或
+
+16
+00:01:06,880 --> 00:01:12,000
+the element to build your first web page create a file named index.html this file
+行为以构建您的第一个网页创建一个名为 index.html 的文件 此文件
+
+17
+00:01:12,000 --> 00:01:16,560
+contains a hierarchy of nodes based on the document object model or dom a
+包含基于节点的层次结构文档对象模型或 dom
+
+18
+00:01:16,560 --> 00:01:22,000
+webpage starts with an html tag and has exactly two children a head and a body
+网页以 html 标记开始，并且正好有两个子项：头部和
+
+19
+00:01:22,000 --> 00:01:25,840
+the head contains things that aren't directly shown in the webpage like a
+主体头部包含网页中未直接显示的内容，例如
+
+20
+00:01:25,840 --> 00:01:30,320
+title or a meta tag to give the page a description but notice how the meta
+标题或元标记，用于为页面提供描述，但 注意 meta
+
+21
+00:01:30,320 --> 00:01:34,560
+element has no closing tag closing tags are generally optional when an element
+元素是如何没有结束标签的当元素完全独立时，结束标签通常是可选
+
+22
+00:01:34,560 --> 00:01:38,880
+is fully self-contained the body contains the actual ui for the end user
+的 正文包含最终用户的实际 ui
+
+23
+00:01:38,880 --> 00:01:42,640
+we might start with an h1 heading followed by a paragraph of content to
+我们可能以 h1 标题开头，然后是一段内容来
+
+24
+00:01:42,640 --> 00:01:46,720
+add an image we use an image tag which you'll notice is self-closing then
+添加图像 使用一个你会发现它是自动关闭的图像标签，然后
+
+25
+00:01:46,720 --> 00:01:50,320
+define the source attribute as the file path to the image and you'll want to
+将源属性定义为图像的文件路径，你需要
+
+26
+00:01:50,320 --> 00:01:54,000
+give it an old description to make it accessible to robots and screen readers
+给它一个旧的描述，以便机器人可以访问它， 屏幕
+
+27
+00:01:54,000 --> 00:01:57,360
+what makes web pages revolutionary though is their ability to link to other
+阅读器使网页具有革命性的原因在于它们能够链接到
+
+28
+00:01:57,360 --> 00:02:01,280
+web pages on the information super highway use an anchor tag to create a
+信息高速公路上的其他网页使用锚标记创建
+
+29
+00:02:01,280 --> 00:02:05,439
+link then define the href attributes as the webpage that you want to navigate to
+链接，然后将 href 属性定义为
+
+30
+00:02:05,439 --> 00:02:09,920
+when clicked html also provides structural tags like division or div
+单击时要导航到的网页 html 还提供结构 像 Division 或 div
+
+31
+00:02:09,920 --> 00:02:13,360
+which are often used to group elements together where they can be styled to
+这样的标签通常用于将元素组合在一起，当您对代码感到满意时，它们可以被设置为
+
+32
+00:02:13,360 --> 00:02:17,200
+represent complex ui elements like navbars when you're happy with your code
+表示复杂的 ui 元素（如导航栏）
+
+33
+00:02:17,200 --> 00:02:21,440
+grab the full file path to the html file and paste it into any web browser
+获取 html 文件的完整文件路径并将其粘贴到任何 Web 浏览器中
+
+34
+00:02:21,440 --> 00:02:25,360
+congratulations you just built your first website this has been hypertext
+恭喜 你刚刚建立了你的第一个网站 这是超文本
+
+35
+00:02:25,360 --> 00:02:29,120
+markup language in 100 seconds hit the subscribe button so you don't miss the
+标记语言在 100 秒内点击订阅按钮所以你不会错过
+
+36
+00:02:29,120 --> 00:02:35,200
+upcoming sequels thanks for watching and i will see you in the next one
+即将到来的续集 感谢观看，我会在下一个

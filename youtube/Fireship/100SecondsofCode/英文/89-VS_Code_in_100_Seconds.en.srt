@@ -1,0 +1,410 @@
+1
+00:00:00,080 --> 00:00:02,560
+visual studio code a free and open
+
+
+2
+00:00:02,560 --> 00:00:05,040
+source program for editing code software
+
+
+3
+00:00:05,040 --> 00:00:06,799
+is just a collection of text files
+
+
+4
+00:00:06,799 --> 00:00:09,040
+organized in a precise way the s code
+
+
+5
+00:00:09,040 --> 00:00:10,480
+provides an integrated development
+
+
+6
+00:00:10,480 --> 00:00:12,960
+environment to help you edit analyze and
+
+
+7
+00:00:12,960 --> 00:00:14,719
+manage these files efficiently it's a
+
+
+8
+00:00:14,719 --> 00:00:16,720
+microsoft project that first appeared in
+
+
+9
+00:00:16,720 --> 00:00:19,119
+2015 as a lightweight cross-platform
+
+
+10
+00:00:19,119 --> 00:00:20,960
+code editor that ships a new update
+
+
+11
+00:00:20,960 --> 00:00:22,400
+every single month today it's the
+
+
+12
+00:00:22,400 --> 00:00:24,160
+world's most popular code editor
+
+
+13
+00:00:24,160 --> 00:00:26,320
+download it then use it to open a folder
+
+
+14
+00:00:26,320 --> 00:00:28,400
+that contains your application files
+
+
+15
+00:00:28,400 --> 00:00:30,000
+before you can write high quality code
+
+
+16
+00:00:30,000 --> 00:00:31,599
+you'll need to make the editor look cool
+
+
+17
+00:00:31,599 --> 00:00:33,760
+by clicking the settings icon to update
+
+
+18
+00:00:33,760 --> 00:00:36,399
+your syntax and icon themes next you'll
+
+
+19
+00:00:36,399 --> 00:00:38,160
+notice the file explorer contains all
+
+
+20
+00:00:38,160 --> 00:00:40,320
+the files in this directory open a file
+
+
+21
+00:00:40,320 --> 00:00:41,840
+and notice how the text inside is
+
+
+22
+00:00:41,840 --> 00:00:44,000
+colored that's because vs code analyzes
+
+
+23
+00:00:44,000 --> 00:00:46,079
+the symbols inside the file to perform
+
+
+24
+00:00:46,079 --> 00:00:47,360
+syntax highlighting it will
+
+
+25
+00:00:47,360 --> 00:00:49,200
+automatically detect problems in your
+
+
+26
+00:00:49,200 --> 00:00:51,280
+code if a variable is not used it
+
+
+27
+00:00:51,280 --> 00:00:53,039
+becomes a little more opaque a red
+
+
+28
+00:00:53,039 --> 00:00:54,960
+squiggly line appears if your code will
+
+
+29
+00:00:54,960 --> 00:00:56,879
+not compile hover over it for more
+
+
+30
+00:00:56,879 --> 00:00:58,879
+details it also creates an outline of
+
+
+31
+00:00:58,879 --> 00:01:00,879
+the code structure to quickly navigate
+
+
+32
+00:01:00,879 --> 00:01:02,239
+to the line of code that you're looking
+
+
+33
+00:01:02,239 --> 00:01:04,159
+for now as you start writing some code
+
+
+34
+00:01:04,159 --> 00:01:05,840
+in this file you'll notice a little box
+
+
+35
+00:01:05,840 --> 00:01:07,520
+pops up as you type professional
+
+
+36
+00:01:07,520 --> 00:01:09,680
+developers rarely type every character
+
+
+37
+00:01:09,680 --> 00:01:11,439
+instead they leverage vs code's
+
+
+38
+00:01:11,439 --> 00:01:13,280
+intellisense to autocomplete the code
+
+
+39
+00:01:13,280 --> 00:01:14,640
+that they were thinking about writing
+
+
+40
+00:01:14,640 --> 00:01:16,320
+when the right suggestion comes up hit
+
+
+41
+00:01:16,320 --> 00:01:18,159
+tab or enter to complete it you might
+
+
+42
+00:01:18,159 --> 00:01:19,920
+also right click on your code to find a
+
+
+43
+00:01:19,920 --> 00:01:21,920
+variety of options to analyze and
+
+
+44
+00:01:21,920 --> 00:01:23,840
+refactor it but almost anything you can
+
+
+45
+00:01:23,840 --> 00:01:25,520
+do with the mouse you can do faster with
+
+
+46
+00:01:25,520 --> 00:01:27,680
+the keyboard hit ctrl shift papa to
+
+
+47
+00:01:27,680 --> 00:01:29,200
+bring up the command palette from here
+
+
+48
+00:01:29,200 --> 00:01:31,119
+you can quickly access any vs code
+
+
+49
+00:01:31,119 --> 00:01:33,040
+command or any file in your project
+
+
+50
+00:01:33,040 --> 00:01:34,640
+let's use it to open up a terminal
+
+
+51
+00:01:34,640 --> 00:01:36,400
+session which brings up the command line
+
+
+52
+00:01:36,400 --> 00:01:38,079
+here at the bottom we can use it to run
+
+
+53
+00:01:38,079 --> 00:01:40,159
+commands in this project like git init
+
+
+54
+00:01:40,159 --> 00:01:42,320
+to enable source control or better yet
+
+
+55
+00:01:42,320 --> 00:01:44,159
+we can click on the source control icon
+
+
+56
+00:01:44,159 --> 00:01:45,840
+to run git commands with a visual
+
+
+57
+00:01:45,840 --> 00:01:48,479
+interface vs code is minimal by design
+
+
+58
+00:01:48,479 --> 00:01:50,640
+but as an open source javascript project
+
+
+59
+00:01:50,640 --> 00:01:52,079
+it's easily extendable from the
+
+
+60
+00:01:52,079 --> 00:01:53,759
+extensions panel you'll find a huge
+
+
+61
+00:01:53,759 --> 00:01:55,280
+number of packages that provide
+
+
+62
+00:01:55,280 --> 00:01:56,719
+specialized tooling for whatever
+
+
+63
+00:01:56,719 --> 00:01:58,079
+framework or language you're working
+
+
+64
+00:01:58,079 --> 00:01:59,840
+with most software projects work with
+
+
+65
+00:01:59,840 --> 00:02:01,600
+the cloud in some capacity the remote
+
+
+66
+00:02:01,600 --> 00:02:03,360
+button can connect your editor to a
+
+
+67
+00:02:03,360 --> 00:02:05,280
+remote github repository docker
+
+
+68
+00:02:05,280 --> 00:02:07,200
+container or cloud server and you can
+
+
+69
+00:02:07,200 --> 00:02:09,280
+even run vs code itself in the cloud to
+
+
+70
+00:02:09,280 --> 00:02:11,039
+access it from the browser on any
+
+
+71
+00:02:11,039 --> 00:02:13,280
+machine this has been vs code in 100
+
+
+72
+00:02:13,280 --> 00:02:14,720
+seconds hit the like button and
+
+
+73
+00:02:14,720 --> 00:02:16,160
+subscribe if you want to see more short
+
+
+74
+00:02:16,160 --> 00:02:17,680
+videos like this and if you really want
+
+
+75
+00:02:17,680 --> 00:02:19,280
+to maximize your productivity as a
+
+
+76
+00:02:19,280 --> 00:02:21,520
+developer i just released a brand new vs
+
+
+77
+00:02:21,520 --> 00:02:23,520
+code magic trix course that contains a
+
+
+78
+00:02:23,520 --> 00:02:25,599
+ton of productivity hacks for beginners
+
+
+79
+00:02:25,599 --> 00:02:27,360
+and advanced developers alike the first
+
+
+80
+00:02:27,360 --> 00:02:29,280
+10 videos are free so check it out on
+
+
+81
+00:02:29,280 --> 00:02:31,440
+fire ship io thanks for watching and i
+
+
+82
+00:02:31,440 --> 00:02:35,120
+will see you in the next one
+
+

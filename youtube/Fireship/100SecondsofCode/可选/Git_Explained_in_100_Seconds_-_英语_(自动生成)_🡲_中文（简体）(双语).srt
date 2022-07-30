@@ -1,0 +1,164 @@
+1
+00:00:00,000 --> 00:00:03,870
+get a system for keeping track of changes that happen across a set of
+获取一个用于跟踪一组文件中发生的更改的
+
+2
+00:00:03,870 --> 00:00:07,710
+files open a directory on your local system with an editor like vs code then
+系统 使用 vs code 之类的编辑器打开本地系统上的目录，然后
+
+3
+00:00:07,710 --> 00:00:12,210
+run get an it from the command line you just created a git repository or repo it
+运行从命令行获取它，您刚刚创建了一个 git 存储库或 repo 它
+
+4
+00:00:12,210 --> 00:00:15,420
+lives in this hidden get directory and keeps track of all the changes that
+位于这个隐藏的位置 获取目录并跟踪
+
+5
+00:00:15,420 --> 00:00:19,289
+happen to these files as you work on a codebase you take snapshots or commits
+在代码库上工作时这些文件发生的所有更改您拍摄快照或提交
+
+6
+00:00:19,289 --> 00:00:22,769
+of the current state of these files every commit has a unique ID and is
+这些文件的当前状态每个提交都有一个唯一的 ID 并
+
+7
+00:00:22,769 --> 00:00:26,160
+linked to its parent and this means we can travel back in time to a previous
+链接到其父级，这意味着我们可以旅行 及时回到
+
+8
+00:00:26,160 --> 00:00:29,849
+version of our files notice how our source control icon is lit up currently
+我们文件的先前版本，注意我们的源代码控制图标是如何点亮的，目前
+
+9
+00:00:29,849 --> 00:00:33,809
+all of our files are untracked because we need to add them to the repo run get
+我们所有的文件都没有被跟踪，因为我们需要将它们添加到 repo 运行 get
+
+10
+00:00:33,809 --> 00:00:37,770
+add to include or stage these files in the repo then create a snapshot of their
+add 以在 repo 中包含或暂存这些文件，然后创建一个
+
+11
+00:00:37,770 --> 00:00:41,219
+current state by running git commit along with a message about what you did
+通过运行 git commit 获取它们当前状态的快照以及关于你对这些文件做了什么的消息
+
+12
+00:00:41,219 --> 00:00:44,430
+to these files congratulations you just created the first commit on the
+恭喜你刚刚
+
+13
+00:00:44,430 --> 00:00:48,149
+head of the master branch in this repo the changed files disappeared and you're
+在这个 repo 的 master 分支的头部创建了第一个提交更改的文件 disap  peared 并且您
+
+14
+00:00:48,149 --> 00:00:51,539
+now on a clean working directory the head represents the most recent commit
+现在在一个干净的工作目录中，
+
+15
+00:00:51,539 --> 00:00:55,530
+if we make some changes commit them to the repo the head moves forward but we
+如果我们进行一些更改，则 head 代表最近
+
+16
+00:00:55,530 --> 00:00:58,590
+still have a reference to our previous commits so we can always go back to it
+的提交
+
+17
+00:00:58,590 --> 00:01:01,649
+but the thing about software is that it's developed in a nonlinear fashion
+但是关于软件的问题是它是以非线性方式开发的，
+
+18
+00:01:01,649 --> 00:01:05,549
+you might have multiple teams working on different features for the same codebase
+你可能有多个团队同时为同一个代码库开发不同的功能，
+
+19
+00:01:05,549 --> 00:01:10,110
+simultaneously it makes that possible by branching create one by running git
+它可以通过分支创建一个通过运行 git
+
+20
+00:01:10,110 --> 00:01:13,920
+branch and then rank it check out to move into that branch you can now safely
+branch 然后对其进行排名检查以进入该分支 您现在可以安全
+
+21
+00:01:13,920 --> 00:01:17,640
+work on your feature in this branch without affecting the code or files in
+地在此分支中处理您的功能，而不会影响主分支中的代码或文件
+
+22
+00:01:17,640 --> 00:01:20,880
+the master branch the commits you make here live in an alternate universe with
+您在此处所做的提交存在于具有自己独特历史记录的备用宇宙中，
+
+23
+00:01:20,880 --> 00:01:24,119
+its own unique history at some point though you'll likely want to merge this
+尽管您可能希望将此
+
+24
+00:01:24,119 --> 00:01:27,540
+history with the history and the master branch when you're ready go back to the
+历史记录与 当你准备好时，历史记录和
+
+25
+00:01:27,540 --> 00:01:30,600
+master branch by running git checkout then run git merge on your
+主分支通过运行 git checkout 返回主分支，然后在你的备用宇宙上运行 git merge 在
+
+26
+00:01:30,600 --> 00:01:33,270
+alternate-universe the tip of your feature branch now
+你的 f 的尖端 eature 分支现在
+
+27
+00:01:33,270 --> 00:01:36,630
+becomes the head of the master branch where in other words our fragmented
+成为 master 分支的负责人，换句话说，我们支离破碎的
+
+28
+00:01:36,630 --> 00:01:40,979
+universe has become one unless he ran into a merge conflict in which case
+宇宙已经成为一个，除非他遇到合并冲突，在这种情况下，
+
+29
+00:01:40,979 --> 00:01:44,670
+you'll just have to wait for the sequel this has been get explained in 100
+你只需要等待续集，如果你在 100 秒内得到解释
+
+30
+00:01:44,670 --> 00:01:47,729
+seconds if you want to see more short videos like this make sure to hit the
+想看更多这样的短视频，记得
+
+31
+00:01:47,729 --> 00:01:50,939
+like button subscribe and let me know what you think in the comments thanks
+按赞订阅，在评论里告诉我你的想法，
+
+32
+00:01:50,939 --> 00:01:54,920
+for watching and I will see you in the next one
+谢谢收看，下期
+
+33
+00:01:55,020 --> 00:01:57,079
+you
+再见

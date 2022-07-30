@@ -1,0 +1,203 @@
+1
+00:00:00,240 --> 00:00:03,760
+software it's not like engineering something easy like a bridge where you
+软件 它不像工程那样简单，就像一座桥梁，你
+
+2
+00:00:03,760 --> 00:00:06,720
+start with a blueprint build it to spec then forget about it
+从一个蓝图开始构建它以规范然后忘记它
+
+3
+00:00:06,720 --> 00:00:10,719
+software is dynamic with a lot of moving parts and requirements that evolve over
+软件是动态的，有很多移动的部分和随着
+
+4
+00:00:10,719 --> 00:00:12,880
+time developers build apps on top of a
+时间的推移而发展的需求开发人员在大量抽象和抽象之上构建应用程序
+
+5
+00:00:12,880 --> 00:00:16,880
+mountain of abstractions and nobody fully understands how every layer works
+没有人完全了解每一层是如何工作的
+
+6
+00:00:16,880 --> 00:00:19,920
+that's okay because we just need to make sure that our code matches the
+，这没关系，因为我们只需要确保我们的代码
+
+7
+00:00:19,920 --> 00:00:23,600
+requirements of the product test driven development is scientifically proven to
+符合产品测试驱动开发的要求，经过科学证明可以
+
+8
+00:00:23,600 --> 00:00:26,960
+reduce defects and improve the maintainability of a code base but it
+减少缺陷并提高代码库的可维护性，但这
+
+9
+00:00:26,960 --> 00:00:30,960
+does require some additional effort one option is manual testing where a
+确实需要一些额外的努力 选项是手动测试，其中一个
+
+10
+00:00:30,960 --> 00:00:34,399
+human being clicks on every button and fills out every form then assigns a
+人单击每个按钮并填写每个表格，然后分配
+
+11
+00:00:34,399 --> 00:00:37,440
+bunch of jira tickets so they can be backlogged by the developers
+一堆 jira 票证，以便开发人员可以积压它们，
+
+12
+00:00:37,440 --> 00:00:41,040
+but that's not very efficient for a large scale product a better approach is
+但这对于大规模产品来说效率不高，更好的方法
+
+13
+00:00:41,040 --> 00:00:44,559
+to use automated testing tools that allow developers to write code for the
+是使用自动化测试允许开发人员编写代码的
+
+14
+00:00:44,559 --> 00:00:48,239
+sole purpose of testing the main application code in a code base you'll
+唯一目的是测试主应用程序代码的工具 代码库 你
+
+15
+00:00:48,239 --> 00:00:52,320
+often find files that end in test or dot spec inside you'll first
+经常会在里面找到以test 或 dot spec 结尾的文件 你会首先
+
+16
+00:00:52,320 --> 00:00:56,079
+find a line of code that describes the feature or thing that's being tested
+找到一行代码，描述正在测试的功能或事物，
+
+17
+00:00:56,079 --> 00:01:00,160
+that's known as a test suite and it contains one or more individual tests
+称为测试套件，它包含一个或多个单独的测试
+
+18
+00:01:00,160 --> 00:01:03,920
+an individual test usually starts with it followed by a description
+测试通常从它开始，然后
+
+19
+00:01:03,920 --> 00:01:07,840
+of what is being tested the idea is to describe the behavior of the code in
+是对正在测试的内容的描述，这个想法是在测试中以人类可读的术语描述代码的行为，
+
+20
+00:01:07,840 --> 00:01:10,720
+human readable terms inside the test the code will be
+代码将被
+
+21
+00:01:10,720 --> 00:01:14,720
+executed then one or more expectations or assertions are used to
+执行，然后使用一个或多个期望或断言来
+
+22
+00:01:14,720 --> 00:01:18,080
+check that the code produces the expected result if the expectation
+检查代码如果期望返回 false 则产生预期结果 如果为
+
+23
+00:01:18,080 --> 00:01:22,560
+returns false then the test fails if it's true it passes test runners like
+true 则测试失败它通过测试运行器，如
+
+24
+00:01:22,560 --> 00:01:25,280
+jest or karma can run all your tests automatically in
+jest 或 karma可以在部署之前
+
+25
+00:01:25,280 --> 00:01:28,880
+the background or on a continuous integration server before you deploy
+在后台或持续集成服务器上自动运行所有测试
+
+26
+00:01:28,880 --> 00:01:32,000
+now there are many different automated testing strategies that you should be
+现在有许多不同的自动化测试策略 您应该
+
+27
+00:01:32,000 --> 00:01:34,479
+aware of at the most granular level we have unit
+在最细粒度的级别上知道，我们有单元
+
+28
+00:01:34,479 --> 00:01:37,759
+testing which is designed to test individual functions or methods
+测试，旨在测试单个功能或方法，
+
+29
+00:01:37,759 --> 00:01:41,119
+like does this function return the proper value when given the arguments of
+就像这样做当给定 a 和 b 的参数时，函数返回正确的值
+
+30
+00:01:41,119 --> 00:01:43,439
+a and b then we have integration testing
+然后我们进行集成测试
+
+31
+00:01:43,439 --> 00:01:46,880
+to determine how well different components or modules work together like
+以确定不同的组件或模块如何协同工作，
+
+32
+00:01:46,880 --> 00:01:49,520
+is the component able to use the database service to get
+例如组件是否能够使用数据库服务
+
+33
+00:01:49,520 --> 00:01:53,040
+data from the server at the highest level we have end-to-end testing which
+从我们拥有的最高级别的服务器获取数据端到端测试，
+
+34
+00:01:53,040 --> 00:01:55,439
+usually happens in a mock browser or device
+通常发生在模拟浏览器或设备中，
+
+35
+00:01:55,439 --> 00:01:59,200
+and simulates actual user behaviors like clicking on buttons and filling out
+并模拟实际用户行为，例如单击按钮和填写
+
+36
+00:01:59,200 --> 00:02:01,520
+forms it's like having a robot to do all your
+表格，就像让机器人为您完成所有
+
+37
+00:02:01,520 --> 00:02:04,479
+manual testing for you and that's not all there are many other
+手动测试一样，这还不是全部，还有许多其他
+
+38
+00:02:04,479 --> 00:02:07,600
+types like performance and smoke testing which i'll explain
+类型 喜欢性能和冒烟测试，我将
+
+39
+00:02:07,600 --> 00:02:10,800
+in my upcoming test driven development breakdown hit the like button if you
+在我即将发布的测试驱动开发分解中解释，如果您
+
+40
+00:02:10,800 --> 00:02:14,319
+want to see more short videos like this thanks for watching and i will see you
+想观看更多这样的短视频，请点击“喜欢”按钮，谢谢观看，我会在下一个视频中见到你
+
+41
+00:02:14,319 --> 00:02:17,440
+in the next one

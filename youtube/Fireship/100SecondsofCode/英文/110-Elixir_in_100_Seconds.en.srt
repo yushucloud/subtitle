@@ -1,0 +1,405 @@
+1
+00:00:00,000 --> 00:00:02,399
+Elixir a dynamic general purpose
+
+
+2
+00:00:02,399 --> 00:00:04,080
+programming language designed to build
+
+
+3
+00:00:04,080 --> 00:00:06,420
+scalable concurrent applications with a
+
+
+4
+00:00:06,420 --> 00:00:08,160
+beautiful functional syntax it was
+
+
+5
+00:00:08,160 --> 00:00:10,440
+created by Jose velim and first released
+
+
+6
+00:00:10,440 --> 00:00:12,660
+in 2012 and today it consistently ranks
+
+
+7
+00:00:12,660 --> 00:00:14,040
+among the most loved programming
+
+
+8
+00:00:14,040 --> 00:00:16,199
+languages it runs on top of the erlang
+
+
+9
+00:00:16,199 --> 00:00:18,180
+beam virtual machine which itself is
+
+
+10
+00:00:18,180 --> 00:00:20,160
+developed in the 1980s to scale the
+
+
+11
+00:00:20,160 --> 00:00:21,960
+massive demands of phone switching which
+
+
+12
+00:00:21,960 --> 00:00:24,119
+it did with extreme reliability and bolt
+
+
+13
+00:00:24,119 --> 00:00:26,039
+tolerance Elixir was created to make
+
+
+14
+00:00:26,039 --> 00:00:28,140
+this powerful technology accessible to
+
+
+15
+00:00:28,140 --> 00:00:29,880
+the modern developer it's dynamically
+
+
+16
+00:00:29,880 --> 00:00:31,679
+typed with a minimal ruby-inspired
+
+
+17
+00:00:31,679 --> 00:00:33,540
+syntax making it more approachable than
+
+
+18
+00:00:33,540 --> 00:00:34,980
+statically type functional languages
+
+
+19
+00:00:34,980 --> 00:00:36,840
+like Haskell however because it's
+
+
+20
+00:00:36,840 --> 00:00:39,059
+compiled to beam by code it delivers
+
+
+21
+00:00:39,059 --> 00:00:40,680
+better performance and scalability
+
+
+22
+00:00:40,680 --> 00:00:42,660
+compared to interpreted languages it's
+
+
+23
+00:00:42,660 --> 00:00:44,640
+used by companies like Discord to handle
+
+
+24
+00:00:44,640 --> 00:00:46,680
+massive amounts of concurrent users by
+
+
+25
+00:00:46,680 --> 00:00:48,480
+Motorola to build fault tolerant
+
+
+26
+00:00:48,480 --> 00:00:50,640
+communication systems by Pinterest to
+
+
+27
+00:00:50,640 --> 00:00:52,260
+scale up their real-time notification
+
+
+28
+00:00:52,260 --> 00:00:54,120
+system and The Elixir based Phoenix
+
+
+29
+00:00:54,120 --> 00:00:56,340
+framework is responsible for thousands
+
+
+30
+00:00:56,340 --> 00:00:58,320
+of full stack web applications to get
+
+
+31
+00:00:58,320 --> 00:01:00,480
+started install erlang Andy Lex mixer
+
+
+32
+00:01:00,480 --> 00:01:03,000
+then create a file ending in dot EXs to
+
+
+33
+00:01:03,000 --> 00:01:04,260
+create a variable give it a name
+
+
+34
+00:01:04,260 --> 00:01:06,659
+followed by a value it's Dynamic so no
+
+
+35
+00:01:06,659 --> 00:01:08,640
+type annotations are necessary now print
+
+
+36
+00:01:08,640 --> 00:01:10,920
+it to the standard output with i o puts
+
+
+37
+00:01:10,920 --> 00:01:12,840
+and like Ruby parentheses are usually
+
+
+38
+00:01:12,840 --> 00:01:14,700
+optional alternatively you might create
+
+
+39
+00:01:14,700 --> 00:01:16,860
+an atom which is a constant whose value
+
+
+40
+00:01:16,860 --> 00:01:18,960
+is its own name Anonymous functions can
+
+
+41
+00:01:18,960 --> 00:01:20,880
+be created with the FN keyword which can
+
+
+42
+00:01:20,880 --> 00:01:22,799
+then be assigned to variables or passed
+
+
+43
+00:01:22,799 --> 00:01:24,479
+around to other functions and you can
+
+
+44
+00:01:24,479 --> 00:01:26,100
+even simplify this expression further
+
+
+45
+00:01:26,100 --> 00:01:28,080
+using the Ampersand shorthand when
+
+
+46
+00:01:28,080 --> 00:01:29,700
+working with function Expressions you
+
+
+47
+00:01:29,700 --> 00:01:31,560
+can use the pipe operator to pass the
+
+
+48
+00:01:31,560 --> 00:01:33,060
+value of one expression to another
+
+
+49
+00:01:33,060 --> 00:01:35,100
+without the need for a deeply nested
+
+
+50
+00:01:35,100 --> 00:01:36,840
+function calls create a list of items
+
+
+51
+00:01:36,840 --> 00:01:38,640
+with brackets or create a map to
+
+
+52
+00:01:38,640 --> 00:01:40,619
+represent key value pairs the equal sign
+
+
+53
+00:01:40,619 --> 00:01:42,600
+can be used to assign variables but it's
+
+
+54
+00:01:42,600 --> 00:01:44,340
+actually called the match operator to
+
+
+55
+00:01:44,340 --> 00:01:46,079
+support pattern matching features for
+
+
+56
+00:01:46,079 --> 00:01:48,240
+example we might destructure a list into
+
+
+57
+00:01:48,240 --> 00:01:50,280
+a set of variables if a pattern doesn't
+
+
+58
+00:01:50,280 --> 00:01:52,140
+match it will raise an error and this
+
+
+59
+00:01:52,140 --> 00:01:53,640
+Behavior can be used to implement
+
+
+60
+00:01:53,640 --> 00:01:56,219
+Advanced control flow logic if and its
+
+
+61
+00:01:56,219 --> 00:01:58,140
+inverse and less can be used for basic
+
+
+62
+00:01:58,140 --> 00:01:59,880
+situations but the case keyword allow
+
+
+63
+00:01:59,880 --> 00:02:01,680
+allows us to compare a value against
+
+
+64
+00:02:01,680 --> 00:02:03,659
+many patterns until we find a matching
+
+
+65
+00:02:03,659 --> 00:02:05,579
+one application code can be organized
+
+
+66
+00:02:05,579 --> 00:02:07,740
+and shared with modules inside a module
+
+
+67
+00:02:07,740 --> 00:02:09,899
+we can Define multiple functions but one
+
+
+68
+00:02:09,899 --> 00:02:11,160
+of the killer features of this language
+
+
+69
+00:02:11,160 --> 00:02:13,020
+is its concurrency model thanks to the
+
+
+70
+00:02:13,020 --> 00:02:15,360
+erlang VM all code runs in processes
+
+
+71
+00:02:15,360 --> 00:02:17,160
+that are isolated from each other which
+
+
+72
+00:02:17,160 --> 00:02:19,260
+communicate by passing messages they are
+
+
+73
+00:02:19,260 --> 00:02:20,640
+extremely lightweight and your
+
+
+74
+00:02:20,640 --> 00:02:22,080
+application can run thousands of them
+
+
+75
+00:02:22,080 --> 00:02:24,120
+simultaneously resulting in high
+
+
+76
+00:02:24,120 --> 00:02:25,860
+performance fault tolerant execution
+
+
+77
+00:02:25,860 --> 00:02:28,319
+this has been elixir in 100 seconds if
+
+
+78
+00:02:28,319 --> 00:02:29,700
+you want to see more short videos like
+
+
+79
+00:02:29,700 --> 00:02:31,500
+this hit the like button and subscribe
+
+
+80
+00:02:31,500 --> 00:02:33,300
+thanks for watching and I will see you
+
+
+81
+00:02:33,300 --> 00:02:35,900
+in the next one
+
+

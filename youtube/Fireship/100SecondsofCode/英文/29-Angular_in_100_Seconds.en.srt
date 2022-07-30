@@ -1,0 +1,350 @@
+1
+00:00:00,320 --> 00:00:02,720
+angular a typescript-based framework for
+
+
+2
+00:00:02,720 --> 00:00:04,160
+building user interfaces
+
+
+3
+00:00:04,160 --> 00:00:05,839
+it was developed at google and released
+
+
+4
+00:00:05,839 --> 00:00:08,880
+in 2016 as the sequel to angularjs
+
+
+5
+00:00:08,880 --> 00:00:10,400
+as an angular developer you hit the
+
+
+6
+00:00:10,400 --> 00:00:11,759
+ground running with its extremely
+
+
+7
+00:00:11,759 --> 00:00:13,280
+powerful cli tool
+
+
+8
+00:00:13,280 --> 00:00:14,400
+when you generate your initial
+
+
+9
+00:00:14,400 --> 00:00:16,160
+application it comes pre-configured with
+
+
+10
+00:00:16,160 --> 00:00:16,640
+routing
+
+
+11
+00:00:16,640 --> 00:00:18,240
+a testing framework and your favorite
+
+
+12
+00:00:18,240 --> 00:00:20,160
+style preprocessor in addition
+
+
+13
+00:00:20,160 --> 00:00:22,400
+the magic ng add command can turn your
+
+
+14
+00:00:22,400 --> 00:00:23,920
+app into a progressive web app
+
+
+15
+00:00:23,920 --> 00:00:25,760
+add server-side rendering firebase
+
+
+16
+00:00:25,760 --> 00:00:27,359
+support and do a whole bunch of other
+
+
+17
+00:00:27,359 --> 00:00:28,240
+cool stuff
+
+
+18
+00:00:28,240 --> 00:00:30,240
+but at its core angular is just a
+
+
+19
+00:00:30,240 --> 00:00:32,320
+component-based ui library i can create
+
+
+20
+00:00:32,320 --> 00:00:33,760
+a component with the cli
+
+
+21
+00:00:33,760 --> 00:00:35,360
+and if we go into its typescript file
+
+
+22
+00:00:35,360 --> 00:00:36,880
+you'll notice the component decorator
+
+
+23
+00:00:36,880 --> 00:00:38,640
+which makes this typescript class a
+
+
+24
+00:00:38,640 --> 00:00:40,480
+component any properties on this class
+
+
+25
+00:00:40,480 --> 00:00:41,920
+are considered reactive state
+
+
+26
+00:00:41,920 --> 00:00:43,280
+and when their values change the
+
+
+27
+00:00:43,280 --> 00:00:44,960
+component will re-render the ui
+
+
+28
+00:00:44,960 --> 00:00:47,039
+for example we can bind the property to
+
+
+29
+00:00:47,039 --> 00:00:49,760
+html using double braces in the template
+
+
+30
+00:00:49,760 --> 00:00:51,520
+from there we can add a button that
+
+
+31
+00:00:51,520 --> 00:00:53,120
+increments this value every time it's
+
+
+32
+00:00:53,120 --> 00:00:53,600
+clicked
+
+
+33
+00:00:53,600 --> 00:00:55,199
+we add the event name on the left side
+
+
+34
+00:00:55,199 --> 00:00:57,120
+in parentheses then an expression
+
+
+35
+00:00:57,120 --> 00:00:58,960
+on the right side in this case it points
+
+
+36
+00:00:58,960 --> 00:01:00,239
+to a method in our class
+
+
+37
+00:01:00,239 --> 00:01:01,920
+each time the button is clicked it calls
+
+
+38
+00:01:01,920 --> 00:01:03,600
+the method which changes the state
+
+
+39
+00:01:03,600 --> 00:01:06,000
+and re-renders the ui angular also has a
+
+
+40
+00:01:06,000 --> 00:01:07,680
+variety of directives for building
+
+
+41
+00:01:07,680 --> 00:01:08,960
+complex templates
+
+
+42
+00:01:08,960 --> 00:01:11,600
+use ngf to handle conditional logic or
+
+
+43
+00:01:11,600 --> 00:01:12,960
+if you have an iterable value
+
+
+44
+00:01:12,960 --> 00:01:15,360
+use ng4 to loop over it but where
+
+
+45
+00:01:15,360 --> 00:01:16,960
+angular really excels is handling
+
+
+46
+00:01:16,960 --> 00:01:18,799
+complexity and one of its primary tools
+
+
+47
+00:01:18,799 --> 00:01:20,479
+for doing so is called dependency
+
+
+48
+00:01:20,479 --> 00:01:21,040
+injection
+
+
+49
+00:01:21,040 --> 00:01:22,320
+when your app grows to hundreds of
+
+
+50
+00:01:22,320 --> 00:01:24,000
+components you'll likely need a way to
+
+
+51
+00:01:24,000 --> 00:01:25,840
+share data and functionality between
+
+
+52
+00:01:25,840 --> 00:01:27,360
+them we can take our component logic
+
+
+53
+00:01:27,360 --> 00:01:29,439
+here and extract it into a service which
+
+
+54
+00:01:29,439 --> 00:01:31,360
+can be treated as a global singleton
+
+
+55
+00:01:31,360 --> 00:01:32,640
+throughout the application
+
+
+56
+00:01:32,640 --> 00:01:34,400
+now any component that wants to use this
+
+
+57
+00:01:34,400 --> 00:01:36,720
+state or logic can simply add this class
+
+
+58
+00:01:36,720 --> 00:01:37,759
+to its constructor
+
+
+59
+00:01:37,759 --> 00:01:39,920
+the end result is a simple and reliable
+
+
+60
+00:01:39,920 --> 00:01:42,159
+way to compose complex applications
+
+
+61
+00:01:42,159 --> 00:01:44,000
+as a developer you can always count on a
+
+
+62
+00:01:44,000 --> 00:01:46,000
+consistent experience between projects
+
+
+63
+00:01:46,000 --> 00:01:47,759
+and minimal decision fatigue this has
+
+
+64
+00:01:47,759 --> 00:01:49,520
+been angular in 100 seconds
+
+
+65
+00:01:49,520 --> 00:01:50,720
+if you want to see more short videos
+
+
+66
+00:01:50,720 --> 00:01:52,000
+like this make sure to like and
+
+
+67
+00:01:52,000 --> 00:01:53,439
+subscribe and check out a ton of
+
+
+68
+00:01:53,439 --> 00:01:55,840
+advanced angular content on fireship io
+
+
+69
+00:01:55,840 --> 00:01:56,719
+thanks for watching
+
+
+70
+00:01:56,719 --> 00:02:01,520
+and i will see you in the next one
+
+

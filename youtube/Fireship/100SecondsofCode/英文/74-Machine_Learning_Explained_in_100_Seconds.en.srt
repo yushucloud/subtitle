@@ -1,0 +1,390 @@
+1
+00:00:00,080 --> 00:00:02,480
+machine learning teach a computer how to
+
+
+2
+00:00:02,480 --> 00:00:04,480
+perform a task without explicitly
+
+
+3
+00:00:04,480 --> 00:00:06,560
+programming it to perform said task
+
+
+4
+00:00:06,560 --> 00:00:09,200
+instead feed data into an algorithm to
+
+
+5
+00:00:09,200 --> 00:00:10,719
+gradually improve outcomes with
+
+
+6
+00:00:10,719 --> 00:00:13,120
+experience similar to how organic life
+
+
+7
+00:00:13,120 --> 00:00:15,679
+learns the term was coined in 1959 by
+
+
+8
+00:00:15,679 --> 00:00:18,080
+arthur samuel at ibm who was developing
+
+
+9
+00:00:18,080 --> 00:00:19,920
+artificial intelligence that could play
+
+
+10
+00:00:19,920 --> 00:00:21,600
+checkers half a century later and
+
+
+11
+00:00:21,600 --> 00:00:23,439
+predictive models are embedded in many
+
+
+12
+00:00:23,439 --> 00:00:25,279
+of the products we use every day which
+
+
+13
+00:00:25,279 --> 00:00:27,439
+perform two fundamental jobs one is to
+
+
+14
+00:00:27,439 --> 00:00:29,519
+classify data like is there another car
+
+
+15
+00:00:29,519 --> 00:00:31,359
+on the road or does this patient have
+
+
+16
+00:00:31,359 --> 00:00:33,760
+cancer the other is to make predictions
+
+
+17
+00:00:33,760 --> 00:00:35,520
+about future outcomes like will the
+
+
+18
+00:00:35,520 --> 00:00:37,600
+stock go up or which youtube video do
+
+
+19
+00:00:37,600 --> 00:00:39,280
+you want to watch next the first step in
+
+
+20
+00:00:39,280 --> 00:00:41,600
+the process is to acquire and clean up
+
+
+21
+00:00:41,600 --> 00:00:43,680
+data lots and lots of data the better
+
+
+22
+00:00:43,680 --> 00:00:45,360
+the data represents the problem the
+
+
+23
+00:00:45,360 --> 00:00:47,520
+better the results garbage in garbage
+
+
+24
+00:00:47,520 --> 00:00:49,280
+out the data needs to have some kind of
+
+
+25
+00:00:49,280 --> 00:00:51,199
+signal to be valuable to the algorithm
+
+
+26
+00:00:51,199 --> 00:00:52,879
+for making predictions and data
+
+
+27
+00:00:52,879 --> 00:00:54,800
+scientists perform a job called feature
+
+
+28
+00:00:54,800 --> 00:00:57,199
+engineering to transform raw data into
+
+
+29
+00:00:57,199 --> 00:00:58,960
+features that better represent the
+
+
+30
+00:00:58,960 --> 00:01:01,120
+underlying problem the next step is to
+
+
+31
+00:01:01,120 --> 00:01:03,199
+separate the data into a training set
+
+
+32
+00:01:03,199 --> 00:01:05,519
+and testing set the training data is fed
+
+
+33
+00:01:05,519 --> 00:01:07,520
+into an algorithm to build a model then
+
+
+34
+00:01:07,520 --> 00:01:09,680
+the testing data is used to validate the
+
+
+35
+00:01:09,680 --> 00:01:12,159
+accuracy or error of the model the next
+
+
+36
+00:01:12,159 --> 00:01:14,000
+step is to choose an algorithm which
+
+
+37
+00:01:14,000 --> 00:01:16,080
+might be a simple statistical model like
+
+
+38
+00:01:16,080 --> 00:01:18,159
+linear or logistic regression or a
+
+
+39
+00:01:18,159 --> 00:01:19,840
+decision tree that assigns different
+
+
+40
+00:01:19,840 --> 00:01:21,680
+weights to features in the data or you
+
+
+41
+00:01:21,680 --> 00:01:23,840
+might get fancy with a convolutional
+
+
+42
+00:01:23,840 --> 00:01:25,600
+neural network which is an algorithm
+
+
+43
+00:01:25,600 --> 00:01:27,600
+that also assigns weights to features
+
+
+44
+00:01:27,600 --> 00:01:29,520
+but also takes the input data and
+
+
+45
+00:01:29,520 --> 00:01:30,720
+creates additional features
+
+
+46
+00:01:30,720 --> 00:01:32,400
+automatically and that's extremely
+
+
+47
+00:01:32,400 --> 00:01:34,400
+useful for data sets that contain things
+
+
+48
+00:01:34,400 --> 00:01:36,560
+like images or natural language where
+
+
+49
+00:01:36,560 --> 00:01:38,479
+manual feature engineering is virtually
+
+
+50
+00:01:38,479 --> 00:01:40,400
+impossible every one of these algorithms
+
+
+51
+00:01:40,400 --> 00:01:42,240
+learns to get better by comparing its
+
+
+52
+00:01:42,240 --> 00:01:44,399
+predictions to an error function if it's
+
+
+53
+00:01:44,399 --> 00:01:46,399
+a classification problem like is this
+
+
+54
+00:01:46,399 --> 00:01:48,880
+animal a cat or a dog the error function
+
+
+55
+00:01:48,880 --> 00:01:50,960
+might be accuracy if it's a regression
+
+
+56
+00:01:50,960 --> 00:01:52,720
+problem like how much will a loaf of
+
+
+57
+00:01:52,720 --> 00:01:54,640
+bread cost next year then it might be
+
+
+58
+00:01:54,640 --> 00:01:56,880
+mean absolute error python is the
+
+
+59
+00:01:56,880 --> 00:01:58,880
+language of choice among data scientists
+
+
+60
+00:01:58,880 --> 00:02:01,840
+but r and julia are also popular options
+
+
+61
+00:02:01,840 --> 00:02:03,360
+and there are many supporting frameworks
+
+
+62
+00:02:03,360 --> 00:02:04,719
+out there to make the process
+
+
+63
+00:02:04,719 --> 00:02:06,320
+approachable the end result of the
+
+
+64
+00:02:06,320 --> 00:02:08,160
+machine learning process is a model
+
+
+65
+00:02:08,160 --> 00:02:10,160
+which is just a file that takes some
+
+
+66
+00:02:10,160 --> 00:02:12,080
+input data in the same shape that it was
+
+
+67
+00:02:12,080 --> 00:02:14,000
+trained on then spits out a prediction
+
+
+68
+00:02:14,000 --> 00:02:15,920
+that tries to minimize the error that it
+
+
+69
+00:02:15,920 --> 00:02:17,520
+was optimized for it can then be
+
+
+70
+00:02:17,520 --> 00:02:19,599
+embedded on an actual device or deployed
+
+
+71
+00:02:19,599 --> 00:02:21,520
+to the cloud to build a real world
+
+
+72
+00:02:21,520 --> 00:02:23,280
+product this has been machine learning
+
+
+73
+00:02:23,280 --> 00:02:25,520
+in 100 seconds like and subscribe if you
+
+
+74
+00:02:25,520 --> 00:02:27,200
+want to see more short videos like this
+
+
+75
+00:02:27,200 --> 00:02:28,560
+and leave a comment if you want to see
+
+
+76
+00:02:28,560 --> 00:02:30,160
+more machine learning content on this
+
+
+77
+00:02:30,160 --> 00:02:31,920
+channel thanks for watching and i will
+
+
+78
+00:02:31,920 --> 00:02:35,800
+see you in the next one
+
+

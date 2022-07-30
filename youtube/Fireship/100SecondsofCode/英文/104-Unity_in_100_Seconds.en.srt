@@ -1,0 +1,445 @@
+1
+00:00:00,160 --> 00:00:02,480
+unity a cross-platform game engine for
+
+
+2
+00:00:02,480 --> 00:00:04,640
+building 2d and 3d experiences made
+
+
+3
+00:00:04,640 --> 00:00:06,560
+famous for democratizing the immense
+
+
+4
+00:00:06,560 --> 00:00:08,240
+challenge of game development it was
+
+
+5
+00:00:08,240 --> 00:00:10,400
+created in copenhagen denmark and first
+
+
+6
+00:00:10,400 --> 00:00:12,880
+released in 2005. today it's the magic
+
+
+7
+00:00:12,880 --> 00:00:15,280
+behind many popular games like the 2d
+
+
+8
+00:00:15,280 --> 00:00:17,520
+among us
+
+
+9
+00:00:17,520 --> 00:00:19,920
+the 3d monument valley augmented reality
+
+
+10
+00:00:19,920 --> 00:00:21,680
+apps like pokemon go first-person
+
+
+11
+00:00:21,680 --> 00:00:23,680
+shooters like escape from tarkov as well
+
+
+12
+00:00:23,680 --> 00:00:25,519
+as interactive simulations and
+
+
+13
+00:00:25,519 --> 00:00:27,519
+animations beyond the gaming industry
+
+
+14
+00:00:27,519 --> 00:00:29,439
+the engine itself is written in c plus
+
+
+15
+00:00:29,439 --> 00:00:31,199
+plus but allows developers to write
+
+
+16
+00:00:31,199 --> 00:00:32,960
+their code in the more approachable c
+
+
+17
+00:00:32,960 --> 00:00:35,040
+sharp in addition it provides a powerful
+
+
+18
+00:00:35,040 --> 00:00:36,719
+graphical editor allowing you to draw
+
+
+19
+00:00:36,719 --> 00:00:38,399
+shapes work with cameras and apply
+
+
+20
+00:00:38,399 --> 00:00:40,000
+materials without having to write a
+
+
+21
+00:00:40,000 --> 00:00:42,000
+single line of code every game object
+
+
+22
+00:00:42,000 --> 00:00:44,000
+can have a variety of components like a
+
+
+23
+00:00:44,000 --> 00:00:46,079
+mesh to define its actual physical shape
+
+
+24
+00:00:46,079 --> 00:00:48,239
+a mesh renderer to apply materials and
+
+
+25
+00:00:48,239 --> 00:00:49,920
+lighting to an object and physics
+
+
+26
+00:00:49,920 --> 00:00:52,239
+components like rigidbody and colliders
+
+
+27
+00:00:52,239 --> 00:00:54,160
+that simulate things like gravity and
+
+
+28
+00:00:54,160 --> 00:00:56,239
+collisions in the real world and finally
+
+
+29
+00:00:56,239 --> 00:00:58,239
+you can extend an object with your own c
+
+
+30
+00:00:58,239 --> 00:00:59,760
+sharp code to make it do something
+
+
+31
+00:00:59,760 --> 00:01:01,520
+interesting like take hit points when it
+
+
+32
+00:01:01,520 --> 00:01:03,600
+runs into a bad guy to build your first
+
+
+33
+00:01:03,600 --> 00:01:05,760
+video game right now install unity hub
+
+
+34
+00:01:05,760 --> 00:01:07,680
+create a new project then open up the
+
+
+35
+00:01:07,680 --> 00:01:09,680
+editor you'll be greeted with a 3d scene
+
+
+36
+00:01:09,680 --> 00:01:11,280
+that contains a light source and a
+
+
+37
+00:01:11,280 --> 00:01:13,360
+camera a scene is like a game level that
+
+
+38
+00:01:13,360 --> 00:01:14,960
+you're developing while the camera is
+
+
+39
+00:01:14,960 --> 00:01:16,479
+the point of view of the player to
+
+
+40
+00:01:16,479 --> 00:01:18,320
+create a game of dodgeball let's add a
+
+
+41
+00:01:18,320 --> 00:01:20,320
+plane to be the ground a cylinder for
+
+
+42
+00:01:20,320 --> 00:01:22,240
+the player and a sphere for the ball
+
+
+43
+00:01:22,240 --> 00:01:24,000
+select an object then hit y on your
+
+
+44
+00:01:24,000 --> 00:01:26,240
+keyboard to move rotate and scale it to
+
+
+45
+00:01:26,240 --> 00:01:27,920
+your liking hit the play button and
+
+
+46
+00:01:27,920 --> 00:01:29,200
+notice how these shapes don't do
+
+
+47
+00:01:29,200 --> 00:01:31,040
+anything but if we add a rigid body to
+
+
+48
+00:01:31,040 --> 00:01:32,799
+the objects all of a sudden they're now
+
+
+49
+00:01:32,799 --> 00:01:34,479
+impacted by the laws of gravity
+
+
+50
+00:01:34,479 --> 00:01:36,240
+currently they look pretty boring but we
+
+
+51
+00:01:36,240 --> 00:01:37,840
+can make them look cool by creating a
+
+
+52
+00:01:37,840 --> 00:01:39,520
+material and then drag it onto the
+
+
+53
+00:01:39,520 --> 00:01:41,040
+shapes and now to make this game
+
+
+54
+00:01:41,040 --> 00:01:42,799
+playable let's add a script component to
+
+
+55
+00:01:42,799 --> 00:01:44,399
+it and then open it in vs code it
+
+
+56
+00:01:44,399 --> 00:01:46,320
+contains a class with two methods to
+
+
+57
+00:01:46,320 --> 00:01:48,399
+implement your code start is called once
+
+
+58
+00:01:48,399 --> 00:01:50,000
+at the very beginning of the game while
+
+
+59
+00:01:50,000 --> 00:01:51,759
+update is called on every frame while
+
+
+60
+00:01:51,759 --> 00:01:53,280
+the game is being played and there's
+
+
+61
+00:01:53,280 --> 00:01:55,119
+also fixed update that runs at the same
+
+
+62
+00:01:55,119 --> 00:01:57,040
+frame rate as the physics engine now to
+
+
+63
+00:01:57,040 --> 00:01:58,880
+move our player around we can define a
+
+
+64
+00:01:58,880 --> 00:02:00,799
+public property for the rigid body which
+
+
+65
+00:02:00,799 --> 00:02:02,399
+contains a bunch of different properties
+
+
+66
+00:02:02,399 --> 00:02:04,320
+and methods to move the object around
+
+
+67
+00:02:04,320 --> 00:02:06,159
+now assign an actual value from the game
+
+
+68
+00:02:06,159 --> 00:02:07,920
+to that property by dragging the rigid
+
+
+69
+00:02:07,920 --> 00:02:09,759
+body component to it in the editor in
+
+
+70
+00:02:09,759 --> 00:02:11,599
+the fixed update method we can first use
+
+
+71
+00:02:11,599 --> 00:02:13,599
+input to detect when a user presses the
+
+
+72
+00:02:13,599 --> 00:02:15,280
+arrow keys and then call the move
+
+
+73
+00:02:15,280 --> 00:02:17,120
+position method on the rigid body to
+
+
+74
+00:02:17,120 --> 00:02:18,720
+move it hit the play button and you
+
+
+75
+00:02:18,720 --> 00:02:20,319
+should now be able to move your player
+
+
+76
+00:02:20,319 --> 00:02:22,080
+around from there we can add a script to
+
+
+77
+00:02:22,080 --> 00:02:23,840
+the ball that will add force to it when
+
+
+78
+00:02:23,840 --> 00:02:25,520
+the game starts to roll it across the
+
+
+79
+00:02:25,520 --> 00:02:27,440
+screen and we can also run code when the
+
+
+80
+00:02:27,440 --> 00:02:29,760
+two objects collide by defining the on
+
+
+81
+00:02:29,760 --> 00:02:32,000
+collision enter method congratulations
+
+
+82
+00:02:32,000 --> 00:02:33,599
+you just built a video game this has
+
+
+83
+00:02:33,599 --> 00:02:35,760
+been unity in 100 seconds if you want to
+
+
+84
+00:02:35,760 --> 00:02:37,440
+see more short videos like this hit the
+
+
+85
+00:02:37,440 --> 00:02:39,040
+like button and subscribe and let me
+
+
+86
+00:02:39,040 --> 00:02:40,560
+know if you want to see a full unity
+
+
+87
+00:02:40,560 --> 00:02:42,080
+tutorial in the comments thanks for
+
+
+88
+00:02:42,080 --> 00:02:44,080
+watching and i will see you in the next
+
+
+89
+00:02:44,080 --> 00:02:46,560
+one
+
+

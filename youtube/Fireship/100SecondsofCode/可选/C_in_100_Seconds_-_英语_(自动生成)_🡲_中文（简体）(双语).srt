@@ -1,0 +1,179 @@
+1
+00:00:00,240 --> 00:00:04,560
+c a statically typed procedural programming language famous for making
+c 一种静态类型的过程编程语言，以
+
+2
+00:00:04,560 --> 00:00:08,320
+the world go around it's the language behind many tools we take for granted
+使世界运转而闻名 它是我们认为理所当然的许多工具背后的语言，
+
+3
+00:00:08,320 --> 00:00:13,519
+like the windows linux and mac operating system kernels databases like mysql
+例如 windows linux 和 mac操作系统内核数据库，例如 mysql
+
+4
+00:00:13,519 --> 00:00:17,840
+interpreters for languages like python tools like vim and git and countless
+解释器，用于诸如 vim 和 git 等 python 工具以及无数
+
+5
+00:00:17,840 --> 00:00:22,480
+others it was created in 1972 by dennis ritchie at bell labs where it would be
+其他工具 1972 年由 dennisritchie 在贝尔实验室创建，
+
+6
+00:00:22,480 --> 00:00:25,840
+used to develop the unix operating system it would go on to become the
+用于开发 unix操作系统，后来
+
+7
+00:00:25,840 --> 00:00:31,279
+mother of all languages inspiring the syntax of c plus c sharp java javascript
+成为所有语言之母，激发了 c plus c sharp java javascript
+
+8
+00:00:31,279 --> 00:00:35,280
+perl and php just to name a few it compiles directly to machine code and
+perl 和 php 的语法，仅举几例直接编译为机器代码，
+
+9
+00:00:35,280 --> 00:00:38,879
+requires minimal runtime support but is platform dependent meaning the
+需要最少的运行时支持，但依赖于平台，这意味着
+
+10
+00:00:38,879 --> 00:00:42,879
+executable is designed to run on a specific operating system it's a high
+可执行文件设计为在特定操作系统上运行它是一种
+
+11
+00:00:42,879 --> 00:00:46,719
+high-level language designed for humans yet provides low-level control over
+为人类设计的高级语言，但提供对
+
+12
+00:00:46,719 --> 00:00:50,399
+memory and hardware there's no garbage collector instead your code needs to
+内存和硬件的低级控制没有垃圾收集器 相反，
+
+13
+00:00:50,399 --> 00:00:53,760
+manage its own memory when you create a variable it's assigned an address in
+当您创建一个为其分配地址的变量时，您的代码需要管理自己的内存
+
+14
+00:00:53,760 --> 00:00:57,440
+memory you can store that address in another variable called a pointer when
+内存，您可以将该地址存储在另一个称为指针
+
+15
+00:00:57,440 --> 00:01:01,359
+the variable is no longer needed you'll need to free it to avoid memory leaks to
+的变量中，当不再需要该变量时，您需要释放它以避免内存泄漏以
+
+16
+00:01:01,359 --> 00:01:06,159
+get started install ac compiler a popular choice is the gnu c compiler or
+开始安装 ac 编译器一个流行的选择是 gnu c 编译器或
+
+17
+00:01:06,159 --> 00:01:10,560
+gcc create a file ending in dot c include any libraries you plan to use
+gcc 创建一个文件结尾 在 dot c 中包含您计划使用的任何库，
+
+18
+00:01:10,560 --> 00:01:14,240
+then add a main function to it this is where your program will start executing
+然后向其中添加一个 main 函数这是您的程序将开始
+
+19
+00:01:14,240 --> 00:01:18,320
+there's no function keyword and notice how it returns an integer type a return
+执行的地方没有 function 关键字并注意它如何返回整数类型返回
+
+20
+00:01:18,320 --> 00:01:22,720
+value of 0 means success while a return value of 1 means failure there are only
+值 0 表示成功，而返回值 1 意味着失败
+
+21
+00:01:22,720 --> 00:01:26,799
+a few basic types in c create a variable by starting with a type followed by a
+c 中只有几个基本类型通过以类型开头然后是
+
+22
+00:01:26,799 --> 00:01:31,439
+name and value use printf to print the value to the standard output or put an
+名称和值来创建变量使用 printf 将值打印到标准输出或
+
+23
+00:01:31,439 --> 00:01:35,200
+ampersand in front of it to reference its address in memory there's no string
+在其前面放置一个＆符号以引用其在内存中的地址 没有字符串
+
+24
+00:01:35,200 --> 00:01:39,759
+type but instead char which represents a one byte character stored as an integer
+类型，而是 char，它表示存储为整数的单字节
+
+25
+00:01:39,759 --> 00:01:43,439
+a string can be created with an array of characters each letter will have its own
+字符 可以使用字符数组创建字符串，每个字母都有自己的
+
+26
+00:01:43,439 --> 00:01:47,759
+memory address and be terminated by a null character another approach is to
+内存地址并由 一个空字符 另一种方法是
+
+27
+00:01:47,759 --> 00:01:51,360
+start with a pointer by adding a star character in front of the type then we
+通过在类型前面添加一个星号以指针开始，然后我们
+
+28
+00:01:51,360 --> 00:01:56,000
+can allocate 4 bytes to it now assign a character to each index ending with the
+可以为其分配 4 个字节现在为每个以空字符结尾的索引分配一个字符，以便
+
+29
+00:01:56,000 --> 00:01:59,439
+null character to create a string when you no longer need that memory allocated
+在您不再需要时创建一个字符串分配
+
+30
+00:01:59,439 --> 00:02:03,759
+to your program use free to release it back to the computer's ram the language
+给您的程序的内存可以免费使用以将其释放回计算机的 ram 语言
+
+31
+00:02:03,759 --> 00:02:07,360
+is procedural and does not support object oriented features although you
+是过程性的，不支持面向对象的功能，尽管您
+
+32
+00:02:07,360 --> 00:02:11,280
+can create your own complex data types using structs now compile your code to
+可以使用结构创建自己的复杂数据类型现在将代码编译
+
+33
+00:02:11,280 --> 00:02:15,120
+machine instructions for your operating system using the c compiler this has
+为操作系统的机器指令c 编译器 这
+
+34
+00:02:15,120 --> 00:02:18,720
+been the c programming language in 100 seconds hit the like button and
+已经是 100 秒内的 c 编程语言
+
+35
+00:02:18,720 --> 00:02:22,800
+subscribe if you want to see more short videos like this thanks for watching and
+如果您想看更多这样的短视频，请点击“赞”按钮并订阅，谢谢观看，
+
+36
+00:02:22,800 --> 00:02:26,400
+i will see you in the next one
+我会在下一个

@@ -1,0 +1,1560 @@
+1
+00:00:00,240 --> 00:00:02,560
+an application programming interface or
+
+
+2
+00:00:02,560 --> 00:00:05,279
+api is a way for two computers to talk
+
+
+3
+00:00:05,279 --> 00:00:07,839
+to each other using an api is just like
+
+
+4
+00:00:07,839 --> 00:00:09,920
+using a website in your browser but
+
+
+5
+00:00:09,920 --> 00:00:11,599
+instead of clicking buttons and filling
+
+
+6
+00:00:11,599 --> 00:00:13,840
+out forms you write code to explicitly
+
+
+7
+00:00:13,840 --> 00:00:16,160
+request data from a server for example
+
+
+8
+00:00:16,160 --> 00:00:18,160
+we could visit the nasa website to look
+
+
+9
+00:00:18,160 --> 00:00:20,400
+at asteroids or we could use their rest
+
+
+10
+00:00:20,400 --> 00:00:23,039
+api to request the raw json data that is
+
+
+11
+00:00:23,039 --> 00:00:25,439
+shown on the screen now most apis in the
+
+
+12
+00:00:25,439 --> 00:00:27,199
+world are restful which means they
+
+
+13
+00:00:27,199 --> 00:00:29,359
+follow a set of rules or constraints
+
+
+14
+00:00:29,359 --> 00:00:31,760
+known as representational state transfer
+
+
+15
+00:00:31,760 --> 00:00:33,600
+which has been the de facto standard for
+
+
+16
+00:00:33,600 --> 00:00:36,320
+api development since the early 2000s a
+
+
+17
+00:00:36,320 --> 00:00:39,200
+restful api organizes data entities or
+
+
+18
+00:00:39,200 --> 00:00:41,920
+resources into a bunch of unique urls
+
+
+19
+00:00:41,920 --> 00:00:44,719
+well technically not urls but uris or
+
+
+20
+00:00:44,719 --> 00:00:46,800
+uniform resource identifiers that
+
+
+21
+00:00:46,800 --> 00:00:48,640
+differentiate different types of data
+
+
+22
+00:00:48,640 --> 00:00:51,199
+resources on a server a client can get
+
+
+23
+00:00:51,199 --> 00:00:53,280
+data about a resource by making a
+
+
+24
+00:00:53,280 --> 00:00:56,079
+request to that endpoint over http the
+
+
+25
+00:00:56,079 --> 00:00:58,079
+request message has a very specific
+
+
+26
+00:00:58,079 --> 00:01:00,399
+format most importantly the start line
+
+
+27
+00:01:00,399 --> 00:01:02,719
+contains the uri that you wish to access
+
+
+28
+00:01:02,719 --> 00:01:05,280
+which is preceded by an http verb or
+
+
+29
+00:01:05,280 --> 00:01:07,600
+request method which signal your intent
+
+
+30
+00:01:07,600 --> 00:01:09,680
+with the resource a get request means
+
+
+31
+00:01:09,680 --> 00:01:11,360
+you just want to read the data while
+
+
+32
+00:01:11,360 --> 00:01:12,880
+post means you want to create a new
+
+
+33
+00:01:12,880 --> 00:01:15,280
+resource patch is for updates delete is
+
+
+34
+00:01:15,280 --> 00:01:17,360
+for removing data along with a few other
+
+
+35
+00:01:17,360 --> 00:01:19,280
+methods beyond those below the start
+
+
+36
+00:01:19,280 --> 00:01:20,960
+line we have headers which contain
+
+
+37
+00:01:20,960 --> 00:01:22,960
+metadata about the request the accept
+
+
+38
+00:01:22,960 --> 00:01:24,400
+header can tell the server you want the
+
+
+39
+00:01:24,400 --> 00:01:26,240
+data in a specific format or the
+
+
+40
+00:01:26,240 --> 00:01:28,240
+authorization header can be used to tell
+
+
+41
+00:01:28,240 --> 00:01:29,840
+the server that you're actually allowed
+
+
+42
+00:01:29,840 --> 00:01:31,759
+to make that request then following the
+
+
+43
+00:01:31,759 --> 00:01:33,920
+headers we have the body which contains
+
+
+44
+00:01:33,920 --> 00:01:36,079
+a custom payload of data the server will
+
+
+45
+00:01:36,079 --> 00:01:38,079
+receive the request message then execute
+
+
+46
+00:01:38,079 --> 00:01:39,759
+some code usually to read from a
+
+
+47
+00:01:39,759 --> 00:01:41,840
+database that can then be formatted into
+
+
+48
+00:01:41,840 --> 00:01:43,680
+a response message the top of the
+
+
+49
+00:01:43,680 --> 00:01:45,759
+message contains a status code to tell
+
+
+50
+00:01:45,759 --> 00:01:47,119
+the client what happened to their
+
+
+51
+00:01:47,119 --> 00:01:49,360
+request codes at the 200 level mean that
+
+
+52
+00:01:49,360 --> 00:01:51,600
+things went well at the 400 level it
+
+
+53
+00:01:51,600 --> 00:01:52,960
+means something was wrong with your
+
+
+54
+00:01:52,960 --> 00:01:55,280
+request and at the 500 level it means
+
+
+55
+00:01:55,280 --> 00:01:57,360
+that the server failed after the status
+
+
+56
+00:01:57,360 --> 00:01:59,200
+code we then have the response headers
+
+
+57
+00:01:59,200 --> 00:02:00,799
+which contain information about the
+
+
+58
+00:02:00,799 --> 00:02:02,719
+server that's followed by the response
+
+
+59
+00:02:02,719 --> 00:02:04,960
+body which contains the data payload and
+
+
+60
+00:02:04,960 --> 00:02:07,040
+is usually formatted in json when
+
+
+61
+00:02:07,040 --> 00:02:09,360
+talking about apis now an important part
+
+
+62
+00:02:09,360 --> 00:02:10,800
+of this architecture is that it's
+
+
+63
+00:02:10,800 --> 00:02:12,560
+stateless which means that the two
+
+
+64
+00:02:12,560 --> 00:02:14,080
+parties don't need to store any
+
+
+65
+00:02:14,080 --> 00:02:16,080
+information about each other and every
+
+
+66
+00:02:16,080 --> 00:02:18,560
+request response cycle is independent
+
+
+67
+00:02:18,560 --> 00:02:20,560
+from all other communication and this
+
+
+68
+00:02:20,560 --> 00:02:22,480
+leads to well-behaved web applications
+
+
+69
+00:02:22,480 --> 00:02:24,560
+that are predictable and reliable this
+
+
+70
+00:02:24,560 --> 00:02:27,280
+has been restful apis in 100 seconds if
+
+
+71
+00:02:27,280 --> 00:02:28,800
+you enjoyed it leave a comment below
+
+
+72
+00:02:28,800 --> 00:02:30,239
+then next week i'll pick out the best
+
+
+73
+00:02:30,239 --> 00:02:32,480
+one to win this free t-shirt and now
+
+
+74
+00:02:32,480 --> 00:02:34,640
+it's time to go beyond 100 seconds to
+
+
+75
+00:02:34,640 --> 00:02:37,280
+build a restful api from scratch the
+
+
+76
+00:02:37,280 --> 00:02:38,800
+most popular framework for building
+
+
+77
+00:02:38,800 --> 00:02:42,000
+restful apis in node is express.js it's
+
+
+78
+00:02:42,000 --> 00:02:43,599
+been around forever and it's very
+
+
+79
+00:02:43,599 --> 00:02:45,680
+minimal and easy to learn if you know a
+
+
+80
+00:02:45,680 --> 00:02:47,519
+little bit of javascript over the next
+
+
+81
+00:02:47,519 --> 00:02:49,519
+few minutes we'll use express to build
+
+
+82
+00:02:49,519 --> 00:02:51,760
+our own restful api from scratch you'll
+
+
+83
+00:02:51,760 --> 00:02:53,360
+learn how to create different endpoints
+
+
+84
+00:02:53,360 --> 00:02:55,599
+for your api we'll also look at slightly
+
+
+85
+00:02:55,599 --> 00:02:57,519
+more advanced concepts like middleware
+
+
+86
+00:02:57,519 --> 00:02:59,120
+and tools in the cloud for deploying
+
+
+87
+00:02:59,120 --> 00:03:01,840
+your api like api gateways to get
+
+
+88
+00:03:01,840 --> 00:03:03,920
+started you'll want to open up vs code
+
+
+89
+00:03:03,920 --> 00:03:05,920
+to an empty directory you'll need to
+
+
+90
+00:03:05,920 --> 00:03:08,000
+have node.js installed and i'm using
+
+
+91
+00:03:08,000 --> 00:03:10,560
+version 12 for this video to start a new
+
+
+92
+00:03:10,560 --> 00:03:13,440
+node project let's run npm init y from
+
+
+93
+00:03:13,440 --> 00:03:14,800
+the command line
+
+
+94
+00:03:14,800 --> 00:03:17,040
+this will create a package json and give
+
+
+95
+00:03:17,040 --> 00:03:19,120
+us a context for installing packages
+
+
+96
+00:03:19,120 --> 00:03:21,840
+that we can use in node like express
+
+
+97
+00:03:21,840 --> 00:03:24,000
+let's go ahead and install express using
+
+
+98
+00:03:24,000 --> 00:03:26,080
+npm install you'll notice that adds
+
+
+99
+00:03:26,080 --> 00:03:28,000
+express to our dependencies in the
+
+
+100
+00:03:28,000 --> 00:03:30,400
+package.json file from there we'll need
+
+
+101
+00:03:30,400 --> 00:03:32,239
+a file to write our code in so let's
+
+
+102
+00:03:32,239 --> 00:03:35,040
+create an index.js file at the top of
+
+
+103
+00:03:35,040 --> 00:03:37,120
+that file we'll declare a variable for
+
+
+104
+00:03:37,120 --> 00:03:39,680
+app which represents the actual api that
+
+
+105
+00:03:39,680 --> 00:03:41,920
+we're building and its value is an
+
+
+106
+00:03:41,920 --> 00:03:44,400
+import of the express package which
+
+
+107
+00:03:44,400 --> 00:03:45,920
+itself is a function so we'll add
+
+
+108
+00:03:45,920 --> 00:03:48,480
+parentheses after it to initialize it
+
+
+109
+00:03:48,480 --> 00:03:51,040
+now at this point our api hasn't defined
+
+
+110
+00:03:51,040 --> 00:03:53,360
+any endpoints but let's go ahead and run
+
+
+111
+00:03:53,360 --> 00:03:55,840
+it anyway the way you fire up your api
+
+
+112
+00:03:55,840 --> 00:03:58,560
+on the server is by calling app.listen
+
+
+113
+00:03:58,560 --> 00:04:00,560
+that tells it to listen on a specific
+
+
+114
+00:04:00,560 --> 00:04:02,400
+port which we've defined as its own
+
+
+115
+00:04:02,400 --> 00:04:05,360
+separate variable as 8080. then as an
+
+
+116
+00:04:05,360 --> 00:04:07,280
+optional second argument to listen we
+
+
+117
+00:04:07,280 --> 00:04:09,519
+can fire a callback to let us know when
+
+
+118
+00:04:09,519 --> 00:04:11,439
+the api is ready and we'll just have it
+
+
+119
+00:04:11,439 --> 00:04:13,680
+console log the main url we can now run
+
+
+120
+00:04:13,680 --> 00:04:15,680
+the api by going to the terminal and
+
+
+121
+00:04:15,680 --> 00:04:18,720
+running node period to run that index.js
+
+
+122
+00:04:18,720 --> 00:04:21,359
+file and it should console.log it's live
+
+
+123
+00:04:21,359 --> 00:04:24,080
+on localhost 8080. if we paste the url
+
+
+124
+00:04:24,080 --> 00:04:25,680
+into the browser you can see we get a
+
+
+125
+00:04:25,680 --> 00:04:28,240
+message of cannot get that's because we
+
+
+126
+00:04:28,240 --> 00:04:30,400
+don't have any api endpoints set up yet
+
+
+127
+00:04:30,400 --> 00:04:32,560
+but express is still responding with an
+
+
+128
+00:04:32,560 --> 00:04:34,800
+error message in fact you can open up
+
+
+129
+00:04:34,800 --> 00:04:36,880
+the network tab in chrome if we look
+
+
+130
+00:04:36,880 --> 00:04:38,800
+closely we can see that our server
+
+
+131
+00:04:38,800 --> 00:04:41,440
+responded with a 404 status code meaning
+
+
+132
+00:04:41,440 --> 00:04:43,600
+that page was not found at this point we
+
+
+133
+00:04:43,600 --> 00:04:46,000
+know our api is working but debugging it
+
+
+134
+00:04:46,000 --> 00:04:47,840
+in the browser is usually not the best
+
+
+135
+00:04:47,840 --> 00:04:49,440
+option there are many different ways we
+
+
+136
+00:04:49,440 --> 00:04:51,600
+can access our api we could use curl
+
+
+137
+00:04:51,600 --> 00:04:53,199
+from the command line we could install a
+
+
+138
+00:04:53,199 --> 00:04:55,919
+vs code extension or we could use a rest
+
+
+139
+00:04:55,919 --> 00:04:58,479
+client like insomnia or postman i'm
+
+
+140
+00:04:58,479 --> 00:05:00,080
+going to be using insomnia throughout
+
+
+141
+00:05:00,080 --> 00:05:01,520
+the rest of this video because it
+
+
+142
+00:05:01,520 --> 00:05:03,120
+provides a really nice way to format
+
+
+143
+00:05:03,120 --> 00:05:05,039
+your requests and also view a history of
+
+
+144
+00:05:05,039 --> 00:05:07,199
+all your interactions from insomnia we
+
+
+145
+00:05:07,199 --> 00:05:09,199
+can create a new request then simply
+
+
+146
+00:05:09,199 --> 00:05:10,560
+paste in our url
+
+
+147
+00:05:10,560 --> 00:05:13,120
+we can easily change the http verb from
+
+
+148
+00:05:13,120 --> 00:05:15,520
+the drop down menu here click send and
+
+
+149
+00:05:15,520 --> 00:05:17,120
+then get the response in a nicely
+
+
+150
+00:05:17,120 --> 00:05:19,280
+formatted developer friendly way we can
+
+
+151
+00:05:19,280 --> 00:05:20,800
+even see the timeline here with our
+
+
+152
+00:05:20,800 --> 00:05:22,880
+request in yellow and the response in
+
+
+153
+00:05:22,880 --> 00:05:24,560
+green but now we need to get back to our
+
+
+154
+00:05:24,560 --> 00:05:26,560
+javascript and add an endpoint to the
+
+
+155
+00:05:26,560 --> 00:05:29,440
+api we can do that by changing an http
+
+
+156
+00:05:29,440 --> 00:05:32,080
+verb to the app instance if you type a
+
+
+157
+00:05:32,080 --> 00:05:34,240
+period after app you'll get intellisense
+
+
+158
+00:05:34,240 --> 00:05:36,000
+on a bunch of different methods that
+
+
+159
+00:05:36,000 --> 00:05:37,680
+live on this object and you'll notice
+
+
+160
+00:05:37,680 --> 00:05:40,960
+methods for git post patch etc which
+
+
+161
+00:05:40,960 --> 00:05:43,520
+represent different http verbs if we
+
+
+162
+00:05:43,520 --> 00:05:45,280
+want to add a get endpoint to the
+
+
+163
+00:05:45,280 --> 00:05:48,800
+t-shirt uri we can do that by passing
+
+
+164
+00:05:48,800 --> 00:05:51,199
+t-shirt as its first argument
+
+
+165
+00:05:51,199 --> 00:05:52,960
+that'll automatically set up our server
+
+
+166
+00:05:52,960 --> 00:05:55,440
+with that endpoint then it's our job to
+
+
+167
+00:05:55,440 --> 00:05:58,080
+handle a request to it which we do by
+
+
+168
+00:05:58,080 --> 00:05:59,840
+passing a callback function as the
+
+
+169
+00:05:59,840 --> 00:06:02,800
+second argument whenever a client or end
+
+
+170
+00:06:02,800 --> 00:06:05,440
+user requests that url it will fire this
+
+
+171
+00:06:05,440 --> 00:06:07,919
+callback function to handle the request
+
+
+172
+00:06:07,919 --> 00:06:10,000
+the function itself provides access to
+
+
+173
+00:06:10,000 --> 00:06:12,400
+two different objects the request object
+
+
+174
+00:06:12,400 --> 00:06:14,720
+and the response object the request is
+
+
+175
+00:06:14,720 --> 00:06:17,039
+the incoming data while the response is
+
+
+176
+00:06:17,039 --> 00:06:18,639
+the data we want to send back to the
+
+
+177
+00:06:18,639 --> 00:06:20,560
+client the most important thing it does
+
+
+178
+00:06:20,560 --> 00:06:22,479
+is allow us to send a response back to
+
+
+179
+00:06:22,479 --> 00:06:24,160
+the client that response can have a
+
+
+180
+00:06:24,160 --> 00:06:27,520
+status code like 200 for an ok response
+
+
+181
+00:06:27,520 --> 00:06:29,759
+then we can send a data payload along
+
+
+182
+00:06:29,759 --> 00:06:32,080
+with it if we pass a javascript object
+
+
+183
+00:06:32,080 --> 00:06:33,840
+as the argument then it will send that
+
+
+184
+00:06:33,840 --> 00:06:36,720
+data back as json by default let's go
+
+
+185
+00:06:36,720 --> 00:06:38,960
+ahead and save the file then restart the
+
+
+186
+00:06:38,960 --> 00:06:41,199
+server from the terminal from insomnia
+
+
+187
+00:06:41,199 --> 00:06:43,199
+we can then make a get request to
+
+
+188
+00:06:43,199 --> 00:06:46,400
+localhost 8080 t-shirt when we do that
+
+
+189
+00:06:46,400 --> 00:06:48,560
+we get a json object back as the
+
+
+190
+00:06:48,560 --> 00:06:51,680
+response body with a status code of 200.
+
+
+191
+00:06:51,680 --> 00:06:53,440
+that's pretty cool but now let's go back
+
+
+192
+00:06:53,440 --> 00:06:55,919
+to our code and add a second endpoint
+
+
+193
+00:06:55,919 --> 00:06:58,400
+this time a post endpoint followed by a
+
+
+194
+00:06:58,400 --> 00:07:01,440
+slash and a dynamic url parameter that
+
+
+195
+00:07:01,440 --> 00:07:04,000
+represents the id of that t-shirt there
+
+
+196
+00:07:04,000 --> 00:07:05,680
+might be millions of different t-shirts
+
+
+197
+00:07:05,680 --> 00:07:08,560
+on this api and a dynamic url allows us
+
+
+198
+00:07:08,560 --> 00:07:10,560
+to handle all of them from a single
+
+
+199
+00:07:10,560 --> 00:07:12,240
+function when dealing with a post
+
+
+200
+00:07:12,240 --> 00:07:14,560
+request it means that the user is trying
+
+
+201
+00:07:14,560 --> 00:07:16,720
+to create new data on the server or
+
+
+202
+00:07:16,720 --> 00:07:18,720
+create a new t-shirt in this case first
+
+
+203
+00:07:18,720 --> 00:07:20,880
+we need the id which we can get from the
+
+
+204
+00:07:20,880 --> 00:07:23,360
+url and its value is made available to
+
+
+205
+00:07:23,360 --> 00:07:25,919
+us on the request parameters object
+
+
+206
+00:07:25,919 --> 00:07:27,759
+second we also need a logo for the
+
+
+207
+00:07:27,759 --> 00:07:30,479
+t-shirt but the logo is contained in the
+
+
+208
+00:07:30,479 --> 00:07:32,720
+request body which if you remember from
+
+
+209
+00:07:32,720 --> 00:07:34,960
+earlier is a custom data payload
+
+
+210
+00:07:34,960 --> 00:07:36,880
+contained in the incoming request in
+
+
+211
+00:07:36,880 --> 00:07:38,639
+other words the request object in
+
+
+212
+00:07:38,639 --> 00:07:41,520
+express allows us to access information
+
+
+213
+00:07:41,520 --> 00:07:43,919
+from the request message like the url
+
+
+214
+00:07:43,919 --> 00:07:47,360
+parameters the body the headers etc and
+
+
+215
+00:07:47,360 --> 00:07:48,960
+now that we have that information we
+
+
+216
+00:07:48,960 --> 00:07:50,720
+could use it to save a new record to the
+
+
+217
+00:07:50,720 --> 00:07:52,879
+database or something along those lines
+
+
+218
+00:07:52,879 --> 00:07:54,560
+that's beyond the scope of this video
+
+
+219
+00:07:54,560 --> 00:07:56,400
+what we'll do for right now is check to
+
+
+220
+00:07:56,400 --> 00:07:58,080
+make sure that we have a logo in the
+
+
+221
+00:07:58,080 --> 00:08:00,800
+request body and if we don't then we'll
+
+
+222
+00:08:00,800 --> 00:08:03,919
+send an error response with a 418 status
+
+
+223
+00:08:03,919 --> 00:08:06,160
+code and an error message that we need a
+
+
+224
+00:08:06,160 --> 00:08:07,280
+logo
+
+
+225
+00:08:07,280 --> 00:08:09,280
+but assuming we do have a valid logo we
+
+
+226
+00:08:09,280 --> 00:08:11,280
+can just send a response with a t-shirt
+
+
+227
+00:08:11,280 --> 00:08:13,840
+that contains that logo and id now let's
+
+
+228
+00:08:13,840 --> 00:08:15,680
+go back to insomnia and we'll make a
+
+
+229
+00:08:15,680 --> 00:08:18,000
+post request to that t-shirt endpoint
+
+
+230
+00:08:18,000 --> 00:08:20,160
+followed by a unique id that can be
+
+
+231
+00:08:20,160 --> 00:08:22,080
+whatever you want then in the body
+
+
+232
+00:08:22,080 --> 00:08:24,400
+section we'll go ahead and add a request
+
+
+233
+00:08:24,400 --> 00:08:27,199
+body with a format of json and it's just
+
+
+234
+00:08:27,199 --> 00:08:29,840
+a json object that contains a logo with
+
+
+235
+00:08:29,840 --> 00:08:32,080
+a string value if we send that request
+
+
+236
+00:08:32,080 --> 00:08:34,320
+you'll notice we get a 500 error
+
+
+237
+00:08:34,320 --> 00:08:36,399
+response which means our api code is
+
+
+238
+00:08:36,399 --> 00:08:38,399
+broken so what's going on here it's
+
+
+239
+00:08:38,399 --> 00:08:40,159
+telling us we have a runtime error
+
+
+240
+00:08:40,159 --> 00:08:41,680
+because we can't destructure the
+
+
+241
+00:08:41,680 --> 00:08:44,080
+property logo from the request body the
+
+
+242
+00:08:44,080 --> 00:08:46,399
+reason for that is that express does not
+
+
+243
+00:08:46,399 --> 00:08:49,200
+parse json in the body by default not
+
+
+244
+00:08:49,200 --> 00:08:51,279
+everybody uses express to build a json
+
+
+245
+00:08:51,279 --> 00:08:53,680
+api so that's not the default behavior
+
+
+246
+00:08:53,680 --> 00:08:55,360
+what we need to do here is set up
+
+
+247
+00:08:55,360 --> 00:08:58,000
+middleware that tells express to parse
+
+
+248
+00:08:58,000 --> 00:09:01,120
+json before the actual data hits the
+
+
+249
+00:09:01,120 --> 00:09:02,800
+function that we're using here to handle
+
+
+250
+00:09:02,800 --> 00:09:04,399
+the request when you hear the term
+
+
+251
+00:09:04,399 --> 00:09:06,160
+middleware think of shared code that
+
+
+252
+00:09:06,160 --> 00:09:08,240
+runs before every endpoint callback that
+
+
+253
+00:09:08,240 --> 00:09:10,640
+you've defined very common middleware is
+
+
+254
+00:09:10,640 --> 00:09:12,480
+built into express itself we can
+
+
+255
+00:09:12,480 --> 00:09:14,399
+refactor our code here a little bit to
+
+
+256
+00:09:14,399 --> 00:09:16,560
+make a variable for express and then we
+
+
+257
+00:09:16,560 --> 00:09:19,680
+can call app.use to apply middleware in
+
+
+258
+00:09:19,680 --> 00:09:21,360
+this case the middleware we want to
+
+
+259
+00:09:21,360 --> 00:09:24,560
+apply is the express.json middleware now
+
+
+260
+00:09:24,560 --> 00:09:26,480
+every request that comes in will first
+
+
+261
+00:09:26,480 --> 00:09:28,720
+go through this express json middleware
+
+
+262
+00:09:28,720 --> 00:09:30,959
+which will convert the body to json
+
+
+263
+00:09:30,959 --> 00:09:32,800
+therefore making it available in our
+
+
+264
+00:09:32,800 --> 00:09:34,959
+post callback let's go ahead and save
+
+
+265
+00:09:34,959 --> 00:09:36,959
+restart our server and then go back to
+
+
+266
+00:09:36,959 --> 00:09:39,200
+insomnia and if we send the same exact
+
+
+267
+00:09:39,200 --> 00:09:41,440
+request you'll notice this time we get
+
+
+268
+00:09:41,440 --> 00:09:43,600
+back a successful response
+
+
+269
+00:09:43,600 --> 00:09:45,839
+in addition if we make the logo an empty
+
+
+270
+00:09:45,839 --> 00:09:48,240
+string and try to send the same request
+
+
+271
+00:09:48,240 --> 00:09:50,640
+we get a 418 response along with a
+
+
+272
+00:09:50,640 --> 00:09:52,720
+message that we need a logo
+
+
+273
+00:09:52,720 --> 00:09:54,880
+congratulations you just built a restful
+
+
+274
+00:09:54,880 --> 00:09:57,200
+api from scratch with node.js and
+
+
+275
+00:09:57,200 --> 00:09:59,440
+express but before we wrap up the video
+
+
+276
+00:09:59,440 --> 00:10:00,560
+there's one more thing you should
+
+
+277
+00:10:00,560 --> 00:10:02,160
+definitely know about when it comes to
+
+
+278
+00:10:02,160 --> 00:10:04,880
+restful apis and that is the open api
+
+
+279
+00:10:04,880 --> 00:10:06,880
+spec which provides a standard way to
+
+
+280
+00:10:06,880 --> 00:10:09,279
+describe an api in yaml it originally
+
+
+281
+00:10:09,279 --> 00:10:10,800
+came about in something called the
+
+
+282
+00:10:10,800 --> 00:10:12,800
+swagger framework and what it allows you
+
+
+283
+00:10:12,800 --> 00:10:15,200
+to do is describe your api in a way that
+
+
+284
+00:10:15,200 --> 00:10:17,200
+can be understood by both humans and
+
+
+285
+00:10:17,200 --> 00:10:18,959
+machines and if you're building a
+
+
+286
+00:10:18,959 --> 00:10:21,200
+serious api you get all kinds of awesome
+
+
+287
+00:10:21,200 --> 00:10:23,600
+benefits in the process your api will be
+
+
+288
+00:10:23,600 --> 00:10:25,760
+fully documented making it much easier
+
+
+289
+00:10:25,760 --> 00:10:27,680
+for the end user to work with and
+
+
+290
+00:10:27,680 --> 00:10:29,519
+because it follows a standard format you
+
+
+291
+00:10:29,519 --> 00:10:31,519
+can actually just automatically generate
+
+
+292
+00:10:31,519 --> 00:10:33,440
+all of your client-side or server-side
+
+
+293
+00:10:33,440 --> 00:10:35,440
+code what i'm using right now is a free
+
+
+294
+00:10:35,440 --> 00:10:37,440
+tool called swaggerhub and i can come up
+
+
+295
+00:10:37,440 --> 00:10:39,279
+here and hit the export button to
+
+
+296
+00:10:39,279 --> 00:10:40,880
+automatically generate a bunch of
+
+
+297
+00:10:40,880 --> 00:10:42,880
+boilerplate code now i'm usually not a
+
+
+298
+00:10:42,880 --> 00:10:44,880
+huge fan of code generators but there's
+
+
+299
+00:10:44,880 --> 00:10:47,440
+a more powerful reason to use open api
+
+
+300
+00:10:47,440 --> 00:10:49,200
+when you describe your api with the open
+
+
+301
+00:10:49,200 --> 00:10:51,040
+api spec you can then upload the
+
+
+302
+00:10:51,040 --> 00:10:53,760
+configuration to tools like api gateway
+
+
+303
+00:10:53,760 --> 00:10:56,320
+on aws or google cloud where it can be
+
+
+304
+00:10:56,320 --> 00:10:58,480
+secured monitored and connected to
+
+
+305
+00:10:58,480 --> 00:11:00,240
+backend infrastructure let me know if
+
+
+306
+00:11:00,240 --> 00:11:01,760
+you want to see a full tutorial on that
+
+
+307
+00:11:01,760 --> 00:11:03,760
+topic but i'm going to go ahead and wrap
+
+
+308
+00:11:03,760 --> 00:11:05,200
+things up there and if you want access
+
+
+309
+00:11:05,200 --> 00:11:07,120
+to even more advanced content consider
+
+
+310
+00:11:07,120 --> 00:11:09,680
+becoming a pro member at fireship io
+
+
+311
+00:11:09,680 --> 00:11:11,519
+thanks for watching and i will see you
+
+
+312
+00:11:11,519 --> 00:11:15,000
+in the next one
+
+

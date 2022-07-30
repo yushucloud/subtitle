@@ -1,0 +1,449 @@
+1
+00:00:00,640 --> 00:00:04,960
+javascript closures are functions that can access values outside of their own
+javascript 闭包是可以访问它们自己的花括号之外的值的函数，
+
+2
+00:00:04,960 --> 00:00:09,200
+curly braces in order to call a function in your code the javascript interpreter
+以便在代码中调用函数 javascript 解释器
+
+3
+00:00:09,200 --> 00:00:12,960
+needs to know about the function itself and any other data from the surrounding
+需要了解函数本身以及
+
+4
+00:00:12,960 --> 00:00:16,160
+environment that it depends on everything needs to be neatly closed up
+它所依赖的周围环境中的任何其他数据需要整齐
+
+5
+00:00:16,160 --> 00:00:18,640
+into a box before it can be fed into the machine
+在被输入机器之前封闭成一个盒子
+
+6
+00:00:18,640 --> 00:00:22,880
+take for example a pure function that only depends on its own arguments and
+，例如一个纯函数，它只依赖于它自己的参数和
+
+7
+00:00:22,880 --> 00:00:25,199
+internal data what we have here is a fully
+内部数据我们这里有一个完全
+
+8
+00:00:25,199 --> 00:00:28,880
+self-contained closed expression when it's called it gets pushed onto the
+独立的封闭表达式，当它被调用时它被推送到
+
+9
+00:00:28,880 --> 00:00:32,960
+call stack where it's executed and its internal data is only kept in memory
+调用中 执行它的堆栈，其内部数据仅保留在内存中，
+
+10
+00:00:32,960 --> 00:00:35,920
+until it's popped back off the call stack but what if that function
+直到它从调用堆栈中弹出，但是如果该函数
+
+11
+00:00:35,920 --> 00:00:38,800
+references data outside of its own scope like from the
+引用其自身范围之外的数据，例如来自
+
+12
+00:00:38,800 --> 00:00:42,800
+global environment or an outer function that leaves us with an open expression
+全局环境或外部函数，这给我们留下了一个开放的表达式
+
+13
+00:00:42,800 --> 00:00:45,200
+that references other free variables throughout the
+
+
+14
+00:00:45,200 --> 00:00:48,320
+environment now in order for the interpreter to call this function
+现在在整个环境中引用其他自由变量，以便解释器调用此函数
+
+15
+00:00:48,320 --> 00:00:52,640
+and also know the value of these free variables it creates a closure to store
+并知道值 在这些自由变量中，它创建了一个闭包，将
+
+16
+00:00:52,640 --> 00:00:55,520
+them in a place in memory where they can be accessed later
+它们存储在内存中的某个位置，以后可以访问它们，
+
+17
+00:00:55,520 --> 00:00:58,960
+that area of memory is called the heap and unlike the call stack which is
+该内存区域称为堆，与短暂的调用堆栈不同，
+
+18
+00:00:58,960 --> 00:01:01,760
+short-lived it can keep data in memory indefinitely
+它可以将数据无限期地保存在内存中，
+
+19
+00:01:01,760 --> 00:01:04,640
+then decide once you get rid of it later with the garbage collector
+然后再决定一次 您稍后使用垃圾收集器将其删除，
+
+20
+00:01:04,640 --> 00:01:09,040
+so a closure is not just a function it's a function combined with its outer state
+因此闭包不仅仅是一个函数，它是一个与其外部状态或词法环境相结合的函数，
+
+21
+00:01:09,040 --> 00:01:12,960
+or lexical environment as you might imagine closures require more memory and
+因为您可能会想象闭包比纯函数需要更多的内存和
+
+22
+00:01:12,960 --> 00:01:16,320
+processing power than a pure function but you'll come across many practical
+处理能力，但您会遇到
+
+23
+00:01:16,320 --> 00:01:18,960
+reasons to use them the most important one being data
+使用它们的许多实际原因最重要的一个是数据
+
+24
+00:01:18,960 --> 00:01:22,799
+encapsulation to prevent leaking or exposing data where it's not needed we
+封装以防止在不需要的地方泄漏或暴露数据我们
+
+25
+00:01:22,799 --> 00:01:26,320
+can create a closure by defining an outer function that contains the state
+可以通过定义包含状态的外部函数
+
+26
+00:01:26,320 --> 00:01:30,079
+then an inner function that operates on it the data contained here will not leak
+然后对其进行操作的内部函数来创建闭包这里包含的数据将 不
+
+27
+00:01:30,079 --> 00:01:33,759
+out to the surrounding environment the inner function has access to data
+泄漏到周围环境内部函数可以访问
+
+28
+00:01:33,759 --> 00:01:37,200
+defined in the outer function scope but the outer function does not have
+外部函数范围中定义的数据，但外部函数没有
+
+29
+00:01:37,200 --> 00:01:41,840
+access to the inner function in addition many javascript apis are callback based
+访问内部函数此外，许多 javascript api 都是基于回调的，
+
+30
+00:01:41,840 --> 00:01:45,439
+you can use closures to create a function factory that takes an argument
+您可以使用闭包创建一个函数工厂，该函数工厂接受一个参数，
+
+31
+00:01:45,439 --> 00:01:48,640
+then returns a brand new function which can then be passed along to other
+然后返回一个全新的函数，然后可以将其传递给其他
+
+32
+00:01:48,640 --> 00:01:52,560
+functions that expect a callback this has been javascript closures in 100
+期望回调的函数，这就是 javascript 闭包 在 100
+
+33
+00:01:52,560 --> 00:01:55,759
+seconds but stay tuned because today we're going beyond 100
+秒内，但请继续关注，因为今天我们将超过 100
+
+34
+00:01:55,759 --> 00:01:59,360
+seconds to take a look at one of the most famous javascript trick questions
+秒来看看最著名的 javascript 技巧问题之一
+
+35
+00:01:59,360 --> 00:02:02,799
+that will wreck you on an interview if you don't know closures but first make
+，如果你不知道闭包，它会在面试中破坏你，但首先要
+
+36
+00:02:02,799 --> 00:02:06,320
+sure to like and subscribe i'm trying to fulfill my childhood dream of getting to
+确保喜欢并订阅 我正在努力实现我儿时的梦想，即获得
+
+37
+00:02:06,320 --> 00:02:09,039
+a million subscribers but it's going to be really hard to get there
+一百万订阅者，但
+
+38
+00:02:09,039 --> 00:02:12,239
+if you don't click the button just kidding i have a ton of fun making these
+如果你不点击按钮开个
+
+39
+00:02:12,239 --> 00:02:14,319
+videos and learn something new every time
+玩笑，那将很难实现
+
+40
+00:02:14,319 --> 00:02:17,599
+a great example of which is this tricky javascript interview question the
+一个很好的例子就是这个棘手的javascript 面试问题
+
+41
+00:02:17,599 --> 00:02:20,720
+question itself is what does this code log out let's go
+问题本身就是这段代码注销了什么 让
+
+42
+00:02:20,720 --> 00:02:24,319
+through it line by line first we're declaring a variable i with
+我们逐行浏览它首先我们声明一个变量 i
+
+43
+00:02:24,319 --> 00:02:27,040
+the var keyword then a for loop that will run three
+使用 var 关键字，然后一个 for 循环将
+
+44
+00:02:27,040 --> 00:02:30,800
+times by incrementing that variable now inside the for loop is where
+通过在 for 循环中增加该变量来运行 3 次，这是
+
+45
+00:02:30,800 --> 00:02:33,360
+closures come into play we define a function
+闭包发挥作用的地方 我们定义了一个函数
+
+46
+00:02:33,360 --> 00:02:36,959
+log that console logs the global variable i
+日志，控制台记录全局变量 i
+
+47
+00:02:36,959 --> 00:02:40,879
+this is not a pure function because it depends on a variable outside of its
+这不是一个纯函数，因为它取决于 在其范围之外的变量上
+
+48
+00:02:40,879 --> 00:02:43,599
+scope therefore creating a closure then from
+因此创建一个闭包然后从
+
+49
+00:02:43,599 --> 00:02:47,120
+there we set up a timeout and pass the log function as the
+那里我们设置一个超时并将日志函数作为
+
+50
+00:02:47,120 --> 00:02:51,519
+callback this queues up a task to execute the log function after 100
+回调传递这排队一个任务以在 100 毫秒后执行日志函数
+
+51
+00:02:51,519 --> 00:02:53,840
+milliseconds so what do you think the output of this
+所以你认为这段代码的输出如何
+
+52
+00:02:53,840 --> 00:02:57,200
+code will be we're capturing the i variable in the closure for each
+将是我们为循环的每次迭代捕获闭包中的 i 变量，
+
+53
+00:02:57,200 --> 00:03:00,239
+iteration of the loop so it would seem like it should log out
+因此它看起来应该注销
+
+54
+00:03:00,239 --> 00:03:03,440
+as 0 1 2. but if we log it out it actually console
+为 0 1 2。但是如果我们将其注销，它实际上控制台
+
+55
+00:03:03,440 --> 00:03:07,120
+logs three three times to understand why that happens we also
+记录了三三次以了解为什么会发生这种情况 我们还
+
+56
+00:03:07,120 --> 00:03:08,879
+need to understand the difference between
+需要了解
+
+57
+00:03:08,879 --> 00:03:11,920
+var and let when you use var in a for loop
+var 和 let 之间的区别，当您在 for 循环中使用 var 时，
+
+58
+00:03:11,920 --> 00:03:16,640
+that variable actually gets hoisted up into the parent scope which in this case
+该变量实际上会被提升到父作用域中，在这种情况
+
+59
+00:03:16,640 --> 00:03:20,080
+would be the global scope watch what happens when we change the variable to
+下，它是全局作用域。当我们更改变量以
+
+60
+00:03:20,080 --> 00:03:22,720
+let we get our original expectation of a
+让我们获得对
+
+61
+00:03:22,720 --> 00:03:26,879
+console log of 0 1 2. with var we have a global variable
+控制台日志 0 12 的原始期望时，就会发生这种情况。使用 var 我们有一个全局变量
+
+62
+00:03:26,879 --> 00:03:31,120
+that we're mutating over and over again but with let we're creating a variable
+，我们一遍又一遍地改变它，但是使用 let 我们创建了一个作用域的变量
+
+63
+00:03:31,120 --> 00:03:33,760
+that is scoped to the for loop in other words
+对于 for 循环，换句话说，
+
+64
+00:03:33,760 --> 00:03:37,920
+it's local to the for loop and can't be accessed outside of it now remember
+它是 for 循环的本地，并且不能在它之外访问现在
+
+65
+00:03:37,920 --> 00:03:42,080
+a closure is the combination of a function and its lexical environment
+记住闭包是函数及其词法环境
+
+66
+00:03:42,080 --> 00:03:45,599
+in the case of let the closure is capturing the log function
+的组合，如果让闭包捕获 log 函数
+
+67
+00:03:45,599 --> 00:03:49,760
+along with the variable i for each iteration of the loop which would be 0 1
+以及 循环的每次迭代的变量 i将是 0 1
+
+68
+00:03:49,760 --> 00:03:53,439
+2. if we didn't have a closure here javascript would allocate that i
+2. 如果我们在这里没有闭包，javascript 会
+
+69
+00:03:53,439 --> 00:03:56,319
+variable in memory in the call stack and then immediately
+在调用堆栈的内存中分配 i 变量，然后立即
+
+70
+00:03:56,319 --> 00:03:58,400
+release it but because we do have a closure
+释放它，但是因为我们确实有一个闭包
+
+71
+00:03:58,400 --> 00:04:01,599
+it stores that variable in the heap memory so it can be referenced again
+将该变量存储在堆内存中，以便将来
+
+72
+00:04:01,599 --> 00:04:04,159
+when that closure is called by the timeout in the future
+在超时调用该闭包时可以再次引用它，
+
+73
+00:04:04,159 --> 00:04:07,680
+but when var is used it's capturing the reference to the global variable
+但是当使用 var 时，它会捕获对全局变量的引用，
+
+74
+00:04:07,680 --> 00:04:10,879
+the reason it logs three three times is because the timeout
+它记录三三次的原因是因为
+
+75
+00:04:10,879 --> 00:04:15,120
+doesn't run until 100 milliseconds later long after that for loop has completed
+timeout 直到 100 毫秒后才运行，直到for 循环完成
+
+76
+00:04:15,120 --> 00:04:17,440
+and iterated up to three we can actually
+并迭代最多三个之后，如果您尝试在浏览器中运行此代码，我们实际上可以
+
+77
+00:04:17,440 --> 00:04:21,280
+examine this behavior in the browser dev tools by adding a debugger to the
+通过在闭包中添加调试器来检查浏览器开发工具中的这种行为
+
+78
+00:04:21,280 --> 00:04:23,280
+closure if you try to run this code in the
+
+
+79
+00:04:23,280 --> 00:04:26,800
+browser with the devtools open it will take you to the sources tab and
+devtools 打开它会将您带到源选项卡并
+
+80
+00:04:26,800 --> 00:04:29,600
+allow you to inspect the call stack and scope of the function
+允许您在使用前导时检查函数的调用堆栈和范围，
+
+81
+00:04:29,600 --> 00:04:33,280
+when lead is used you can see we have a block scoped variable named i
+您可以看到我们有一个名为 i 的块范围变量，
+
+82
+00:04:33,280 --> 00:04:36,639
+but when var is used that variable is now in the global scope
+但是当使用 var 时，该变量现在位于 全局范围
+
+83
+00:04:36,639 --> 00:04:39,919
+which changes the way it's captured by the closure that's a pretty tricky one
+，它改变了闭包捕获它的方式，这是一个非常棘手的
+
+84
+00:04:39,919 --> 00:04:43,600
+but javascript interviewers love to ask questions like this if you ever find
+问题，但是如果你发现自己遇到这样的问题，javascript 面试官
+
+85
+00:04:43,600 --> 00:04:46,560
+yourself faced with a question like this the best thing you can do is talk
+喜欢问这样的问题，你能做的最好的事情就是
+
+86
+00:04:46,560 --> 00:04:49,280
+through the code slowly and explain how a closure works
+慢慢地讨论代码并解释关闭是如何工作的，
+
+87
+00:04:49,280 --> 00:04:51,680
+so they know you're on the right track even if you don't come to the right
+所以即使你没有得出正确的
+
+88
+00:04:51,680 --> 00:04:53,600
+conclusion i'm going to go ahead and wrap things up
+结论，他们也知道你走在正确的轨道上
+
+89
+00:04:53,600 --> 00:04:56,000
+there thanks for watching and i will see you
+
+
+90
+00:04:56,000 --> 00:04:58,800
+in the next one
+在下一个

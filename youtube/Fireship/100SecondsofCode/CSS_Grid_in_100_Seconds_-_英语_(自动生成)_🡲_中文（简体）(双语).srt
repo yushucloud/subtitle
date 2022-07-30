@@ -1,0 +1,144 @@
+1
+00:00:00,000 --> 00:00:05,279
+CSS grin a system for laying out items across a movable set of horizontal and
+CSS grin 用于在网格内通过一组可移动的水平和
+
+2
+00:00:05,279 --> 00:00:09,330
+vertical lines inside a grid we have invisible lines that divide columns and
+垂直线布置项目的系统 我们有分隔列和行的不可见线
+
+3
+00:00:09,330 --> 00:00:13,620
+rows the space between two parallel grid lines is known as a grid track and the
+两条平行网格线之间的空间称为网格轨道，
+
+4
+00:00:13,620 --> 00:00:17,730
+space between four lines is known as a grid area in your HTML start with a
+四行之间的空间已知 作为HTML 中的网格区域，以
+
+5
+00:00:17,730 --> 00:00:21,600
+parent element to serve as your grid container then all of its children will
+父元素作为网格容器开始，然后它的所有子元素将
+
+6
+00:00:21,600 --> 00:00:24,990
+automatically become grid items let's imagine we wanted to build a website
+自动成为网格项让我们想象一下
+
+7
+00:00:24,990 --> 00:00:29,130
+with a holy grail layout in the HTML if we have a container with five elements
+，如果我们有一个容器，我们想在 HTML 中构建一个具有圣杯布局的网站
+
+8
+00:00:29,130 --> 00:00:32,880
+inside we'll start by setting the containers display property to grid now
+里面的五个元素我们首先将容器显示属性设置为网格现在
+
+9
+00:00:32,880 --> 00:00:37,290
+open your app in Firefox to visualize the gridlines tracks and areas it helps
+在 Firefox 中打开您的应用程序以可视化网格线轨道和区域这有助于
+
+10
+00:00:37,290 --> 00:00:40,770
+to imagine your website as an Excel spreadsheet in each individual cell add
+将您的网站想象为每个单独的单元格中的 Excel 电子表格添加
+
+11
+00:00:40,770 --> 00:00:44,100
+a label that represents the element that should appear there each cell in the
+一个代表元素的标签应该出现在
+
+12
+00:00:44,100 --> 00:00:48,210
+grid represents one fractional unit in the middle we have an advertisement the
+网格中的每个单元格代表中间的一个分数单位我们有一个广告
+
+13
+00:00:48,210 --> 00:00:51,660
+main content and the sidebar then we have the top bar taking up three cells
+主要内容和侧边栏然后我们有顶部 条在顶部占据三个单元格
+
+14
+00:00:51,660 --> 00:00:55,379
+on the top and a footer on the bottom notice how this represents a three by
+，在底部占据一个页脚注意它如何表示一个三乘
+
+15
+00:00:55,379 --> 00:00:58,980
+three grid and we can use this as the value for the grid template areas
+三的网格，我们可以将其用作网格模板区域
+
+16
+00:00:58,980 --> 00:01:02,609
+property now we need to tell the children which grid area that they take
+属性的值现在我们需要告诉孩子他们占据哪个网格区域
+
+17
+00:01:02,609 --> 00:01:06,479
+up we can do that by providing the name to the grid area property that gives us
+我们可以通过为网格区域属性提供名称来实现这一点，该属性为我们提供
+
+18
+00:01:06,479 --> 00:01:09,439
+the right layout but now we want to adjust the size of the rows and columns
+了正确的布局，但是现在我们想要调整行和列的大小，
+
+19
+00:01:09,439 --> 00:01:13,979
+currently each column is taking up one third or one fractional unit of the
+目前每列占用了我们可用空间的三分之一或一个小数单位
+
+20
+00:01:13,979 --> 00:01:17,400
+available space we can change the width of the middle column by setting it to a
+可以通过将中间列设置为
+
+21
+00:01:17,400 --> 00:01:20,990
+fixed pixel value or change the ratio by giving it three fractional units
+固定像素值来改变其宽度，或者通过给它三个小数单位
+
+22
+00:01:20,990 --> 00:01:24,780
+likewise we can change the height of rows using the grid template rows
+来改变比率。同样，
+
+23
+00:01:24,780 --> 00:01:28,290
+property if we want to add spacing between our grid lines we can use the
+如果我们想在网格线之间添加间距，我们可以使用网格模板行属性来改变行的高度 我们可以使用
+
+24
+00:01:28,290 --> 00:01:31,290
+great gap property and we can Center the children vertically or horizontally
+大间隙属性，我们可以
+
+25
+00:01:31,290 --> 00:01:36,119
+using justify items or line items and make sure to check out the min Max and
+使用对齐项目或行项目垂直或水平居中子级，并确保检查最小最大和
+
+26
+00:01:36,119 --> 00:01:40,619
+repeat functions to avoid duplication on larger grids this has been CSS grid and
+重复功能以避免在la 上重复 rger grids 这是 CSS 网格和
+
+27
+00:01:40,619 --> 00:01:44,909
+100 seconds stay tuned for a full grid project in a few days and make sure to
+100 秒，请继续关注几天后的完整网格项目，
+
+28
+00:01:44,909 --> 00:01:48,210
+hit the like button if you want to see more short videos like this thanks for
+如果您想观看更多类似这样的短视频，请务必点击“赞”按钮，谢谢
+
+29
+00:01:48,210 --> 00:01:52,130
+watching and I will see you in the next one
+观看，我们下期再见一

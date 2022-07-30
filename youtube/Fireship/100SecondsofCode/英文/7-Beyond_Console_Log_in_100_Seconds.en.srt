@@ -1,0 +1,275 @@
+1
+00:00:00,000 --> 00:00:02,100
+console it's the browsers built-in
+
+
+2
+00:00:02,100 --> 00:00:03,449
+debugger you may have heard of it before
+
+
+3
+00:00:03,449 --> 00:00:05,759
+but try running console log console it
+
+
+4
+00:00:05,759 --> 00:00:06,990
+does a lot more than you may have
+
+
+5
+00:00:06,990 --> 00:00:09,389
+realized in some cases you only want to
+
+
+6
+00:00:09,389 --> 00:00:11,370
+console log something if a condition is
+
+
+7
+00:00:11,370 --> 00:00:12,929
+false in that case you're probably
+
+
+8
+00:00:12,929 --> 00:00:14,849
+looking for assert when the first
+
+
+9
+00:00:14,849 --> 00:00:16,650
+argument is false it logs the second
+
+
+10
+00:00:16,650 --> 00:00:17,820
+argument as an error
+
+
+11
+00:00:17,820 --> 00:00:19,350
+another trick you'll often see people do
+
+
+12
+00:00:19,350 --> 00:00:22,020
+is use console.log along with braces to
+
+
+13
+00:00:22,020 --> 00:00:23,519
+provide labels for the things that
+
+
+14
+00:00:23,519 --> 00:00:24,990
+they're logging that's cool in all but
+
+
+15
+00:00:24,990 --> 00:00:26,849
+change log to table and you get a much
+
+
+16
+00:00:26,849 --> 00:00:29,039
+prettier output as j/s developers we
+
+
+17
+00:00:29,039 --> 00:00:31,170
+often like to abuse console and that can
+
+
+18
+00:00:31,170 --> 00:00:32,880
+make things pretty messy use console
+
+
+19
+00:00:32,880 --> 00:00:34,350
+group to group things together with a
+
+
+20
+00:00:34,350 --> 00:00:36,360
+label then collapse them by default to
+
+
+21
+00:00:36,360 --> 00:00:38,160
+save space in the console things can
+
+
+22
+00:00:38,160 --> 00:00:39,870
+also get ugly if you're logging a bunch
+
+
+23
+00:00:39,870 --> 00:00:42,329
+of objects changelog Tudor and you get a
+
+
+24
+00:00:42,329 --> 00:00:44,520
+much cleaner triangle drop-down do you
+
+
+25
+00:00:44,520 --> 00:00:46,289
+ever find yourself manually incrementing
+
+
+26
+00:00:46,289 --> 00:00:48,570
+a number in your console logs if so you
+
+
+27
+00:00:48,570 --> 00:00:50,160
+might be able to save your sanity by
+
+
+28
+00:00:50,160 --> 00:00:52,620
+using console count it takes an optional
+
+
+29
+00:00:52,620 --> 00:00:54,600
+label and every time it's called it will
+
+
+30
+00:00:54,600 --> 00:00:56,789
+increment the count by one on a similar
+
+
+31
+00:00:56,789 --> 00:00:58,379
+note you can also keep track of the
+
+
+32
+00:00:58,379 --> 00:01:00,030
+amount of time between your console logs
+
+
+33
+00:01:00,030 --> 00:01:02,340
+calling time will start a timer then
+
+
+34
+00:01:02,340 --> 00:01:04,229
+time log will log the amount of time you
+
+
+35
+00:01:04,229 --> 00:01:06,510
+elapsed since that timer started now in
+
+
+36
+00:01:06,510 --> 00:01:08,040
+JavaScript we're often working in the
+
+
+37
+00:01:08,040 --> 00:01:10,049
+context of deeply nested functions and
+
+
+38
+00:01:10,049 --> 00:01:11,970
+objects when debugging it may be
+
+
+39
+00:01:11,970 --> 00:01:13,799
+necessary to traverse through the stack
+
+
+40
+00:01:13,799 --> 00:01:16,049
+trace of your code use console trace in
+
+
+41
+00:01:16,049 --> 00:01:17,369
+the function you would expect to be at
+
+
+42
+00:01:17,369 --> 00:01:19,110
+the top of the call stack and now we can
+
+
+43
+00:01:19,110 --> 00:01:20,580
+see exactly what happened before this
+
+
+44
+00:01:20,580 --> 00:01:22,409
+function was pushed on to the top of the
+
+
+45
+00:01:22,409 --> 00:01:24,900
+call stack and lastly every good Jas
+
+
+46
+00:01:24,900 --> 00:01:26,430
+developer should give their console logs
+
+
+47
+00:01:26,430 --> 00:01:29,040
+some flair use % C as the first
+
+
+48
+00:01:29,040 --> 00:01:30,990
+character in a string then pass in some
+
+
+49
+00:01:30,990 --> 00:01:33,329
+CSS styling as your second argument and
+
+
+50
+00:01:33,329 --> 00:01:35,369
+now the console is your canvas if you
+
+
+51
+00:01:35,369 --> 00:01:36,720
+want to see more short videos like this
+
+
+52
+00:01:36,720 --> 00:01:38,579
+make sure to hit the like button thanks
+
+
+53
+00:01:38,579 --> 00:01:40,290
+for watching and I will see you in the
+
+
+54
+00:01:40,290 --> 00:01:42,070
+next one
+
+
+55
+00:01:42,070 --> 00:01:44,130
+you
+
+

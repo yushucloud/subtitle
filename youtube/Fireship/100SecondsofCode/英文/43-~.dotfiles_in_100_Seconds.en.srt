@@ -1,0 +1,2155 @@
+1
+00:00:00,799 --> 00:00:03,360
+dot files set up or restore a fully
+
+
+2
+00:00:03,360 --> 00:00:05,120
+customized development environment by
+
+
+3
+00:00:05,120 --> 00:00:07,680
+maintaining a repository of text-based
+
+
+4
+00:00:07,680 --> 00:00:08,720
+config files
+
+
+5
+00:00:08,720 --> 00:00:10,639
+as developers were trained to write dry
+
+
+6
+00:00:10,639 --> 00:00:12,400
+code do not repeat yourself
+
+
+7
+00:00:12,400 --> 00:00:14,480
+but this principle also applies to other
+
+
+8
+00:00:14,480 --> 00:00:16,240
+areas of a developer's life like the
+
+
+9
+00:00:16,240 --> 00:00:17,840
+configuration of a development
+
+
+10
+00:00:17,840 --> 00:00:18,560
+environment
+
+
+11
+00:00:18,560 --> 00:00:20,480
+imagine this you spent months fine
+
+
+12
+00:00:20,480 --> 00:00:22,560
+tuning your top of the line intel mac
+
+
+13
+00:00:22,560 --> 00:00:24,320
+but now need to throw it in the garbage
+
+
+14
+00:00:24,320 --> 00:00:26,400
+because the new mac mini with an m1 chip
+
+
+15
+00:00:26,400 --> 00:00:27,840
+will blow it out of the water are you
+
+
+16
+00:00:27,840 --> 00:00:29,840
+going to reinstall and reconfigure
+
+
+17
+00:00:29,840 --> 00:00:30,960
+everything from scratch
+
+
+18
+00:00:30,960 --> 00:00:33,280
+hopefully not dot files are those little
+
+
+19
+00:00:33,280 --> 00:00:35,040
+hidden files on your system that start
+
+
+20
+00:00:35,040 --> 00:00:35,920
+with a period
+
+
+21
+00:00:35,920 --> 00:00:39,120
+like bashprofile.env or git config
+
+
+22
+00:00:39,120 --> 00:00:41,360
+just to name a few with a repository of
+
+
+23
+00:00:41,360 --> 00:00:43,040
+these files you can chronicle the
+
+
+24
+00:00:43,040 --> 00:00:44,480
+installation of your favorite
+
+
+25
+00:00:44,480 --> 00:00:46,480
+applications and command line tools
+
+
+26
+00:00:46,480 --> 00:00:48,079
+keep track of how all that software is
+
+
+27
+00:00:48,079 --> 00:00:49,920
+configured and record all the various
+
+
+28
+00:00:49,920 --> 00:00:50,879
+system preferences
+
+
+29
+00:00:50,879 --> 00:00:52,320
+and changes that you've made to your
+
+
+30
+00:00:52,320 --> 00:00:54,239
+computer these files already live on
+
+
+31
+00:00:54,239 --> 00:00:55,840
+your system and when you harness their
+
+
+32
+00:00:55,840 --> 00:00:57,520
+power you can replicate your perfect
+
+
+33
+00:00:57,520 --> 00:00:58,000
+development
+
+
+34
+00:00:58,000 --> 00:00:59,760
+environment on a new computer in a
+
+
+35
+00:00:59,760 --> 00:01:02,079
+completely hands-off and automated way
+
+
+36
+00:01:02,079 --> 00:01:04,000
+to get started you'll want to organize
+
+
+37
+00:01:04,000 --> 00:01:06,000
+all of your configuration files in a git
+
+
+38
+00:01:06,000 --> 00:01:06,960
+repository
+
+
+39
+00:01:06,960 --> 00:01:08,960
+that will allow you to track changes and
+
+
+40
+00:01:08,960 --> 00:01:11,040
+clone the repo on other machines
+
+
+41
+00:01:11,040 --> 00:01:12,640
+its code will contain at least one
+
+
+42
+00:01:12,640 --> 00:01:14,560
+script that applies or installs the
+
+
+43
+00:01:14,560 --> 00:01:16,320
+configurations on a new system
+
+
+44
+00:01:16,320 --> 00:01:18,159
+and that means weeks of hard manual
+
+
+45
+00:01:18,159 --> 00:01:20,479
+labor can be reduced down to a git clone
+
+
+46
+00:01:20,479 --> 00:01:22,240
+followed by an install script
+
+
+47
+00:01:22,240 --> 00:01:24,159
+maintaining your own dot files repo will
+
+
+48
+00:01:24,159 --> 00:01:26,080
+help you develop discipline for other
+
+
+49
+00:01:26,080 --> 00:01:27,040
+important skills
+
+
+50
+00:01:27,040 --> 00:01:29,200
+from command line use to get to the
+
+
+51
+00:01:29,200 --> 00:01:30,079
+organization
+
+
+52
+00:01:30,079 --> 00:01:32,479
+and inner workings of your machine wax
+
+
+53
+00:01:32,479 --> 00:01:33,840
+on
+
+
+54
+00:01:33,840 --> 00:01:36,720
+wax off read if you're ready to learn
+
+
+55
+00:01:36,720 --> 00:01:38,799
+more and build your own dot files repo
+
+
+56
+00:01:38,799 --> 00:01:40,079
+stay tuned today we're going
+
+
+57
+00:01:40,079 --> 00:01:42,240
+beyond 100 seconds with special guest
+
+
+58
+00:01:42,240 --> 00:01:44,399
+patrick mcdonald he's the instructor of
+
+
+59
+00:01:44,399 --> 00:01:45,759
+a full dot files course
+
+
+60
+00:01:45,759 --> 00:01:47,280
+and will teach you how to set up your
+
+
+61
+00:01:47,280 --> 00:01:49,200
+own dot files repo step by step
+
+
+62
+00:01:49,200 --> 00:01:50,880
+taking your developer productivity to
+
+
+63
+00:01:50,880 --> 00:01:52,399
+the next level youtube
+
+
+64
+00:01:52,399 --> 00:01:56,079
+meet patrick over the last 20 plus years
+
+
+65
+00:01:56,079 --> 00:01:58,000
+i've set up enough computers to have
+
+
+66
+00:01:58,000 --> 00:02:00,240
+acquired an appreciation of automating
+
+
+67
+00:02:00,240 --> 00:02:01,360
+that process
+
+
+68
+00:02:01,360 --> 00:02:03,280
+and i've gathered a few tricks i'd like
+
+
+69
+00:02:03,280 --> 00:02:05,360
+to share with you hello everyone
+
+
+70
+00:02:05,360 --> 00:02:08,000
+i'm patrick and i'll be your guide as we
+
+
+71
+00:02:08,000 --> 00:02:09,759
+go beyond 100 seconds
+
+
+72
+00:02:09,759 --> 00:02:12,080
+to learn how to back up a few typical
+
+
+73
+00:02:12,080 --> 00:02:13,040
+dot files
+
+
+74
+00:02:13,040 --> 00:02:14,800
+without disturbing your computer's
+
+
+75
+00:02:14,800 --> 00:02:17,360
+ability to use those files to configure
+
+
+76
+00:02:17,360 --> 00:02:18,400
+software
+
+
+77
+00:02:18,400 --> 00:02:20,160
+if you've never heard of dot files
+
+
+78
+00:02:20,160 --> 00:02:21,840
+you're probably familiar with a home
+
+
+79
+00:02:21,840 --> 00:02:23,840
+directory that looks like this
+
+
+80
+00:02:23,840 --> 00:02:26,400
+but as jeff mentioned mac os is littered
+
+
+81
+00:02:26,400 --> 00:02:28,000
+with hidden files
+
+
+82
+00:02:28,000 --> 00:02:30,080
+vs code is open to the same home
+
+
+83
+00:02:30,080 --> 00:02:32,239
+directory and its file explorer
+
+
+84
+00:02:32,239 --> 00:02:34,720
+shows several more items we can tell
+
+
+85
+00:02:34,720 --> 00:02:37,200
+finder to show the same hidden files by
+
+
+86
+00:02:37,200 --> 00:02:39,120
+entering the key combination command
+
+
+87
+00:02:39,120 --> 00:02:40,319
+shift period
+
+
+88
+00:02:40,319 --> 00:02:42,560
+most hidden files have a dot prefix
+
+
+89
+00:02:42,560 --> 00:02:43,440
+hence the name
+
+
+90
+00:02:43,440 --> 00:02:46,319
+dot files they can be folders as well as
+
+
+91
+00:02:46,319 --> 00:02:47,040
+files
+
+
+92
+00:02:47,040 --> 00:02:49,200
+and in special cases they can be hidden
+
+
+93
+00:02:49,200 --> 00:02:50,720
+by the operating system
+
+
+94
+00:02:50,720 --> 00:02:52,800
+even though they are missing the dot
+
+
+95
+00:02:52,800 --> 00:02:54,160
+that's all we need to know about
+
+
+96
+00:02:54,160 --> 00:02:56,879
+finder so let's look at vs code where we
+
+
+97
+00:02:56,879 --> 00:02:57,599
+can see
+
+
+98
+00:02:57,599 --> 00:02:59,840
+that our system uses dot files in our
+
+
+99
+00:02:59,840 --> 00:03:01,120
+home directory
+
+
+100
+00:03:01,120 --> 00:03:03,519
+software that comes pre-installed uses
+
+
+101
+00:03:03,519 --> 00:03:05,200
+hidden files too
+
+
+102
+00:03:05,200 --> 00:03:07,599
+and so does the custom software that we
+
+
+103
+00:03:07,599 --> 00:03:09,120
+install on our own
+
+
+104
+00:03:09,120 --> 00:03:11,040
+if you've been using your computer for a
+
+
+105
+00:03:11,040 --> 00:03:12,640
+significant amount of time
+
+
+106
+00:03:12,640 --> 00:03:15,200
+you likely have many more dot files here
+
+
+107
+00:03:15,200 --> 00:03:17,200
+we are going to focus on these two at
+
+
+108
+00:03:17,200 --> 00:03:18,800
+the bottom git config
+
+
+109
+00:03:18,800 --> 00:03:22,319
+and zshrc when you started using git
+
+
+110
+00:03:22,319 --> 00:03:24,560
+you probably issued a pair of commands
+
+
+111
+00:03:24,560 --> 00:03:25,599
+to set your name
+
+
+112
+00:03:25,599 --> 00:03:28,000
+and email address those settings ended
+
+
+113
+00:03:28,000 --> 00:03:29,440
+up here in the git config
+
+
+114
+00:03:29,440 --> 00:03:32,239
+file as you continue learning and using
+
+
+115
+00:03:32,239 --> 00:03:32,720
+git
+
+
+116
+00:03:32,720 --> 00:03:34,560
+this file can grow with more
+
+
+117
+00:03:34,560 --> 00:03:35,920
+configurations
+
+
+118
+00:03:35,920 --> 00:03:38,239
+before we move on let me recommend using
+
+
+119
+00:03:38,239 --> 00:03:40,640
+the no reply email address available
+
+
+120
+00:03:40,640 --> 00:03:42,159
+with your github account
+
+
+121
+00:03:42,159 --> 00:03:44,480
+when you publish your dot files repo for
+
+
+122
+00:03:44,480 --> 00:03:45,440
+the world to see
+
+
+123
+00:03:45,440 --> 00:03:47,200
+this lets you keep your personal email
+
+
+124
+00:03:47,200 --> 00:03:48,640
+address a secret
+
+
+125
+00:03:48,640 --> 00:03:52,319
+zsh is the new default shell on mac os
+
+
+126
+00:03:52,319 --> 00:03:55,439
+and the zshrc file is what you use to
+
+
+127
+00:03:55,439 --> 00:03:57,840
+customize the shell experience
+
+
+128
+00:03:57,840 --> 00:04:00,080
+so far we are only using this to
+
+
+129
+00:04:00,080 --> 00:04:01,519
+customize the prompt
+
+
+130
+00:04:01,519 --> 00:04:03,920
+but like we saw with the git config file
+
+
+131
+00:04:03,920 --> 00:04:06,799
+we can add to this file in many ways
+
+
+132
+00:04:06,799 --> 00:04:09,120
+we already have two files that are going
+
+
+133
+00:04:09,120 --> 00:04:10,799
+to change over time
+
+
+134
+00:04:10,799 --> 00:04:13,519
+what does this mean yes it means we're
+
+
+135
+00:04:13,519 --> 00:04:15,760
+going to need a git repository to start
+
+
+136
+00:04:15,760 --> 00:04:17,680
+tracking these files along with the
+
+
+137
+00:04:17,680 --> 00:04:19,280
+changes we make to them
+
+
+138
+00:04:19,280 --> 00:04:21,440
+let's open the integrated terminal where
+
+
+139
+00:04:21,440 --> 00:04:24,000
+we can see our super fancy custom prompt
+
+
+140
+00:04:24,000 --> 00:04:24,960
+in action
+
+
+141
+00:04:24,960 --> 00:04:27,120
+and where we can see that we start off
+
+
+142
+00:04:27,120 --> 00:04:28,479
+in the home directory
+
+
+143
+00:04:28,479 --> 00:04:30,560
+i've already set up a repository on
+
+
+144
+00:04:30,560 --> 00:04:33,440
+github so i'll start a git clone command
+
+
+145
+00:04:33,440 --> 00:04:37,040
+and paste in the ssh url now we need to
+
+
+146
+00:04:37,040 --> 00:04:39,120
+tell it the directory to create
+
+
+147
+00:04:39,120 --> 00:04:41,600
+and since everybody else is doing it
+
+
+148
+00:04:41,600 --> 00:04:43,759
+let's make a hidden folder by prefixing
+
+
+149
+00:04:43,759 --> 00:04:44,960
+our dot files repo
+
+
+150
+00:04:44,960 --> 00:04:47,440
+with a period our new directory has a
+
+
+151
+00:04:47,440 --> 00:04:49,520
+readme that we will look at shortly
+
+
+152
+00:04:49,520 --> 00:04:51,840
+but let's start by moving these two dot
+
+
+153
+00:04:51,840 --> 00:04:53,360
+files into the repo
+
+
+154
+00:04:53,360 --> 00:04:56,160
+so we can back them up of course the act
+
+
+155
+00:04:56,160 --> 00:04:56,880
+of moving them
+
+
+156
+00:04:56,880 --> 00:04:58,960
+isn't enough and these two files are
+
+
+157
+00:04:58,960 --> 00:05:00,400
+still untracked
+
+
+158
+00:05:00,400 --> 00:05:02,720
+so we will cd into the dot files
+
+
+159
+00:05:02,720 --> 00:05:03,680
+directory
+
+
+160
+00:05:03,680 --> 00:05:05,520
+where we can add the two files to the
+
+
+161
+00:05:05,520 --> 00:05:08,639
+repository and then we will commit them
+
+
+162
+00:05:08,639 --> 00:05:10,960
+but is this all we have to do will we be
+
+
+163
+00:05:10,960 --> 00:05:13,039
+done after entering this command
+
+
+164
+00:05:13,039 --> 00:05:15,199
+let's try it and it looks like we have a
+
+
+165
+00:05:15,199 --> 00:05:16,160
+problem
+
+
+166
+00:05:16,160 --> 00:05:18,320
+instead of using the user information
+
+
+167
+00:05:18,320 --> 00:05:20,800
+that we just saw in our git config
+
+
+168
+00:05:20,800 --> 00:05:23,280
+the output says that git automatically
+
+
+169
+00:05:23,280 --> 00:05:24,000
+configured
+
+
+170
+00:05:24,000 --> 00:05:26,320
+this committer information based on the
+
+
+171
+00:05:26,320 --> 00:05:27,840
+username and hostname
+
+
+172
+00:05:27,840 --> 00:05:29,919
+remember that software likes to use our
+
+
+173
+00:05:29,919 --> 00:05:30,960
+home directory
+
+
+174
+00:05:30,960 --> 00:05:33,039
+so by moving this file to a different
+
+
+175
+00:05:33,039 --> 00:05:35,840
+location we've broken the configuration
+
+
+176
+00:05:35,840 --> 00:05:38,240
+every time we make a commit git will
+
+
+177
+00:05:38,240 --> 00:05:39,840
+remind us of this problem
+
+
+178
+00:05:39,840 --> 00:05:42,400
+let's copy this suggested command about
+
+
+179
+00:05:42,400 --> 00:05:43,600
+resetting the author
+
+
+180
+00:05:43,600 --> 00:05:45,919
+and amending the commit and we will try
+
+
+181
+00:05:45,919 --> 00:05:47,919
+to fix this in a few minutes
+
+
+182
+00:05:47,919 --> 00:05:50,400
+what about our zsh configurations i
+
+
+183
+00:05:50,400 --> 00:05:52,000
+think we can assume that these are
+
+
+184
+00:05:52,000 --> 00:05:53,199
+broken as well
+
+
+185
+00:05:53,199 --> 00:05:55,199
+keep an eye on the file explorer to the
+
+
+186
+00:05:55,199 --> 00:05:56,880
+left as i kill this terminal
+
+
+187
+00:05:56,880 --> 00:05:59,039
+when a shell session ends its command
+
+
+188
+00:05:59,039 --> 00:06:00,639
+history is written out
+
+
+189
+00:06:00,639 --> 00:06:02,960
+and as software continues to add files
+
+
+190
+00:06:02,960 --> 00:06:04,160
+to our home directory
+
+
+191
+00:06:04,160 --> 00:06:06,160
+we have to decide whether to move these
+
+
+192
+00:06:06,160 --> 00:06:08,240
+files to our repository
+
+
+193
+00:06:08,240 --> 00:06:11,039
+zsh history is not the type of file we
+
+
+194
+00:06:11,039 --> 00:06:12,639
+want to track in our repo
+
+
+195
+00:06:12,639 --> 00:06:14,560
+so we will leave it here in the home
+
+
+196
+00:06:14,560 --> 00:06:17,120
+directory we just saw that zsh
+
+
+197
+00:06:17,120 --> 00:06:18,880
+writes to our home directory but it
+
+
+198
+00:06:18,880 --> 00:06:21,120
+tries to read from it as well
+
+
+199
+00:06:21,120 --> 00:06:23,520
+if we open a new shell we see that we've
+
+
+200
+00:06:23,520 --> 00:06:24,880
+lost our custom prompt
+
+
+201
+00:06:24,880 --> 00:06:27,680
+because zsh could not find the zshrc
+
+
+202
+00:06:27,680 --> 00:06:28,400
+file
+
+
+203
+00:06:28,400 --> 00:06:30,720
+instead we see the default prompt which
+
+
+204
+00:06:30,720 --> 00:06:31,520
+happens to have
+
+
+205
+00:06:31,520 --> 00:06:33,520
+a similar default to the one we just saw
+
+
+206
+00:06:33,520 --> 00:06:36,000
+for git using the same username and
+
+
+207
+00:06:36,000 --> 00:06:37,440
+hostname combination
+
+
+208
+00:06:37,440 --> 00:06:38,880
+how do we fix these broken
+
+
+209
+00:06:38,880 --> 00:06:40,800
+configurations we don't want to
+
+
+210
+00:06:40,800 --> 00:06:42,400
+duplicate these files
+
+
+211
+00:06:42,400 --> 00:06:44,639
+store their copies in the home directory
+
+
+212
+00:06:44,639 --> 00:06:47,039
+and manually keep them in sync
+
+
+213
+00:06:47,039 --> 00:06:49,199
+luckily there's a way that a file can be
+
+
+214
+00:06:49,199 --> 00:06:51,039
+in two places at the same time
+
+
+215
+00:06:51,039 --> 00:06:53,599
+which is called a symbolic link or
+
+
+216
+00:06:53,599 --> 00:06:55,039
+symlink for short
+
+
+217
+00:06:55,039 --> 00:06:58,319
+to create one we will use the ln or link
+
+
+218
+00:06:58,319 --> 00:06:59,360
+command
+
+
+219
+00:06:59,360 --> 00:07:01,280
+then we will add the s option which
+
+
+220
+00:07:01,280 --> 00:07:03,039
+stands for symbolic link
+
+
+221
+00:07:03,039 --> 00:07:05,039
+now we'll pass in the full path to the
+
+
+222
+00:07:05,039 --> 00:07:07,840
+real file in our dot files directory
+
+
+223
+00:07:07,840 --> 00:07:10,160
+and lastly we'll pass in the path to the
+
+
+224
+00:07:10,160 --> 00:07:11,440
+original location
+
+
+225
+00:07:11,440 --> 00:07:14,800
+where the zshrc file is expected to live
+
+
+226
+00:07:14,800 --> 00:07:16,960
+the file explorer now shows that the
+
+
+227
+00:07:16,960 --> 00:07:20,160
+zshrc file is back in the home directory
+
+
+228
+00:07:20,160 --> 00:07:22,319
+but it has an arrow to the right which
+
+
+229
+00:07:22,319 --> 00:07:24,479
+signifies that this is a sim link
+
+
+230
+00:07:24,479 --> 00:07:26,880
+if that arrow does not show up for you
+
+
+231
+00:07:26,880 --> 00:07:28,960
+reload the window and it should appear
+
+
+232
+00:07:28,960 --> 00:07:31,520
+now i'll kill the terminal again and
+
+
+233
+00:07:31,520 --> 00:07:32,319
+open the new
+
+
+234
+00:07:32,319 --> 00:07:34,400
+simlink version from the home directory
+
+
+235
+00:07:34,400 --> 00:07:36,240
+to the right of the zshrc
+
+
+236
+00:07:36,240 --> 00:07:38,319
+file in our dot files directory they
+
+
+237
+00:07:38,319 --> 00:07:40,000
+both look like normal files
+
+
+238
+00:07:40,000 --> 00:07:42,639
+don't they but if i add a comment to the
+
+
+239
+00:07:42,639 --> 00:07:43,520
+real file
+
+
+240
+00:07:43,520 --> 00:07:46,080
+and save it we can see that changes to
+
+
+241
+00:07:46,080 --> 00:07:47,599
+the real file at the left
+
+
+242
+00:07:47,599 --> 00:07:49,599
+will show up in the symlink version at
+
+
+243
+00:07:49,599 --> 00:07:52,000
+the right of course we can delete these
+
+
+244
+00:07:52,000 --> 00:07:53,120
+lines from the right
+
+
+245
+00:07:53,120 --> 00:07:55,759
+and after another save those changes are
+
+
+246
+00:07:55,759 --> 00:07:57,280
+reflected at the left
+
+
+247
+00:07:57,280 --> 00:07:59,840
+since vs code can follow the sim link to
+
+
+248
+00:07:59,840 --> 00:08:00,879
+the real file
+
+
+249
+00:08:00,879 --> 00:08:03,919
+and treat it as a real file i bet zsh
+
+
+250
+00:08:03,919 --> 00:08:04,879
+can too
+
+
+251
+00:08:04,879 --> 00:08:07,360
+if we open a new shell we see our custom
+
+
+252
+00:08:07,360 --> 00:08:08,800
+prompt has returned
+
+
+253
+00:08:08,800 --> 00:08:11,120
+when a shell loads it looks for the
+
+
+254
+00:08:11,120 --> 00:08:14,000
+zshrc file in the home directory
+
+
+255
+00:08:14,000 --> 00:08:16,000
+which follows the sim link to the real
+
+
+256
+00:08:16,000 --> 00:08:17,199
+file and
+
+
+257
+00:08:17,199 --> 00:08:19,280
+the customization makes it into the
+
+
+258
+00:08:19,280 --> 00:08:21,599
+shell not only did the shell load the
+
+
+259
+00:08:21,599 --> 00:08:23,199
+zshrc file
+
+
+260
+00:08:23,199 --> 00:08:25,680
+it also loaded the zsh history file
+
+
+261
+00:08:25,680 --> 00:08:27,759
+which is still in the home directory
+
+
+262
+00:08:27,759 --> 00:08:29,759
+this means we have access to previous
+
+
+263
+00:08:29,759 --> 00:08:31,520
+commands i can press
+
+
+264
+00:08:31,520 --> 00:08:33,760
+up to retrieve the most recent command
+
+
+265
+00:08:33,760 --> 00:08:34,880
+from the history
+
+
+266
+00:08:34,880 --> 00:08:37,279
+and then alter it to create a sim link
+
+
+267
+00:08:37,279 --> 00:08:38,880
+for the git config file
+
+
+268
+00:08:38,880 --> 00:08:41,279
+which we see appear in the explorer with
+
+
+269
+00:08:41,279 --> 00:08:42,880
+another arrow icon
+
+
+270
+00:08:42,880 --> 00:08:45,279
+we've seen enough of the home directory
+
+
+271
+00:08:45,279 --> 00:08:48,240
+so before testing our git config fix
+
+
+272
+00:08:48,240 --> 00:08:50,880
+let's open only the dot files directory
+
+
+273
+00:08:50,880 --> 00:08:53,360
+the key combo we used in finder to show
+
+
+274
+00:08:53,360 --> 00:08:54,480
+hidden files
+
+
+275
+00:08:54,480 --> 00:08:57,360
+command shift period works here as well
+
+
+276
+00:08:57,360 --> 00:08:59,519
+of course the arrows here on the file
+
+
+277
+00:08:59,519 --> 00:09:00,240
+icons
+
+
+278
+00:09:00,240 --> 00:09:02,160
+mean the same thing they do in the file
+
+
+279
+00:09:02,160 --> 00:09:04,399
+explorer after opening the dot files
+
+
+280
+00:09:04,399 --> 00:09:06,320
+directory we have less clutter to look
+
+
+281
+00:09:06,320 --> 00:09:06,959
+at
+
+
+282
+00:09:06,959 --> 00:09:08,959
+since we have the dot files directory
+
+
+283
+00:09:08,959 --> 00:09:10,560
+open in vs code
+
+
+284
+00:09:10,560 --> 00:09:12,560
+the integrated terminal will start at
+
+
+285
+00:09:12,560 --> 00:09:15,040
+the same location when we fire up a new
+
+
+286
+00:09:15,040 --> 00:09:15,760
+shell
+
+
+287
+00:09:15,760 --> 00:09:18,080
+a git log command will remind us that
+
+
+288
+00:09:18,080 --> 00:09:20,480
+our last commit has the wrong author
+
+
+289
+00:09:20,480 --> 00:09:22,399
+which happened because we moved the git
+
+
+290
+00:09:22,399 --> 00:09:23,519
+config file
+
+
+291
+00:09:23,519 --> 00:09:25,600
+we can check to see if our second sim
+
+
+292
+00:09:25,600 --> 00:09:26,560
+link is working
+
+
+293
+00:09:26,560 --> 00:09:28,800
+by checking the global git config for
+
+
+294
+00:09:28,800 --> 00:09:30,000
+the email address
+
+
+295
+00:09:30,000 --> 00:09:32,399
+which shows the correct no reply email
+
+
+296
+00:09:32,399 --> 00:09:34,080
+address that we saw before
+
+
+297
+00:09:34,080 --> 00:09:35,680
+now i'll paste in the command that i
+
+
+298
+00:09:35,680 --> 00:09:37,200
+copied a bit ago
+
+
+299
+00:09:37,200 --> 00:09:39,839
+if you issue this command as is you'll
+
+
+300
+00:09:39,839 --> 00:09:41,920
+end up editing the commit in vim
+
+
+301
+00:09:41,920 --> 00:09:44,080
+because it is the default editor and if
+
+
+302
+00:09:44,080 --> 00:09:46,000
+you're like me it will take you half an
+
+
+303
+00:09:46,000 --> 00:09:48,080
+hour to figure out how to exit them
+
+
+304
+00:09:48,080 --> 00:09:50,320
+changing the default editor perhaps to
+
+
+305
+00:09:50,320 --> 00:09:52,080
+nano or vs code
+
+
+306
+00:09:52,080 --> 00:09:54,080
+is the type of configuration you could
+
+
+307
+00:09:54,080 --> 00:09:55,360
+make to your git config
+
+
+308
+00:09:55,360 --> 00:09:57,200
+file and the change would be tracked in
+
+
+309
+00:09:57,200 --> 00:09:59,360
+your repo but in this case
+
+
+310
+00:09:59,360 --> 00:10:01,040
+we don't actually want to edit the
+
+
+311
+00:10:01,040 --> 00:10:02,480
+contents of the commit
+
+
+312
+00:10:02,480 --> 00:10:05,519
+so we can add the no edit option another
+
+
+313
+00:10:05,519 --> 00:10:06,320
+look at the git
+
+
+314
+00:10:06,320 --> 00:10:08,399
+log shows that the author information
+
+
+315
+00:10:08,399 --> 00:10:09,680
+has been corrected
+
+
+316
+00:10:09,680 --> 00:10:11,440
+we have successfully backed up our
+
+
+317
+00:10:11,440 --> 00:10:13,680
+configurations while preserving the
+
+
+318
+00:10:13,680 --> 00:10:15,120
+ability to use them
+
+
+319
+00:10:15,120 --> 00:10:17,120
+but that won't do a lot of good if our
+
+
+320
+00:10:17,120 --> 00:10:18,959
+software is not installed
+
+
+321
+00:10:18,959 --> 00:10:21,120
+we need an automated way of installing
+
+
+322
+00:10:21,120 --> 00:10:23,360
+software and for that we will use a
+
+
+323
+00:10:23,360 --> 00:10:25,519
+package manager called homebrew
+
+
+324
+00:10:25,519 --> 00:10:27,760
+it just so happens that i used homebrew
+
+
+325
+00:10:27,760 --> 00:10:30,240
+to install vs code along with some other
+
+
+326
+00:10:30,240 --> 00:10:30,959
+software
+
+
+327
+00:10:30,959 --> 00:10:32,880
+we don't have time to learn much about
+
+
+328
+00:10:32,880 --> 00:10:35,120
+it but homebrew keeps track of what it
+
+
+329
+00:10:35,120 --> 00:10:36,320
+has installed
+
+
+330
+00:10:36,320 --> 00:10:38,560
+and can output a list of software with
+
+
+331
+00:10:38,560 --> 00:10:39,680
+this command
+
+
+332
+00:10:39,680 --> 00:10:41,600
+after brew bundle dump i'll add the
+
+
+333
+00:10:41,600 --> 00:10:44,079
+describe option for a little more info
+
+
+334
+00:10:44,079 --> 00:10:46,160
+this command will create a file in your
+
+
+335
+00:10:46,160 --> 00:10:47,200
+current directory
+
+
+336
+00:10:47,200 --> 00:10:49,440
+so it's important that we are already in
+
+
+337
+00:10:49,440 --> 00:10:50,880
+our dot files repo
+
+
+338
+00:10:50,880 --> 00:10:53,279
+our new brew file has a list of software
+
+
+339
+00:10:53,279 --> 00:10:55,839
+that can be reinstalled at a later date
+
+
+340
+00:10:55,839 --> 00:10:58,079
+taps are the repositories where homebrew
+
+
+341
+00:10:58,079 --> 00:10:59,440
+keeps its own software
+
+
+342
+00:10:59,440 --> 00:11:01,279
+along with the information about the
+
+
+343
+00:11:01,279 --> 00:11:03,200
+other software it can install
+
+
+344
+00:11:03,200 --> 00:11:05,519
+brews are tools you typically use in
+
+
+345
+00:11:05,519 --> 00:11:06,480
+your shell
+
+
+346
+00:11:06,480 --> 00:11:08,880
+these top two are new tools i've added
+
+
+347
+00:11:08,880 --> 00:11:10,640
+to improve my shell experience
+
+
+348
+00:11:10,640 --> 00:11:12,560
+while these bottom two are upgraded
+
+
+349
+00:11:12,560 --> 00:11:14,000
+versions of pre-installed
+
+
+350
+00:11:14,000 --> 00:11:16,160
+software so homebrew helps keep
+
+
+351
+00:11:16,160 --> 00:11:17,519
+everything up to date
+
+
+352
+00:11:17,519 --> 00:11:19,360
+and the casks at the bottom are
+
+
+353
+00:11:19,360 --> 00:11:20,959
+full-blown applications that you
+
+
+354
+00:11:20,959 --> 00:11:22,399
+probably recognize
+
+
+355
+00:11:22,399 --> 00:11:25,200
+let's start one last shell add the brew
+
+
+356
+00:11:25,200 --> 00:11:26,959
+file to start tracking it
+
+
+357
+00:11:26,959 --> 00:11:29,600
+and do another commit note that this
+
+
+358
+00:11:29,600 --> 00:11:31,440
+time we did not get the warning message
+
+
+359
+00:11:31,440 --> 00:11:32,640
+that we saw before
+
+
+360
+00:11:32,640 --> 00:11:34,560
+about automatically configuring the
+
+
+361
+00:11:34,560 --> 00:11:36,800
+author that's another sign that our git
+
+
+362
+00:11:36,800 --> 00:11:38,480
+config sim link is working
+
+
+363
+00:11:38,480 --> 00:11:40,160
+so we will push our changes to the
+
+
+364
+00:11:40,160 --> 00:11:41,600
+remote repository
+
+
+365
+00:11:41,600 --> 00:11:43,920
+now we've saved our software along with
+
+
+366
+00:11:43,920 --> 00:11:45,360
+some configurations
+
+
+367
+00:11:45,360 --> 00:11:47,760
+but we haven't recorded the process when
+
+
+368
+00:11:47,760 --> 00:11:49,600
+the time comes to bootstrap a new
+
+
+369
+00:11:49,600 --> 00:11:50,240
+computer
+
+
+370
+00:11:50,240 --> 00:11:52,639
+using our dot files repository we are
+
+
+371
+00:11:52,639 --> 00:11:54,639
+likely to forget some steps
+
+
+372
+00:11:54,639 --> 00:11:56,880
+instead of researching and relearning
+
+
+373
+00:11:56,880 --> 00:11:58,959
+these things we can keep a list in the
+
+
+374
+00:11:58,959 --> 00:11:59,760
+readme
+
+
+375
+00:11:59,760 --> 00:12:01,920
+we haven't seen this first step yet
+
+
+376
+00:12:01,920 --> 00:12:03,279
+before we can use git
+
+
+377
+00:12:03,279 --> 00:12:05,360
+and homebrew we would need to install
+
+
+378
+00:12:05,360 --> 00:12:06,959
+the command line tools
+
+
+379
+00:12:06,959 --> 00:12:09,279
+after that we would clone the repository
+
+
+380
+00:12:09,279 --> 00:12:10,560
+to our new machine
+
+
+381
+00:12:10,560 --> 00:12:13,519
+ssh is preferred but you might want to
+
+
+382
+00:12:13,519 --> 00:12:14,360
+start with
+
+
+383
+00:12:14,360 --> 00:12:17,120
+https and switch remotes after you've
+
+
+384
+00:12:17,120 --> 00:12:19,440
+had a chance to set up ssh
+
+
+385
+00:12:19,440 --> 00:12:22,000
+with our configuration files on our
+
+
+386
+00:12:22,000 --> 00:12:22,800
+machine
+
+
+387
+00:12:22,800 --> 00:12:24,639
+we would then repeat our sim linking
+
+
+388
+00:12:24,639 --> 00:12:27,040
+steps you can probably see that this
+
+
+389
+00:12:27,040 --> 00:12:29,120
+would be unwieldy if we had a dozen sim
+
+
+390
+00:12:29,120 --> 00:12:29,839
+links
+
+
+391
+00:12:29,839 --> 00:12:32,320
+and the more manual steps we have the
+
+
+392
+00:12:32,320 --> 00:12:34,480
+more error prone our process
+
+
+393
+00:12:34,480 --> 00:12:36,399
+there are better ways to do this and
+
+
+394
+00:12:36,399 --> 00:12:37,839
+this is the type of thing you'd
+
+
+395
+00:12:37,839 --> 00:12:40,480
+eventually work into an install script
+
+
+396
+00:12:40,480 --> 00:12:42,880
+finally we would install homebrew and
+
+
+397
+00:12:42,880 --> 00:12:44,800
+then point it to our brew file to
+
+
+398
+00:12:44,800 --> 00:12:45,680
+reinstall
+
+
+399
+00:12:45,680 --> 00:12:48,240
+all of our software i really wish we had
+
+
+400
+00:12:48,240 --> 00:12:50,079
+the time to see this step in action
+
+
+401
+00:12:50,079 --> 00:12:52,320
+because it is very satisfying
+
+
+402
+00:12:52,320 --> 00:12:54,959
+just like we saw in the git config and
+
+
+403
+00:12:54,959 --> 00:12:56,800
+zshrc files
+
+
+404
+00:12:56,800 --> 00:12:58,880
+here we have another list of ideas
+
+
+405
+00:12:58,880 --> 00:13:00,800
+regarding improving our dot files
+
+
+406
+00:13:00,800 --> 00:13:01,760
+process
+
+
+407
+00:13:01,760 --> 00:13:03,680
+we haven't looked at saving system
+
+
+408
+00:13:03,680 --> 00:13:06,000
+preferences organizing this repo
+
+
+409
+00:13:06,000 --> 00:13:08,079
+into separate files building that
+
+
+410
+00:13:08,079 --> 00:13:09,360
+install script
+
+
+411
+00:13:09,360 --> 00:13:11,920
+or automating any of the steps we did
+
+
+412
+00:13:11,920 --> 00:13:14,480
+there are 11 billion possibilities which
+
+
+413
+00:13:14,480 --> 00:13:16,160
+we can't cover in 10 minutes
+
+
+414
+00:13:16,160 --> 00:13:18,639
+let alone 100 seconds but as jeff
+
+
+415
+00:13:18,639 --> 00:13:20,079
+mentioned i have a growing
+
+
+416
+00:13:20,079 --> 00:13:21,760
+course that thoroughly covers this
+
+
+417
+00:13:21,760 --> 00:13:23,120
+material and
+
+
+418
+00:13:23,120 --> 00:13:25,360
+for the next 30 days i'll keep the price
+
+
+419
+00:13:25,360 --> 00:13:28,000
+as low as the course platform allows
+
+
+420
+00:13:28,000 --> 00:13:30,320
+enroll now and your next computer setup
+
+
+421
+00:13:30,320 --> 00:13:32,000
+will be no match for your dot file
+
+
+422
+00:13:32,000 --> 00:13:32,959
+skills
+
+
+423
+00:13:32,959 --> 00:13:35,440
+thank you for watching and since there's
+
+
+424
+00:13:35,440 --> 00:13:37,279
+no way i could possibly thank jeff
+
+
+425
+00:13:37,279 --> 00:13:39,680
+enough for sharing his stage with me
+
+
+426
+00:13:39,680 --> 00:13:42,320
+please thank him on my behalf by liking
+
+
+427
+00:13:42,320 --> 00:13:44,079
+and sharing his videos
+
+
+428
+00:13:44,079 --> 00:13:46,720
+subscribing to this channel and going
+
+
+429
+00:13:46,720 --> 00:13:47,199
+pro
+
+
+430
+00:13:47,199 --> 00:13:49,839
+at fire ship io thanks for watching and
+
+
+431
+00:13:49,839 --> 00:13:55,040
+i will see you in the next one
+
+

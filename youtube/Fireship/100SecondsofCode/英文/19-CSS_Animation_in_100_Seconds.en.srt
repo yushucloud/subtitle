@@ -1,0 +1,325 @@
+1
+00:00:00,030 --> 00:00:02,250
+animation it's the change from one CSS
+
+
+2
+00:00:02,250 --> 00:00:04,020
+style to another over the dimension of
+
+
+3
+00:00:04,020 --> 00:00:05,910
+time every animation has at least two
+
+
+4
+00:00:05,910 --> 00:00:07,980
+states a starting point and an ending
+
+
+5
+00:00:07,980 --> 00:00:09,960
+point when you move from start to finish
+
+
+6
+00:00:09,960 --> 00:00:12,179
+CSS will calculate all the values in
+
+
+7
+00:00:12,179 --> 00:00:14,009
+between in computer science this is
+
+
+8
+00:00:14,009 --> 00:00:16,109
+called inbetweening or a tween animation
+
+
+9
+00:00:16,109 --> 00:00:18,150
+imagine we have an element that we want
+
+
+10
+00:00:18,150 --> 00:00:20,550
+to fade in over a duration of one second
+
+
+11
+00:00:20,550 --> 00:00:22,289
+when the animation starts the browser
+
+
+12
+00:00:22,289 --> 00:00:24,660
+calculates a new a pasty value for every
+
+
+13
+00:00:24,660 --> 00:00:26,760
+frame rendered and it does so using a
+
+
+14
+00:00:26,760 --> 00:00:28,619
+linear timing function which means the
+
+
+15
+00:00:28,619 --> 00:00:30,359
+amount of change that occurs to the CSS
+
+
+16
+00:00:30,359 --> 00:00:32,669
+value is exactly the same for each unit
+
+
+17
+00:00:32,669 --> 00:00:34,350
+of time but in the real physical world
+
+
+18
+00:00:34,350 --> 00:00:36,300
+things rarely move at a perfect linear
+
+
+19
+00:00:36,300 --> 00:00:38,910
+pace things ease in ease out and change
+
+
+20
+00:00:38,910 --> 00:00:40,800
+the velocity gracefully you can do the
+
+
+21
+00:00:40,800 --> 00:00:42,750
+same in your CSS animations by providing
+
+
+22
+00:00:42,750 --> 00:00:44,520
+a timing function there are many
+
+
+23
+00:00:44,520 --> 00:00:46,050
+built-in functions where you can define
+
+
+24
+00:00:46,050 --> 00:00:48,360
+your own custom veggie acres the easiest
+
+
+25
+00:00:48,360 --> 00:00:50,399
+way to create an animation with CSS is
+
+
+26
+00:00:50,399 --> 00:00:52,320
+with a transition start by adding the
+
+
+27
+00:00:52,320 --> 00:00:54,329
+transition property to a selector the
+
+
+28
+00:00:54,329 --> 00:00:55,860
+first value is the property that you
+
+
+29
+00:00:55,860 --> 00:00:57,390
+want to animate in our case its opacity
+
+
+30
+00:00:57,390 --> 00:00:59,940
+the second value is the duration you can
+
+
+31
+00:00:59,940 --> 00:01:02,309
+define it in seconds or milliseconds now
+
+
+32
+00:01:02,309 --> 00:01:03,840
+whenever the opacity for this element
+
+
+33
+00:01:03,840 --> 00:01:05,909
+changes CSS will automatically handle
+
+
+34
+00:01:05,909 --> 00:01:08,130
+the animation for you for example we can
+
+
+35
+00:01:08,130 --> 00:01:09,810
+target the hover pseudo selector and
+
+
+36
+00:01:09,810 --> 00:01:11,880
+change the opacity to one and that's all
+
+
+37
+00:01:11,880 --> 00:01:13,409
+it takes to create a fade-in fade-out
+
+
+38
+00:01:13,409 --> 00:01:15,840
+animation with CSS we can refine this
+
+
+39
+00:01:15,840 --> 00:01:17,790
+animation by adding an additional value
+
+
+40
+00:01:17,790 --> 00:01:20,130
+for a delay or a timing function use a
+
+
+41
+00:01:20,130 --> 00:01:21,900
+built-in easing function or create your
+
+
+42
+00:01:21,900 --> 00:01:24,060
+own custom as the a curve but what if
+
+
+43
+00:01:24,060 --> 00:01:25,770
+you want to animate something forever or
+
+
+44
+00:01:25,770 --> 00:01:28,049
+in multiple steps keyframes allow you to
+
+
+45
+00:01:28,049 --> 00:01:29,759
+define animations independent of a
+
+
+46
+00:01:29,759 --> 00:01:31,409
+selector first give your keyframe
+
+
+47
+00:01:31,409 --> 00:01:32,939
+animation a name then define your
+
+
+48
+00:01:32,939 --> 00:01:34,409
+starting styles with from and your
+
+
+49
+00:01:34,409 --> 00:01:36,450
+ending styles with to any intermediate
+
+
+50
+00:01:36,450 --> 00:01:38,280
+styles or steps in the animation can be
+
+
+51
+00:01:38,280 --> 00:01:40,380
+defined as a percentage in relative time
+
+
+52
+00:01:40,380 --> 00:01:42,210
+to the starting point if your animation
+
+
+53
+00:01:42,210 --> 00:01:44,820
+is 4 seconds long then 25% would be 1
+
+
+54
+00:01:44,820 --> 00:01:46,890
+second into that animation you can use
+
+
+55
+00:01:46,890 --> 00:01:48,810
+this animation by referencing it as the
+
+
+56
+00:01:48,810 --> 00:01:50,549
+animation name in one of your selectors
+
+
+57
+00:01:50,549 --> 00:01:52,320
+give it a duration and timing function
+
+
+58
+00:01:52,320 --> 00:01:53,880
+then change the iteration count to
+
+
+59
+00:01:53,880 --> 00:01:55,740
+infinite to make it loop forever this
+
+
+60
+00:01:55,740 --> 00:01:57,990
+has been CSS animation in 100 seconds
+
+
+61
+00:01:57,990 --> 00:01:59,280
+hit the like button if you want to see
+
+
+62
+00:01:59,280 --> 00:02:00,869
+more short videos like this thanks for
+
+
+63
+00:02:00,869 --> 00:02:02,640
+watching and I will see you in the next
+
+
+64
+00:02:02,640 --> 00:02:03,570
+one
+
+
+65
+00:02:03,570 --> 00:02:05,630
+you
+
+

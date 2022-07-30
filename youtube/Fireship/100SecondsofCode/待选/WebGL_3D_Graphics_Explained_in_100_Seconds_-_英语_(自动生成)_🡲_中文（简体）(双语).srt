@@ -1,0 +1,174 @@
+1
+00:00:00,160 --> 00:00:04,000
+web graphics library is a javascript api for implementing
+Web 图形库是一个 javascript api，用于
+
+2
+00:00:04,000 --> 00:00:07,200
+interactive 2d and 3d vector graphics in the browser
+在浏览器中实现交互式 2d 和 3d 矢量图形，
+
+3
+00:00:07,200 --> 00:00:10,719
+it allows developers to run hardware accelerated graphics with the client's
+它允许开发人员使用客户端的
+
+4
+00:00:10,719 --> 00:00:13,679
+gpu directly inside an html canvas without
+gpu直接在 html 画布内运行硬件加速图形，而
+
+5
+00:00:13,679 --> 00:00:17,359
+the need for external plugins it opens the door to 3d web design
+无需外部插件它打开了 3d 网页设计交互的大门
+
+6
+00:00:17,359 --> 00:00:21,439
+interactive games data vis physics simulations and most importantly
+游戏数据与物理模拟，最重要的是
+
+7
+00:00:21,439 --> 00:00:24,560
+beautiful artwork webgl is used to render graphics in
+精美的艺术品webgl 用于在
+
+8
+00:00:24,560 --> 00:00:28,880
+everyday tools like google maps and by the unity engine to make web-based games
+谷歌地图等日常工具中渲染图形，并被统一引擎用于制作基于网络的游戏
+
+9
+00:00:28,880 --> 00:00:32,880
+to understand how it works it helps to first understand basic 3d theory
+以了解其工作原理它有助于首先了解基本的 3d 理论
+
+10
+00:00:32,880 --> 00:00:36,800
+and the rendering pipeline in a 3d scene every point is a vertex
+和渲染管道 在 3d 场景中，每个点都是
+
+11
+00:00:36,800 --> 00:00:41,280
+identified by its x y and z coordinates the vertices are then connected together
+由其 x y 和 z 坐标标识的顶点，然后将顶点连接
+
+12
+00:00:41,280 --> 00:00:44,320
+to form a bunch of little triangles known as primitives
+在一起形成一堆称为基元的小三角形，
+
+13
+00:00:44,320 --> 00:00:48,239
+then a light source bounces off of them to create the appearance of shadows and
+然后光源从它们反射回来以产生阴影的外观和
+
+14
+00:00:48,239 --> 00:00:50,719
+depth perception they're then rasterized to convert
+深度感知。  '然后被光栅化以
+
+15
+00:00:50,719 --> 00:00:54,320
+a 3d vector graphic into a projection of a 2d pixel
+将 3d 矢量图形转换为 2d 像素的投影，
+
+16
+00:00:54,320 --> 00:00:58,320
+which tricks our brains into seeing a 3d object on a 2-dimensional computer
+这会欺骗你在二维计算机屏幕上看到 3d 对象的大脑
+
+17
+00:00:58,320 --> 00:01:00,399
+screen this pipeline can be customized by
+可以通过编写着色器来定制这条管道
+
+18
+00:01:00,399 --> 00:01:04,000
+writing shaders which are just functions that tell the computer how to draw
+，这些着色器只是告诉计算机如何
+
+19
+00:01:04,000 --> 00:01:07,360
+pixels on the screen shading requires the computer to perform
+在屏幕上绘制像素的函数着色需要计算机
+
+20
+00:01:07,360 --> 00:01:10,320
+a ton of linear algebra or matrix multiplication
+执行大量线性代数或矩阵
+
+21
+00:01:10,320 --> 00:01:14,960
+to render graphics smoothly at 60fps it's often too much for the cpu to
+以 60fps 平滑渲染图形的乘法通常对于 cpu 本身来说太多了，
+
+22
+00:01:14,960 --> 00:01:18,880
+handle by itself which is why we have gpus to distribute the calculations more
+这就是为什么我们让gpus 更有效地分配计算
+
+23
+00:01:18,880 --> 00:01:22,640
+efficiently webgl allows us to process graphics on the gpu
+webgl允许我们在 gpu 上处理图形，
+
+24
+00:01:22,640 --> 00:01:26,720
+and is based on a library that's been around since 1992 called opengl
+并且基于自 1992 年以来一直存在的库 调用opengl
+
+25
+00:01:26,720 --> 00:01:30,560
+to get started you just need to grab an html canvas in the dom
+开始你只需要在dom中获取一个html画布
+
+26
+00:01:30,560 --> 00:01:34,720
+then get its webgl contacts to start drawing the main program code is written
+然后获取它的webgl联系人开始绘制主程序代码是用javascript编写的
+
+27
+00:01:34,720 --> 00:01:38,479
+in javascript but shaders are written in the opengl es
+，但着色器是用opengl es
+
+28
+00:01:38,479 --> 00:01:41,040
+shading language a shader will take information about a
+着色语言编写的着色器将获取有关
+
+29
+00:01:41,040 --> 00:01:45,600
+vertex or fragment and use the gpu to calculate the data required to render it
+顶点的信息 或片段并使用 gpu计算将其渲染
+
+30
+00:01:45,600 --> 00:01:48,880
+as a pixel on the screen luckily you don't need to write shaders
+为屏幕上的像素所需的数据，幸运的是您不需要通过 h 编写着色器
+
+31
+00:01:48,880 --> 00:01:52,960
+by hand to start adding 3d graphics to your website you can use libraries like
+并开始将 3d 图形添加到您的网站，您可以使用
+
+32
+00:01:52,960 --> 00:01:57,439
+3js or tools like spline to quickly design 3d experiences without much
+3js 之类的库或 spline 之类的工具来快速设计 3d 体验，而无需太多
+
+33
+00:01:57,439 --> 00:02:01,759
+underlying knowledge of webgl stay tuned for a full 3js tutorial make
+webgl 基础知识 请继续关注完整的 3js 教程
+
+34
+00:02:01,759 --> 00:02:04,880
+sure to hit the like button thanks for watching and i will see you
+确保点击赞按钮感谢观看，我会的
+
+35
+00:02:04,880 --> 00:02:08,079
+in the next one
+下一篇见

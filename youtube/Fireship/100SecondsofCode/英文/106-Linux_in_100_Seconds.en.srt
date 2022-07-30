@@ -1,0 +1,405 @@
+1
+00:00:00,000 --> 00:00:02,580
+Linux in open source operating system
+
+
+2
+00:00:02,580 --> 00:00:04,740
+that makes it possible for humans to
+
+
+3
+00:00:04,740 --> 00:00:06,480
+play with computers it was created in
+
+
+4
+00:00:06,480 --> 00:00:09,059
+1991 by University of Helsinki student
+
+
+5
+00:00:09,059 --> 00:00:11,639
+Linus Torvalds his goal was to create a
+
+
+6
+00:00:11,639 --> 00:00:13,259
+free version of the Minix operating
+
+
+7
+00:00:13,259 --> 00:00:15,480
+system which itself was based on Unix
+
+
+8
+00:00:15,480 --> 00:00:17,640
+today it's used everywhere like the vast
+
+
+9
+00:00:17,640 --> 00:00:19,740
+majority of web servers embedded apps
+
+
+10
+00:00:19,740 --> 00:00:21,420
+like your smart TV mobile devices
+
+
+11
+00:00:21,420 --> 00:00:23,460
+running Android and is by far the best
+
+
+12
+00:00:23,460 --> 00:00:25,320
+choice for your personal computer with
+
+
+13
+00:00:25,320 --> 00:00:26,820
+many different distros to choose from
+
+
+14
+00:00:26,820 --> 00:00:29,279
+like Debian Arch and Fedora just to name
+
+
+15
+00:00:29,279 --> 00:00:32,040
+a few just like Windows or Mac OS Linux
+
+
+16
+00:00:32,040 --> 00:00:34,320
+is an operating system that manages a
+
+
+17
+00:00:34,320 --> 00:00:36,360
+computer's memory and processes allowing
+
+
+18
+00:00:36,360 --> 00:00:38,100
+Hardware to communicate with software
+
+
+19
+00:00:38,100 --> 00:00:40,200
+when you fire up a Linux machine a
+
+
+20
+00:00:40,200 --> 00:00:41,760
+bootloader will first put the system
+
+
+21
+00:00:41,760 --> 00:00:43,860
+into memory at its core we have the
+
+
+22
+00:00:43,860 --> 00:00:45,719
+kernel which is like a seed from which
+
+
+23
+00:00:45,719 --> 00:00:47,520
+the rest of the operating system grows
+
+
+24
+00:00:47,520 --> 00:00:49,500
+it's divided into multiple smaller
+
+
+25
+00:00:49,500 --> 00:00:51,600
+subsystems like a process scheduler
+
+
+26
+00:00:51,600 --> 00:00:53,699
+device drivers and a memory manager
+
+
+27
+00:00:53,699 --> 00:00:55,320
+they're exposed with a system call
+
+
+28
+00:00:55,320 --> 00:00:57,239
+interface which itself is wrapped with
+
+
+29
+00:00:57,239 --> 00:00:59,340
+the c standard Library which provides an
+
+
+30
+00:00:59,340 --> 00:01:01,800
+API that user applications can interact
+
+
+31
+00:01:01,800 --> 00:01:03,480
+with now beyond the kernel we have
+
+
+32
+00:01:03,480 --> 00:01:05,820
+applications that make the OS usable for
+
+
+33
+00:01:05,820 --> 00:01:08,040
+humans which are provided primarily via
+
+
+34
+00:01:08,040 --> 00:01:10,380
+the gnu project like a shell to interact
+
+
+35
+00:01:10,380 --> 00:01:11,700
+with the kernel from the command line
+
+
+36
+00:01:11,700 --> 00:01:13,979
+windowing systems on desktop developer
+
+
+37
+00:01:13,979 --> 00:01:15,479
+utilities and countless other
+
+
+38
+00:01:15,479 --> 00:01:17,880
+applications to get started install your
+
+
+39
+00:01:17,880 --> 00:01:19,680
+favorite Linux distro open the terminal
+
+
+40
+00:01:19,680 --> 00:01:21,540
+and notice how we're logged in as the
+
+
+41
+00:01:21,540 --> 00:01:23,580
+root user on a specific Linux machine
+
+
+42
+00:01:23,580 --> 00:01:25,680
+currently we're in the home directory of
+
+
+43
+00:01:25,680 --> 00:01:27,479
+the root user which is shortened to this
+
+
+44
+00:01:27,479 --> 00:01:29,400
+tilde character show its full name with
+
+
+45
+00:01:29,400 --> 00:01:31,200
+the print working directory command now
+
+
+46
+00:01:31,200 --> 00:01:32,700
+use change directories with a double
+
+
+47
+00:01:32,700 --> 00:01:34,560
+period to go to the root of the file
+
+
+48
+00:01:34,560 --> 00:01:36,720
+system use the ls command to print all
+
+
+49
+00:01:36,720 --> 00:01:38,460
+the subdirectories here these are your
+
+
+50
+00:01:38,460 --> 00:01:40,439
+critical system files let's go back home
+
+
+51
+00:01:40,439 --> 00:01:43,200
+with CD tilde now create a new file with
+
+
+52
+00:01:43,200 --> 00:01:44,880
+touch then edit it from the terminal
+
+
+53
+00:01:44,880 --> 00:01:48,119
+with a tool like VI Vim Nano or emacs in
+
+
+54
+00:01:48,119 --> 00:01:49,860
+Vim type Ida insert write your
+
+
+55
+00:01:49,860 --> 00:01:52,560
+screenplay hit Escape then colon WQ to
+
+
+56
+00:01:52,560 --> 00:01:54,360
+write it to the file system now use the
+
+
+57
+00:01:54,360 --> 00:01:56,219
+cat command to read the file if it's
+
+
+58
+00:01:56,219 --> 00:01:58,439
+really big use grep to find all the
+
+
+59
+00:01:58,439 --> 00:02:00,479
+lines in that file that contain in a
+
+
+60
+00:02:00,479 --> 00:02:02,280
+search term or pattern if we want to see
+
+
+61
+00:02:02,280 --> 00:02:04,140
+how big that file is we can enter the
+
+
+62
+00:02:04,140 --> 00:02:06,360
+disk usage command every file has an
+
+
+63
+00:02:06,360 --> 00:02:08,099
+owner and a set of permissions assigned
+
+
+64
+00:02:08,099 --> 00:02:09,720
+to it we can change the owner with the
+
+
+65
+00:02:09,720 --> 00:02:11,520
+Chone command or its permissions with
+
+
+66
+00:02:11,520 --> 00:02:13,379
+chamod now if your current user doesn't
+
+
+67
+00:02:13,379 --> 00:02:15,000
+have proper permissions you can put
+
+
+68
+00:02:15,000 --> 00:02:17,280
+super user do in front of any command to
+
+
+69
+00:02:17,280 --> 00:02:19,200
+run it with elevated privileges to
+
+
+70
+00:02:19,200 --> 00:02:21,120
+install new software on this machine we
+
+
+71
+00:02:21,120 --> 00:02:23,220
+can use a package manager like Advanced
+
+
+72
+00:02:23,220 --> 00:02:24,780
+package tool which will retrieve the
+
+
+73
+00:02:24,780 --> 00:02:26,400
+code from the cloud and place it in the
+
+
+74
+00:02:26,400 --> 00:02:28,260
+proper location on your system we just
+
+
+75
+00:02:28,260 --> 00:02:29,819
+went through a bunch of commands let's
+
+
+76
+00:02:29,819 --> 00:02:31,739
+recap everything with history this has
+
+
+77
+00:02:31,739 --> 00:02:34,080
+been Linux in 100 seconds if you want to
+
+
+78
+00:02:34,080 --> 00:02:35,640
+see more short videos like this hit the
+
+
+79
+00:02:35,640 --> 00:02:37,379
+like button and subscribe thanks for
+
+
+80
+00:02:37,379 --> 00:02:39,239
+watching and I will see you in the next
+
+
+81
+00:02:39,239 --> 00:02:41,420
+one
+
+

@@ -1,0 +1,390 @@
+1
+00:00:00,160 --> 00:00:02,639
+redux a single source of truth for all
+
+
+2
+00:00:02,639 --> 00:00:04,880
+the data in your javascript application
+
+
+3
+00:00:04,880 --> 00:00:07,040
+modern web applications are represented
+
+
+4
+00:00:07,040 --> 00:00:09,040
+as a complex tree of components
+
+
+5
+00:00:09,040 --> 00:00:11,040
+components that constantly produce and
+
+
+6
+00:00:11,040 --> 00:00:12,960
+share data called state and when state
+
+
+7
+00:00:12,960 --> 00:00:14,799
+is decentralized it can become difficult
+
+
+8
+00:00:14,799 --> 00:00:17,279
+to understand and test redux is both a
+
+
+9
+00:00:17,279 --> 00:00:18,960
+pattern and library that helps
+
+
+10
+00:00:18,960 --> 00:00:20,720
+developers implement complex state
+
+
+11
+00:00:20,720 --> 00:00:22,640
+management requirements at scale it was
+
+
+12
+00:00:22,640 --> 00:00:25,119
+created by dan abramov and andrew clark
+
+
+13
+00:00:25,119 --> 00:00:27,039
+at facebook and is one of the most loved
+
+
+14
+00:00:27,039 --> 00:00:28,720
+and hated libraries in the react
+
+
+15
+00:00:28,720 --> 00:00:30,720
+ecosystem it relies on a single
+
+
+16
+00:00:30,720 --> 00:00:32,640
+immutable object to store all of the
+
+
+17
+00:00:32,640 --> 00:00:34,320
+application state kind of like a
+
+
+18
+00:00:34,320 --> 00:00:36,399
+client-side database to change the state
+
+
+19
+00:00:36,399 --> 00:00:38,320
+like when a button is clicked an action
+
+
+20
+00:00:38,320 --> 00:00:40,320
+will be dispatched which has a name like
+
+
+21
+00:00:40,320 --> 00:00:42,320
+an event and a payload with the data
+
+
+22
+00:00:42,320 --> 00:00:43,920
+that it wants to change remember the
+
+
+23
+00:00:43,920 --> 00:00:45,840
+store is immutable so to change the
+
+
+24
+00:00:45,840 --> 00:00:47,920
+state of the application an entirely new
+
+
+25
+00:00:47,920 --> 00:00:49,920
+object is created by passing the current
+
+
+26
+00:00:49,920 --> 00:00:51,840
+state and the action payload into a
+
+
+27
+00:00:51,840 --> 00:00:53,840
+reducer function which returns a new
+
+
+28
+00:00:53,840 --> 00:00:56,000
+object with the entire application state
+
+
+29
+00:00:56,000 --> 00:00:58,000
+the end result is a one-way data flow
+
+
+30
+00:00:58,000 --> 00:01:00,079
+that is predictable and testable and it
+
+
+31
+00:01:00,079 --> 00:01:02,160
+also opens the door to awesome dev tools
+
+
+32
+00:01:02,160 --> 00:01:03,680
+that allow you to time travel through
+
+
+33
+00:01:03,680 --> 00:01:05,680
+your application's data but it comes at
+
+
+34
+00:01:05,680 --> 00:01:07,760
+a cost of additional boilerplate code
+
+
+35
+00:01:07,760 --> 00:01:09,520
+that might add too much complexity to a
+
+
+36
+00:01:09,520 --> 00:01:11,520
+smaller project to get started create a
+
+
+37
+00:01:11,520 --> 00:01:13,360
+react app with your favorite tool then
+
+
+38
+00:01:13,360 --> 00:01:15,600
+install the redux toolkit first use
+
+
+39
+00:01:15,600 --> 00:01:17,680
+configure store to set up the global
+
+
+40
+00:01:17,680 --> 00:01:19,520
+store object which will register any
+
+
+41
+00:01:19,520 --> 00:01:21,439
+reducers defined elsewhere in the code
+
+
+42
+00:01:21,439 --> 00:01:23,040
+then provider will make its data
+
+
+43
+00:01:23,040 --> 00:01:25,119
+accessible to the entire component tree
+
+
+44
+00:01:25,119 --> 00:01:27,520
+next create a slice like pizza to
+
+
+45
+00:01:27,520 --> 00:01:29,280
+represent some data in the store it
+
+
+46
+00:01:29,280 --> 00:01:30,960
+should have a unique name and initial
+
+
+47
+00:01:30,960 --> 00:01:33,280
+state but most importantly it contains a
+
+
+48
+00:01:33,280 --> 00:01:34,960
+collection of reducers which are
+
+
+49
+00:01:34,960 --> 00:01:37,200
+functions that take the old state and an
+
+
+50
+00:01:37,200 --> 00:01:39,520
+action then define the logic required to
+
+
+51
+00:01:39,520 --> 00:01:41,439
+change the state redux toolkit will
+
+
+52
+00:01:41,439 --> 00:01:43,200
+automatically generate actions that
+
+
+53
+00:01:43,200 --> 00:01:45,280
+correspond to the names of these reducer
+
+
+54
+00:01:45,280 --> 00:01:47,200
+functions we can export them then put
+
+
+55
+00:01:47,200 --> 00:01:49,600
+them to use in an actual ui component
+
+
+56
+00:01:49,600 --> 00:01:51,119
+the beauty of redux is that we can
+
+
+57
+00:01:51,119 --> 00:01:53,119
+select data anywhere in the application
+
+
+58
+00:01:53,119 --> 00:01:55,200
+without the need for context or prop
+
+
+59
+00:01:55,200 --> 00:01:57,040
+drilling instead we can grab any
+
+
+60
+00:01:57,040 --> 00:01:59,280
+reactive value or slice in the store
+
+
+61
+00:01:59,280 --> 00:02:01,439
+with the use selector hook now to change
+
+
+62
+00:02:01,439 --> 00:02:03,439
+the application's data an action needs
+
+
+63
+00:02:03,439 --> 00:02:05,280
+to be dispatched to the store that can
+
+
+64
+00:02:05,280 --> 00:02:07,040
+be accomplished with the use dispatch
+
+
+65
+00:02:07,040 --> 00:02:09,119
+hook which might send an action name and
+
+
+66
+00:02:09,119 --> 00:02:11,360
+data payload on a normal browser event
+
+
+67
+00:02:11,360 --> 00:02:13,040
+like a button click now serve the
+
+
+68
+00:02:13,040 --> 00:02:14,879
+application and install the redux
+
+
+69
+00:02:14,879 --> 00:02:16,959
+devtools browser extension unlike a
+
+
+70
+00:02:16,959 --> 00:02:18,879
+normal project you're able to inspect
+
+
+71
+00:02:18,879 --> 00:02:21,200
+and debug the entire timeline of actions
+
+
+72
+00:02:21,200 --> 00:02:23,040
+and state changes in your application
+
+
+73
+00:02:23,040 --> 00:02:25,280
+this has been redux in 100 seconds
+
+
+74
+00:02:25,280 --> 00:02:26,959
+upgrade to fireship pro if you want to
+
+
+75
+00:02:26,959 --> 00:02:28,720
+learn all kinds of other react concepts
+
+
+76
+00:02:28,720 --> 00:02:30,239
+in a format like this thanks for
+
+
+77
+00:02:30,239 --> 00:02:32,239
+watching and i will see you in the next
+
+
+78
+00:02:32,239 --> 00:02:34,800
+one
+
+

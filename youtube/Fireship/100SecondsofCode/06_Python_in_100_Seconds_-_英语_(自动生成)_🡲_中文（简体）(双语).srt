@@ -1,0 +1,183 @@
+1
+00:00:00,160 --> 00:00:04,240
+python a high-level interpreted programming language famous for its
+python 一种高级解释性编程语言，以其
+
+2
+00:00:04,240 --> 00:00:08,080
+zen-like code it's arguably the most popular language in the world because
+类似 zen 的代码而闻名，它可以说是世界上最流行的语言，因为
+
+3
+00:00:08,080 --> 00:00:12,480
+it's easy to learn yet practical for serious projects in fact you're watching
+它很容易学习，但对于严肃的项目来说很实用事实上你现在
+
+4
+00:00:12,480 --> 00:00:16,160
+this youtube video in a python web application right now it was created by
+正在 python 网络应用程序中观看这个 youtube 视频 它由
+
+5
+00:00:16,160 --> 00:00:21,119
+guido van rossum and released in 1991 who named it after monty python's flying
+guido van rossum 创建并于 1991 年发布，他以 monty python 的飞行马戏团命名它，
+
+6
+00:00:21,119 --> 00:00:24,800
+circus which is why you'll sometimes find spam and eggs instead of foo and
+这就是为什么你有时会
+
+7
+00:00:24,800 --> 00:00:28,960
+bar in code samples it's commonly used to build server-side applications like
+在代码示例中找到垃圾邮件和鸡蛋而不是 foo 和 bar 它通常用于构建服务器端应用程序，如
+
+8
+00:00:28,960 --> 00:00:32,719
+web apps with the django framework and is the language of choice for big data
+Web 应用程序 使用 django 框架，并且是大数据
+
+9
+00:00:32,719 --> 00:00:36,559
+analysis and machine learning many students choose python to start learning
+分析和机器学习的首选语言，许多学生选择 python 开始
+
+10
+00:00:36,559 --> 00:00:40,559
+to code because of its emphasis on readability as outlined by the zen of
+学习编码，因为它强调可读性，正如 python 之禅所概述的那样，
+
+11
+00:00:40,559 --> 00:00:44,879
+python beautiful is better than ugly while explicit is better than implicit
+漂亮胜于丑陋，而显式胜于隐式
+
+12
+00:00:44,879 --> 00:00:48,640
+python is very simple but avoids the temptation to sprinkle in magic that
+python 非常简单，但避免了使用会导致歧义的魔法的诱惑，
+
+13
+00:00:48,640 --> 00:00:52,480
+causes ambiguity its code is often organized into notebooks where
+它的代码通常被组织到笔记本中，其中
+
+14
+00:00:52,480 --> 00:00:56,399
+individual cells can be executed then documented in the same place we're
+ind 可以执行单个单元格，然后在我们
+
+15
+00:00:56,399 --> 00:00:59,840
+currently at version 3 of the language and you can get started by creating a
+当前处于该语言版本 3 的同一位置进行记录，您可以通过创建
+
+16
+00:00:59,840 --> 00:01:04,879
+file that ends in py or ipymb to create an interactive notebook create a
+以 py 或 ipymb 结尾的文件来开始创建交互式笔记本
+
+17
+00:01:04,879 --> 00:01:09,040
+variable by setting a name equal to a value it's strongly typed which means
+通过设置名称来创建变量等于它是强类型的值，这意味着
+
+18
+00:01:09,040 --> 00:01:13,200
+values won't change in unexpected ways but dynamic so type annotations are not
+值不会以意外的方式更改，而是动态的，因此不需要类型注释
+
+19
+00:01:13,200 --> 00:01:16,720
+required the syntax is highly efficient allowing you to declare multiple
+语法非常高效，允许您
+
+20
+00:01:16,720 --> 00:01:20,960
+variables on a single line and define tuples lists and dictionaries with a
+在单行上声明多个变量并使用文字语法定义元组列表和字典
+
+21
+00:01:20,960 --> 00:01:24,400
+literal syntax semicolons are not required and if you use them and
+分号是 不是必需的，如果你使用它们并且有
+
+22
+00:01:24,400 --> 00:01:28,159
+experience pythonista will say that your code is not pythonic instead of
+经验，pythonista 会说你的代码不是 pythonic 而不是
+
+23
+00:01:28,159 --> 00:01:32,799
+semicolons python uses indentation to terminate or determine the scope of a
+分号 python 使用缩进来终止或确定
+
+24
+00:01:32,799 --> 00:01:36,720
+line of code define a function with the def keyword then indent the next line
+一行代码的范围 使用 def 关键字定义一个函数，然后通常将下一行
+
+25
+00:01:36,720 --> 00:01:40,479
+usually by four spaces to define the function body we might then add a for
+缩进四 空格来定义函数体，然后我们可能会向它添加一个 for
+
+26
+00:01:40,479 --> 00:01:44,399
+loop to it and indent that by another four spaces this eliminates the need for
+循环并缩进另外四个空格，这消除了对 cur 的需要
+
+27
+00:01:44,399 --> 00:01:48,320
+curly braces and semicolons found in many other languages python is a
+ly 大括号和分号出现在许多其他语言中 python 是一种
+
+28
+00:01:48,320 --> 00:01:51,600
+multi-paradigm language we can apply functional programming patterns with
+多范式语言，我们可以将函数式编程模式应用于
+
+29
+00:01:51,600 --> 00:01:55,280
+things like anonymous functions using lambda it also uses objects as an
+使用 lambda 的匿名函数之类的东西它还使用对象
+
+30
+00:01:55,280 --> 00:01:59,200
+abstraction for data allowing you to implement object-oriented patterns with
+作为数据的抽象，允许您使用类之类的东西来实现面向对象的模式
+
+31
+00:01:59,200 --> 00:02:03,680
+things like classes and inheritance it also has a huge ecosystem of third-party
+和继承它还拥有一个庞大的第三方库生态系统，
+
+32
+00:02:03,680 --> 00:02:07,360
+libraries such as deep learning frameworks like tensorflow and wrappers
+例如 tensorflow 之类的深度学习框架和
+
+33
+00:02:07,360 --> 00:02:11,200
+for many high performance low level packages like open computer vision which
+许多高性能低级包的包装器，例如开放计算机视觉，
+
+34
+00:02:11,200 --> 00:02:15,200
+are most often installed with the pip package manager this has been the python
+这些包通常与 pip包管理器一起安装，这一直是 python
+
+35
+00:02:15,200 --> 00:02:18,480
+programming language in 100 seconds hit the like button if you want to see more
+编程语言 100秒内点击喜欢按钮，如果你想看更多这样的
+
+36
+00:02:18,480 --> 00:02:22,080
+short videos like this thanks for watching and i will see you in the next
+短片谢谢收看，我会在下一个看到你
+
+37
+00:02:22,080 --> 00:02:25,080
+one

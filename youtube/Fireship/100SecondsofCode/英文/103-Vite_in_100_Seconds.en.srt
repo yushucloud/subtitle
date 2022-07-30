@@ -1,0 +1,385 @@
+1
+00:00:00,160 --> 00:00:02,399
+veet a javascript build tool that
+
+
+2
+00:00:02,399 --> 00:00:04,560
+simplifies the way we build and develop
+
+
+3
+00:00:04,560 --> 00:00:06,640
+front-end web applications at its core
+
+
+4
+00:00:06,640 --> 00:00:08,720
+it does two things one serve your code
+
+
+5
+00:00:08,720 --> 00:00:10,639
+locally during development and two
+
+
+6
+00:00:10,639 --> 00:00:12,880
+bundle your javascript css and other
+
+
+7
+00:00:12,880 --> 00:00:14,960
+assets together for production there are
+
+
+8
+00:00:14,960 --> 00:00:16,320
+many other tools out there that do the
+
+
+9
+00:00:16,320 --> 00:00:18,320
+same thing like webpack so what makes
+
+
+10
+00:00:18,320 --> 00:00:20,000
+vee different well it was created by
+
+
+11
+00:00:20,000 --> 00:00:22,560
+evan yu who also created vue.js as a way
+
+
+12
+00:00:22,560 --> 00:00:24,720
+to both simplify and speed up the build
+
+
+13
+00:00:24,720 --> 00:00:27,119
+process not long ago web developers had
+
+
+14
+00:00:27,119 --> 00:00:28,960
+no native way to combine javascript
+
+
+15
+00:00:28,960 --> 00:00:31,279
+files together in a modular way this led
+
+
+16
+00:00:31,279 --> 00:00:33,200
+to tools like webpack and rollup that
+
+
+17
+00:00:33,200 --> 00:00:35,360
+concatenate multiple files together into
+
+
+18
+00:00:35,360 --> 00:00:37,200
+a single bundle for the browser the
+
+
+19
+00:00:37,200 --> 00:00:38,960
+problem is that this process becomes
+
+
+20
+00:00:38,960 --> 00:00:40,879
+increasingly slow as the app adds more
+
+
+21
+00:00:40,879 --> 00:00:43,520
+code and dependencies in 2015 ecmascript
+
+
+22
+00:00:43,520 --> 00:00:45,840
+modules were introduced and by 2020 had
+
+
+23
+00:00:45,840 --> 00:00:47,920
+wide browser support allowing developers
+
+
+24
+00:00:47,920 --> 00:00:50,079
+to import and export code from different
+
+
+25
+00:00:50,079 --> 00:00:52,079
+files in the browser veed leverages
+
+
+26
+00:00:52,079 --> 00:00:54,239
+native es modules in the browser to load
+
+
+27
+00:00:54,239 --> 00:00:56,239
+your code instantly no matter how large
+
+
+28
+00:00:56,239 --> 00:00:58,399
+the app is it also supports hot module
+
+
+29
+00:00:58,399 --> 00:00:59,920
+replacement for an extremely fast
+
+
+30
+00:00:59,920 --> 00:01:01,520
+feedback loop during development when
+
+
+31
+00:01:01,520 --> 00:01:03,520
+building for production it uses roll up
+
+
+32
+00:01:03,520 --> 00:01:04,799
+under the hood so you don't have to
+
+
+33
+00:01:04,799 --> 00:01:06,159
+worry about configuring it it's an
+
+
+34
+00:01:06,159 --> 00:01:07,520
+opinionated tool that provides
+
+
+35
+00:01:07,520 --> 00:01:09,280
+conventions that work out of the box for
+
+
+36
+00:01:09,280 --> 00:01:10,799
+the majority of developers to get
+
+
+37
+00:01:10,799 --> 00:01:13,200
+started run npm netweat from the command
+
+
+38
+00:01:13,200 --> 00:01:14,880
+line and choose a starter project with
+
+
+39
+00:01:14,880 --> 00:01:16,320
+your favorite front-end framework you'll
+
+
+40
+00:01:16,320 --> 00:01:18,400
+notice the project comes with a v-config
+
+
+41
+00:01:18,400 --> 00:01:20,720
+file it has a plug-in ecosystem that can
+
+
+42
+00:01:20,720 --> 00:01:22,479
+extend it with additional features and
+
+
+43
+00:01:22,479 --> 00:01:24,000
+you can also manually override the
+
+
+44
+00:01:24,000 --> 00:01:25,759
+roll-up defaults when necessary and
+
+
+45
+00:01:25,759 --> 00:01:27,200
+there are some really cool plugins out
+
+
+46
+00:01:27,200 --> 00:01:29,680
+there like vtssr that can do server-side
+
+
+47
+00:01:29,680 --> 00:01:31,759
+rendering like next.js now to serve the
+
+
+48
+00:01:31,759 --> 00:01:34,400
+application locally run npm run dev even
+
+
+49
+00:01:34,400 --> 00:01:36,159
+if i install a bunch of big dependencies
+
+
+50
+00:01:36,159 --> 00:01:38,079
+like low dash and moment the time to run
+
+
+51
+00:01:38,079 --> 00:01:39,680
+the dev server does not change now if
+
+
+52
+00:01:39,680 --> 00:01:41,200
+you open the network tab in the browser
+
+
+53
+00:01:41,200 --> 00:01:42,960
+dev tools you'll notice that instead of
+
+
+54
+00:01:42,960 --> 00:01:44,799
+importing a single javascript bundle
+
+
+55
+00:01:44,799 --> 00:01:46,799
+file it's importing our actual source
+
+
+56
+00:01:46,799 --> 00:01:49,439
+code like a raw tsx file in this case it
+
+
+57
+00:01:49,439 --> 00:01:51,280
+also makes typescript about 20 to 30
+
+
+58
+00:01:51,280 --> 00:01:52,960
+times faster because it skips type
+
+
+59
+00:01:52,960 --> 00:01:55,119
+checking and uses es build to transpile
+
+
+60
+00:01:55,119 --> 00:01:56,719
+your code now as you're developing your
+
+
+61
+00:01:56,719 --> 00:01:58,159
+app you might change the state of it in
+
+
+62
+00:01:58,159 --> 00:01:59,840
+the ui then realize that some of the
+
+
+63
+00:01:59,840 --> 00:02:01,520
+code needs to change when you modify the
+
+
+64
+00:02:01,520 --> 00:02:02,880
+source code the changes will be
+
+
+65
+00:02:02,880 --> 00:02:04,880
+reflected instantly without losing the
+
+
+66
+00:02:04,880 --> 00:02:06,479
+state of the application that's what we
+
+
+67
+00:02:06,479 --> 00:02:09,280
+call hot module replacement now run npm
+
+
+68
+00:02:09,280 --> 00:02:11,200
+build to build the app for production
+
+
+69
+00:02:11,200 --> 00:02:12,959
+this will generate a javascript bundle
+
+
+70
+00:02:12,959 --> 00:02:14,800
+with rollup with a bunch of automatic
+
+
+71
+00:02:14,800 --> 00:02:16,640
+optimizations like automatic code
+
+
+72
+00:02:16,640 --> 00:02:18,720
+splitting for any dynamic imports and
+
+
+73
+00:02:18,720 --> 00:02:21,680
+css this has been beat in 100 seconds if
+
+
+74
+00:02:21,680 --> 00:02:23,040
+you want to see more short videos like
+
+
+75
+00:02:23,040 --> 00:02:24,959
+this hit the like button and subscribe
+
+
+76
+00:02:24,959 --> 00:02:26,879
+thanks for watching and i will see you
+
+
+77
+00:02:26,879 --> 00:02:30,000
+in the next one
+
+

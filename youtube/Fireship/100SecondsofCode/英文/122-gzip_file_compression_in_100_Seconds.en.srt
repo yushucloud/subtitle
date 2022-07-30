@@ -1,0 +1,345 @@
+1
+00:00:00,399 --> 00:00:02,800
+gzip a lossless file compression tool
+
+
+2
+00:00:02,800 --> 00:00:04,799
+famous for making large chunks of data
+
+
+3
+00:00:04,799 --> 00:00:06,640
+smaller the files on a computer are
+
+
+4
+00:00:06,640 --> 00:00:08,960
+represented by bits on a silicon chip
+
+
+5
+00:00:08,960 --> 00:00:10,719
+but they often take up more space than
+
+
+6
+00:00:10,719 --> 00:00:12,719
+is actually necessary for example when
+
+
+7
+00:00:12,719 --> 00:00:14,240
+you write your screenplay in a text
+
+
+8
+00:00:14,240 --> 00:00:16,240
+document you produce a bunch of repeated
+
+
+9
+00:00:16,240 --> 00:00:18,080
+patterns many years ago computer
+
+
+10
+00:00:18,080 --> 00:00:19,680
+scientists realized we were wasting
+
+
+11
+00:00:19,680 --> 00:00:22,800
+space and wrote algorithms like lz77 to
+
+
+12
+00:00:22,800 --> 00:00:24,560
+address this problem by looping over the
+
+
+13
+00:00:24,560 --> 00:00:26,560
+contents of a file to identify repeated
+
+
+14
+00:00:26,560 --> 00:00:28,240
+sequences that can be replaced with
+
+
+15
+00:00:28,240 --> 00:00:30,320
+metadata or shorter sequences thus
+
+
+16
+00:00:30,320 --> 00:00:31,840
+reducing the total amount of bits
+
+
+17
+00:00:31,840 --> 00:00:33,920
+required to represent the information
+
+
+18
+00:00:33,920 --> 00:00:36,239
+most importantly no information is lost
+
+
+19
+00:00:36,239 --> 00:00:37,840
+this differs from lossy compression
+
+
+20
+00:00:37,840 --> 00:00:39,920
+algorithms like jpeg which can make an
+
+
+21
+00:00:39,920 --> 00:00:41,840
+image file smaller but information is
+
+
+22
+00:00:41,840 --> 00:00:44,160
+lost in the process gzip was developed
+
+
+23
+00:00:44,160 --> 00:00:47,360
+by jean-luc guys and mark alder in 1992
+
+
+24
+00:00:47,360 --> 00:00:48,960
+because the big evil tech corporations
+
+
+25
+00:00:48,960 --> 00:00:50,800
+held the patents on existing compression
+
+
+26
+00:00:50,800 --> 00:00:52,960
+technology their implementation is based
+
+
+27
+00:00:52,960 --> 00:00:54,480
+on the deflate compression algorithm
+
+
+28
+00:00:54,480 --> 00:00:57,360
+which is a combination of lz77 and
+
+
+29
+00:00:57,360 --> 00:00:59,359
+huffman coding gzip is not the only game
+
+
+30
+00:00:59,359 --> 00:01:02,079
+in town and other formats like zip 7zip
+
+
+31
+00:01:02,079 --> 00:01:04,400
+and rar solve similar problems on the
+
+
+32
+00:01:04,400 --> 00:01:06,479
+web gzip is the most common way to
+
+
+33
+00:01:06,479 --> 00:01:08,479
+implement end-to-end compression where a
+
+
+34
+00:01:08,479 --> 00:01:10,320
+file is compressed on the server then
+
+
+35
+00:01:10,320 --> 00:01:12,159
+decompressed by the browser to reduce
+
+
+36
+00:01:12,159 --> 00:01:14,080
+the amount of data sent over the network
+
+
+37
+00:01:14,080 --> 00:01:15,840
+although broadly is a newer compression
+
+
+38
+00:01:15,840 --> 00:01:17,759
+algorithm that's generally superior for
+
+
+39
+00:01:17,759 --> 00:01:19,759
+files on the web to get started open up
+
+
+40
+00:01:19,759 --> 00:01:21,680
+any linux machine where you'll find gzip
+
+
+41
+00:01:21,680 --> 00:01:23,280
+installed by default as one of the most
+
+
+42
+00:01:23,280 --> 00:01:25,520
+popular utilities of the gnu project to
+
+
+43
+00:01:25,520 --> 00:01:27,600
+compress a file use the gzip command
+
+
+44
+00:01:27,600 --> 00:01:29,439
+followed by the file name that creates a
+
+
+45
+00:01:29,439 --> 00:01:31,840
+new file ending in gz that should be
+
+
+46
+00:01:31,840 --> 00:01:33,680
+significantly smaller run the command
+
+
+47
+00:01:33,680 --> 00:01:35,680
+again with the l flag to print out the
+
+
+48
+00:01:35,680 --> 00:01:37,680
+compression ratio the higher the ratio
+
+
+49
+00:01:37,680 --> 00:01:39,600
+the more space that was saved now use
+
+
+50
+00:01:39,600 --> 00:01:41,759
+the d flag to decompress the file back
+
+
+51
+00:01:41,759 --> 00:01:44,000
+to its original form or better yet use
+
+
+52
+00:01:44,000 --> 00:01:46,000
+the gunzip command in the real world
+
+
+53
+00:01:46,000 --> 00:01:47,680
+though you'll often want to compress
+
+
+54
+00:01:47,680 --> 00:01:50,240
+multiple files at the same time gzip on
+
+
+55
+00:01:50,240 --> 00:01:51,840
+its own cannot compress an entire
+
+
+56
+00:01:51,840 --> 00:01:53,600
+directory for that you'll need to bring
+
+
+57
+00:01:53,600 --> 00:01:55,840
+in an archiver like tar its name is
+
+
+58
+00:01:55,840 --> 00:01:57,759
+derived from tape archive and what it
+
+
+59
+00:01:57,759 --> 00:02:00,000
+does is take multiple files and combine
+
+
+60
+00:02:00,000 --> 00:02:01,920
+them into a single file known as a
+
+
+61
+00:02:01,920 --> 00:02:03,840
+tarball when running the tar command
+
+
+62
+00:02:03,840 --> 00:02:05,759
+include the z flag to automatically
+
+
+63
+00:02:05,759 --> 00:02:08,160
+compress the archive congratulations you
+
+
+64
+00:02:08,160 --> 00:02:10,160
+just made a large set of files smaller
+
+
+65
+00:02:10,160 --> 00:02:12,319
+this has been gzip in 100 seconds hit
+
+
+66
+00:02:12,319 --> 00:02:13,599
+the like button if you want to see more
+
+
+67
+00:02:13,599 --> 00:02:15,120
+short videos like this thanks for
+
+
+68
+00:02:15,120 --> 00:02:17,120
+watching and i will see you in the next
+
+
+69
+00:02:17,120 --> 00:02:19,520
+one
+
+

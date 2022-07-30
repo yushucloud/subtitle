@@ -1,0 +1,204 @@
+1
+00:00:00,160 --> 00:00:04,560
+nest js is a node.js framework for building scalable server-side
+Nest js 是一个 node.js 框架，用于使用 typescript构建可扩展的服务器端
+
+2
+00:00:04,560 --> 00:00:08,400
+applications with typescript it provides a suite of tools that leverage either
+应用程序，它提供了一套工具，利用
+
+3
+00:00:08,400 --> 00:00:12,559
+fastify or express to facilitate rapid development and predictable
+fastify 或 express 来促进快速开发和可预测的
+
+4
+00:00:12,559 --> 00:00:16,960
+readable code it supports rest and graphql apis out of the box or you might
+可读代码，它支持开箱即用的 rest 和 graphql api，或者你可以
+
+5
+00:00:16,960 --> 00:00:21,119
+use it to build a full stack application using the model view controller pattern
+使用它来构建一个完整的堆栈应用程序，使用
+
+6
+00:00:21,119 --> 00:00:25,279
+similar to frameworks like laravel or ruby on rails and it contains a ton
+类似于 laravel或 ruby on rails 等框架的模型视图控制器模式，它包含大量
+
+7
+00:00:25,279 --> 00:00:27,599
+of built-in modules to work with databases
+内置模块来处理数据库处理
+
+8
+00:00:27,599 --> 00:00:31,439
+handle security implement streaming and anything else you can imagine doing in a
+安全性实现流以及您可以想象的任何其他事情
+
+9
+00:00:31,439 --> 00:00:34,480
+server side application nest has its own very powerful command
+服务器端应用程序嵌套有自己非常强大的命令
+
+10
+00:00:34,480 --> 00:00:37,360
+line tool and you can scaffold out a new project with the nest
+行工具，您可以使用 nest
+
+11
+00:00:37,360 --> 00:00:41,360
+new command that provides a code base pre-configured with jest for testing and
+new 命令搭建一个新项目，该命令提供了一个预先配置了 jest 的代码库，用于测试并
+
+12
+00:00:41,360 --> 00:00:45,120
+set up with typescript to help us write more readable and reliable code in the
+使用 typescript 进行设置，以帮助我们编写更具可读性和可靠性的代码 在
+
+13
+00:00:45,120 --> 00:00:48,000
+source directory you'll notice a controller which is a fundamental
+源目录中的代码你会注意到一个控制器，它是它负责
+
+14
+00:00:48,000 --> 00:00:51,600
+building block of the framework it's responsible for handling incoming
+的框架的基本构建块 dling传入的
+
+15
+00:00:51,600 --> 00:00:54,559
+http requests and returning responses back to the
+http请求并将响应返回给
+
+16
+00:00:54,559 --> 00:00:58,000
+client to implement a controller simply add the controller decorator
+客户端以实现控制器只需将控制器装饰器添加
+
+17
+00:00:58,000 --> 00:01:01,039
+to a class then inside the class you can implement methods
+到一个类中，然后在类中您可以实现方法
+
+18
+00:01:01,039 --> 00:01:04,080
+and decorate them with http verbs like git
+并使用http动词装饰它们，例如git
+
+19
+00:01:04,080 --> 00:01:09,920
+post patch put etc by default this will create an http endpoint on the root url
+post patch put等默认情况下这将创建一个http 根 url 上的端点，
+
+20
+00:01:09,920 --> 00:01:12,080
+but you can pass a string to the decorator to
+但是您可以将字符串传递给装饰器以
+
+21
+00:01:12,080 --> 00:01:15,680
+change the route or implement dynamic route parameters in addition
+更改路由或实现动态路由参数，此外，
+
+22
+00:01:15,680 --> 00:01:19,200
+nest provides other decorators to control things like the status code and
+嵌套提供其他装饰器来控制状态代码和
+
+23
+00:01:19,200 --> 00:01:21,600
+headers then in the method itself parameter
+标头等内容，然后在方法本身
+
+24
+00:01:21,600 --> 00:01:25,360
+decorators can be used to access the request parameters or body
+中可以使用参数装饰器来访问请求参数或主体
+
+25
+00:01:25,360 --> 00:01:28,960
+and finally the return value from the method is the response body
+，最后来自方法的返回值是
+
+26
+00:01:28,960 --> 00:01:32,159
+that gets sent back down to the client what's awesome about nest
+返回给客户端的响应主体，nest 最棒的地方
+
+27
+00:01:32,159 --> 00:01:35,759
+is that you can use the cli to automatically generate more controllers
+在于，您可以使用 cli自动生成更多控制器
+
+28
+00:01:35,759 --> 00:01:38,640
+to keep your code organized as it grows in complexity
+，以便在代码增长时保持代码井井有条复杂性，
+
+29
+00:01:38,640 --> 00:01:42,000
+but there's more to nest than just controllers a provider is a class that
+但嵌套的不仅仅是控制器，提供者是一个
+
+30
+00:01:42,000 --> 00:01:44,720
+contains shared logic throughout the entire application
+包含共享逻辑的类 hout整个应用程序，
+
+31
+00:01:44,720 --> 00:01:48,000
+and can be injected as a dependency where needed any class with the
+并且可以在需要时作为依赖项注入任何具有
+
+32
+00:01:48,000 --> 00:01:51,680
+injectable decorator can be injected in the constructor of another class
+可注入装饰器的类都可以注入到另一个类的构造函数中
+
+33
+00:01:51,680 --> 00:01:55,280
+for example a provider can be implemented as a guard to handle
+，例如，可以将提供程序实现为处理
+
+34
+00:01:55,280 --> 00:01:59,200
+role-based user authentication or it might be implemented as a pipe to
+基于角色的用户身份验证的守卫，或者可以实现 作为在控制器中
+
+35
+00:01:59,200 --> 00:02:02,479
+efficiently validate and transform values in a controller
+有效验证和转换值的管道
+
+36
+00:02:02,479 --> 00:02:06,640
+and lastly we have the module decorator which allows code to be organized into
+，最后我们有模块装饰器，它允许将代码组织成
+
+37
+00:02:06,640 --> 00:02:09,440
+smaller chunks where it can be lazy loaded to run
+更小的块，可以延迟加载以
+
+38
+00:02:09,440 --> 00:02:14,000
+faster in serverless environments this has been nest js in 100 seconds if
+在无服务器环境中更快地运行，如果你可以在 100 秒内嵌套 js
+
+39
+00:02:14,000 --> 00:02:15,760
+you want to see more short videos like this
+想看更多这样的短视频
+
+40
+00:02:15,760 --> 00:02:19,360
+make sure to hit the like button and subscribe thanks for watching and i will
+记得点赞订阅谢谢收看
+
+41
+00:02:19,360 --> 00:02:22,400
+see you in the next one
+，下期见

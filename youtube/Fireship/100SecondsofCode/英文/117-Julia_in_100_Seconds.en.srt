@@ -1,0 +1,425 @@
+1
+00:00:00,000 --> 00:00:02,340
+Julia a dynamic general purpose
+
+
+2
+00:00:02,340 --> 00:00:04,140
+programming language capable of high
+
+
+3
+00:00:04,140 --> 00:00:05,940
+performance scientific Computing with
+
+
+4
+00:00:05,940 --> 00:00:08,160
+high-level code it was created in 2012
+
+
+5
+00:00:08,160 --> 00:00:10,320
+by a gang of computer scientists who set
+
+
+6
+00:00:10,320 --> 00:00:11,880
+out to build a language with the speed
+
+
+7
+00:00:11,880 --> 00:00:13,740
+of C the dynamism of Ruby the
+
+
+8
+00:00:13,740 --> 00:00:15,420
+practicality of python that can do
+
+
+9
+00:00:15,420 --> 00:00:17,460
+statistics like R and linear algebra
+
+
+10
+00:00:17,460 --> 00:00:19,380
+like Matlab out of the box it's a
+
+
+11
+00:00:19,380 --> 00:00:20,820
+general purpose language but is most
+
+
+12
+00:00:20,820 --> 00:00:22,320
+well known for its use in numerical
+
+
+13
+00:00:22,320 --> 00:00:24,660
+analysis data visualization and machine
+
+
+14
+00:00:24,660 --> 00:00:26,400
+learning it's extremely fast because
+
+
+15
+00:00:26,400 --> 00:00:28,740
+unlike most high-level languages it uses
+
+
+16
+00:00:28,740 --> 00:00:30,840
+a just-in-time compiler to convert your
+
+
+17
+00:00:30,840 --> 00:00:32,340
+source code into machine code before
+
+
+18
+00:00:32,340 --> 00:00:34,079
+running it and unlike most dynamic
+
+
+19
+00:00:34,079 --> 00:00:36,300
+languages it has a flexible parametric
+
+
+20
+00:00:36,300 --> 00:00:38,219
+type system that means static typing is
+
+
+21
+00:00:38,219 --> 00:00:40,020
+optional by default and types can take
+
+
+22
+00:00:40,020 --> 00:00:41,879
+parameters allowing one type to
+
+
+23
+00:00:41,879 --> 00:00:43,379
+represent many different possibilities
+
+
+24
+00:00:43,379 --> 00:00:45,120
+this opens the door to the multiple
+
+
+25
+00:00:45,120 --> 00:00:47,160
+dispatch pattern where one function can
+
+
+26
+00:00:47,160 --> 00:00:49,020
+have multiple methods or implementations
+
+
+27
+00:00:49,020 --> 00:00:51,360
+based on its input parameters and the
+
+
+28
+00:00:51,360 --> 00:00:52,920
+language will determine which method to
+
+
+29
+00:00:52,920 --> 00:00:54,899
+dispatch at runtime in fact even
+
+
+30
+00:00:54,899 --> 00:00:56,940
+operators like Plus or functions that
+
+
+31
+00:00:56,940 --> 00:00:58,800
+use multiple dispatch to handle a
+
+
+32
+00:00:58,800 --> 00:01:00,480
+variety of different type common Nations
+
+
+33
+00:01:00,480 --> 00:01:02,699
+to get started install Julia then create
+
+
+34
+00:01:02,699 --> 00:01:05,100
+a file ending in JL declare a variable
+
+
+35
+00:01:05,100 --> 00:01:07,140
+by providing a name then assign a value
+
+
+36
+00:01:07,140 --> 00:01:09,420
+to it names support utf-8 encoding like
+
+
+37
+00:01:09,420 --> 00:01:11,760
+emojis or mathematical symbols it uses
+
+
+38
+00:01:11,760 --> 00:01:13,619
+symbols to represent built-in constants
+
+
+39
+00:01:13,619 --> 00:01:15,420
+like Pi allowing you to write equations
+
+
+40
+00:01:15,420 --> 00:01:17,460
+more elegantly in your code like Pearl
+
+
+41
+00:01:17,460 --> 00:01:19,140
+it's very good at string parsing and
+
+
+42
+00:01:19,140 --> 00:01:20,700
+supports multiple Expressions on a
+
+
+43
+00:01:20,700 --> 00:01:22,500
+single line resulting in tourists yet
+
+
+44
+00:01:22,500 --> 00:01:24,540
+powerful code Define a function with the
+
+
+45
+00:01:24,540 --> 00:01:26,400
+function keyword and close it with the
+
+
+46
+00:01:26,400 --> 00:01:28,080
+end keyword or shorten it to a single
+
+
+47
+00:01:28,080 --> 00:01:29,640
+line with the equal sign or because
+
+
+48
+00:01:29,640 --> 00:01:31,560
+functions are first class objects they
+
+
+49
+00:01:31,560 --> 00:01:33,420
+can be assigned to a variable or pass to
+
+
+50
+00:01:33,420 --> 00:01:35,040
+another function anonymously what's
+
+
+51
+00:01:35,040 --> 00:01:36,960
+interesting though is that by default a
+
+
+52
+00:01:36,960 --> 00:01:38,460
+function is untyped which means it
+
+
+53
+00:01:38,460 --> 00:01:40,320
+implements one method to handle all
+
+
+54
+00:01:40,320 --> 00:01:42,420
+inputs if the function is redefined but
+
+
+55
+00:01:42,420 --> 00:01:44,280
+this time with a type for the arguments
+
+
+56
+00:01:44,280 --> 00:01:46,259
+another method is added to it when this
+
+
+57
+00:01:46,259 --> 00:01:48,119
+function is called at runtime Julia will
+
+
+58
+00:01:48,119 --> 00:01:49,860
+look at the type of the arguments and
+
+
+59
+00:01:49,860 --> 00:01:51,600
+dispatch the corresponding method in
+
+
+60
+00:01:51,600 --> 00:01:53,340
+addition we can pass a type as a
+
+
+61
+00:01:53,340 --> 00:01:55,020
+parameter then use keywords like where
+
+
+62
+00:01:55,020 --> 00:01:57,360
+to perform Logic on the type itself in
+
+
+63
+00:01:57,360 --> 00:01:59,040
+this case it will assert that both types
+
+
+64
+00:01:59,040 --> 00:02:00,780
+are the same now Julia is not an
+
+
+65
+00:02:00,780 --> 00:02:02,399
+object-oriented language in the classic
+
+
+66
+00:02:02,399 --> 00:02:04,740
+sense however it does support composite
+
+
+67
+00:02:04,740 --> 00:02:06,479
+types with structs which contain
+
+
+68
+00:02:06,479 --> 00:02:08,819
+multiple fields and optional types like
+
+
+69
+00:02:08,819 --> 00:02:10,739
+any good scientific language it has very
+
+
+70
+00:02:10,739 --> 00:02:12,660
+well thought out support for arrays with
+
+
+71
+00:02:12,660 --> 00:02:14,340
+many built-in functions to initialize
+
+
+72
+00:02:14,340 --> 00:02:15,660
+and compute values over
+
+
+73
+00:02:15,660 --> 00:02:17,520
+multi-dimensional arrays it supports
+
+
+74
+00:02:17,520 --> 00:02:19,140
+asynchronous Computing with its task
+
+
+75
+00:02:19,140 --> 00:02:21,060
+model which can pause and synchronize
+
+
+76
+00:02:21,060 --> 00:02:23,040
+the execution of code like co-routines
+
+
+77
+00:02:23,040 --> 00:02:25,020
+in other languages and finally when it
+
+
+78
+00:02:25,020 --> 00:02:26,940
+comes to Big Data it can even distribute
+
+
+79
+00:02:26,940 --> 00:02:29,040
+processing to multiple memory spaces or
+
+
+80
+00:02:29,040 --> 00:02:31,560
+machines and run natively on a GPU this
+
+
+81
+00:02:31,560 --> 00:02:33,660
+has been Julia in 100 seconds if you
+
+
+82
+00:02:33,660 --> 00:02:35,040
+want to see more short videos like this
+
+
+83
+00:02:35,040 --> 00:02:37,019
+hit the like button and subscribe thanks
+
+
+84
+00:02:37,019 --> 00:02:38,879
+for watching and I will see you in the
+
+
+85
+00:02:38,879 --> 00:02:41,180
+next one
+
+

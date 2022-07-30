@@ -1,0 +1,194 @@
+1
+00:00:00,160 --> 00:00:04,560
+veet a javascript build tool that simplifies the way we build and develop
+veet 一个 javascript 构建工具，它简化了我们构建和开发
+
+2
+00:00:04,560 --> 00:00:08,720
+front-end web applications at its core it does two things one serve your code
+前端 Web 应用程序的方式，它的核心是它做两件事，一是在开发期间在本地为您的代码提供服务
+
+3
+00:00:08,720 --> 00:00:12,880
+locally during development and two bundle your javascript css and other
+，二是将您的 javascript css 和其他
+
+4
+00:00:12,880 --> 00:00:16,320
+assets together for production there are many other tools out there that do the
+资产捆绑在一起以进行生产还有许多其他工具 那里
+
+5
+00:00:16,320 --> 00:00:20,000
+same thing like webpack so what makes vee different well it was created by
+和 webpack 做同样的事情，所以vee 的不同之处在于它是由 evan yu 创建的，
+
+6
+00:00:20,000 --> 00:00:24,720
+evan yu who also created vue.js as a way to both simplify and speed up the build
+他还创建了 vue.js 作为一种简化和加速构建
+
+7
+00:00:24,720 --> 00:00:28,960
+process not long ago web developers had no native way to combine javascript
+过程的方式 不久前 web 开发人员没有本地方法来组合 javascript
+
+8
+00:00:28,960 --> 00:00:33,200
+files together in a modular way this led to tools like webpack and rollup that
+文件以模块化的方式组合在一起，这导致了诸如 webpack 和 rollup 之类的工具，
+
+9
+00:00:33,200 --> 00:00:37,200
+concatenate multiple files together into a single bundle for the browser the
+它们将多个文件连接到浏览器的单个包中。
+
+10
+00:00:37,200 --> 00:00:40,879
+problem is that this process becomes increasingly slow as the app adds more
+问题是，随着应用程序
+
+11
+00:00:40,879 --> 00:00:45,840
+code and dependencies in 2015 ecmascript modules were introduced and by 2020 had
+在 2015 年引入更多代码和依赖项，这个过程变得越来越慢 ecmascript模块被引入和 到 2020 年拥有
+
+12
+00:00:45,840 --> 00:00:50,079
+wide browser support allowing developers to import and export code from different
+广泛的浏览器支持，允许开发人员从浏览器中的不同文件导入和导出代码
+
+13
+00:00:50,079 --> 00:00:54,239
+files in the browser veed leverages native es modules in the browser to load
+veed 利用原生 e 浏览器中的 s 模块可立即加载
+
+14
+00:00:54,239 --> 00:00:58,399
+your code instantly no matter how large the app is it also supports hot module
+您的代码，无论应用程序有多大 它还支持热模块
+
+15
+00:00:58,399 --> 00:01:01,520
+replacement for an extremely fast feedback loop during development when
+替换，以便在开发期间实现极快的反馈循环 在
+
+16
+00:01:01,520 --> 00:01:04,799
+building for production it uses roll up under the hood so you don't have to
+构建生产时使用它在引擎盖下滚动，因此您不必
+
+17
+00:01:04,799 --> 00:01:07,520
+worry about configuring it it's an opinionated tool that provides
+担心 关于配置它是一个固执己见的工具，它为大多数开发人员提供开箱即用的
+
+18
+00:01:07,520 --> 00:01:10,799
+conventions that work out of the box for the majority of developers to get
+约定，以便
+
+19
+00:01:10,799 --> 00:01:14,880
+started run npm netweat from the command line and choose a starter project with
+开始从命令行运行 npm netweat并选择一个带有
+
+20
+00:01:14,880 --> 00:01:18,400
+your favorite front-end framework you'll notice the project comes with a v-config
+您最喜欢的前端框架的启动项目，您会注意到该项目来了 使用 v-config
+
+21
+00:01:18,400 --> 00:01:22,479
+file it has a plug-in ecosystem that can extend it with additional features and
+文件，它有一个插件生态系统，可以使用其他功能对其进行扩展，
+
+22
+00:01:22,479 --> 00:01:25,759
+you can also manually override the roll-up defaults when necessary and
+您还可以在必要时手动覆盖汇总默认值，并且
+
+23
+00:01:25,759 --> 00:01:29,680
+there are some really cool plugins out there like vtssr that can do server-side
+有一些非常酷的插件，例如 vtssr 可以做服务器端
+
+24
+00:01:29,680 --> 00:01:34,400
+rendering like next.js now to serve the application locally run npm run dev even
+现在像 next.js 一样渲染以在本地运行 npm run dev
+
+25
+00:01:34,400 --> 00:01:38,079
+if i install a bunch of big dependencies like low dash and moment the time to run
+即使我安装了一堆大的依赖项，比如低破折号和时刻
+
+26
+00:01:38,079 --> 00:01:41,200
+the dev server does not change now if you open the network tab in the browser
+运行开发服务器 doe 如果您在浏览器开发工具中打开网络选项卡，现在不会更改，
+
+27
+00:01:41,200 --> 00:01:44,799
+dev tools you'll notice that instead of importing a single javascript bundle
+您会注意到，它不是导入单个 javascript 捆绑
+
+28
+00:01:44,799 --> 00:01:49,439
+file it's importing our actual source code like a raw tsx file in this case it
+文件，而是导入我们的实际源代码，如原始 tsx 文件，在这种情况下，
+
+29
+00:01:49,439 --> 00:01:52,960
+also makes typescript about 20 to 30 times faster because it skips type
+它还使打字稿大约 20 到 30速度快了很多倍，因为它跳过类型
+
+30
+00:01:52,960 --> 00:01:56,719
+checking and uses es build to transpile your code now as you're developing your
+检查并使用 es build现在在您开发应用程序时转译您的代码，
+
+31
+00:01:56,719 --> 00:01:59,840
+app you might change the state of it in the ui then realize that some of the
+您可能会在 ui 中更改它的状态，然后意识到
+
+32
+00:01:59,840 --> 00:02:02,880
+code needs to change when you modify the source code the changes will be
+当您修改源代码时需要更改一些代码 更改将
+
+33
+00:02:02,880 --> 00:02:06,479
+reflected instantly without losing the state of the application that's what we
+立即反映，而不会丢失应用程序的状态，这就是我们
+
+34
+00:02:06,479 --> 00:02:11,200
+call hot module replacement now run npm build to build the app for production
+所说的热模块替换 现在运行 npmbuild 来构建应用程序以进行生产，
+
+35
+00:02:11,200 --> 00:02:14,800
+this will generate a javascript bundle with rollup with a bunch of automatic
+这将生成一个带有汇总的 javascript 包，其中包含一系列自动
+
+36
+00:02:14,800 --> 00:02:18,720
+optimizations like automatic code splitting for any dynamic imports and
+优化，例如针对任何动态的自动代码拆分 进口和
+
+37
+00:02:18,720 --> 00:02:23,040
+css this has been beat in 100 seconds if you want to see more short videos like
+css这已经在100秒内被击败如果你想看到更多这样的短视频
+
+38
+00:02:23,040 --> 00:02:26,879
+this hit the like button and subscribe thanks for watching and i will see you
+点击喜欢按钮并订阅感谢观看，我会的
+
+39
+00:02:26,879 --> 00:02:30,000
+in the next one
+下次见

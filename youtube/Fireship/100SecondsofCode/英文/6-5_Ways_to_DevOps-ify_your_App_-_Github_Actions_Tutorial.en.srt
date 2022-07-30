@@ -1,0 +1,1970 @@
+1
+00:00:00,000 --> 00:00:01,620
+one of the best ways to increase
+
+
+2
+00:00:01,620 --> 00:00:03,600
+productivity in a software project is to
+
+
+3
+00:00:03,600 --> 00:00:05,430
+automate anything manual or repetitive
+
+
+4
+00:00:05,430 --> 00:00:07,049
+and you might be surprised at how easy
+
+
+5
+00:00:07,049 --> 00:00:09,030
+automation is to implement when you use
+
+
+6
+00:00:09,030 --> 00:00:11,040
+an awesome tool like github actions in
+
+
+7
+00:00:11,040 --> 00:00:12,660
+today's video we'll look at five
+
+
+8
+00:00:12,660 --> 00:00:13,950
+different techniques that can improve
+
+
+9
+00:00:13,950 --> 00:00:15,420
+the quality of your code and make your
+
+
+10
+00:00:15,420 --> 00:00:16,949
+life more productive through the magic
+
+
+11
+00:00:16,949 --> 00:00:18,840
+of DevOps if you have no idea what terms
+
+
+12
+00:00:18,840 --> 00:00:20,520
+like continuous integration and delivery
+
+
+13
+00:00:20,520 --> 00:00:22,380
+mean you will by the end of this video
+
+
+14
+00:00:22,380 --> 00:00:24,029
+and if you choose to follow along with
+
+
+15
+00:00:24,029 --> 00:00:25,740
+your own project we will automate the
+
+
+16
+00:00:25,740 --> 00:00:27,180
+hell out of it if you're new here like
+
+
+17
+00:00:27,180 --> 00:00:28,800
+and subscribe and grab the full write-up
+
+
+18
+00:00:28,800 --> 00:00:30,810
+from fire ship IO before we get started
+
+
+19
+00:00:30,810 --> 00:00:32,219
+I'd like to take a second to say thank
+
+
+20
+00:00:32,219 --> 00:00:33,780
+you because the channel just surpassed
+
+
+21
+00:00:33,780 --> 00:00:35,579
+three hundred thousand subscribers to
+
+
+22
+00:00:35,579 --> 00:00:36,899
+celebrate that I have a big giveaway
+
+
+23
+00:00:36,899 --> 00:00:38,820
+plan in the next 100 seconds of code
+
+
+24
+00:00:38,820 --> 00:00:40,559
+video that everybody can participate in
+
+
+25
+00:00:40,559 --> 00:00:42,030
+stay tuned for that in a couple days
+
+
+26
+00:00:42,030 --> 00:00:47,969
+pending the apocalypse now to get
+
+
+27
+00:00:47,969 --> 00:00:49,440
+started with today's video the only
+
+
+28
+00:00:49,440 --> 00:00:50,640
+thing you really need is a github
+
+
+29
+00:00:50,640 --> 00:00:52,710
+repository and the service has a very
+
+
+30
+00:00:52,710 --> 00:00:54,270
+generous free tier so don't worry about
+
+
+31
+00:00:54,270 --> 00:00:56,309
+paying for anything upfront now Before
+
+
+32
+00:00:56,309 --> 00:00:57,989
+we jump into these five different DevOps
+
+
+33
+00:00:57,989 --> 00:00:59,850
+recipes let's answer the question of
+
+
+34
+00:00:59,850 --> 00:01:02,520
+what is github actions consider a repo
+
+
+35
+00:01:02,520 --> 00:01:04,019
+on github there are all kinds of
+
+
+36
+00:01:04,019 --> 00:01:05,460
+different events that can happen to that
+
+
+37
+00:01:05,460 --> 00:01:07,470
+repo someone might start the repo send a
+
+
+38
+00:01:07,470 --> 00:01:09,090
+pull request or you might merge code
+
+
+39
+00:01:09,090 --> 00:01:10,650
+into the master branch these are
+
+
+40
+00:01:10,650 --> 00:01:12,840
+examples of events and any event can
+
+
+41
+00:01:12,840 --> 00:01:15,119
+trigger an automated workflow a workflow
+
+
+42
+00:01:15,119 --> 00:01:16,830
+can spin up one or more containers for
+
+
+43
+00:01:16,830 --> 00:01:18,720
+you in the cloud then you provide a set
+
+
+44
+00:01:18,720 --> 00:01:20,369
+of steps or instructions for the
+
+
+45
+00:01:20,369 --> 00:01:22,259
+container to do something useful for you
+
+
+46
+00:01:22,259 --> 00:01:23,729
+github will log the progress of each
+
+
+47
+00:01:23,729 --> 00:01:25,530
+step and make it very clear if something
+
+
+48
+00:01:25,530 --> 00:01:26,909
+failed now the really cool thing about
+
+
+49
+00:01:26,909 --> 00:01:28,829
+actions is that instead of writing your
+
+
+50
+00:01:28,829 --> 00:01:30,630
+own steps from scratch you can use ones
+
+
+51
+00:01:30,630 --> 00:01:32,340
+implemented by the community you can
+
+
+52
+00:01:32,340 --> 00:01:34,170
+think of each step as a reusable chunk
+
+
+53
+00:01:34,170 --> 00:01:35,850
+of code which we call an action on
+
+
+54
+00:01:35,850 --> 00:01:37,710
+github you'll find hundreds of reusable
+
+
+55
+00:01:37,710 --> 00:01:39,869
+actions that solve common problems with
+
+
+56
+00:01:39,869 --> 00:01:41,579
+each one being its own git repo that you
+
+
+57
+00:01:41,579 --> 00:01:43,439
+can fork and customize as needed but I
+
+
+58
+00:01:43,439 --> 00:01:45,030
+think the best way to get started is to
+
+
+59
+00:01:45,030 --> 00:01:46,920
+look at some real-world examples a good
+
+
+60
+00:01:46,920 --> 00:01:48,540
+starting place is continuous integration
+
+
+61
+00:01:48,540 --> 00:01:50,220
+and if you have no idea what that term
+
+
+62
+00:01:50,220 --> 00:01:52,079
+means make sure to check out my 100
+
+
+63
+00:01:52,079 --> 00:01:53,820
+seconds of code video on that topic the
+
+
+64
+00:01:53,820 --> 00:01:55,740
+whole idea behind continuous integration
+
+
+65
+00:01:55,740 --> 00:01:58,710
+or CI is to have developers submit their
+
+
+66
+00:01:58,710 --> 00:02:00,689
+code to the main codebase and small
+
+
+67
+00:02:00,689 --> 00:02:02,579
+maintainable chunks usually on a daily
+
+
+68
+00:02:02,579 --> 00:02:03,960
+basis and those changes should be
+
+
+69
+00:02:03,960 --> 00:02:05,610
+automatically tested against the main
+
+
+70
+00:02:05,610 --> 00:02:07,950
+codebase let's take a quick tour of the
+
+
+71
+00:02:07,950 --> 00:02:10,379
+code inside the package.json you can see
+
+
+72
+00:02:10,379 --> 00:02:12,870
+I have a set of scripts here we use just
+
+
+73
+00:02:12,870 --> 00:02:13,590
+to run
+
+
+74
+00:02:13,590 --> 00:02:15,510
+automated tests and then build to build
+
+
+75
+00:02:15,510 --> 00:02:18,000
+the app with webpack the app itself is
+
+
+76
+00:02:18,000 --> 00:02:19,769
+just a simple website that tells you
+
+
+77
+00:02:19,769 --> 00:02:21,450
+what day of the week it is inside the
+
+
+78
+00:02:21,450 --> 00:02:23,430
+source directory we have app KS with a
+
+
+79
+00:02:23,430 --> 00:02:25,170
+JavaScript function that implements that
+
+
+80
+00:02:25,170 --> 00:02:28,709
+logic and then we have apt SJS to test
+
+
+81
+00:02:28,709 --> 00:02:29,459
+that logic
+
+
+82
+00:02:29,459 --> 00:02:31,379
+feel free to clone this repo if you want
+
+
+83
+00:02:31,379 --> 00:02:33,239
+to use it as an example or better yet
+
+
+84
+00:02:33,239 --> 00:02:34,950
+use your own project as a starting point
+
+
+85
+00:02:34,950 --> 00:02:36,810
+because these principles apply to any
+
+
+86
+00:02:36,810 --> 00:02:38,760
+github repo when you visit your code on
+
+
+87
+00:02:38,760 --> 00:02:39,269
+github
+
+
+88
+00:02:39,269 --> 00:02:41,040
+you'll notice this actions tab this is
+
+
+89
+00:02:41,040 --> 00:02:42,510
+where you can monitor your workflows
+
+
+90
+00:02:42,510 --> 00:02:44,129
+when a workflow is triggered it will
+
+
+91
+00:02:44,129 --> 00:02:45,540
+give you a log of everything that
+
+
+92
+00:02:45,540 --> 00:02:47,250
+happened on the server what we want to
+
+
+93
+00:02:47,250 --> 00:02:49,049
+do for continuous integration is have
+
+
+94
+00:02:49,049 --> 00:02:50,670
+our test suite run anytime there's a
+
+
+95
+00:02:50,670 --> 00:02:52,829
+pull request to the master branch if the
+
+
+96
+00:02:52,829 --> 00:02:54,540
+test suite fails or if the code fails to
+
+
+97
+00:02:54,540 --> 00:02:56,099
+build we should get a red checkmark here
+
+
+98
+00:02:56,099 --> 00:02:58,319
+automatically telling us not to merge
+
+
+99
+00:02:58,319 --> 00:03:00,090
+that pull request but if everything goes
+
+
+100
+00:03:00,090 --> 00:03:01,769
+according to plan we should get a green
+
+
+101
+00:03:01,769 --> 00:03:03,360
+check mark now back in the source code
+
+
+102
+00:03:03,360 --> 00:03:05,160
+you can see I have a github directory
+
+
+103
+00:03:05,160 --> 00:03:07,349
+followed by workflows and a file called
+
+
+104
+00:03:07,349 --> 00:03:09,450
+integrate gamal anything in this
+
+
+105
+00:03:09,450 --> 00:03:11,190
+workflows directory will be picked up by
+
+
+106
+00:03:11,190 --> 00:03:13,470
+github and automatically set up as a
+
+
+107
+00:03:13,470 --> 00:03:15,480
+workflow in the cloud the gamal file is
+
+
+108
+00:03:15,480 --> 00:03:17,040
+where we define the workflow we'll give
+
+
+109
+00:03:17,040 --> 00:03:18,840
+it a name of node continuous integration
+
+
+110
+00:03:18,840 --> 00:03:21,030
+then we need to tell it on which event
+
+
+111
+00:03:21,030 --> 00:03:23,220
+or events to run we do that with the on
+
+
+112
+00:03:23,220 --> 00:03:25,319
+object and in this case we want to run
+
+
+113
+00:03:25,319 --> 00:03:27,480
+it on pull request to the master branch
+
+
+114
+00:03:27,480 --> 00:03:29,579
+now every workflow should have one or
+
+
+115
+00:03:29,579 --> 00:03:31,560
+more jobs you define them on this jobs
+
+
+116
+00:03:31,560 --> 00:03:33,450
+object and then first give the job a
+
+
+117
+00:03:33,450 --> 00:03:35,489
+name we'll call this one test pull
+
+
+118
+00:03:35,489 --> 00:03:37,470
+request from there we need to tell the
+
+
+119
+00:03:37,470 --> 00:03:39,750
+job which VM to run on I'll run this one
+
+
+120
+00:03:39,750 --> 00:03:41,370
+on Ubuntu but you also have the choice
+
+
+121
+00:03:41,370 --> 00:03:44,190
+of Windows and Mac OS next we need to
+
+
+122
+00:03:44,190 --> 00:03:45,900
+give this job a set of steps or
+
+
+123
+00:03:45,900 --> 00:03:47,730
+instructions that actually build and
+
+
+124
+00:03:47,730 --> 00:03:49,620
+test our code well first want to get our
+
+
+125
+00:03:49,620 --> 00:03:51,630
+source code into the virtual machine we
+
+
+126
+00:03:51,630 --> 00:03:52,980
+can do that using an officially
+
+
+127
+00:03:52,980 --> 00:03:55,019
+maintained action called check out that
+
+
+128
+00:03:55,019 --> 00:03:56,609
+brings your source code into the current
+
+
+129
+00:03:56,609 --> 00:03:58,200
+working directory and that means you can
+
+
+130
+00:03:58,200 --> 00:03:59,400
+run commands like you would from the
+
+
+131
+00:03:59,400 --> 00:04:01,079
+command line if working on the project
+
+
+132
+00:04:01,079 --> 00:04:03,389
+locally but in our case we also need to
+
+
+133
+00:04:03,389 --> 00:04:05,099
+set up nodejs in order to run those
+
+
+134
+00:04:05,099 --> 00:04:07,470
+commands so we use the node setup action
+
+
+135
+00:04:07,470 --> 00:04:09,569
+and then specify the version and from
+
+
+136
+00:04:09,569 --> 00:04:11,130
+there we're ready to start running our
+
+
+137
+00:04:11,130 --> 00:04:13,260
+own commands we first need to install
+
+
+138
+00:04:13,260 --> 00:04:15,450
+all of our dependencies from NPM and we
+
+
+139
+00:04:15,450 --> 00:04:17,340
+can do that using the CI command
+
+
+140
+00:04:17,340 --> 00:04:19,829
+that's equivalent to NPM install but it
+
+
+141
+00:04:19,829 --> 00:04:21,719
+does a clean install for your CI server
+
+
+142
+00:04:21,719 --> 00:04:23,820
+from there we'll run our test command to
+
+
+143
+00:04:23,820 --> 00:04:25,680
+test our code and then after that we'll
+
+
+144
+00:04:25,680 --> 00:04:27,180
+run our build command to make sure the
+
+
+145
+00:04:27,180 --> 00:04:27,389
+bill
+
+
+146
+00:04:27,389 --> 00:04:29,430
+compiles properly now it's also worth
+
+
+147
+00:04:29,430 --> 00:04:30,870
+noting that if you have a more complex
+
+
+148
+00:04:30,870 --> 00:04:32,669
+test suite like end-to-end tests with
+
+
+149
+00:04:32,669 --> 00:04:34,650
+Cypress for example there's very likely
+
+
+150
+00:04:34,650 --> 00:04:36,689
+an existing action to set up the test
+
+
+151
+00:04:36,689 --> 00:04:38,159
+runner for you automatically in the
+
+
+152
+00:04:38,159 --> 00:04:39,719
+environment and that's all it takes for
+
+
+153
+00:04:39,719 --> 00:04:41,580
+the workflow configuration to start
+
+
+154
+00:04:41,580 --> 00:04:42,120
+using it
+
+
+155
+00:04:42,120 --> 00:04:43,560
+we just need to commit it to the master
+
+
+156
+00:04:43,560 --> 00:04:46,169
+branch I'll run git add git commit and
+
+
+157
+00:04:46,169 --> 00:04:48,090
+then get push to push that to the remote
+
+
+158
+00:04:48,090 --> 00:04:50,069
+repository now if you go to the actions
+
+
+159
+00:04:50,069 --> 00:04:51,539
+tab on github you'll notice that it's
+
+
+160
+00:04:51,539 --> 00:04:52,860
+still empty that's because we haven't
+
+
+161
+00:04:52,860 --> 00:04:54,779
+had an actual pull request event to
+
+
+162
+00:04:54,779 --> 00:04:56,909
+trigger a workflow so let's go ahead and
+
+
+163
+00:04:56,909 --> 00:04:58,620
+give our workflow a spin by creating a
+
+
+164
+00:04:58,620 --> 00:05:00,449
+pull request I'll go ahead and create a
+
+
+165
+00:05:00,449 --> 00:05:02,129
+new branch using git checkout with the
+
+
+166
+00:05:02,129 --> 00:05:04,080
+be flag to automatically move into it
+
+
+167
+00:05:04,080 --> 00:05:05,520
+inside that branch
+
+
+168
+00:05:05,520 --> 00:05:06,750
+I'll make some changes to the source
+
+
+169
+00:05:06,750 --> 00:05:08,849
+code that cause the test to fail I'll
+
+
+170
+00:05:08,849 --> 00:05:10,620
+then commit those changes and then push
+
+
+171
+00:05:10,620 --> 00:05:12,689
+this branch to the remote repo when I go
+
+
+172
+00:05:12,689 --> 00:05:14,250
+back to github I'll see the option to
+
+
+173
+00:05:14,250 --> 00:05:15,689
+create a pull request which I'll go
+
+
+174
+00:05:15,689 --> 00:05:17,310
+ahead and do and you'll notice that it
+
+
+175
+00:05:17,310 --> 00:05:19,050
+indicates how we're running checks or a
+
+
+176
+00:05:19,050 --> 00:05:20,610
+continuous integration test in the
+
+
+177
+00:05:20,610 --> 00:05:22,439
+background if we go to the actions tab
+
+
+178
+00:05:22,439 --> 00:05:24,300
+we can see logging for this process
+
+
+179
+00:05:24,300 --> 00:05:26,430
+running in real time in this case the
+
+
+180
+00:05:26,430 --> 00:05:27,990
+tests on the pull request fail which
+
+
+181
+00:05:27,990 --> 00:05:29,460
+means we probably shouldn't integrate
+
+
+182
+00:05:29,460 --> 00:05:31,529
+this code into the main code base and as
+
+
+183
+00:05:31,529 --> 00:05:33,150
+the developer who submitted this code I
+
+
+184
+00:05:33,150 --> 00:05:34,830
+can look at the logs and realize what I
+
+
+185
+00:05:34,830 --> 00:05:36,960
+did wrong in this case since I have an
+
+
+186
+00:05:36,960 --> 00:05:38,669
+open pull request I can go back into my
+
+
+187
+00:05:38,669 --> 00:05:40,349
+code and fix it and then push another
+
+
+188
+00:05:40,349 --> 00:05:42,360
+commit to this branch github will
+
+
+189
+00:05:42,360 --> 00:05:44,069
+automatically rerun the workflow because
+
+
+190
+00:05:44,069 --> 00:05:46,080
+this is an open pull request and this
+
+
+191
+00:05:46,080 --> 00:05:48,419
+time around we get green checkmarks so
+
+
+192
+00:05:48,419 --> 00:05:49,529
+that takes care of our continuous
+
+
+193
+00:05:49,529 --> 00:05:51,569
+integration now it's time to move on to
+
+
+194
+00:05:51,569 --> 00:05:53,699
+the next phase continuous deployment at
+
+
+195
+00:05:53,699 --> 00:05:55,020
+this point we're confident we have a
+
+
+196
+00:05:55,020 --> 00:05:56,729
+valid pull request and when we merge
+
+
+197
+00:05:56,729 --> 00:05:58,680
+that code into the master branch we also
+
+
+198
+00:05:58,680 --> 00:06:00,779
+want to deploy the app to our customers
+
+
+199
+00:06:00,779 --> 00:06:02,819
+so continuous integration is about
+
+
+200
+00:06:02,819 --> 00:06:04,289
+merging new code into the code base
+
+
+201
+00:06:04,289 --> 00:06:06,149
+while continuous deployment is about
+
+
+202
+00:06:06,149 --> 00:06:07,860
+pushing that code out to your customers
+
+
+203
+00:06:07,860 --> 00:06:09,750
+to demonstrate this I'm going to
+
+
+204
+00:06:09,750 --> 00:06:11,460
+integrate a third-party host
+
+
+205
+00:06:11,460 --> 00:06:13,139
+firebase and I'd like to give a shout
+
+
+206
+00:06:13,139 --> 00:06:14,879
+out to mark stammer Johan he put
+
+
+207
+00:06:14,879 --> 00:06:16,349
+together an awesome guide that will take
+
+
+208
+00:06:16,349 --> 00:06:17,819
+you through each one of these steps so
+
+
+209
+00:06:17,819 --> 00:06:19,649
+make sure to check that out on fire ship
+
+
+210
+00:06:19,649 --> 00:06:21,930
+IO we can easily set up hosting locally
+
+
+211
+00:06:21,930 --> 00:06:24,719
+by running firebase init hosting then we
+
+
+212
+00:06:24,719 --> 00:06:26,009
+can push our code to our firebase
+
+
+213
+00:06:26,009 --> 00:06:28,740
+hosting account using firebase deploy we
+
+
+214
+00:06:28,740 --> 00:06:30,210
+can do all this locally because we're
+
+
+215
+00:06:30,210 --> 00:06:31,889
+authenticated into our firebase account
+
+
+216
+00:06:31,889 --> 00:06:33,659
+on our local system but how do we
+
+
+217
+00:06:33,659 --> 00:06:35,909
+authenticate a remote CI server to do
+
+
+218
+00:06:35,909 --> 00:06:37,889
+the same thing what we'll need to do is
+
+
+219
+00:06:37,889 --> 00:06:39,959
+share a secret token with github we can
+
+
+220
+00:06:39,959 --> 00:06:41,249
+obtain that token from fire
+
+
+221
+00:06:41,249 --> 00:06:43,769
+by running fire-based login.c I this
+
+
+222
+00:06:43,769 --> 00:06:45,629
+will return us with a token string which
+
+
+223
+00:06:45,629 --> 00:06:47,759
+you can think of as an API key or user
+
+
+224
+00:06:47,759 --> 00:06:49,859
+name/password combination make sure to
+
+
+225
+00:06:49,859 --> 00:06:51,809
+keep this value secret go ahead and copy
+
+
+226
+00:06:51,809 --> 00:06:53,459
+the value from the command line and then
+
+
+227
+00:06:53,459 --> 00:06:55,319
+head over to your github repo go to
+
+
+228
+00:06:55,319 --> 00:06:57,869
+settings and secrets and add a new
+
+
+229
+00:06:57,869 --> 00:06:59,699
+secret we'll give it a name of firebase
+
+
+230
+00:06:59,699 --> 00:07:01,589
+token in all caps and you'll want to
+
+
+231
+00:07:01,589 --> 00:07:03,149
+make sure to use that same name then
+
+
+232
+00:07:03,149 --> 00:07:04,739
+we'll paste in the token and save it
+
+
+233
+00:07:04,739 --> 00:07:06,569
+github will automatically encrypt this
+
+
+234
+00:07:06,569 --> 00:07:08,309
+value for us and then we can access it
+
+
+235
+00:07:08,309 --> 00:07:10,589
+securely from our CI server in other
+
+
+236
+00:07:10,589 --> 00:07:12,269
+words it gives us a way to securely
+
+
+237
+00:07:12,269 --> 00:07:14,099
+authenticate with firebase from a github
+
+
+238
+00:07:14,099 --> 00:07:16,469
+actions workflow now let's go ahead and
+
+
+239
+00:07:16,469 --> 00:07:17,789
+create another gamal file in the
+
+
+240
+00:07:17,789 --> 00:07:19,559
+workflows directory this one we'll call
+
+
+241
+00:07:19,559 --> 00:07:21,179
+it deploy instead of running this
+
+
+242
+00:07:21,179 --> 00:07:22,860
+workflow on a pull request we'll run it
+
+
+243
+00:07:22,860 --> 00:07:24,899
+on a push to the master branch so this
+
+
+244
+00:07:24,899 --> 00:07:26,399
+workflow will run if we push code
+
+
+245
+00:07:26,399 --> 00:07:28,289
+directly to the master branch or if we
+
+
+246
+00:07:28,289 --> 00:07:30,569
+merge a pull request into it now the job
+
+
+247
+00:07:30,569 --> 00:07:32,459
+itself looks almost identical to the
+
+
+248
+00:07:32,459 --> 00:07:34,769
+previous job we check out the code setup
+
+
+249
+00:07:34,769 --> 00:07:37,049
+node run our build command but then we
+
+
+250
+00:07:37,049 --> 00:07:38,879
+need to deploy it and to do that we're
+
+
+251
+00:07:38,879 --> 00:07:40,979
+going to use a third party action called
+
+
+252
+00:07:40,979 --> 00:07:43,019
+the firebase action this action takes
+
+
+253
+00:07:43,019 --> 00:07:44,519
+care of all the steps required to setup
+
+
+254
+00:07:44,519 --> 00:07:47,159
+the firebase CLI on your server it will
+
+
+255
+00:07:47,159 --> 00:07:48,689
+run the firebase command and then we
+
+
+256
+00:07:48,689 --> 00:07:50,369
+tell it to use the arguments of deploy
+
+
+257
+00:07:50,369 --> 00:07:52,349
+only hosting and it's going to be
+
+
+258
+00:07:52,349 --> 00:07:54,209
+looking for an environment variable of
+
+
+259
+00:07:54,209 --> 00:07:56,489
+firebase token we can access our secret
+
+
+260
+00:07:56,489 --> 00:07:59,039
+github value by using dollar sign double
+
+
+261
+00:07:59,039 --> 00:08:01,469
+braces followed by Secrets dot firebase
+
+
+262
+00:08:01,469 --> 00:08:03,179
+token and that's basically all there is
+
+
+263
+00:08:03,179 --> 00:08:05,039
+to it we can start using this continuous
+
+
+264
+00:08:05,039 --> 00:08:06,689
+deployment workflow by pushing it to the
+
+
+265
+00:08:06,689 --> 00:08:08,399
+master branch now if we go back to
+
+
+266
+00:08:08,399 --> 00:08:10,379
+github and merge that pull request from
+
+
+267
+00:08:10,379 --> 00:08:12,179
+the previous example you can see from
+
+
+268
+00:08:12,179 --> 00:08:14,039
+the login that it automatically builds
+
+
+269
+00:08:14,039 --> 00:08:15,929
+and deploys our code to firebase and the
+
+
+270
+00:08:15,929 --> 00:08:17,009
+changes should be automatically
+
+
+271
+00:08:17,009 --> 00:08:18,989
+reflected on the website itself and now
+
+
+272
+00:08:18,989 --> 00:08:21,089
+that we have a basic CI CD pipeline I
+
+
+273
+00:08:21,089 --> 00:08:22,289
+want to look at some other cool things
+
+
+274
+00:08:22,289 --> 00:08:23,849
+you can do with github actions that you
+
+
+275
+00:08:23,849 --> 00:08:26,279
+might not realize personally I maintain
+
+
+276
+00:08:26,279 --> 00:08:27,959
+a few open source projects that are
+
+
+277
+00:08:27,959 --> 00:08:30,329
+available as libraries through NPM one
+
+
+278
+00:08:30,329 --> 00:08:32,099
+of those projects is spelt fire and
+
+
+279
+00:08:32,099 --> 00:08:33,899
+anytime there's a major code change on
+
+
+280
+00:08:33,899 --> 00:08:35,639
+the master branch we cut a new release
+
+
+281
+00:08:35,639 --> 00:08:37,529
+so developers can use that code in their
+
+
+282
+00:08:37,529 --> 00:08:39,569
+projects and every time that happens I
+
+
+283
+00:08:39,569 --> 00:08:41,339
+also need to go to the command line
+
+
+284
+00:08:41,339 --> 00:08:43,620
+login to NPM and push that code to the
+
+
+285
+00:08:43,620 --> 00:08:45,809
+NPM registry it's kind of annoying and
+
+
+286
+00:08:45,809 --> 00:08:47,819
+easy to forget so let's just automate it
+
+
+287
+00:08:47,819 --> 00:08:49,679
+with github actions and this workflow
+
+
+288
+00:08:49,679 --> 00:08:51,209
+you'll notice I'm using the release
+
+
+289
+00:08:51,209 --> 00:08:52,920
+event that's because not every code
+
+
+290
+00:08:52,920 --> 00:08:54,320
+change on the master branch work
+
+
+291
+00:08:54,320 --> 00:08:56,600
+is a new release for example if you just
+
+
+292
+00:08:56,600 --> 00:08:58,190
+fix a typo in the readme it doesn't
+
+
+293
+00:08:58,190 --> 00:08:59,900
+require a whole new release to be pushed
+
+
+294
+00:08:59,900 --> 00:09:01,820
+out to NPM in this recipe you'll notice
+
+
+295
+00:09:01,820 --> 00:09:04,010
+we have two jobs one for build and one
+
+
+296
+00:09:04,010 --> 00:09:06,140
+to publish to NPM and we might want an
+
+
+297
+00:09:06,140 --> 00:09:08,090
+additional job to publish to the github
+
+
+298
+00:09:08,090 --> 00:09:10,970
+package registry by default all the jobs
+
+
+299
+00:09:10,970 --> 00:09:12,950
+will run concurrently in parallel but
+
+
+300
+00:09:12,950 --> 00:09:14,270
+that's not actually what we want here
+
+
+301
+00:09:14,270 --> 00:09:15,950
+because we want to first build our code
+
+
+302
+00:09:15,950 --> 00:09:17,660
+before releasing it to the package
+
+
+303
+00:09:17,660 --> 00:09:19,940
+managers we can use the needs keyword to
+
+
+304
+00:09:19,940 --> 00:09:21,710
+tell github actions to run this job
+
+
+305
+00:09:21,710 --> 00:09:24,050
+after the previous job is finished this
+
+
+306
+00:09:24,050 --> 00:09:25,760
+can be a really useful technique because
+
+
+307
+00:09:25,760 --> 00:09:27,260
+in our case here it allows us to build
+
+
+308
+00:09:27,260 --> 00:09:28,880
+the code once and then push it out to
+
+
+309
+00:09:28,880 --> 00:09:30,500
+two different registries without having
+
+
+310
+00:09:30,500 --> 00:09:32,270
+to rebuild the code so that's really
+
+
+311
+00:09:32,270 --> 00:09:33,650
+useful if you're a library maintainer
+
+
+312
+00:09:33,650 --> 00:09:35,720
+but most companies use a lot of other
+
+
+313
+00:09:35,720 --> 00:09:37,700
+communication tools beyond github like
+
+
+314
+00:09:37,700 --> 00:09:40,580
+slack disk or JIRA Trello and so on and
+
+
+315
+00:09:40,580 --> 00:09:42,260
+in most cases these tools maintain
+
+
+316
+00:09:42,260 --> 00:09:44,390
+github apps for you to integrate with
+
+
+317
+00:09:44,390 --> 00:09:46,340
+their tools directly in github when you
+
+
+318
+00:09:46,340 --> 00:09:47,750
+go to the github marketplace you'll
+
+
+319
+00:09:47,750 --> 00:09:49,580
+notice that it's separated by apps and
+
+
+320
+00:09:49,580 --> 00:09:52,070
+actions actions are reusable pieces of
+
+
+321
+00:09:52,070 --> 00:09:53,840
+code you use in your own workflow while
+
+
+322
+00:09:53,840 --> 00:09:56,150
+apps are fully pre-built solutions that
+
+
+323
+00:09:56,150 --> 00:09:57,860
+don't require you to deploy any code
+
+
+324
+00:09:57,860 --> 00:09:59,810
+whatsoever because we use slack for fire
+
+
+325
+00:09:59,810 --> 00:10:01,640
+ship IO I'm going to use that as an
+
+
+326
+00:10:01,640 --> 00:10:03,380
+example let's imagine that I wanted to
+
+
+327
+00:10:03,380 --> 00:10:05,360
+receive a slack notification every time
+
+
+328
+00:10:05,360 --> 00:10:07,610
+a new github issue is posted there are a
+
+
+329
+00:10:07,610 --> 00:10:09,470
+variety of community maintained actions
+
+
+330
+00:10:09,470 --> 00:10:11,060
+that allow me to do this easily in a
+
+
+331
+00:10:11,060 --> 00:10:12,920
+workflow in this workflow you can see I
+
+
+332
+00:10:12,920 --> 00:10:15,260
+set up a trigger for github issues then
+
+
+333
+00:10:15,260 --> 00:10:17,060
+use a slack action along with some
+
+
+334
+00:10:17,060 --> 00:10:18,770
+configuration variables to have it post
+
+
+335
+00:10:18,770 --> 00:10:20,450
+messages directly in my slack channel
+
+
+336
+00:10:20,450 --> 00:10:21,980
+every time there's a new issue on github
+
+
+337
+00:10:21,980 --> 00:10:23,690
+that's cool in all but you can also
+
+
+338
+00:10:23,690 --> 00:10:25,490
+solve this problem using a github app
+
+
+339
+00:10:25,490 --> 00:10:27,020
+and it can be installed on your account
+
+
+340
+00:10:27,020 --> 00:10:28,940
+by simply clicking a few buttons the
+
+
+341
+00:10:28,940 --> 00:10:30,470
+nice thing about a github app is that it
+
+
+342
+00:10:30,470 --> 00:10:32,000
+can be used across multiple repos
+
+
+343
+00:10:32,000 --> 00:10:33,980
+simultaneously so when you're automating
+
+
+344
+00:10:33,980 --> 00:10:35,660
+with github actions it's a good idea to
+
+
+345
+00:10:35,660 --> 00:10:37,010
+ask yourself if you want a fully
+
+
+346
+00:10:37,010 --> 00:10:38,690
+installed app or if you want to build
+
+
+347
+00:10:38,690 --> 00:10:40,820
+your own workflow with actions I may do
+
+
+348
+00:10:40,820 --> 00:10:42,530
+a whole separate video on apps because
+
+
+349
+00:10:42,530 --> 00:10:43,790
+there's a lot of cool things you can do
+
+
+350
+00:10:43,790 --> 00:10:45,830
+like automatically analyze code quality
+
+
+351
+00:10:45,830 --> 00:10:47,570
+automatically update your dependencies
+
+
+352
+00:10:47,570 --> 00:10:49,700
+automatically optimize all your images
+
+
+353
+00:10:49,700 --> 00:10:51,530
+and automatically do a whole bunch of
+
+
+354
+00:10:51,530 --> 00:10:53,180
+other cool stuff but now let's shift
+
+
+355
+00:10:53,180 --> 00:10:55,010
+gears into the final recipe which is a
+
+
+356
+00:10:55,010 --> 00:10:56,750
+github action that runs on a specific
+
+
+357
+00:10:56,750 --> 00:10:58,460
+schedule this one happens to be a
+
+
+358
+00:10:58,460 --> 00:11:00,410
+special treat for firebase users because
+
+
+359
+00:11:00,410 --> 00:11:02,150
+it solves a common problem how do I
+
+
+360
+00:11:02,150 --> 00:11:03,740
+export my firestore data on a regular
+
+
+361
+00:11:03,740 --> 00:11:06,230
+basis currently if the database doesn't
+
+
+362
+00:11:06,230 --> 00:11:08,150
+provide automatic backups so you need to
+
+
+363
+00:11:08,150 --> 00:11:08,550
+man
+
+
+364
+00:11:08,550 --> 00:11:11,670
+export your data in order to reimagine
+
+
+365
+00:11:11,670 --> 00:11:14,850
+this recipe we use the on schedule event
+
+
+366
+00:11:14,850 --> 00:11:17,220
+and pass it a cron schedule if you don't
+
+
+367
+00:11:17,220 --> 00:11:18,899
+understand how this cron syntax works
+
+
+368
+00:11:18,899 --> 00:11:19,860
+don't worry
+
+
+369
+00:11:19,860 --> 00:11:21,300
+not many people do but there's an
+
+
+370
+00:11:21,300 --> 00:11:23,339
+awesome app called crontab guru that can
+
+
+371
+00:11:23,339 --> 00:11:25,050
+automatically generate schedules for you
+
+
+372
+00:11:25,050 --> 00:11:27,180
+the schedule in this example runs every
+
+
+373
+00:11:27,180 --> 00:11:28,980
+night at midnight and then in the action
+
+
+374
+00:11:28,980 --> 00:11:30,930
+itself we're using an action maintained
+
+
+375
+00:11:30,930 --> 00:11:32,970
+by a Google cloud platform this action
+
+
+376
+00:11:32,970 --> 00:11:34,920
+sets up the G cloud CLI in the
+
+
+377
+00:11:34,920 --> 00:11:36,570
+environment and then we can use it to
+
+
+378
+00:11:36,570 --> 00:11:38,190
+run a couple commands to export our
+
+
+379
+00:11:38,190 --> 00:11:40,200
+firestore data into a storage bucket and
+
+
+380
+00:11:40,200 --> 00:11:42,180
+that process is now fully automated so
+
+
+381
+00:11:42,180 --> 00:11:43,440
+we should hopefully never have to worry
+
+
+382
+00:11:43,440 --> 00:11:45,149
+about it again and check the links in
+
+
+383
+00:11:45,149 --> 00:11:46,800
+the description for a full write-up on
+
+
+384
+00:11:46,800 --> 00:11:48,450
+how to set up the service account and
+
+
+385
+00:11:48,450 --> 00:11:49,920
+everything else involved with G cloud
+
+
+386
+00:11:49,920 --> 00:11:51,209
+I'm gonna go ahead and wrap things up
+
+
+387
+00:11:51,209 --> 00:11:52,649
+there hopefully this video helped you
+
+
+388
+00:11:52,649 --> 00:11:54,149
+get started with automation in your own
+
+
+389
+00:11:54,149 --> 00:11:55,560
+project and let me know what kind of
+
+
+390
+00:11:55,560 --> 00:11:57,180
+things are using github actions for in
+
+
+391
+00:11:57,180 --> 00:11:58,950
+the comments stay tuned for the giveaway
+
+
+392
+00:11:58,950 --> 00:12:00,930
+video in a few days thanks for watching
+
+
+393
+00:12:00,930 --> 00:12:05,810
+and I will see you in the next one
+
+
+394
+00:12:05,810 --> 00:12:12,390
+[Music]
+
+

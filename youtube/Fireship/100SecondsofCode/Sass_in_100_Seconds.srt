@@ -1,0 +1,224 @@
+1
+00:00:00,080 --> 00:00:04,560
+syntactically awesome stylesheets or sass is a language that can extend your
+语法上很棒的样式表或sass 是一种可以用超能力扩展你的
+
+2
+00:00:04,560 --> 00:00:08,400
+css with super powers modern uis are extremely complex and if
+css 的语言现代用户界面非常复杂，如果
+
+3
+00:00:08,400 --> 00:00:11,920
+you attempt to build one with plain css you'll find yourself repeating yourself
+你尝试用普通 css 构建一个你会发现自己经常重复自己
+
+4
+00:00:11,920 --> 00:00:15,280
+often sas comes to the rescue by providing a compiler
+sas 通过提供一个允许的编译
+
+5
+00:00:15,280 --> 00:00:18,640
+that allows us to write style sheets in a completely different language well two
+器来拯救 我们用完全不同的语言编写样式表 两种
+
+6
+00:00:18,640 --> 00:00:20,800
+different languages to be exact the original
+不同的语言 准确地说
+
+7
+00:00:20,800 --> 00:00:25,119
+indented syntax that you find in dot sass files removes the syntactic salt of
+是您在点 sass 文件中找到的原始缩进语法删除了
+
+8
+00:00:25,119 --> 00:00:28,400
+semicolons and curly braces [Applause]
+分号和花括号的语法盐[掌声]
+
+9
+00:00:28,400 --> 00:00:31,359
+[Music] but the more popular version is the
+[音乐]但更流行的版本是
+
+10
+00:00:31,359 --> 00:00:34,320
+superset syntax that you find in scss files
+您可以在此处的 scss 文件中找到超集语法，
+
+11
+00:00:34,320 --> 00:00:38,000
+here you can write regular css then extend it with additional bonus features
+您可以编写常规 css，然后
+
+12
+00:00:38,000 --> 00:00:40,719
+as needed sas has been around for nearly 15 years
+根据需要使用额外的额外功能对其进行扩展sas 已经存在了近 15 年
+
+13
+00:00:40,719 --> 00:00:43,520
+and one of its original killer features was variables
+，其原始杀手功能之一是变量
+
+14
+00:00:43,520 --> 00:00:47,039
+use a dollar sign to name a variable then reference it somewhere else in your
+使用美元符号命名变量然后引用 它现在在你的代码中的其他地方，
+
+15
+00:00:47,039 --> 00:00:49,280
+code now if that value ever changes you only
+如果该值发生变化，你只
+
+16
+00:00:49,280 --> 00:00:53,039
+have to update one line of code css introduced its own native variables a
+需要更新一行代码 css引入了它自己的本机
+
+17
+00:00:53,039 --> 00:00:55,520
+few years ago but the advantages don't stop there
+几年前的变量，但优势并不止于此，第二个
+
+18
+00:00:55,520 --> 00:00:58,480
+killer feature number two is nesting in many cases
+杀手级功能是嵌套在许多情况下，
+
+19
+00:00:58,480 --> 00:01:02,559
+classes are used as name spaces which means they're often duplicated over and
+类被用作名称空间，这意味着它们经常一遍
+
+20
+00:01:02,559 --> 00:01:07,200
+over again we can avoid this duplication by nesting styles inside the parent by
+又一遍地重复我们可以通过在父级中嵌套样式来避免这种重复
+
+21
+00:01:07,200 --> 00:01:10,320
+default these classes will apply to descendant elements or
+默认情况下，这些类将应用于后代元素，或者
+
+22
+00:01:10,320 --> 00:01:13,600
+they can be applied to a direct sibling by using the ampersand which
+它们可以通过使用 & 符号应用于直接同级元素，它
+
+23
+00:01:13,600 --> 00:01:17,040
+itself is a tool that tells sas to combine the parent selector with the
+本身是一种告诉 sas将父选择器与
+
+24
+00:01:17,040 --> 00:01:20,560
+nested child selector now one other issue with css is that
+嵌套子选择器组合的工具，现在 css 的另一个问题是
+
+25
+00:01:20,560 --> 00:01:24,240
+you'll often find yourself including a similar group of styles on multiple
+你' 您经常会发现自己在多个类中包含一组相似的样式
+
+26
+00:01:24,240 --> 00:01:27,680
+classes mix-ins allow you to encapsulate a group of styles
+mix-ins 允许您封装一组样式，
+
+27
+00:01:27,680 --> 00:01:31,119
+then apply those styles anywhere in your code using the include keyword
+然后使用 include 关键字在代码中的任何位置应用这些样式
+
+28
+00:01:31,119 --> 00:01:35,280
+mixons can also take arguments to create a large number of similar classes
+mixons 也可以带参数以编程方式创建大量相似的类
+
+29
+00:01:35,280 --> 00:01:37,439
+programmatically like a bunch of different colored
+比如一堆不同颜色的
+
+30
+00:01:37,439 --> 00:01:41,280
+buttons for example in addition sas provides a whole suite of tools to
+按钮，另外sas 提供了一整套工具来
+
+31
+00:01:41,280 --> 00:01:44,880
+help you write more programmatic code use if or else in a mixin for
+帮助你编写更多的程序化代码在 mixin 中使用 if 或 else 用于
+
+32
+00:01:44,880 --> 00:01:48,720
+conditional logic or create an array of values with a variable then loop over
+条件逻辑，或者使用变量创建一个值数组，然后
+
+33
+00:01:48,720 --> 00:01:50,880
+them with each and you might even extract all this
+用每个循环遍历它们，您甚至可以将所有这些
+
+34
+00:01:50,880 --> 00:01:54,720
+logic into a reusable function or sas might already have a built-in
+逻辑提取到可重用函数中，或者 sas 可能已经
+
+35
+00:01:54,720 --> 00:01:57,920
+function for you ready to go if you need to adjust a color you can
+为您准备好了内置函数如果您需要调整颜色，您可以
+
+36
+00:01:57,920 --> 00:02:02,240
+use the lighten or darken functions to adjust a color by a predictable value
+使用变亮或变暗功能
+
+37
+00:02:02,240 --> 00:02:04,240
+when you're finished building a beautiful ui
+在完成构建漂亮的
+
+38
+00:02:04,240 --> 00:02:08,239
+the compiler will take your code and convert it into valid css that can run
+ui 后将颜色调整为可预测的值，编译器将获取您的代码并将其转换为可以运行的有效 css
+
+39
+00:02:08,239 --> 00:02:11,120
+in the browser this has been sas in 100 seconds but
+浏览器在 100 秒内完成了 sas，但
+
+40
+00:02:11,120 --> 00:02:14,879
+before you go here's one more bonus pro tip when working with nested code it can
+在您使用嵌套代码时，这里还有一个额外的专业提示，
+
+41
+00:02:14,879 --> 00:02:17,920
+sometimes be hard to figure out exactly which set of braces you're
+有时很难确定您在 vs 代码中到底是哪组大括号
+
+42
+00:02:17,920 --> 00:02:22,080
+inside of in vs code enable the bracket pair colorizer extension to give each
+启用括号对着色器 扩展以赋予
+
+43
+00:02:22,080 --> 00:02:25,120
+set of braces their own unique color make sure to hit the like button if you
+每组牙套自己独特的颜色如果您
+
+44
+00:02:25,120 --> 00:02:28,560
+want to see more short videos like this thanks for watching and i will see you
+想观看更多这样的短片，请确保点击“喜欢”按钮感谢收看，我会
+
+45
+00:02:28,560 --> 00:02:32,319
+in the next one
+在下一个

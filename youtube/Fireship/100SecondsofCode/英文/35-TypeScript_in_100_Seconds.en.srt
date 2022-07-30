@@ -1,0 +1,440 @@
+1
+00:00:00,000 --> 00:00:00,320
+[Music]
+
+
+2
+00:00:00,320 --> 00:00:02,080
+typescript validate your javascript
+
+
+3
+00:00:02,080 --> 00:00:04,319
+ahead of time with static type checking
+
+
+4
+00:00:04,319 --> 00:00:06,319
+javascript is a dynamic language where
+
+
+5
+00:00:06,319 --> 00:00:08,080
+we can do all kinds of crazy things
+
+
+6
+00:00:08,080 --> 00:00:09,519
+like reference variables that don't
+
+
+7
+00:00:09,519 --> 00:00:11,759
+exist or work with objects of an unknown
+
+
+8
+00:00:11,759 --> 00:00:13,200
+shape the code is interpreted by a
+
+
+9
+00:00:13,200 --> 00:00:13,840
+browser
+
+
+10
+00:00:13,840 --> 00:00:15,360
+but if your code is broken you won't
+
+
+11
+00:00:15,360 --> 00:00:17,199
+catch it until runtime when the browser
+
+
+12
+00:00:17,199 --> 00:00:18,000
+rows an error
+
+
+13
+00:00:18,000 --> 00:00:19,520
+typescript prevents errors like this
+
+
+14
+00:00:19,520 --> 00:00:21,119
+from ever happening by extending
+
+
+15
+00:00:21,119 --> 00:00:22,400
+javascript with types
+
+
+16
+00:00:22,400 --> 00:00:24,320
+the language is a strict superset of
+
+
+17
+00:00:24,320 --> 00:00:26,240
+javascript which means when you open up
+
+
+18
+00:00:26,240 --> 00:00:28,480
+a ts file you can write plain javascript
+
+
+19
+00:00:28,480 --> 00:00:30,000
+with all of its extra features
+
+
+20
+00:00:30,000 --> 00:00:31,760
+being completely optional but notice in
+
+
+21
+00:00:31,760 --> 00:00:33,360
+the code here how the ide
+
+
+22
+00:00:33,360 --> 00:00:35,200
+is providing feedback about using a
+
+
+23
+00:00:35,200 --> 00:00:36,719
+variable that doesn't exist
+
+
+24
+00:00:36,719 --> 00:00:38,399
+instead of fixing this issue weeks later
+
+
+25
+00:00:38,399 --> 00:00:40,000
+in a stack trace after the company has
+
+
+26
+00:00:40,000 --> 00:00:41,840
+lost millions of dollars we can fix it
+
+
+27
+00:00:41,840 --> 00:00:43,200
+right here right now
+
+
+28
+00:00:43,200 --> 00:00:45,039
+the reason we get this instant feedback
+
+
+29
+00:00:45,039 --> 00:00:46,719
+is because typescript behaves like a
+
+
+30
+00:00:46,719 --> 00:00:47,840
+compiled language
+
+
+31
+00:00:47,840 --> 00:00:49,680
+where javascript is the compilation
+
+
+32
+00:00:49,680 --> 00:00:51,199
+target you can run the typescript
+
+
+33
+00:00:51,199 --> 00:00:52,000
+compiler
+
+
+34
+00:00:52,000 --> 00:00:54,000
+using the tsc command it will take the
+
+
+35
+00:00:54,000 --> 00:00:56,480
+ts file and transpile it into vanilla
+
+
+36
+00:00:56,480 --> 00:00:57,120
+javascript
+
+
+37
+00:00:57,120 --> 00:00:58,320
+and you can choose any flavor of
+
+
+38
+00:00:58,320 --> 00:00:59,920
+javascript you want if you need to
+
+
+39
+00:00:59,920 --> 00:01:01,280
+target ancient browsers
+
+
+40
+00:01:01,280 --> 00:01:02,800
+and that means you can use the latest
+
+
+41
+00:01:02,800 --> 00:01:04,239
+and greatest syntax features of
+
+
+42
+00:01:04,239 --> 00:01:06,000
+javascript without having to worry if
+
+
+43
+00:01:06,000 --> 00:01:07,439
+they'll be supported in an older
+
+
+44
+00:01:07,439 --> 00:01:09,360
+environment your typescript project will
+
+
+45
+00:01:09,360 --> 00:01:11,119
+likely have a ts config file
+
+
+46
+00:01:11,119 --> 00:01:12,479
+which provides an infinite number of
+
+
+47
+00:01:12,479 --> 00:01:14,320
+ways to customize the behavior of the
+
+
+48
+00:01:14,320 --> 00:01:15,200
+compiler
+
+
+49
+00:01:15,200 --> 00:01:17,119
+but the primary goal of typescript is to
+
+
+50
+00:01:17,119 --> 00:01:18,479
+enable static typing
+
+
+51
+00:01:18,479 --> 00:01:20,240
+one way it achieves that is by allowing
+
+
+52
+00:01:20,240 --> 00:01:22,080
+you to annotate your code with types
+
+
+53
+00:01:22,080 --> 00:01:24,159
+we can strongly type a variable using a
+
+
+54
+00:01:24,159 --> 00:01:26,720
+colon followed by its type like a string
+
+
+55
+00:01:26,720 --> 00:01:27,759
+boolean or number
+
+
+56
+00:01:27,759 --> 00:01:29,920
+that's known as an explicit type if we
+
+
+57
+00:01:29,920 --> 00:01:31,600
+then try to assign its value as the
+
+
+58
+00:01:31,600 --> 00:01:33,119
+wrong type we get an error
+
+
+59
+00:01:33,119 --> 00:01:35,439
+alternatively if we set an initial value
+
+
+60
+00:01:35,439 --> 00:01:37,200
+it will implicitly infer the type
+
+
+61
+00:01:37,200 --> 00:01:38,799
+however there may be cases where you
+
+
+62
+00:01:38,799 --> 00:01:40,400
+want to opt out of this behavior
+
+
+63
+00:01:40,400 --> 00:01:42,240
+in which case you can annotate with the
+
+
+64
+00:01:42,240 --> 00:01:44,560
+any type that allows you to loosely type
+
+
+65
+00:01:44,560 --> 00:01:46,720
+or opt out of type checking when working
+
+
+66
+00:01:46,720 --> 00:01:47,520
+with an array
+
+
+67
+00:01:47,520 --> 00:01:50,000
+use brackets to strongly type a list in
+
+
+68
+00:01:50,000 --> 00:01:51,840
+addition you can define your own custom
+
+
+69
+00:01:51,840 --> 00:01:53,280
+types and interfaces
+
+
+70
+00:01:53,280 --> 00:01:54,720
+which is especially powerful when
+
+
+71
+00:01:54,720 --> 00:01:56,719
+working with objects the car interface
+
+
+72
+00:01:56,719 --> 00:01:58,320
+here defines various types
+
+
+73
+00:01:58,320 --> 00:02:00,240
+of the properties on an object we can
+
+
+74
+00:02:00,240 --> 00:02:01,840
+then apply the interface to a plain
+
+
+75
+00:02:01,840 --> 00:02:03,040
+javascript object
+
+
+76
+00:02:03,040 --> 00:02:05,119
+the beauty of having strongly typed code
+
+
+77
+00:02:05,119 --> 00:02:06,799
+is that we get autocomplete everywhere
+
+
+78
+00:02:06,799 --> 00:02:07,680
+in our ide
+
+
+79
+00:02:07,680 --> 00:02:09,200
+we don't have to jump back and forth to
+
+
+80
+00:02:09,200 --> 00:02:11,039
+documentation or dig through stack
+
+
+81
+00:02:11,039 --> 00:02:12,720
+traces to figure out why our code's not
+
+
+82
+00:02:12,720 --> 00:02:13,200
+working
+
+
+83
+00:02:13,200 --> 00:02:14,800
+if you like typescript as much as i do
+
+
+84
+00:02:14,800 --> 00:02:16,480
+consider becoming a pro member at
+
+
+85
+00:02:16,480 --> 00:02:18,319
+fireship io for the next few days
+
+
+86
+00:02:18,319 --> 00:02:20,239
+everything will be 40 off including
+
+
+87
+00:02:20,239 --> 00:02:22,080
+lifetime memberships thanks for watching
+
+
+88
+00:02:22,080 --> 00:02:26,400
+and i will see you in the next one
+
+

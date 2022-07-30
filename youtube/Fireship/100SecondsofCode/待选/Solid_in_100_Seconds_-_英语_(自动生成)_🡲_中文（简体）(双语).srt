@@ -1,0 +1,194 @@
+1
+00:00:00,160 --> 00:00:04,640
+solid a declarative javascript framework for building fast uis with maximum
+solid 一个声明式 javascript 框架，用于构建快速 uis，最大程度地
+
+2
+00:00:04,640 --> 00:00:09,760
+control over reactivity it was created by ryan carniato in 2018 and is loved by
+控制反应性 它由 ryan carniato 在 2018 年创建，并受到
+
+3
+00:00:09,760 --> 00:00:13,599
+developers because it's both pragmatic and extremely performant on the surface
+开发人员的喜爱，因为它在表面上既实用又极其高性能
+
+4
+00:00:13,599 --> 00:00:17,119
+it shares many similarities with react components are javascript functions that
+它与反应组件有许多相似之处是
+
+5
+00:00:17,119 --> 00:00:21,920
+return jsx for the ui however unlike react there's no virtual dom it uses a
+返回 jsx 的 javascript 函数 对于 ui，但与react 不同的是，它没有虚拟 dom，它使用
+
+6
+00:00:21,920 --> 00:00:25,599
+compiler more like svelt that converts your code into vanilla javascript to
+更像 svelt 的编译器，将您的代码转换为 vanilla javascript，以
+
+7
+00:00:25,599 --> 00:00:28,480
+bring you as close to the dom as possible the framework itself only
+使您尽可能接近 dom，框架本身仅
+
+8
+00:00:28,480 --> 00:00:32,000
+weighs 7 kilobytes and it completely crushes runtime performance benchmarks
+重 7 KB，并且在
+
+9
+00:00:32,000 --> 00:00:35,920
+without the need for any extra magic or weird hacks in your code but most
+没有 代码中需要任何额外的魔法或奇怪的技巧，但最
+
+10
+00:00:35,920 --> 00:00:40,160
+importantly it's truly reactive a function component is only called once
+重要的是它是真正的反应性功能组件只被调用一次
+
+11
+00:00:40,160 --> 00:00:44,000
+which means you can do unheard of things like you set interval predictably at the
+，这意味着你可以做一些闻所未闻的事情，比如在顶层数据上可预测地设置间隔，这些
+
+12
+00:00:44,000 --> 00:00:48,399
+top level data that changes or state is managed with the create signal primitive
+数据的变化或状态由 创建
+
+13
+00:00:48,399 --> 00:00:51,840
+which returns a getter and setter the framework will observe this data and
+返回 getter 和 setter 的信号原语，框架将 保存这些数据并
+
+14
+00:00:51,840 --> 00:00:55,680
+surgically update its exact location in the dom when it changes instead of
+在 dom 更改时通过手术更新其在 dom 中的确切位置，而不是
+
+15
+00:00:55,680 --> 00:00:59,920
+re-rendering the entire component again it's truly reactive to get started
+再次重新渲染整个组件。它是真正的反应式开始
+
+16
+00:00:59,920 --> 00:01:03,680
+generate a new solid project it uses veet as the build tool and should look
+生成一个新的实体项目，它使用veet 作为构建工具，
+
+17
+00:01:03,680 --> 00:01:07,760
+very familiar if you've ever used react define a component as a plain javascript
+如果你应该看起来非常熟悉 曾经使用过 react将组件定义为普通的 javascript
+
+18
+00:01:07,760 --> 00:01:12,320
+function now when you define the ui with jsx you actually get a real dom element
+函数，现在当您使用 jsx 定义 ui 时，您实际上得到了一个真正的 dom 元素，
+
+19
+00:01:12,320 --> 00:01:15,680
+instead of some weird framework abstraction to add reactive state to a
+而不是一些奇怪的框架抽象来向组件添加反应状态
+
+20
+00:01:15,680 --> 00:01:19,840
+component use the create signal function it provides a getter and setter and
+使用它提供的创建信号函数getter 和 setter 并
+
+21
+00:01:19,840 --> 00:01:23,280
+notice how the getter is a function this allows the framework to observe the
+注意 getter 是如何成为一个函数的，这允许框架
+
+22
+00:01:23,280 --> 00:01:27,600
+current value reactively we can easily create derived state by simply defining
+反应性地观察当前值，我们可以通过简单地基于原始信号定义另一个函数来轻松创建派生状态
+
+23
+00:01:27,600 --> 00:01:31,520
+another function based on the original signal and it also provides a function
+，它还提供了一个函数
+
+24
+00:01:31,520 --> 00:01:36,000
+to memoize the return value or expensive computations in some cases you may want
+来记忆返回值或昂贵的计算 在某些情况下，
+
+25
+00:01:36,000 --> 00:01:40,720
+to run code when your data changes for that createfact allows you to run side
+当您的数据更改时，您可能希望运行代码createfact 允许您运行
+
+26
+00:01:40,720 --> 00:01:44,240
+effects any signals referenced in the body of the function will automatically
+任何信号引用的副作用 在函数主体中的 enced 将
+
+27
+00:01:44,240 --> 00:01:48,640
+be subscribed to to rerun the side effect whenever the value changes solid
+自动订阅以在值更改时重新运行副作用 solid
+
+28
+00:01:48,640 --> 00:01:52,479
+also provides on mount and on cleanup functions that tap into the beginning
+还提供了挂载和清理功能，这些功能
+
+29
+00:01:52,479 --> 00:01:56,000
+and end of the component lifecycle the framework also goes out of its way to
+利用了组件生命周期的开始和结束，框架也竭尽全力
+
+30
+00:01:56,000 --> 00:02:00,000
+make jsx more developer friendly for example it has a show component to
+让 jsx 对开发人员更加友好，例如它有一个 show 组件来
+
+31
+00:02:00,000 --> 00:02:03,680
+handle conditional logic and the four component to simplify loops over a
+处理条件逻辑，以及四个组件来简化对
+
+32
+00:02:03,680 --> 00:02:07,439
+collection of items when it comes to collections it also provides a create
+集合的项目集合的循环，它还提供了一个 create
+
+33
+00:02:07,439 --> 00:02:11,760
+store function that can easily handle nested reactivity and it supports custom
+store 函数，可以轻松处理嵌套反应，它支持自定义
+
+34
+00:02:11,760 --> 00:02:15,520
+directives with a used keyword which is a highly efficient way to attach custom
+带有 used 关键字的指令，这是一种将自定义
+
+35
+00:02:15,520 --> 00:02:18,640
+behaviors to different elements and it has everything else you would expect in
+行为附加到不同元素的高效方法，并且它具有现代框架中您期望的所有其他内容，
+
+36
+00:02:18,640 --> 00:02:23,440
+a modern framework like lazy loading context ssr support and so on this has
+例如延迟加载上下文 ssr 支持等等，这
+
+37
+00:02:23,440 --> 00:02:27,200
+been solid in 100 seconds hit the like button and subscribe if you want to see
+在 100 秒内就很稳定了点击喜欢按钮 如果您
+
+38
+00:02:27,200 --> 00:02:30,879
+more short videos like this thanks for watching and i will see you in the next
+想看更多这样的短视频，请订阅，谢谢观看，我们下期
+
+39
+00:02:30,879 --> 00:02:33,440
+one
+再见 氖

@@ -1,0 +1,430 @@
+1
+00:00:01,760 --> 00:00:03,439
+the question mark it's one of the most
+
+
+2
+00:00:03,439 --> 00:00:05,200
+powerful characters in the javascript
+
+
+3
+00:00:05,200 --> 00:00:07,200
+universe providing syntactic sugar in
+
+
+4
+00:00:07,200 --> 00:00:09,679
+three awesome yet totally unrelated ways
+
+
+5
+00:00:09,679 --> 00:00:11,679
+first up we have the ternary operator
+
+
+6
+00:00:11,679 --> 00:00:13,360
+the word ternary literally means
+
+
+7
+00:00:13,360 --> 00:00:14,880
+composed of three parts
+
+
+8
+00:00:14,880 --> 00:00:16,480
+using the question mark as our starting
+
+
+9
+00:00:16,480 --> 00:00:18,240
+place we add a condition
+
+
+10
+00:00:18,240 --> 00:00:20,240
+on the left side then on the right side
+
+
+11
+00:00:20,240 --> 00:00:21,760
+we add a value to a sign
+
+
+12
+00:00:21,760 --> 00:00:23,519
+when the condition is truthy but if the
+
+
+13
+00:00:23,519 --> 00:00:25,840
+condition is falsy we add a colon to
+
+
+14
+00:00:25,840 --> 00:00:28,160
+assign a different value the operator is
+
+
+15
+00:00:28,160 --> 00:00:30,080
+often used to replace a traditional
+
+
+16
+00:00:30,080 --> 00:00:32,160
+if statement the code in a ternary
+
+
+17
+00:00:32,160 --> 00:00:33,920
+expression is far more concise
+
+
+18
+00:00:33,920 --> 00:00:35,520
+but you might argue that it's much less
+
+
+19
+00:00:35,520 --> 00:00:37,120
+readable than an if statement
+
+
+20
+00:00:37,120 --> 00:00:38,800
+and you might be right that is until you
+
+
+21
+00:00:38,800 --> 00:00:40,239
+need to assign a variable
+
+
+22
+00:00:40,239 --> 00:00:42,719
+a statement like if is code that does
+
+
+23
+00:00:42,719 --> 00:00:44,079
+something it's imperative
+
+
+24
+00:00:44,079 --> 00:00:45,680
+it begins with state then as the
+
+
+25
+00:00:45,680 --> 00:00:48,239
+program's executed it mutates the state
+
+
+26
+00:00:48,239 --> 00:00:50,079
+and takes multiple lines of code just to
+
+
+27
+00:00:50,079 --> 00:00:52,000
+assign a variable based on a simple
+
+
+28
+00:00:52,000 --> 00:00:52,559
+condition
+
+
+29
+00:00:52,559 --> 00:00:54,480
+the ternary operator on the other hand
+
+
+30
+00:00:54,480 --> 00:00:56,320
+creates an expression which means that
+
+
+31
+00:00:56,320 --> 00:00:57,440
+it produces a value
+
+
+32
+00:00:57,440 --> 00:00:59,600
+that we can then assign to a variable
+
+
+33
+00:00:59,600 --> 00:01:01,039
+this code is declarative
+
+
+34
+00:01:01,039 --> 00:01:02,800
+it describes the state of the variable
+
+
+35
+00:01:02,800 --> 00:01:04,879
+as opposed to mutating it that's why we
+
+
+36
+00:01:04,879 --> 00:01:06,560
+can use const here but require
+
+
+37
+00:01:06,560 --> 00:01:08,640
+let in the if statement declarative code
+
+
+38
+00:01:08,640 --> 00:01:10,400
+is awesome because it can also be used
+
+
+39
+00:01:10,400 --> 00:01:12,640
+in function arguments and in array and
+
+
+40
+00:01:12,640 --> 00:01:14,720
+object literals but the question mark
+
+
+41
+00:01:14,720 --> 00:01:16,479
+isn't done there in 2020
+
+
+42
+00:01:16,479 --> 00:01:17,840
+an awesome new feature landed in
+
+
+43
+00:01:17,840 --> 00:01:19,920
+javascript called optional chaining
+
+
+44
+00:01:19,920 --> 00:01:21,680
+at some point you've likely written code
+
+
+45
+00:01:21,680 --> 00:01:23,680
+that calls an object property that does
+
+
+46
+00:01:23,680 --> 00:01:25,280
+not exist and when that happens it
+
+
+47
+00:01:25,280 --> 00:01:26,080
+triggers an error
+
+
+48
+00:01:26,080 --> 00:01:27,840
+at runtime you could write some code
+
+
+49
+00:01:27,840 --> 00:01:29,840
+that asserts a property exists before
+
+
+50
+00:01:29,840 --> 00:01:30,560
+calling it
+
+
+51
+00:01:30,560 --> 00:01:32,640
+but this can get really ugly nowadays
+
+
+52
+00:01:32,640 --> 00:01:34,240
+you can just insert a question mark
+
+
+53
+00:01:34,240 --> 00:01:36,159
+between the property name and the period
+
+
+54
+00:01:36,159 --> 00:01:37,360
+between the next property
+
+
+55
+00:01:37,360 --> 00:01:39,119
+if the parent property is undefined
+
+
+56
+00:01:39,119 --> 00:01:41,200
+it'll just return undefined instead of
+
+
+57
+00:01:41,200 --> 00:01:42,240
+throwing an error
+
+
+58
+00:01:42,240 --> 00:01:44,079
+that's a truly life-changing feature for
+
+
+59
+00:01:44,079 --> 00:01:45,439
+the javascript developer
+
+
+60
+00:01:45,439 --> 00:01:47,280
+but the question mark has one more trick
+
+
+61
+00:01:47,280 --> 00:01:49,439
+up its sleeve nolish coalescing
+
+
+62
+00:01:49,439 --> 00:01:51,360
+in many cases you may want to set a
+
+
+63
+00:01:51,360 --> 00:01:53,680
+default value for a missing variable or
+
+
+64
+00:01:53,680 --> 00:01:54,560
+property name
+
+
+65
+00:01:54,560 --> 00:01:56,719
+you can easily do that with a logical or
+
+
+66
+00:01:56,719 --> 00:01:58,719
+operator if the left side is falsy
+
+
+67
+00:01:58,719 --> 00:02:00,880
+then use the value on the right side but
+
+
+68
+00:02:00,880 --> 00:02:02,799
+because javascript has a bunch of weird
+
+
+69
+00:02:02,799 --> 00:02:04,719
+rules for what is truthy and falsey
+
+
+70
+00:02:04,719 --> 00:02:06,799
+you may get weird results like an empty
+
+
+71
+00:02:06,799 --> 00:02:08,959
+string or zero being set to a default
+
+
+72
+00:02:08,959 --> 00:02:11,120
+value because it resolves to falsey
+
+
+73
+00:02:11,120 --> 00:02:13,040
+instead of logical or you can add a
+
+
+74
+00:02:13,040 --> 00:02:14,959
+double question mark which works just
+
+
+75
+00:02:14,959 --> 00:02:16,080
+like logical or
+
+
+76
+00:02:16,080 --> 00:02:18,000
+except undefined and null are the only
+
+
+77
+00:02:18,000 --> 00:02:19,920
+values that short circuit to the right
+
+
+78
+00:02:19,920 --> 00:02:21,360
+side making the behavior of your code
+
+
+79
+00:02:21,360 --> 00:02:22,560
+much more predictable
+
+
+80
+00:02:22,560 --> 00:02:24,080
+this has been the javascript question
+
+
+81
+00:02:24,080 --> 00:02:25,599
+mark in 100 seconds
+
+
+82
+00:02:25,599 --> 00:02:26,800
+if you want to see more short videos
+
+
+83
+00:02:26,800 --> 00:02:28,319
+like this make sure to hit the like
+
+
+84
+00:02:28,319 --> 00:02:29,599
+button and subscribe
+
+
+85
+00:02:29,599 --> 00:02:31,519
+thanks for watching and i will see you
+
+
+86
+00:02:31,519 --> 00:02:34,480
+in the next one
+
+

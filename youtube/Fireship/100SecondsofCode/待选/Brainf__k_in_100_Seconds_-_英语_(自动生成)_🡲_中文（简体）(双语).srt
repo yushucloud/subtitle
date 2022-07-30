@@ -1,0 +1,169 @@
+1
+00:00:00,080 --> 00:00:03,840
+brain a minimal esoteric programming language designed to make
+Brain fuck 一种最小的深奥编程语言，旨在让
+
+2
+00:00:03,840 --> 00:00:07,839
+your brain hurt it's turing complete but not designed to build actual software
+您的大脑受到伤害 它图灵完备，但并非旨在构建实际软件
+
+3
+00:00:07,839 --> 00:00:11,120
+it's more like a work of art that challenges the status quo it was created
+它更像是一件挑战现状的艺术品 它是
+
+4
+00:00:11,120 --> 00:00:15,280
+in 1993 by swiss physics student urban mueller where the goal was to create a
+由瑞士物理专业的学生urban mueller于1993年创建的，目标是 为了创建一种
+
+5
+00:00:15,280 --> 00:00:19,279
+language with the smallest possible compiler it was built for the amiga 2.0
+具有尽可能小的编译器的语言，它是为 amiga 2.0
+
+6
+00:00:19,279 --> 00:00:24,080
+operating system and the compiler weighs in at under 200 bytes a brain program
+操作系统构建的，编译器的重量低于 200 字节，大脑程序
+
+7
+00:00:24,080 --> 00:00:27,439
+starts with a 30 000 byte one dimensional array all values are
+以 30 000 字节的一维数组开始，所有值都
+
+8
+00:00:27,439 --> 00:00:31,199
+initialized to zero then it provides a movable pointer that you can manipulate
+初始化为零，然后它提供了一个可移动的 可以
+
+9
+00:00:31,199 --> 00:00:34,719
+with eight different commands use angle brackets to move the pointer left or
+使用八种不同命令操作的指针 使用尖括号一次将指针向左或
+
+10
+00:00:34,719 --> 00:00:38,480
+right by one cell at a time then increment or decrement the value in a
+向右移动一个单元格，然后
+
+11
+00:00:38,480 --> 00:00:42,879
+cell using plus or minus use a period to output the byte at the pointer's current
+使用加号或减号递增或递减单元格中的值 使用句点在指针的当前位置输出字节
+
+12
+00:00:42,879 --> 00:00:46,960
+location or use a comma to accept input and store it at the pointer's current
+或使用逗号接受输入并将其存储在指针的当前
+
+13
+00:00:46,960 --> 00:00:51,360
+location and finally use opening and closing brackets to create a loop notice
+位置，最后使用左括号和右括号创建循环 注意
+
+14
+00:00:51,360 --> 00:00:54,960
+how brain fog doesn't require silly things like variables functions and
+脑雾如何不需要变量函数和类等愚蠢的东西
+
+15
+00:00:54,960 --> 00:00:58,879
+classes to get started with brain delete your operating system and install
+来开始使用脑他妈的删除你的操作系统并安装
+
+16
+00:00:58,879 --> 00:01:03,760
+amiga os then create a file ending in bf which stands for brain fog any
+amiga os然后创建一个以bf结尾的文件代表脑雾任何
+
+17
+00:01:03,760 --> 00:01:06,960
+characters that are not the aid i mentioned previously will be ignored as
+不是我提到的帮助的字符以前将被忽略
+
+18
+00:01:06,960 --> 00:01:10,880
+a comment at this point we have an array with thirty thousand eight bit numbers
+为注释此时我们有一个包含三万八位数的数组
+
+19
+00:01:10,880 --> 00:01:15,119
+all set to 0. to say hi mom we'll need to set each number to its corresponding
+全部设置为 0. 说嗨妈妈我们需要将每个数字设置为其对应的
+
+20
+00:01:15,119 --> 00:01:18,640
+ascii character we can increment the first cell then enter a loop with an
+ascii 字符我们可以增加第一个单元格然后输入 循环
+
+21
+00:01:18,640 --> 00:01:22,159
+opening bracket for each iteration of the loop we'll decrement that current
+的每次迭代都有一个带左括号的循环我们将当前
+
+22
+00:01:22,159 --> 00:01:26,000
+cell by 5 then use an angle bracket to move one cell to the right we'll
+单元格减 5，然后使用尖括号将一个单元格向右移动，我们
+
+23
+00:01:26,000 --> 00:01:29,600
+increment that cell by three then move back to the left and close the loop the
+将该单元格增加 3，然后移回左侧并关闭 循环
+
+24
+00:01:29,600 --> 00:01:33,040
+loop will continue until the original cell goes back to zero at which point it
+循环将继续，直到原始单元格回到零，此时
+
+25
+00:01:33,040 --> 00:01:37,600
+will exit we now have a value of 103 at index one we can move the pointer to it
+它将退出我们现在在索引 1 处的值为 103，我们可以将指向它的
+
+26
+00:01:37,600 --> 00:01:42,079
+increment it to 104 then use a period to output it that corresponds to the letter
+指针移至 104，然后使用句点输出 i  t 对应于字母
+
+27
+00:01:42,079 --> 00:01:46,560
+h and ascii we can increment it again to get 105 which corresponds to the letter
+h 和 ascii 我们可以再次增加它以获得对应于字母
+
+28
+00:01:46,560 --> 00:01:50,079
+i now we continue this process of manipulating memory like caveman until
+i 的 105 现在我们继续这个像穴居人一样操纵内存的过程，直到
+
+29
+00:01:50,079 --> 00:01:53,040
+we output all the characters that we need now to run your code use
+我们输出我们现在需要的所有字符来运行你的代码使用权 -
+
+30
+00:01:53,040 --> 00:01:56,799
+right-click copy and paste it into one of the many online interpreters
+单击复制并将其粘贴到众多在线口译员之一
+
+31
+00:01:56,799 --> 00:02:00,640
+congratulations you just said hi to your mom and brain this has been brain
+恭喜您刚刚向您的妈妈和大脑他妈的这已经
+
+32
+00:02:00,640 --> 00:02:04,399
+in 100 seconds if you want to see more brain content on this channel
+是 100 秒内的大脑他妈的如果您想在此频道上看到更多的大脑他妈的内容，请
+
+33
+00:02:04,399 --> 00:02:07,920
+make sure to hit the like button and subscribe thanks for watching and i will
+确保点击喜欢按钮 并订阅感谢收看，我会
+
+34
+00:02:07,920 --> 00:02:11,679
+see you in the next one
+在下一个看到你

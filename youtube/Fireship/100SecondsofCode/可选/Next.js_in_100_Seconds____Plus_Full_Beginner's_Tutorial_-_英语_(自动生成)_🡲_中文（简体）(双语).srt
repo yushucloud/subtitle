@@ -1,0 +1,1028 @@
+1
+00:00:00,000 --> 00:00:02,960
+[Music] next js create fast search engine
+[音乐]next js 创建快速搜索引擎
+
+2
+00:00:02,960 --> 00:00:05,600
+optimize react apps with zero configuration
+优化零配置
+
+3
+00:00:05,600 --> 00:00:09,120
+a traditional react app is rendered client side where the browser starts
+的反应应用程序传统的反应应用程序在客户端呈现，浏览器
+
+4
+00:00:09,120 --> 00:00:13,040
+with a shell of an html page lacking any rendered content from there
+以 html 页面的外壳开始，缺少任何呈现的内容
+
+5
+00:00:13,040 --> 00:00:16,560
+the browser fetches the javascript file containing the react code to render
+浏览器从那里获取包含反应代码的 javascript 文件 将
+
+6
+00:00:16,560 --> 00:00:19,439
+content to the page and make it interactive but there are
+内容呈现到页面并使其具有交互性，但
+
+7
+00:00:19,439 --> 00:00:22,000
+two major drawbacks with client-side rendering
+客户端呈现有两个主要缺点，
+
+8
+00:00:22,000 --> 00:00:25,279
+one the content is not reliably indexed by all search engines
+一个是所有搜索引擎都不能可靠地索引内容
+
+9
+00:00:25,279 --> 00:00:29,279
+or read by social media link bots and two it can take longer to reach the
+或被社交媒体链接机器人读取，二是到达第一个内容可能需要更长的时间
+
+10
+00:00:29,279 --> 00:00:32,719
+first contentful paint when a user first lands on the web page
+当用户第一次登陆网页时绘制
+
+11
+00:00:32,719 --> 00:00:36,800
+next is a framework that allows you to build a react app but render the content
+下一个是一个框架，它允许您构建一个反应应用程序，但
+
+12
+00:00:36,800 --> 00:00:40,239
+in advance on the server so the first thing a user or search bot
+提前在服务器上呈现内容，因此用户或搜索机器人看到的第一件事是
+
+13
+00:00:40,239 --> 00:00:44,079
+sees is the fully rendered html after receiving this initial page
+收到这个初始值后完全呈现的 html 页面
+
+14
+00:00:44,079 --> 00:00:47,280
+client-side rendering takes over and it works just like a traditional
+客户端渲染接管，它就像传统的
+
+15
+00:00:47,280 --> 00:00:51,440
+react app it's the best of both worlds fully rendered content for bots highly
+反应应用程序一样工作，它是两全其美的完全渲染的机器人内容高度
+
+16
+00:00:51,440 --> 00:00:54,800
+interactive content for users inside of a next project you have a
+int 在下一个项目中为用户提供的 eractive 内容您有一个
+
+17
+00:00:54,800 --> 00:00:57,520
+pages directory each javascript file defined here
+pages 目录这里定义的每个 javascript 文件都
+
+18
+00:00:57,520 --> 00:01:01,520
+exports a react component that represents a route in the application
+导出一个反应组件，该组件表示应用程序中的一个路由，
+
+19
+00:01:01,520 --> 00:01:05,600
+in other words the file structure here mirrors the actual urls that the user
+换句话说，这里的文件结构反映了用户将导航到的实际 url
+
+20
+00:01:05,600 --> 00:01:08,320
+will navigate to and next provides its own router to make
+并接下来提供 它自己的路由器可以
+
+21
+00:01:08,320 --> 00:01:11,360
+navigation seamless but the real magic comes into play when
+无缝导航，但是当我们谈论数据获取时，真正的魔力开始发挥作用，
+
+22
+00:01:11,360 --> 00:01:14,799
+we talk about data fetching because next can perform multiple server
+因为 next 可以从单个项目中执行多个服务器
+
+23
+00:01:14,799 --> 00:01:17,280
+rendering strategies from a single project
+渲染策略
+
+24
+00:01:17,280 --> 00:01:21,280
+static generation or pre-rendering allows you to render your pages
+静态生成或预渲染允许您
+
+25
+00:01:21,280 --> 00:01:25,119
+at build time each page or component can implement a function called
+在构建时渲染页面每个页面或 组件可以实现一个名为
+
+26
+00:01:25,119 --> 00:01:29,040
+get static props it might fetch data from a cloud database then pass the data
+get static props 的函数，它可以从云数据库中获取数据，然后将数据
+
+27
+00:01:29,040 --> 00:01:32,159
+as props to the component you can then build your app to render
+作为 props 传递给组件，然后您可以构建您的应用程序以
+
+28
+00:01:32,159 --> 00:01:35,600
+out all the html locally and upload it to a storage bucket where
+在本地呈现所有 html并将其上传到可以存储的存储桶
+
+29
+00:01:35,600 --> 00:01:39,680
+it can be easily cached by a cdn that works great for a blog or any kind
+中 很容易被一个 CDN 缓存，它适用于博客或任何类型
+
+30
+00:01:39,680 --> 00:01:41,680
+of app where the data doesn't change often
+的应用程序，其中数据不经常更改，
+
+31
+00:01:41,680 --> 00:01:45,280
+but if the data does change often you can implement server side rendering
+但如果数据确实 c 经常你可以实现服务器端渲染
+
+32
+00:01:45,280 --> 00:01:49,200
+which builds the html page each time it's requested by the user in
+，每次用户请求它时构建html页面
+
+33
+00:01:49,200 --> 00:01:53,360
+the component we implement data fetching with the get server side props function
+在组件中我们使用get服务器端props函数实现数据获取，
+
+34
+00:01:53,360 --> 00:01:56,880
+instead of running at build time this function runs at request time
+而不是在构建时运行这个函数在请求时运行，
+
+35
+00:01:56,880 --> 00:02:00,320
+that means the page will fetch the latest data on the server each time a
+这意味着页面每次有新请求进来时都会在服务器上获取最新数据，这
+
+36
+00:02:00,320 --> 00:02:03,200
+new request comes in that's great for pages with rapidly
+对于数据快速变化的页面来说非常有用，
+
+37
+00:02:03,200 --> 00:02:07,200
+changing data but maybe you want something in between yet another option
+但也许你想要介于两者之间的东西另一个选项
+
+38
+00:02:07,200 --> 00:02:12,239
+is incremental static regeneration by simply adding a revalidate option to get
+是增量静态再生，只需添加一个重新验证选项来获取
+
+39
+00:02:12,239 --> 00:02:15,200
+static props next can regenerate a page whenever a
+静态道具next 可以重新生成 每当有
+
+40
+00:02:15,200 --> 00:02:18,400
+new request comes in within a certain time interval this has
+新请求在某个时间间隔内进入时的页面这
+
+41
+00:02:18,400 --> 00:02:21,840
+been next js in 100 seconds if you want to see more short videos
+已经是 100 秒内的下一个 js如果您想看到更多这样的短视频，
+
+42
+00:02:21,840 --> 00:02:24,800
+like this make sure to subscribe and hit the like button
+请确保订阅并点击“like”按钮
+
+43
+00:02:24,800 --> 00:02:28,640
+then open up the s code and get ready to go beyond 100 seconds with a full
+然后打开 s 代码并准备好超过 100 秒，
+
+44
+00:02:28,640 --> 00:02:31,360
+breakdown of next before we get going i'd like to point
+在我们开始之前完全分解下一个我想
+
+45
+00:02:31,360 --> 00:02:35,360
+out that i'm working on a full react next firebase course which i hope to
+指出我正在努力对下一个火力基地课程做出全面反应 我希望在
+
+46
+00:02:35,360 --> 00:02:37,599
+have finally finished by the end of january
+1 月底之前最终完成，
+
+47
+00:02:37,599 --> 00:02:41,200
+which will be available to fireship pro members my goal over the next few
+这将提供给 fireship pro会员我在接下来的
+
+48
+00:02:41,200 --> 00:02:43,840
+minutes is to teach you the fundamentals of next
+几分钟内的目标是教你 next 的基础知识，
+
+49
+00:02:43,840 --> 00:02:47,120
+while also explaining the complexities of server-side rendering
+同时解释服务器端渲染的复杂性，
+
+50
+00:02:47,120 --> 00:02:50,560
+to follow along open up the terminal and run npx
+以跟随 open 打开终端并运行 npx
+
+51
+00:02:50,560 --> 00:02:54,319
+create next app followed by the name of your app and if you get lost at any
+create next app 后跟应用程序的名称，如果您在任何时候迷路，请
+
+52
+00:02:54,319 --> 00:02:56,480
+point make sure to grab the source code on
+确保获取 github 或 fireship io 上的源代码，
+
+53
+00:02:56,480 --> 00:03:00,560
+github or fireship io let's open up the project in vs code and
+让我们在 vs code 中打开项目，
+
+54
+00:03:00,560 --> 00:03:04,720
+then go into the package.json file in development the only script we need
+然后进入包 .json 文件在开发中我们需要担心的唯一脚本
+
+55
+00:03:04,720 --> 00:03:08,959
+to worry about is dev which you can execute by running npm run
+是 dev，您可以通过从命令行运行 npm run
+
+56
+00:03:08,959 --> 00:03:11,120
+dev from the command line which will run our
+dev来执行它，它将
+
+57
+00:03:11,120 --> 00:03:14,159
+app on localhost 3000 that should give you the default
+在 localhost 3000 上运行我们的应用程序，这应该
+
+58
+00:03:14,159 --> 00:03:17,280
+boilerplate in the browser now before we get into the react code
+在我们得到之前在浏览器中为您提供默认样板在 react 代码
+
+59
+00:03:17,280 --> 00:03:20,720
+there's a few things that i want to point out first in the styles directory
+中，我想首先在样式目录中指出一些事情，在
+
+60
+00:03:20,720 --> 00:03:24,080
+here you'll notice how next supports css modules
+这里您会注意到 next 如何
+
+61
+00:03:24,080 --> 00:03:27,280
+in the globals file you can define styles that apply to the entire
+在 globals 文件中支持 css 模块，您可以定义适用于 e 的样式 ntire
+
+62
+00:03:27,280 --> 00:03:30,560
+application but in other files with dot module you
+应用程序，但在其他带有 dot 模块的文件中，您
+
+63
+00:03:30,560 --> 00:03:34,879
+can define classes that only apply to a specific route or component
+可以定义仅适用于特定路由或组件的类，
+
+64
+00:03:34,879 --> 00:03:38,080
+and you don't have to worry about coming up with a bunch of unique class names or
+并且您不必担心在管理样式时会想出一堆唯一的类名或
+
+65
+00:03:38,080 --> 00:03:40,640
+naming conventions when managing your styles
+命名约定。
+
+66
+00:03:40,640 --> 00:03:44,560
+if you want to use styles from a certain module you just import the style sheet
+要使用来自某个模块的样式，您只需
+
+67
+00:03:44,560 --> 00:03:48,080
+in your javascript then reference your styles in jsx as if
+在 javascript 中导入样式表，然后在 jsx 中引用您的样式，就好像
+
+68
+00:03:48,080 --> 00:03:51,840
+the styles were a javascript object that's pretty awesome but from there
+这些样式是一个非常棒的 javascript 对象一样，但是从那里
+
+69
+00:03:51,840 --> 00:03:54,480
+let's shift our attention over to the pages directory
+让我们将注意力转移到
+
+70
+00:03:54,480 --> 00:03:59,040
+inside this directory we define all the pages and routes for the application
+我们定义的这个目录中的 pages 目录应用程序
+
+71
+00:03:59,040 --> 00:04:02,959
+at the highest level we have this underscore app.js file which is like the
+的最高级别的所有页面和路由 我们有这个下划线 app.js 文件，它就像
+
+72
+00:04:02,959 --> 00:04:06,720
+main entry point into the app in other words every individual page
+应用程序的主要入口点，换句话说，每个单独的页面
+
+73
+00:04:06,720 --> 00:04:10,159
+will start from this template currently the application only has one
+都将从这个模板开始当前应用程序只有一个
+
+74
+00:04:10,159 --> 00:04:14,319
+page which points to the root url and is defined by the component in the
+页面指向 到根 url并由 index.js 文件中的组件定义，
+
+75
+00:04:14,319 --> 00:04:18,079
+index.js file when a user navigates to this url next
+当用户导航到该 url 时，接下来
+
+76
+00:04:18,079 --> 00:04:21,280
+will find the default export which is a react component
+将找到默认导出，即
+
+77
+00:04:21,280 --> 00:04:24,880
+in this file so every file or page in your application
+这个文件中的 react 组件，所以你的应用程序中的每个文件或页面都
+
+78
+00:04:24,880 --> 00:04:28,479
+needs to have one default export to demonstrate this further
+需要有一个默认导出来进一步演示这一点
+
+79
+00:04:28,479 --> 00:04:32,320
+let's create our first route in the pages directory create a new file called
+让我们在 pages 目录中创建我们的第一个路由创建一个名为 hello.js 的新文件，
+
+80
+00:04:32,320 --> 00:04:35,199
+hello.js then we can define the content of this
+然后我们可以通过以下方式定义此
+
+81
+00:04:35,199 --> 00:04:38,720
+page by exporting a default react component from it
+页面的内容 从那里导出一个默认的反应组件，
+
+82
+00:04:38,720 --> 00:04:43,040
+from there we can go back to the browser and navigate to localhost 3000
+我们可以返回浏览器并导航到 localhost 3000
+
+83
+00:04:43,040 --> 00:04:46,160
+slash hello and we should get the content of that component
+slash hello，我们应该得到该组件的内容，
+
+84
+00:04:46,160 --> 00:04:49,360
+congratulations you just built your first web page with next
+恭喜你刚刚构建了你的第一个网页，
+
+85
+00:04:49,360 --> 00:04:53,040
+but now let's imagine a route that's a little more complex we have a cars route
+但现在让我们想象一条路线是稍微复杂一点，我们有一条汽车路线
+
+86
+00:04:53,040 --> 00:04:56,479
+that should show a list of cars then an infinite number of cars that
+，它应该显示汽车列表，然后
+
+87
+00:04:56,479 --> 00:05:00,000
+might be dynamically generated under that url we can implement a
+可能会在该 url 下动态生成无限数量的汽车，我们可以
+
+88
+00:05:00,000 --> 00:05:04,160
+dynamic route like that by first creating a cars directory then
+通过首先创建一个汽车目录然后
+
+89
+00:05:04,160 --> 00:05:07,039
+inside the directory we'll add an index.js file
+在目录中实现这样的动态路线，我们将 添加一个index.js 文件
+
+90
+00:05:07,039 --> 00:05:11,120
+which will show the main list of cars then for each individual car
+，该文件将显示汽车的主要列表，然后对于每辆单独的汽车，
+
+91
+00:05:11,120 --> 00:05:14,800
+we'll add a component that has a file name of brackets
+我们将添加一个组件，该组件的文件名为括号
+
+92
+00:05:14,800 --> 00:05:19,199
+paramname dot js the brackets make this route dynamic
+paramname dot js 括号使这条路线动态
+
+93
+00:05:19,199 --> 00:05:22,240
+which means anytime a user navigates to cars
+，这意味着任何时候用户导航到汽车
+
+94
+00:05:22,240 --> 00:05:27,120
+slash whatever or cars slash tesla it will render the component in this
+斜线或汽车斜线特斯拉它都会在这个
+
+95
+00:05:27,120 --> 00:05:30,080
+file to see that in action let's go ahead and implement the
+文件中呈现组件以查看实际情况让我们继续并
+
+96
+00:05:30,080 --> 00:05:34,160
+component logic in the index file we'll just add a placeholder for the car's
+在我们将添加的索引文件中实现组件逻辑
+
+97
+00:05:34,160 --> 00:05:37,199
+list for now but in the dynamic component we'll
+现在是汽车列表的占位符，但在动态组件中，我们
+
+98
+00:05:37,199 --> 00:05:39,680
+import the use router hook from the next router
+将从下一个路由器导入使用路由器钩子，
+
+99
+00:05:39,680 --> 00:05:42,960
+it allows us to access the query parameters from the url
+它允许我们从
+
+100
+00:05:42,960 --> 00:05:46,880
+in this example the value is id but you can give it a name of whatever you want
+本示例中的 url 访问查询参数，值是 id 但你可以给它一个名字 任何你想要的
+
+101
+00:05:46,880 --> 00:05:50,479
+and then we'll render that value out to the template now back in the browser
+，然后我们将把这个值呈现给模板，现在回到浏览器中
+
+102
+00:05:50,479 --> 00:05:53,759
+if we go to the car's url it renders out the car's component
+
+
+103
+00:05:53,759 --> 00:05:57,440
+then if we add any string after the car's url it renders out the dynamic
+
+
+104
+00:05:57,440 --> 00:05:59,520
+component now one other thing you may have noticed
+现在您可能在 pages 目录中注意到的另一件事
+
+105
+00:05:59,520 --> 00:06:02,400
+in the pages directory is this api directory
+是这个 api目录，
+
+106
+00:06:02,400 --> 00:06:06,400
+so what is that all about the api directory is a special part of next
+所以关于 api 目录的所有内容是 next 的一个特殊部分，
+
+107
+00:06:06,400 --> 00:06:09,680
+for setting up routes that will only apply to the server
+用于设置仅适用于
+
+108
+00:06:09,680 --> 00:06:12,800
+that can be useful because the code you write here won't increase the
+可以 b 的服务器的路由 e 很有用，因为您在此处编写的代码不会增加最终
+
+109
+00:06:12,800 --> 00:06:16,639
+client-side javascript bundle that needs to ultimately be sent over the network
+需要通过网络发送的客户端 javascript 包
+
+110
+00:06:16,639 --> 00:06:19,919
+we're not going to get into api routes in this video but just know that it's a
+我们不会在此视频中进入 api 路由，但只要知道这是一个
+
+111
+00:06:19,919 --> 00:06:23,039
+useful feature when you have work that needs to be done on the back end
+有用的功能，当您 有需要在后端完成的工作，
+
+112
+00:06:23,039 --> 00:06:26,639
+or if you simply want to expose an api for your end users
+或者如果您只是想为您的最终用户公开一个 API，
+
+113
+00:06:26,639 --> 00:06:30,560
+but now let's shift our attention over to the most valuable feature in next
+但现在让我们将注意力转移到接下来最有价值的功能
+
+114
+00:06:30,560 --> 00:06:34,240
+which of course is data fetching next allows us to fetch data
+上，当然接下来是数据获取允许我们获取数据
+
+115
+00:06:34,240 --> 00:06:38,160
+and render html on the server and again the benefit of doing that
+并在服务器上渲染 html，这样做的好处
+
+116
+00:06:38,160 --> 00:06:42,160
+is that the end user gets rendered content quicker and the content can be
+是最终用户可以更快地获得渲染的内容，并且
+
+117
+00:06:42,160 --> 00:06:45,840
+reliably crawled by search bots and social media link bots
+搜索机器人和社交媒体链接机器人可以可靠地抓取内容
+
+118
+00:06:45,840 --> 00:06:49,120
+now when it comes to server rendering there are two main options
+现在在服务器渲染方面有两个主要选项
+
+119
+00:06:49,120 --> 00:06:52,160
+static generation and server side rendering
+静态 生成和服务器端渲染
+
+120
+00:06:52,160 --> 00:06:55,919
+static generation is also called pre-rendering because you generate all
+静态生成也称为预渲染，因为您
+
+121
+00:06:55,919 --> 00:06:59,199
+the html at build time it makes life very simple
+在构建时生成所有 html，它使生活变得非常简单，
+
+122
+00:06:59,199 --> 00:07:01,599
+because you generate a bunch of html files
+因为您生成一堆 html文件
+
+123
+00:07:01,599 --> 00:07:04,639
+then upload them to a storage bucket or static host
+然后上传 它们到存储桶或静态主机
+
+124
+00:07:04,639 --> 00:07:08,240
+and they can be delivered with very high performance over a cdn
+，它们可以通过 CDN 以非常高的性能交付，
+
+125
+00:07:08,240 --> 00:07:11,840
+but there's a couple of big trade-offs here the first one is that your data may
+但这里有几个很大的权衡，第一个是
+
+126
+00:07:11,840 --> 00:07:14,720
+become stale if the data on the server changes you
+如果服务器上的数据发生变化，
+
+127
+00:07:14,720 --> 00:07:18,319
+need to rebuild and redeploy your site in order for those changes to be
+你的数据可能会变得陈旧。 重建和重新部署您的网站以反映这些更改
+
+128
+00:07:18,319 --> 00:07:20,479
+reflected another important trait i have to think
+我必须考虑的另一个重要特征
+
+129
+00:07:20,479 --> 00:07:24,240
+about is scale if your website has a million pages it'll be very slow and
+是规模如果您的网站有一百万个页面，那么预渲染所有这些页面将非常缓慢且
+
+130
+00:07:24,240 --> 00:07:27,680
+difficult to pre-render all of them that makes static generation most
+困难，这使得静态生成最多
+
+131
+00:07:27,680 --> 00:07:30,000
+well-suited for data that doesn't change often
+非常适合不经常更改的数据
+
+132
+00:07:30,000 --> 00:07:33,280
+and for sites that have a relatively low number of total pages
+以及总页数相对较少的网站，
+
+133
+00:07:33,280 --> 00:07:36,800
+a good example would be a blog because it might have a few hundred pages and
+一个很好的例子是博客，因为它可能有几百页，而且
+
+134
+00:07:36,800 --> 00:07:39,440
+those pages likely don't change on a daily basis
+这些页面可能不会每天都发生变化
+
+135
+00:07:39,440 --> 00:07:42,479
+let's go ahead and take a look at how we might implement static generation in
+让我们继续看看我们如何
+
+136
+00:07:42,479 --> 00:07:44,960
+next in the car component let's imagine we
+在汽车组件的 next 中实现静态生成让我们假设我们
+
+137
+00:07:44,960 --> 00:07:47,360
+need to fetch data from an external source
+需要从
+
+138
+00:07:47,360 --> 00:07:52,400
+like a database or api to simulate that for the demo i've added a couple of json
+数据库或 api 等外部源获取数据来模拟我添加了一个 c 的演示 将两个 json
+
+139
+00:07:52,400 --> 00:07:56,000
+files to the public directory we have a file that returns an array of
+文件添加到公共目录我们有一个文件，该文件返回一个 id 数组，
+
+140
+00:07:56,000 --> 00:08:00,639
+ids then an individual response for each car which contains an image and
+然后为每辆汽车提供一个单独的响应，其中包含有关汽车的图像和
+
+141
+00:08:00,639 --> 00:08:03,919
+other data about the car now we can fetch this data for the car
+其他数据现在我们可以
+
+142
+00:08:03,919 --> 00:08:08,319
+component by implementing the get static props function inside the
+通过实现 get static 为汽车组件获取这些数据 组件文件中的 props 函数，
+
+143
+00:08:08,319 --> 00:08:11,280
+component file when you build your site next will
+当您接下来构建站点时，将
+
+144
+00:08:11,280 --> 00:08:14,960
+automatically call this function then send the result as props to the
+自动调用此函数，然后将结果作为 props 发送给
+
+145
+00:08:14,960 --> 00:08:17,680
+component itself what we want to do here is fetch the
+组件本身，我们在这里要做的是
+
+146
+00:08:17,680 --> 00:08:22,400
+json for an individual car so it can be used in the html or ui for
+获取单个汽车的 json，以便可以在 html 或
+
+147
+00:08:22,400 --> 00:08:25,919
+the cart page in this case we need the id from the url
+用于购物车页面的 ui在这种情况下，我们需要 url 中的 id
+
+148
+00:08:25,919 --> 00:08:29,520
+to know which car was requested we can get that information from the
+来知道请求了哪辆车我们可以从
+
+149
+00:08:29,520 --> 00:08:33,599
+params argument and the function then from there we'll use the fetch api
+params 参数和函数中获取该信息，然后从那里我们将使用 fetch api
+
+150
+00:08:33,599 --> 00:08:38,479
+to make a request to localhost to request the json file with that id
+向 localhost 发出请求请求具有该 id 的 json 文件，
+
+151
+00:08:38,479 --> 00:08:42,800
+we can then convert it to json then the final step is to return an object
+然后我们可以将其转换为 json，然后最后一步是返回一个
+
+152
+00:08:42,800 --> 00:08:46,880
+that has a props property where each prop can then be accessed by the
+具有 props 属性的对象，然后
+
+153
+00:08:46,880 --> 00:08:48,959
+component up in the component code we can
+组件 c 中的组件可以访问每个 prop  ode 我们可以
+
+154
+00:08:48,959 --> 00:08:52,480
+destructure the car prop and then use it in the jsx
+解构汽车道具，然后在
+
+155
+00:08:52,480 --> 00:08:56,399
+which i'm doing here by adding an image tag which relies on the data fetched by
+我在这里做的 jsx 中使用它
+
+156
+00:08:56,399 --> 00:08:59,600
+the server as the image source now if you're concerned about search
+
+
+157
+00:08:59,600 --> 00:09:02,320
+engine optimization you likely want to add an
+想要
+
+158
+00:09:02,320 --> 00:09:06,480
+seo friendly title as well as meta tags to the head of the document
+在文档的头部添加一个 seo 友好的标题和元标记，
+
+159
+00:09:06,480 --> 00:09:10,640
+next makes that very easy to accomplish by simply importing the head component
+接下来通过简单地导入 head 组件
+
+160
+00:09:10,640 --> 00:09:14,080
+anything inside this component will be rendered out to the head of the document
+，这个组件中的任何内容都将被渲染到文档的头部，
+
+161
+00:09:14,080 --> 00:09:17,600
+like in this case we add a title with the car color and id
+就像在这种情况下我们 添加带有汽车颜色和 ID 的标题，
+
+162
+00:09:17,600 --> 00:09:21,279
+and we could also add meta tags for twitter and facebook cards if we wanted
+如果我们现在想要的话，我们还可以为 twitter 和 facebook 卡片添加元标记，
+
+163
+00:09:21,279 --> 00:09:24,399
+to now because we're working with a dynamic
+因为我们正在使用动态
+
+164
+00:09:24,399 --> 00:09:26,640
+route there's one other thing we have to keep in mind
+路线，还有一件事我们必须牢记
+
+165
+00:09:26,640 --> 00:09:30,399
+and that's the fact that next has no way of knowing how many pages we actually
+，这就是事实 next无法知道我们实际上
+
+166
+00:09:30,399 --> 00:09:33,680
+have associated to a dynamic route in order to
+与动态路线关联了多少页面，以便
+
+167
+00:09:33,680 --> 00:09:38,320
+pre-render all the car ids next needs to know those ids in advance
+预渲染所有汽车 idnext 需要提前知道这些 id，
+
+168
+00:09:38,320 --> 00:09:42,880
+and the way we provide that information is by implementing the get static paths
+我们提供该信息的方式是通过实现 t 他获取静态路径
+
+169
+00:09:42,880 --> 00:09:46,080
+function this function can also request data from
+函数此函数还可以
+
+170
+00:09:46,080 --> 00:09:49,839
+an api or database then its job is to return a
+从 api或数据库请求数据然后它的工作是返回一个
+
+171
+00:09:49,839 --> 00:09:53,200
+paths object that contains an array with every route
+路径对象，该对象包含一个数组，其中包含此演示
+
+172
+00:09:53,200 --> 00:09:57,440
+for this dynamic url in this demo we only have three routes
+中此动态 url的每个路由我们只有三个路由
+
+173
+00:09:57,440 --> 00:10:00,880
+tesla forward and lambo we map those values to an array of
+tesla forward 和 lambo我们映射 这些值到一个对象数组，
+
+174
+00:10:00,880 --> 00:10:03,519
+objects then return them from the function
+然后从函数中返回它们
+
+175
+00:10:03,519 --> 00:10:06,880
+along with additional options like the fallback behavior
+以及其他选项，例如回退行为
+
+176
+00:10:06,880 --> 00:10:09,920
+now if we go visit the app in the browser we should see a fully rendered
+现在如果我们在浏览器中访问应用程序，我们应该会看到一个完全呈现的
+
+177
+00:10:09,920 --> 00:10:12,160
+web page it doesn't look any different than a
+网页，它看起来与常规反应没有任何不同
+
+178
+00:10:12,160 --> 00:10:15,839
+regular react app however if you open up the sources panel in
+应用程序但是，如果您在
+
+179
+00:10:15,839 --> 00:10:18,959
+chrome dev tools it'll show you the fully rendered html
+chrome 开发工具中打开源面板，它会在 javascript 触及之前向您显示完全渲染的 html
+
+180
+00:10:18,959 --> 00:10:22,480
+before it was touched by javascript notice how it contains the title
+，请注意它如何包含标题
+
+181
+00:10:22,480 --> 00:10:25,600
+and pre-rendered content which is essential for seo
+和预渲染内容，这对于 seo
+
+182
+00:10:25,600 --> 00:10:29,600
+and sharing content on social media sites so that's how you implement server
+和在社交媒体上共享内容至关重要站点，这就是您实现服务器
+
+183
+00:10:29,600 --> 00:10:33,040
+side generation but another big strategy is server side
+端生成的方式，但另一个重要策略是服务器端
+
+184
+00:10:33,040 --> 00:10:36,320
+rendering the big difference is that with ssr the
+渲染，最大的区别是使用 ssr 时，
+
+185
+00:10:36,320 --> 00:10:40,560
+content is generated on a server when requested by the user this approach
+内容是在服务器上生成的
+
+186
+00:10:40,560 --> 00:10:44,480
+is ideal when data changes constantly because it ensures the end user will
+当数据不断变化时，这种方法是用户请求的理想选择，因为它可以确保最终用户始终
+
+187
+00:10:44,480 --> 00:10:47,760
+always get the latest and greatest data from whatever your data source happens
+从您的数据源中获取最新和最好的数据，
+
+188
+00:10:47,760 --> 00:10:50,399
+to be however it's far less efficient because
+但是它的效率要低得多，因为
+
+189
+00:10:50,399 --> 00:10:53,600
+you need to have a server in place to respond to those requests
+您需要有一个适当的服务器来响应这些请求
+
+190
+00:10:53,600 --> 00:10:56,720
+as opposed to caching everything on a global cdn
+，而不是将所有内容缓存在全球 CDN 上
+
+191
+00:10:56,720 --> 00:11:00,000
+imagine something like an ebay auction where you have millions of listings
+想象一下像 ebay 拍卖，您有数百万个列表，
+
+192
+00:11:00,000 --> 00:11:03,760
+and those listings are changing all the time that's probably a good candidate
+并且这些列表一直在变化，这可能是 ssr 的一个很好的候选
+
+193
+00:11:03,760 --> 00:11:06,640
+for ssr in any case it's very easy to
+者，无论如何
+
+194
+00:11:06,640 --> 00:11:09,519
+implement it next back in our page file we'll go ahead and
+，接下来很容易实现它回到我们的页面文件中，我们将继续
+
+195
+00:11:09,519 --> 00:11:13,600
+implement another function called get server side props the only
+实现另一个名为 get server side props 的函数
+
+196
+00:11:13,600 --> 00:11:16,640
+thing that actually changes in our code is the name of the function
+，我们代码中唯一实际更改的是函数的名称，
+
+197
+00:11:16,640 --> 00:11:20,160
+we can simply copy the body of the git static props function
+我们可以简单地复制 gitstatic props 函数的主体
+
+198
+00:11:20,160 --> 00:11:23,839
+and paste it into our new function it does the exact same thing
+并将其粘贴到 我们的新函数做了完全相同的事情，
+
+199
+00:11:23,839 --> 00:11:26,880
+but does it on every request instead of it build time
+但是在每个请求而不是在构建时都这样做，
+
+200
+00:11:26,880 --> 00:11:30,800
+then we can comment out get static props and get static paths because we no
+然后我们可以注释掉 get static props并 get static p  aths，因为我们
+
+201
+00:11:30,800 --> 00:11:34,399
+longer need those functions but the real beauty of next is that we
+不再需要这些功能，但 next 的真正美妙之处在于，我们
+
+202
+00:11:34,399 --> 00:11:38,000
+can apply both of these paradigms wherever we want in the application
+可以在应用程序中的任何我们想要的地方应用这两种范例
+
+203
+00:11:38,000 --> 00:11:41,360
+we're not limited to one or the other i'm going to go ahead and wrap things up
+
+
+204
+00:11:41,360 --> 00:11:44,240
+there if there's anything you want to see in my full next course
+如果您想在我的完整下一门课程中看到任何内容，请
+
+205
+00:11:44,240 --> 00:11:48,079
+make sure to let me know in the comments thanks for watching and i will see you
+务必在评论中告诉我，谢谢观看，我会在下一个课程中见到您
+
+206
+00:11:48,079 --> 00:11:53,760
+in the next one

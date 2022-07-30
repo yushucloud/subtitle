@@ -1,0 +1,179 @@
+1
+00:00:00,160 --> 00:00:04,799
+kotlin a statically typed multi-paradigm language designed quite simply as a
+kotlin 一种静态类型的多范式语言，其设计非常简单，是
+
+2
+00:00:04,799 --> 00:00:09,440
+better alternative to java like java it compiles to bytecode that runs on the
+java 的一种更好的替代方案，例如 java 它编译为在 java 虚拟机上运行的字节码，
+
+3
+00:00:09,440 --> 00:00:13,840
+java virtual machine but kotlin provides a more concise syntax and language
+但 kotlin 提供了更简洁的语法和
+
+4
+00:00:13,840 --> 00:00:18,080
+features loved by modern developers like type inference functional patterns null
+现代开发人员喜爱的语言特性，如类型推断功能模式 null
+
+5
+00:00:18,080 --> 00:00:22,480
+safety and more it was announced in 2011 by jetbrains with the first stable
+安全性和更多它是 2011 年由 jetbrains 宣布的，第一个稳定
+
+6
+00:00:22,480 --> 00:00:26,960
+release coming in 2016. it's named after kotlin island in russia and it just got
+版本将于 2016 年发布。它以俄罗斯的科特林岛命名，
+
+7
+00:00:26,960 --> 00:00:31,199
+a mascot in october 2021 but it still doesn't have a name yet one of its key
+2021 年 10 月刚刚获得吉祥物，但它仍然没有名字，这是它的主要
+
+8
+00:00:31,199 --> 00:00:34,480
+features is that it can interop with existing java code which means
+功能之一 是它可以与现有的 java 代码互操作，这意味着
+
+9
+00:00:34,480 --> 00:00:37,600
+developers can gradually adopt it without throwing all of their code in
+开发人员可以逐渐采用它，而不会将所有代码
+
+10
+00:00:37,600 --> 00:00:42,079
+the garbage in addition to jvm kotlin can also compile to native code and
+都扔进垃圾箱中，此外 jvm kotlin还可以编译为本机代码和
+
+11
+00:00:42,079 --> 00:00:45,520
+javascript opening the door to multi-platform apps it's been most
+javascript，为多平台应用程序打开了大门，它是最
+
+12
+00:00:45,520 --> 00:00:49,840
+influential in the android development community and as of 2019 google named it
+有影响力的 在 android 开发社区中，截至 2019 年，谷歌将其命名
+
+13
+00:00:49,840 --> 00:00:53,520
+the preferred language for android development over java one of its killer
+为 android 开发的首选语言，而不是其 k 之一的 java  iller
+
+14
+00:00:53,520 --> 00:00:57,760
+features is co-routines which provides a simplified way to write asynchronous
+功能是协同例程，它提供了一种编写异步
+
+15
+00:00:57,760 --> 00:01:01,920
+non-blocking code a common requirement for mobile developers to get started
+非阻塞代码的简化方法 移动开发人员开始的常见要求
+
+16
+00:01:01,920 --> 00:01:06,640
+create a file ending in.kt most kotlin developers use something like intellij
+创建一个以.kt 结尾的文件 大多数 kotlin开发人员使用类似
+
+17
+00:01:06,640 --> 00:01:10,240
+idea which is an ide brought to you by the same company that invented the
+intellij idea 的东西，这是由在文件中发明语言的同一家公司
+
+18
+00:01:10,240 --> 00:01:14,479
+language inside the file use the fun keyword to define a main function this
+使用 fun关键字定义主函数 这
+
+19
+00:01:14,479 --> 00:01:17,920
+is where your code will start executing and that syntax is a lot more fun to
+是您的代码将开始执行的地方，并且该语法
+
+20
+00:01:17,920 --> 00:01:21,840
+write than public static void main string args declare a variable with the
+比 public static void mainstring args 使用 var 声明变量更有趣
+
+21
+00:01:21,840 --> 00:01:25,920
+var keyword assign a value and its type will be inferred automatically or you
+关键字分配一个值，它的类型将被自动推断，或者您
+
+22
+00:01:25,920 --> 00:01:29,680
+can add a colon after the variable name with an explicit type a variable can't
+可以在具有显式类型的变量名称后添加一个冒号，
+
+23
+00:01:29,680 --> 00:01:33,600
+be null unless you explicitly allow it with a question mark on the type now use
+除非您在类型上使用问号明确允许它，否则变量不能为空 现在使用
+
+24
+00:01:33,600 --> 00:01:37,439
+printline to log the variable to the standard output notice how semicolons
+printline 记录标准输出的变量 注意分号
+
+25
+00:01:37,439 --> 00:01:40,880
+are optional which means that line breaks are significant kotlin supports
+是可选的，这意味着换行很重要 kotlin 支持
+
+26
+00:01:40,880 --> 00:01:44,560
+familiar object-oriented patterns but can do special functional things that
+熟悉的面向对象模式，但可以做 spe  java 不能喜欢的 cial 功能性事物
+
+27
+00:01:44,560 --> 00:01:48,720
+java cannot like modify the behavior of a class without inheritance using
+不使用扩展函数继承来修改类的行为
+
+28
+00:01:48,720 --> 00:01:52,159
+extension functions functions are first class objects which means they can be
+函数是第一类对象，这意味着它们可以
+
+29
+00:01:52,159 --> 00:01:56,719
+stored as variables passed as arguments or used anonymously with lambdas kotlin
+存储为作为参数传递的变量或与 lambdas 匿名使用 kotlin
+
+30
+00:01:56,719 --> 00:02:00,079
+also reduces boilerplate with things like data classes so you don't have to
+还减少了诸如数据类之类的样板文件，因此您 不必
+
+31
+00:02:00,079 --> 00:02:03,360
+write constructors getters and setters and supports destructuring when
+编写构造函数 getter 和 setter并在
+
+32
+00:02:03,360 --> 00:02:07,040
+accessing the values on an object allowing you to write concise efficient
+访问对象上的值时支持解构，从而允许您编写简洁高效的
+
+33
+00:02:07,040 --> 00:02:10,800
+code that you can then compile to a jar file by pulling up the terminal and
+代码，然后您可以通过拉起终端并
+
+34
+00:02:10,800 --> 00:02:14,800
+running the kotlin compiler this has been kotlin in 100 seconds hit the like
+运行 kotlin 编译器将其编译为 jar 文件 这一直是 kotlin 在 100 秒内点击喜欢
+
+35
+00:02:14,800 --> 00:02:18,000
+button and subscribe if you want to see more short videos like this thanks for
+按钮并订阅如果您想看更多这样的短视频感谢
+
+36
+00:02:18,000 --> 00:02:23,000
+watching and i will see you in the next one
+观看，我会在下一个看到你

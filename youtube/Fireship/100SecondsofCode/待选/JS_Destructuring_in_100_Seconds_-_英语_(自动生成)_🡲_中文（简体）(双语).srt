@@ -1,0 +1,309 @@
+1
+00:00:00,399 --> 00:00:04,640
+destructuring assignment take values from arrays or properties from objects
+解构赋值从数组或对象的属性中获取值
+
+2
+00:00:04,640 --> 00:00:07,839
+and set them as local variables it's a technique that
+并将它们设置为局部变量，这是一种
+
+3
+00:00:07,839 --> 00:00:10,800
+can make your javascript code more concise and readable
+可以使您的 javascript 代码更简洁和易读的技术
+
+4
+00:00:10,800 --> 00:00:14,320
+imagine you have an array and you want to assign some of its values to local
+假设您有一个数组并且您想将其一些值分配给局部
+
+5
+00:00:14,320 --> 00:00:17,279
+variables one option is to assign each variable by
+变量一个选项是 通过
+
+6
+00:00:17,279 --> 00:00:21,039
+referencing its index in the array that works fine but it's not very
+引用数组中的索引来分配每个变量可以正常工作，但是解构不是很
+
+7
+00:00:21,039 --> 00:00:25,039
+elegant with destructuring we can do the same thing with a single line of code
+优雅我们可以
+
+8
+00:00:25,039 --> 00:00:28,320
+by using brackets after const we can assign a variable name
+通过在 const 之后使用括号来用一行代码做同样的事情我们可以
+
+9
+00:00:28,320 --> 00:00:31,679
+to each index in the array the position of the variable name
+为数组中的每个索引分配一个变量名变量名的位置
+
+10
+00:00:31,679 --> 00:00:35,600
+matches the values index in the array the syntax may look familiar to you if
+与数组中的值索引匹配如果您曾经使用过 react 的语法可能看起来很熟悉，
+
+11
+00:00:35,600 --> 00:00:39,280
+you've ever used react which relies on destructuring for the used state hook
+它依赖于对已用状态挂钩的解构
+
+12
+00:00:39,280 --> 00:00:42,719
+when working with arrays you may want to emit a variable which you can do by
+在使用数组时您可能想要发出一个可以执行的变量 通过
+
+13
+00:00:42,719 --> 00:00:46,000
+adding a comma without a variable name to skip that index
+添加一个没有变量名的逗号来跳过该索引，
+
+14
+00:00:46,000 --> 00:00:49,200
+in other cases you might want to name the first couple variables
+在其他情况下，您可能想要命名前几个变量，
+
+15
+00:00:49,200 --> 00:00:52,399
+then put the remainder in their own array that can be achieved by putting
+然后将其余变量放在他们自己的可以通过
+
+16
+00:00:52,399 --> 00:00:55,840
+three dots in front of the variable name you might also want to set a default
+在变量名前面放置三个点来实现的数组您可能还想设置一个默认
+
+17
+00:00:55,840 --> 00:01:00,480
+value in case the value in the array is undefined use the equal sign to provide
+值以防数组中的值未定义 使用等号
+
+18
+00:01:00,480 --> 00:01:03,840
+the fallback value in addition to arrays destructuring also
+提供备用值 除了数组解构也
+
+19
+00:01:03,840 --> 00:01:06,320
+applies to objects notice how we're duplicating the
+适用于 对象注意到我们如何通过在 const 后面加上大括号来将
+
+20
+00:01:06,320 --> 00:01:09,760
+object's property name as a variable with dot notation
+对象的属性名称复制为带有点符号
+
+21
+00:01:09,760 --> 00:01:13,600
+by putting braces after const you can reference property names which will
+的变量，您可以引用属性名称，这些属性名称将
+
+22
+00:01:13,600 --> 00:01:17,119
+automatically become local variables which is much cleaner than referencing
+自动成为局部变量，这比
+
+23
+00:01:17,119 --> 00:01:20,880
+them line by line with dot notation and just like arrays you can use the
+使用点符号逐行引用它们要干净得多，就像数组一样 您可以使用
+
+24
+00:01:20,880 --> 00:01:24,960
+equal sign to set a default value but in some cases you may want to use a
+等号设置默认值，但在某些情况下，您可能希望使用与对象本身
+
+25
+00:01:24,960 --> 00:01:27,840
+different name than what's provided on the object itself
+提供的名称不同的名称
+
+26
+00:01:27,840 --> 00:01:31,520
+adding a colon after the property name allows you to rename it which is
+，在属性名称后添加一个冒号允许您重命名它，这
+
+27
+00:01:31,520 --> 00:01:35,200
+especially useful when dealing with name collisions or when working with objects
+在处理名称时特别有用碰撞或在
+
+28
+00:01:35,200 --> 00:01:38,400
+that use property names that are not valid variable names
+使用属性名称不是有效变量名称的对象时
+
+29
+00:01:38,400 --> 00:01:41,840
+in addition to renaming you can also use a colon to access
+，除了重命名之外，您还可以使用 冒号访问
+
+30
+00:01:41,840 --> 00:01:45,840
+nested properties or in other words set a variable from an object within an
+嵌套属性，或者换句话说，从对象中的对象设置变量
+
+31
+00:01:45,840 --> 00:01:48,320
+object in addition to destructuring top level
+除了解构顶级
+
+32
+00:01:48,320 --> 00:01:51,360
+variables you can also use the syntax in for loops
+变量之外，您还可以使用 for 循环中的语法，
+
+33
+00:01:51,360 --> 00:01:55,040
+which is awesome when you have an array of objects when working with functions
+当您使用函数时拥有对象数组时，这非常棒
+
+34
+00:01:55,040 --> 00:01:58,240
+you can destructure arrays and objects passed as arguments
+解构作为参数传递的数组和对象，
+
+35
+00:01:58,240 --> 00:02:02,000
+providing yet another way to obliterate unnecessary lines of javascript from
+提供另一种从代码库中删除不必要的 javascript 行的方法
+
+36
+00:02:02,000 --> 00:02:04,320
+your code base this has been destructuring assignment
+这已经
+
+37
+00:02:04,320 --> 00:02:08,080
+in javascript in 100 seconds make sure to hit the like button it
+在 100 秒内解构 javascript 中的赋值确保点击“like”按钮 它
+
+38
+00:02:08,080 --> 00:02:10,959
+really helps out these short videos thanks for watching and if you want to
+确实有助于这些短视频感谢观看，如果 你
+
+39
+00:02:10,959 --> 00:02:14,400
+learn more hang out for a minute while we go over a few more advanced tricks
+想了解更多，在我们讨论一些更高级的技巧时
+
+40
+00:02:14,400 --> 00:02:17,599
+that you may not know about one thing that array destructuring
+，你可能不知道数组解构
+
+41
+00:02:17,599 --> 00:02:22,000
+enables is variable swapping without the need for an intermediate variable it
+启用的一件事是变量交换，而不需要中间变量，它
+
+42
+00:02:22,000 --> 00:02:25,280
+doesn't come up often in javascript but it is a useful thing to know for
+在 javascript 中不经常出现 但是对于
+
+43
+00:02:25,280 --> 00:02:28,959
+computer science in general normally to swap two variables you need
+计算机科学来说，通常交换两个变量是有用的，你需要
+
+44
+00:02:28,959 --> 00:02:32,640
+a temporary variable because once the first variable is reassigned you lose
+一个临时的 v  ariable，因为一旦第一个变量被重新分配，你就会失去
+
+45
+00:02:32,640 --> 00:02:35,040
+its value but with a radius structuring we have
+它的值，但是使用半径结构，我们有
+
+46
+00:02:35,040 --> 00:02:38,640
+the syntax available to perform a swap without the need for the intermediate
+可用的语法来执行交换，而不需要中间
+
+47
+00:02:38,640 --> 00:02:42,000
+variable use destructuring to reassign the values
+变量使用解构
+
+48
+00:02:42,000 --> 00:02:46,000
+by putting the original two in an array but in reverse order you'll
+通过将原始两个变量放入数组中来重新分配值，但相反 命令你
+
+49
+00:02:46,000 --> 00:02:48,879
+probably almost never do that but you might be able to use it to impress
+可能几乎永远不会这样做，但有一天你可能会用它
+
+50
+00:02:48,879 --> 00:02:52,160
+someone on a technical interview someday the other thing i wanted to show you is
+在技术面试中给某人留下深刻印象我想向你展示的另一件事是，当你运行 match 函数时
+
+51
+00:02:52,160 --> 00:02:55,280
+that destructuring can also be used with regular expressions
+，解构也可以与正则表达式一起使用
+
+52
+00:02:55,280 --> 00:02:58,879
+when you run the match function on a string it returns an array of results
+一个字符串，它返回一个结果数组，
+
+53
+00:02:58,879 --> 00:03:01,920
+you can then easily provide descriptive variable names for the regular
+然后您可以轻松地为正则表达式匹配提供描述性变量名称，
+
+54
+00:03:01,920 --> 00:03:05,040
+expression matches that's cool but i have one last thing to
+这很酷，但我还有最后一件事要
+
+55
+00:03:05,040 --> 00:03:07,760
+mention imagine you want to destructure an object
+提到，假设您想解构一个对象，
+
+56
+00:03:07,760 --> 00:03:11,599
+but you don't know the property name until runtime you can use computed
+但直到运行时您才知道属性名称 可以
+
+57
+00:03:11,599 --> 00:03:15,680
+properties in destructuring just like you can with object literals
+在解构中使用计算属性，就像使用对象文字一样，
+
+58
+00:03:15,680 --> 00:03:19,840
+by wrapping a property name in brackets it now takes a variable as its value
+通过将属性名称包装在括号中它现在需要一个 变量作为它的值
+
+59
+00:03:19,840 --> 00:03:24,000
+instead of a static name in other words it's computed at runtime
+而不是静态名称，换句话说，它是在运行时计算的，
+
+60
+00:03:24,000 --> 00:03:27,280
+which you can then follow with a colon to provide it with a static variable
+然后你可以用冒号为它提供一个静态变量
+
+61
+00:03:27,280 --> 00:03:30,080
+name to use in your code and that's pretty much everything i know about
+名称以在你的代码中使用，这几乎就是我所知道的关于
+
+62
+00:03:30,080 --> 00:03:32,799
+destructuring
+解构的一切

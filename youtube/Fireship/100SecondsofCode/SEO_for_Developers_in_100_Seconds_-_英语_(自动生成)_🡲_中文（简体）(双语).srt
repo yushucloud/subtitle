@@ -1,0 +1,1048 @@
+1
+00:00:00,240 --> 00:00:03,120
+the first rule of search engine optimization is
+搜索引擎优化的第一条规则是
+
+2
+00:00:03,120 --> 00:00:08,080
+create really good content the second rule of search engine optimization is
+创建非常好的内容搜索引擎优化的第二条规则是
+
+3
+00:00:08,080 --> 00:00:11,759
+create really good content if human beings don't want to engage with your
+创建非常好的内容如果人们不想与您的内容互动，
+
+4
+00:00:11,759 --> 00:00:14,000
+content then google doesn't want to either
+那么谷歌也不想
+
+5
+00:00:14,000 --> 00:00:17,520
+we live in the age of machine learning and quantum computing you can't just
+我们生活在这个时代 机器学习和量子计算你不能只是
+
+6
+00:00:17,520 --> 00:00:20,320
+stuff a bunch of keywords into a page and expect to do well
+把一堆关键词塞进一个页面，
+
+7
+00:00:20,320 --> 00:00:23,920
+when google first came about in the late 90s it was based on an algorithm called
+当谷歌在 90 年代后期首次出现时，它是基于一种名为 pagerank 的算法，
+
+8
+00:00:23,920 --> 00:00:26,720
+pagerank which weighted relevance and search ranking
+该算法根据数字加权相关性和搜索排名
+
+9
+00:00:26,720 --> 00:00:30,320
+based on the number of inbound links that a site had people quickly learned
+一个网站的入站链接让人们很快学会了
+
+10
+00:00:30,320 --> 00:00:33,360
+how to exploit the algorithm by spamming backlinks all over the
+如何通过在整个互联网上发送垃圾邮件
+
+11
+00:00:33,360 --> 00:00:35,600
+internet to increase the site's page rank
+来提高网站的页面排名来利用该算法，
+
+12
+00:00:35,600 --> 00:00:39,040
+because a high ranking in google can literally be worth millions of dollars
+因为谷歌的高排名实际上可以价值数百万美元，
+
+13
+00:00:39,040 --> 00:00:42,079
+it brought us an entire industry of seo experts
+它为我们带来了整个行业的 seo专家
+
+14
+00:00:42,079 --> 00:00:45,360
+the good guys wear white hats the hackers wear black hats but the most
+好人戴白帽子黑客戴黑帽子 但最
+
+15
+00:00:45,360 --> 00:00:47,520
+effective ones wear grey hats but some say
+有效的人戴灰帽子 但有人说
+
+16
+00:00:47,520 --> 00:00:51,039
+it's a dying industry y'all want to see a dead body because it's becoming harder
+这是一个你们都想看到的垂死行业一个死尸，因为
+
+17
+00:00:51,039 --> 00:00:53,280
+and harder to manipulate google's technology
+操纵谷歌的技术变得越来越难，
+
+18
+00:00:53,280 --> 00:00:56,320
+there are over 200 factors that go into a site's ranking
+有超过 200 个因素会影响一个网站的排名
+
+19
+00:00:56,320 --> 00:00:59,920
+that are geared mostly towards how useful a user found your site did they
+，这些因素主要是针对用户发现你的网站的有用程度，他们是
+
+20
+00:00:59,920 --> 00:01:01,840
+immediately bounce by clicking the back button
+通过点击后退按钮立即跳出
+
+21
+00:01:01,840 --> 00:01:05,040
+or did they dwell on the page for a long time and click other links
+还是停留在上面 页面很长一段时间，点击其他链接，
+
+22
+00:01:05,040 --> 00:01:08,240
+absorbing all kinds of useful content content is king
+吸收各种有用的内容内容是王道，
+
+23
+00:01:08,240 --> 00:01:13,600
+but the third rule of seo is to render html that can be reliably understood by
+但 seo 的第三条规则是呈现可以被机器人可靠理解的 html，
+
+24
+00:01:13,600 --> 00:01:17,520
+bots your main content goes inside the body tags when google
+当谷歌抓取你的网站时，你的主要内容进入 body 标签内
+
+25
+00:01:17,520 --> 00:01:20,799
+crawls your site it will use semantic html elements to
+将使用语义 html 元素来
+
+26
+00:01:20,799 --> 00:01:24,159
+understand the content on the page you might put your main content in an
+理解页面上的内容，您可以将主要内容放在
+
+27
+00:01:24,159 --> 00:01:28,400
+article tag then put your most important keywords and headings or h tags to
+文章标签中，然后放置最重要的关键字和标题或 h 标签来
+
+28
+00:01:28,400 --> 00:01:31,680
+signal what your page is about furthermore your html should be
+表明您的页面是关于什么的，此外，您的 html 应该可以
+
+29
+00:01:31,680 --> 00:01:35,680
+accessible use alt tags and images and aria tags where needed to make your
+访问使用 alt 标签和需要使您的
+
+30
+00:01:35,680 --> 00:01:39,119
+site usable on assistive devices in the head of the document we have
+网站在文档头部的辅助设备上可用的图像和 aria 标签我们有
+
+31
+00:01:39,119 --> 00:01:42,079
+metadata that's not directly shown to the end user
+不直接显示的元数据 wn到最终用户，
+
+32
+00:01:42,079 --> 00:01:45,680
+but bots can use this data to further understand the page and format the
+但机器人可以使用这些数据来进一步了解页面并格式化
+
+33
+00:01:45,680 --> 00:01:47,840
+actual appearance of your search engine listing
+搜索引擎的实际外观列表
+
+34
+00:01:47,840 --> 00:01:52,159
+the fourth rule of seo is to get your fully rendered html loaded fast
+seo 的第四条规则是
+
+35
+00:01:52,159 --> 00:01:55,840
+if you have megabytes of blocking images styles and javascript
+如果您有兆字节的阻止图像样式和 javascript，则可以快速加载完全呈现的 html
+
+36
+00:01:55,840 --> 00:01:59,439
+both users and bots will pass on your site but going fast
+用户和漫游器都会在您的网站上通过，但
+
+37
+00:01:59,439 --> 00:02:03,439
+is easier said than done that's why today we're going beyond 100 seconds to
+说起来容易做起来难，这就是为什么今天我们要超过 100 秒来
+
+38
+00:02:03,439 --> 00:02:07,680
+look at the many different strategies we have to render html and how they impact
+查看我们必须呈现 html 的许多不同策略以及它们如何影响
+
+39
+00:02:07,680 --> 00:02:10,959
+search engine optimization if you're new here like and subscribe
+搜索引擎优化 新来的喜欢和订阅
+
+40
+00:02:10,959 --> 00:02:14,800
+and today i have a big announcement my full next js firebase course
+，今天我有一个重要的公告，我的下一个完整的 js firebase 课程
+
+41
+00:02:14,800 --> 00:02:18,239
+is now available if your goal is to build a highly interactive web app
+现在可用如果你的目标是构建一个高度交互的 web 应用
+
+42
+00:02:18,239 --> 00:02:21,280
+that is also fully search engine friendly then you'll definitely want to
+程序，它也是完全搜索引擎友好的，那么你肯定想
+
+43
+00:02:21,280 --> 00:02:24,080
+check out this course now the four most important rules for
+看看这门课程现在，我认为 seo 最重要的四个规则
+
+44
+00:02:24,080 --> 00:02:27,360
+seo in my opinion are create awesome content create
+是创建很棒的内容 创建
+
+45
+00:02:27,360 --> 00:02:30,560
+awesome content render properly formatted html
+很棒的内容 呈现格式正确的 html
+
+46
+00:02:30,560 --> 00:02:34,319
+and load your html quickly the first two rules are very subjective
+并快速加载您的 html 前两条规则 s 是非常主观的
+
+47
+00:02:34,319 --> 00:02:37,440
+and depend entirely on your audience but the general goal
+，完全取决于您的受众，但总体目标
+
+48
+00:02:37,440 --> 00:02:41,040
+is that when someone clicks on a link to your site from a search engine ranking
+是，当有人从搜索引擎排名页面点击指向您网站的链接时，
+
+49
+00:02:41,040 --> 00:02:43,200
+page they should engage with your site as
+他们应该尽可能长时间地与您的网站互动，您
+
+50
+00:02:43,200 --> 00:02:47,040
+long as possible there are a few metrics that you'll want to be aware of here
+将有一些指标要注意
+
+51
+00:02:47,040 --> 00:02:50,080
+the first one is the click-through rate or ctr
+这里第一个是点击率或点击率
+
+52
+00:02:50,080 --> 00:02:53,519
+that defines how likely a user is to click on your link
+，它定义了用户在搜索引擎排名页面或serp中显示时点击您的链接的可能性，点击
+
+53
+00:02:53,519 --> 00:02:56,720
+when displayed in a search engine ranking page or serp
+
+
+54
+00:02:56,720 --> 00:03:00,319
+the higher the ctr the better and that usually means you have a very relevant
+率越高越好，这通常意味着您 现在有一个非常相关的
+
+55
+00:03:00,319 --> 00:03:03,440
+title and description now if a user clicks on your link and
+标题和描述，如果用户点击你的链接，
+
+56
+00:03:03,440 --> 00:03:06,959
+then immediately clicks the back button that's called a bounce and the higher
+然后立即点击被称为反弹的后退按钮，
+
+57
+00:03:06,959 --> 00:03:10,879
+your bounce rate is the less likely your site is to rank well in the long term
+你的反弹率越高，你的网站在长期内排名靠前的可能性就越小，
+
+58
+00:03:10,879 --> 00:03:14,480
+because apparently the content on the page is not very relevant if the user
+因为显然内容如果用户
+
+59
+00:03:14,480 --> 00:03:17,680
+does stay on the page google will keep track of the dwell time
+确实停留在页面上，则在页面上的相关性不是很高谷歌将跟踪停留时间
+
+60
+00:03:17,680 --> 00:03:20,800
+which is the amount of time they spend there before clicking back to the search
+，这是他们在点击返回搜索结果之前花费
+
+61
+00:03:20,800 --> 00:03:23,760
+results the longer the dwell time the better but
+的时间越长 停留时间更好，但
+
+62
+00:03:23,760 --> 00:03:27,280
+the best possible thing that can happen is that the user never clicks back their
+可能发生的最好的事情是用户永远不会点击他们的
+
+63
+00:03:27,280 --> 00:03:29,840
+session will last forever and they'll never need to go to another
+会话将永远持续，他们永远不需要再次访问另一个
+
+64
+00:03:29,840 --> 00:03:32,720
+website ever again that doesn't happen very often
+不经常发生的网站，
+
+65
+00:03:32,720 --> 00:03:35,760
+so what you keep track of is the average session duration
+所以你要跟踪什么 of 是平均会话持续时间
+
+66
+00:03:35,760 --> 00:03:39,519
+and the average number of pages viewed per session these are metrics that you
+和每个会话查看的平均页面数 这些是您
+
+67
+00:03:39,519 --> 00:03:42,640
+want to maximize there's no absolute rule for creating
+想要最大化的指标 没有创建
+
+68
+00:03:42,640 --> 00:03:45,760
+engaging content but the first thing the user sees should
+引人入胜的内容的绝对规则，但用户看到的第一件事应该
+
+69
+00:03:45,760 --> 00:03:49,360
+hook them in to want to read more if you look at something like buzzfeed
+吸引他们想要阅读更多 在诸如buzzfeed之类的东西上，
+
+70
+00:03:49,360 --> 00:03:52,720
+all you have to do is put an animated gif at the top then maybe a few more in
+您所要做的就是在顶部放一个动画gif，然后
+
+71
+00:03:52,720 --> 00:03:55,200
+the body and you should be good let's move on to
+在正文中再放几个，您应该很好，让我们继续讨论
+
+72
+00:03:55,200 --> 00:03:58,640
+rule three where we talk about the actual structure of the html
+规则三，我们将讨论html的实际结构
+
+73
+00:03:58,640 --> 00:04:02,000
+i'll be using my site fireship io as an example
+使用我的网站 fireship io
+
+74
+00:04:02,000 --> 00:04:06,400
+on a lesson or article page you can right click and hit inspect element
+作为课程或文章页面上的示例，您可以右键单击并点击检查元素
+
+75
+00:04:06,400 --> 00:04:10,879
+or hit control shift i this will bring up the elements tab in chrome devtools
+或点击控制 shift 我这将在 chrome devtools 中显示元素选项卡，
+
+76
+00:04:10,879 --> 00:04:14,319
+showing you the fully rendered html markup we have a head
+向您显示完全渲染的 h  tml标记我们有一个头部
+
+77
+00:04:14,319 --> 00:04:17,919
+and a body let's go ahead and open up the body find the main element
+和一个主体让我们继续打开主体找到主要元素
+
+78
+00:04:17,919 --> 00:04:21,359
+then inside the main element you'll notice we have an article an article
+然后在主要元素内你会注意到我们有一篇文章文章
+
+79
+00:04:21,359 --> 00:04:24,400
+element has semantic meaning and although it will never be seen by the
+元素具有语义含义，尽管它永远不会在
+
+80
+00:04:24,400 --> 00:04:28,800
+end user it tells the search engine here is the main content of the page in
+最后看到 用户它告诉搜索引擎这里是页面的主要内容，
+
+81
+00:04:28,800 --> 00:04:30,800
+addition you'll notice a couple of extra
+此外，您会注意到这里有几个额外的
+
+82
+00:04:30,800 --> 00:04:35,040
+attributes here one is item scope and the other is an item type as a
+属性，一个是项目范围，另一个是作为 schema.org 文章的项目类型，
+
+83
+00:04:35,040 --> 00:04:37,919
+schema.org article now it's totally optional and
+现在它完全是可选的，
+
+84
+00:04:37,919 --> 00:04:40,880
+whether or not it will improve your search engine ranking is debatable but
+无论是 不是它会提高你的搜索引擎排名是有争议的，
+
+85
+00:04:40,880 --> 00:04:44,160
+what schema.org allows you to do is define a bunch of
+但是 schema.org允许你做的是定义一堆
+
+86
+00:04:44,160 --> 00:04:46,960
+metadata about the actual content on your page
+关于你页面上实际内容的元数据，
+
+87
+00:04:46,960 --> 00:04:50,720
+making it easier for search engines to interpret it's especially powerful
+使搜索引擎更容易解释它，
+
+88
+00:04:50,720 --> 00:04:54,160
+if your content is something like a recipe or a star review
+如果你的内容类似于食谱或星级评论，
+
+89
+00:04:54,160 --> 00:04:58,479
+because google can then take the schema data and format it properly in a serp
+因为谷歌现在可以获取模式数据并在serp页面中正确格式化它，
+
+90
+00:04:58,479 --> 00:05:00,320
+page now in this case we have a bunch of
+在这种情况下，我们有一堆
+
+91
+00:05:00,320 --> 00:05:03,759
+metadata that make up an article and one thing that is known to improve
+元数据组成一篇文章和我知道的一件事 证明
+
+92
+00:05:03,759 --> 00:05:07,120
+search ranking is when an article is written by a known author
+搜索排名是当文章由已知
+
+93
+00:05:07,120 --> 00:05:10,960
+further down the html tree here you'll notice we have an item prop of author
+作者在 html 树的更下方撰写时，您会注意到我们有一个作者的项目道具，
+
+94
+00:05:10,960 --> 00:05:15,840
+which points to the authors page that link goes to another page on fireship io
+它指向作者页面，该链接指向 fireship
+
+95
+00:05:15,840 --> 00:05:20,320
+and on that page we also have an article element this time with an item type of a
+io 上的另一个页面，在该页面上，我们这次还有一个 article 元素，其项目类型为
+
+96
+00:05:20,320 --> 00:05:23,520
+schema.org author along with a bunch of links that
+schema.orgauthor 以及一堆
+
+97
+00:05:23,520 --> 00:05:25,840
+point to authoritative sites for that author
+指向该作者的权威网站的
+
+98
+00:05:25,840 --> 00:05:29,280
+outbound links on a page are really important because they further signal
+链接 页面上的出站链接非常重要，因为它们进一步表明
+
+99
+00:05:29,280 --> 00:05:32,400
+what the page is about in this case google will first crawl the
+了该页面在此中的内容 案例谷歌将首先抓取
+
+100
+00:05:32,400 --> 00:05:36,240
+article then crawl the authors page then crawl these other sites to
+文章然后抓取作者页面然后抓取这些其他网站以
+
+101
+00:05:36,240 --> 00:05:38,800
+understand who that author is a good strategy
+了解该作者是谁一个好的策略
+
+102
+00:05:38,800 --> 00:05:42,400
+is to use outbound links to other really good sites that are related to the
+是使用出站链接到与给定页面上的内容相关的其他非常好的网站，
+
+103
+00:05:42,400 --> 00:05:46,400
+content on a given page now in addition to schema.org there's
+除了 schema.org 还有
+
+104
+00:05:46,400 --> 00:05:48,880
+other ways you can add metadata to your content
+其他方法可以将元数据添加到内容中
+
+105
+00:05:48,880 --> 00:05:52,560
+and this can be very important for seo and also accessibility
+，这对于 seo 和可访问性非常重要，
+
+106
+00:05:52,560 --> 00:05:55,919
+one of the most fundamental techniques is to add an alt attribute
+最基本的技术之一是添加 alt 属性
+
+107
+00:05:55,919 --> 00:05:59,840
+to images which is basically just some text that describes the image
+对于基本上只是描述图像的一些文本的图像，
+
+108
+00:05:59,840 --> 00:06:03,280
+this metadata can be used by search engines and also by screen readers for
+此元数据可以被搜索引擎使用，也可以被屏幕阅读器
+
+109
+00:06:03,280 --> 00:06:06,000
+those with disabilities for other elements that are a little
+用于残障人士用于其他
+
+110
+00:06:06,000 --> 00:06:09,039
+more complicated like a progress bar for example
+更复杂的元素，例如进度条，例如，
+
+111
+00:06:09,039 --> 00:06:12,479
+you can use aria attributes which stand for accessible rich
+您可以使用 aria 属性 代表可访问的富
+
+112
+00:06:12,479 --> 00:06:15,520
+internet applications and they help provide additional meaning
+互联网应用程序，它们有助于为页面
+
+113
+00:06:15,520 --> 00:06:19,360
+to highly interactive widgets on the page at this point we've only been
+上高度交互的小部件提供额外的含义，此时我们只
+
+114
+00:06:19,360 --> 00:06:22,639
+looking in the body of the document but the head of the document contains
+在文档的正文中查看，但文档的头部包含
+
+115
+00:06:22,639 --> 00:06:26,560
+all kinds of useful metadata for seo most importantly this is where you
+各种有用的 seo 元数据，最重要的是 这是你
+
+116
+00:06:26,560 --> 00:06:29,039
+have the title you should choose your title carefully
+有标题的地方，你应该仔细选择你的标题，
+
+117
+00:06:29,039 --> 00:06:33,120
+because it's displayed in a cert page and will ultimately control your ctr
+因为它显示在证书页面
+
+118
+00:06:33,120 --> 00:06:36,880
+rating in addition to the title you may also want to have meta tags here
+中，除了标题之外，它最终会控制你的 ctr 评级，你可能还希望在此处使用元标记
+
+119
+00:06:36,880 --> 00:06:42,080
+which define things like the description featured image author canonical url and
+来定义诸如描述特色图片作者之类的内容
+
+120
+00:06:42,080 --> 00:06:45,199
+stuff like that these meta tags are also essential if
+如果
+
+121
+00:06:45,199 --> 00:06:48,560
+you want your content to be shared on social media sites like twitter or
+您希望在 s 上共享您的内容，那么这些元标记之类的规范网址也是必不可少的 社交媒体网站（如 twitter 或
+
+122
+00:06:48,560 --> 00:06:50,880
+facebook when you post a hyperlink in social
+facebook）当您在社交媒体中发布超链接时，
+
+123
+00:06:50,880 --> 00:06:55,360
+media it fetches that page and looks for the meta tags to understand what image
+它会获取该页面并查找元标记以了解要在
+
+124
+00:06:55,360 --> 00:06:58,319
+and title to display there if you want to see how your site's doing
+此处显示的图像和标题如果您想查看您的网站
+
+125
+00:06:58,319 --> 00:07:01,759
+right now you can post a link into the twitter card validator and it will tell
+现在的运行情况，您可以发布链接 进入推特卡验证器，它会告诉
+
+126
+00:07:01,759 --> 00:07:04,800
+you whether or not it can use your current meta tags
+你它是否可以使用你当前的元标记，
+
+127
+00:07:04,800 --> 00:07:07,599
+so that gives you some things to think about when it comes to the actual
+这样当涉及到
+
+128
+00:07:07,599 --> 00:07:11,360
+structure of your html but the bigger question is how do you
+你的 html 的实际结构时，你可以考虑一些事情，但更大的问题是你如何
+
+129
+00:07:11,360 --> 00:07:14,880
+render that html or in other words what part of your tech stack is
+渲染那个 html 或者换句话说，您的技术堆栈的哪一部分
+
+130
+00:07:14,880 --> 00:07:20,080
+responsible for generating the actual html markup that is received by a bot or
+负责生成由机器人或最终用户接收的实际 html 标记
+
+131
+00:07:20,080 --> 00:07:22,319
+end user there are three fundamental ways to
+有三种基本的方式来
+
+132
+00:07:22,319 --> 00:07:26,240
+render html the first one we'll look at is client-side rendering if you're
+呈现 html 我们将看到的第一个是客户端呈现，如果你 '正在
+
+133
+00:07:26,240 --> 00:07:28,880
+building an app with something like react or angular
+使用诸如 react 或 angular 之类的东西构建一个应用程序，
+
+134
+00:07:28,880 --> 00:07:32,800
+the default mode is client-side rendering or a single page application
+默认模式是客户端渲染或
+
+135
+00:07:32,800 --> 00:07:37,120
+on the initial page load the user gets a shell of html without any meaningful
+初始页面加载上的单页应用程序用户获得一个没有任何有意义内容的 html 外壳
+
+136
+00:07:37,120 --> 00:07:39,919
+content the javascript code then bootstraps then
+t 他的javascript代码然后引导然后
+
+137
+00:07:39,919 --> 00:07:43,360
+asynchronously fetches any additional data needed for the ui
+异步获取ui应用程序所需的任何其他数据，
+
+138
+00:07:43,360 --> 00:07:46,400
+apps like this are great for interactivity because it gives the end
+这样的交互性非常好，因为它给最终
+
+139
+00:07:46,400 --> 00:07:49,840
+user an app-like feel similar to what you'd expect on ios or
+用户一种类似于你在ios或android上所期望的应用程序的感觉
+
+140
+00:07:49,840 --> 00:07:53,360
+android the problem is that because the initial html is just
+问题是因为 初始 html 只是
+
+141
+00:07:53,360 --> 00:07:56,000
+a shell search engines may have a hard time
+一个外壳 搜索引擎可能很难
+
+142
+00:07:56,000 --> 00:08:00,319
+understanding and indexing it if you take a link generated by javascript from
+理解和索引它
+
+143
+00:08:00,319 --> 00:08:03,599
+a single page application and post it into twitter you'll only see
+
+
+144
+00:08:03,599 --> 00:08:07,120
+the initial shell you won't see any additional meta tags that were generated
+
+
+145
+00:08:07,120 --> 00:08:09,680
+by javascript after the fact that's not great for
+由 javascript 生成的元标记在对
+
+146
+00:08:09,680 --> 00:08:13,280
+social media but google as a search engine is able to
+社交媒体不是很好但谷歌作为搜索引擎能够
+
+147
+00:08:13,280 --> 00:08:16,800
+index client rendered apps but the reliability is questionable
+索引客户端呈现的应用程序之后生成的元标记，但可靠性是有问题
+
+148
+00:08:16,800 --> 00:08:20,879
+and personally i wouldn't trust client rendering if seo was a business critical
+的，如果 seo 是关键业务要求，我个人不会相信客户端呈现
+
+149
+00:08:20,879 --> 00:08:24,400
+requirement so another option is to pre-render or
+所以另一种选择是预先预渲染或
+
+150
+00:08:24,400 --> 00:08:28,240
+statically generate html in advance let's imagine your web app
+静态生成 html让我们想象你的 web 应用
+
+151
+00:08:28,240 --> 00:08:32,159
+has a hundred different routes or pages instead of sending a shell down to the
+程序有一百个不同的路由或页面而不是 se 为用户找到一个 shell，
+
+152
+00:08:32,159 --> 00:08:36,479
+user we could generate all the html for those pages in advance
+我们可以提前为这些页面生成所有 html，
+
+153
+00:08:36,479 --> 00:08:39,839
+then upload the static files to a storage bucket that could be cached on a
+然后将静态文件上传到可以缓存在全局 cdn 上的存储桶，
+
+154
+00:08:39,839 --> 00:08:42,719
+global cdn so the first thing the user sees is
+因此用户看到的第一件事是
+
+155
+00:08:42,719 --> 00:08:46,160
+fully rendered content then the javascript loads after that and
+完全呈现的内容，然后加载 javascript 之后
+
+156
+00:08:46,160 --> 00:08:49,920
+makes the page fully interactive that's great for seo because bots get
+并使页面完全交互，这对 seo 非常有用，因为机器人可以
+
+157
+00:08:49,920 --> 00:08:52,720
+fully rendered html and they can easily interpret the
+完全呈现 html，它们可以轻松解释页面
+
+158
+00:08:52,720 --> 00:08:55,360
+content on the page it's also highly efficient
+上的内容，它也非常高效，因为
+
+159
+00:08:55,360 --> 00:08:58,640
+because if you're fetching data from a database you only have to do that once
+如果你从数据库中获取数据，你只需要
+
+160
+00:08:58,640 --> 00:09:01,279
+at build time then you can cache the page on a cdn
+在 构建时间，然后您可以将页面缓存在 cdn 上
+
+161
+00:09:01,279 --> 00:09:04,720
+and serve it to millions of people without having to refetch your data
+并将其提供给数百万人，而无需重新获取您的数据
+
+162
+00:09:04,720 --> 00:09:07,920
+the trade-off with this approach though is that the data in the pre-rendered
+，但这种方法的权衡是预渲染内容中的数据
+
+163
+00:09:07,920 --> 00:09:11,200
+content can become stale which means bots will be getting outdated
+可能会变得陈旧，这意味着机器人将 获取过时的
+
+164
+00:09:11,200 --> 00:09:14,959
+information until you rebuild and redeploy the entire site
+信息，直到您重建和重新部署整个站点
+
+165
+00:09:14,959 --> 00:09:18,000
+that's no big deal if you have a few hundred pages that don't change very
+，如果您有几百个不经常更改
+
+166
+00:09:18,000 --> 00:09:19,920
+often but if you have millions of pages with
+的页面但如果您有数百万个页面
+
+167
+00:09:19,920 --> 00:09:22,720
+highly dynamic data then it doesn't really scale
+高度动态的数据，那么它并没有真正扩展
+
+168
+00:09:22,720 --> 00:09:26,160
+and that brings us to option number three server side rendering
+，当用户向页面发出请求时，它在这个范例中为我们带来了第三个服务器端渲染选项
+
+169
+00:09:26,160 --> 00:09:30,640
+in this paradigm when the user makes a request to a page the html is generated
+，html
+
+170
+00:09:30,640 --> 00:09:33,760
+on the server this is also great for seo because bots
+在服务器上生成，这对于 seo 也很好，因为
+
+171
+00:09:33,760 --> 00:09:36,640
+get fully rendered html on the initial request
+机器人完全 在初始请求上呈现 html
+
+172
+00:09:36,640 --> 00:09:40,080
+in addition the data will always be fresh because you're making a new
+此外，数据将始终是新鲜的，因为您
+
+173
+00:09:40,080 --> 00:09:43,519
+request to the server each time but the drawback here is that it's
+每次都向服务器发出新请求，但这里的缺点是它
+
+174
+00:09:43,519 --> 00:09:47,440
+generally less efficient you might be fetching and rendering the same html
+通常效率较低，您可能会
+
+175
+00:09:47,440 --> 00:09:50,640
+over and over again it is possible to do server side caching
+一遍又一遍地获取和呈现相同的 html 可以进行服务器端缓存，
+
+176
+00:09:50,640 --> 00:09:53,839
+but that's not as efficient as edge caching on a cdn
+但这不如CDN 上的边缘缓存高效，
+
+177
+00:09:53,839 --> 00:09:57,279
+and will cost a lot more to operate at scale and if things aren't cached
+并且大规模操作的成本会更高
+
+178
+00:09:57,279 --> 00:09:59,760
+efficiently that means a slower first time to
+
+
+179
+00:09:59,760 --> 00:10:02,320
+meaningful content which can negatively impact
+
+
+180
+00:10:02,320 --> 00:10:06,720
+seo so basically between these three methods we have a trade-off between data
+seo 所以基本上在这三种方法之间，我们在数据
+
+181
+00:10:06,720 --> 00:10:09,360
+freshness performance and client-side
+新鲜度性能和客户端
+
+182
+00:10:09,360 --> 00:10:13,200
+interactivity but what if there is a way we could have our cake and eat it too
+交互性之间进行了权衡，但是如果有一种方法我们可以得到我们的蛋糕和 请
+
+183
+00:10:13,200 --> 00:10:19,839
+allow me to introduce you to incremental static regeneration
+允许我向您介绍增量静态再生
+
+184
+00:10:20,160 --> 00:10:24,800
+this is the way this is a new form of rendering available in the next js
+这是下一个 js 框架中可用的新渲染形式的方式
+
+185
+00:10:24,800 --> 00:10:27,120
+framework remember earlier i said the drawback
+记得之前我说过
+
+186
+00:10:27,120 --> 00:10:31,200
+with static pages is that the data may become stale and require a redeploy of
+静态页面的缺点是数据可能变得陈旧并需要重新部署
+
+187
+00:10:31,200 --> 00:10:34,720
+your site what isr does is allow you to statically generate your
+您的站点 isr 的作用是允许您静态生成
+
+188
+00:10:34,720 --> 00:10:39,120
+pages then rebuild and redeploy them on the fly in the background as new
+页面，然后在新
+
+189
+00:10:39,120 --> 00:10:42,800
+requests come into your site that means you get all the performance benefits of
+请求进入您的站点时在后台动态重建和重新部署它们，这意味着您可以获得静态页面的所有性能优势，
+
+190
+00:10:42,800 --> 00:10:45,519
+static pages while ensuring that these pages always
+同时确保这些页面始终
+
+191
+00:10:45,519 --> 00:10:48,399
+contain fresh data that eliminates all the trade-offs that
+包含新的数据消除了
+
+192
+00:10:48,399 --> 00:10:50,800
+we've talked about but it's not without a cost
+我们已经讨论过的所有权衡，但并非没有成本
+
+193
+00:10:50,800 --> 00:10:55,200
+deploying a static site is as easy as uploading your files to a storage bucket
+部署静态站点就像将文件上传到存储桶一样容易，
+
+194
+00:10:55,200 --> 00:10:59,440
+but incremental static regeneration would require a more complex back-end
+但增量静态再生需要更复杂的后端
+
+195
+00:10:59,440 --> 00:11:02,480
+server deployment for most of us that means paying for a
+服务器部署 我们中的大多数人这意味着要为像 versel 一样支持它的主机付费，
+
+196
+00:11:02,480 --> 00:11:05,760
+host that supports it like versel but hosting anywhere else
+但在其他任何地方托管
+
+197
+00:11:05,760 --> 00:11:09,040
+will likely be much more painful until more companies start adopting
+可能会更加痛苦，直到有更多公司 现在开始采用
+
+198
+00:11:09,040 --> 00:11:11,440
+these techniques now one very cool thing going on
+这些技术 现在 Web 开发世界中正在发生的一件非常酷的事情
+
+199
+00:11:11,440 --> 00:11:14,640
+in the web development world right now is that more frameworks like
+是，更多的框架（如
+
+200
+00:11:14,640 --> 00:11:18,560
+next and angular are supporting hybrid rendering that means you can implement
+next 和 Angular）正在支持混合渲染，这意味着您可以
+
+201
+00:11:18,560 --> 00:11:21,920
+some routes as static pages configure other routes to use full
+在静态页面中实现一些路由配置其他路由以使用完整的
+
+202
+00:11:21,920 --> 00:11:25,120
+server-side rendering while other routes can be fully client rendered
+服务器端渲染 而其他路由可以完全由客户端渲染，
+
+203
+00:11:25,120 --> 00:11:28,399
+so you're not pigeon-holed into just one rendering technique you can pick and
+因此您不会只局限于一种渲染技术，您可以
+
+204
+00:11:28,399 --> 00:11:32,640
+choose what works best for a given page and in my opinion that's the future of
+选择最适合给定页面的渲染技术，在我看来，这是
+
+205
+00:11:32,640 --> 00:11:35,360
+full stack web development i'm going to go ahead and wrap things up
+全栈 Web 开发的未来我要去
+
+206
+00:11:35,360 --> 00:11:39,040
+there if you want to learn how to implement a real hybrid rendered
+如果您想学习如何使用下一个 js实现真正的混合渲染
+
+207
+00:11:39,040 --> 00:11:43,440
+application with next js consider becoming a pro member at fireship io
+应用程序，请继续并在那里总结一下考虑成为 fireship io 的专业会员，
+
+208
+00:11:43,440 --> 00:11:46,480
+you'll get access to the next course along with a whole bunch of other pro
+您将可以访问下一门课程以及一大堆其他专业
+
+209
+00:11:46,480 --> 00:11:49,120
+content thanks for watching and i will see you
+内容谢谢 观看，我会在下一个看到你
+
+210
+00:11:49,120 --> 00:11:52,880
+in the next one

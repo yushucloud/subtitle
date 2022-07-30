@@ -1,0 +1,193 @@
+1
+00:00:00,080 --> 00:00:04,560
+temple os an open source 64-bit operating system designed to be the
+Temple os 一个开源的 64 位操作系统，旨在成为
+
+2
+00:00:04,560 --> 00:00:09,440
+third temple prophesized by the bible it was created in 2005 by terry davis an
+圣经预言的第三座神殿。它是由特里戴维斯于 2005 年创建的，他是一位
+
+3
+00:00:09,440 --> 00:00:12,880
+exceptionally talented programmer diagnosed with schizophrenia he wrote
+才华横溢的程序员，被诊断患有精神分裂症，他
+
+4
+00:00:12,880 --> 00:00:16,240
+the entire operating system himself at his parents house in las vegas which
+自己在拉斯维加斯的父母家中编写了整个操作系统。
+
+5
+00:00:16,240 --> 00:00:20,880
+included a bootloader kernel window manager 3d graphics library and multiple
+包括一个引导加载程序内核窗口管理器 3d 图形库和多个
+
+6
+00:00:20,880 --> 00:00:24,720
+games all powered by his own compiler and custom programming language called
+游戏，所有这些都由他自己的编译器和称为
+
+7
+00:00:24,720 --> 00:00:29,760
+holy c amazingly it all fits in under 100 000 lines of code at 1.4 megabytes
+神圣 c 的自定义
+
+8
+00:00:29,760 --> 00:00:33,440
+just as god intended he believed he was god's chosen programmer and implemented
+编程语言提供支持 并实现
+
+9
+00:00:33,440 --> 00:00:37,360
+features described as a modern day way of speaking in tongues it renders
+了被描述为现代语言方式的功能 它
+
+10
+00:00:37,360 --> 00:00:42,480
+graphics at 640x480 resolution limited to only 16 colors the underlying
+以 640x480 的分辨率渲染图形，仅限于 16 种颜色 基础
+
+11
+00:00:42,480 --> 00:00:46,480
+language holy c resembles c or c plus plus but has functions that can be
+语言 圣 c 类似于 c 或 c plusplus，但具有可以在
+
+12
+00:00:46,480 --> 00:00:50,559
+invoked without parentheses or arguments and uses just in time compilation which
+没有括号或参数的情况下调用的函数，并且仅用于 时间编译，这
+
+13
+00:00:50,559 --> 00:00:53,920
+means it doubles as a shell language that can be executed directly from the
+意味着它可以兼作一种可以直接执行的 shell 语言 m
+
+14
+00:00:53,920 --> 00:00:58,000
+terminal unlike other operating systems like linux or windows it's ring zero
+终端与 linux 或 windows 等其他操作系统不同，它仅为零环
+
+15
+00:00:58,000 --> 00:01:01,680
+only which means everything happens directly in the kernel including user
+，这意味着一切都直接发生在内核中，包括用户
+
+16
+00:01:01,680 --> 00:01:05,040
+programs you have complete control over the operating system source code and
+程序，您可以完全控制操作系统源代码和
+
+17
+00:01:05,040 --> 00:01:08,640
+hardware that may not seem very safe but it's the way it is because it's fun to
+硬件，这可能看起来不是很安全，但它就是这样 因为上手很有趣，所以
+
+18
+00:01:08,640 --> 00:01:12,479
+get started you'll first want to download the iso file from the temple os
+您首先要从 Temple os 网站下载 iso 文件，然后
+
+19
+00:01:12,479 --> 00:01:16,320
+website from there use a tool like virtualbox configured for a 64-bit
+使用为 64 位操作系统配置的 virtualbox 之类的工具
+
+20
+00:01:16,320 --> 00:01:20,479
+operating system that boots this file on startup it creates a single immortal
+，在启动时启动该文件，它会创建一个
+
+21
+00:01:20,479 --> 00:01:24,159
+task named adam it's the father of every other task just like in the book of
+名为 adam 的不朽任务 它是所有其他任务之父，就像在
+
+22
+00:01:24,159 --> 00:01:28,159
+genesis it can also take advantage of multiple cpu cores where each core gets
+创世记中一样，它还可以利用多个 cpu 核心，每个核心一旦进入其中，就会获得
+
+23
+00:01:28,159 --> 00:01:32,159
+its own immortal set task once inside you can take the tour or immediately
+自己的不朽设置任务，您可以进行游览或
+
+24
+00:01:32,159 --> 00:01:36,400
+start speaking in tongues by hitting f7 which generates a pseudo-random word
+通过按 f7 立即开始说方言，生成 一个来自上帝的伪随机词
+
+25
+00:01:36,400 --> 00:01:41,040
+from god you can also have god draw you a picture with shift f6 to perform a god
+你也可以让上帝用 shift f6 给你画一张照片来执行一个
+
+26
+00:01:41,040 --> 00:01:45,520
+doodle that was fun but now use ctrl m to open up the personal menu from here
+有趣但现在使用 ctrlm 打开的上帝涂鸦 从这里的个人菜单
+
+27
+00:01:45,520 --> 00:01:49,920
+you'll find a huge variety of games like 3d first person shooters 2d strategy
+你会发现各种各样的游戏，比如3d 第一人称射击游戏 2d 战略
+
+28
+00:01:49,920 --> 00:01:54,000
+games and simulations like after egypt where you play the role of moses and
+游戏和模拟游戏，比如在埃及之后你扮演摩西的角色，
+
+29
+00:01:54,000 --> 00:01:58,000
+also has utilities to manage your finances and make music remember this is
+还有实用程序来管理你的财务和制作音乐，记住这
+
+30
+00:01:58,000 --> 00:02:01,520
+all made possible by a custom graphics library if you're not happy with the way
+一切都是制作的如果您对它的工作方式不满意，可以通过自定义图形库进行操作，
+
+31
+00:02:01,520 --> 00:02:05,520
+it works simply open up the source code make some modifications and holy c
+只需打开源代码进行一些修改，然后神圣的 c
+
+32
+00:02:05,520 --> 00:02:08,959
+reboot and enjoy every line of code is right at your fingertips thanks to the
+重新启动并享受每一行代码都在您的指尖，这要归功于
+
+33
+00:02:08,959 --> 00:02:12,560
+red sea file system the end result is one of the most complex pieces of
+红海文件系统结束 结果是
+
+34
+00:02:12,560 --> 00:02:16,000
+software ever written by a solo developer but there's a lot more to this
+由一个单独的开发人员编写的最复杂的软件之一，但这个故事还有更多内容
+
+35
+00:02:16,000 --> 00:02:20,879
+story and sadly terry davis passed away in 2018 at the age of 48. he was both a
+，可悲的是，特里戴维斯于 2018 年去世，享年 48 岁。他既是一位
+
+36
+00:02:20,879 --> 00:02:24,319
+highly controversial internet personality and genius programmer this
+极具争议的互联网名人，也是一位天才程序员。
+
+37
+00:02:24,319 --> 00:02:28,000
+has been temple os in 100 seconds hit the like button if you want to see more
+100 秒内已经是 Templeos 如果你想看更多
+
+38
+00:02:28,000 --> 00:02:31,440
+weird videos like this thanks for watching and i will see you in the next
+像这样的奇怪视频，请按赞按钮，谢谢观看，我会在下一个看到你
+
+39
+00:02:31,440 --> 00:02:34,080
+one

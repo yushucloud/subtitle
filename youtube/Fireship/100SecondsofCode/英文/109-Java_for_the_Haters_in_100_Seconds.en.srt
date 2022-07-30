@@ -1,0 +1,375 @@
+1
+00:00:00,240 --> 00:00:02,320
+java a boilerplate driven language
+
+
+2
+00:00:02,320 --> 00:00:03,919
+designed for writing verbose
+
+
+3
+00:00:03,919 --> 00:00:06,319
+object-oriented instant legacy code it
+
+
+4
+00:00:06,319 --> 00:00:08,000
+came into being thanks to a relentless
+
+
+5
+00:00:08,000 --> 00:00:10,240
+hype campaign by sun microsystems in the
+
+
+6
+00:00:10,240 --> 00:00:11,920
+middle of the dot-com bubble it's kind
+
+
+7
+00:00:11,920 --> 00:00:13,280
+of like the macaulay culkin of
+
+
+8
+00:00:13,280 --> 00:00:14,880
+programming languages it was originally
+
+
+9
+00:00:14,880 --> 00:00:16,880
+invented to create a better tv remote
+
+
+10
+00:00:16,880 --> 00:00:18,480
+than it officially launched for public
+
+
+11
+00:00:18,480 --> 00:00:20,720
+use in 1996 and nobody's bothered to
+
+
+12
+00:00:20,720 --> 00:00:22,720
+update the website ever since regardless
+
+
+13
+00:00:22,720 --> 00:00:24,320
+java has been running on 3 billion
+
+
+14
+00:00:24,320 --> 00:00:26,640
+devices for the last 25 years most of
+
+
+15
+00:00:26,640 --> 00:00:28,720
+which are blu-ray players its motto is
+
+
+16
+00:00:28,720 --> 00:00:30,240
+right once run everywhere which
+
+
+17
+00:00:30,240 --> 00:00:31,920
+developers know actually means write
+
+
+18
+00:00:31,920 --> 00:00:34,239
+once debug everywhere remember the log4j
+
+
+19
+00:00:34,239 --> 00:00:36,399
+fiasco you can blame java for that one
+
+
+20
+00:00:36,399 --> 00:00:38,480
+still java has a great mascot a little
+
+
+21
+00:00:38,480 --> 00:00:40,079
+one-eyed monster named duke and people
+
+
+22
+00:00:40,079 --> 00:00:41,520
+love to hate it so much that it's
+
+
+23
+00:00:41,520 --> 00:00:43,440
+inspired an entire class of programming
+
+
+24
+00:00:43,440 --> 00:00:45,440
+languages designed to make java better
+
+
+25
+00:00:45,440 --> 00:00:47,520
+like groovy closure scala and kotlin
+
+
+26
+00:00:47,520 --> 00:00:49,280
+just to name a few unfortunately though
+
+
+27
+00:00:49,280 --> 00:00:51,440
+there is no cure java also inspired
+
+
+28
+00:00:51,440 --> 00:00:53,120
+javascript a language that has taken
+
+
+29
+00:00:53,120 --> 00:00:55,120
+developers 25 years to make halfway
+
+
+30
+00:00:55,120 --> 00:00:57,199
+decent and one time java even tried to
+
+
+31
+00:00:57,199 --> 00:00:59,280
+steal javascript's job with applets on
+
+
+32
+00:00:59,280 --> 00:01:01,440
+the web luckily applet sucks so bad they
+
+
+33
+00:01:01,440 --> 00:01:03,840
+made html css and javascript look like a
+
+
+34
+00:01:03,840 --> 00:01:06,000
+good abstraction for building uis now
+
+
+35
+00:01:06,000 --> 00:01:07,600
+when your company adopts java you'll
+
+
+36
+00:01:07,600 --> 00:01:09,439
+also want to adopt oracle database so
+
+
+37
+00:01:09,439 --> 00:01:10,960
+you can spend the next 20 years talking
+
+
+38
+00:01:10,960 --> 00:01:12,720
+about migrating to postgres while paying
+
+
+39
+00:01:12,720 --> 00:01:14,320
+an ungodly amount of money that will be
+
+
+40
+00:01:14,320 --> 00:01:16,159
+directly reinvested into these awesome
+
+
+41
+00:01:16,159 --> 00:01:18,000
+sailing yachts to get started set aside
+
+
+42
+00:01:18,000 --> 00:01:20,320
+a few days to install the jdk jre and
+
+
+43
+00:01:20,320 --> 00:01:22,000
+jvm on your machine it's also
+
+
+44
+00:01:22,000 --> 00:01:23,360
+recommended that you have a vertical
+
+
+45
+00:01:23,360 --> 00:01:24,960
+monitor to read the error logs that are
+
+
+46
+00:01:24,960 --> 00:01:26,880
+coming now before writing any code say
+
+
+47
+00:01:26,880 --> 00:01:29,040
+this with me public static void main
+
+
+48
+00:01:29,040 --> 00:01:31,200
+string args public static void main
+
+
+49
+00:01:31,200 --> 00:01:33,360
+string args now to say hello world
+
+
+50
+00:01:33,360 --> 00:01:35,600
+create a class java forces you into
+
+
+51
+00:01:35,600 --> 00:01:37,200
+object oriented programming which means
+
+
+52
+00:01:37,200 --> 00:01:38,560
+you'll want to read design patterns
+
+
+53
+00:01:38,560 --> 00:01:40,479
+cover to cover before you go any further
+
+
+54
+00:01:40,479 --> 00:01:42,079
+now it's time for your public static
+
+
+55
+00:01:42,079 --> 00:01:45,159
+void main string args and then finally
+
+
+56
+00:01:45,159 --> 00:01:47,360
+system.out.printline with hello world as
+
+
+57
+00:01:47,360 --> 00:01:48,720
+you can see we get a lot more
+
+
+58
+00:01:48,720 --> 00:01:50,320
+boilerplate than something like python
+
+
+59
+00:01:50,320 --> 00:01:52,320
+which is a feature and definitely not a
+
+
+60
+00:01:52,320 --> 00:01:53,759
+fundamental design flaw or anything
+
+
+61
+00:01:53,759 --> 00:01:55,280
+you'll want to start by writing one
+
+
+62
+00:01:55,280 --> 00:01:57,280
+giant bloated class then when your boss
+
+
+63
+00:01:57,280 --> 00:01:59,439
+complains break it into a hierarchy of
+
+
+64
+00:01:59,439 --> 00:02:01,280
+deeply nested subclasses that will make
+
+
+65
+00:02:01,280 --> 00:02:03,360
+it impossible to refactor the next step
+
+
+66
+00:02:03,360 --> 00:02:05,439
+is to ragequit from your job life is way
+
+
+67
+00:02:05,439 --> 00:02:07,200
+too short to be coding in java man and
+
+
+68
+00:02:07,200 --> 00:02:08,399
+with that i think i've lost enough
+
+
+69
+00:02:08,399 --> 00:02:10,479
+subscribers for one video there are only
+
+
+70
+00:02:10,479 --> 00:02:12,080
+two kinds of languages the ones people
+
+
+71
+00:02:12,080 --> 00:02:14,080
+complain about and the ones nobody uses
+
+
+72
+00:02:14,080 --> 00:02:15,920
+whether you love it or hate it jabba can
+
+
+73
+00:02:15,920 --> 00:02:17,840
+get stuff done and for that it deserves
+
+
+74
+00:02:17,840 --> 00:02:19,680
+our respect thanks for watching and i
+
+
+75
+00:02:19,680 --> 00:02:22,959
+will see you in the next one
+
+

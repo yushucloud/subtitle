@@ -1,0 +1,335 @@
+1
+00:00:00,080 --> 00:00:02,000
+brain a minimal esoteric
+
+
+2
+00:00:02,000 --> 00:00:03,840
+programming language designed to make
+
+
+3
+00:00:03,840 --> 00:00:05,839
+your brain hurt it's turing complete but
+
+
+4
+00:00:05,839 --> 00:00:07,839
+not designed to build actual software
+
+
+5
+00:00:07,839 --> 00:00:09,360
+it's more like a work of art that
+
+
+6
+00:00:09,360 --> 00:00:11,120
+challenges the status quo it was created
+
+
+7
+00:00:11,120 --> 00:00:13,759
+in 1993 by swiss physics student urban
+
+
+8
+00:00:13,759 --> 00:00:15,280
+mueller where the goal was to create a
+
+
+9
+00:00:15,280 --> 00:00:16,880
+language with the smallest possible
+
+
+10
+00:00:16,880 --> 00:00:19,279
+compiler it was built for the amiga 2.0
+
+
+11
+00:00:19,279 --> 00:00:21,199
+operating system and the compiler weighs
+
+
+12
+00:00:21,199 --> 00:00:24,080
+in at under 200 bytes a brain program
+
+
+13
+00:00:24,080 --> 00:00:25,840
+starts with a 30 000 byte one
+
+
+14
+00:00:25,840 --> 00:00:27,439
+dimensional array all values are
+
+
+15
+00:00:27,439 --> 00:00:29,199
+initialized to zero then it provides a
+
+
+16
+00:00:29,199 --> 00:00:31,199
+movable pointer that you can manipulate
+
+
+17
+00:00:31,199 --> 00:00:33,120
+with eight different commands use angle
+
+
+18
+00:00:33,120 --> 00:00:34,719
+brackets to move the pointer left or
+
+
+19
+00:00:34,719 --> 00:00:36,640
+right by one cell at a time then
+
+
+20
+00:00:36,640 --> 00:00:38,480
+increment or decrement the value in a
+
+
+21
+00:00:38,480 --> 00:00:41,200
+cell using plus or minus use a period to
+
+
+22
+00:00:41,200 --> 00:00:42,879
+output the byte at the pointer's current
+
+
+23
+00:00:42,879 --> 00:00:45,360
+location or use a comma to accept input
+
+
+24
+00:00:45,360 --> 00:00:46,960
+and store it at the pointer's current
+
+
+25
+00:00:46,960 --> 00:00:49,280
+location and finally use opening and
+
+
+26
+00:00:49,280 --> 00:00:51,360
+closing brackets to create a loop notice
+
+
+27
+00:00:51,360 --> 00:00:53,120
+how brain fog doesn't require silly
+
+
+28
+00:00:53,120 --> 00:00:54,960
+things like variables functions and
+
+
+29
+00:00:54,960 --> 00:00:56,879
+classes to get started with brain
+
+
+30
+00:00:56,879 --> 00:00:58,879
+delete your operating system and install
+
+
+31
+00:00:58,879 --> 00:01:01,920
+amiga os then create a file ending in bf
+
+
+32
+00:01:01,920 --> 00:01:03,760
+which stands for brain fog any
+
+
+33
+00:01:03,760 --> 00:01:05,040
+characters that are not the aid i
+
+
+34
+00:01:05,040 --> 00:01:06,960
+mentioned previously will be ignored as
+
+
+35
+00:01:06,960 --> 00:01:09,040
+a comment at this point we have an array
+
+
+36
+00:01:09,040 --> 00:01:10,880
+with thirty thousand eight bit numbers
+
+
+37
+00:01:10,880 --> 00:01:13,119
+all set to 0. to say hi mom we'll need
+
+
+38
+00:01:13,119 --> 00:01:15,119
+to set each number to its corresponding
+
+
+39
+00:01:15,119 --> 00:01:16,720
+ascii character we can increment the
+
+
+40
+00:01:16,720 --> 00:01:18,640
+first cell then enter a loop with an
+
+
+41
+00:01:18,640 --> 00:01:20,479
+opening bracket for each iteration of
+
+
+42
+00:01:20,479 --> 00:01:22,159
+the loop we'll decrement that current
+
+
+43
+00:01:22,159 --> 00:01:24,560
+cell by 5 then use an angle bracket to
+
+
+44
+00:01:24,560 --> 00:01:26,000
+move one cell to the right we'll
+
+
+45
+00:01:26,000 --> 00:01:27,759
+increment that cell by three then move
+
+
+46
+00:01:27,759 --> 00:01:29,600
+back to the left and close the loop the
+
+
+47
+00:01:29,600 --> 00:01:31,200
+loop will continue until the original
+
+
+48
+00:01:31,200 --> 00:01:33,040
+cell goes back to zero at which point it
+
+
+49
+00:01:33,040 --> 00:01:35,759
+will exit we now have a value of 103 at
+
+
+50
+00:01:35,759 --> 00:01:37,600
+index one we can move the pointer to it
+
+
+51
+00:01:37,600 --> 00:01:40,320
+increment it to 104 then use a period to
+
+
+52
+00:01:40,320 --> 00:01:42,079
+output it that corresponds to the letter
+
+
+53
+00:01:42,079 --> 00:01:44,159
+h and ascii we can increment it again to
+
+
+54
+00:01:44,159 --> 00:01:46,560
+get 105 which corresponds to the letter
+
+
+55
+00:01:46,560 --> 00:01:48,159
+i now we continue this process of
+
+
+56
+00:01:48,159 --> 00:01:50,079
+manipulating memory like caveman until
+
+
+57
+00:01:50,079 --> 00:01:51,520
+we output all the characters that we
+
+
+58
+00:01:51,520 --> 00:01:53,040
+need now to run your code use
+
+
+59
+00:01:53,040 --> 00:01:55,200
+right-click copy and paste it into one
+
+
+60
+00:01:55,200 --> 00:01:56,799
+of the many online interpreters
+
+
+61
+00:01:56,799 --> 00:01:58,799
+congratulations you just said hi to your
+
+
+62
+00:01:58,799 --> 00:02:00,640
+mom and brain this has been brain
+
+
+63
+00:02:00,640 --> 00:02:02,560
+in 100 seconds if you want to see
+
+
+64
+00:02:02,560 --> 00:02:04,399
+more brain content on this channel
+
+
+65
+00:02:04,399 --> 00:02:05,840
+make sure to hit the like button and
+
+
+66
+00:02:05,840 --> 00:02:07,920
+subscribe thanks for watching and i will
+
+
+67
+00:02:07,920 --> 00:02:11,679
+see you in the next one
+
+

@@ -1,0 +1,539 @@
+1
+00:00:00,000 --> 00:00:04,319
+what is this in JavaScript it's a keyword that references another value
+JavaScript 中的 this 是什么它是一个引用另一个值的关键字，
+
+2
+00:00:04,319 --> 00:00:08,849
+usually an object that represents the current execution context okay but what
+通常是一个表示当前执行上下文的对象，可以，但是
+
+3
+00:00:08,849 --> 00:00:12,540
+the hell does execution context mean it either refers to your global environment
+执行上下文到底意味着什么，它指的是你的全局环境，
+
+4
+00:00:12,540 --> 00:00:16,800
+like the browser or nodejs for when used inside a function it references the
+如浏览器或 nodejs，当在它引用的函数中使用时
+
+5
+00:00:16,800 --> 00:00:19,170
+object calling that function at a given time
+在给定时间调用该函数的对象
+
+6
+00:00:19,170 --> 00:00:22,769
+open up the browser and run console like this you get the window object back
+打开浏览器并像这样运行控制台，您将返回窗口对象，
+
+7
+00:00:22,769 --> 00:00:26,400
+because you're in the global execution context doing the same thing and nodejs
+因为您在全局执行上下文中执行相同的操作
+
+8
+00:00:26,400 --> 00:00:29,460
+from the command line gives you the global object back things get
+，并且命令行中的 nodejs 为您提供了全局对象返回的东西
+
+9
+00:00:29,460 --> 00:00:32,820
+interesting when we talk about function context define a function and then
+当我们谈论函数上下文定义一个函数然后
+
+10
+00:00:32,820 --> 00:00:36,210
+console.log this inside the function body now if we run this function in the
+console.log this 现在在函数体中变得有趣如果我们在
+
+11
+00:00:36,210 --> 00:00:39,450
+browser we'll still get the window object back that's because our global
+浏览器中运行这个函数我们仍然会得到窗口对象，因为我们的全局
+
+12
+00:00:39,450 --> 00:00:43,620
+context is executing the function now let's take that same function and use it
+上下文现在正在执行函数让我们
+
+13
+00:00:43,620 --> 00:00:46,980
+as a property on an object when we call the function on this object it
+当我们在这个对象上调用函数时，它
+
+14
+00:00:46,980 --> 00:00:51,300
+references this object now sometimes you might have a function and an object
+引用了这个对象n 有时您可能有一个函数和一个对象
+
+15
+00:00:51,300 --> 00:00:54,780
+defined separately you can tell the function to use some other object as its
+分别定义，您可以使用函数绑定方法告诉函数使用其他对象作为其
+
+16
+00:00:54,780 --> 00:00:58,170
+this value using the functions bind method the result is a new function
+this 值结果是一个新函数
+
+17
+00:00:58,170 --> 00:01:02,219
+where any references to this inside the function will point to the object that
+，其中函数内部对 this 的任何引用都将指向该对象
+
+18
+00:01:02,219 --> 00:01:06,060
+you pass as the argument here but where you'll see this used most often is in
+您在此处作为参数传递，但您会看到 this 最常
+
+19
+00:01:06,060 --> 00:01:09,689
+constructor functions using the new keyword the new keyword allows you to
+使用的地方是在使用 new关键字的构造函数中 new 关键字允许您
+
+20
+00:01:09,689 --> 00:01:13,950
+call a function that creates an object where this is automatically bound to
+调用创建对象的函数，其中 this 自动绑定
+
+21
+00:01:13,950 --> 00:01:17,250
+that newly created object and that means you can create properties and methods
+到新创建的对象，并且 意味着您可以
+
+22
+00:01:17,250 --> 00:01:21,509
+like many other object-oriented programming languages for example we can
+像许多其他面向对象的编程语言一样创建属性和方法，例如，我们可以
+
+23
+00:01:21,509 --> 00:01:25,770
+define a property like this name then we can define a method like say hello and
+定义一个像这个名称这样的属性，然后我们可以定义一个像 say hello 这样的方法，并
+
+24
+00:01:25,770 --> 00:01:29,460
+use this to reference the name property on this object and that gives us a
+使用它来引用这个对象上的 name 属性，这给了我们一个
+
+25
+00:01:29,460 --> 00:01:32,909
+convenient way to keep the data and functionality of an object tightly
+将对象的数据和功能紧密
+
+26
+00:01:32,909 --> 00:01:36,180
+coupled together but there's a lot more to this than meets the eye so keep
+耦合在一起的便捷方法，但还有很多比看起来更多的东西，所以请继续
+
+27
+00:01:36,180 --> 00:01:39,479
+watching if you want to go beyond 100 seconds and learn some more advanced and
+关注，如果 你想超过 100秒并学习一些更高级和更
+
+28
+00:01:39,479 --> 00:01:42,540
+weird aspects of this but first make sure to hit the like button and
+奇怪的方面，但首先请确保点击喜欢按钮并
+
+29
+00:01:42,540 --> 00:01:44,630
+subscribe
+订阅
+
+30
+00:01:46,860 --> 00:01:51,420
+oh hey there thanks for sticking around this is a special bonus segment where we
+哦，嘿，谢谢你的坚持这是一个特殊的奖励部分，我们
+
+31
+00:01:51,420 --> 00:01:55,230
+can slow things down and take a deeper dive into JavaScript this which gives
+可以放慢速度并采取
+
+32
+00:01:55,230 --> 00:01:58,380
+you plenty of rope to hang yourself with if you like this extra segment let me
+如果你喜欢这个额外的部分
+
+33
+00:01:58,380 --> 00:02:01,650
+know in the comments because there's always room to go beyond 100 seconds
+，请在评论中告诉我，因为在接下来的几分钟内总是有超过 100 秒的空间，
+
+34
+00:02:01,650 --> 00:02:05,070
+over the next few minutes we'll look at some caveats of this look at the bind
+我们将看看这方面的一些警告 看看绑定
+
+35
+00:02:05,070 --> 00:02:08,790
+call and apply methods and look at some more practical examples of object
+调用和应用方法，看看一些更实用的
+
+36
+00:02:08,790 --> 00:02:12,780
+oriented and functional programming patterns so when I'm writing JavaScript
+面向对象和函数式编程模式的例子，所以当我写 JavaScript
+
+37
+00:02:12,780 --> 00:02:17,250
+code and I see this I always try to ask myself what is this but unfortunately if
+代码时，我总是试着问自己这是什么，但不幸
+
+38
+00:02:17,250 --> 00:02:20,550
+the answer is not very clear because this in JavaScript works differently
+的是，如果答案不是 非常清楚，因为这在 JavaScript 中的工作方式
+
+39
+00:02:20,550 --> 00:02:23,520
+than a lot of other languages and it just seems completely weird if you're
+与许多其他语言不同，如果您现在是编程新手，这看起来完全很奇怪，这是
+
+40
+00:02:23,520 --> 00:02:26,910
+brand new to programming now here's caveat number one strict mode
+第一个警告 t 模式
+
+41
+00:02:26,910 --> 00:02:30,870
+and non strict mode back in the earlier days of JavaScript there were certain
+和非严格模式早在JavaScript 的早期
+
+42
+00:02:30,870 --> 00:02:34,709
+features of the language that sucked and so with es5 they introduced strict
+，该语言的某些特性就很糟糕，所以在 es5 中，他们引入了严格
+
+43
+00:02:34,709 --> 00:02:38,040
+mode to turn some of those features off for this video I'm going to assume that
+模式来关闭这个视频中的一些特性，我假设
+
+44
+00:02:38,040 --> 00:02:40,290
+you're in strict mode if you're doing front-end development
+你是 在严格模式下，如果你在做前端开发，
+
+45
+00:02:40,290 --> 00:02:43,140
+you're probably in strict mode without even realizing it but it's important to
+你可能在没有意识到的情况下处于严格模式，但重要的是要
+
+46
+00:02:43,140 --> 00:02:46,140
+note that this behaves slightly different if you're not in strict mode
+注意，如果你不在严格模式下，这会略有不同
+
+47
+00:02:46,140 --> 00:02:49,500
+one of the most important differences is that in strict mode if you call a
+，最重要的区别之一是 严格模式，如果您
+
+48
+00:02:49,500 --> 00:02:53,640
+function in the global context this will be undefined instead of referring to
+在全局上下文中调用函数，这将是未定义的，而不是引用
+
+49
+00:02:53,640 --> 00:02:57,750
+window or global and node this usually isn't a big deal because in most code
+窗口或全局和节点，这通常没什么大不了的，因为在大多数代码中，
+
+50
+00:02:57,750 --> 00:03:01,620
+you'll just reference window or global directly and not use this as a reference
+您只会直接引用窗口或全局，而不是将其用作
+
+51
+00:03:01,620 --> 00:03:05,459
+to those objects now that's one thing to keep in mind but I think the single most
+现在要记住对这些对象的引用，但我认为
+
+52
+00:03:05,459 --> 00:03:09,450
+important caveat to understand what this is how it works with arrow functions as
+了解这是如何与箭头函数一起工作的一个最重要的警告，正如
+
+53
+00:03:09,450 --> 00:03:12,989
+you can see here we have an object on the first object property we have a
+您在此处看到的，我们在第一个 ob 上有一个对象ject 属性 我们有一个
+
+54
+00:03:12,989 --> 00:03:16,320
+function defined with the function keyword it's the same example that I
+用 function 关键字定义的函数它与我
+
+55
+00:03:16,320 --> 00:03:19,830
+showed you at the beginning of this video this when called by the object
+在本视频开头向您展示的示例相同
+
+56
+00:03:19,830 --> 00:03:23,220
+references the object that called that function now if we write a second
+
+
+57
+00:03:23,220 --> 00:03:26,310
+property and use an arrow function you'll notice this is now the global
+您会注意到 this 现在是全局
+
+58
+00:03:26,310 --> 00:03:30,810
+object or undefined in strict mode in an arrow function this is based on the
+对象，或者在箭头函数中的严格模式下未定义this 基于
+
+59
+00:03:30,810 --> 00:03:35,280
+enclosing objects execution context which in this example would be global in
+封闭对象执行上下文，在此示例中它将是全局的，
+
+60
+00:03:35,280 --> 00:03:38,519
+other words it doesn't have its own binding to this so it looks up to its
+换句话说，它没有自己的绑定 this 所以它 查找
+
+61
+00:03:38,519 --> 00:03:42,510
+parent and closing object and uses that this value if you've ever used a BAS
+其父对象和关闭对象并使用该值，如果您曾经使用过 BAS，
+
+62
+00:03:42,510 --> 00:03:45,600
+you'll notice in the documentation they tell you to use a regular function
+您会在文档中注意到他们告诉您使用常规函数
+
+63
+00:03:45,600 --> 00:03:48,660
+keyword as opposed to an arrow function and that's because they're not really
+关键字而不是箭头函数，这是因为它们不是 非常
+
+64
+00:03:48,660 --> 00:03:52,230
+suitable for methods because of the way they interact with this so now that you
+适合方法，因为它们与 this 交互的方式，所以现在你
+
+65
+00:03:52,230 --> 00:03:55,319
+know some of the caveats we're going to look at three prototype methods that
+知道了一些注意事项，我们将看看三个原型方法，它们
+
+66
+00:03:55,319 --> 00:03:59,790
+live on a function object bind call and apply let's start by looking at bind
+存在于函数对象绑定调用和应用 让我们从看看 bind 开始，
+
+67
+00:03:59,790 --> 00:04:01,620
+because I think you'll come across this one most
+因为我想你会经常遇到这个
+
+68
+00:04:01,620 --> 00:04:05,580
+often let's imagine we have a function and an object and these things are
+让我们想象我们有一个函数和一个对象，这些东西是
+
+69
+00:04:05,580 --> 00:04:09,360
+immutable meaning we can't change them the function reference is this inside
+不可变的，这意味着我们不能改变它们函数引用是 this
+
+70
+00:04:09,360 --> 00:04:12,810
+the body which in this case would be the global context but we wanted to use this
+在 body 里面 this  case 将是全局上下文，但我们想使用这个
+
+71
+00:04:12,810 --> 00:04:17,790
+other object as this we can create a new function that's bound to this object by
+其他对象，因为我们可以通过
+
+72
+00:04:17,790 --> 00:04:21,450
+calling bind on the original function and passing the object as the argument
+在原始函数上调用 bind并
+
+73
+00:04:21,450 --> 00:04:25,230
+when we execute this function you'll notice that this now refers to the
+在执行此函数时将对象作为参数传递来创建一个绑定到该对象的新函数你会注意到 this 现在引用了
+
+74
+00:04:25,230 --> 00:04:29,910
+object we passed in so bind gives you a way to explicitly set this on a function
+我们传入的对象，因此 bind 为您提供了一种在函数上显式设置 this 的方法，
+
+75
+00:04:29,910 --> 00:04:33,150
+now in other cases you might want to call a function with a different this
+在其他情况下，您可能希望使用不同的 this 上下文调用函数，
+
+76
+00:04:33,150 --> 00:04:37,260
+context but not create a whole brand-new function and for that you can use call
+但不创建一个全新的函数 您可以
+
+77
+00:04:37,260 --> 00:04:41,430
+or apply in this example we use the call method on the function and the first
+在此示例中使用 call 或 apply 我们在函数上使用 call 方法，它的第一个
+
+78
+00:04:41,430 --> 00:04:45,090
+argument to it is it's this context that you want to set this will call the
+参数是您要设置的 this 上下文 this 将立即调用该
+
+79
+00:04:45,090 --> 00:04:48,420
+function immediately and you can pass additional arguments to it as well for
+函数，您可以传递ad 它
+
+80
+00:04:48,420 --> 00:04:52,650
+the arguments that go to that function and lastly I'll point out that you also
+的其他参数以及去往该函数的参数，最后我会指出，您
+
+81
+00:04:52,650 --> 00:04:56,430
+have the apply method which is identical to call the only difference is that the
+还有与 call 相同的 apply 方法，唯一的区别是
+
+82
+00:04:56,430 --> 00:05:00,420
+second argument is an array of arguments a good way to remember the difference is
+第二个参数是一个参数数组，这是一个很好的方法 请记住，区别
+
+83
+00:05:00,420 --> 00:05:05,790
+to thank a for array or apply or C for comma or call call is more common in
+在于感谢 a for array 或 apply 或 C forcomma or call call 在现代 JavaScript 中更常见，
+
+84
+00:05:05,790 --> 00:05:09,120
+modern JavaScript because you can use the spread syntax on the arguments when
+因为您可以在使用数组时对参数使用扩展语法，
+
+85
+00:05:09,120 --> 00:05:12,090
+you're working with an array but the bottom line is that they both serve the
+但最重要的是它们都
+
+86
+00:05:12,090 --> 00:05:16,380
+same purpose to call a function with an explicit this context now it's worth
+使用显式 this 上下文调用函数的目的是相同的，现在
+
+87
+00:05:16,380 --> 00:05:19,980
+noting that you tend to encounter this much more often in classical
+值得注意的是，在经典
+
+88
+00:05:19,980 --> 00:05:23,460
+object-oriented programming versus functional programming both of
+的面向对象编程与函数式编程中，您往往会更频繁地遇到这种情况，
+
+89
+00:05:23,460 --> 00:05:27,720
+which are programming paradigms that you can use in JavaScript for example one of
+这两者都是您可以在 JavaScript 中使用的编程范式，例如一个
+
+90
+00:05:27,720 --> 00:05:30,990
+the big motivations of react to use functional components over class-based
+react 使用函数式组件而不是基于类的
+
+91
+00:05:30,990 --> 00:05:34,170
+components was so that developers wouldn't have to use this in their code
+组件的主要动机之一是开发人员不必在他们的代码中使用它，
+
+92
+00:05:34,170 --> 00:05:37,050
+because it gets even more complicated when you have a big framework with a
+因为它甚至更当您个人拥有一个包含
+
+93
+00:05:37,050 --> 00:05:40,860
+bunch of dependencies and components personally though I find this to be very
+大量依赖项和组件的大型框架时会变得很复杂，尽管我发现
+
+94
+00:05:40,860 --> 00:05:44,250
+straightforward when working with JavaScript constructor functions let's
+在使用JavaScript 构造函数时这非常简单让我们
+
+95
+00:05:44,250 --> 00:05:47,370
+imagine we wanted to create a horse class when this function is called with
+想象一下，当使用它创建的新关键字调用此函数时，我们想创建一个马类
+
+96
+00:05:47,370 --> 00:05:51,120
+a new keyword it creates a new object so we can create methods and properties on
+一个新对象，因此我们可以通过引用 this 在这些对象上创建方法和属性，
+
+97
+00:05:51,120 --> 00:05:54,780
+those objects by making a reference to this so this works much more like a
+因此这更像是 Java Ruby Python
+
+98
+00:05:54,780 --> 00:05:59,160
+class definition in other languages like Java Ruby Python and so on and
+等其他语言中的类定义，而
+
+99
+00:05:59,160 --> 00:06:02,970
+JavaScript actually provides syntactic sugar for this whole process using the
+JavaScript 实际上为整个过程提供了语法糖，使用
+
+100
+00:06:02,970 --> 00:06:07,110
+class keyword but we'll save that one for a future 100 second video because
+class 关键字，但我们会将其保存到未来 100 秒的视频中，
+
+101
+00:06:07,110 --> 00:06:09,720
+there's one more important thing that you should know about this and that's a
+因为您应该了解另一件更重要的事情，那
+
+102
+00:06:09,720 --> 00:06:13,050
+thing called method chaining you'll see a lot of JavaScript libraries that allow
+就是方法链接，您会看到很多 JavaScript 库允许
+
+103
+00:06:13,050 --> 00:06:15,600
+you to chain method together like this always keeping a
+您将方法链接在一起 像这样总是保持
+
+104
+00:06:15,600 --> 00:06:18,720
+reference to the original object so how do you change methods together in
+对原始对象的引用，所以你如何在 JavaScript 中一起更改方法，
+
+105
+00:06:18,720 --> 00:06:22,170
+JavaScript well you simply return this from your method and now you can chain
+你很简单从你的方法中返回这个，现在你可以
+
+106
+00:06:22,170 --> 00:06:25,380
+together an infinite number of method calls thanks for sticking around to go
+将无限数量的方法调用链接在一起，感谢你坚持
+
+107
+00:06:25,380 --> 00:06:29,070
+beyond 100 seconds I hope you learned something and I will see you in the next
+超过 100 秒我希望你学到了一些东西，我会在下
+
+108
+00:06:29,070 --> 00:06:39,129
+one [Music]
+一个[音乐]

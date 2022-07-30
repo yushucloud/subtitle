@@ -1,0 +1,189 @@
+1
+00:00:00,240 --> 00:00:03,919
+java a boilerplate driven language designed for writing verbose
+java 一种样板驱动的语言，设计用于编写冗长
+
+2
+00:00:03,919 --> 00:00:08,000
+object-oriented instant legacy code it came into being thanks to a relentless
+的面向对象即时遗留代码 它的出现要归功于
+
+3
+00:00:08,000 --> 00:00:11,920
+hype campaign by sun microsystems in the middle of the dot-com bubble it's kind
+sun 微系统在dot-com 泡沫中间的无情炒作它
+
+4
+00:00:11,920 --> 00:00:14,880
+of like the macaulay culkin of programming languages it was originally
+有点像最初的编程语言的 macaulay culkin
+
+5
+00:00:14,880 --> 00:00:18,480
+invented to create a better tv remote than it officially launched for public
+发明了一个比它在 1996 年正式推出供公众使用
+
+6
+00:00:18,480 --> 00:00:22,720
+use in 1996 and nobody's bothered to update the website ever since regardless
+的更好的电视遥控器，从那以后没有人费心更新网站，尽管过去
+
+7
+00:00:22,720 --> 00:00:26,640
+java has been running on 3 billion devices for the last 25 years most of
+25 年 java 已经在 30 亿台设备上运行，其中
+
+8
+00:00:26,640 --> 00:00:30,240
+which are blu-ray players its motto is right once run everywhere which
+大部分是蓝光播放器，它的座右铭是 正确的一次运行，
+
+9
+00:00:30,240 --> 00:00:34,239
+developers know actually means write once debug everywhere remember the log4j
+开发人员知道实际上意味着编写一次，到处调试记住 log4j 的
+
+10
+00:00:34,239 --> 00:00:38,480
+fiasco you can blame java for that one still java has a great mascot a little
+惨败，你可以责怪 java 一个仍然 java 有一个伟大的吉祥物，一个
+
+11
+00:00:38,480 --> 00:00:41,520
+one-eyed monster named duke and people love to hate it so much that it's
+名叫 duke 的小独眼怪物，人们非常讨厌它，以至于它
+
+12
+00:00:41,520 --> 00:00:45,440
+inspired an entire class of programming languages designed to make java better
+激发了一个 整个类的编程语言旨在使 java 更好，
+
+13
+00:00:45,440 --> 00:00:49,280
+like groovy closure scala and kotlin just to name a few unfortunately though
+比如 groovy 闭包 scala 和kotlin 只是举几个不幸的例子
+
+14
+00:00:49,280 --> 00:00:53,120
+there is no cure java also inspired javascript a language that has taken
+h 无药可救 java 也启发了javascript 一种语言，
+
+15
+00:00:53,120 --> 00:00:57,199
+developers 25 years to make halfway decent and one time java even tried to
+开发人员花了 25 年的时间才取得了一半的体面，有一次 java 甚至试图
+
+16
+00:00:57,199 --> 00:01:01,440
+steal javascript's job with applets on the web luckily applet sucks so bad they
+通过 web 上的 applet 窃取 javascript 的工作，幸运的是，applet 太糟糕了，它们
+
+17
+00:01:01,440 --> 00:01:06,000
+made html css and javascript look like a good abstraction for building uis now
+使 html css 和 javascript 看起来像现在构建 uis 的好抽象
+
+18
+00:01:06,000 --> 00:01:09,439
+when your company adopts java you'll also want to adopt oracle database so
+当您的公司采用 java 时，您还希望采用 oracle 数据库，这样
+
+19
+00:01:09,439 --> 00:01:12,720
+you can spend the next 20 years talking about migrating to postgres while paying
+您就可以在接下来的 20 年中谈论迁移到 postgres，同时
+
+20
+00:01:12,720 --> 00:01:16,159
+an ungodly amount of money that will be directly reinvested into these awesome
+支付大量资金，这些资金将直接再投资于这些令人敬畏的
+
+21
+00:01:16,159 --> 00:01:20,320
+sailing yachts to get started set aside a few days to install the jdk jre and
+帆船游艇 开始留出几天时间
+
+22
+00:01:20,320 --> 00:01:23,360
+jvm on your machine it's also recommended that you have a vertical
+在你的机器上安装 jdk jre 和 jvm 还建议你有一个垂直
+
+23
+00:01:23,360 --> 00:01:26,880
+monitor to read the error logs that are coming now before writing any code say
+监视器来阅读现在出现的错误日志，然后再写任何代码
+
+24
+00:01:26,880 --> 00:01:31,200
+this with me public static void main string args public static void main
+和我说这个 public static void mainstring args  public static void main
+
+25
+00:01:31,200 --> 00:01:35,600
+string args now to say hello world create a class java forces you into
+string args now to say hello world创建一个类 java 迫使你进入
+
+26
+00:01:35,600 --> 00:01:38,560
+object oriented programming which means you'll want to read design patterns
+面向对象编程，这意味着你需要阅读 de
+
+27
+00:01:38,560 --> 00:01:42,079
+cover to cover before you go any further now it's time for your public static
+在你继续之前先覆盖到覆盖的符号模式现在是你的公共静态
+
+28
+00:01:42,079 --> 00:01:47,360
+void main string args and then finally system.out.printline with hello world as
+无效主字符串参数的时候了，最后是带有 hello world 的 system.out.printline，正如
+
+29
+00:01:47,360 --> 00:01:50,320
+you can see we get a lot more boilerplate than something like python
+你所看到的，我们得到的样板文件比 python 之类的东西要多得多
+
+30
+00:01:50,320 --> 00:01:53,759
+which is a feature and definitely not a fundamental design flaw or anything
+，这是一个特性 绝对不是一个基本的设计缺陷或任何
+
+31
+00:01:53,759 --> 00:01:57,280
+you'll want to start by writing one giant bloated class then when your boss
+你想要从编写一个巨大的臃肿类开始然后当你的老板
+
+32
+00:01:57,280 --> 00:02:01,280
+complains break it into a hierarchy of deeply nested subclasses that will make
+抱怨时将它分解为深度嵌套的子类的层次结构，这将
+
+33
+00:02:01,280 --> 00:02:05,439
+it impossible to refactor the next step is to ragequit from your job life is way
+使得无法重构下一步是从你的 工作寿命
+
+34
+00:02:05,439 --> 00:02:08,399
+too short to be coding in java man and with that i think i've lost enough
+太短了，无法用 java man 进行编码，因此我认为我已经为一个视频失去了足够多的
+
+35
+00:02:08,399 --> 00:02:12,080
+subscribers for one video there are only two kinds of languages the ones people
+订阅者，只有两种语言，人们抱怨的语言
+
+36
+00:02:12,080 --> 00:02:15,920
+complain about and the ones nobody uses whether you love it or hate it jabba can
+和没人使用的语言，无论你喜欢还是讨厌它 贾巴可以
+
+37
+00:02:15,920 --> 00:02:19,680
+get stuff done and for that it deserves our respect thanks for watching and i
+完成任务，为此值得我们尊重，感谢观看，
+
+38
+00:02:19,680 --> 00:02:22,959
+will see you in the next one
+我们下期再见

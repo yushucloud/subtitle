@@ -1,0 +1,360 @@
+1
+00:00:00,160 --> 00:00:02,800
+kotlin a statically typed multi-paradigm
+
+
+2
+00:00:02,800 --> 00:00:04,799
+language designed quite simply as a
+
+
+3
+00:00:04,799 --> 00:00:07,359
+better alternative to java like java it
+
+
+4
+00:00:07,359 --> 00:00:09,440
+compiles to bytecode that runs on the
+
+
+5
+00:00:09,440 --> 00:00:11,840
+java virtual machine but kotlin provides
+
+
+6
+00:00:11,840 --> 00:00:13,840
+a more concise syntax and language
+
+
+7
+00:00:13,840 --> 00:00:15,920
+features loved by modern developers like
+
+
+8
+00:00:15,920 --> 00:00:18,080
+type inference functional patterns null
+
+
+9
+00:00:18,080 --> 00:00:20,800
+safety and more it was announced in 2011
+
+
+10
+00:00:20,800 --> 00:00:22,480
+by jetbrains with the first stable
+
+
+11
+00:00:22,480 --> 00:00:25,039
+release coming in 2016. it's named after
+
+
+12
+00:00:25,039 --> 00:00:26,960
+kotlin island in russia and it just got
+
+
+13
+00:00:26,960 --> 00:00:29,599
+a mascot in october 2021 but it still
+
+
+14
+00:00:29,599 --> 00:00:31,199
+doesn't have a name yet one of its key
+
+
+15
+00:00:31,199 --> 00:00:32,960
+features is that it can interop with
+
+
+16
+00:00:32,960 --> 00:00:34,480
+existing java code which means
+
+
+17
+00:00:34,480 --> 00:00:36,320
+developers can gradually adopt it
+
+
+18
+00:00:36,320 --> 00:00:37,600
+without throwing all of their code in
+
+
+19
+00:00:37,600 --> 00:00:39,920
+the garbage in addition to jvm kotlin
+
+
+20
+00:00:39,920 --> 00:00:42,079
+can also compile to native code and
+
+
+21
+00:00:42,079 --> 00:00:43,760
+javascript opening the door to
+
+
+22
+00:00:43,760 --> 00:00:45,520
+multi-platform apps it's been most
+
+
+23
+00:00:45,520 --> 00:00:47,280
+influential in the android development
+
+
+24
+00:00:47,280 --> 00:00:49,840
+community and as of 2019 google named it
+
+
+25
+00:00:49,840 --> 00:00:51,360
+the preferred language for android
+
+
+26
+00:00:51,360 --> 00:00:53,520
+development over java one of its killer
+
+
+27
+00:00:53,520 --> 00:00:55,760
+features is co-routines which provides a
+
+
+28
+00:00:55,760 --> 00:00:57,760
+simplified way to write asynchronous
+
+
+29
+00:00:57,760 --> 00:00:59,920
+non-blocking code a common requirement
+
+
+30
+00:00:59,920 --> 00:01:01,920
+for mobile developers to get started
+
+
+31
+00:01:01,920 --> 00:01:04,720
+create a file ending in.kt most kotlin
+
+
+32
+00:01:04,720 --> 00:01:06,640
+developers use something like intellij
+
+
+33
+00:01:06,640 --> 00:01:08,640
+idea which is an ide brought to you by
+
+
+34
+00:01:08,640 --> 00:01:10,240
+the same company that invented the
+
+
+35
+00:01:10,240 --> 00:01:12,159
+language inside the file use the fun
+
+
+36
+00:01:12,159 --> 00:01:14,479
+keyword to define a main function this
+
+
+37
+00:01:14,479 --> 00:01:16,159
+is where your code will start executing
+
+
+38
+00:01:16,159 --> 00:01:17,920
+and that syntax is a lot more fun to
+
+
+39
+00:01:17,920 --> 00:01:19,840
+write than public static void main
+
+
+40
+00:01:19,840 --> 00:01:21,840
+string args declare a variable with the
+
+
+41
+00:01:21,840 --> 00:01:24,240
+var keyword assign a value and its type
+
+
+42
+00:01:24,240 --> 00:01:25,920
+will be inferred automatically or you
+
+
+43
+00:01:25,920 --> 00:01:27,759
+can add a colon after the variable name
+
+
+44
+00:01:27,759 --> 00:01:29,680
+with an explicit type a variable can't
+
+
+45
+00:01:29,680 --> 00:01:31,680
+be null unless you explicitly allow it
+
+
+46
+00:01:31,680 --> 00:01:33,600
+with a question mark on the type now use
+
+
+47
+00:01:33,600 --> 00:01:35,360
+printline to log the variable to the
+
+
+48
+00:01:35,360 --> 00:01:37,439
+standard output notice how semicolons
+
+
+49
+00:01:37,439 --> 00:01:39,040
+are optional which means that line
+
+
+50
+00:01:39,040 --> 00:01:40,880
+breaks are significant kotlin supports
+
+
+51
+00:01:40,880 --> 00:01:42,880
+familiar object-oriented patterns but
+
+
+52
+00:01:42,880 --> 00:01:44,560
+can do special functional things that
+
+
+53
+00:01:44,560 --> 00:01:46,880
+java cannot like modify the behavior of
+
+
+54
+00:01:46,880 --> 00:01:48,720
+a class without inheritance using
+
+
+55
+00:01:48,720 --> 00:01:50,560
+extension functions functions are first
+
+
+56
+00:01:50,560 --> 00:01:52,159
+class objects which means they can be
+
+
+57
+00:01:52,159 --> 00:01:54,479
+stored as variables passed as arguments
+
+
+58
+00:01:54,479 --> 00:01:56,719
+or used anonymously with lambdas kotlin
+
+
+59
+00:01:56,719 --> 00:01:58,399
+also reduces boilerplate with things
+
+
+60
+00:01:58,399 --> 00:02:00,079
+like data classes so you don't have to
+
+
+61
+00:02:00,079 --> 00:02:01,840
+write constructors getters and setters
+
+
+62
+00:02:01,840 --> 00:02:03,360
+and supports destructuring when
+
+
+63
+00:02:03,360 --> 00:02:05,200
+accessing the values on an object
+
+
+64
+00:02:05,200 --> 00:02:07,040
+allowing you to write concise efficient
+
+
+65
+00:02:07,040 --> 00:02:09,039
+code that you can then compile to a jar
+
+
+66
+00:02:09,039 --> 00:02:10,800
+file by pulling up the terminal and
+
+
+67
+00:02:10,800 --> 00:02:12,560
+running the kotlin compiler this has
+
+
+68
+00:02:12,560 --> 00:02:14,800
+been kotlin in 100 seconds hit the like
+
+
+69
+00:02:14,800 --> 00:02:16,319
+button and subscribe if you want to see
+
+
+70
+00:02:16,319 --> 00:02:18,000
+more short videos like this thanks for
+
+
+71
+00:02:18,000 --> 00:02:20,000
+watching and i will see you in the next
+
+
+72
+00:02:20,000 --> 00:02:23,000
+one
+
+

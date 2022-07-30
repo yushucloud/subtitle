@@ -1,0 +1,2555 @@
+1
+00:00:00,240 --> 00:00:01,760
+one of the most valuable skills to have
+
+
+2
+00:00:01,760 --> 00:00:03,600
+as a full stack web developer is without
+
+
+3
+00:00:03,600 --> 00:00:05,600
+a doubt no js and that's not going to
+
+
+4
+00:00:05,600 --> 00:00:07,120
+change anytime soon but you might be
+
+
+5
+00:00:07,120 --> 00:00:08,800
+wondering why i'm making a node tutorial
+
+
+6
+00:00:08,800 --> 00:00:10,480
+in 2020 because if you've been watching
+
+
+7
+00:00:10,480 --> 00:00:11,759
+the news you may have heard that node
+
+
+8
+00:00:11,759 --> 00:00:14,160
+was killed last week by deno when i lay
+
+
+9
+00:00:14,160 --> 00:00:17,039
+my vengeance upon making the extremely
+
+
+10
+00:00:17,039 --> 00:00:18,640
+chaotic javascript world even more
+
+
+11
+00:00:18,640 --> 00:00:20,320
+convoluted if you're just starting to
+
+
+12
+00:00:20,320 --> 00:00:21,680
+learn javascript this can be very
+
+
+13
+00:00:21,680 --> 00:00:23,199
+confusing and you might be wondering
+
+
+14
+00:00:23,199 --> 00:00:25,199
+should i learn node or deno the answer
+
+
+15
+00:00:25,199 --> 00:00:26,720
+is node especially if you want to get a
+
+
+16
+00:00:26,720 --> 00:00:28,720
+job or build a product when something
+
+
+17
+00:00:28,720 --> 00:00:30,320
+becomes as established as node it
+
+
+18
+00:00:30,320 --> 00:00:31,920
+doesn't get replaced you'll see things
+
+
+19
+00:00:31,920 --> 00:00:33,280
+like this happen all the time a few
+
+
+20
+00:00:33,280 --> 00:00:35,120
+years ago everybody was saying graphql
+
+
+21
+00:00:35,120 --> 00:00:36,880
+would replace rest and 10 years ago
+
+
+22
+00:00:36,880 --> 00:00:38,559
+people were saying no js would replace
+
+
+23
+00:00:38,559 --> 00:00:40,640
+php these predictions never pan out and
+
+
+24
+00:00:40,640 --> 00:00:42,559
+are just built on top of hype that being
+
+
+25
+00:00:42,559 --> 00:00:44,239
+said i do think denno is awesome and has
+
+
+26
+00:00:44,239 --> 00:00:45,520
+a bright future
+
+
+27
+00:00:45,520 --> 00:00:47,520
+both both
+
+
+28
+00:00:47,520 --> 00:00:49,760
+both is good and if you learn node today
+
+
+29
+00:00:49,760 --> 00:00:51,199
+those skills will mostly transfer to
+
+
+30
+00:00:51,199 --> 00:00:53,520
+deno tomorrow in today's video you'll
+
+
+31
+00:00:53,520 --> 00:00:55,440
+learn the basics of node.js in seven
+
+
+32
+00:00:55,440 --> 00:00:57,039
+easy steps then we'll put those steps
+
+
+33
+00:00:57,039 --> 00:00:58,719
+together to build a full stack web
+
+
+34
+00:00:58,719 --> 00:01:00,399
+application because in my opinion the
+
+
+35
+00:01:00,399 --> 00:01:02,000
+best way to learn how to code is to
+
+
+36
+00:01:02,000 --> 00:01:03,680
+build something meaningful from scratch
+
+
+37
+00:01:03,680 --> 00:01:05,280
+by the end of the video we'll deploy our
+
+
+38
+00:01:05,280 --> 00:01:06,799
+code to the cloud so you can show off
+
+
+39
+00:01:06,799 --> 00:01:08,640
+your api to your friends and family if
+
+
+40
+00:01:08,640 --> 00:01:10,000
+you're new here like and subscribe and
+
+
+41
+00:01:10,000 --> 00:01:12,000
+head over to fireship io to follow along
+
+
+42
+00:01:12,000 --> 00:01:13,760
+with the full write-up to this video
+
+
+43
+00:01:13,760 --> 00:01:16,000
+step one is to understand what node.js
+
+
+44
+00:01:16,000 --> 00:01:17,520
+is and why you would want to use it
+
+
+45
+00:01:17,520 --> 00:01:19,280
+node.js itself is not a programming
+
+
+46
+00:01:19,280 --> 00:01:21,280
+language but rather a runtime that
+
+
+47
+00:01:21,280 --> 00:01:23,600
+allows you to run javascript on a server
+
+
+48
+00:01:23,600 --> 00:01:25,040
+you see when javascript first came
+
+
+49
+00:01:25,040 --> 00:01:27,520
+around in the 1990s it was designed as a
+
+
+50
+00:01:27,520 --> 00:01:29,200
+simple scripting language to run in the
+
+
+51
+00:01:29,200 --> 00:01:31,200
+browser as the web platform evolved
+
+
+52
+00:01:31,200 --> 00:01:33,119
+javascript became more and more powerful
+
+
+53
+00:01:33,119 --> 00:01:35,280
+and in 2009 we saw the initial release
+
+
+54
+00:01:35,280 --> 00:01:37,759
+of node.js now up until this time it was
+
+
+55
+00:01:37,759 --> 00:01:39,439
+impossible to write javascript code on
+
+
+56
+00:01:39,439 --> 00:01:41,040
+the server most servers were written in
+
+
+57
+00:01:41,040 --> 00:01:43,360
+languages like java or php it
+
+
+58
+00:01:43,360 --> 00:01:45,040
+revolutionized web development because
+
+
+59
+00:01:45,040 --> 00:01:46,799
+now a web developer could write a full
+
+
+60
+00:01:46,799 --> 00:01:49,119
+stack application in a single language
+
+
+61
+00:01:49,119 --> 00:01:51,040
+so that's all node.js is it's a way for
+
+
+62
+00:01:51,040 --> 00:01:52,560
+developers to write javascript on the
+
+
+63
+00:01:52,560 --> 00:01:54,320
+server when it could previously only be
+
+
+64
+00:01:54,320 --> 00:01:56,640
+written in a web browser now there are a
+
+
+65
+00:01:56,640 --> 00:01:58,399
+lot of low-level implementation details
+
+
+66
+00:01:58,399 --> 00:01:59,759
+here that you don't need to know about
+
+
+67
+00:01:59,759 --> 00:02:01,200
+as a beginner but if you really want to
+
+
+68
+00:02:01,200 --> 00:02:03,280
+dive into how node.js works check out my
+
+
+69
+00:02:03,280 --> 00:02:05,040
+how it's made video but what kind of
+
+
+70
+00:02:05,040 --> 00:02:07,040
+problems can node.js actually solve
+
+
+71
+00:02:07,040 --> 00:02:08,720
+nodejs can do a lot so instead of
+
+
+72
+00:02:08,720 --> 00:02:10,399
+listing out a bunch of use cases i'll
+
+
+73
+00:02:10,399 --> 00:02:11,760
+show you how to build a full stack web
+
+
+74
+00:02:11,760 --> 00:02:13,520
+application from scratch this is how
+
+
+75
+00:02:13,520 --> 00:02:15,520
+it'll work you visit a url on the
+
+
+76
+00:02:15,520 --> 00:02:17,680
+internet that points to your server when
+
+
+77
+00:02:17,680 --> 00:02:19,520
+the request is received we can use node
+
+
+78
+00:02:19,520 --> 00:02:21,440
+to handle the request and read a file
+
+
+79
+00:02:21,440 --> 00:02:23,280
+from the server's file system
+
+
+80
+00:02:23,280 --> 00:02:24,959
+and then respond back to the client so
+
+
+81
+00:02:24,959 --> 00:02:27,120
+they can view the html in the browser
+
+
+82
+00:02:27,120 --> 00:02:30,160
+step 2 how to install nodejs node can be
+
+
+83
+00:02:30,160 --> 00:02:32,239
+installed on windows mac or linux and is
+
+
+84
+00:02:32,239 --> 00:02:33,519
+probably already installed on your
+
+
+85
+00:02:33,519 --> 00:02:35,280
+system in this tutorial i'll be using
+
+
+86
+00:02:35,280 --> 00:02:37,360
+ubuntu via the windows subsystem for
+
+
+87
+00:02:37,360 --> 00:02:39,599
+linux at this point i've just opened up
+
+
+88
+00:02:39,599 --> 00:02:41,519
+an empty directory in vs code and then
+
+
+89
+00:02:41,519 --> 00:02:43,280
+pulled up a terminal session you can
+
+
+90
+00:02:43,280 --> 00:02:44,640
+find out if node is installed on your
+
+
+91
+00:02:44,640 --> 00:02:46,879
+system by running node flag v from the
+
+
+92
+00:02:46,879 --> 00:02:48,800
+command line as you can see here i'm
+
+
+93
+00:02:48,800 --> 00:02:50,959
+running version 12.16 which is the
+
+
+94
+00:02:50,959 --> 00:02:53,120
+current long-term support version if you
+
+
+95
+00:02:53,120 --> 00:02:54,560
+get an error at this point it means that
+
+
+96
+00:02:54,560 --> 00:02:56,400
+you don't have node installed and even
+
+
+97
+00:02:56,400 --> 00:02:57,920
+if you do have node installed it'd be a
+
+
+98
+00:02:57,920 --> 00:02:59,920
+very good idea to use a package called
+
+
+99
+00:02:59,920 --> 00:03:01,760
+node version manager to manage the
+
+
+100
+00:03:01,760 --> 00:03:03,599
+installation of different node versions
+
+
+101
+00:03:03,599 --> 00:03:05,760
+on your system there's an nvm package
+
+
+102
+00:03:05,760 --> 00:03:07,840
+for mac and linux or a separate package
+
+
+103
+00:03:07,840 --> 00:03:09,599
+for windows go ahead and follow the
+
+
+104
+00:03:09,599 --> 00:03:11,280
+instructions to install nvm on your
+
+
+105
+00:03:11,280 --> 00:03:12,560
+system and that will give you the
+
+
+106
+00:03:12,560 --> 00:03:14,159
+ability to install any version of
+
+
+107
+00:03:14,159 --> 00:03:16,239
+node.js that you want for example you
+
+
+108
+00:03:16,239 --> 00:03:19,440
+could run nvm install 12.16.3
+
+
+109
+00:03:19,440 --> 00:03:22,000
+then run nvm use to use that specific
+
+
+110
+00:03:22,000 --> 00:03:24,000
+version as your runtime and now that we
+
+
+111
+00:03:24,000 --> 00:03:25,680
+have node.js installed we can move on to
+
+
+112
+00:03:25,680 --> 00:03:28,080
+step three hello world but first if
+
+
+113
+00:03:28,080 --> 00:03:29,760
+you're serious about nodejs consider
+
+
+114
+00:03:29,760 --> 00:03:31,920
+becoming a pro member at fireship io
+
+
+115
+00:03:31,920 --> 00:03:33,440
+it'll give you access to my full length
+
+
+116
+00:03:33,440 --> 00:03:35,040
+courses almost all of which cover
+
+
+117
+00:03:35,040 --> 00:03:37,280
+advanced use cases for node.js but we
+
+
+118
+00:03:37,280 --> 00:03:39,200
+need to walk before we can run so how do
+
+
+119
+00:03:39,200 --> 00:03:41,040
+we actually use this thing one way to
+
+
+120
+00:03:41,040 --> 00:03:42,879
+mess around with node is in repel mode
+
+
+121
+00:03:42,879 --> 00:03:45,120
+which stands for read of owl print loop
+
+
+122
+00:03:45,120 --> 00:03:47,040
+when you type node into the command line
+
+
+123
+00:03:47,040 --> 00:03:48,879
+it allows you to run javascript code and
+
+
+124
+00:03:48,879 --> 00:03:51,040
+we'll print out the results for example
+
+
+125
+00:03:51,040 --> 00:03:53,360
+we can type console.log hello world and
+
+
+126
+00:03:53,360 --> 00:03:55,200
+it will log that value out this is nice
+
+
+127
+00:03:55,200 --> 00:03:56,799
+for messing around but go ahead and hit
+
+
+128
+00:03:56,799 --> 00:03:59,200
+ctrl c twice to shut it down because in
+
+
+129
+00:03:59,200 --> 00:04:00,720
+most cases we'll want to execute
+
+
+130
+00:04:00,720 --> 00:04:02,640
+javascript code that lives in an actual
+
+
+131
+00:04:02,640 --> 00:04:04,480
+file the default entry point into a
+
+
+132
+00:04:04,480 --> 00:04:07,680
+node.js app is the index.js file go
+
+
+133
+00:04:07,680 --> 00:04:09,280
+ahead and create an index.js file
+
+
+134
+00:04:09,280 --> 00:04:11,840
+manually in vs code then inside that
+
+
+135
+00:04:11,840 --> 00:04:14,560
+file add console.log hello world you can
+
+
+136
+00:04:14,560 --> 00:04:16,320
+now run the code inside this file with
+
+
+137
+00:04:16,320 --> 00:04:18,239
+the node command followed by the path to
+
+
+138
+00:04:18,239 --> 00:04:20,479
+this file and because it's an index file
+
+
+139
+00:04:20,479 --> 00:04:21,759
+you can actually just point to the
+
+
+140
+00:04:21,759 --> 00:04:23,919
+parent directory congratulations you
+
+
+141
+00:04:23,919 --> 00:04:27,759
+just built a node app
+
+
+142
+00:04:27,759 --> 00:04:30,240
+step four understand the node runtime in
+
+
+143
+00:04:30,240 --> 00:04:32,240
+most ways javascript works the same way
+
+
+144
+00:04:32,240 --> 00:04:34,960
+it does in the browser as it does in ojs
+
+
+145
+00:04:34,960 --> 00:04:36,240
+but there are some very important
+
+
+146
+00:04:36,240 --> 00:04:38,400
+differences you should know about first
+
+
+147
+00:04:38,400 --> 00:04:39,919
+node has a handful of built-in
+
+
+148
+00:04:39,919 --> 00:04:42,000
+identifiers one of those globals is
+
+
+149
+00:04:42,000 --> 00:04:43,600
+console which we've already been using
+
+
+150
+00:04:43,600 --> 00:04:45,600
+to log out values to the terminal
+
+
+151
+00:04:45,600 --> 00:04:47,280
+there's another global with a name of
+
+
+152
+00:04:47,280 --> 00:04:49,840
+global this object is a namespace that
+
+
+153
+00:04:49,840 --> 00:04:51,360
+is available throughout the entire node
+
+
+154
+00:04:51,360 --> 00:04:53,919
+process for example if we assigned a
+
+
+155
+00:04:53,919 --> 00:04:55,840
+lucky number property to global we could
+
+
+156
+00:04:55,840 --> 00:04:57,759
+then access it anywhere else in our code
+
+
+157
+00:04:57,759 --> 00:04:59,199
+if you're a frontend web developer you
+
+
+158
+00:04:59,199 --> 00:05:01,440
+can compare global to the window object
+
+
+159
+00:05:01,440 --> 00:05:02,960
+in the browser now i think the most
+
+
+160
+00:05:02,960 --> 00:05:04,880
+important global to be familiar with is
+
+
+161
+00:05:04,880 --> 00:05:06,960
+process which gives you access to the
+
+
+162
+00:05:06,960 --> 00:05:08,800
+currently running node process you might
+
+
+163
+00:05:08,800 --> 00:05:10,560
+use it to check the current platform or
+
+
+164
+00:05:10,560 --> 00:05:12,400
+operating system which in my case is
+
+
+165
+00:05:12,400 --> 00:05:14,320
+linux or grab an environment variable
+
+
+166
+00:05:14,320 --> 00:05:15,520
+from your server
+
+
+167
+00:05:15,520 --> 00:05:17,360
+but this gives us a great opportunity to
+
+
+168
+00:05:17,360 --> 00:05:19,759
+segue into step five how do events work
+
+
+169
+00:05:19,759 --> 00:05:21,680
+in node.js you'll often hear people
+
+
+170
+00:05:21,680 --> 00:05:23,280
+describe it as an asynchronous
+
+
+171
+00:05:23,280 --> 00:05:25,120
+event-driven javascript runtime the
+
+
+172
+00:05:25,120 --> 00:05:26,800
+runtime implements a thing called an
+
+
+173
+00:05:26,800 --> 00:05:28,800
+event loop just like a web browser does
+
+
+174
+00:05:28,800 --> 00:05:30,479
+and it allows node to push intensive
+
+
+175
+00:05:30,479 --> 00:05:32,479
+operations off to a separate thread so
+
+
+176
+00:05:32,479 --> 00:05:34,560
+only very fast non-blocking operations
+
+
+177
+00:05:34,560 --> 00:05:36,320
+happen on the main thread and this is
+
+
+178
+00:05:36,320 --> 00:05:38,560
+why people often call node non-blocking
+
+
+179
+00:05:38,560 --> 00:05:40,320
+it's a design choice that makes node.js
+
+
+180
+00:05:40,320 --> 00:05:41,840
+very suitable for things that require
+
+
+181
+00:05:41,840 --> 00:05:43,360
+high throughput like real-time
+
+
+182
+00:05:43,360 --> 00:05:45,680
+applications web servers and things like
+
+
+183
+00:05:45,680 --> 00:05:48,320
+that okay so how does that affect me as
+
+
+184
+00:05:48,320 --> 00:05:50,160
+a coder well normally you won't have to
+
+
+185
+00:05:50,160 --> 00:05:51,759
+think about the low-level details you
+
+
+186
+00:05:51,759 --> 00:05:53,199
+just need to know how events and
+
+
+187
+00:05:53,199 --> 00:05:55,280
+callbacks work in most cases you'll
+
+
+188
+00:05:55,280 --> 00:05:57,360
+listen to events events can come in many
+
+
+189
+00:05:57,360 --> 00:05:59,680
+forms but one example is on the process
+
+
+190
+00:05:59,680 --> 00:06:01,600
+global that we looked at earlier before
+
+
+191
+00:06:01,600 --> 00:06:03,360
+a node process finishes it emits an
+
+
+192
+00:06:03,360 --> 00:06:05,520
+event named exit we can listen to this
+
+
+193
+00:06:05,520 --> 00:06:07,680
+event using on and then register a
+
+
+194
+00:06:07,680 --> 00:06:10,000
+callback function as the second argument
+
+
+195
+00:06:10,000 --> 00:06:12,240
+when the exit event occurs nodejs will
+
+
+196
+00:06:12,240 --> 00:06:13,600
+run this function and that's where it
+
+
+197
+00:06:13,600 --> 00:06:15,039
+gets the name callback because the
+
+
+198
+00:06:15,039 --> 00:06:16,560
+function isn't called the first time
+
+
+199
+00:06:16,560 --> 00:06:18,720
+node.js sees it it's only called after
+
+
+200
+00:06:18,720 --> 00:06:20,560
+the exit event occurs at some point in
+
+
+201
+00:06:20,560 --> 00:06:22,720
+the future this event is built into node
+
+
+202
+00:06:22,720 --> 00:06:24,240
+but you can also create your own from
+
+
+203
+00:06:24,240 --> 00:06:26,639
+scratch we'll import an event emitter
+
+
+204
+00:06:26,639 --> 00:06:28,160
+from the events module that is built
+
+
+205
+00:06:28,160 --> 00:06:29,919
+into node and we'll look at modules in
+
+
+206
+00:06:29,919 --> 00:06:31,840
+more detail in just a minute we can
+
+
+207
+00:06:31,840 --> 00:06:33,440
+create a custom event emitter by
+
+
+208
+00:06:33,440 --> 00:06:35,199
+instantiating the class and then we'll
+
+
+209
+00:06:35,199 --> 00:06:37,120
+register a callback that fires on the
+
+
+210
+00:06:37,120 --> 00:06:38,800
+lunch event now that the callback is
+
+
+211
+00:06:38,800 --> 00:06:40,800
+registered you can simply call event
+
+
+212
+00:06:40,800 --> 00:06:43,360
+emitter emit with that event name
+
+
+213
+00:06:43,360 --> 00:06:44,880
+and that triggers your callback function
+
+
+214
+00:06:44,880 --> 00:06:47,199
+to run as you can see here we emit the
+
+
+215
+00:06:47,199 --> 00:06:49,120
+event twice which will run the callback
+
+
+216
+00:06:49,120 --> 00:06:50,479
+function twice
+
+
+217
+00:06:50,479 --> 00:06:52,160
+this event driven style of programming
+
+
+218
+00:06:52,160 --> 00:06:53,599
+is extremely useful when you have
+
+
+219
+00:06:53,599 --> 00:06:55,840
+something that is cpu intensive and with
+
+
+220
+00:06:55,840 --> 00:06:58,000
+that we can move on to step 6 the file
+
+
+221
+00:06:58,000 --> 00:07:00,000
+system node has a built-in file system
+
+
+222
+00:07:00,000 --> 00:07:02,400
+module called fs it can read write and
+
+
+223
+00:07:02,400 --> 00:07:04,319
+delete files on the file system among
+
+
+224
+00:07:04,319 --> 00:07:06,080
+other things and it can also do things
+
+
+225
+00:07:06,080 --> 00:07:08,720
+in a blocking or non-blocking way allow
+
+
+226
+00:07:08,720 --> 00:07:10,160
+me to explain that by showing you an
+
+
+227
+00:07:10,160 --> 00:07:12,720
+example first create a file on the file
+
+
+228
+00:07:12,720 --> 00:07:15,280
+system called hello.txt and then add
+
+
+229
+00:07:15,280 --> 00:07:17,440
+whatever text you want inside of it in
+
+
+230
+00:07:17,440 --> 00:07:19,199
+our javascript code we'll import two
+
+
+231
+00:07:19,199 --> 00:07:21,039
+functions from the file system module
+
+
+232
+00:07:21,039 --> 00:07:23,520
+called read file and read file sync
+
+
+233
+00:07:23,520 --> 00:07:25,120
+anytime you see a function that ends in
+
+
+234
+00:07:25,120 --> 00:07:27,599
+sync think blocking or in other words it
+
+
+235
+00:07:27,599 --> 00:07:28,960
+will need to finish all of its work
+
+
+236
+00:07:28,960 --> 00:07:31,039
+before any of your other code can run we
+
+
+237
+00:07:31,039 --> 00:07:32,880
+can read a text file in node by simply
+
+
+238
+00:07:32,880 --> 00:07:34,800
+passing the path to that file and then
+
+
+239
+00:07:34,800 --> 00:07:37,759
+we'll specify the encoding as utf-8
+
+
+240
+00:07:37,759 --> 00:07:39,280
+now reading a file might take a while
+
+
+241
+00:07:39,280 --> 00:07:41,120
+especially if it's a very large file and
+
+
+242
+00:07:41,120 --> 00:07:42,479
+what you'll notice here when we run our
+
+
+243
+00:07:42,479 --> 00:07:44,400
+code is that the second console log
+
+
+244
+00:07:44,400 --> 00:07:46,160
+won't run until after that file has been
+
+
+245
+00:07:46,160 --> 00:07:48,080
+read luckily you can make your code
+
+
+246
+00:07:48,080 --> 00:07:50,080
+non-blocking by refactoring this to a
+
+
+247
+00:07:50,080 --> 00:07:52,319
+callback with readfile we pass the same
+
+
+248
+00:07:52,319 --> 00:07:54,080
+first two arguments and then add a
+
+
+249
+00:07:54,080 --> 00:07:56,080
+callback function as the third argument
+
+
+250
+00:07:56,080 --> 00:07:57,759
+inside the function we can access an
+
+
+251
+00:07:57,759 --> 00:08:00,240
+error object if the operation fails or
+
+
+252
+00:08:00,240 --> 00:08:02,080
+when successful the actual text from the
+
+
+253
+00:08:02,080 --> 00:08:04,160
+file the super cool thing about this is
+
+
+254
+00:08:04,160 --> 00:08:05,919
+that even though the console log to the
+
+
+255
+00:08:05,919 --> 00:08:07,840
+text file comes first in our script it's
+
+
+256
+00:08:07,840 --> 00:08:09,680
+not the thing that gets executed first
+
+
+257
+00:08:09,680 --> 00:08:11,520
+node registers the callback executes the
+
+
+258
+00:08:11,520 --> 00:08:13,280
+rest of the script and then finally runs
+
+
+259
+00:08:13,280 --> 00:08:15,440
+the callback when the file has been read
+
+
+260
+00:08:15,440 --> 00:08:16,800
+so that gives us two different ways to
+
+
+261
+00:08:16,800 --> 00:08:18,319
+read a file but there's actually one
+
+
+262
+00:08:18,319 --> 00:08:19,599
+other way we could go about this and
+
+
+263
+00:08:19,599 --> 00:08:21,759
+that's using a promise based solution
+
+
+264
+00:08:21,759 --> 00:08:23,520
+promises are also asynchronous and
+
+
+265
+00:08:23,520 --> 00:08:25,120
+non-blocking and they tend to produce
+
+
+266
+00:08:25,120 --> 00:08:26,639
+much cleaner code when compared to
+
+
+267
+00:08:26,639 --> 00:08:28,560
+callbacks notice how in this example
+
+
+268
+00:08:28,560 --> 00:08:30,160
+we're importing readfile from the
+
+
+269
+00:08:30,160 --> 00:08:32,080
+promises namespace this gives us a
+
+
+270
+00:08:32,080 --> 00:08:33,680
+function that returns a promise when
+
+
+271
+00:08:33,680 --> 00:08:35,440
+called if you're using the latest
+
+
+272
+00:08:35,440 --> 00:08:36,959
+bleeding edge version of node you could
+
+
+273
+00:08:36,959 --> 00:08:38,640
+potentially use this function with top
+
+
+274
+00:08:38,640 --> 00:08:40,240
+level weight which means you can use a
+
+
+275
+00:08:40,240 --> 00:08:42,000
+weight to resolve the promise here at
+
+
+276
+00:08:42,000 --> 00:08:44,000
+the top of the script however since
+
+
+277
+00:08:44,000 --> 00:08:45,760
+we're currently using node version 12
+
+
+278
+00:08:45,760 --> 00:08:47,440
+we'll go ahead and wrap this in an async
+
+
+279
+00:08:47,440 --> 00:08:49,519
+function and this async await syntax
+
+
+280
+00:08:49,519 --> 00:08:51,120
+will make your code much easier to read
+
+
+281
+00:08:51,120 --> 00:08:52,880
+especially when you have multiple async
+
+
+282
+00:08:52,880 --> 00:08:54,399
+calls in the same function
+
+
+283
+00:08:54,399 --> 00:08:55,839
+okay so now that you know how to read
+
+
+284
+00:08:55,839 --> 00:08:57,760
+files i want to backtrack a little bit
+
+
+285
+00:08:57,760 --> 00:08:59,440
+and talk about this require function
+
+
+286
+00:08:59,440 --> 00:09:00,800
+that you've seen me use in the past
+
+
+287
+00:09:00,800 --> 00:09:04,560
+couple examples step 7 modules a module
+
+
+288
+00:09:04,560 --> 00:09:06,160
+is nothing more than a javascript file
+
+
+289
+00:09:06,160 --> 00:09:08,320
+that exports its code node has a bunch
+
+
+290
+00:09:08,320 --> 00:09:10,640
+of built-in modules like fs and events
+
+
+291
+00:09:10,640 --> 00:09:12,080
+that we've already looked at and there's
+
+
+292
+00:09:12,080 --> 00:09:14,160
+a long list of other modules beyond that
+
+
+293
+00:09:14,160 --> 00:09:15,839
+the traditional way to import a module
+
+
+294
+00:09:15,839 --> 00:09:17,760
+in node is to use this require function
+
+
+295
+00:09:17,760 --> 00:09:19,519
+but a quick side note on that first
+
+
+296
+00:09:19,519 --> 00:09:21,600
+because node recently added support for
+
+
+297
+00:09:21,600 --> 00:09:24,320
+es modules which used the import export
+
+
+298
+00:09:24,320 --> 00:09:26,480
+syntax most node.js code out there
+
+
+299
+00:09:26,480 --> 00:09:28,399
+written in vanilla javascript still uses
+
+
+300
+00:09:28,399 --> 00:09:30,080
+require so it's very important for you
+
+
+301
+00:09:30,080 --> 00:09:32,320
+to know as a node.js developer and if
+
+
+302
+00:09:32,320 --> 00:09:34,240
+all that's confusing to you well all i
+
+
+303
+00:09:34,240 --> 00:09:36,000
+can say is welcome to the javascript
+
+
+304
+00:09:36,000 --> 00:09:37,600
+world let's look at how we can use
+
+
+305
+00:09:37,600 --> 00:09:39,440
+modules in our own codebase create a new
+
+
+306
+00:09:39,440 --> 00:09:41,600
+file to serve as your module then go
+
+
+307
+00:09:41,600 --> 00:09:43,440
+into your index.js file create a
+
+
+308
+00:09:43,440 --> 00:09:45,519
+variable for the module and then import
+
+
+309
+00:09:45,519 --> 00:09:47,680
+it using require when you console log it
+
+
+310
+00:09:47,680 --> 00:09:49,040
+you'll notice that it's currently just
+
+
+311
+00:09:49,040 --> 00:09:50,800
+an empty object in order to make a
+
+
+312
+00:09:50,800 --> 00:09:52,880
+module useful you need to export some
+
+
+313
+00:09:52,880 --> 00:09:55,120
+code from it in the modules file you can
+
+
+314
+00:09:55,120 --> 00:09:56,560
+reference this object with
+
+
+315
+00:09:56,560 --> 00:09:58,080
+module.exports
+
+
+316
+00:09:58,080 --> 00:09:59,839
+you can add new properties to the object
+
+
+317
+00:09:59,839 --> 00:10:02,000
+or redefine it as a new object in either
+
+
+318
+00:10:02,000 --> 00:10:03,920
+case whatever you add here will now be
+
+
+319
+00:10:03,920 --> 00:10:06,000
+available to use in the other file and
+
+
+320
+00:10:06,000 --> 00:10:07,839
+as you can see the object is no longer
+
+
+321
+00:10:07,839 --> 00:10:09,920
+empty when we console.log it but at some
+
+
+322
+00:10:09,920 --> 00:10:11,279
+point you'll very likely want to use
+
+
+323
+00:10:11,279 --> 00:10:12,640
+somebody else's code out there in the
+
+
+324
+00:10:12,640 --> 00:10:14,480
+world and the primary place to do that
+
+
+325
+00:10:14,480 --> 00:10:17,279
+is via node package manager or npm which
+
+
+326
+00:10:17,279 --> 00:10:19,040
+was recently acquired by github which
+
+
+327
+00:10:19,040 --> 00:10:20,320
+itself was recently acquired by
+
+
+328
+00:10:20,320 --> 00:10:22,240
+microsoft when you installed node
+
+
+329
+00:10:22,240 --> 00:10:24,160
+earlier in the video it also installed
+
+
+330
+00:10:24,160 --> 00:10:25,200
+npm
+
+
+331
+00:10:25,200 --> 00:10:26,880
+which is a tool you can use to install
+
+
+332
+00:10:26,880 --> 00:10:29,279
+remote packages to use in your own code
+
+
+333
+00:10:29,279 --> 00:10:30,800
+the first step we'll want to take is to
+
+
+334
+00:10:30,800 --> 00:10:33,279
+open the command line and run npm in net
+
+
+335
+00:10:33,279 --> 00:10:35,120
+we'll use the y flag to use the default
+
+
+336
+00:10:35,120 --> 00:10:37,120
+options and what you'll notice is that
+
+
+337
+00:10:37,120 --> 00:10:39,279
+it creates a package json file here in
+
+
+338
+00:10:39,279 --> 00:10:41,200
+the root of the application this file
+
+
+339
+00:10:41,200 --> 00:10:43,279
+can contain metadata about your project
+
+
+340
+00:10:43,279 --> 00:10:45,040
+but most importantly it keeps track of
+
+
+341
+00:10:45,040 --> 00:10:47,040
+the dependencies that you use here at
+
+
+342
+00:10:47,040 --> 00:10:48,399
+this point we haven't installed anything
+
+
+343
+00:10:48,399 --> 00:10:50,399
+yet so let's go ahead and change that by
+
+
+344
+00:10:50,399 --> 00:10:51,839
+opening the command line again and
+
+
+345
+00:10:51,839 --> 00:10:55,040
+running npm install express express is a
+
+
+346
+00:10:55,040 --> 00:10:56,880
+minimal web application framework and
+
+
+347
+00:10:56,880 --> 00:10:58,480
+one of the most popular third-party node
+
+
+348
+00:10:58,480 --> 00:11:00,160
+modules after running the command you'll
+
+
+349
+00:11:00,160 --> 00:11:02,160
+notice a few things happened here in the
+
+
+350
+00:11:02,160 --> 00:11:04,560
+package.json file it added express to
+
+
+351
+00:11:04,560 --> 00:11:06,240
+the dependencies and pegged it to a
+
+
+352
+00:11:06,240 --> 00:11:08,000
+specific version this dependencies
+
+
+353
+00:11:08,000 --> 00:11:09,760
+object allows you to manage multiple
+
+
+354
+00:11:09,760 --> 00:11:11,279
+dependencies in a project and then
+
+
+355
+00:11:11,279 --> 00:11:12,720
+reinstall them all at once on a
+
+
+356
+00:11:12,720 --> 00:11:14,480
+different system now the actual raw
+
+
+357
+00:11:14,480 --> 00:11:16,160
+source code for the dependency lives in
+
+
+358
+00:11:16,160 --> 00:11:18,079
+this node modules directory you should
+
+
+359
+00:11:18,079 --> 00:11:19,680
+never have to modify code in the node
+
+
+360
+00:11:19,680 --> 00:11:21,440
+modules directory if you find yourself
+
+
+361
+00:11:21,440 --> 00:11:22,880
+writing code in here you're probably
+
+
+362
+00:11:22,880 --> 00:11:24,240
+doing it wrong that's because the
+
+
+363
+00:11:24,240 --> 00:11:26,160
+package json controls how this directory
+
+
+364
+00:11:26,160 --> 00:11:28,480
+is built it fetches your remote packages
+
+
+365
+00:11:28,480 --> 00:11:30,079
+saves the source code here and that
+
+
+366
+00:11:30,079 --> 00:11:31,920
+process should be able to be repeated on
+
+
+367
+00:11:31,920 --> 00:11:33,839
+any system now that we have this package
+
+
+368
+00:11:33,839 --> 00:11:35,760
+installed we can import it by name in
+
+
+369
+00:11:35,760 --> 00:11:37,600
+our javascript code in this case we
+
+
+370
+00:11:37,600 --> 00:11:39,760
+simply require express and now we've
+
+
+371
+00:11:39,760 --> 00:11:41,040
+reached the point where we're ready to
+
+
+372
+00:11:41,040 --> 00:11:42,800
+put these seven steps together to build
+
+
+373
+00:11:42,800 --> 00:11:44,959
+a real full stack application and deploy
+
+
+374
+00:11:44,959 --> 00:11:46,880
+it to the cloud what we're building here
+
+
+375
+00:11:46,880 --> 00:11:48,720
+is actually just your typical full stack
+
+
+376
+00:11:48,720 --> 00:11:50,959
+web application our server will live on
+
+
+377
+00:11:50,959 --> 00:11:53,279
+a url and when a user makes a request to
+
+
+378
+00:11:53,279 --> 00:11:55,519
+this url in the browser the server will
+
+
+379
+00:11:55,519 --> 00:11:58,000
+respond with some html in our code we'll
+
+
+380
+00:11:58,000 --> 00:11:59,920
+first create an instance of an express
+
+
+381
+00:11:59,920 --> 00:12:02,160
+app an express app allows us to create
+
+
+382
+00:12:02,160 --> 00:12:04,320
+different urls and endpoints that a user
+
+
+383
+00:12:04,320 --> 00:12:06,079
+can navigate to in the browser and then
+
+
+384
+00:12:06,079 --> 00:12:08,079
+we define code for the server to handle
+
+
+385
+00:12:08,079 --> 00:12:09,680
+those requests now i don't want to get
+
+
+386
+00:12:09,680 --> 00:12:11,760
+too deep into http but when the user
+
+
+387
+00:12:11,760 --> 00:12:13,680
+navigates to a url in the browser it's
+
+
+388
+00:12:13,680 --> 00:12:15,519
+what's known as a get request which
+
+
+389
+00:12:15,519 --> 00:12:17,040
+means they're requesting some data on
+
+
+390
+00:12:17,040 --> 00:12:19,360
+the server and not trying to modify or
+
+
+391
+00:12:19,360 --> 00:12:20,959
+update anything on the server with
+
+
+392
+00:12:20,959 --> 00:12:22,639
+express we can set up an endpoint like
+
+
+393
+00:12:22,639 --> 00:12:25,120
+that by calling app.get and then the
+
+
+394
+00:12:25,120 --> 00:12:27,279
+first argument is the url that the user
+
+
+395
+00:12:27,279 --> 00:12:29,200
+will navigate to in this case we'll just
+
+
+396
+00:12:29,200 --> 00:12:31,680
+use a forward slash for the root url but
+
+
+397
+00:12:31,680 --> 00:12:33,360
+feel free to create multiple pages for
+
+
+398
+00:12:33,360 --> 00:12:35,440
+your web app by creating different urls
+
+
+399
+00:12:35,440 --> 00:12:37,279
+the second argument here is our callback
+
+
+400
+00:12:37,279 --> 00:12:38,959
+function you can think of every request
+
+
+401
+00:12:38,959 --> 00:12:41,120
+to this url as an event and then you
+
+
+402
+00:12:41,120 --> 00:12:43,040
+handle that event with this function and
+
+
+403
+00:12:43,040 --> 00:12:44,880
+express gives us two parameters to make
+
+
+404
+00:12:44,880 --> 00:12:47,600
+use of the request and the response the
+
+
+405
+00:12:47,600 --> 00:12:49,440
+request is the incoming data from the
+
+
+406
+00:12:49,440 --> 00:12:51,519
+user in this example we don't really
+
+
+407
+00:12:51,519 --> 00:12:53,519
+need to parse any data from the request
+
+
+408
+00:12:53,519 --> 00:12:54,959
+however in many cases you might want to
+
+
+409
+00:12:54,959 --> 00:12:56,639
+look at the headers or the body of the
+
+
+410
+00:12:56,639 --> 00:12:58,800
+request to authenticate a user or
+
+
+411
+00:12:58,800 --> 00:13:00,800
+understand what the user is trying to do
+
+
+412
+00:13:00,800 --> 00:13:02,399
+at this point we need to implement the
+
+
+413
+00:13:02,399 --> 00:13:04,560
+code to handle the request what we want
+
+
+414
+00:13:04,560 --> 00:13:06,800
+to do is read some html from our file
+
+
+415
+00:13:06,800 --> 00:13:08,880
+system and then send it back down to the
+
+
+416
+00:13:08,880 --> 00:13:10,880
+browser as you can see here i'm creating
+
+
+417
+00:13:10,880 --> 00:13:13,519
+a file called home.html with just some
+
+
+418
+00:13:13,519 --> 00:13:16,320
+generic html markup inside
+
+
+419
+00:13:16,320 --> 00:13:18,079
+in our source code we can then import
+
+
+420
+00:13:18,079 --> 00:13:20,720
+read file from node's file system module
+
+
+421
+00:13:20,720 --> 00:13:22,399
+just like we did earlier we'll read the
+
+
+422
+00:13:22,399 --> 00:13:25,279
+file use utf-8 encoding
+
+
+423
+00:13:25,279 --> 00:13:26,959
+then in our callback function here we'll
+
+
+424
+00:13:26,959 --> 00:13:29,200
+have access to the html string and we
+
+
+425
+00:13:29,200 --> 00:13:31,200
+can send a response back down to the
+
+
+426
+00:13:31,200 --> 00:13:34,399
+client by calling response.send and also
+
+
+427
+00:13:34,399 --> 00:13:36,079
+if there's an error in the callback we
+
+
+428
+00:13:36,079 --> 00:13:37,920
+can handle that by sending a response
+
+
+429
+00:13:37,920 --> 00:13:40,240
+with a status code of 500 which means a
+
+
+430
+00:13:40,240 --> 00:13:41,600
+server error
+
+
+431
+00:13:41,600 --> 00:13:43,120
+so the user knows that something went
+
+
+432
+00:13:43,120 --> 00:13:44,880
+wrong on the server and that's all there
+
+
+433
+00:13:44,880 --> 00:13:47,360
+is to it we now have a way to send html
+
+
+434
+00:13:47,360 --> 00:13:49,440
+from the server to the client now we
+
+
+435
+00:13:49,440 --> 00:13:50,959
+just need to tell our express app to
+
+
+436
+00:13:50,959 --> 00:13:53,279
+start listening to incoming requests we
+
+
+437
+00:13:53,279 --> 00:13:55,120
+do that by defining a port which will
+
+
+438
+00:13:55,120 --> 00:13:56,800
+normally come from a node environment
+
+
+439
+00:13:56,800 --> 00:13:59,199
+variable then we call app.listen with
+
+
+440
+00:13:59,199 --> 00:14:01,279
+that port and when it starts up we'll
+
+
+441
+00:14:01,279 --> 00:14:03,040
+console.log that the app is available on
+
+
+442
+00:14:03,040 --> 00:14:05,600
+localhost 3000. you can start it up by
+
+
+443
+00:14:05,600 --> 00:14:07,040
+opening the command line and running
+
+
+444
+00:14:07,040 --> 00:14:09,440
+node with the current working directory
+
+
+445
+00:14:09,440 --> 00:14:10,639
+if you go ahead and open it in the
+
+
+446
+00:14:10,639 --> 00:14:12,399
+browser you should see your html
+
+
+447
+00:14:12,399 --> 00:14:13,839
+returned back to you
+
+
+448
+00:14:13,839 --> 00:14:15,199
+now there is one important thing you
+
+
+449
+00:14:15,199 --> 00:14:16,480
+should know at this point and that's
+
+
+450
+00:14:16,480 --> 00:14:18,000
+that callbacks can be very difficult to
+
+
+451
+00:14:18,000 --> 00:14:19,760
+work with especially as your app grows
+
+
+452
+00:14:19,760 --> 00:14:22,240
+in complexity it often leads to a state
+
+
+453
+00:14:22,240 --> 00:14:24,000
+known as callback hell where you have a
+
+
+454
+00:14:24,000 --> 00:14:25,360
+bunch of callbacks nested within
+
+
+455
+00:14:25,360 --> 00:14:27,360
+callbacks within more callbacks and so
+
+
+456
+00:14:27,360 --> 00:14:28,160
+on
+
+
+457
+00:14:28,160 --> 00:14:29,920
+a great way to avoid code like this is
+
+
+458
+00:14:29,920 --> 00:14:32,000
+to use promises instead of callbacks and
+
+
+459
+00:14:32,000 --> 00:14:34,480
+that's very easy to do in node.js
+
+
+460
+00:14:34,480 --> 00:14:36,800
+instead of importing read file from fs
+
+
+461
+00:14:36,800 --> 00:14:39,760
+we'll import it from fs.promises we can
+
+
+462
+00:14:39,760 --> 00:14:41,680
+make our callback function async and
+
+
+463
+00:14:41,680 --> 00:14:42,959
+then we can write the response in a
+
+
+464
+00:14:42,959 --> 00:14:44,800
+single line of code by saying response
+
+
+465
+00:14:44,800 --> 00:14:46,959
+send and then await the operation to
+
+
+466
+00:14:46,959 --> 00:14:48,959
+read file that's much more concise and
+
+
+467
+00:14:48,959 --> 00:14:50,720
+readable but it's especially useful when
+
+
+468
+00:14:50,720 --> 00:14:52,639
+you have multiple async operations to
+
+
+469
+00:14:52,639 --> 00:14:54,399
+handle in a single request
+
+
+470
+00:14:54,399 --> 00:14:56,079
+so now that we've built a node.js app
+
+
+471
+00:14:56,079 --> 00:14:57,680
+how do we deploy it to the cloud so
+
+
+472
+00:14:57,680 --> 00:14:59,360
+people can actually use it there's a
+
+
+473
+00:14:59,360 --> 00:15:00,639
+bunch of different ways we could do it
+
+
+474
+00:15:00,639 --> 00:15:02,639
+but an easy and free way is with google
+
+
+475
+00:15:02,639 --> 00:15:04,560
+app engine app engine has what's known
+
+
+476
+00:15:04,560 --> 00:15:06,800
+as a standard environment for node.js up
+
+
+477
+00:15:06,800 --> 00:15:09,040
+to version 12. and what that does is
+
+
+478
+00:15:09,040 --> 00:15:10,880
+provide you with a server in the cloud
+
+
+479
+00:15:10,880 --> 00:15:12,880
+that scales automatically based on the
+
+
+480
+00:15:12,880 --> 00:15:14,800
+incoming traffic to your app it's
+
+
+481
+00:15:14,800 --> 00:15:16,480
+incredibly easy to set up but you first
+
+
+482
+00:15:16,480 --> 00:15:18,240
+need to have a google cloud platform
+
+
+483
+00:15:18,240 --> 00:15:20,480
+account and also the google cloud
+
+
+484
+00:15:20,480 --> 00:15:22,160
+command line tools installed on your
+
+
+485
+00:15:22,160 --> 00:15:24,320
+local system once you have that done you
+
+
+486
+00:15:24,320 --> 00:15:26,000
+can simply go into your source code and
+
+
+487
+00:15:26,000 --> 00:15:28,800
+create an app.yaml file this file is
+
+
+488
+00:15:28,800 --> 00:15:30,720
+used to configure your cloud server the
+
+
+489
+00:15:30,720 --> 00:15:32,160
+only thing we need at this point is to
+
+
+490
+00:15:32,160 --> 00:15:35,360
+specify a runtime of node.js version 12.
+
+
+491
+00:15:35,360 --> 00:15:37,199
+app engine will run your code by looking
+
+
+492
+00:15:37,199 --> 00:15:39,199
+in the package.json file for a start
+
+
+493
+00:15:39,199 --> 00:15:41,440
+script so let's go in there and define a
+
+
+494
+00:15:41,440 --> 00:15:43,199
+start script that runs node in the
+
+
+495
+00:15:43,199 --> 00:15:44,800
+current working directory to start our
+
+
+496
+00:15:44,800 --> 00:15:46,959
+express app from there we can simply
+
+
+497
+00:15:46,959 --> 00:15:49,279
+open the command line and run gcloud app
+
+
+498
+00:15:49,279 --> 00:15:51,199
+deploy that'll take a minute and then it
+
+
+499
+00:15:51,199 --> 00:15:53,040
+will give you a url where you can access
+
+
+500
+00:15:53,040 --> 00:15:54,639
+your app publicly on the web
+
+
+501
+00:15:54,639 --> 00:15:56,720
+congratulations you're now a full stack
+
+
+502
+00:15:56,720 --> 00:15:59,920
+cloud architect
+
+
+503
+00:15:59,920 --> 00:16:01,519
+if this video helped you please like and
+
+
+504
+00:16:01,519 --> 00:16:03,120
+subscribe and if you really want to dive
+
+
+505
+00:16:03,120 --> 00:16:05,040
+deep into nodejs and express consider
+
+
+506
+00:16:05,040 --> 00:16:07,360
+becoming a pro member at fireship io i
+
+
+507
+00:16:07,360 --> 00:16:08,720
+have a whole bunch of advanced content
+
+
+508
+00:16:08,720 --> 00:16:10,399
+covering real world use cases with these
+
+
+509
+00:16:10,399 --> 00:16:12,560
+technologies thanks for watching and i
+
+
+510
+00:16:12,560 --> 00:16:15,960
+will see you in the next one
+
+
+511
+00:16:15,960 --> 00:16:21,729
+[Music]
+
+

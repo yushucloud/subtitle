@@ -1,0 +1,385 @@
+1
+00:00:00,160 --> 00:00:02,399
+solid a declarative javascript framework
+
+
+2
+00:00:02,399 --> 00:00:04,640
+for building fast uis with maximum
+
+
+3
+00:00:04,640 --> 00:00:06,879
+control over reactivity it was created
+
+
+4
+00:00:06,879 --> 00:00:09,760
+by ryan carniato in 2018 and is loved by
+
+
+5
+00:00:09,760 --> 00:00:11,679
+developers because it's both pragmatic
+
+
+6
+00:00:11,679 --> 00:00:13,599
+and extremely performant on the surface
+
+
+7
+00:00:13,599 --> 00:00:15,519
+it shares many similarities with react
+
+
+8
+00:00:15,519 --> 00:00:17,119
+components are javascript functions that
+
+
+9
+00:00:17,119 --> 00:00:19,920
+return jsx for the ui however unlike
+
+
+10
+00:00:19,920 --> 00:00:21,920
+react there's no virtual dom it uses a
+
+
+11
+00:00:21,920 --> 00:00:23,840
+compiler more like svelt that converts
+
+
+12
+00:00:23,840 --> 00:00:25,599
+your code into vanilla javascript to
+
+
+13
+00:00:25,599 --> 00:00:26,960
+bring you as close to the dom as
+
+
+14
+00:00:26,960 --> 00:00:28,480
+possible the framework itself only
+
+
+15
+00:00:28,480 --> 00:00:30,080
+weighs 7 kilobytes and it completely
+
+
+16
+00:00:30,080 --> 00:00:32,000
+crushes runtime performance benchmarks
+
+
+17
+00:00:32,000 --> 00:00:34,079
+without the need for any extra magic or
+
+
+18
+00:00:34,079 --> 00:00:35,920
+weird hacks in your code but most
+
+
+19
+00:00:35,920 --> 00:00:38,000
+importantly it's truly reactive a
+
+
+20
+00:00:38,000 --> 00:00:40,160
+function component is only called once
+
+
+21
+00:00:40,160 --> 00:00:41,920
+which means you can do unheard of things
+
+
+22
+00:00:41,920 --> 00:00:44,000
+like you set interval predictably at the
+
+
+23
+00:00:44,000 --> 00:00:46,480
+top level data that changes or state is
+
+
+24
+00:00:46,480 --> 00:00:48,399
+managed with the create signal primitive
+
+
+25
+00:00:48,399 --> 00:00:50,160
+which returns a getter and setter the
+
+
+26
+00:00:50,160 --> 00:00:51,840
+framework will observe this data and
+
+
+27
+00:00:51,840 --> 00:00:53,920
+surgically update its exact location in
+
+
+28
+00:00:53,920 --> 00:00:55,680
+the dom when it changes instead of
+
+
+29
+00:00:55,680 --> 00:00:57,840
+re-rendering the entire component again
+
+
+30
+00:00:57,840 --> 00:00:59,920
+it's truly reactive to get started
+
+
+31
+00:00:59,920 --> 00:01:02,079
+generate a new solid project it uses
+
+
+32
+00:01:02,079 --> 00:01:03,680
+veet as the build tool and should look
+
+
+33
+00:01:03,680 --> 00:01:05,680
+very familiar if you've ever used react
+
+
+34
+00:01:05,680 --> 00:01:07,760
+define a component as a plain javascript
+
+
+35
+00:01:07,760 --> 00:01:09,680
+function now when you define the ui with
+
+
+36
+00:01:09,680 --> 00:01:12,320
+jsx you actually get a real dom element
+
+
+37
+00:01:12,320 --> 00:01:13,680
+instead of some weird framework
+
+
+38
+00:01:13,680 --> 00:01:15,680
+abstraction to add reactive state to a
+
+
+39
+00:01:15,680 --> 00:01:17,920
+component use the create signal function
+
+
+40
+00:01:17,920 --> 00:01:19,840
+it provides a getter and setter and
+
+
+41
+00:01:19,840 --> 00:01:21,840
+notice how the getter is a function this
+
+
+42
+00:01:21,840 --> 00:01:23,280
+allows the framework to observe the
+
+
+43
+00:01:23,280 --> 00:01:25,520
+current value reactively we can easily
+
+
+44
+00:01:25,520 --> 00:01:27,600
+create derived state by simply defining
+
+
+45
+00:01:27,600 --> 00:01:29,600
+another function based on the original
+
+
+46
+00:01:29,600 --> 00:01:31,520
+signal and it also provides a function
+
+
+47
+00:01:31,520 --> 00:01:33,759
+to memoize the return value or expensive
+
+
+48
+00:01:33,759 --> 00:01:36,000
+computations in some cases you may want
+
+
+49
+00:01:36,000 --> 00:01:38,320
+to run code when your data changes for
+
+
+50
+00:01:38,320 --> 00:01:40,720
+that createfact allows you to run side
+
+
+51
+00:01:40,720 --> 00:01:42,479
+effects any signals referenced in the
+
+
+52
+00:01:42,479 --> 00:01:44,240
+body of the function will automatically
+
+
+53
+00:01:44,240 --> 00:01:46,240
+be subscribed to to rerun the side
+
+
+54
+00:01:46,240 --> 00:01:48,640
+effect whenever the value changes solid
+
+
+55
+00:01:48,640 --> 00:01:50,720
+also provides on mount and on cleanup
+
+
+56
+00:01:50,720 --> 00:01:52,479
+functions that tap into the beginning
+
+
+57
+00:01:52,479 --> 00:01:54,320
+and end of the component lifecycle the
+
+
+58
+00:01:54,320 --> 00:01:56,000
+framework also goes out of its way to
+
+
+59
+00:01:56,000 --> 00:01:58,079
+make jsx more developer friendly for
+
+
+60
+00:01:58,079 --> 00:02:00,000
+example it has a show component to
+
+
+61
+00:02:00,000 --> 00:02:01,840
+handle conditional logic and the four
+
+
+62
+00:02:01,840 --> 00:02:03,680
+component to simplify loops over a
+
+
+63
+00:02:03,680 --> 00:02:05,280
+collection of items when it comes to
+
+
+64
+00:02:05,280 --> 00:02:07,439
+collections it also provides a create
+
+
+65
+00:02:07,439 --> 00:02:09,360
+store function that can easily handle
+
+
+66
+00:02:09,360 --> 00:02:11,760
+nested reactivity and it supports custom
+
+
+67
+00:02:11,760 --> 00:02:13,599
+directives with a used keyword which is
+
+
+68
+00:02:13,599 --> 00:02:15,520
+a highly efficient way to attach custom
+
+
+69
+00:02:15,520 --> 00:02:17,280
+behaviors to different elements and it
+
+
+70
+00:02:17,280 --> 00:02:18,640
+has everything else you would expect in
+
+
+71
+00:02:18,640 --> 00:02:20,640
+a modern framework like lazy loading
+
+
+72
+00:02:20,640 --> 00:02:23,440
+context ssr support and so on this has
+
+
+73
+00:02:23,440 --> 00:02:25,680
+been solid in 100 seconds hit the like
+
+
+74
+00:02:25,680 --> 00:02:27,200
+button and subscribe if you want to see
+
+
+75
+00:02:27,200 --> 00:02:28,879
+more short videos like this thanks for
+
+
+76
+00:02:28,879 --> 00:02:30,879
+watching and i will see you in the next
+
+
+77
+00:02:30,879 --> 00:02:33,440
+one
+
+

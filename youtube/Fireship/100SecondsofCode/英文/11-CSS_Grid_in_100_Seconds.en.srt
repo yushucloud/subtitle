@@ -1,0 +1,290 @@
+1
+00:00:00,000 --> 00:00:02,939
+CSS grin a system for laying out items
+
+
+2
+00:00:02,939 --> 00:00:05,279
+across a movable set of horizontal and
+
+
+3
+00:00:05,279 --> 00:00:07,440
+vertical lines inside a grid we have
+
+
+4
+00:00:07,440 --> 00:00:09,330
+invisible lines that divide columns and
+
+
+5
+00:00:09,330 --> 00:00:11,400
+rows the space between two parallel grid
+
+
+6
+00:00:11,400 --> 00:00:13,620
+lines is known as a grid track and the
+
+
+7
+00:00:13,620 --> 00:00:15,269
+space between four lines is known as a
+
+
+8
+00:00:15,269 --> 00:00:17,730
+grid area in your HTML start with a
+
+
+9
+00:00:17,730 --> 00:00:19,680
+parent element to serve as your grid
+
+
+10
+00:00:19,680 --> 00:00:21,600
+container then all of its children will
+
+
+11
+00:00:21,600 --> 00:00:23,789
+automatically become grid items let's
+
+
+12
+00:00:23,789 --> 00:00:24,990
+imagine we wanted to build a website
+
+
+13
+00:00:24,990 --> 00:00:27,390
+with a holy grail layout in the HTML if
+
+
+14
+00:00:27,390 --> 00:00:29,130
+we have a container with five elements
+
+
+15
+00:00:29,130 --> 00:00:30,539
+inside we'll start by setting the
+
+
+16
+00:00:30,539 --> 00:00:32,880
+containers display property to grid now
+
+
+17
+00:00:32,880 --> 00:00:34,739
+open your app in Firefox to visualize
+
+
+18
+00:00:34,739 --> 00:00:37,290
+the gridlines tracks and areas it helps
+
+
+19
+00:00:37,290 --> 00:00:38,820
+to imagine your website as an Excel
+
+
+20
+00:00:38,820 --> 00:00:40,770
+spreadsheet in each individual cell add
+
+
+21
+00:00:40,770 --> 00:00:42,719
+a label that represents the element that
+
+
+22
+00:00:42,719 --> 00:00:44,100
+should appear there each cell in the
+
+
+23
+00:00:44,100 --> 00:00:46,260
+grid represents one fractional unit in
+
+
+24
+00:00:46,260 --> 00:00:48,210
+the middle we have an advertisement the
+
+
+25
+00:00:48,210 --> 00:00:50,280
+main content and the sidebar then we
+
+
+26
+00:00:50,280 --> 00:00:51,660
+have the top bar taking up three cells
+
+
+27
+00:00:51,660 --> 00:00:53,430
+on the top and a footer on the bottom
+
+
+28
+00:00:53,430 --> 00:00:55,379
+notice how this represents a three by
+
+
+29
+00:00:55,379 --> 00:00:57,210
+three grid and we can use this as the
+
+
+30
+00:00:57,210 --> 00:00:58,980
+value for the grid template areas
+
+
+31
+00:00:58,980 --> 00:01:00,809
+property now we need to tell the
+
+
+32
+00:01:00,809 --> 00:01:02,609
+children which grid area that they take
+
+
+33
+00:01:02,609 --> 00:01:04,470
+up we can do that by providing the name
+
+
+34
+00:01:04,470 --> 00:01:06,479
+to the grid area property that gives us
+
+
+35
+00:01:06,479 --> 00:01:07,979
+the right layout but now we want to
+
+
+36
+00:01:07,979 --> 00:01:09,439
+adjust the size of the rows and columns
+
+
+37
+00:01:09,439 --> 00:01:11,820
+currently each column is taking up one
+
+
+38
+00:01:11,820 --> 00:01:13,979
+third or one fractional unit of the
+
+
+39
+00:01:13,979 --> 00:01:15,810
+available space we can change the width
+
+
+40
+00:01:15,810 --> 00:01:17,400
+of the middle column by setting it to a
+
+
+41
+00:01:17,400 --> 00:01:19,860
+fixed pixel value or change the ratio by
+
+
+42
+00:01:19,860 --> 00:01:20,990
+giving it three fractional units
+
+
+43
+00:01:20,990 --> 00:01:23,159
+likewise we can change the height of
+
+
+44
+00:01:23,159 --> 00:01:24,780
+rows using the grid template rows
+
+
+45
+00:01:24,780 --> 00:01:26,790
+property if we want to add spacing
+
+
+46
+00:01:26,790 --> 00:01:28,290
+between our grid lines we can use the
+
+
+47
+00:01:28,290 --> 00:01:30,180
+great gap property and we can Center the
+
+
+48
+00:01:30,180 --> 00:01:31,290
+children vertically or horizontally
+
+
+49
+00:01:31,290 --> 00:01:34,229
+using justify items or line items and
+
+
+50
+00:01:34,229 --> 00:01:36,119
+make sure to check out the min Max and
+
+
+51
+00:01:36,119 --> 00:01:38,189
+repeat functions to avoid duplication on
+
+
+52
+00:01:38,189 --> 00:01:40,619
+larger grids this has been CSS grid and
+
+
+53
+00:01:40,619 --> 00:01:42,990
+100 seconds stay tuned for a full grid
+
+
+54
+00:01:42,990 --> 00:01:44,909
+project in a few days and make sure to
+
+
+55
+00:01:44,909 --> 00:01:46,409
+hit the like button if you want to see
+
+
+56
+00:01:46,409 --> 00:01:48,210
+more short videos like this thanks for
+
+
+57
+00:01:48,210 --> 00:01:49,979
+watching and I will see you in the next
+
+
+58
+00:01:49,979 --> 00:01:52,130
+one
+
+

@@ -1,0 +1,204 @@
+1
+00:00:00,160 --> 00:00:05,200
+hasura instantly turn your relational database into a graphql or rest api
+hasura 在构建全栈应用程序时立即将您的关系数据库转换为 graphql 或 rest api
+
+2
+00:00:05,200 --> 00:00:09,360
+when building a full stack application the end user likely needs to communicate
+最终用户可能需要
+
+3
+00:00:09,360 --> 00:00:12,000
+with a database that means you need to build a secure
+与数据库通信，这意味着您需要在中间构建一个安全的
+
+4
+00:00:12,000 --> 00:00:15,360
+api in the middle so the client can tell the server what it needs from the
+api，以便客户端可以告诉服务器它需要什么 从
+
+5
+00:00:15,360 --> 00:00:19,279
+database but building the perfect api is easier said than done front-end
+数据库构建完美的api 说起来容易做
+
+6
+00:00:19,279 --> 00:00:22,720
+developers love using graphql but back-end developers are faced with the
+起来难 前端开发人员喜欢使用 graphql，但后端开发人员
+
+7
+00:00:22,720 --> 00:00:25,920
+challenge of writing efficient sql queries that resolve the
+面临着编写高效的 sql 查询来解决
+
+8
+00:00:25,920 --> 00:00:29,119
+graphql schema the hasura engine eliminates this problem
+graphql 模式的挑战 hasura 引擎
+
+9
+00:00:29,119 --> 00:00:32,559
+by automatically generating the schema and resolvers for you
+通过自动生成 架构和解析器
+
+10
+00:00:32,559 --> 00:00:36,079
+just point it to your postgres database and it will use the existing tables and
+只需将其指向您的 postgres 数据库，它将使用现有的表和
+
+11
+00:00:36,079 --> 00:00:40,079
+views to generate an api that's ready to roll in your frontend app if you don't
+视图生成一个 api，如果您还
+
+12
+00:00:40,079 --> 00:00:43,200
+already have a database you can connect one from anywhere in the cloud
+没有数据库，您可以从任何地方连接到您的前端应用程序中 云
+
+13
+00:00:43,200 --> 00:00:46,640
+then add tables and rows to it and manage all of your data directly from
+然后向其中添加表和行并直接从 Web ui 管理所有数据
+
+14
+00:00:46,640 --> 00:00:48,879
+the web ui and it can even help you configure
+，它甚至可以帮助您配置
+
+15
+00:00:48,879 --> 00:00:52,320
+relationships between tables in addition to databases you can also
+关系 b 除了数据库之外的表之间，您还可以
+
+16
+00:00:52,320 --> 00:00:56,640
+connect third-party apis to your schema to create a single source of truth for
+将第三方 API 连接到您的架构，以便为您的所有数据创建单一事实来源。
+
+17
+00:00:56,640 --> 00:01:00,320
+all your data in some cases you may want to extend the schema with your own
+在某些情况下，您可能希望使用自己的
+
+18
+00:01:00,320 --> 00:01:03,760
+custom queries or mutations actions provide a way to implement
+自定义查询或突变操作来扩展架构
+
+19
+00:01:03,760 --> 00:01:07,360
+custom business logic in an external server or serverless function
+在外部服务器或无服务器函数中实现自定义业务逻辑，
+
+20
+00:01:07,360 --> 00:01:10,400
+to read and write data in more complex ways in addition
+以更复杂的方式读取和写入数据此外，
+
+21
+00:01:10,400 --> 00:01:14,159
+you may want to trigger server-side code when something changes in the database
+您可能希望在数据库发生更改时触发服务器端代码，
+
+22
+00:01:14,159 --> 00:01:17,439
+like you may want to send a transactional email when a new row is
+例如您可能希望在新行发生时发送事务性电子邮件 被
+
+23
+00:01:17,439 --> 00:01:21,439
+added to a certain table hassura events can be triggered based on operations to
+添加到某个表 hassura 事件可以基于对某个表的操作触发，也可以
+
+24
+00:01:21,439 --> 00:01:23,840
+a certain table or scheduled with a cron job in the
+在后台使用 cron 作业进行调度，
+
+25
+00:01:23,840 --> 00:01:26,320
+background but one thing hysura doesn't handle
+但是 hysura 不处理的一件事
+
+26
+00:01:26,320 --> 00:01:29,520
+is user authentication although you can easily connect your favorite
+是用户身份验证，尽管您可以轻松连接您最喜欢的
+
+27
+00:01:29,520 --> 00:01:32,880
+authentication service and provide a role session variable when the user
+身份验证服务并提供用户发出请求时的角色会话变量，
+
+28
+00:01:32,880 --> 00:01:35,360
+makes requests which can then be used to implement
+现在可以通过单击按钮来实现
+
+29
+00:01:35,360 --> 00:01:37,920
+role-based access control with the click of a button
+基于角色的访问控制
+
+30
+00:01:37,920 --> 00:01:41,680
+now because the api is created with an industry standard like graphql
+因为 api 是使用像 graphql 这样的行业标准创建的，所以
+
+31
+00:01:41,680 --> 00:01:45,200
+you can use any graphql client that you'd like to access the data on the
+您可以使用任何您想在前端访问数据的 graphql 客户
+
+32
+00:01:45,200 --> 00:01:47,360
+front end you might use something like apollo
+端，您可以使用像 apollo 这样的东西
+
+33
+00:01:47,360 --> 00:01:51,360
+to query mutate and set up real-time subscriptions to your database
+来查询 mutate 并设置对数据库
+
+34
+00:01:51,360 --> 00:01:54,880
+in other words hasura is kind of like a middleman that doesn't care what you use
+的实时订阅 换句话说，hasura 有点像一个中间人，它不关心你
+
+35
+00:01:54,880 --> 00:01:57,520
+on the front end or where you host your actual database
+在前端使用什么或者你在哪里托管你的实际数据库
+
+36
+00:01:57,520 --> 00:02:01,119
+and best of all it's an open source project that can be self-hosted
+，最重要的是它是一个开源项目，可以自托管
+
+37
+00:02:01,119 --> 00:02:04,159
+or paid for as a fully managed service with a free tier
+或作为完全托管的付费项目提供免费
+
+38
+00:02:04,159 --> 00:02:07,840
+this has been hasura in 100 seconds if you want to see more short videos like
+套餐的服务，这已经在 100 秒内完成了如果您想看到更多这样的短视频，
+
+39
+00:02:07,840 --> 00:02:09,759
+this make sure to hit the like button and let
+请务必点击“喜欢”按钮，
+
+40
+00:02:09,759 --> 00:02:13,120
+me know if you want to see a full tutorial on this topic in the comments
+如果您想在评论中看到有关此主题的完整教程，请告诉我
+
+41
+00:02:13,120 --> 00:02:17,760
+thanks for watching and i will see you in the next one
+谢谢收看 我会在下一个见到你

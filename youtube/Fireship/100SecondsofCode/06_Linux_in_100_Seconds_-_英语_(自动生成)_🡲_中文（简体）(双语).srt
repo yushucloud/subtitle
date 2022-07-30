@@ -1,0 +1,203 @@
+1
+00:00:00,000 --> 00:00:04,740
+Linux in open source operating system that makes it possible for humans to
+
+
+2
+00:00:04,740 --> 00:00:09,059
+play with computers it was created in 1991 by University of Helsinki student
+1991 年赫尔辛基大学学生
+
+3
+00:00:09,059 --> 00:00:13,259
+Linus Torvalds his goal was to create a free version of the Minix operating
+Linus Torvalds 创建的开源
+
+4
+00:00:13,259 --> 00:00:17,640
+system which itself was based on Unix today it's used everywhere like the vast
+操作系统中的Linux 使人类可以玩计算机 无处不在，如
+
+5
+00:00:17,640 --> 00:00:21,420
+majority of web servers embedded apps like your smart TV mobile devices
+绝大多数网络服务器嵌入式应用程序，如运行 Android 的智能电视移动设备
+
+6
+00:00:21,420 --> 00:00:25,320
+running Android and is by far the best choice for your personal computer with
+，是迄今为止您的个人计算机的最佳选择，有
+
+7
+00:00:25,320 --> 00:00:29,279
+many different distros to choose from like Debian Arch and Fedora just to name
+许多不同的发行版可供选择，如 Debian Arch 和 Fedora，
+
+8
+00:00:29,279 --> 00:00:34,320
+a few just like Windows or Mac OS Linux is an operating system that manages a
+仅举几例，如 Windows 或 Mac OS Linux是一种操作系统，它管理
+
+9
+00:00:34,320 --> 00:00:38,100
+computer's memory and processes allowing Hardware to communicate with software
+计算机的内存和进程，
+
+10
+00:00:38,100 --> 00:00:41,760
+when you fire up a Linux machine a bootloader will first put the system
+当您启动 Linux 机器时，允许硬件与软件通信
+
+11
+00:00:41,760 --> 00:00:45,719
+into memory at its core we have the kernel which is like a seed from which
+
+
+12
+00:00:45,719 --> 00:00:49,500
+the rest of the operating system grows it's divided into multiple smaller
+操作系统的其余部分不断增长，它分为多个较小的
+
+13
+00:00:49,500 --> 00:00:53,699
+subsystems like a process scheduler device drivers and a memory manager
+子系统，例如进程调度程序设备驱动程序和备忘录 ry manager
+
+14
+00:00:53,699 --> 00:00:57,239
+they're exposed with a system call interface which itself is wrapped with
+他们暴露了一个系统调用接口，该接口本身是
+
+15
+00:00:57,239 --> 00:01:01,800
+the c standard Library which provides an API that user applications can interact
+用 c 标准库包装的，它提供了一个用户应用程序可以与之交互
+
+16
+00:01:01,800 --> 00:01:05,820
+with now beyond the kernel we have applications that make the OS usable for
+的 API 现在超出内核我们有使操作系统可供人类使用的应用程序，
+
+17
+00:01:05,820 --> 00:01:10,380
+humans which are provided primarily via the gnu project like a shell to interact
+这些应用程序主要通过 gnu 项目就像一个 shell
+
+18
+00:01:10,380 --> 00:01:13,979
+with the kernel from the command line windowing systems on desktop developer
+从桌面开发实用程序上的命令行窗口系统
+
+19
+00:01:13,979 --> 00:01:17,880
+utilities and countless other applications to get started install your
+和无数其他应用程序上与内核交互 开始安装您
+
+20
+00:01:17,880 --> 00:01:21,540
+favorite Linux distro open the terminal and notice how we're logged in as the
+最喜欢的 Linux 发行版 打开终端并注意我们是如何以
+
+21
+00:01:21,540 --> 00:01:25,680
+root user on a specific Linux machine currently we're in the home directory of
+root 用户身份登录的 Linux 机器目前我们在 root 用户的主目录中，
+
+22
+00:01:25,680 --> 00:01:29,400
+the root user which is shortened to this tilde character show its full name with
+该目录被缩短为这个波浪字符显示它的全名
+
+23
+00:01:29,400 --> 00:01:32,700
+the print working directory command now use change directories with a double
+使用打印工作目录命令现在使用带有双
+
+24
+00:01:32,700 --> 00:01:36,720
+period to go to the root of the file system use the ls command to print all
+句点的更改目录以转到文件系统的根目录使用 ls 命令
+
+25
+00:01:36,720 --> 00:01:40,439
+the subdirectories here these are your critical system files let's go back home
+在这里打印所有子目录 这些是您的关键系统文件 让我们
+
+26
+00:01:40,439 --> 00:01:44,880
+with CD tilde now create a new file with touch then edit it from the terminal
+带着 CD 回家 现在创建一个新的 fi  le withtouch 然后
+
+27
+00:01:44,880 --> 00:01:49,860
+with a tool like VI Vim Nano or emacs in Vim type Ida insert write your
+使用 VI Vim Nano 或Vim 类型中的 emacs 等工具从终端编辑它 Ida 插入 写你的
+
+28
+00:01:49,860 --> 00:01:54,360
+screenplay hit Escape then colon WQ to write it to the file system now use the
+剧本 点击 Escape 然后冒号 WQ 将其写入文件系统 现在使用
+
+29
+00:01:54,360 --> 00:01:58,439
+cat command to read the file if it's really big use grep to find all the
+cat 命令读取文件，如果它真的 big 使用 grep 查找
+
+30
+00:01:58,439 --> 00:02:02,280
+lines in that file that contain in a search term or pattern if we want to see
+该文件中包含搜索词或模式的所有行如果我们想查看
+
+31
+00:02:02,280 --> 00:02:06,360
+how big that file is we can enter the disk usage command every file has an
+该文件有多大，我们可以输入磁盘使用命令每个文件都有一个
+
+32
+00:02:06,360 --> 00:02:09,720
+owner and a set of permissions assigned to it we can change the owner with the
+所有者和一组分配给它的权限 现在可以使用
+
+33
+00:02:09,720 --> 00:02:13,379
+Chone command or its permissions with chamod now if your current user doesn't
+Chone 命令更改所有者或
+
+34
+00:02:13,379 --> 00:02:17,280
+have proper permissions you can put super user do in front of any command to
+
+
+35
+00:02:17,280 --> 00:02:21,120
+run it with elevated privileges to install new software on this machine we
+使用 chamod 更改其权限
+
+36
+00:02:21,120 --> 00:02:24,780
+can use a package manager like Advanced package tool which will retrieve the
+使用高级包工具之类的包管理器，它将
+
+37
+00:02:24,780 --> 00:02:28,260
+code from the cloud and place it in the proper location on your system we just
+从云中检索代码并将其放置在您系统上的适当位置我们刚刚
+
+38
+00:02:28,260 --> 00:02:31,739
+went through a bunch of commands let's recap everything with history this has
+经历了一堆命令让我们用历史回顾一下这
+
+39
+00:02:31,739 --> 00:02:35,640
+been Linux in 100 seconds if you want to see more short videos like this hit the
+一直是 Linu  x 100 秒内如果你想看更多这样的短视频点击
+
+40
+00:02:35,640 --> 00:02:39,239
+like button and subscribe thanks for watching and I will see you in the next
+喜欢按钮并订阅感谢观看，我会在下一个看到你
+
+41
+00:02:39,239 --> 00:02:41,420
+one
