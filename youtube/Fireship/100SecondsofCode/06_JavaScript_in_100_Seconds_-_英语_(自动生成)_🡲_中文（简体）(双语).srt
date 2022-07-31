@@ -1,194 +1,155 @@
 1
 00:00:02,080 --> 00:00:06,319
-javascript a high level single threaded garbage collected interpreted or just in
 javascript是一种基于原型的高级单线程
 
 2
-00:00:06,319 --> 00:00:011,679
-time compiled prototype-based multi-paradigm dynamic language with a
+00:00:06,319 --> 00:00:11,679
 垃圾回收解释和即时编译的具有非阻塞循环事件
 
 3
 00:00:09,679 --> 00:00:14,719
-non-blocking event loop made famous for building websites it was created in 1995
 的多范式动态语言，因构建网站而闻名
 
 4
 00:00:14,719 --> 00:00:18,240
-in just one week by brendan ike with the goal of adding an easy to learn
-它是由Brendan Eich 1995年在短短一周内于创建的，
+它是由Brendan Eich 95年在一周内于创建的
 
 5
 00:00:18,240 --> 00:00:21,920
-scripting language to the netscape browser it was originally named Mocha
-其目的是在网景浏览器中添加了一种易于学习的脚本语言
+其目的是在网景浏览器中添加一种易学的脚本语言
 
 6
 00:00:21,920 --> 00:00:27,439
-but the genius marketing people of the time wanted it to sound like that sexy
-它最初被命名为Mocha，但当时的天才营销人员希望它听起来像一种性感的新java语言
+期初初被命名为Mocha，但精明的销售希望它像一种新的性感java语言
 
 7
 00:00:27,439 --> 00:00:29,880
-new java language today it's a fully featured language that continues to
 在今天它是一种功能齐全的语言
 
 8
 00:00:29,880 --> 00:00:32,320
-evolve through the ECMAScript standard it's most well known for building
 它通过ECMAScript标准继续发展
 
 9
 00:00:32,320 --> 00:00:36,440
-front-end web applications because it's the only language other than web
 因为它是除Web程序集之外唯一支持浏览器原生的语言
 
 10
-00:00:36,440 --> 00:00:40,440
-assembly that is natively supported in browsers however anything that can be
+00:00:36,440 --> 00:00:41,640
 但是任何可以用javascript构建的东西都将用javascript构建
 
 11
-00:00:40,440 --> 00:00:44,120
-built with javascript will be built with javascript like server-side applications
+00:00:41,640 --> 00:00:45,320
 例如带有 node.js 的服务器端应用程序和
 
 12
-00:00:44,120 --> 00:00:47,680
-with node.js mobile applications with react native or ionic and desktop apps
+00:00:45,320 --> 00:00:47,680
 带有React 的移动应用程序
 
 13
 00:00:47,680 --> 00:00:51,440
-with electron it's an interpreted scripting language but tools like the v8
-以及带electron桌面应用程序，它是一种解释性脚本语言，
+以及electron桌面应用，它是一种解释性脚本语言
 
 14
 00:00:51,440 --> 00:00:55,440
-engine and chromium use a just-in-time compiler to convert it to machine code
-v8引擎和 chromium 等工具使用即时编译器在运行时将其转换为机器代码
+v8引擎和 chromium 等工具使用编译器在运行时将其转换为机器码
 
 15
 00:00:55,440 --> 00:00:59,840
-at runtime it's also excellent at handling i o intensive jobs despite the
 它在处理IO密集型作业方面也非常出色，
 
 16
 00:00:59,840 --> 00:01:03,520
-fact that it's a single threaded language made possible by a non-blocking
-尽管它是通过非阻塞事件循环实现的单线程语言
+尽管它是通过非阻塞事件实现的单线程语言
 
 17
 00:01:03,520 --> 00:01:06,880
-event loop that can queue up work in the background without blocking the main
 在后台排队工作而不阻塞主线程
 
 18
 00:01:06,880 --> 00:01:11,280
-thread to get started create a file ending in.js your code will start
-开始创建一个以.js结尾的文件,您的代码将从全局上下文
+开始创建一个js文件,您的代码将从全局上下文
 
 19
-00:01:11,280 --> 00:01:15,200
-executing from the global context use the console to log a value with the
+00:01:11,280 --> 00:01:15,480
 开始执行使用控制台和用内置调试器记录一个值
 
 20
-00:01:15,200 --> 00:01:18,640
-built-in debugger now think about where you want to run this file is it a
+00:01:15,480 --> 00:01:19,680
 现在想想你想在哪里运行这个文件,是前端浏览器
 
 21
-00:01:18,640 --> 00:01:22,720
-front-end browser or a back-end node.js server in the browser you can reference
+00:01:19,680 --> 00:01:22,720
 还是浏览器中的后端node.js服务器
 
 22
 00:01:22,720 --> 00:01:26,400
-it with a script tag then the browser will execute it when you open that html
-您可以使用脚本标签引用它，然后使用浏览器在网站上
+您可以使用标签引用它，然后在浏览器上
 
 23
 00:01:26,400 --> 00:01:30,560
-file on a website javascript is often used to grab an element from the dom
-打开该 html 文件执行,javascript通常从 Dom 文档中抓取一个元素
+打开文件执行,javascript通常从 Dom 文档中抓取一个元素
 
 24
 00:01:30,560 --> 00:01:34,000
-document query selector will grab the first button then we can assign it to a
 查询选择器会抓取一个按钮，然后我们可以
 
 25
 00:01:34,000 --> 00:01:38,240
-variable with either var let or const var is the og way to do it but is
-使用 var let 或const将其分配给一个变量,但通常避免使用 let
+使用 var let 或const分配一个变量,但通常不使用let
 
 26
 00:01:38,240 --> 00:01:42,079
-typically avoided let is for variables that can be reassigned while const is
-用于重新分配的变量，而 const 无法重新分配新的变量
+分配新的变量，而 const 无法重新分配新的变量
 
 27
 00:01:42,079 --> 00:01:45,680
-for variables that cannot be reassigned now to make the button interactive we
-现在要使按钮具有交互性，我们可以通过为 onClick
+现在要使按钮具有交互性，可以为onClick
 
 28
 00:01:45,680 --> 00:01:49,520
-can add an event listener to it by defining a function for the on click
 事件定义一个函数来为其添加一个事件侦听器
 
 29
 00:01:49,520 --> 00:01:53,520
-event we can use the function keyword here or the more concise arrow syntax
 我们可以使用 function 关键字或更简洁的箭头函数
 
 30
 00:01:53,520 --> 00:01:57,040
-now the event loop will execute this function whenever a new click occurs
-现在只要发生新的点击，事件就会循环执行这个函数，
+现在只要点击事件发送，就会循环执行它，
 
 31
 00:01:57,040 --> 00:02:00,560
-functions are first class objects to support functional programming patterns
 函数是支持函数式编程模式的第一类对象
 
 32
 00:02:00,560 --> 00:02:04,880
-but javascript also supports classes and inheritance for object oriented patterns
 但 Javascript 也支持面向对象模式的类和继承，
 
 33
-00:02:04,880 --> 00:02:08,319
-even though it's single threaded it can do work asynchronously with the promise
+00:02:04,880 --> 00:02:09,080
 即使它是单线程的，它也可以使用 Promise api 异步工作，
 
 34
-00:02:08,319 --> 00:02:13,200
-api which also supports the async await syntax js code can also run on the
+00:02:09,080 --> 00:02:13,200
 它也支持 async await 语法,node js可以让
 
 35
 00:02:13,200 --> 00:02:16,959
-server thanks to the nodejs runtime instead of buttons on a web page it
-js代码在服务器上运行而不仅仅是网页上的按钮
+js代码在服务器上运行，不止是网页上的按钮
 
 36
-00:02:16,959 --> 00:02:20,160
-interacts with things like the file system api execute your code on the
+00:02:16,959 --> 00:02:21,159
 它与文件系统api之类的东西交互，通过拉起终端
 
 37
-00:02:20,160 --> 00:02:23,599
-server by pulling up the terminal and entering the node command this has been
+00:02:21,159 --> 00:02:24,598
 在服务器上输入节点命令来执行你的代码
 
 38
-00:02:23,599 --> 00:02:27,280
-javascript in 100 seconds hit the like button and subscribe if you want to see
+00:02:24,598 --> 00:02:27,280
 这是Javascript100秒简介
 
 39
 00:02:27,280 --> 00:02:30,480
-will see you in the next one
 谢谢，下次见
