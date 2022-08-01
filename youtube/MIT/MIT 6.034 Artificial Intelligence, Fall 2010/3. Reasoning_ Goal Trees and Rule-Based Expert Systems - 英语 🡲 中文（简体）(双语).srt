@@ -1,0 +1,4389 @@
+1
+00:00:09,330 --> 00:00:10,970
+PROFESSOR PATRICK WINSTON: Ladies and gentlemen, the
+PATRICK WINSTON 教授：女士们，先生们，工程师们在
+
+2
+00:00:10,970 --> 00:00:13,670
+engineers drinking song.
+喝酒。
+
+3
+00:00:13,670 --> 00:00:16,309
+Back in the day, I've drunk quite a lot to that song.
+过去，我为那首歌喝了很多酒。
+
+4
+00:00:16,309 --> 00:00:20,420
+And as drinking songs go, it's not bad.
+随着饮酒歌曲的发展，这还不错。
+
+5
+00:00:20,420 --> 00:00:24,260
+I caution you, however, before playing this song in the
+但是，我提醒您，在
+
+6
+00:00:24,260 --> 00:00:28,240
+presence of small children, audition it first.
+有小孩在场的情况下播放这首歌之前，请先试听。
+
+7
+00:00:28,240 --> 00:00:32,460
+Some of the verses are sufficiently gross as to make
+有些诗句粗到足以
+
+8
+00:00:32,460 --> 00:00:37,130
+a sailor go beyond blushing.
+让水手脸红不起来。
+
+9
+00:00:37,130 --> 00:00:39,380
+It's an interesting song because there are an infinite
+这是一首有趣的歌，因为有
+
+10
+00:00:39,380 --> 00:00:41,580
+number of verses.
+无数的诗句。
+
+11
+00:00:41,580 --> 00:00:43,840
+Here's the mathematical proof.
+这是数学证明。
+
+12
+00:00:43,840 --> 00:00:46,920
+Suppose there were a finite number of verses.
+假设有有限数量的经文。
+
+13
+00:00:46,920 --> 00:00:49,080
+Then there would be a last verse.
+然后会有最后一节经文。
+
+14
+00:00:49,080 --> 00:00:52,540
+And if there were a last verse, then some drunk alumni
+如果有最后一首诗，那么一些喝醉了的
+
+15
+00:00:52,540 --> 00:00:54,570
+would compose a new one.
+校友会创作一首新诗。
+
+16
+00:00:54,570 --> 00:00:58,400
+Therefore, there is no last verse, the size is not finite,
+因此，没有最后一节，大小不是有限的
+
+17
+00:00:58,400 --> 00:01:02,430
+and there are an infinite number of verses.
+，有无数节。
+
+18
+00:01:02,430 --> 00:01:05,610
+I play it for you today because I'm an engineer.
+我今天为你播放它，因为我是一名工程师。
+
+19
+00:01:05,610 --> 00:01:07,336
+I like to build stuff.
+我喜欢建造东西。
+
+20
+00:01:07,336 --> 00:01:09,010
+I build stuff out of wood.
+我用木头做东西。
+
+21
+00:01:09,010 --> 00:01:10,810
+I build stuff out of metal.
+我用金属制造东西。
+
+22
+00:01:10,810 --> 00:01:12,830
+I build stuff out of rocks.
+我用石头做东西。
+
+23
+00:01:12,830 --> 00:01:16,470
+And I especially like to write programs.
+而且我特别喜欢写程序。
+
+24
+00:01:16,470 --> 00:01:20,180
+I don't know, sometimes people come to me and say, I'm
+我不知道，有时有人来找我说，我是
+
+25
+00:01:20,180 --> 00:01:21,960
+majoring in computer science, but I don't
+计算机专业的，但我不
+
+26
+00:01:21,960 --> 00:01:23,030
+like to write programs.
+喜欢写程序。
+
+27
+00:01:23,030 --> 00:01:26,470
+I've always been mystified by that.
+我一直对此感到迷惑。
+
+28
+00:01:26,470 --> 00:01:29,900
+I mean, if you want to show how tough you are, you can go
+我的意思是，如果你想展示你有多坚强，你可以去
+
+29
+00:01:29,900 --> 00:01:32,430
+bungee jumping or drive a nail through your hand or something
+蹦极或用手钉钉子或
+
+30
+00:01:32,430 --> 00:01:33,680
+like that instead.
+类似的东西。
+
+31
+00:01:35,850 --> 00:01:38,750
+But I've written quite a few programs for demonstrating
+但是我已经写了很多程序来演示
+
+32
+00:01:38,750 --> 00:01:42,650
+stuff in this subject.
+这个主题的东西。
+
+33
+00:01:42,650 --> 00:01:46,520
+They're all written in Java, principally because I can
+它们都是用 Java 编写的，主要是因为我
+
+34
+00:01:46,520 --> 00:01:48,660
+therefore make them available to you and to the rest of the
+可以通过 Web Start 将它们提供给您和世界其他地方
+
+35
+00:01:48,660 --> 00:01:50,785
+world by way of Web Start.
+。
+
+36
+00:01:50,785 --> 00:01:55,050
+A few weeks ago, I was mucking around with the system and
+几周前，我在搞乱系统并
+
+37
+00:01:55,050 --> 00:01:57,490
+broke the version on the server, and within 15 minutes,
+破坏了服务器上的版本，在 15 分钟内，
+
+38
+00:01:57,490 --> 00:02:01,490
+I got an email from somebody in the depths of Anatolia
+我收到了来自安纳托利亚深处的某人的电子邮件，
+
+39
+00:02:01,490 --> 00:02:03,960
+complaining about it and asking me to bring it back up.
+抱怨它并要求我恢复它。
+
+40
+00:02:07,500 --> 00:02:09,699
+This particular program is patterned
+这个特殊的程序是
+
+41
+00:02:09,699 --> 00:02:14,830
+after an early AI classic.
+按照早期的 AI 经典模式设计的。
+
+42
+00:02:14,830 --> 00:02:19,130
+And it was the business end of a program written by Terry
+这是由 Terry Winograd 编写的一个程序的业务端
+
+43
+00:02:19,130 --> 00:02:24,290
+Winograd, who became, and is, a professor of computer
+，他成为并且现在是斯坦福大学的计算机科学教授——对于你们这些人来说，
+
+44
+00:02:24,290 --> 00:02:27,220
+science at Stanford University--
+
+
+45
+00:02:27,220 --> 00:02:28,940
+which is on the west coast for those of you--
+它位于西海岸——
+
+46
+00:02:31,990 --> 00:02:35,510
+on the strength of his work on the natural language front end
+凭借他在
+
+47
+00:02:35,510 --> 00:02:37,100
+of this program.
+该程序的自然语言前端。
+
+48
+00:02:37,100 --> 00:02:40,260
+But the natural language part is not what makes it of
+但是自然语言部分并不是
+
+49
+00:02:40,260 --> 00:02:44,080
+interest for us today.
+我们今天感兴趣的。
+
+50
+00:02:44,080 --> 00:02:48,440
+It's more the other kinds of stuff.
+它更多的是其他种类的东西。
+
+51
+00:02:48,440 --> 00:02:51,550
+Let's pile these things up.
+让我们把这些东西堆起来。
+
+52
+00:02:51,550 --> 00:02:55,320
+Now, I'm going to ask to do something, maybe put
+现在，我要要求做点什么，也许把
+
+53
+00:02:55,320 --> 00:02:58,970
+B2 on top of B7.
+B2 放在 B7 之上。
+
+54
+00:03:07,140 --> 00:03:07,840
+Not bad.
+不错。
+
+55
+00:03:07,840 --> 00:03:09,320
+How about B6 on B3?
+B3上的B6怎么样？
+
+56
+00:03:18,500 --> 00:03:20,880
+This program's kind of clever.
+这个程序有点聪明。
+
+57
+00:03:25,140 --> 00:03:26,580
+Let me do one more.
+让我再做一个。
+
+58
+00:03:26,580 --> 00:03:28,280
+Let's put B7 on B2.
+让我们把 B7 放在 B2 上。
+
+59
+00:03:39,250 --> 00:03:40,510
+OK, now let's see.
+好的，现在让我们看看。
+
+60
+00:03:40,510 --> 00:03:42,530
+Maybe B5 on B2?
+也许B2上的B5？
+
+61
+00:03:46,170 --> 00:03:49,730
+B4 on B3 first, maybe?
+B4 先上 B3，也许吧？
+
+62
+00:03:52,820 --> 00:03:55,885
+Oh, I must have clicked the wrong button.
+哦，我一定是按错了按钮。
+
+63
+00:03:55,885 --> 00:03:56,675
+Oh, there it goes.
+哦，就这样。
+
+64
+00:03:56,675 --> 00:03:58,780
+OK.
+好的。
+
+65
+00:03:58,780 --> 00:04:02,716
+Let's put B4 on B1.
+让我们把 B4 放在 B1 上。
+
+66
+00:04:02,716 --> 00:04:08,190
+Agh, my mouse keeps getting out of control.
+啊，我的鼠标总是失控。
+
+67
+00:04:15,660 --> 00:04:17,519
+Now, let's put B1 on B2.
+现在，让我们将 B1 放在 B2 上。
+
+68
+00:04:17,519 --> 00:04:18,779
+This is an example I'm actually going to
+这是一个我实际上
+
+69
+00:04:18,779 --> 00:04:20,029
+work out on the board.
+要在板上解决的例子。
+
+70
+00:04:23,646 --> 00:04:25,740
+Oh, I see.
+我懂了。
+
+71
+00:04:25,740 --> 00:04:27,750
+My touch pad accidentally got activated.
+我的触摸板不小心被激活了。
+
+72
+00:04:27,750 --> 00:04:30,440
+B1 on B2.
+B1 上 B2。
+
+73
+00:04:44,550 --> 00:04:45,800
+Now, let's ask a question.
+现在，让我们问一个问题。
+
+74
+00:04:58,075 --> 00:04:59,560
+OK.
+好的。
+
+75
+00:04:59,560 --> 00:05:00,190
+Well.
+出色地。
+
+76
+00:05:00,190 --> 00:05:01,636
+SPEAKER 2: [SINGING]
+扬声器 2：[唱歌]
+
+77
+00:05:01,636 --> 00:05:03,564
+PROFESSOR PATRICK WINSTON: Stop.
+PATRICKWINSTON 教授：停下。
+
+78
+00:05:03,564 --> 00:05:07,420
+SPEAKER 3: [LAUGHTER]
+发言者 3： [笑声]
+
+79
+00:05:07,420 --> 00:05:08,866
+PROFESSOR PATRICK WINSTON: Had enough of that.
+PATRICK WINSTON 教授： 受够了。
+
+80
+00:05:11,760 --> 00:05:12,550
+Let's see.
+让我们来看看。
+
+81
+00:05:12,550 --> 00:05:15,460
+Why did you put--
+你为什么放——你为什么要
+
+82
+00:05:15,460 --> 00:05:22,720
+why did you want to get rid of B4?
+去掉B4？
+
+83
+00:05:22,720 --> 00:05:24,660
+OK, one--
+好的，一个-- 演讲者
+
+84
+00:05:24,660 --> 00:05:28,540
+SPEAKER 2: [SINGING]
+2： [唱歌]
+
+85
+00:05:28,540 --> 00:05:34,010
+PROFESSOR PATRICK WINSTON: Maybe they think, that's what
+PATRICK WINSTON 教授： 也许他们认为，
+
+86
+00:05:34,010 --> 00:05:35,575
+happens when you use software you write yourself.
+当您使用自己编写的软件时会发生这种情况。
+
+87
+00:05:42,010 --> 00:05:51,662
+Why did you want to clear the top of B2?
+为什么要清除B2的顶部？
+
+88
+00:05:51,662 --> 00:05:55,050
+Did I do that?
+我这样做了吗？
+
+89
+00:05:55,050 --> 00:06:01,050
+Why did you clear the top of B1?
+你为什么要清除B1的顶部？
+
+90
+00:06:01,050 --> 00:06:01,520
+OK.
+好的。
+
+91
+00:06:01,520 --> 00:06:03,400
+SPEAKER 2: [SINGING]
+演讲者 2：[唱歌]
+
+92
+00:06:03,400 --> 00:06:06,700
+SPEAKER 3: [LAUGHTER]
+演讲者 3：[笑声]
+
+93
+00:06:06,700 --> 00:06:08,460
+PROFESSOR PATRICK WINSTON: Oh, it's haunting me.
+PATRICK WINSTON 教授：哦，这让我心烦意乱。
+
+94
+00:06:08,460 --> 00:06:09,290
+Yeah.
+是的。
+
+95
+00:06:09,290 --> 00:06:13,350
+So the drinking song is easily offended, I guess.
+所以酒歌很容易被冒犯，我猜。
+
+96
+00:06:29,160 --> 00:06:31,310
+But I won't develop that scenario again.
+但我不会再开发那种场景了。
+
+97
+00:06:31,310 --> 00:06:35,260
+What I want to show you is that this program looks like
+我想向您展示的是，这个程序
+
+98
+00:06:35,260 --> 00:06:39,430
+it's kind of smart, and it somehow can answer questions
+看起来有点聪明，它可以以某种方式回答
+
+99
+00:06:39,430 --> 00:06:40,230
+about its own behavior.
+有关其自身行为的问题。
+
+100
+00:06:40,230 --> 00:06:41,800
+Have you ever written a program that's answered
+您是否编写过一个程序来
+
+101
+00:06:41,800 --> 00:06:44,020
+questions about its own behavior?
+回答有关其自身行为的问题？
+
+102
+00:06:44,020 --> 00:06:44,620
+Probably not.
+可能不是。
+
+103
+00:06:44,620 --> 00:06:46,322
+Would you like to learn how to do that?
+你想学习如何做到这一点吗？
+
+104
+00:06:46,322 --> 00:06:47,680
+OK.
+好的。
+
+105
+00:06:47,680 --> 00:06:49,470
+So by the end of the hour, you'll be able to write this
+因此，到一小时结束时，您将能够编写这个
+
+106
+00:06:49,470 --> 00:06:53,400
+program and many more like it that know how to answer
+程序以及更多类似的程序，它们知道如何
+
+107
+00:06:53,400 --> 00:06:55,040
+questions about their own behavior.
+回答有关自己行为的问题。
+
+108
+00:06:55,040 --> 00:06:57,020
+There have been tens of thousands of such programs
+已经编写了成千上万个这样的程序
+
+109
+00:06:57,020 --> 00:07:00,175
+written, but only by people who know the stuff I'm going
+，但只有那些知道我现在要告诉你的东西的人
+
+110
+00:07:00,175 --> 00:07:03,080
+to tell you about right now, OK?
+，好吗？
+
+111
+00:07:03,080 --> 00:07:05,240
+So what I want to do is I want to start by taking this
+所以我想做的就是首先把这个
+
+112
+00:07:05,240 --> 00:07:08,500
+program apart on the board and talking to you about the
+程序在板上拆开，然后和你讨论
+
+113
+00:07:08,500 --> 00:07:12,670
+modules, the subroutines that it contains.
+模块，它包含的子程序。
+
+114
+00:07:12,670 --> 00:07:14,070
+So here it is.
+所以就在这里。
+
+115
+00:07:17,440 --> 00:07:20,280
+The first thing we need to think about,
+我们需要考虑的第一件事，
+
+116
+00:07:20,280 --> 00:07:21,530
+here are some blocks.
+这里有一些块。
+
+117
+00:07:23,600 --> 00:07:27,500
+What has to happen if I'm going to put the bottom block
+如果我要将底部块
+
+118
+00:07:27,500 --> 00:07:29,570
+on the larger block?
+放在较大的块上，会发生什么？
+
+119
+00:07:29,570 --> 00:07:32,680
+Well, first of all, I have to find space for it.
+好吧，首先，我必须为它找到空间。
+
+120
+00:07:32,680 --> 00:07:35,340
+Then I have to grasp the lower block.
+然后我必须抓住下块。
+
+121
+00:07:35,340 --> 00:07:38,380
+And I have to move it and I have to ungrasp it.
+我必须移动它，我必须解开它。
+
+122
+00:07:38,380 --> 00:07:42,620
+So those are four things I need to do in order to achieve
+所以这是我需要做的四件事才能实现
+
+123
+00:07:42,620 --> 00:07:44,140
+what I want to do.
+我想做的事情。
+
+124
+00:07:44,140 --> 00:07:52,450
+So therefore, I know that the put-on method has four pieces.
+因此，我知道穿上方法有四个部分。
+
+125
+00:07:52,450 --> 00:07:57,480
+It has to find space on the target block.
+它必须在目标块上找到空间。
+
+126
+00:07:57,480 --> 00:08:05,500
+It has to grasp the block that it's been commanded to move.
+它必须抓住它被命令移动的块。
+
+127
+00:08:05,500 --> 00:08:10,580
+Then it has to move, and then it has to ungrasp.
+然后它必须移动，然后它必须解开。
+
+128
+00:08:15,720 --> 00:08:18,680
+But taking hints from some of the questions that it did
+但是从
+
+129
+00:08:18,680 --> 00:08:23,350
+answer before I got haunted by the music, taking our cue from
+我被音乐困扰之前它确实回答的一些问题中得到暗示，从中
+
+130
+00:08:23,350 --> 00:08:26,850
+that, we know that in order to grasp something, in this
+得到启示，我们知道，为了掌握某些东西，在这个
+
+131
+00:08:26,850 --> 00:08:30,150
+particular world, you can't have anything on top of it.
+特定的世界里，你不能在它之上拥有任何东西 .
+
+132
+00:08:30,150 --> 00:08:36,929
+So grasp, therefore, may call clear top in order to get
+因此，掌握，因此，可以调用clear top 以便
+
+133
+00:08:36,929 --> 00:08:41,710
+stuff off from the target object.
+从目标对象中获取东西。
+
+134
+00:08:41,710 --> 00:08:45,020
+And that may happen in an iterative loop because there
+这可能发生在一个迭代循环中，因为上面
+
+135
+00:08:45,020 --> 00:08:47,450
+may be several things on top.
+可能有几件事。
+
+136
+00:08:47,450 --> 00:08:49,120
+And how do you get rid of stuff?
+你如何摆脱东西？
+
+137
+00:08:49,120 --> 00:08:50,370
+Well, by calling get rid of.
+好吧，通过调用摆脱。
+
+138
+00:08:54,810 --> 00:08:57,660
+And that may go around a loop several times.
+这可能会循环几次。
+
+139
+00:08:57,660 --> 00:09:04,210
+And then, the way you get rid of stuff is by calling put-on.
+然后，你摆脱东西的方法是调用 put-on。
+
+140
+00:09:04,210 --> 00:09:06,780
+So that gives us recursion, and it's from the recursion
+所以这给了我们递归，当它解决一个问题时，我们从递归
+
+141
+00:09:06,780 --> 00:09:09,110
+that we get a lot of the apparent complexity of the
+中获得了程序行为的很多明显复杂性
+
+142
+00:09:09,110 --> 00:09:13,920
+program's behavior when it solves a problem.
+。
+
+143
+00:09:13,920 --> 00:09:16,830
+Now, in order to find space, you also have to
+现在，为了寻找空间，你还得
+
+144
+00:09:16,830 --> 00:09:19,070
+call get rid of.
+调用摆脱。
+
+145
+00:09:19,070 --> 00:09:20,820
+So that's where I meant to put this other iterative
+所以这就是我打算放置另一个迭代
+
+146
+00:09:20,820 --> 00:09:22,270
+loop, not down here.
+循环的地方，而不是在这里。
+
+147
+00:09:22,270 --> 00:09:25,400
+Cleat top has got the iterative loop inside of it.
+Cleat top里面有迭代循环。
+
+148
+00:09:25,400 --> 00:09:26,930
+So that's the structure of the program.
+这就是程序的结构。
+
+149
+00:09:26,930 --> 00:09:29,610
+It's extremely simple.
+这非常简单。
+
+150
+00:09:29,610 --> 00:09:31,810
+And you might say to me, well, how can you get such
+你可能会对我说，好吧，你怎么能从
+
+151
+00:09:31,810 --> 00:09:34,140
+apparently complex-looking behavior out of
+
+
+152
+00:09:34,140 --> 00:09:35,065
+such a simple program?
+这样一个简单的程序中得到如此看似复杂的行为呢？
+
+153
+00:09:35,065 --> 00:09:36,665
+A legitimate question.
+一个合法的问题。
+
+154
+00:09:36,665 --> 00:09:41,090
+But before we tackle that one head on, I'd like to do a
+但在我们直接解决这个问题之前，我想
+
+155
+00:09:41,090 --> 00:09:42,870
+simulation of this program with a very
+用一个非常
+
+156
+00:09:42,870 --> 00:09:44,120
+simple blocks problem.
+简单的块问题来模拟这个程序。
+
+157
+00:09:48,790 --> 00:09:51,380
+And it's the one I almost showed you, but
+这是我几乎给你看的那个，但
+
+158
+00:09:51,380 --> 00:09:53,180
+it goes like this.
+它是这样的。
+
+159
+00:09:53,180 --> 00:09:54,786
+Here's B1.
+这里是B1。
+
+160
+00:09:54,786 --> 00:09:58,920
+We'll call this BX because I forgot its name.
+我们将其称为 BX，因为我忘记了它的名字。
+
+161
+00:09:58,920 --> 00:10:01,250
+Here's BY.
+这里是 BY。
+
+162
+00:10:01,250 --> 00:10:03,380
+And here's B2.
+这是B2。
+
+163
+00:10:03,380 --> 00:10:12,080
+And the task is to put B1 on B2.
+任务是将B1放在B2上。
+
+164
+00:10:12,080 --> 00:10:17,090
+And according to our system diagram, that results in four
+根据我们的系统图，这会导致
+
+165
+00:10:17,090 --> 00:10:19,410
+calls to subroutines.
+对子程序的四次调用。
+
+166
+00:10:19,410 --> 00:10:20,660
+We have to find space.
+我们必须找到空间。
+
+167
+00:10:25,750 --> 00:10:27,995
+We have to grasp B1.
+我们必须掌握B1。
+
+168
+00:10:34,270 --> 00:10:38,630
+We have to move, and then we ungrasp.
+我们必须移动，然后我们解开。
+
+169
+00:10:44,120 --> 00:10:46,260
+Now, the way we grasp something is the first thing
+现在，我们抓住某物的方式是我们要做的第一件事
+
+170
+00:10:46,260 --> 00:10:49,900
+we have to do is clear off its top.
+就是清除它的顶部。
+
+171
+00:11:03,250 --> 00:11:04,640
+So grasp calls clear top.
+所以把握叫清顶。
+
+172
+00:11:08,760 --> 00:11:10,900
+And clear top in turn calls get rid of.
+并清顶轮流呼叫干掉。
+
+173
+00:11:18,080 --> 00:11:18,620
+And let me see.
+让我看看。
+
+174
+00:11:18,620 --> 00:11:19,650
+Let me keep track of these.
+让我跟踪这些。
+
+175
+00:11:19,650 --> 00:11:23,630
+This is clearing the top of B1, and this is
+这是清除B1 的顶部，这是
+
+176
+00:11:23,630 --> 00:11:26,230
+getting rid of BX.
+摆脱 BX。
+
+177
+00:11:26,230 --> 00:11:34,685
+And the way we get rid of BX is by putting BX on the table.
+我们摆脱 BX 的方法是将 BX 放在桌面上。
+
+178
+00:11:38,710 --> 00:11:44,800
+And then that in turn causes calls to another find space,
+然后这反过来又会导致调用另一个寻找空间、
+
+179
+00:11:44,800 --> 00:11:48,314
+another grasp, another move, and another ungrasp.
+另一个抓握、另一个移动和另一个不抓握。
+
+180
+00:11:48,314 --> 00:11:51,410
+So that's a little trace of the program as it works on
+这是程序在解决
+
+181
+00:11:51,410 --> 00:11:53,960
+this simple problem.
+这个简单问题时的一点痕迹。
+
+182
+00:11:53,960 --> 00:11:56,440
+So how does it go about answering the questions that I
+那么如何回答我刚才
+
+183
+00:11:56,440 --> 00:11:59,660
+demonstrated to you a moment ago?
+向您展示的问题呢？
+
+184
+00:11:59,660 --> 00:12:03,340
+Let's do that by using this trace.
+让我们通过使用这个跟踪来做到这一点。
+
+185
+00:12:03,340 --> 00:12:09,810
+So how, for example, does it answer the question, why did
+那么，例如，它如何回答这个问题，
+
+186
+00:12:09,810 --> 00:12:11,060
+you get rid of BX?
+你为什么要摆脱 BX？
+
+187
+00:12:17,980 --> 00:12:19,520
+[INAUDIBLE], what do you think?
+[听不清]，你怎么看？
+
+188
+00:12:19,520 --> 00:12:21,343
+How can it answer that question?
+它如何回答这个问题？
+
+189
+00:12:21,343 --> 00:12:22,593
+SPEAKER 4: [INAUDIBLE]
+发言者 4： [听不清]
+
+190
+00:12:26,280 --> 00:12:29,480
+PROFESSOR PATRICK WINSTON: So it goes up one level and
+PATRICK WINSTON 教授： 所以它上升了一层并
+
+191
+00:12:29,480 --> 00:12:31,590
+reports what it sees.
+报告了它所看到的内容。
+
+192
+00:12:31,590 --> 00:12:36,800
+So it says, and said in the demonstration, I got rid of BX
+所以它说，并在演示中说，我摆脱了 BX，
+
+193
+00:12:36,800 --> 00:12:40,660
+because I was trying to clear the top of B1.
+因为我试图清除 B1 的顶部。
+
+194
+00:12:40,660 --> 00:12:44,325
+So if I were to say why did you clear the top of B1, it
+所以如果我说你为什么要清除B1的顶部，它
+
+195
+00:12:44,325 --> 00:12:47,015
+would say because I was trying to grasp it.
+会说因为我试图抓住它。
+
+196
+00:12:47,015 --> 00:12:49,840
+If I were to say, why did you grasp B1, it would say because
+如果我说，你为什么要抓住B1，那就是因为
+
+197
+00:12:49,840 --> 00:12:51,990
+I was putting B1 on B2.
+我把B1放在了B2上。
+
+198
+00:12:51,990 --> 00:12:56,120
+If I say, why did you put B1 on B2, it would say,
+如果我说，你为什么把B1 放在 B2 上，它会说
+
+199
+00:12:56,120 --> 00:12:59,910
+slavishly, because you told me to.
+，因为你告诉我的，所以会很粗鲁。
+
+200
+00:12:59,910 --> 00:13:03,770
+OK, so that's how it deals with why questions.
+好的，这就是它处理为什么问题的方式。
+
+201
+00:13:03,770 --> 00:13:06,620
+How about how questions?
+怎么做题？
+
+202
+00:13:09,410 --> 00:13:11,680
+Timothy, what do you think about that one?
+蒂莫西，你觉得那个怎么样？
+
+203
+00:13:11,680 --> 00:13:13,400
+How would it go about answering a question about how
+它将如何回答有关
+
+204
+00:13:13,400 --> 00:13:14,650
+you did something?
+您如何做某事的问题？
+
+205
+00:13:17,210 --> 00:13:18,400
+Do you have a thought?
+你有想法吗？
+
+206
+00:13:18,400 --> 00:13:21,428
+TIMOTHY: Um, yeah, it would think about what I was trying
+蒂莫西：嗯，是的，它会考虑我
+
+207
+00:13:21,428 --> 00:13:21,750
+to accomplish.
+想要完成的事情。
+
+208
+00:13:21,750 --> 00:13:21,820
+PROFESSOR PATRICK WINSTON: Yeah, but
+PATRICK WINSTON 教授：是的，但
+
+209
+00:13:21,820 --> 00:13:22,710
+how would it do that?
+它会怎么做呢？
+
+210
+00:13:22,710 --> 00:13:24,550
+How would the program do that?
+该程序将如何做到这一点？
+
+211
+00:13:24,550 --> 00:13:26,150
+We know that answering a why question makes
+我们知道，回答为什么问题会使
+
+212
+00:13:26,150 --> 00:13:28,710
+it go up one level.
+它上升一个层次。
+
+213
+00:13:28,710 --> 00:13:30,660
+How does it answer a how question?
+它如何回答一个如何的问题？
+
+214
+00:13:30,660 --> 00:13:31,800
+Sebastian?
+塞巴斯蒂安?
+
+215
+00:13:31,800 --> 00:13:32,560
+SEBASTIAN: It goes down one level.
+塞巴斯蒂安：它下降了一层。
+
+216
+00:13:32,560 --> 00:13:34,420
+PROFESSOR PATRICK WINSTON: You go down one level.
+PATRICK WINSTON 教授：你下降了一层。
+
+217
+00:13:34,420 --> 00:13:40,210
+So you start off all the way up here with a put-on.
+所以你从这里一直穿上衣服开始。
+
+218
+00:13:40,210 --> 00:13:42,360
+You will say, oh, well I did these four things.
+你会说，哦，我做了这四件事。
+
+219
+00:13:42,360 --> 00:13:43,890
+You say, why did you grasp B1?
+你说，你为什么抓B1？
+
+220
+00:13:43,890 --> 00:13:46,170
+It will say because I was trying to clear its top.
+它会说因为我试图清除它的顶部。
+
+221
+00:13:46,170 --> 00:13:46,960
+Why did you clear its top?
+你为什么要清除它的顶部？
+
+222
+00:13:46,960 --> 00:13:48,930
+Because I was trying to get rid of it.
+因为我试图摆脱它。
+
+223
+00:13:48,930 --> 00:13:50,080
+Why were you trying to get rid of it?
+你为什么试图摆脱它？
+
+224
+00:13:50,080 --> 00:13:52,890
+Because I was trying to put it on the table.
+因为我试图把它放在桌子上。
+
+225
+00:13:52,890 --> 00:13:56,570
+So that's how it answers how questions, by going down in
+所以这就是它如何回答问题的方式，通过在
+
+226
+00:13:56,570 --> 00:14:02,280
+this tree and this trace of the program of action so as to
+这棵树和这个行动计划的踪迹中向下走，以便
+
+227
+00:14:02,280 --> 00:14:05,100
+see how things are put together.
+看到事情是如何组合在一起的。
+
+228
+00:14:05,100 --> 00:14:07,940
+What are these things that are being put together?
+这些东西放在一起是什么？
+
+229
+00:14:07,940 --> 00:14:10,460
+What's the word I've been avoiding so as to bring this
+我一直在避免用什么词来把它
+
+230
+00:14:10,460 --> 00:14:13,360
+to a crescendo?
+推向高潮？
+
+231
+00:14:13,360 --> 00:14:17,310
+What are these objectives, these things it wants to do?
+这些目标是什么，它想做的这些事情是什么？
+
+232
+00:14:17,310 --> 00:14:19,530
+They're goals.
+他们是目标。
+
+233
+00:14:19,530 --> 00:14:25,780
+So this thing is leaving a trace, which is a goal tree.
+所以这个东西留下了痕迹，就是一棵目标树。
+
+234
+00:14:25,780 --> 00:14:29,260
+Does that sound familiar?
+这听起来很熟悉吗？
+
+235
+00:14:29,260 --> 00:14:31,400
+Three days ago, we talked about goal trees in connection
+三天前，我们谈到了
+
+236
+00:14:31,400 --> 00:14:33,820
+with integration.
+与集成相关的目标树。
+
+237
+00:14:33,820 --> 00:14:36,440
+So this thing is building a goal tree, also known as an
+所以这件事正在构建一个目标树，也称为
+
+238
+00:14:36,440 --> 00:14:38,320
+and-or tree.
+与或树。
+
+239
+00:14:38,320 --> 00:14:40,940
+So this must be an and tree.
+所以这一定是一棵和树。
+
+240
+00:14:40,940 --> 00:14:44,300
+And if this is an and tree, are there any and nodes?
+如果这是一个 and 树，是否有 and 节点？
+
+241
+00:14:44,300 --> 00:14:45,590
+Sure, there's one right there.
+当然，那里有一个。
+
+242
+00:14:48,860 --> 00:14:53,030
+So do you think then that you can answer questions about
+那么你认为只要你建立一棵与或树，你就可以回答关于
+
+243
+00:14:53,030 --> 00:14:56,740
+your own behavior as long as you build an and-or tree?
+你自己行为的问题吗？
+
+244
+00:14:56,740 --> 00:14:58,232
+Sure.
+当然。
+
+245
+00:14:58,232 --> 00:15:00,880
+Does this mean that the integration program could
+这是否意味着集成程序可以
+
+246
+00:15:00,880 --> 00:15:04,110
+answer questions about its own behavior?
+回答有关其自身行为的问题？
+
+247
+00:15:04,110 --> 00:15:05,990
+Sure.
+当然。
+
+248
+00:15:05,990 --> 00:15:08,140
+Because they both build goal trees, and wherever you got a
+因为他们都建立了目标树，而且无论你有
+
+249
+00:15:08,140 --> 00:15:10,270
+goal tree, you can answer certain kinds of questions
+目标树，你都可以回答
+
+250
+00:15:10,270 --> 00:15:11,520
+about your own behavior.
+关于你自己行为的某些类型的问题。
+
+251
+00:15:15,290 --> 00:15:22,910
+So let me see if in fact it really does build itself a
+因此，让我看看它是否真的在解决问题时确实为自己构建了一个
+
+252
+00:15:22,910 --> 00:15:25,660
+goal tree as it solves problems.
+目标树。
+
+253
+00:15:25,660 --> 00:15:31,560
+So this time, we'll put B6 on B3 this time.
+所以这一次，我们将把B6 放在 B3 上。
+
+254
+00:15:35,400 --> 00:15:37,000
+But watch it develop its goal tree.
+但请注意它发展其目标树。
+
+255
+00:15:42,490 --> 00:15:44,950
+So in contrast to the simple example I was working on the
+因此，与我在板上工作的简单示例相比
+
+256
+00:15:44,950 --> 00:15:49,726
+board, this gets to be a pretty complicated goal tree.
+，这将是一个非常复杂的目标树。
+
+257
+00:15:49,726 --> 00:15:52,550
+But I could still answers questions about behavior.
+但我仍然可以回答有关行为的问题。
+
+258
+00:15:52,550 --> 00:15:59,430
+For example, I could say, why did you put B6 on B3?
+例如，我可以说，你为什么把 B6 放在 B3 上？
+
+259
+00:16:02,440 --> 00:16:04,790
+Because you told me to.
+因为你告诉我的。
+
+260
+00:16:04,790 --> 00:16:08,090
+All right, so the complexity of the behavior is largely a
+好吧，所以行为的复杂性在很大程度上
+
+261
+00:16:08,090 --> 00:16:10,780
+consequence not of the complexity of the program in
+不是这个特定情况下程序复杂性的结果
+
+262
+00:16:10,780 --> 00:16:13,230
+this particular case, but the building of this giant goal
+，而是这个巨大目标
+
+263
+00:16:13,230 --> 00:16:17,880
+tree as a consequence of the complexity of the problem.
+树的构建是问题复杂性的结果。
+
+264
+00:16:17,880 --> 00:16:20,400
+This brings us to one of our previous matters--
+这使我们想到了我们以前的一件事情——很早就想到
+
+265
+00:16:20,400 --> 00:16:24,130
+early on to one of the gold star ideas of today.
+了今天的金星想法之一。
+
+266
+00:16:24,130 --> 00:16:29,080
+And this gold star idea goes back to a lecture given in the
+这个金星的想法可以追溯到
+
+267
+00:16:29,080 --> 00:16:32,470
+late '60s by Herb Simon, who was the first Nobel Laureate
+60 年代后期赫伯·西蒙（Herb Simon）的一次演讲，他是第一位
+
+268
+00:16:32,470 --> 00:16:36,030
+in the pseudo Nobel Prize for economics.
+伪诺贝尔经济学奖的诺贝尔奖获得者。
+
+269
+00:16:36,030 --> 00:16:36,690
+Is that right, Bob?
+对吗，鲍勃？
+
+270
+00:16:36,690 --> 00:16:37,390
+Was he the first?
+他是第一个吗？
+
+271
+00:16:37,390 --> 00:16:39,810
+All right, he was the first winner of the Nobel Prize,
+好吧，他是第一个诺贝尔奖得主，
+
+272
+00:16:39,810 --> 00:16:42,800
+pseudo Nobel Prize in economics.
+伪诺贝尔经济学奖。
+
+273
+00:16:42,800 --> 00:16:45,170
+And in this lecture, which was titled "The Sciences of the
+在这个题为“人工科学”的讲座中，
+
+274
+00:16:45,170 --> 00:16:50,500
+Artificial," he said imagine that you're looking on a beach
+他说想象一下你在沙滩上
+
+275
+00:16:50,500 --> 00:16:53,705
+at the path of a ant.
+看着一只蚂蚁的路径。
+
+276
+00:16:53,705 --> 00:16:56,580
+And he said, well, you know, the path of the ant looks
+他说，嗯，你知道，蚂蚁的路径看起来
+
+277
+00:16:56,580 --> 00:16:58,070
+extremely complicated.
+非常复杂。
+
+278
+00:16:58,070 --> 00:17:02,640
+And you're tempted to think the ant is some kind of genius
+你很容易认为蚂蚁是某种天才
+
+279
+00:17:02,640 --> 00:17:05,670
+or monster brain ant.
+或怪物大脑蚂蚁。
+
+280
+00:17:05,670 --> 00:17:10,780
+But in fact, when you take a closer look, what you discover
+但实际上，当你仔细观察时，你会发现沙滩
+
+281
+00:17:10,780 --> 00:17:14,490
+is that there are a bunch of pebbles on the beach, and all
+上有一堆鹅卵石，
+
+282
+00:17:14,490 --> 00:17:19,609
+the ant is doing is avoiding those pebbles on his way home.
+而蚂蚁所做的只是在回家的路上避开那些鹅卵石。
+
+283
+00:17:19,609 --> 00:17:23,450
+So the complexity of the behavior, said Simon, is a
+西蒙说，
+
+284
+00:17:23,450 --> 00:17:25,900
+consequence of the complexity of the environment, not the
+因此行为的复杂性是环境复杂性的结果，而不是
+
+285
+00:17:25,900 --> 00:17:27,900
+complexity of the program.
+程序的复杂性。
+
+286
+00:17:27,900 --> 00:17:30,620
+So that's the metaphoric Simon's ant.
+这就是比喻西蒙的蚂蚁。
+
+287
+00:17:30,620 --> 00:17:39,910
+And what it says is that the complexity of the behavior is
+它说的是行为的复杂性是
+
+288
+00:17:39,910 --> 00:17:50,270
+the max of the complexity of the program and the complexity
+程序复杂
+
+289
+00:17:50,270 --> 00:17:51,520
+of the environment.
+性和环境复杂性的最大值。
+
+290
+00:17:58,720 --> 00:18:01,960
+So that's something we'll see many times during the rest of
+所以这就是我们在本学期剩下的时间里会看到很多次的事情
+
+291
+00:18:01,960 --> 00:18:02,830
+the semester.
+。
+
+292
+00:18:02,830 --> 00:18:05,000
+Complex behavior, simple program.
+复杂的行为，简单的程序。
+
+293
+00:18:05,000 --> 00:18:06,105
+You think it's going to be complicated.
+你认为这会很复杂。
+
+294
+00:18:06,105 --> 00:18:09,130
+It turns out to be simple because the problem has the
+事实证明它很简单，因为问题具有
+
+295
+00:18:09,130 --> 00:18:11,810
+complexity, not the program.
+复杂性，而不是程序。
+
+296
+00:18:14,350 --> 00:18:17,350
+So that brings us to check box three in today's talk, and
+所以这让我们在今天的演讲中选择了第三个复选框，
+
+297
+00:18:17,350 --> 00:18:19,520
+there's a little bit of a scene here because now I want
+这里有一点场景，因为现在我
+
+298
+00:18:19,520 --> 00:18:24,140
+to stop talking about goal-centered programming and
+想停止谈论以目标为中心的编程，
+
+299
+00:18:24,140 --> 00:18:28,840
+start talking about rule-based expert systems.
+开始谈论基于规则的专家系统。
+
+300
+00:18:28,840 --> 00:18:35,190
+The rule-based expert systems were developed in a burst of
+基于规则的专家系统是在 1980 年代中期对人工智能的商业应用前景充满热情而开发的
+
+301
+00:18:35,190 --> 00:18:38,870
+enthusiasm about the prospects for commercial applications of
+
+
+302
+00:18:38,870 --> 00:18:45,530
+artificial intelligence in the mid-1980s.
+。
+
+303
+00:18:45,530 --> 00:18:50,010
+At that time, it was supposed lengthy articles are written,
+那时，应该写长篇文章，
+
+304
+00:18:50,010 --> 00:18:52,620
+but you could account for useful aspects of human
+但您可以通过以简单规则的形式编写所有知识来解释人类智能的有用方面
+
+305
+00:18:52,620 --> 00:18:55,980
+intelligence by writing all the knowledge in the form of
+
+
+306
+00:18:55,980 --> 00:18:57,870
+simple rules.
+。
+
+307
+00:18:57,870 --> 00:19:02,700
+So if this is true, then that's true.
+所以，如果这是真的，那就是真的。
+
+308
+00:19:02,700 --> 00:19:07,070
+If you want to achieve this, then do that.
+如果你想实现这一点，那就这样做吧。
+
+309
+00:19:07,070 --> 00:19:09,690
+But all the knowledge had to be encapsulated in the form of
+但是所有的知识都必须以简单规则的形式封装起来
+
+310
+00:19:09,690 --> 00:19:12,440
+simple rules.
+。
+
+311
+00:19:12,440 --> 00:19:13,780
+So what might you want to do with this?
+那么你想用这个做什么呢？
+
+312
+00:19:13,780 --> 00:19:15,110
+All sorts of things.
+各种各样的事情。
+
+313
+00:19:15,110 --> 00:19:16,510
+Thousands of these systems were written,
+
+
+314
+00:19:16,510 --> 00:19:18,760
+as I indicated before.
+正如我之前指出的那样，已经编写了数千个这样的系统。
+
+315
+00:19:18,760 --> 00:19:19,890
+But here's an example.
+但这里有一个例子。
+
+316
+00:19:19,890 --> 00:19:21,790
+I'm going to work out an example having to do with
+我将提出一个与
+
+317
+00:19:21,790 --> 00:19:23,870
+identification.
+识别有关的示例。
+
+318
+00:19:23,870 --> 00:19:28,980
+And this example is patterned off of a classic program,
+这个例子是从一个经典的程序中设计出来的，
+
+319
+00:19:28,980 --> 00:19:31,885
+strangely also written at Stanford, called MYCIN.
+奇怪的是，它也是在斯坦福大学写的，叫做 MYCIN。
+
+320
+00:19:31,885 --> 00:19:34,210
+It was developed to diagnose bacterial
+它被开发用于诊断
+
+321
+00:19:34,210 --> 00:19:36,470
+infections in the blood.
+血液中的细菌感染。
+
+322
+00:19:36,470 --> 00:19:37,140
+So you come in.
+所以你进来了。
+
+323
+00:19:37,140 --> 00:19:40,800
+You got some horrible disease, and the doctor gets curious
+你得了一些可怕的疾病，医生
+
+324
+00:19:40,800 --> 00:19:43,880
+about what antibiotic would be perfect for your disease.
+对哪种抗生素最适合你的疾病感到好奇。
+
+325
+00:19:43,880 --> 00:19:45,500
+He starts asking a lot of questions.
+他开始问很多问题。
+
+326
+00:19:49,380 --> 00:19:54,710
+So I'm not going to deal with that because that world has
+所以我不打算处理这个问题，因为那个世界有
+
+327
+00:19:54,710 --> 00:19:59,250
+all kinds of unpronounceable terms like bacterioides and
+各种各样的不可发音的术语，比如 bacterioides 和
+
+328
+00:19:59,250 --> 00:20:01,310
+anaerobic and stuff like that.
+anaerobic 之类的东西。
+
+329
+00:20:01,310 --> 00:20:04,770
+So it's completely analogous to talk about identifying
+所以
+
+330
+00:20:04,770 --> 00:20:12,210
+animals in a little zoo, sort of a small town type of zoo.
+在一个小动物园里谈论动物识别是完全类似的，有点像一个小镇类型的动物园。
+
+331
+00:20:12,210 --> 00:20:15,320
+So I'm going to suggest that we write down on a piece of
+所以我建议我们在一张纸上写下
+
+332
+00:20:15,320 --> 00:20:18,710
+paper all the things we can observe about an animal, and
+我们可以观察到的关于动物的所有事情，
+
+333
+00:20:18,710 --> 00:20:23,210
+then we'll try to figure out what the animal is.
+然后我们会试着弄清楚这个动物是什么。
+
+334
+00:20:23,210 --> 00:20:26,610
+So I don't know, what can we start with?
+所以我不知道，我们可以从什么开始？
+
+335
+00:20:26,610 --> 00:20:27,860
+Has hair.
+有头发。
+
+336
+00:20:34,440 --> 00:20:37,660
+Then there are some characteristics of the
+然后有
+
+337
+00:20:37,660 --> 00:20:39,080
+following form.
+以下形式的一些特点。
+
+338
+00:20:39,080 --> 00:20:40,330
+Has claws.
+有爪子。
+
+339
+00:20:45,590 --> 00:20:46,840
+Sharp teeth.
+锋利的牙齿。
+
+340
+00:20:53,580 --> 00:20:55,060
+And forward-pointing eyes.
+和前倾的眼睛。
+
+341
+00:21:04,390 --> 00:21:08,120
+And these are all characteristics of carnivores.
+而这些都是肉食动物的特征。
+
+342
+00:21:08,120 --> 00:21:10,190
+We happen to have forward-pointing eyes too, but
+我们碰巧也有向前看的眼睛，
+
+343
+00:21:10,190 --> 00:21:12,560
+that's more because we used to swing around the trees a lot,
+但这更多是因为我们过去经常在树上摆动
+
+344
+00:21:12,560 --> 00:21:14,420
+and we needed the stereo vision.
+，我们需要立体视觉。
+
+345
+00:21:14,420 --> 00:21:16,530
+And we don't have the claws and the sharp teeth
+而且我们没有与之相伴的爪子和锋利的
+
+346
+00:21:16,530 --> 00:21:18,400
+that go with it.
+牙齿。
+
+347
+00:21:18,400 --> 00:21:21,030
+But anyhow, those are typically characteristics of
+但无论如何，这些都是
+
+348
+00:21:21,030 --> 00:21:23,040
+carnivores, as is eating meat.
+肉食动物的典型特征，就像吃肉一样。
+
+349
+00:21:28,250 --> 00:21:31,090
+And this particular little animal we're looking at has
+我们正在观察的这种特殊的小动物
+
+350
+00:21:31,090 --> 00:21:35,435
+also got spots, and it's very fast.
+也有斑点，而且速度非常快。
+
+351
+00:21:39,770 --> 00:21:42,550
+What is it?
+它是什么？
+
+352
+00:21:42,550 --> 00:21:44,480
+Well, everybody says it's a cheetah.
+好吧，每个人都说这是一只猎豹。
+
+353
+00:21:44,480 --> 00:21:46,970
+Let's see how our program would figure that out.
+让我们看看我们的程序是如何解决这个问题的。
+
+354
+00:21:46,970 --> 00:21:53,210
+Well, program might say, let's see if it has hair, then rule
+好吧，程序可能会说，让我们看看它是否有头发，然后规则
+
+355
+00:21:53,210 --> 00:21:57,985
+one says that that means it must be a mammal.
+一说这意味着它一定是哺乳动物。
+
+356
+00:22:03,690 --> 00:22:07,450
+We can imagine another rule that says if you have sharp
+我们可以想象另一条规则，如果你有锋利的
+
+357
+00:22:07,450 --> 00:22:12,410
+claws, sharp teeth, and forward-pointing eyes, then
+爪子、锋利的牙齿和向前的眼睛，那么
+
+358
+00:22:12,410 --> 00:22:14,750
+you're a carnivore.
+你就是食肉动物。
+
+359
+00:22:14,750 --> 00:22:17,670
+And I'm using sort of hardware notation here.
+我在这里使用了某种硬件符号。
+
+360
+00:22:17,670 --> 00:22:19,940
+That's an and gate, right?
+那是一个和门，对吧？
+
+361
+00:22:19,940 --> 00:22:23,040
+So that means we have to have all of these characteristics
+所以这意味着我们必须具备所有这些特征
+
+362
+00:22:23,040 --> 00:22:26,170
+before we will conclude that the animal is a carnivore.
+才能得出动物是食肉动物的结论。
+
+363
+00:22:32,490 --> 00:22:36,870
+Now, this animal has been also observed to eat meat.
+现在，这种动物也被观察到吃肉。
+
+364
+00:22:36,870 --> 00:22:40,750
+So that means we've got extra evidence that the animal is
+所以这意味着我们有额外的证据表明这种动物是
+
+365
+00:22:40,750 --> 00:22:42,700
+carnivorous.
+肉食性的。
+
+366
+00:22:42,700 --> 00:22:52,020
+And now, because the animal is a mammal and a carnivore and
+而现在，因为动物是哺乳动物和肉食动物，而且
+
+367
+00:22:52,020 --> 00:22:59,700
+has spots, and it's very fast, then the animal is a cheetah.
+有斑点，而且速度非常快，那么动物就是猎豹。
+
+368
+00:23:05,116 --> 00:23:07,850
+And I hope all of our African students agree that
+我希望我们所有的非洲学生都同意
+
+369
+00:23:07,850 --> 00:23:09,000
+it must be a cheetah.
+它一定是猎豹。
+
+370
+00:23:09,000 --> 00:23:09,980
+It's a small zoo--
+这是一个小动物园——
+
+371
+00:23:09,980 --> 00:23:11,420
+I mean, a big zoo.
+我的意思是，一个大动物园。
+
+372
+00:23:11,420 --> 00:23:11,830
+Who knows what it is?
+谁知道它是什么？
+
+373
+00:23:11,830 --> 00:23:13,700
+It's probably got some unpronouncable name--
+它可能有一些无法发音的名字——
+
+374
+00:23:13,700 --> 00:23:14,990
+there's possibilities.
+有可能。
+
+375
+00:23:14,990 --> 00:23:17,010
+But for our small zoo, that will do.
+但对于我们的小动物园来说，就可以了。
+
+376
+00:23:17,010 --> 00:23:20,260
+So we have group now written down in the form
+所以我们现在已经以
+
+377
+00:23:20,260 --> 00:23:22,270
+of these and gates.
+这些和门的形式写下来了。
+
+378
+00:23:22,270 --> 00:23:27,030
+Several rules, R1, R2-- and there needs to
+几个规则，R1，R2——这里
+
+379
+00:23:27,030 --> 00:23:29,040
+be an and gate here--
+需要一个和门——
+
+380
+00:23:29,040 --> 00:23:31,665
+that's R3 and an R4.
+即R3和R4。
+
+381
+00:23:36,950 --> 00:23:40,500
+All of which indicate that this animal is a cheetah.
+所有这些都表明这种动物是猎豹。
+
+382
+00:23:40,500 --> 00:23:43,155
+So we built ourself a little rule-based expert system that
+所以我们自己建立了一个基于规则的专家系统，它
+
+383
+00:23:43,155 --> 00:23:45,400
+can recognize exactly one animal, but you could imagine
+可以准确识别一种动物，但是你可以想象
+
+384
+00:23:45,400 --> 00:23:48,540
+filling out this system with other rules so that you could
+用其他规则填充这个系统，这样你就可以
+
+385
+00:23:48,540 --> 00:23:50,750
+recognize giraffes and penguins and all the other
+识别长颈鹿和企鹅以及
+
+386
+00:23:50,750 --> 00:23:52,590
+sorts of things you find in a small zoo.
+你在小动物园里发现的所有其他种类的东西.
+
+387
+00:23:55,890 --> 00:23:57,920
+So when you have a system like this that works as I've
+所以当你有一个像我
+
+388
+00:23:57,920 --> 00:24:01,236
+indicated, then what we're going to call that, we're
+所说的那样工作的系统时，我们将称之为，
+
+389
+00:24:01,236 --> 00:24:04,660
+going to give that a special name, and we're going to call
+我们将给它一个特殊的名称，我们将
+
+390
+00:24:04,660 --> 00:24:16,560
+that a forward-chaining rule-based--
+称之为前向链接规则 ——基于——
+
+391
+00:24:16,560 --> 00:24:17,810
+because it uses rules--
+因为它使用规则——
+
+392
+00:24:26,050 --> 00:24:30,403
+expert system.
+专家系统。
+
+393
+00:24:34,320 --> 00:24:38,050
+And we're going to put expert in parentheses because when
+我们将把专家放在括号中，因为当
+
+394
+00:24:38,050 --> 00:24:41,280
+these things were developed, for marketing reasons, they
+这些东西被开发出来时，出于市场原因，他们
+
+395
+00:24:41,280 --> 00:24:45,470
+called them expert systems instead of novice systems.
+称它们为专家系统而不是新手系统。
+
+396
+00:24:45,470 --> 00:24:47,490
+But are they really experts in a human sense?
+但他们真的是人类意义上的专家吗？
+
+397
+00:24:47,490 --> 00:24:51,880
+Not really, because they have these knee-jerk rules.
+不是真的，因为他们有这些下意识的规则。
+
+398
+00:24:51,880 --> 00:24:53,500
+They're not equipped with anything you might want to
+他们没有任何你可能想
+
+399
+00:24:53,500 --> 00:24:55,800
+call common sense.
+称之为常识的东西。
+
+400
+00:24:55,800 --> 00:24:59,700
+They don't have an ability to deal with previous cases, like
+他们没有能力处理以前的病例，就像
+
+401
+00:24:59,700 --> 00:25:01,940
+we do when we go to medical school.
+我们上医学院时那样。
+
+402
+00:25:01,940 --> 00:25:04,170
+So they really ought to be called rule-based novice
+所以他们真的应该被称为基于规则的新手
+
+403
+00:25:04,170 --> 00:25:06,120
+systems because they reason like novices on
+系统，因为他们像新手一样
+
+404
+00:25:06,120 --> 00:25:08,170
+the basis of rules.
+根据规则进行推理。
+
+405
+00:25:08,170 --> 00:25:09,585
+But the tradition is to call them
+但传统上称它们为
+
+406
+00:25:09,585 --> 00:25:11,590
+rule-based expert systems.
+基于规则的专家系统。
+
+407
+00:25:11,590 --> 00:25:18,310
+And this one works forward from the facts we give it to
+这个从我们给出的事实
+
+408
+00:25:18,310 --> 00:25:20,260
+the conclusion off on the right.
+出发，得出右边的结论。
+
+409
+00:25:20,260 --> 00:25:22,350
+That's why it's a forward-chaining system.
+这就是为什么它是一个前向链接系统。
+
+410
+00:25:26,850 --> 00:25:28,420
+Can this system answer questions
+这个系统能否回答
+
+411
+00:25:28,420 --> 00:25:29,670
+about its own behavior?
+有关其自身行为的问题？
+
+412
+00:25:34,715 --> 00:25:36,160
+[INAUDIBLE], what do you think?
+[听不清]，你怎么看？
+
+413
+00:25:36,160 --> 00:25:36,900
+SPEAKER 5: [INAUDIBLE].
+扬声器 5：[听不清]。
+
+414
+00:25:36,900 --> 00:25:38,010
+PROFESSOR PATRICK WINSTON: Why?
+帕特里克·温斯顿教授：为什么？
+
+415
+00:25:38,010 --> 00:25:40,986
+SPEAKER 5: [INAUDIBLE].
+扬声器 5：[听不清]。
+
+416
+00:25:40,986 --> 00:25:41,730
+PROFESSOR PATRICK WINSTON: Because it
+PATRICK WINSTON 教授：因为它
+
+417
+00:25:41,730 --> 00:25:43,466
+looks like a goal tree.
+看起来像一棵目标树。
+
+418
+00:25:43,466 --> 00:25:44,960
+Right.
+正确的。
+
+419
+00:25:44,960 --> 00:25:48,130
+This is, in fact, building a goal tree because each of
+这实际上是在构建目标树，因为
+
+420
+00:25:48,130 --> 00:25:55,000
+these rules that require several things to be true is
+这些需要满足若干条件的规则中的每一个都
+
+421
+00:25:55,000 --> 00:25:56,920
+creating an and node.
+创建了一个 and 节点。
+
+422
+00:25:56,920 --> 00:26:00,180
+And each of these situations here where you have multiple
+在这些情况下，你有多种
+
+423
+00:26:00,180 --> 00:26:02,190
+reasons for believing that the thing is a carnivore, that's
+理由相信这个东西是食肉动物，那就是
+
+424
+00:26:02,190 --> 00:26:03,960
+creating an or node.
+创建一个 or 节点。
+
+425
+00:26:03,960 --> 00:26:05,820
+And we already know that you can answer questions about
+而且我们已经知道，如果您留下目标树的痕迹，您可以回答有关
+
+426
+00:26:05,820 --> 00:26:10,440
+your own behavior if you leave behind a trace of a goal tree.
+您自己行为的问题。
+
+427
+00:26:10,440 --> 00:26:11,620
+So look at this.
+所以看看这个。
+
+428
+00:26:11,620 --> 00:26:20,260
+If I say to it, why were you interested in
+如果我对它说，你为什么
+
+429
+00:26:20,260 --> 00:26:21,520
+the animal's claws?
+对动物的爪子感兴趣？
+
+430
+00:26:21,520 --> 00:26:25,020
+Because I was trying to see if it was a carnivore.
+因为我想看看它是不是肉食动物。
+
+431
+00:26:25,020 --> 00:26:28,710
+How did you know that the animal is a mammal?
+你怎么知道动物是哺乳动物？
+
+432
+00:26:28,710 --> 00:26:31,190
+Because it has hair.
+因为它有头发。
+
+433
+00:26:31,190 --> 00:26:33,450
+Why did you think it was a cheetah?
+为什么你认为它是一只猎豹？
+
+434
+00:26:33,450 --> 00:26:36,190
+Because it's a mammal, a carnivore, has
+因为它是哺乳动物，肉食动物，有
+
+435
+00:26:36,190 --> 00:26:38,010
+spots, and very fast.
+斑点，而且速度非常快。
+
+436
+00:26:38,010 --> 00:26:41,570
+So by working forward and backward in this goal tree,
+因此，通过在这个目标树中向前和向后工作，
+
+437
+00:26:41,570 --> 00:26:44,990
+this too can answer questions about its own behavior.
+这也可以回答有关其自身行为的问题。
+
+438
+00:26:44,990 --> 00:26:47,020
+So now you know how, going forward, you can write
+因此，现在您知道如何编写
+
+439
+00:26:47,020 --> 00:26:50,900
+programs that answer questions about their behavior.
+程序来回答有关其行为的问题。
+
+440
+00:26:50,900 --> 00:26:52,950
+Either you write the subroutines so that each one
+要么编写子例程，使每个子例程
+
+441
+00:26:52,950 --> 00:26:55,710
+is wrapped around a goal, so you've got goal-centered
+都围绕一个目标，这样你就有了以目标为中心的
+
+442
+00:26:55,710 --> 00:26:59,420
+programming, or you build a so-called expert system using
+编程，或者你使用规则构建了一个所谓的专家系统
+
+443
+00:26:59,420 --> 00:27:03,010
+rules, in which case it's easy to make it leave behind a
+，在这种情况下，很容易让它留下
+
+444
+00:27:03,010 --> 00:27:06,180
+trace of a goal tree, which makes it possible to answer
+痕迹 一个目标树，它可以
+
+445
+00:27:06,180 --> 00:27:08,670
+questions about its own behavior, just as this
+回答有关其自身行为的问题，就像这个
+
+446
+00:27:08,670 --> 00:27:09,170
+[INAUDIBLE]
+[听不清]
+
+447
+00:27:09,170 --> 00:27:10,420
+program did.
+程序所做的那样。
+
+448
+00:27:12,290 --> 00:27:16,330
+But now, a little more vocabulary.
+但现在，词汇量多了一点。
+
+449
+00:27:16,330 --> 00:27:20,260
+I'm going to save time by erasing all of these things
+我将通过删除
+
+450
+00:27:20,260 --> 00:27:22,210
+that I previously drew by way of connections.
+我以前通过连接绘制的所有这些东西来节省时间。
+
+451
+00:27:25,818 --> 00:27:33,610
+And I'm going to approach this zoo in a little different way.
+我将以一种不同的方式接近这个动物园。
+
+452
+00:27:33,610 --> 00:27:39,360
+I'm going to not ask any questions about the animal.
+我不会问任何关于动物的问题。
+
+453
+00:27:39,360 --> 00:27:43,510
+Instead, I'm going to say, mommy, is this thing I'm
+相反，我要说，妈妈，我在
+
+454
+00:27:43,510 --> 00:27:46,220
+looking at a cheetah?
+看猎豹吗？
+
+455
+00:27:46,220 --> 00:27:50,640
+And how would mommy go about figuring it out.
+妈妈会如何解决这个问题。
+
+456
+00:27:50,640 --> 00:27:54,330
+In her head, she would say, well, I don't know.
+在她的脑海里，她会说，嗯，我不知道。
+
+457
+00:27:54,330 --> 00:27:58,425
+If it's going to be a cheetah, then it must be the case that
+如果它是猎豹，那么它一定是
+
+458
+00:27:58,425 --> 00:28:05,010
+it's a carnivore, and it must be the case that it has spots.
+肉食动物，它一定是有斑点的。
+
+459
+00:28:05,010 --> 00:28:09,350
+And it must be the case that it's very fast.
+而且它必须非常快。
+
+460
+00:28:09,350 --> 00:28:12,210
+So so far, what we've established is that if it's
+到目前为止，我们已经确定，如果它
+
+461
+00:28:12,210 --> 00:28:14,940
+going to be a cheetah, it has to have the four
+要成为一只猎豹，它必须具有
+
+462
+00:28:14,940 --> 00:28:17,880
+characteristics that mommy finds behind
+妈妈发现
+
+463
+00:28:17,880 --> 00:28:20,440
+this rule are four.
+这条规则背后的四个特征是四个。
+
+464
+00:28:20,440 --> 00:28:24,710
+So instead of working forward from facts, what I'm going to
+因此，我要做的不是从事实出发，
+
+465
+00:28:24,710 --> 00:28:31,460
+do is work backward from a hypothesis.
+而是从假设出发。
+
+466
+00:28:31,460 --> 00:28:35,720
+So here the hypothesis is this thing is a cheetah.
+所以这里的假设是这个东西是一只猎豹。
+
+467
+00:28:35,720 --> 00:28:40,110
+How do I go about showing whether that's true or not?
+我如何去证明这是真的还是假的？
+
+468
+00:28:40,110 --> 00:28:44,250
+Well, I haven't done anything so far because all I know is a
+好吧，到目前为止，我还没有做任何事情，因为如果所有这些事情都是真的，我所知道的只是一只
+
+469
+00:28:44,250 --> 00:28:46,740
+cheetah if all these things are true, but are they true?
+猎豹，但它们是真的吗？
+
+470
+00:28:46,740 --> 00:28:51,160
+Well, to find out if it's a mammal, I can use rule one.
+好吧，要确定它是否是哺乳动物，我可以使用规则一。
+
+471
+00:28:51,160 --> 00:28:55,270
+And if I know or can determine that the animal has hair, then
+如果我知道或可以确定动物有头发，那么
+
+472
+00:28:55,270 --> 00:28:57,790
+that part of it is taken care of.
+它的那部分就会得到照顾。
+
+473
+00:28:57,790 --> 00:29:01,990
+And I can similarly work my way back through carnivore.
+我同样可以通过食肉动物回来。
+
+474
+00:29:01,990 --> 00:29:06,870
+I say, well, it's a carnivore if it has claws, sharp teeth,
+我说，好吧，如果它有爪子、锋利的牙齿
+
+475
+00:29:06,870 --> 00:29:09,680
+and forward-pointing eyes.
+和向前的眼睛，它就是食肉动物。
+
+476
+00:29:09,680 --> 00:29:11,860
+And then as much as the animal in question
+然后就像有问题的动物
+
+477
+00:29:11,860 --> 00:29:13,720
+does, then I'm through.
+一样，然后我就完成了。
+
+478
+00:29:13,720 --> 00:29:14,555
+I know it's a carnivore.
+我知道这是肉食动物。
+
+479
+00:29:14,555 --> 00:29:16,980
+I don't have to go through and show that it's a carnivore
+我不必通过另一种方式证明它是食肉动物
+
+480
+00:29:16,980 --> 00:29:18,230
+another way.
+。
+
+481
+00:29:18,230 --> 00:29:20,400
+So I never actually ask questions about
+所以我从来没有真正问过
+
+482
+00:29:20,400 --> 00:29:23,600
+whether it eats meat.
+它是否吃肉的问题。
+
+483
+00:29:23,600 --> 00:29:27,720
+Finally, the final two conditions are met by just an
+最后，只需对动物进行检查即可满足最后两个条件
+
+484
+00:29:27,720 --> 00:29:30,020
+inspection of the animal.
+。
+
+485
+00:29:30,020 --> 00:29:31,300
+That's to say, it's in the database.
+也就是说，它在数据库中。
+
+486
+00:29:31,300 --> 00:29:34,400
+I don't have to use any rules to determine that the animal
+我不必使用任何规则来确定动物
+
+487
+00:29:34,400 --> 00:29:37,290
+has spots and is very fast.
+有斑点并且非常快。
+
+488
+00:29:37,290 --> 00:29:39,610
+So now, I've got everything in place to say that it's a
+所以现在，我已经准备好说它是
+
+489
+00:29:39,610 --> 00:29:42,490
+cheetah, because it's a carnivore, because it has
+猎豹了，因为它是食肉动物，因为它有
+
+490
+00:29:42,490 --> 00:29:45,330
+claws, sharp teeth, and forward-pointing eyes, and all
+爪子、锋利的牙齿和指向前方的眼睛，而
+
+491
+00:29:45,330 --> 00:29:47,980
+the rest of this stuff is similarly determined by going
+所有其他的东西同样是由向后决定的
+
+492
+00:29:47,980 --> 00:29:54,170
+backwards, backwards from the hypothesis toward the facts,
+， 从假设到事实倒退，
+
+493
+00:29:54,170 --> 00:29:57,730
+instead of from the facts forward to the conclusions.
+而不是从事实到结论。
+
+494
+00:29:57,730 --> 00:30:09,180
+So building a system that works like that, I have a
+所以构建一个像这样工作的系统，我有一个
+
+495
+00:30:09,180 --> 00:30:15,980
+backward-chaining rule-based expert system.
+基于规则的反向链接专家系统。
+
+496
+00:30:15,980 --> 00:30:19,040
+But there's a very important characteristic of this system
+但是这个系统
+
+497
+00:30:19,040 --> 00:30:22,620
+in both backward and forward mode, and that is that this
+在后向和前向模式中都有一个非常重要的特点，那就是这个
+
+498
+00:30:22,620 --> 00:30:24,400
+thing is a deduction system.
+东西是一个演绎系统。
+
+499
+00:30:29,090 --> 00:30:31,760
+That's because it's working with facts
+那是因为它使用事实
+
+500
+00:30:31,760 --> 00:30:33,750
+to produce new facts.
+来产生新的事实。
+
+501
+00:30:33,750 --> 00:30:35,730
+When you have a deduction system, you can never take
+当你有一个扣除系统时，你永远不能拿走
+
+502
+00:30:35,730 --> 00:30:37,920
+anything away.
+任何东西。
+
+503
+00:30:37,920 --> 00:30:40,790
+But these rule-based systems are also used in another mode,
+但这些基于规则的系统也用于另一种模式，
+
+504
+00:30:40,790 --> 00:30:42,530
+where it's possible to take something away.
+在这种模式下可以拿走一些东西。
+
+505
+00:30:42,530 --> 00:30:45,110
+See, in fact world, in deduction world, you're
+看，事实上世界，在演绎世界中，你在
+
+506
+00:30:45,110 --> 00:30:46,920
+talking about proving things.
+谈论证明事物。
+
+507
+00:30:46,920 --> 00:30:51,320
+And once you prove something is true, it can't be false.
+一旦你证明某事是真的，它就不可能是假的。
+
+508
+00:30:51,320 --> 00:30:54,100
+If it is, you've got a contradiction in your system.
+如果是这样，你的系统就有矛盾了。
+
+509
+00:30:54,100 --> 00:30:56,340
+But if you think of this as a programming language, if you
+但是，如果您将其视为一种编程语言，如果您
+
+510
+00:30:56,340 --> 00:30:59,510
+think of using rules as a programming language, then you
+将规则视为一种编程语言，那么您
+
+511
+00:30:59,510 --> 00:31:04,770
+can think of arranging it so these rules add or subtract
+可以考虑对其进行排列，以便这些规则
+
+512
+00:31:04,770 --> 00:31:06,380
+from the database.
+从数据库中添加或减去。
+
+513
+00:31:06,380 --> 00:31:11,500
+Let me show you an example of a couple of systems.
+让我向您展示几个系统的示例。
+
+514
+00:31:11,500 --> 00:31:15,650
+First of all, since I've talked about the MYCIN system,
+首先，既然我已经谈到了 MYCIN 系统，
+
+515
+00:31:15,650 --> 00:31:41,910
+let me show you an example of a MYCIN dialogue.
+让我给你看一个 MYCIN 对话的例子。
+
+516
+00:31:41,910 --> 00:31:43,750
+That's a MYCIN dialogue.
+那是一个MYCIN对话。
+
+517
+00:31:43,750 --> 00:31:47,320
+And you can see the appearance of words you have to go to
+你可以看到你必须去
+
+518
+00:31:47,320 --> 00:31:48,570
+medical school to learn.
+医学院学习的单词的外观。
+
+519
+00:31:51,000 --> 00:31:53,830
+And here's a typical MYCIN rule, just like the rules for
+这里有一个典型的MYCIN规则，就像
+
+520
+00:31:53,830 --> 00:31:58,252
+doing zoo analysis, only a more complicated domain.
+做动物园分析的规则一样，只是一个更复杂的域。
+
+521
+00:31:58,252 --> 00:32:01,130
+But here's another example of a system that was written, not
+但这是另一个系统示例，它不是
+
+522
+00:32:01,130 --> 00:32:04,300
+in the '80s, but just a couple of years ago by a student in
+在 80 年代，而是几年前由
+
+523
+00:32:04,300 --> 00:32:09,340
+the architecture department, Ph.D. thesis.
+建筑系的一名学生博士编写的。 论文。
+
+524
+00:32:09,340 --> 00:32:13,150
+He was interested in the architecture of a Portuguese
+他对一位名叫西扎的葡萄牙建筑师的建筑很感兴趣
+
+525
+00:32:13,150 --> 00:32:15,250
+architect named Siza.
+。
+
+526
+00:32:15,250 --> 00:32:18,180
+And Siza's done a lot of mass housing stuff.
+西扎做了很多大规模住房的事情。
+
+527
+00:32:18,180 --> 00:32:20,570
+And Siza has the idea that you ought to be able to design
+Siza 认为你应该能够设计
+
+528
+00:32:20,570 --> 00:32:22,500
+your own house.
+自己的房子。
+
+529
+00:32:22,500 --> 00:32:27,240
+And so Jose Duarte, a Portuguese student, a Ph.D.
+因此，葡萄牙学生何塞·杜阿尔特 (Jose Duarte)获得博士学位。
+
+530
+00:32:27,240 --> 00:32:31,260
+student in architecture, wrote a rule-based system that was
+建筑专业的学生，编写了一个基于规则的系统，该系统能够
+
+531
+00:32:31,260 --> 00:32:35,950
+capable of designing Siza-like houses in response to the
+设计类似 Siza 的房屋，以响应将要占用房屋的人们的要求
+
+532
+00:32:35,950 --> 00:32:39,080
+requirements and recommendations and desires of
+、建议和愿望。 �
+
+533
+00:32:39,080 --> 00:32:42,740
+the people who are going to occupy the houses.
+所�
+
+534
+00:32:42,740 --> 00:32:46,150
+So the most compelling part of this thing, of this exercise,
+这件事，这个练习中最引人注目的部分
+
+535
+00:32:46,150 --> 00:32:51,780
+was that Duarte took some of the designs of the program,
+是，杜阿尔特把程序的一些
+
+536
+00:32:51,780 --> 00:32:55,330
+mixed them up with some of the designs of Siza, and put them
+设计，和西扎的一些设计混合在一起，
+
+537
+00:32:55,330 --> 00:32:58,840
+in front of Siza, and said, which ones did you do?
+放在西扎面前，说，哪个做了 你做？
+
+538
+00:32:58,840 --> 00:33:01,550
+And Siza couldn't tell.
+而西扎也说不出来。
+
+539
+00:33:01,550 --> 00:33:04,600
+So somehow, the rule-based system that was built using
+所以不知何故，使用这种技术构建的基于规则的系统
+
+540
+00:33:04,600 --> 00:33:08,530
+this kind of technology was sufficient to confuse even the
+足以让
+
+541
+00:33:08,530 --> 00:33:13,040
+expert that they were patterned after.
+专家感到困惑，他们被模仿了。
+
+542
+00:33:13,040 --> 00:33:14,555
+But this program is a little complicated.
+但是这个程序有点复杂。
+
+543
+00:33:14,555 --> 00:33:17,710
+It, too, has its own specialized lingo.
+它也有自己的专业术语。
+
+544
+00:33:17,710 --> 00:33:21,460
+So I'm not going to talk about it in detail, but rather talk
+所以我不打算详细讨论它，
+
+545
+00:33:21,460 --> 00:33:24,320
+instead about an analogous problem.
+而是讨论一个类似的问题。
+
+546
+00:33:24,320 --> 00:33:27,910
+And that is a problem that everyone has faced at one
+这是每个人都曾面临过的
+
+547
+00:33:27,910 --> 00:33:31,210
+point or another, and that is the problem of putting
+问题，那就是
+
+548
+00:33:31,210 --> 00:33:34,952
+groceries in a bag at a grocery store.
+在杂货店把杂货放在袋子里的问题。
+
+549
+00:33:34,952 --> 00:33:37,110
+It's the same thing, right?
+这是同一件事，对吧？
+
+550
+00:33:37,110 --> 00:33:39,770
+Instead of putting rooms in a house, you're putting
+你不是把房间放在房子里，而是把
+
+551
+00:33:39,770 --> 00:33:41,660
+groceries in a bag.
+杂货放在袋子里。
+
+552
+00:33:41,660 --> 00:33:46,640
+And there must be some rules about how to do that.
+并且必须有一些关于如何做到这一点的规则。
+
+553
+00:33:46,640 --> 00:33:49,910
+In fact, maybe some of you have been professional grocery
+事实上，也许你们中的一些人曾经是专业的
+
+554
+00:33:49,910 --> 00:33:52,420
+store baggers?
+杂货店装袋工？
+
+555
+00:33:52,420 --> 00:33:54,870
+[INAUDIBLE] a grocery store professional bagger.
+[听不清] 杂货店专业装袋工。
+
+556
+00:33:54,870 --> 00:33:57,760
+You're a--
+你是——
+
+557
+00:33:57,760 --> 00:33:58,480
+which one?
+哪一个？
+
+558
+00:33:58,480 --> 00:34:00,850
+LISA: [INAUDIBLE]
+LISA：[听不清]
+
+559
+00:34:00,850 --> 00:34:01,475
+PROFESSOR PATRICK WINSTON: Yeah, what is your name?
+PATRICK WINSTON 教授：是的，你叫什么名字？
+
+560
+00:34:01,475 --> 00:34:01,770
+LISA: Lisa.
+丽莎：丽莎。
+
+561
+00:34:01,770 --> 00:34:03,120
+PROFESSOR PATRICK WINSTON: Lisa.
+帕特里克·温斯顿教授：丽莎。
+
+562
+00:34:03,120 --> 00:34:05,640
+OK, well we got two professional
+好的，我们有两个专业的
+
+563
+00:34:05,640 --> 00:34:07,730
+grocery store baggers.
+杂货店装袋工。
+
+564
+00:34:07,730 --> 00:34:10,429
+And I'm going to be now simulating a highly paid
+我现在要模拟一个高薪的
+
+565
+00:34:10,429 --> 00:34:13,800
+knowledge engineer desirous of building a program that knows
+知识工程师，他渴望构建一个知道
+
+566
+00:34:13,800 --> 00:34:16,300
+how to bag groceries.
+如何打包杂货的程序。
+
+567
+00:34:16,300 --> 00:34:22,300
+So I'm going to visit your site, Market Basket, and I'm
+因此，我将访问您的网站Market Basket，我
+
+568
+00:34:22,300 --> 00:34:26,889
+going to ask Lisa, now fearful of losing her job, if she
+将询问现在害怕失去工作的丽莎，她是否
+
+569
+00:34:26,889 --> 00:34:30,250
+would tell me about how she bags groceries.
+愿意告诉我她是如何打包杂货的。
+
+570
+00:34:30,250 --> 00:34:32,780
+So could you suggest a rule?
+那么你能建议一个规则吗？
+
+571
+00:34:32,780 --> 00:34:34,226
+LISA: Sure.
+丽莎：当然。
+
+572
+00:34:34,226 --> 00:34:36,154
+Large items in the bottom.
+大件物品在底部。
+
+573
+00:34:36,154 --> 00:34:37,600
+PROFESSOR PATRICK WINSTON: Large items in the bottom.
+PATRICK WINSTON 教授：底部有大件物品。
+
+574
+00:34:37,600 --> 00:34:39,350
+You see, that's why I'm a highly paid knowledge
+你看，这就是为什么我是一名高薪的知识
+
+575
+00:34:39,350 --> 00:34:43,090
+engineer, because I translate what she said
+工程师，因为我将她所说的
+
+576
+00:34:43,090 --> 00:34:44,090
+into an if-then rule.
+转化为 if-then 规则。
+
+577
+00:34:44,090 --> 00:34:46,300
+So if large, then bottom.
+所以如果大，那么底部。
+
+578
+00:34:46,300 --> 00:34:47,370
+So now I--
+所以现在我-- 发言者
+
+579
+00:34:47,370 --> 00:34:49,030
+SPEAKER 3: [LAUGHTER]
+3： [笑声]
+
+580
+00:34:49,030 --> 00:34:50,020
+PROFESSOR PATRICK WINSTON: So how about you, [INAUDIBLE]?
+PATRICK WINSTON 教授： 那么你呢，[听不清]？
+
+581
+00:34:50,020 --> 00:34:51,270
+Have you got a suggestion?
+你有什么建议吗？
+
+582
+00:34:53,870 --> 00:34:56,355
+About how to bag groceries?
+关于如何打包杂货？
+
+583
+00:34:56,355 --> 00:34:59,840
+SPEAKER 6: The small things on top.
+演讲者 6：上面的小东西。
+
+584
+00:34:59,840 --> 00:35:02,180
+PROFESSOR PATRICK WINSTON: If small, then on top.
+PATRICK WINSTON 教授：如果很小，那么在上面。
+
+585
+00:35:02,180 --> 00:35:04,690
+Lisa, have you got anything else you could tell me?
+丽莎，你还有什么可以告诉我的吗？
+
+586
+00:35:04,690 --> 00:35:07,070
+LISA: Don't put too many heavy things in the same bag.
+丽莎：不要在同一个包里放太多重的东西。
+
+587
+00:35:07,070 --> 00:35:08,500
+PROFESSOR PATRICK WINSTON: Don't put too many heavy
+PATRICK WINSTON 教授：不要
+
+588
+00:35:08,500 --> 00:35:09,750
+things in the same bag.
+在同一个包里放太多重的东西。
+
+589
+00:35:09,750 --> 00:35:14,330
+So if heavy greater than three, then new bag, or
+所以如果重超过三个，那么新的包，或者
+
+590
+00:35:14,330 --> 00:35:16,560
+something like that.
+类似的东西。
+
+591
+00:35:16,560 --> 00:35:17,615
+Is that all we're going to be able to-- does anybody else
+这就是我们所能做的——还有其他人
+
+592
+00:35:17,615 --> 00:35:18,430
+want to volunteer?
+愿意做志愿者吗？
+
+593
+00:35:18,430 --> 00:35:20,677
+[INAUDIBLE], have you bagged groceries in Turkey?
+[听不清]，你在土耳其打包过杂货吗？
+
+594
+00:35:20,677 --> 00:35:22,665
+LISA: So they don't have grocery
+LISA：所以他们没有
+
+595
+00:35:22,665 --> 00:35:26,144
+baggers, so we have to--
+杂货包装工，所以我们必须--
+
+596
+00:35:26,144 --> 00:35:27,635
+PROFESSOR PATRICK WINSTON: So everybody's a professional
+PATRICK WINSTON 教授：所以土耳其的每个人都是专业的
+
+597
+00:35:27,635 --> 00:35:28,640
+bagger in Turkey.
+包装工。
+
+598
+00:35:28,640 --> 00:35:28,915
+Yeah.
+是的。
+
+599
+00:35:28,915 --> 00:35:30,165
+It's outsourced to the customers.
+它外包给客户。
+
+600
+00:35:32,324 --> 00:35:34,694
+SPEAKER 7: So no squishies on the bottom.
+发言者 7：所以底部没有松软的东西。
+
+601
+00:35:34,694 --> 00:35:35,642
+So if you have--
+因此，如果您有--
+
+602
+00:35:35,642 --> 00:35:36,590
+PROFESSOR PATRICK WINSTON: No squishies on the bottom.
+PATRICK WINSTON 教授：底部没有松软的东西。
+
+603
+00:35:36,590 --> 00:35:37,064
+SPEAKER 7: If you have tomatoes--
+发言者 7：如果你有西红柿——
+
+604
+00:35:37,064 --> 00:35:38,050
+PROFESSOR PATRICK WINSTON: That's good.
+PATRICK WINSTON 教授：那很好。
+
+605
+00:35:38,050 --> 00:35:38,400
+Tomatoes.
+番茄。
+
+606
+00:35:38,400 --> 00:35:40,260
+SPEAKER 7: You don't want them to get squished.
+演讲者 7：你不希望他们被压扁。
+
+607
+00:35:40,260 --> 00:35:40,880
+PROFESSOR PATRICK WINSTON: Now, there's a very different
+PATRICK WINSTON 教授： 现在，squishies 和西红柿有很大不同
+
+608
+00:35:40,880 --> 00:35:44,070
+thing about squishies and tomatoes because tomato is
+，因为西红柿是
+
+609
+00:35:44,070 --> 00:35:46,395
+specific, and squishy isn't.
+特定的，而 squishy 不是。
+
+610
+00:35:46,395 --> 00:35:49,090
+Now, one tendency of MIT students, of course, is that
+现在，麻省理工学院学生的一个趋势当然是
+
+611
+00:35:49,090 --> 00:35:52,270
+we all tend to generalize.
+我们都倾向于概括。
+
+612
+00:35:52,270 --> 00:35:54,190
+I once knew a professor in the Sloan School
+我曾经认识斯隆学校的一位教授，
+
+613
+00:35:54,190 --> 00:35:56,270
+who seemed real smart.
+他看起来很聪明。
+
+614
+00:35:56,270 --> 00:35:57,240
+And--
+并且-- 发言者
+
+615
+00:35:57,240 --> 00:36:00,150
+SPEAKER 3: [LAUGHTER]
+3： [笑声]
+
+616
+00:36:00,150 --> 00:36:00,410
+PROFESSOR PATRICK WINSTON: Then I
+PATRICKWINSTON 教授： 然后我
+
+617
+00:36:00,410 --> 00:36:02,270
+figured out what he did.
+知道他做了什么。
+
+618
+00:36:02,270 --> 00:36:06,250
+If I were to say, I'm thinking about a red apple.
+如果我说，我在想一个红苹果。
+
+619
+00:36:06,250 --> 00:36:10,720
+They'd sit back and say, oh, I see you're contemplating
+他们会坐下来说，哦，我看到你今天正在考虑
+
+620
+00:36:10,720 --> 00:36:12,330
+colored fruit today.
+彩色水果。
+
+621
+00:36:12,330 --> 00:36:16,740
+They're just taking it up one level of abstraction.
+他们只是把它提升了一个抽象层次。
+
+622
+00:36:16,740 --> 00:36:17,530
+Not a genius.
+不是天才。 在黑板上
+
+623
+00:36:17,530 --> 00:36:20,320
+He also was able to talk for an hour after he drew a
+画了一个三角形后，他还能够说话一个小时
+
+624
+00:36:20,320 --> 00:36:21,460
+triangle on the board.
+。
+
+625
+00:36:21,460 --> 00:36:22,520
+Amazing people.
+了不起的人。
+
+626
+00:36:22,520 --> 00:36:24,160
+Anyhow, where were we?
+无论如何，我们在哪里？
+
+627
+00:36:24,160 --> 00:36:27,690
+Oh, yes, bagging groceries.
+哦，是的，装袋杂货。
+
+628
+00:36:27,690 --> 00:36:31,690
+So we're making some progress, but not as
+所以我们正在取得一些进展，但没有
+
+629
+00:36:31,690 --> 00:36:32,950
+much as I would like.
+我想要的那么多。
+
+630
+00:36:32,950 --> 00:36:37,800
+And so in order to really make progress on tasks like this,
+所以为了在这样的任务上真正取得进展，
+
+631
+00:36:37,800 --> 00:36:38,790
+you have to exercise--
+你必须锻炼——
+
+632
+00:36:38,790 --> 00:36:43,040
+you know about some principles of knowledge engineering.
+你知道一些知识工程的原则。
+
+633
+00:36:43,040 --> 00:36:48,310
+So principle number one, which I've listed over here as part
+因此，我在此处列出的
+
+634
+00:36:48,310 --> 00:36:52,950
+of a gold star idea, is deal with specific cases.
+作为金星理念的一部分的第一原则是处理具体案例。
+
+635
+00:36:52,950 --> 00:36:55,870
+So while you're at the site, if all you do is talk to the
+因此，当您在现场时，如果您所做的只是
+
+636
+00:36:55,870 --> 00:36:59,210
+experts like Lisa and [INAUDIBLE], all you're going
+与 Lisa 和[听不清] 等专家交谈，您
+
+637
+00:36:59,210 --> 00:37:01,490
+to get is vague generalities because they won't think of
+将得到的只是模糊的概括，因为他们不会考虑
+
+638
+00:37:01,490 --> 00:37:03,260
+everything.
+所有事情。
+
+639
+00:37:03,260 --> 00:37:05,620
+So what you do is you say, well, let me
+所以你所做的就是你说，好吧，让我
+
+640
+00:37:05,620 --> 00:37:07,870
+watch you on the line.
+看着你就行。
+
+641
+00:37:07,870 --> 00:37:09,810
+And then you'll see that they have to have some way of
+然后你会发现他们必须有一些
+
+642
+00:37:09,810 --> 00:37:12,540
+dealing with the milk.
+处理牛奶的方法。
+
+643
+00:37:12,540 --> 00:37:14,220
+And then you'll see that they have to have some way of
+然后你会发现他们必须有某种方法来
+
+644
+00:37:14,220 --> 00:37:15,600
+dealing with the potato chips.
+处理薯片。
+
+645
+00:37:15,600 --> 00:37:19,150
+Nobody mentioned potato chips, except insofar as they might
+没有人提到薯片，除非它们可能
+
+646
+00:37:19,150 --> 00:37:20,400
+be squishy.
+是松软的。
+
+647
+00:37:22,650 --> 00:37:24,520
+We don't have a definition for squishy.
+我们没有对 squishy 的定义。
+
+648
+00:37:24,520 --> 00:37:27,840
+Nobody talked about the macaroni.
+没有人谈论通心粉。
+
+649
+00:37:27,840 --> 00:37:29,790
+And no one talked about the motor oil.
+没有人谈论机油。
+
+650
+00:37:29,790 --> 00:37:32,050
+This is a convenience store.
+这是一家便利店。
+
+651
+00:37:32,050 --> 00:37:35,240
+I don't want that in the same bag with the meat.
+我不想把它和肉放在同一个袋子里。
+
+652
+00:37:35,240 --> 00:37:37,890
+And then no one talked about canned stuff.
+然后没有人谈论罐头食品。
+
+653
+00:37:37,890 --> 00:37:40,450
+Here's a can of olives.
+这是一罐橄榄。
+
+654
+00:37:40,450 --> 00:37:45,930
+So by looking at specific cases, you elicit from people
+因此，通过查看具体案例，您可以从人们
+
+655
+00:37:45,930 --> 00:37:48,620
+knowledge they otherwise would not have thought to give you.
+那里获得他们原本不会想到给您的知识。
+
+656
+00:37:51,210 --> 00:37:55,450
+That's knowledge engineering rule number one.
+这是第一条知识工程规则。
+
+657
+00:37:55,450 --> 00:37:57,310
+And within a very few minutes, you'll have all three
+在几分钟之内，您将掌握所有三个
+
+658
+00:37:57,310 --> 00:37:59,480
+knowledge engineering rules and be prepared to be a highly
+知识工程规则，并准备好成为一名
+
+659
+00:37:59,480 --> 00:38:00,730
+paid knowledge engineer.
+高薪的知识工程师。
+
+660
+00:38:03,190 --> 00:38:05,350
+Heuristic, let's call these heuristics.
+启发式，我们称之为启发式。
+
+661
+00:38:05,350 --> 00:38:07,120
+Heuristic number one, specific cases.
+启发式第一，具体案例。
+
+662
+00:38:07,120 --> 00:38:11,100
+Heuristic number two is ask questions about things that
+启发式方法二是就
+
+663
+00:38:11,100 --> 00:38:15,070
+appear to be the same, but are actually handled differently.
+看似相同但实际上处理方式不同的事物提出问题。
+
+664
+00:38:15,070 --> 00:38:20,888
+So there's some Birds Eye frozen peas, and here--
+所以有一些Birds Eye冷冻豌豆，这里——
+
+665
+00:38:20,888 --> 00:38:27,160
+ugh, some fresh cut sweet peas.
+呃，一些新鲜切好的甜豌豆。
+
+666
+00:38:27,160 --> 00:38:31,540
+And to me, the person who's never touched a grocery bag in
+而对我来说，这个我一生中从未碰过杂货袋的人
+
+667
+00:38:31,540 --> 00:38:33,900
+my life-- maybe I'm from Mars--
+——也许我来自火星——
+
+668
+00:38:33,900 --> 00:38:34,990
+I can't tell the difference.
+我无法区分。
+
+669
+00:38:34,990 --> 00:38:36,910
+They're both peas.
+他们都是豌豆。
+
+670
+00:38:36,910 --> 00:38:40,980
+But I observe that the experts are handling these objects
+但我观察到专家们处理这些物体的方式
+
+671
+00:38:40,980 --> 00:38:42,650
+differently.
+不同。
+
+672
+00:38:42,650 --> 00:38:45,940
+So I say, why did you handle those peas differently from
+所以我说，你为什么处理那些豌豆和那些豌豆不同
+
+673
+00:38:45,940 --> 00:38:48,250
+those peas, and what do they say?
+，他们说什么？
+
+674
+00:38:48,250 --> 00:38:51,410
+One's canned, and one's frozen.
+一个是罐头的，一个是冷冻的。
+
+675
+00:38:51,410 --> 00:38:53,150
+So what happens?
+那么会发生什么？
+
+676
+00:38:53,150 --> 00:38:57,280
+Bingo, I've got some new words in my vocabulary.
+宾果游戏，我的词汇表里有了一些新词。
+
+677
+00:38:57,280 --> 00:38:59,660
+And those new vocabulary words are going to give me power
+这些新词汇将赋予我
+
+678
+00:38:59,660 --> 00:39:01,570
+over the domain because I can now use
+对领域的权力，因为我现在可以
+
+679
+00:39:01,570 --> 00:39:03,380
+those words in my rules.
+在我的规则中使用这些词。
+
+680
+00:39:03,380 --> 00:39:07,540
+And I can write rules like if frozen, then put them all
+我可以写下规则，比如冷冻，然后把它们
+
+681
+00:39:07,540 --> 00:39:09,910
+together in a little plastic bag.
+放在一个小塑料袋里。
+
+682
+00:39:09,910 --> 00:39:11,660
+Actually, that's too complicated, but that's what
+实际上，这太复杂了，但这就是
+
+683
+00:39:11,660 --> 00:39:13,000
+we end up doing, right?
+我们最终要做的，对吧？
+
+684
+00:39:13,000 --> 00:39:14,720
+Why do we put them all together in a
+为什么我们把它们放在一个
+
+685
+00:39:14,720 --> 00:39:16,141
+little plastic bag?
+小塑料袋里？
+
+686
+00:39:16,141 --> 00:39:18,105
+SPEAKER 8: [INAUDIBLE]
+扬声器 8： [听不清]
+
+687
+00:39:18,105 --> 00:39:19,087
+PROFESSOR PATRICK WINSTON: What's that?
+PATRICK WINSTON 教授： 那是什么？
+
+688
+00:39:19,087 --> 00:39:20,070
+SPEAKER 8: [INAUDIBLE]
+发言者 8： [听不清]
+
+689
+00:39:20,070 --> 00:39:20,690
+PROFESSOR PATRICK WINSTON: Well, there are two
+PATRICK WINSTON 教授：嗯，有两种
+
+690
+00:39:20,690 --> 00:39:21,940
+explanations.
+解释。
+
+691
+00:39:24,390 --> 00:39:26,750
+There's the MIT explanation.
+有麻省理工学院的解释。
+
+692
+00:39:26,750 --> 00:39:31,120
+We know that temperature flow is equal to the fourth power
+我们知道温度流量等于
+
+693
+00:39:31,120 --> 00:39:33,400
+of the temperature difference and the surface area and all
+温差和
+
+694
+00:39:33,400 --> 00:39:34,130
+that kind of stuff.
+表面积的四次方等等。
+
+695
+00:39:34,130 --> 00:39:39,500
+We want to get them all together in a ball, sphere.
+我们想把它们放在一个球里，球体。
+
+696
+00:39:39,500 --> 00:39:41,660
+The normal explanation is that they're going to melt anyway,
+通常的解释是它们无论如何都会融化，
+
+697
+00:39:41,660 --> 00:39:43,808
+so they might as well not get everything else wet.
+所以它们最好不要弄湿其他所有东西。
+
+698
+00:39:43,808 --> 00:39:44,784
+All right.
+好的。
+
+699
+00:39:44,784 --> 00:39:50,640
+SPEAKER 3: [LAUGHTER]
+发言者 3： [笑声]
+
+700
+00:39:50,640 --> 00:39:52,760
+PROFESSOR PATRICK WINSTON: So that's heuristic number two.
+PATRICK WINSTON 教授： 所以这是启发式的第二点。
+
+701
+00:39:52,760 --> 00:39:56,140
+And actually, there's heuristic number three, that I
+实际上，有启发式的第三点，我
+
+702
+00:39:56,140 --> 00:39:59,860
+just want to relate to you for the first time because I have
+只是想第一次和你联系，因为
+
+703
+00:39:59,860 --> 00:40:01,770
+been dealing with it a lot over this past summer.
+在过去的这个夏天我一直在处理它。
+
+704
+00:40:01,770 --> 00:40:04,160
+Heuristic number three is you build a system, and you see
+第三个启发式方法是您构建一个系统，然后您会看到
+
+705
+00:40:04,160 --> 00:40:05,820
+when it cracks.
+它何时破裂。
+
+706
+00:40:05,820 --> 00:40:07,770
+And when it cracks is when you don't have one of the rules
+而当它崩溃时，就是你没有
+
+707
+00:40:07,770 --> 00:40:11,130
+you need in order to execute--
+执行所需的规则
+
+708
+00:40:11,130 --> 00:40:13,180
+in order to get the program to execute as
+之一——为了让程序按照
+
+709
+00:40:13,180 --> 00:40:14,890
+you want it to execute.
+你想要的方式执行。
+
+710
+00:40:14,890 --> 00:40:17,730
+So if I were to write a grocery store bagging program
+因此，如果我要编写一个杂货店装袋程序
+
+711
+00:40:17,730 --> 00:40:20,290
+and have it bag some groceries, again, eventually
+并让它再次装袋一些杂货，最终
+
+712
+00:40:20,290 --> 00:40:22,680
+it would either make a mistake or come to a grinding halt,
+它要么会出错，要么会停下来
+
+713
+00:40:22,680 --> 00:40:24,350
+and bingo, I know that there's a missing rule.
+，宾果游戏，我知道有一个缺失的规则。
+
+714
+00:40:28,150 --> 00:40:32,090
+Isn't that what happens when you do a problem set, and you
+当你做一个问题集，然后你
+
+715
+00:40:32,090 --> 00:40:34,360
+hit an impasse?
+陷入僵局时，不就是这样吗？
+
+716
+00:40:34,360 --> 00:40:36,920
+You're performing an experiment on yourself, and
+你正在对自己进行一个实验，
+
+717
+00:40:36,920 --> 00:40:40,560
+you're discovering that you don't have the whole program.
+你发现你没有整个程序。
+
+718
+00:40:40,560 --> 00:40:45,140
+In fact, I've listed this as a gold star idea having to do
+事实上，我将其列为与自己工程相关的金星想法，
+
+719
+00:40:45,140 --> 00:40:47,460
+with engineering yourself because all of these things
+因为所有
+
+720
+00:40:47,460 --> 00:40:50,400
+that you can do for knowledge engineering are things you can
+这些你可以为知识工程做的事情都是
+
+721
+00:40:50,400 --> 00:40:52,170
+do when you learn a new subject yourself.
+你自己学习一门新学科时可以做的事情。
+
+722
+00:40:52,170 --> 00:40:54,730
+Because essentially, you're making yourself into an expert
+因为本质上，
+
+723
+00:40:54,730 --> 00:40:56,940
+system when you're learning circuit theory or
+当你学习电路理论或
+
+724
+00:40:56,940 --> 00:41:00,230
+electromagnetism or something of that sort.
+电磁学或类似的东西时，你正在把自己变成一个专家系统。
+
+725
+00:41:00,230 --> 00:41:02,420
+You're saying to yourself, well, let's look at some
+你对自己说，好吧，让我们看看一些
+
+726
+00:41:02,420 --> 00:41:04,310
+specific cases.
+具体的案例。
+
+727
+00:41:04,310 --> 00:41:06,870
+Well, what are the vocabulary items here that tell me why
+那么，这里有哪些词汇项目可以告诉我为什么
+
+728
+00:41:06,870 --> 00:41:08,450
+this problem is different from that problem?
+这个问题与那个问题不同？
+
+729
+00:41:08,450 --> 00:41:11,380
+Oh, this is a cylinder instead of a sphere.
+哦，这是圆柱体而不是球体。
+
+730
+00:41:11,380 --> 00:41:13,200
+Or you're working with a problem set, and you discover
+或者你正在处理一个问题集，你发现
+
+731
+00:41:13,200 --> 00:41:16,000
+you can't work with the problem, and you need to get
+你无法处理这个问题，你需要获得
+
+732
+00:41:16,000 --> 00:41:17,860
+another chunk of knowledge that makes it possible
+另一块知识，使你有可能
+
+733
+00:41:17,860 --> 00:41:19,600
+for you to do it.
+做到这一点。
+
+734
+00:41:19,600 --> 00:41:23,260
+So this sort of thing, which you think of primarily as a
+所以这种事情，你主要认为是一种
+
+735
+00:41:23,260 --> 00:41:26,400
+mechanism, heuristics for doing knowledge engineering,
+机制，做知识工程的启发式方法，
+
+736
+00:41:26,400 --> 00:41:32,515
+are also mechanisms for making yourself smarter.
+也是让你更聪明的机制。
+
+737
+00:41:36,910 --> 00:41:40,990
+So that concludes what I want to talk with you about today.
+至此，我今天想和大家讨论的内容到此结束。
+
+738
+00:41:40,990 --> 00:41:43,320
+But the bottom line is, that if you build a rule-based
+但底线是，如果您构建一个基于规则的
+
+739
+00:41:43,320 --> 00:41:44,880
+expert system, it can answer questions
+专家系统，它可以回答
+
+740
+00:41:44,880 --> 00:41:46,540
+about its own behavior.
+有关其自身行为的问题。
+
+741
+00:41:46,540 --> 00:41:49,850
+If you build a program that's centered on goals, it can
+如果您构建一个以目标为中心的程序，它可以
+
+742
+00:41:49,850 --> 00:41:51,815
+answer questions about its own behavior.
+回答有关其自身行为的问题。
+
+743
+00:41:51,815 --> 00:41:54,190
+If you build an integration program, it can answer
+如果您构建一个集成程序，它可以
+
+744
+00:41:54,190 --> 00:41:56,120
+questions about its own behavior.
+回答有关其自身行为的问题。
+
+745
+00:41:56,120 --> 00:41:57,950
+And if you want to build one of these systems, and you need
+如果您想构建其中一个系统，并且您
+
+746
+00:41:57,950 --> 00:42:00,760
+to extract knowledge from an expert, you need to approach
+需要从专家那里提取知识，则需要使用这些启发式方法来处理
+
+747
+00:42:00,760 --> 00:42:03,610
+it with these kinds of heuristics because the expert
+它，因为
+
+748
+00:42:03,610 --> 00:42:06,320
+won't think what to tell you unless you elicit that
+除非您
+
+749
+00:42:06,320 --> 00:42:09,680
+information by specific cases, by asking questions about
+通过特定案例得出该信息，否则专家不会想告诉您什么 ，通过询问有关
+
+750
+00:42:09,680 --> 00:42:12,760
+differences, and by ultimately doing some experiments to see
+差异的问题，并最终做一些实验来看看
+
+751
+00:42:12,760 --> 00:42:14,850
+where your program is correct.
+你的程序在哪里是正确的。
+
+752
+00:42:14,850 --> 00:42:19,960
+So that really concludes what I had to say, except I want to
+所以这真的结束了我要说的，除了我
+
+753
+00:42:19,960 --> 00:42:25,080
+ask the question, is this all we need to know about human
+想问一个问题，这就是我们需要知道的关于人类
+
+754
+00:42:25,080 --> 00:42:26,010
+intelligence?
+智能的全部吗？
+
+755
+00:42:26,010 --> 00:42:27,260
+Can these things be--
+这些东西能——
+
+756
+00:42:27,260 --> 00:42:30,500
+are these things really smart?
+这些东西真的很聪明吗？
+
+757
+00:42:30,500 --> 00:42:34,890
+And the traditional answer is no, they're not really smart
+传统的答案是否定的，他们并不真正聪明，
+
+758
+00:42:34,890 --> 00:42:39,610
+because their intelligence is this sort of thin veneer.
+因为他们的智力是这种薄薄的一层。
+
+759
+00:42:39,610 --> 00:42:44,090
+And when you try to get underneath it, as written,
+当你试图进入它时，正如所写的那样，
+
+760
+00:42:44,090 --> 00:42:46,160
+they tend to crack.
+它们往往会破裂。
+
+761
+00:42:46,160 --> 00:42:50,030
+For example, we talk about a rule, we could talk about a
+例如，我们谈论一个规则，我们可以谈论一个
+
+762
+00:42:50,030 --> 00:42:53,290
+rule that knows that you should put the potato chips on
+知道你应该把薯片
+
+763
+00:42:53,290 --> 00:42:54,540
+the top of the bag.
+放在袋子顶部的规则。
+
+764
+00:42:57,080 --> 00:43:00,375
+But a program that knows that would have no idea why you
+但是一个知道这一点的程序不会知道你为什么要把
+
+765
+00:43:00,375 --> 00:43:03,660
+would want to put the potato chips on top of the bag.
+薯片放在袋子上。
+
+766
+00:43:03,660 --> 00:43:05,610
+They wouldn't know that if you put them on the bottom of the
+他们不会知道，如果你把它们放在袋子的底部
+
+767
+00:43:05,610 --> 00:43:09,870
+bag, they'll get crushed.
+，它们就会被压碎。
+
+768
+00:43:09,870 --> 00:43:13,310
+And it wouldn't know that if they get crushed, the customer
+而且它不知道如果他们被压碎了，顾客
+
+769
+00:43:13,310 --> 00:43:17,630
+will get angry, because people don't like to eat crushed
+会生气，因为人们不喜欢吃压碎的
+
+770
+00:43:17,630 --> 00:43:19,340
+potato chips.
+薯片。
+
+771
+00:43:19,340 --> 00:43:21,280
+So that's what I mean when I say the knowledge of these
+所以当我说这些东西的知识
+
+772
+00:43:21,280 --> 00:43:23,790
+things tends to be a veneer.
+往往是一种伪装时，这就是我的意思。
+
+773
+00:43:23,790 --> 00:43:28,000
+So the MYCIN program, during debugging, once prescribed a
+因此，MYCIN 程序在调试过程中，曾经开出
+
+774
+00:43:28,000 --> 00:43:31,595
+barrel of penicillin to be administered to a patient for
+一桶青霉素，用于治疗患者
+
+775
+00:43:31,595 --> 00:43:34,340
+its disease.
+的疾病。
+
+776
+00:43:34,340 --> 00:43:38,510
+They don't know, they don't have any common sense.
+他们不知道，他们没有任何常识。
+
+777
+00:43:38,510 --> 00:43:43,620
+So the question then becomes, well, I don't know.
+那么问题就变成了，嗯，我不知道。
+
+778
+00:43:43,620 --> 00:43:45,460
+Does rule-based--
+基于规则的——规则
+
+779
+00:43:45,460 --> 00:43:50,550
+do rules have anything to do with common sense?
+与常识有什么关系吗？
+
+780
+00:43:50,550 --> 00:43:53,340
+And I'm becoming a little bit agnostic on that subject.
+我对这个主题变得有点不可知论了。
+
+781
+00:43:57,840 --> 00:44:00,440
+Because there are certain indications, there are certain
+因为有一定的征兆，有一定的
+
+782
+00:44:00,440 --> 00:44:06,600
+situations, in which rules could be said to play a role
+情况，可以说规则
+
+783
+00:44:06,600 --> 00:44:08,495
+in our ordinary understanding of things.
+在我们对事物的平常认识中发挥了作用。
+
+784
+00:44:11,250 --> 00:44:13,560
+Would you like to see a demonstration?
+你想看演示吗？
+
+785
+00:44:13,560 --> 00:44:17,060
+What I'm going to show you, when the clip speaks up--
+我要向你展示的内容，当剪辑出现时——
+
+786
+00:44:17,060 --> 00:44:21,640
+well, before I make any promises, let me see if I'm
+好吧，在我做出任何承诺之前，让我看看我是否
+
+787
+00:44:21,640 --> 00:44:22,910
+actually connected to the web.
+真的连接到网络。
+
+788
+00:44:34,260 --> 00:44:36,770
+MIT, good.
+麻省理工，不错。
+
+789
+00:44:36,770 --> 00:44:38,820
+MIT.
+麻省理工学院。
+
+790
+00:44:38,820 --> 00:44:39,700
+Guest.
+来宾。
+
+791
+00:44:39,700 --> 00:44:40,950
+Yeah, that's me.
+是啊，那是我。
+
+792
+00:44:53,820 --> 00:44:55,070
+Sounds good.
+听起来不错。
+
+793
+00:45:23,930 --> 00:45:26,650
+OK, I just tested the system, and I've seen it is actually
+好的，我刚刚测试了系统，我已经看到它实际上是
+
+794
+00:45:26,650 --> 00:45:28,330
+connected to the web.
+连接到网络的。
+
+795
+00:45:28,330 --> 00:45:32,230
+And I'm going to adjust some systems options here.
+我将在这里调整一些系统选项。
+
+796
+00:45:32,230 --> 00:45:35,120
+I'll get rid of the text box.
+我将摆脱文本框。
+
+797
+00:45:35,120 --> 00:45:38,160
+And we'll get rid of those changes scale a little bit.
+我们将稍微摆脱这些变化规模。
+
+798
+00:45:38,160 --> 00:45:40,780
+What I'm going to do is I'm going to read a little
+我要做的是读一点
+
+799
+00:45:40,780 --> 00:45:44,050
+synopsis of the Macbeth plot.
+麦克白情节的概要。
+
+800
+00:45:44,050 --> 00:45:45,190
+You're MIT students.
+你们是麻省理工学院的学生。
+
+801
+00:45:45,190 --> 00:45:46,920
+I'm sure you're all classically educated and very
+我相信你们都受过古典教育，并且非常
+
+802
+00:45:46,920 --> 00:45:49,830
+familiar with Shakespearean plots.
+熟悉莎士比亚的情节。
+
+803
+00:45:49,830 --> 00:45:52,980
+So I'm going to read one.
+所以我要读一本。
+
+804
+00:45:52,980 --> 00:45:56,330
+I'm going to read a version of a Macbeth plot.
+我要读一个版本的麦克白情节。
+
+805
+00:45:56,330 --> 00:45:59,260
+And it's going to go along like this.
+它会像这样进行。 到目前为止，
+
+806
+00:45:59,260 --> 00:46:03,040
+It's basically reading a rule base so far.
+它基本上是在阅读规则库。
+
+807
+00:46:03,040 --> 00:46:07,910
+And pretty soon, it's going to get beyond the rule base and
+很快，它将超越规则库，
+
+808
+00:46:07,910 --> 00:46:09,435
+start reading the Macbeth story.
+开始阅读麦克白的故事。
+
+809
+00:46:12,320 --> 00:46:13,740
+And there it is.
+它就在那里。
+
+810
+00:46:13,740 --> 00:46:14,720
+It's read the Macbeth story.
+它读了麦克白的故事。
+
+811
+00:46:14,720 --> 00:46:16,860
+Let me show you what the Macbeth story looks like as
+让我向您展示 Macbeth 的故事是什么样的，因为
+
+812
+00:46:16,860 --> 00:46:18,660
+it's actually retained by the system.
+它实际上是由系统保留的。
+
+813
+00:46:18,660 --> 00:46:19,320
+That's it.
+而已。
+
+814
+00:46:19,320 --> 00:46:20,570
+Read that.
+读那个。
+
+815
+00:46:25,480 --> 00:46:27,310
+OK, you ran out of time because the
+好的，你的时间用完了，因为
+
+816
+00:46:27,310 --> 00:46:28,490
+machine's already finished.
+机器已经完成了。 阅读
+
+817
+00:46:28,490 --> 00:46:30,830
+It takes about five seconds to read this story.
+这个故事大约需要五秒钟。
+
+818
+00:46:30,830 --> 00:46:32,920
+Now, as you look at this little synopsis of Macbeth,
+现在，当您查看麦克白的这个小提要时，
+
+819
+00:46:32,920 --> 00:46:35,510
+there are a couple things to note.
+有几件事需要注意。
+
+820
+00:46:35,510 --> 00:46:39,090
+For one thing, it says that Duncan is murdered.
+一方面，它说邓肯被谋杀了。
+
+821
+00:46:39,090 --> 00:46:42,650
+Duncan, I hope this doesn't bother you.
+邓肯，我希望这不会打扰你。
+
+822
+00:46:42,650 --> 00:46:44,530
+Duncan is murdered by Macbeth.
+邓肯被麦克白谋杀。
+
+823
+00:46:44,530 --> 00:46:48,205
+But at no time does it say that Duncan is dead.
+但它从来没有说邓肯已经死了。
+
+824
+00:46:48,205 --> 00:46:50,800
+But you know Duncan's dead because he was murdered.
+但是你知道邓肯死了是因为他被谋杀了。
+
+825
+00:46:50,800 --> 00:46:53,168
+If murdered, then dead.
+如果被谋杀，那就死了。
+
+826
+00:46:53,168 --> 00:46:55,000
+SPEAKER 3: [LAUGHTER].
+发言者 3：[笑声]。
+
+827
+00:46:55,000 --> 00:46:56,640
+PROFESSOR PATRICK WINSTON: So if you look a little further
+帕特里克·温斯顿教授：所以如果你往下看一点
+
+828
+00:46:56,640 --> 00:47:01,890
+down, what you see is that Macduff kills Macbeth.
+，你会看到麦克德夫杀死了麦克白。
+
+829
+00:47:01,890 --> 00:47:04,260
+Fourth line up from the bottom.
+倒数第四行。
+
+830
+00:47:04,260 --> 00:47:08,410
+Why did Macduff kill Macbeth?
+麦克德夫为什么要杀麦克白？
+
+831
+00:47:08,410 --> 00:47:11,630
+Doesn't say why in this story, but you have no trouble
+在这个故事中没有说明原因，但你可以毫不费力地
+
+832
+00:47:11,630 --> 00:47:16,950
+figuring out that it's because he got angry.
+弄清楚这是因为他生气了。
+
+833
+00:47:16,950 --> 00:47:19,970
+And when you get angry, you don't necessarily kill
+当你生气时，你不一定会
+
+834
+00:47:19,970 --> 00:47:21,300
+somebody, but it's possible.
+杀人，但这是可能的。
+
+835
+00:47:21,300 --> 00:47:24,190
+SPEAKER 3: [LAUGHTER].
+发言者 3：[笑声]。
+
+836
+00:47:24,190 --> 00:47:25,240
+PROFESSOR PATRICK WINSTON: So now that you see what's in the
+PATRICK WINSTON 教授：现在你已经了解了
+
+837
+00:47:25,240 --> 00:47:28,550
+story, let me take you back to this display.
+故事的内容，让我带你回到这个展示。
+
+838
+00:47:28,550 --> 00:47:31,210
+It's what we call an elaboration graph.
+这就是我们所说的精化图。
+
+839
+00:47:31,210 --> 00:47:33,360
+And when I blow it up, you can see that there's some familiar
+当我把它炸毁时，你可以看到里面有一些看起来很熟悉
+
+840
+00:47:33,360 --> 00:47:35,340
+looking things in there.
+的东西。
+
+841
+00:47:35,340 --> 00:47:38,630
+For example, up here in the left-hand corner, Macbeth
+例如，在左手角，麦克白
+
+842
+00:47:38,630 --> 00:47:41,700
+murders Duncan, right over there.
+谋杀了邓肯，就在那边。
+
+843
+00:47:41,700 --> 00:47:45,510
+And over here, Macduff kills Macbeth.
+在这里，麦克德夫杀死了麦克白。
+
+844
+00:47:45,510 --> 00:47:50,710
+And if you look at what is a consequence of that, it looks
+如果你看看这样做的后果是什么，
+
+845
+00:47:50,710 --> 00:47:53,010
+like there must be a rule that says if you murder somebody,
+似乎必须有一条规则说，如果你谋杀某人，
+
+846
+00:47:53,010 --> 00:47:54,670
+you harm them.
+你就会伤害他们。
+
+847
+00:47:54,670 --> 00:47:58,540
+And if you murder somebody, then they're dead.
+如果你谋杀了某人，那么他们就死定了。
+
+848
+00:47:58,540 --> 00:48:01,270
+And one reason why you might kill somebody is because they
+你可能会杀死某人的一个原因是因为他们
+
+849
+00:48:01,270 --> 00:48:02,500
+angered you.
+激怒了你。
+
+850
+00:48:02,500 --> 00:48:05,880
+And if you go the other way, one consequence of killing
+如果你反其道而行之，杀死
+
+851
+00:48:05,880 --> 00:48:10,160
+somebody is that you harm them, and that they die too.
+某人的一个后果就是你伤害了他们，他们也会死去。
+
+852
+00:48:10,160 --> 00:48:13,120
+And if you harm somebody, they get angry, and their state
+如果你伤害了某人，他们会生气，他们的状态
+
+853
+00:48:13,120 --> 00:48:14,370
+goes negative.
+会变得消极。
+
+854
+00:48:19,050 --> 00:48:22,550
+So that suggests that there are some things that we have
+所以这表明
+
+855
+00:48:22,550 --> 00:48:26,145
+on our hands that are very compiled and very, strangely
+我们手上的一些东西是非常经过整理的，而且非常
+
+856
+00:48:26,145 --> 00:48:30,970
+enough, very rule-like in their character.
+奇怪的是，它们的性格非常像规则。
+
+857
+00:48:30,970 --> 00:48:35,730
+Now, to close, I'm just going to read Hamlet.
+现在，要结束了，我只想读哈姆雷特。
+
+858
+00:48:35,730 --> 00:48:38,900
+The Hamlet demonstration is much like the Macbeth one.
+哈姆雷特的示范很像麦克白的示范。
+
+859
+00:48:38,900 --> 00:48:42,270
+In fact, Hamlet and Macbeth are very alike in their plot.
+事实上，哈姆雷特和麦克白在他们的情节上非常相似。
+
+860
+00:48:42,270 --> 00:48:44,530
+But there's one thing that's well-illustrated by our
+但是我们在这里对哈姆雷特的特殊捕捉很好地说明了一件事
+
+861
+00:48:44,530 --> 00:48:47,940
+particular capturing of Hamlet here.
+。
+
+862
+00:48:47,940 --> 00:48:50,910
+And that is that you'll note that the ratio of gray stuff
+那就是你会注意到灰色的
+
+863
+00:48:50,910 --> 00:48:54,060
+to white stuff is considerable.
+东西和白色的东西的比例是相当大的。
+
+864
+00:48:54,060 --> 00:48:59,810
+The gray stuff is stuff that has been deduced by rules.
+灰色的东西是规则推导出来的东西。
+
+865
+00:48:59,810 --> 00:49:02,140
+And the reason there's so much gray stuff in this Hamlet
+在这个哈姆雷特的故事中有这么多灰色的东西
+
+866
+00:49:02,140 --> 00:49:05,380
+story is because everybody's related to everybody else.
+是因为每个人都与其他人有关。
+
+867
+00:49:05,380 --> 00:49:08,920
+So when you kill anybody, you irritate everybody else.
+所以当你杀死任何人时，你会激怒其他人。
+
+868
+00:49:12,690 --> 00:49:13,750
+So look at that.
+所以看看那个。
+
+869
+00:49:13,750 --> 00:49:16,310
+A few white things, those are the things that are explicit
+一些白色的东西，那些是故事中明确的东西，还有
+
+870
+00:49:16,310 --> 00:49:18,630
+in the story, and lots of gray stuff.
+很多灰色的东西。
+
+871
+00:49:18,630 --> 00:49:22,270
+So what this is suggesting is that when we tell a story,
+所以这表明当我们讲故事时，
+
+872
+00:49:22,270 --> 00:49:25,440
+it's mostly a matter of controlled hallucination.
+它主要是控制幻觉的问题。
+
+873
+00:49:25,440 --> 00:49:28,560
+I know what rules are in your head, so I could take
+我知道你脑子里有什么规则，所以我可以
+
+874
+00:49:28,560 --> 00:49:31,030
+advantage of that in telling the story and not have to tell
+利用它来讲述故事，而不必告诉
+
+875
+00:49:31,030 --> 00:49:33,490
+you anything I'm sure you're going to know.
+你任何我相信你会知道的事情。
+
+876
+00:49:33,490 --> 00:49:36,640
+And so that's why, we've discovered, that storytelling
+这就是为什么，我们发现，讲故事
+
+877
+00:49:36,640 --> 00:49:39,500
+is largely a matter of just controlling how you're going
+在很大程度上只是控制你的
+
+878
+00:49:39,500 --> 00:49:41,010
+along, a kind of controlled hallucination.
+前进方式，一种受控的幻觉。

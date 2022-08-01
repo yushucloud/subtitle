@@ -1,0 +1,4319 @@
+1
+00:00:18,200 --> 00:00:26,190
+PATRICK WINSTON: Welcome to 6034.
+PATRICK WINSTON：欢迎来到 6034。
+
+2
+00:00:26,190 --> 00:00:28,230
+I don't know if I can deal with this microphone.
+我不知道我是否可以处理这个麦克风。
+
+3
+00:00:28,230 --> 00:00:29,405
+We'll see what happens.
+我们会看看会发生什么。
+
+4
+00:00:29,405 --> 00:00:30,380
+It's going to be a good year.
+这将是一个好年头。
+
+5
+00:00:30,380 --> 00:00:33,530
+We've got [INAUDIBLE] a bunch of interesting people.
+我们有 [听不清]一群有趣的人。
+
+6
+00:00:33,530 --> 00:00:35,790
+It's always interesting to see what people named their
+看看二十年前人们给他们的孩子取什么名字总是很有趣的
+
+7
+00:00:35,790 --> 00:00:39,820
+children two decades ago.
+。
+
+8
+00:00:39,820 --> 00:00:42,510
+And I find they were overwhelmed with Emilys.
+我发现他们对 Emilys 不知所措。
+
+9
+00:00:42,510 --> 00:00:45,420
+And there are not too many Peters, Pauls, and Marys, but
+彼得斯、保罗斯和玛丽斯并不多，但
+
+10
+00:00:45,420 --> 00:00:50,540
+enough to call forth a suitable song at some point.
+足以在某个时候召唤出一首合适的歌曲。
+
+11
+00:00:50,540 --> 00:00:55,630
+We have lots of Jesses of both genders.
+我们有很多男女皆宜的杰西。
+
+12
+00:00:55,630 --> 00:00:57,220
+We have a [INAUDIBLE]
+我们有两个性别的[听不清
+
+13
+00:00:57,220 --> 00:00:59,890
+of both genders.
+]。
+
+14
+00:00:59,890 --> 00:01:02,810
+And we have a Duncan, where's Duncan?
+我们有一个邓肯，邓肯呢？
+
+15
+00:01:02,810 --> 00:01:04,080
+There you are, Duncan.
+你来了，邓肯。
+
+16
+00:01:04,080 --> 00:01:06,900
+You've changed your hairstyle.
+你换了发型。
+
+17
+00:01:06,900 --> 00:01:10,130
+I want to assure use that the Thane of Cawdor is not taking
+我想向大家保证，考多的领主本学期没有
+
+18
+00:01:10,130 --> 00:01:12,390
+the course this semester.
+上这门课。
+
+19
+00:01:12,390 --> 00:01:14,890
+What I'm going to do is tell you about artificial
+我今天要做的是告诉你关于人工智能的
+
+20
+00:01:14,890 --> 00:01:18,680
+intelligence today, and what this subject is about.
+事情，以及这个主题是关于什么的。
+
+21
+00:01:18,680 --> 00:01:24,100
+There's been about a 10% percent turnover in the roster
+在过去的 24 小时内，球员名单的更替率约为 10%
+
+22
+00:01:24,100 --> 00:01:25,320
+in the last 24 hours.
+。
+
+23
+00:01:25,320 --> 00:01:29,680
+I expect another 10% turnover in the next 24 hours, too.
+我预计在接下来的 24 小时内还会有 10% 的营业额。
+
+24
+00:01:29,680 --> 00:01:32,600
+So I know many of you are sightseers, wanting to know if
+所以我知道你们中的许多人都是观光客，想知道
+
+25
+00:01:32,600 --> 00:01:33,720
+this is something you want to do.
+这是否是你想做的事情。
+
+26
+00:01:33,720 --> 00:01:36,140
+So I'm going to tell you about what we're going to do this
+所以我要告诉你这个学期我们要做
+
+27
+00:01:36,140 --> 00:01:40,229
+semester, and what you'll know when you get out of here.
+什么，以及当你离开这里时你会知道什么。
+
+28
+00:01:40,229 --> 00:01:43,620
+I'm going to walk you through this outline.
+我将引导你完成这个大纲。
+
+29
+00:01:43,620 --> 00:01:45,539
+I'm going to start by talking about what artificial
+我将首先讨论什么是
+
+30
+00:01:45,539 --> 00:01:48,630
+intelligence is, and why we do it.
+人工智能，以及我们为什么要这样做。
+
+31
+00:01:48,630 --> 00:01:50,160
+And then I'll give you a little bit of the history of
+然后我会给你一点人工智能的历史
+
+32
+00:01:50,160 --> 00:01:54,000
+artificial intelligence, and conclude with some of the
+，并
+
+33
+00:01:54,000 --> 00:01:56,570
+covenants by which we run the course.
+以我们运行课程的一些约定作为结束。
+
+34
+00:01:56,570 --> 00:01:58,140
+One of which is no laptops, please.
+其中之一是没有笔记本电脑，拜托。
+
+35
+00:02:00,900 --> 00:02:05,620
+I'll explain why we have these covenants at the end.
+最后我会解释为什么我们有这些契约。
+
+36
+00:02:05,620 --> 00:02:07,360
+So what is it?
+那是什么？
+
+37
+00:02:07,360 --> 00:02:12,220
+Well, it must have something to do with thinking.
+嗯，它一定与思考有关。
+
+38
+00:02:12,220 --> 00:02:15,280
+So let's start up here, a definition of artificial
+所以让我们从这里开始，人工智能的定义
+
+39
+00:02:15,280 --> 00:02:21,820
+intelligence, by saying that it's about thinking,
+，说它是关于思考的，
+
+40
+00:02:21,820 --> 00:02:23,850
+whatever that is.
+不管那是什么。
+
+41
+00:02:23,850 --> 00:02:26,100
+My definition of artificial intelligence has
+我对人工智能的定义
+
+42
+00:02:26,100 --> 00:02:28,560
+to be rather broad.
+必须相当广泛。
+
+43
+00:02:28,560 --> 00:02:31,710
+So we're going to say it's not only about thinking.
+所以我们要说这不仅仅是关于思考。
+
+44
+00:02:31,710 --> 00:02:39,110
+It's also about perception, and it's about action.
+这也关乎感知，关乎行动。
+
+45
+00:02:42,610 --> 00:02:46,060
+And if this were a philosophy class, then I'd stop right
+如果这是一堂哲学课，那么我会停
+
+46
+00:02:46,060 --> 00:02:49,120
+there and just say, in this subject we're going to talk
+在那里，只是说，在这个主题中，我们将讨论
+
+47
+00:02:49,120 --> 00:02:52,370
+about problems involving thinking,
+涉及思考、
+
+48
+00:02:52,370 --> 00:02:54,860
+perception, and action.
+感知和行动的问题。
+
+49
+00:02:54,860 --> 00:02:57,890
+But this is not a philosophy class.
+但这不是哲学课。
+
+50
+00:02:57,890 --> 00:02:59,050
+This a Course six class.
+这是六门课。
+
+51
+00:02:59,050 --> 00:03:00,350
+It's an engineering school class.
+这是工程学校的课。
+
+52
+00:03:00,350 --> 00:03:02,000
+It's an MIT class.
+这是麻省理工学院的课程。
+
+53
+00:03:02,000 --> 00:03:03,940
+So we need more than that.
+所以我们需要的不止这些。
+
+54
+00:03:03,940 --> 00:03:12,380
+And therefore we're going to talk about models that are
+因此，我们将讨论
+
+55
+00:03:12,380 --> 00:03:20,329
+targeted at thinking, perception, and action.
+针对思考、感知和行动的模型。
+
+56
+00:03:20,329 --> 00:03:23,800
+And this should not be strange to you, because model making
+这对你来说应该不奇怪，因为模型制作
+
+57
+00:03:23,800 --> 00:03:26,900
+is what MIT is about.
+是麻省理工学院的主题。
+
+58
+00:03:26,900 --> 00:03:29,540
+You run into someone at a bar, or relative asks you what you
+你在酒吧遇到某人，或者亲戚问
+
+59
+00:03:29,540 --> 00:03:33,200
+do at MIT, the right knee jerk reaction is to say, we learned
+你在麻省理工学院做什么，右膝跳动的反应是说，我们学会了
+
+60
+00:03:33,200 --> 00:03:35,130
+how to build models.
+如何建立模型。
+
+61
+00:03:35,130 --> 00:03:36,990
+That's what we do at MIT.
+这就是我们在麻省理工学院所做的。
+
+62
+00:03:36,990 --> 00:03:40,570
+We build the models using differential equations.
+我们使用微分方程建立模型。
+
+63
+00:03:40,570 --> 00:03:43,450
+We build models using probabilities.
+我们使用概率构建模型。
+
+64
+00:03:43,450 --> 00:03:47,829
+We build models using physical and computational simulations.
+我们使用物理和计算模拟来构建模型。
+
+65
+00:03:47,829 --> 00:03:50,300
+Whatever we do, we build models.
+无论我们做什么，我们都会建立模型。
+
+66
+00:03:50,300 --> 00:03:55,710
+Even in humanities class, MIT approach is to make models
+即使在人文课上，麻省理工学院的方法是制作
+
+67
+00:03:55,710 --> 00:04:00,290
+that we can use to explain the past, predict the future,
+我们可以用来解释过去、预测未来、
+
+68
+00:04:00,290 --> 00:04:03,050
+understand the subject, and control the world.
+理解主题和控制世界的模型。
+
+69
+00:04:03,050 --> 00:04:04,290
+That's what MIT is about.
+这就是麻省理工学院的意义所在。
+
+70
+00:04:04,290 --> 00:04:06,400
+And that's what this subject is about, too.
+这也是这个主题的主题。
+
+71
+00:04:06,400 --> 00:04:10,650
+And now, our models are models of thinking.
+现在，我们的模型是思维模型。
+
+72
+00:04:10,650 --> 00:04:12,060
+So you might say, if I take this
+所以你可能会说，如果我拿这个
+
+73
+00:04:12,060 --> 00:04:13,840
+classic will I get smarter?
+经典，我会变得更聪明吗？
+
+74
+00:04:13,840 --> 00:04:14,760
+And the answer is yes.
+答案是肯定的。
+
+75
+00:04:14,760 --> 00:04:15,500
+You will get smarter.
+你会变得更聪明。
+
+76
+00:04:15,500 --> 00:04:17,980
+Because you'll have better models of your own thinking,
+因为你会有更好的自己思维模型，
+
+77
+00:04:17,980 --> 00:04:21,120
+not just the subject matter of the subject, but better models
+不仅仅是主题的主题，还有
+
+78
+00:04:21,120 --> 00:04:23,840
+of your own thinking.
+你自己思维的更好模型。
+
+79
+00:04:23,840 --> 00:04:25,370
+So models targeted at thinking,
+因此，模型以思考、
+
+80
+00:04:25,370 --> 00:04:27,670
+perception, and action.
+感知和行动为目标。
+
+81
+00:04:27,670 --> 00:04:29,460
+We know that's not quite enough, because in order to
+我们知道这还不够，因为为了
+
+82
+00:04:29,460 --> 00:04:33,790
+have a model, you have to have representation.
+有一个模型，你必须有代表性。
+
+83
+00:04:33,790 --> 00:04:37,040
+So let's say that artificial intelligence is about
+因此，假设人工智能是关于
+
+84
+00:04:37,040 --> 00:04:52,470
+representations that support the making of models to
+支持模型制作的表示，以
+
+85
+00:04:52,470 --> 00:04:55,040
+facilitate an understanding of thinking,
+促进对思维、
+
+86
+00:04:55,040 --> 00:04:57,500
+perception, and action.
+感知和行动的理解。
+
+87
+00:04:57,500 --> 00:04:59,409
+Now you might say to me, well what's a representation?
+现在你可能会对我说，那么什么是表示？
+
+88
+00:04:59,409 --> 00:05:00,170
+And what good can it do?
+它有什么好处？
+
+89
+00:05:00,170 --> 00:05:02,780
+So I'd like to take a brief moment to tell you about
+所以我想花一点时间来告诉你关于
+
+90
+00:05:02,780 --> 00:05:03,540
+gyroscopes.
+陀螺仪的事情。
+
+91
+00:05:03,540 --> 00:05:06,380
+Many of you have friends in mechanical engineering.
+你们中的许多人都有机械工程方面的朋友。
+
+92
+00:05:06,380 --> 00:05:10,980
+One of the best ways embarrass them is to say here's a
+让他们难堪的最好方法之一就是说这是一个
+
+93
+00:05:10,980 --> 00:05:12,210
+bicycle wheel.
+自行车轮子。
+
+94
+00:05:12,210 --> 00:05:16,720
+And if I spin it, and blow hard on it right here, on the
+如果我旋转它，并在这里，在轮子的边缘用力吹它，会朝
+
+95
+00:05:16,720 --> 00:05:19,110
+edge of the wheel, is going to turn over
+
+
+96
+00:05:19,110 --> 00:05:23,160
+this way or this way?
+这个方向还是朝这个方向翻？
+
+97
+00:05:23,160 --> 00:05:26,250
+I guarantee that what they will do is they'll put their
+我保证他们会做的是他们将
+
+98
+00:05:26,250 --> 00:05:29,400
+hand in an arthritic posture called the right hand screw
+手放在一个称为右手螺旋
+
+99
+00:05:29,400 --> 00:05:35,870
+rule, aptly named because people who use it tend to get
+规则的关节炎姿势，恰当地命名是因为使用它的人倾向于在
+
+100
+00:05:35,870 --> 00:05:41,460
+the right answer about 50% of the time.
+大约50% 的时间里得到正确的答案。
+
+101
+00:05:41,460 --> 00:05:44,560
+But we're never going to make that mistake again.
+但我们永远不会再犯这个错误了。
+
+102
+00:05:44,560 --> 00:05:45,780
+Because we're electrical engineers,
+因为我们是电气工程师，
+
+103
+00:05:45,780 --> 00:05:46,820
+not mechanical engineers.
+而不是机械工程师。
+
+104
+00:05:46,820 --> 00:05:49,300
+And we know about representation.
+我们知道代表。
+
+105
+00:05:49,300 --> 00:05:51,290
+What we're going to do is we're going to think about it
+我们要做的
+
+106
+00:05:51,290 --> 00:05:52,486
+a little bit.
+是稍微考虑一下。
+
+107
+00:05:52,486 --> 00:05:54,780
+And we're going to use some duct tape to help us think
+我们将使用一些胶带来帮助我们
+
+108
+00:05:54,780 --> 00:05:57,730
+about just one piece of the wheel.
+只考虑一个轮子。
+
+109
+00:05:57,730 --> 00:06:01,270
+So I want you to just think about that piece of the wheel
+所以我想让你想想
+
+110
+00:06:01,270 --> 00:06:03,050
+as the wheel comes flying over the top, and I
+当轮子飞过顶部时轮子的那块，我
+
+111
+00:06:03,050 --> 00:06:04,810
+blow on it like that.
+就这样吹。
+
+112
+00:06:04,810 --> 00:06:08,090
+What's going to happen to that one piece?
+那一件会发生什么？
+
+113
+00:06:08,090 --> 00:06:10,520
+It's going to go off that way, right?
+它会这样下去，对吧？
+
+114
+00:06:10,520 --> 00:06:13,400
+And the next piece is going to go off that way too.
+下一段也将以这种方式进行。
+
+115
+00:06:13,400 --> 00:06:17,610
+So when it comes over, it has to go that way.
+所以当它过来的时候，它必须走那条路。
+
+116
+00:06:17,610 --> 00:06:19,440
+Let me do some ground f here just to be sure.
+为了确定，让我在这里做一些基础。
+
+117
+00:06:22,200 --> 00:06:23,450
+It's very powerful feeling.
+这是一种非常强大的感觉。
+
+118
+00:06:26,760 --> 00:06:28,730
+Try it.
+试试看。
+
+119
+00:06:28,730 --> 00:06:29,540
+We need a demonstration.
+我们需要一个示范。
+
+120
+00:06:29,540 --> 00:06:33,010
+I don't anybody think that I'm cheating, here.
+我没有人认为我在作弊，在这里。
+
+121
+00:06:33,010 --> 00:06:39,840
+So let's just twist it one way or the other.
+因此，让我们以一种或另一种方式扭转它。
+
+122
+00:06:39,840 --> 00:06:42,100
+So that's powerful pull, isn't it.
+所以这是强大的拉力，不是吗。
+
+123
+00:06:42,100 --> 00:06:46,820
+Alex is now never going to get the gyroscope wrong, because
+亚历克斯现在永远不会弄错陀螺仪，因为
+
+124
+00:06:46,820 --> 00:06:49,870
+he's got the right representation.
+他得到了正确的表示。
+
+125
+00:06:49,870 --> 00:06:52,130
+So much of what you're going to accumulate in this subject
+您将在本主题中积累的大部分内容
+
+126
+00:06:52,130 --> 00:06:54,560
+is a suite of representations that will help you to build
+是一组表示，它们将帮助您构建
+
+127
+00:06:54,560 --> 00:06:56,990
+programs that are intelligent.
+智能程序。
+
+128
+00:06:56,990 --> 00:07:00,330
+But I want to give you a second example, one a little
+但我想给你第二个例子，一个
+
+129
+00:07:00,330 --> 00:07:01,300
+bit more computational.
+计算量更大的例子。
+
+130
+00:07:01,300 --> 00:07:03,990
+But one of which was very familiar to you by the time
+但在大多数情况下，当你上一年级时，其中一个对你来说已经很熟悉了
+
+131
+00:07:03,990 --> 00:07:06,690
+you went to first grade, in most cases.
+。
+
+132
+00:07:06,690 --> 00:07:09,610
+It's the problem of the farmer, the fox, the goose,
+这是农民、狐狸、鹅
+
+133
+00:07:09,610 --> 00:07:11,020
+and the grain.
+和谷物的问题。
+
+134
+00:07:11,020 --> 00:07:14,070
+There's a river, a leaky rowboat that can only carry
+有一条河，一艘漏水的划艇，只能
+
+135
+00:07:14,070 --> 00:07:17,340
+the farmer, and one of his four possessions.
+载着农夫，以及他的四样财产之一。
+
+136
+00:07:17,340 --> 00:07:18,080
+So what's the right
+那么这个问题的正确
+
+137
+00:07:18,080 --> 00:07:21,220
+representation for this problem?
+表示是什么？
+
+138
+00:07:21,220 --> 00:07:24,370
+It might be a picture of the farmer.
+这可能是农民的照片。
+
+139
+00:07:24,370 --> 00:07:29,570
+It might be a poem about the situation, perhaps a haiku.
+它可能是一首关于这种情况的诗，也可能是一首俳句。
+
+140
+00:07:29,570 --> 00:07:33,240
+We know that those are not the right representation.
+我们知道那些不是正确的代表。
+
+141
+00:07:33,240 --> 00:07:38,340
+Somehow, we get the sense that the right representation most
+不知何故，我们感觉到正确的表示最
+
+142
+00:07:38,340 --> 00:07:42,440
+involve something about the location of the participants
+涉及在这个场景中参与者的位置
+
+143
+00:07:42,440 --> 00:07:44,270
+in this scenario.
+。
+
+144
+00:07:44,270 --> 00:07:48,480
+So we might draw a picture that looks like this.
+所以我们可能会画一张像这样的图片。
+
+145
+00:07:48,480 --> 00:07:54,150
+There's the scenario, and here in glorious green,
+有这样的场景，这里是绿色的，
+
+146
+00:07:54,150 --> 00:07:58,450
+representing our algae infested rivers is the river.
+代表我们藻类出没的河流是河流。
+
+147
+00:07:58,450 --> 00:08:05,306
+And here's the farmer, the fox, the goose, and the grain.
+这是农夫、狐狸、鹅和谷物。
+
+148
+00:08:05,306 --> 00:08:07,900
+An initial situation.
+初始情况。
+
+149
+00:08:07,900 --> 00:08:10,743
+Now there are other situations like this one, for example.
+例如，现在还有其他类似的情况。
+
+150
+00:08:13,360 --> 00:08:19,200
+We have the river, and the farmer, and the
+我们有河，有农夫，
+
+151
+00:08:19,200 --> 00:08:21,590
+goose is on that side.
+鹅就在那边。
+
+152
+00:08:21,590 --> 00:08:26,160
+And the fox and the grain is on that side.
+狐狸和谷物在那边。
+
+153
+00:08:26,160 --> 00:08:31,520
+And we know that the farmer can execute a movement from
+而且我们知道农民可以执行从
+
+154
+00:08:31,520 --> 00:08:34,929
+one situation to another.
+一种情况到另一种情况的运动。
+
+155
+00:08:34,929 --> 00:08:36,980
+So now we're getting somewhere where with the problem.
+所以现在我们正在解决问题的地方。
+
+156
+00:08:36,980 --> 00:08:39,120
+This is at MIT approach to the farmer, fox,
+这是麻省理工学院解决农民、狐狸、
+
+157
+00:08:39,120 --> 00:08:40,010
+goose, and grain problem.
+鹅和谷物问题的方法。
+
+158
+00:08:40,010 --> 00:08:41,669
+It might have stumped you when you were a little kid.
+当你还是个孩子的时候，它可能会难倒你。
+
+159
+00:08:45,370 --> 00:08:46,870
+How many such situations are there?
+这样的情况有多少？
+
+160
+00:08:50,180 --> 00:08:52,632
+What do you think, Tanya?
+坦尼娅，你怎么看？
+
+161
+00:08:52,632 --> 00:08:56,280
+It looks to me like all four of individuals can be on one
+在我看来，这四个人都可以站在
+
+162
+00:08:56,280 --> 00:08:58,740
+side or the other.
+一边或另一边。
+
+163
+00:08:58,740 --> 00:09:01,480
+So for every position the farmer can be, each of the
+所以对于农夫的每一个位置，其他每一个
+
+164
+00:09:01,480 --> 00:09:03,530
+other things can be on either side of the river.
+东西都可以在河的两边。
+
+165
+00:09:06,060 --> 00:09:09,500
+So it would be two to the fourth she says aggressively
+因此，她毫不犹豫地咄咄逼人地说，应该是二到四次
+
+166
+00:09:09,500 --> 00:09:12,060
+and without hesitation.
+。
+
+167
+00:09:12,060 --> 00:09:14,020
+Yes, two to the fourth, 16 possibilities.
+是的，从二到四，16 种可能性。
+
+168
+00:09:14,020 --> 00:09:17,590
+So we could actually draw out the entire graph.
+所以我们实际上可以画出整个图表。
+
+169
+00:09:17,590 --> 00:09:19,770
+It's small enough.
+它足够小。
+
+170
+00:09:19,770 --> 00:09:24,620
+There's another position over here with the farmer, fox,
+这里还有一个职位，农夫、狐狸、
+
+171
+00:09:24,620 --> 00:09:25,832
+goose, and grain.
+鹅和谷物。
+
+172
+00:09:25,832 --> 00:09:28,560
+And in fact that's the one we want.
+事实上，这正是我们想要的。
+
+173
+00:09:28,560 --> 00:09:32,660
+And if we draw out the entire graph, it looks like this.
+如果我们画出整个图表，它看起来像这样。
+
+174
+00:09:35,910 --> 00:09:40,250
+This is a graph of the situations and the allowed
+这是情况和
+
+175
+00:09:40,250 --> 00:09:42,960
+connections between them.
+它们之间允许的连接的图表。
+
+176
+00:09:42,960 --> 00:09:47,280
+Why are there not 16?
+为什么没有16个？
+
+177
+00:09:47,280 --> 00:09:48,420
+Because the other--
+因为另一个——
+
+178
+00:09:48,420 --> 00:09:49,170
+how many have I got?
+我有多少？
+
+179
+00:09:49,170 --> 00:09:49,625
+Four?
+四？
+
+180
+00:09:49,625 --> 00:09:51,720
+10?
+10？
+
+181
+00:09:51,720 --> 00:09:55,600
+The others are situations in which somebody gets eaten.
+其他是有人被吃掉的情况。
+
+182
+00:09:55,600 --> 00:09:58,490
+So we don't want to go to any of those places.
+所以我们不想去那些地方。
+
+183
+00:09:58,490 --> 00:10:00,850
+So having got the representation, something
+所以得到了代表，
+
+184
+00:10:00,850 --> 00:10:02,750
+magical has happened.
+神奇的事情发生了。
+
+185
+00:10:02,750 --> 00:10:04,030
+We've got our constraints exposed.
+我们已经暴露了我们的约束。
+
+186
+00:10:18,420 --> 00:10:19,860
+And that's why we build representations.
+这就是我们构建表示的原因。
+
+187
+00:10:19,860 --> 00:10:23,080
+That's whey you algebra in high school, because algebraic
+这就是你在高中时的代数，因为代数
+
+188
+00:10:23,080 --> 00:10:25,410
+notation exposes the constraints that make it
+符号暴露了一些限制，使你
+
+189
+00:10:25,410 --> 00:10:29,630
+possible to actually figure out how many customers you get
+可以实际计算出你在报纸
+
+190
+00:10:29,630 --> 00:10:31,510
+for the number of advertisements you place in
+上投放的广告数量获得了多少客户
+
+191
+00:10:31,510 --> 00:10:32,760
+the newspaper.
+。
+
+192
+00:10:34,420 --> 00:10:36,870
+So artificial intelligence is about constraints exposed by
+因此，人工智能是关于
+
+193
+00:10:36,870 --> 00:10:39,760
+representations that support models targeted to thinking--
+支持以思维为目标的模型的表示所暴露的约束——
+
+194
+00:10:39,760 --> 00:10:41,450
+actually there's one more thing, too.
+实际上还有一件事。
+
+195
+00:10:41,450 --> 00:10:42,800
+Not quite done.
+还没有完成。
+
+196
+00:10:42,800 --> 00:10:48,500
+Because after all, in the end, we have to build programs.
+因为归根结底，我们必须构建程序。
+
+197
+00:10:48,500 --> 00:11:04,820
+So it's about algorithms enabled by constraints exposed
+因此，它是关于
+
+198
+00:11:04,820 --> 00:11:09,510
+by representations that model targeted thinking, perception,
+由对目标思维、感知
+
+199
+00:11:09,510 --> 00:11:11,000
+and action.
+和行动建模的表示所暴露的约束所启用的算法。
+
+200
+00:11:11,000 --> 00:11:15,520
+So these algorithms, or we might call them just as well
+所以这些算法，或者我们可以将它们称为
+
+201
+00:11:15,520 --> 00:11:18,620
+procedures, or we might call them just as well methods,
+程序，或者我们可以将它们称为方法，
+
+202
+00:11:18,620 --> 00:11:20,030
+whatever you like.
+无论您喜欢什么。
+
+203
+00:11:20,030 --> 00:11:21,980
+These are the stuff of what artificial intelligence is
+这些就是人工智能的内容——
+
+204
+00:11:21,980 --> 00:11:24,860
+about-- methods, algorithms, representations.
+方法、算法、表示。
+
+205
+00:11:24,860 --> 00:11:27,470
+I'd like to give you one more example.
+我想再给你举一个例子。
+
+206
+00:11:27,470 --> 00:11:29,570
+It's something we call, in artificial intelligence,
+在人工智能中，我们称之为
+
+207
+00:11:29,570 --> 00:11:31,770
+generated test.
+生成测试。
+
+208
+00:11:31,770 --> 00:11:33,640
+And it's such a simple idea, you'll never hear it again in
+这是一个如此简单的想法，你再也不会在
+
+209
+00:11:33,640 --> 00:11:34,840
+this subject.
+这个主题中听到它了。
+
+210
+00:11:34,840 --> 00:11:37,130
+But it's an idea you need to add to your repertoire of
+但这是一个你需要添加到你的
+
+211
+00:11:37,130 --> 00:11:40,780
+problem solving methods, techniques, procedures, and
+问题解决方法、技术、程序和
+
+212
+00:11:40,780 --> 00:11:42,900
+algorithms.
+算法库中的想法。
+
+213
+00:11:42,900 --> 00:11:44,150
+So here's how it works.
+这就是它的工作原理。
+
+214
+00:11:48,380 --> 00:11:52,370
+Maybe I can explain to best by starting off with an example.
+也许我可以从一个例子开始最好地解释。
+
+215
+00:11:52,370 --> 00:11:55,590
+Here's a tree leaf I picked off a tree on
+这是我在去上课的路上从一棵树上摘下来的树叶
+
+216
+00:11:55,590 --> 00:11:56,760
+the way over to class.
+。
+
+217
+00:11:56,760 --> 00:11:59,950
+I hope it's not the last of the species.
+我希望它不是最后一个物种。
+
+218
+00:11:59,950 --> 00:12:01,540
+What is it, what kind of tree?
+这是什么树，什么样的树？
+
+219
+00:12:05,680 --> 00:12:06,720
+I don't know.
+我不知道。
+
+220
+00:12:06,720 --> 00:12:09,870
+I never did learn my trees, or my colors, or my
+我从来没有学过我的树，我的颜色，或者我的
+
+221
+00:12:09,870 --> 00:12:11,910
+multiplication tables.
+乘法表。
+
+222
+00:12:11,910 --> 00:12:17,060
+So I have to go back to this book, the Audubon Society
+所以我必须回到这本书，奥杜邦协会
+
+223
+00:12:17,060 --> 00:12:18,870
+Field Guide to North American Trees.
+北美树木实地指南。
+
+224
+00:12:18,870 --> 00:12:21,160
+And how would I solve the problem?
+我将如何解决这个问题？
+
+225
+00:12:21,160 --> 00:12:21,790
+It's pretty simple.
+这很简单。
+
+226
+00:12:21,790 --> 00:12:26,490
+I just turn the pages one at a time, until I find something
+我只是一次翻一页，直到找到
+
+227
+00:12:26,490 --> 00:12:28,700
+that looks like this leaf.
+看起来像这片叶子的东西。
+
+228
+00:12:28,700 --> 00:12:33,190
+And then I discover it's a sycamore, or something.
+然后我发现它是梧桐树之类的。
+
+229
+00:12:33,190 --> 00:12:35,930
+MIT's full of them.
+麻省理工学院到处都是。
+
+230
+00:12:35,930 --> 00:12:39,660
+So when I do that, I do something very intuitive, very
+所以当我这样做时，我会做一些非常直观、非常
+
+231
+00:12:39,660 --> 00:12:41,070
+natural, something you do all the time.
+自然的事情，你一直在做的事情。
+
+232
+00:12:41,070 --> 00:12:42,550
+But we're going to give it a name.
+但我们要给它一个名字。
+
+233
+00:12:42,550 --> 00:12:43,850
+We're going to call it generate and test.
+我们将把它称为生成和测试。
+
+234
+00:12:55,510 --> 00:12:59,790
+And generate and test method consists of generating some
+生成和测试方法包括生成一些
+
+235
+00:12:59,790 --> 00:13:04,260
+possible solutions, feeding them into a box that tests
+可能的解决方案，将它们输入到一个测试它们的盒子中
+
+236
+00:13:04,260 --> 00:13:10,760
+them, and then out the other side comes mostly failures.
+，然后从另一边出来主要是失败。
+
+237
+00:13:10,760 --> 00:13:14,890
+But every once in a while we get something that succeeds
+但每隔一段时间，我们就会得到一些成功
+
+238
+00:13:14,890 --> 00:13:17,240
+and pleases us.
+并让我们满意的东西。
+
+239
+00:13:17,240 --> 00:13:18,960
+That's what I did with the leaf.
+这就是我对叶子所做的。
+
+240
+00:13:18,960 --> 00:13:21,340
+But now you have a name for it.
+但现在你有了它的名字。
+
+241
+00:13:21,340 --> 00:13:25,490
+Once you have a name for something, you
+一旦你为某事命名，你
+
+242
+00:13:25,490 --> 00:13:26,860
+get power over it.
+就会获得对它的控制权。
+
+243
+00:13:26,860 --> 00:13:28,970
+You can start to talk about it.
+你可以开始谈论它。
+
+244
+00:13:28,970 --> 00:13:32,180
+So I can say, if you're doing a generate and test approach
+所以我可以说，如果你正在对问题进行生成和测试方法
+
+245
+00:13:32,180 --> 00:13:37,280
+to a problem, you better build a generator with certain
+，你最好构建一个具有某些属性的生成器，这些
+
+246
+00:13:37,280 --> 00:13:40,210
+properties that make generators good.
+属性使生成器变得更好。
+
+247
+00:13:40,210 --> 00:13:42,940
+For example, they should not be redundant.
+例如，它们不应该是多余的。
+
+248
+00:13:42,940 --> 00:13:46,210
+They shouldn't give you the same solution twice.
+他们不应该两次给你相同的解决方案。
+
+249
+00:13:46,210 --> 00:13:49,680
+They should be informable.
+他们应该是知情的。
+
+250
+00:13:49,680 --> 00:13:52,620
+They should be able to absorb information such as, this is a
+他们应该能够吸收信息，例如，这是一棵
+
+251
+00:13:52,620 --> 00:13:53,650
+deciduous tree.
+落叶树。
+
+252
+00:13:53,650 --> 00:13:56,260
+Don't bother looking at the conifers.
+不要费心去看针叶树。
+
+253
+00:13:56,260 --> 00:13:58,130
+So once you have a name for something, you can start
+所以一旦你有了一个名字，你就可以开始
+
+254
+00:13:58,130 --> 00:13:59,370
+talking about.
+谈论了。
+
+255
+00:13:59,370 --> 00:14:02,580
+And that vocabulary gives you power.
+那个词汇给了你力量。
+
+256
+00:14:02,580 --> 00:14:06,610
+So we call this the Rumpelstiltskin Principle
+因此，我们称其为Rumpelstiltskin 原则，
+
+257
+00:14:06,610 --> 00:14:10,530
+perhaps The first of our powerful ideas for the day.
+也许是我们今天的第一个强有力的想法。
+
+258
+00:14:10,530 --> 00:14:12,180
+This subject is full of powerful ideas.
+这个主题充满了强大的思想。
+
+259
+00:14:12,180 --> 00:14:14,300
+There will be some in every class.
+每个班级都会有一些。
+
+260
+00:14:14,300 --> 00:14:16,480
+Rumpelstiltskin Principle says that once you can name
+Rumpelstiltskin 原则说，一旦你可以命名
+
+261
+00:14:16,480 --> 00:14:18,250
+something, you get power over it.
+某物，你就可以控制它。
+
+262
+00:14:18,250 --> 00:14:19,220
+You know what that little thing is on
+你知道
+
+263
+00:14:19,220 --> 00:14:20,470
+the end of your shoelace?
+鞋带末端的那个小东西是什么吗？
+
+264
+00:14:23,650 --> 00:14:24,280
+It's interesting.
+这真有趣。
+
+265
+00:14:24,280 --> 00:14:26,480
+She's gesturing like mad.
+她像疯了似的打手势。
+
+266
+00:14:26,480 --> 00:14:28,920
+That's something we'll talk about later, too--
+这也是我们稍后会讨论的东西——
+
+267
+00:14:28,920 --> 00:14:32,070
+motor stuff, and how it helps us think.
+电机的东西，以及它如何帮助我们思考。
+
+268
+00:14:32,070 --> 00:14:33,310
+What is it?
+它是什么？
+
+269
+00:14:33,310 --> 00:14:35,500
+No one knows?
+没人知道？
+
+270
+00:14:35,500 --> 00:14:36,780
+It's an ag something, right?
+这是一个ag的东西，对吧？
+
+271
+00:14:36,780 --> 00:14:38,910
+It's an aglet, very good.
+是带子的，很不错。
+
+272
+00:14:38,910 --> 00:14:41,460
+So once you have the name, you can start to talk about.
+所以一旦你有了名字，你就可以开始谈论了。
+
+273
+00:14:41,460 --> 00:14:44,320
+You can say the purpose of an aglet is pretty much like the
+你可以说肩带的目的很像
+
+274
+00:14:44,320 --> 00:14:45,590
+whipping on the end of a rope.
+在绳子末端的鞭打。
+
+275
+00:14:45,590 --> 00:14:48,140
+It keeps the thing from unwinding.
+它可以防止事情展开。
+
+276
+00:14:48,140 --> 00:14:51,140
+Now you have a place to hang that knowledge.
+现在你有地方挂这些知识了。
+
+277
+00:14:51,140 --> 00:14:54,730
+So we're talking about this frequently from now into the
+因此，从现在到
+
+278
+00:14:54,730 --> 00:14:56,680
+rest of the semester, the power of being
+本学期剩下的时间，我们经常谈论这个，
+
+279
+00:14:56,680 --> 00:14:58,010
+able to name things.
+能够命名事物的力量。
+
+280
+00:14:58,010 --> 00:15:01,850
+Symbolic labels give us power over concepts.
+符号标签赋予我们超越概念的力量。
+
+281
+00:15:01,850 --> 00:15:04,290
+While we're here I should also say that this is a very simple
+当我们在这里时，我还应该说这是一个非常简单的
+
+282
+00:15:04,290 --> 00:15:06,570
+idea, generate and test.
+想法，生成和测试。
+
+283
+00:15:06,570 --> 00:15:09,770
+And you might be tempted to say to someone, we learned
+您可能很想对某人说，我们
+
+284
+00:15:09,770 --> 00:15:11,470
+about generate and test today.
+今天学习了生成和测试。
+
+285
+00:15:11,470 --> 00:15:14,290
+But it's a trivial idea.
+但这是一个微不足道的想法。
+
+286
+00:15:14,290 --> 00:15:17,030
+The word trivial is a word I would like you to purge from
+琐碎这个词是我希望你从
+
+287
+00:15:17,030 --> 00:15:22,340
+your vocabulary, because it's a very dangerous label.
+你的词汇表中清除的一个词，因为它是一个非常危险的标签。
+
+288
+00:15:22,340 --> 00:15:25,970
+The reason it's dangerous is because there's a difference
+它之所以危险，是因为
+
+289
+00:15:25,970 --> 00:15:27,360
+between trivial and simple.
+琐碎和简单之间存在差异。
+
+290
+00:15:27,360 --> 00:15:30,310
+What is it?
+它是什么？
+
+291
+00:15:30,310 --> 00:15:33,320
+What's the difference between labeling something as trivial
+将某事标记为微不足道
+
+292
+00:15:33,320 --> 00:15:34,570
+and calling it simple?
+和称其为简单有什么区别？
+
+293
+00:15:34,570 --> 00:15:35,820
+Yes?
+是的？
+
+294
+00:15:39,440 --> 00:15:40,450
+Exactly so.
+正是如此。
+
+295
+00:15:40,450 --> 00:15:44,950
+He says that simple can be powerful, and trivial makes it
+他说简单可以很强大，而微不足道的事情
+
+296
+00:15:44,950 --> 00:15:48,830
+sound like it's not only simple, but of little worth.
+听起来不仅简单，而且毫无价值。
+
+297
+00:15:48,830 --> 00:15:53,060
+So many MIT people miss opportunities, because they
+很多麻省理工学院的人错过了机会，因为
+
+298
+00:15:53,060 --> 00:15:55,270
+have a tendency to think that ideas aren't important unless
+他们倾向于认为想法不重要，除非
+
+299
+00:15:55,270 --> 00:15:57,660
+they're complicated.
+它们很复杂。
+
+300
+00:15:57,660 --> 00:15:59,965
+But the most simple ideas in artificial intelligence are
+但人工智能中最简单的想法
+
+301
+00:15:59,965 --> 00:16:02,120
+often the most powerful.
+往往是最强大的。
+
+302
+00:16:02,120 --> 00:16:04,130
+We could teach an artificial intelligence course to you
+我们可以教给你一门
+
+303
+00:16:04,130 --> 00:16:06,180
+that would be so full of mathematics it would make a
+充满数学的人工智能课程，这会让第
+
+304
+00:16:06,180 --> 00:16:09,150
+Course 18 professor gag.
+18 课的教授感到厌烦。
+
+305
+00:16:09,150 --> 00:16:11,900
+But those ideas would be merely gratuitously
+但这些想法只是无缘无故地
+
+306
+00:16:11,900 --> 00:16:15,590
+complicated, and gratuitously mathematical, and gratuitously
+复杂，无缘无故地数学化，而且无缘无故地
+
+307
+00:16:15,590 --> 00:16:16,940
+not simple.
+不简单。
+
+308
+00:16:16,940 --> 00:16:18,790
+Simple ideas are often the most powerful.
+简单的想法往往是最强大的。
+
+309
+00:16:22,460 --> 00:16:24,570
+So where are we so far?
+那么到目前为止，我们在哪里？
+
+310
+00:16:24,570 --> 00:16:27,165
+We talked about the definition.
+我们讨论了定义。
+
+311
+00:16:27,165 --> 00:16:29,660
+We talked about an example of a method.
+我们讨论了一个方法的例子。
+
+312
+00:16:29,660 --> 00:16:32,560
+Showed you a representation, and perhaps also talked about
+给你看了一个表示，也许也谈到
+
+313
+00:16:32,560 --> 00:16:34,220
+the first idea, too.
+了第一个想法。
+
+314
+00:16:34,220 --> 00:16:36,690
+You've got the representation right, you're
+你的表述是正确的，你
+
+315
+00:16:36,690 --> 00:16:38,440
+often almost done.
+通常几乎完成了。
+
+316
+00:16:38,440 --> 00:16:41,030
+Because with this representation, they can
+因为有了这个表示，他们可以
+
+317
+00:16:41,030 --> 00:16:44,580
+immediately see that there are just two solutions to this
+立即看到这个问题只有两种解决方案
+
+318
+00:16:44,580 --> 00:16:48,930
+problem, something that wouldn't have occurred to us
+，这是
+
+319
+00:16:48,930 --> 00:16:50,630
+when we were little kids, and didn't think to draw the
+我们小时候不会想到的，也没有想过要画
+
+320
+00:16:50,630 --> 00:16:51,880
+[? state ?] diagram.
+[? 状态 ?] 图。
+
+321
+00:16:56,640 --> 00:16:57,890
+There's still one more thing.
+还有一件事。
+
+322
+00:17:01,410 --> 00:17:04,740
+In the past, and in other places, artificial
+在过去和其他地方，
+
+323
+00:17:04,740 --> 00:17:09,108
+intelligence is often taught as purely about reasoning.
+人工智能通常被教授为纯粹的推理。
+
+324
+00:17:09,108 --> 00:17:12,515
+But we solve problems with our eyes, as well as
+但是我们用我们的眼睛和
+
+325
+00:17:12,515 --> 00:17:15,420
+our symbolic apparatus.
+我们的象征装置来解决问题。
+
+326
+00:17:15,420 --> 00:17:18,858
+And you solved that problem with your eyes.
+你用眼睛解决了这个问题。
+
+327
+00:17:18,858 --> 00:17:22,839
+So I like to reinforce that by giving you a little puzzle.
+所以我想通过给你一个小谜题来加强这一点。
+
+328
+00:17:22,839 --> 00:17:24,630
+Let's see, who's here?
+让我们看看，谁在这里？
+
+329
+00:17:30,370 --> 00:17:32,420
+I don't see [? Kambe, ?] but I'll bet he's from Africa.
+我没看到 [?  Kambe，？] 但我敢打赌他来自非洲。
+
+330
+00:17:32,420 --> 00:17:34,610
+Is anyone from Africa?
+有人来自非洲吗？
+
+331
+00:17:34,610 --> 00:17:37,180
+No one's from Africa?
+没有人来自非洲？
+
+332
+00:17:37,180 --> 00:17:38,960
+No?
+不？
+
+333
+00:17:38,960 --> 00:17:40,210
+Well so much the better--
+那就更好了——
+
+334
+00:17:46,090 --> 00:17:47,760
+because they would know the answer to the puzzle.
+因为他们会知道谜题的答案。
+
+335
+00:17:47,760 --> 00:17:49,230
+Here's the puzzle.
+这是谜题。 赤道穿过
+
+336
+00:17:49,230 --> 00:17:53,270
+How many countries in Africa does the Equator cross?
+非洲多少个国家？
+
+337
+00:17:56,690 --> 00:17:58,290
+Would anybody be willing to stake their
+有人愿意为
+
+338
+00:17:58,290 --> 00:17:59,750
+life on their answer?
+他们的答案赌上自己的生命吗？
+
+339
+00:18:02,520 --> 00:18:03,770
+Probably not.
+可能不是。
+
+340
+00:18:06,910 --> 00:18:16,550
+Well, now let me repeat the question.
+好吧，现在让我重复这个问题。 赤道穿过
+
+341
+00:18:16,550 --> 00:18:19,475
+How many countries in Africa does the Equator cross?
+非洲多少个国家？
+
+342
+00:18:21,995 --> 00:18:23,040
+Yeah, six.
+是的，六个。
+
+343
+00:18:23,040 --> 00:18:25,970
+What happened is a miracle.
+发生的事情是一个奇迹。
+
+344
+00:18:25,970 --> 00:18:29,770
+The miracle is that I have communicated with you through
+奇迹是我通过语言与你交流，你
+
+345
+00:18:29,770 --> 00:18:34,660
+language, and your language system commanded your visual
+的语言系统命令你的视觉
+
+346
+00:18:34,660 --> 00:18:38,590
+system to execute a program that involves scanning across
+系统执行一个程序，该程序涉及扫描
+
+347
+00:18:38,590 --> 00:18:41,390
+that line, counting as you go.
+那条线，边走边算。
+
+348
+00:18:41,390 --> 00:18:43,770
+And then your vision system came back to your language
+然后你的视觉系统回到你的语言
+
+349
+00:18:43,770 --> 00:18:45,950
+system and said, six.
+系统并说，六。
+
+350
+00:18:45,950 --> 00:18:47,575
+And that is a miracle.
+这是一个奇迹。
+
+351
+00:18:47,575 --> 00:18:50,600
+And without understanding that miracle, we'll never have a
+如果不了解这个奇迹，我们将永远无法
+
+352
+00:18:50,600 --> 00:18:53,330
+full understanding of the nature of intelligence.
+全面了解智能的本质。
+
+353
+00:18:53,330 --> 00:18:55,720
+But that kind of problem solving is the kind of problem
+但是那种解决问题的方法是
+
+354
+00:18:55,720 --> 00:18:57,950
+solving I wish we could teach you a lot about it.
+我希望我们能教给你很多关于它的那种解决方法。
+
+355
+00:18:57,950 --> 00:19:00,420
+But we can't teach you about stuff we don't understand.
+但是我们不能教你我们不理解的东西。
+
+356
+00:19:00,420 --> 00:19:01,500
+We [INAUDIBLE]
+我们 [听不清]
+
+357
+00:19:01,500 --> 00:19:02,750
+for that.
+为此。
+
+358
+00:19:05,540 --> 00:19:08,930
+That's a little bit about the definition and some examples.
+这是关于定义和一些例子的一点点。
+
+359
+00:19:08,930 --> 00:19:10,460
+What's it for?
+这是为了什么？
+
+360
+00:19:10,460 --> 00:19:12,530
+We can deal with that very quickly.
+我们可以很快处理。
+
+361
+00:19:12,530 --> 00:19:16,440
+If we're engineers, it's for building smarter programs.
+如果我们是工程师，那是为了构建更智能的程序。
+
+362
+00:19:16,440 --> 00:19:20,690
+It's about building a tool kit of representations and methods
+它是关于构建一个表示和方法的工具包
+
+363
+00:19:20,690 --> 00:19:22,660
+that make it possible to build smarter programs.
+，使构建更智能的程序成为可能。
+
+364
+00:19:22,660 --> 00:19:25,660
+And you will find, these days, that you can't build a big
+现在你会发现，如果没有将我们在这个主题中讨论的想法嵌入到某个地方，你就无法构建一个大
+
+365
+00:19:25,660 --> 00:19:28,520
+system without having embedded in it somewhere the ideas that
+系统
+
+366
+00:19:28,520 --> 00:19:31,230
+we talk about in the subject.
+。
+
+367
+00:19:31,230 --> 00:19:33,420
+If you're a scientist, there's a somewhat different
+如果您是科学家，则动机有所不同
+
+368
+00:19:33,420 --> 00:19:33,970
+motivation.
+。
+
+369
+00:19:33,970 --> 00:19:36,420
+But it amounts to studying the same sorts of things.
+但这相当于研究同样的事情。
+
+370
+00:19:36,420 --> 00:19:40,800
+If you're a scientist, you're interested in what it is that
+如果你是一名科学家，你会对是什么
+
+371
+00:19:40,800 --> 00:19:43,800
+enables us to build a computational account of
+使我们能够建立智能计算帐户感兴趣
+
+372
+00:19:43,800 --> 00:19:45,110
+intelligence.
+。
+
+373
+00:19:45,110 --> 00:19:46,910
+That's the part that I do.
+这就是我要做的部分。
+
+374
+00:19:46,910 --> 00:19:49,620
+But most this subject is going to be about the other part,
+但是这个主题大部分是关于另一部分的，
+
+375
+00:19:49,620 --> 00:19:52,440
+the part that makes it possible for you to build
+这部分可以让你构建
+
+376
+00:19:52,440 --> 00:19:53,510
+smarter programs.
+更智能的程序。
+
+377
+00:19:53,510 --> 00:19:56,990
+And some of it will be about what it is that makes us
+其中一些将是关于是什么使我们
+
+378
+00:19:56,990 --> 00:20:02,900
+different from the chimpanzees with whom we share an enormous
+与黑猩猩不同，我们与之共享大量
+
+379
+00:20:02,900 --> 00:20:05,130
+fraction of our DNA.
+DNA。
+
+380
+00:20:05,130 --> 00:20:08,010
+It used to be thought that we share 95% of our DNA with
+过去人们认为我们与黑猩猩共享 95% 的 DNA
+
+381
+00:20:08,010 --> 00:20:09,840
+chimpanzees.
+。
+
+382
+00:20:09,840 --> 00:20:13,660
+Then it went up to 98.
+然后它上升到 98。
+
+383
+00:20:13,660 --> 00:20:15,470
+Thank God it stopped about there.
+感谢上帝，它停在那里。
+
+384
+00:20:15,470 --> 00:20:16,770
+Then it actually went back a little bit.
+然后它实际上又回到了一点。
+
+385
+00:20:16,770 --> 00:20:23,350
+I think we're back down to 94.
+我想我们已经回到了 94 年。
+
+386
+00:20:23,350 --> 00:20:25,190
+How about if we talk a little bit now about the history of
+如果我们现在谈谈人工智能的历史
+
+387
+00:20:25,190 --> 00:20:28,940
+AI, so we can see how we got to where we are today?
+怎么样，这样我们就可以看到我们是如何走到今天的？
+
+388
+00:20:28,940 --> 00:20:31,040
+This will also be a history of AI that tells you a little bit
+这也将是一部人工智能的历史，它会告诉你一些
+
+389
+00:20:31,040 --> 00:20:32,420
+about what you'll learn in this course.
+关于你将在本课程中学到的东西。
+
+390
+00:20:36,610 --> 00:20:42,730
+It all started with Lady Lovelace, the world's first
+这一切都始于世界上第一个程序员洛夫莱斯夫人，她在计算机运行
+
+391
+00:20:42,730 --> 00:20:47,750
+programmer, Who wrote programs about 100 years before there
+之前大约 100 年就编写了程序
+
+392
+00:20:47,750 --> 00:20:50,500
+were computers to run them.
+。
+
+393
+00:20:50,500 --> 00:20:54,140
+But it's interesting that even in 1842, people were hassling
+但有趣的是，即使在 1842 年，人们
+
+394
+00:20:54,140 --> 00:20:57,200
+her about whether computers could get really smart.
+还在为计算机是否真的变得聪明而争论不休。
+
+395
+00:20:57,200 --> 00:21:03,370
+And she said, "The analytical engine has no pretensions to
+她说，“分析引擎不会
+
+396
+00:21:03,370 --> 00:21:05,500
+originate anything.
+自命不凡。
+
+397
+00:21:05,500 --> 00:21:10,080
+It can do whatever we know how to order it to perform."
+它可以做我们知道如何命令它执行的任何事情。”
+
+398
+00:21:10,080 --> 00:21:13,600
+Screwball idea that persists to this day.
+一直延续到今天的疯狂想法。
+
+399
+00:21:13,600 --> 00:21:15,730
+Nevertheless, that was the origin of it all.
+然而，这就是这一切的起源。
+
+400
+00:21:15,730 --> 00:21:17,330
+That was the beginning of the discussions.
+那是讨论的开始。
+
+401
+00:21:17,330 --> 00:21:22,050
+And then nothing much happened until about 1950, when Alan
+直到 1950 年左右，艾伦·
+
+402
+00:21:22,050 --> 00:21:24,110
+Turing wrote his famous paper, which
+图灵写下了他著名的论文，
+
+403
+00:21:24,110 --> 00:21:27,090
+introduced the Turing test.
+介绍了图灵测试。
+
+404
+00:21:27,090 --> 00:21:29,340
+Of course, Alan Turing had previously won the Second
+当然，艾伦·图灵此前曾
+
+405
+00:21:29,340 --> 00:21:34,090
+World War by breaking the German code, the Ultra Code,
+通过打破德国密码（Ultra Code）赢得了第二次世界大战
+
+406
+00:21:34,090 --> 00:21:36,240
+for which the British government rewarded him by
+，英国政府为此奖励了他，
+
+407
+00:21:36,240 --> 00:21:38,180
+driving him to suicide, because he happened to be
+迫使他自杀，因为他恰好是
+
+408
+00:21:38,180 --> 00:21:41,040
+homosexual.
+同性恋。
+
+409
+00:21:41,040 --> 00:21:44,260
+But Turing wrote his paper in 1950, and that was the first
+但是图灵在 1950 年写了他的论文，这是
+
+410
+00:21:44,260 --> 00:21:48,720
+milestone after Lady Lovelace's comment in 1842.
+继 1842 年洛夫莱斯夫人发表评论之后的第一个里程碑
+
+411
+00:21:48,720 --> 00:21:53,140
+And then the modern era really began with a paper written by
+。然后，现代时代真正开始
+
+412
+00:21:53,140 --> 00:21:56,120
+Marvin Minsky in 1960, titled "Steps Toward Artificial
+于 1960 年马文·明斯基 (Marvin Minsky) 写的一篇题为“迈向人工智能的步骤”的论文
+
+413
+00:21:56,120 --> 00:21:59,530
+Intelligence." And it wasn't a long after that Jim
+。不久之后，吉姆
+
+414
+00:21:59,530 --> 00:22:01,490
+[? Slagle, ?]
+[?  Slagle，?]
+
+415
+00:22:01,490 --> 00:22:03,830
+a nearly blind graduate student, wrote a program that
+一个几乎失明的研究生，编写了一个
+
+416
+00:22:03,830 --> 00:22:07,270
+did symbolic integration.
+进行符号积分的程序。
+
+417
+00:22:07,270 --> 00:22:09,850
+Not adding up area under a curve, but doing symbolic
+不是把曲线下的面积加起来，
+
+418
+00:22:09,850 --> 00:22:11,870
+integration just like you learn to do in high school
+而是像你在高中一年级时学习做的那样做符号积分
+
+419
+00:22:11,870 --> 00:22:14,470
+when you're a freshman.
+。
+
+420
+00:22:14,470 --> 00:22:16,560
+Now on Monday, we're going to talk about this program.
+现在星期一，我们将讨论这个程序。
+
+421
+00:22:16,560 --> 00:22:18,730
+And you're going to understand exactly how it works.
+你将确切地了解它是如何工作的。
+
+422
+00:22:18,730 --> 00:22:21,570
+And you can write one yourself.
+你可以自己写一个。
+
+423
+00:22:21,570 --> 00:22:23,730
+And we're going to reach way back in time to look at that
+我们将回到过去看看那个
+
+424
+00:22:23,730 --> 00:22:27,400
+program because, in one day discussing it, talking about
+程序，因为有一天讨论它，谈论
+
+425
+00:22:27,400 --> 00:22:29,500
+it, will be in itself a miniature artificial
+它本身就是一门微型
+
+426
+00:22:29,500 --> 00:22:30,360
+intelligence course.
+人工智能课程。
+
+427
+00:22:30,360 --> 00:22:35,250
+Because it's so rich with important ideas.
+因为它有很多重要的想法。
+
+428
+00:22:35,250 --> 00:22:39,310
+So that's the dawn age, early dawn age.
+所以这就是黎明时代，黎明时代。
+
+429
+00:22:39,310 --> 00:22:49,810
+This was the age of speculation, and this was the
+这是投机的时代，也是这里的
+
+430
+00:22:49,810 --> 00:22:51,060
+dawn age in here.
+黎明时代。
+
+431
+00:22:53,820 --> 00:22:57,600
+So in that early dawn age , the integration program took
+因此，在那个黎明时代，整合计划
+
+432
+00:22:57,600 --> 00:22:58,390
+the world by storm.
+席卷了世界。
+
+433
+00:22:58,390 --> 00:23:00,280
+Because not everybody knows how to do integration.
+因为不是每个人都知道如何进行集成。
+
+434
+00:23:00,280 --> 00:23:03,580
+And someone, everyone, thought that if we can do integration
+有人，每个人都认为，如果我们今天可以进行整合
+
+435
+00:23:03,580 --> 00:23:05,420
+today, the rest of intelligence will be figured
+，那么明天剩下的智能就会被计算
+
+436
+00:23:05,420 --> 00:23:06,882
+out tomorrow.
+出来。
+
+437
+00:23:06,882 --> 00:23:10,580
+Too bad for our side it didn't work out that way.
+对我们来说太糟糕了，结果不是这样。
+
+438
+00:23:10,580 --> 00:23:14,200
+Here's another dawn age program, the Eliza
+这是另一个黎明时代的节目，Eliza
+
+439
+00:23:14,200 --> 00:23:15,220
+[? thing ?].
+[? 事物 ？]。
+
+440
+00:23:15,220 --> 00:23:17,590
+But I imagine you'd prefer a demonstration to
+但我想你更喜欢演示而
+
+441
+00:23:17,590 --> 00:23:19,455
+just reading it, right?
+不是阅读它，对吧？
+
+442
+00:23:19,455 --> 00:23:22,870
+Do you prefer a demonstration?
+你喜欢演示吗？
+
+443
+00:23:22,870 --> 00:23:24,120
+Let's see if we can demonstrate it.
+让我们看看我们是否可以证明它。
+
+444
+00:24:08,250 --> 00:24:11,400
+This is left over from a hamentashen debate of a couple
+这是几年前的一场 hamentashen 辩论遗留下来的
+
+445
+00:24:11,400 --> 00:24:13,411
+of years ago.
+。
+
+446
+00:24:13,411 --> 00:24:15,050
+How do you spell hamentashen, anybody know?
+你怎么拼写hametashen，有人知道吗？
+
+447
+00:24:19,450 --> 00:24:20,600
+I sure hope that's right.
+我当然希望这是对的。
+
+448
+00:24:20,600 --> 00:24:21,390
+It doesn't matter.
+没关系。 会有
+
+449
+00:24:21,390 --> 00:24:22,640
+Something interesting will come.
+一些有趣的事情发生。
+
+450
+00:24:25,920 --> 00:24:28,580
+OK, your choice.
+好，你的选择。
+
+451
+00:24:28,580 --> 00:24:31,310
+Teal?
+青色？
+
+452
+00:24:31,310 --> 00:24:32,560
+Burton House?
+伯顿之家？
+
+453
+00:24:35,890 --> 00:24:37,140
+Teal.
+蓝绿色。
+
+454
+00:24:47,810 --> 00:24:49,710
+So that's dawn age AI.
+这就是黎明时代的人工智能。
+
+455
+00:24:49,710 --> 00:24:53,700
+And no one ever took that stuff seriously, except that
+没有人认真对待这些事情，除了制定一些匹配的
+
+456
+00:24:53,700 --> 00:24:54,900
+it was a fun [INAUDIBLE]
+程序是一件有趣的 [听不清]
+
+457
+00:24:54,900 --> 00:24:57,980
+project level thing to work out some matching
+项目级别的事情
+
+458
+00:24:57,980 --> 00:24:59,810
+programs, and so on.
+，等等。
+
+459
+00:24:59,810 --> 00:25:01,310
+The integration program was serious.
+整合计划是严肃的。
+
+460
+00:25:01,310 --> 00:25:03,240
+This one wasn't.
+这个不是。
+
+461
+00:25:03,240 --> 00:25:06,940
+This was serious, programs that do geometric analogy,
+这很严重，做几何类比的程序，
+
+462
+00:25:06,940 --> 00:25:09,020
+problems of the kind you find on intelligence tests.
+你在智力测试中发现的那种问题。
+
+463
+00:25:09,020 --> 00:25:09,990
+Do you have the answer to this?
+你有答案吗？
+
+464
+00:25:09,990 --> 00:25:11,340
+A is to B as C is to what?
+A 之于 B 就像 C 之于什么？
+
+465
+00:25:14,260 --> 00:25:15,610
+That would be 2, I guess.
+那应该是2，我猜。
+
+466
+00:25:18,270 --> 00:25:19,520
+What's the second best answer?
+第二好的答案是什么？
+
+467
+00:25:22,070 --> 00:25:24,750
+And the theories of the program that solve these
+解决这些问题的程序理论
+
+468
+00:25:24,750 --> 00:25:28,990
+problems are pretty much identical to what you just
+与您刚刚发现的几乎相同
+
+469
+00:25:28,990 --> 00:25:30,460
+figured out.
+。
+
+470
+00:25:30,460 --> 00:25:35,970
+In the first case you deleted the inside figure.
+在第一种情况下，您删除了内部图。
+
+471
+00:25:35,970 --> 00:25:38,280
+And the second case is, the reason you got four is because
+第二种情况是，你得到四个的原因是
+
+472
+00:25:38,280 --> 00:25:44,340
+you deleted the outside part and grew the inside part.
+你删除了外部部分并增加了内部部分。
+
+473
+00:25:44,340 --> 00:25:46,670
+There's another one.
+还有一个。
+
+474
+00:25:46,670 --> 00:25:49,510
+I think this was the hardest one it got, or the easiest one
+我认为这是它得到的最难的一个，或者它没有得到的最简单的一个
+
+475
+00:25:49,510 --> 00:25:50,110
+it didn't get.
+
+
+476
+00:25:50,110 --> 00:25:51,300
+I've forgotten.
+。 我忘了。
+
+477
+00:25:51,300 --> 00:25:54,170
+A is to B as C is to 3.
+A 之于 B 就像 C 之于 3。
+
+478
+00:25:57,490 --> 00:26:00,180
+In the late dawn age, we began to turn our attention from
+在黎明后期，我们开始将注意力从
+
+479
+00:26:00,180 --> 00:26:03,010
+purely symbolic reasoning to thinking a little bit about
+纯粹的象征性推理转向对感知器的一点思考
+
+480
+00:26:03,010 --> 00:26:04,600
+perceptual apparatus.
+。
+
+481
+00:26:04,600 --> 00:26:07,410
+And programs were written that could figure out the nature of
+并且编写的程序可以弄清楚
+
+482
+00:26:07,410 --> 00:26:11,800
+shapes and forms, such as that.
+形状和形式的本质，例如。
+
+483
+00:26:11,800 --> 00:26:14,200
+And it's interesting that those programs had the same
+有趣的是，这些程序在这
+
+484
+00:26:14,200 --> 00:26:19,920
+kind of difficulty with this that you do.
+方面遇到了和你一样的困难。
+
+485
+00:26:19,920 --> 00:26:22,410
+Because now, having deleted all the edges, everything
+因为现在，删除了所有边缘，一切都
+
+486
+00:26:22,410 --> 00:26:23,840
+becomes ambiguous.
+变得模棱两可。
+
+487
+00:26:23,840 --> 00:26:26,790
+And it may be a series of platforms, or it may be a
+它可能是一系列平台，或者可能是
+
+488
+00:26:26,790 --> 00:26:27,615
+series of--
+一系列——如果你经历反转，
+
+489
+00:26:27,615 --> 00:26:30,520
+can you see the saw blade sticking up if you go through
+你能看到锯片伸出来
+
+490
+00:26:30,520 --> 00:26:31,770
+the reversal?
+吗？
+
+491
+00:26:33,790 --> 00:26:35,750
+Programs were written that could learn from a small
+编写的程序可以从
+
+492
+00:26:35,750 --> 00:26:37,600
+number of examples.
+少量示例中学习。
+
+493
+00:26:37,600 --> 00:26:41,490
+Many people think of computer learning as involving leading
+许多人认为计算机学习涉及引导
+
+494
+00:26:41,490 --> 00:26:46,030
+some neural net to submission with thousands of trials.
+一些神经网络进行数千次试验。
+
+495
+00:26:46,030 --> 00:26:48,280
+Programs were written in the early dawn age that learned
+程序是在黎明时代编写的，
+
+496
+00:26:48,280 --> 00:26:51,980
+that an arch is something that has to have the flat part on
+了解到拱门是顶部必须有平坦部分的东西
+
+497
+00:26:51,980 --> 00:26:55,180
+top, and the two sides can't touch, and the top may or may
+，两侧不能接触，顶部可能是也可能
+
+498
+00:26:55,180 --> 00:26:56,430
+not be a wedge.
+不是楔形。
+
+499
+00:26:59,630 --> 00:27:01,880
+In the late dawn age, though, the most important thing,
+不过，在黎明时分，最重要的事情
+
+500
+00:27:01,880 --> 00:27:06,302
+perhaps, was what you look at with me on Wednesday next.
+也许是你下周三和我一起看的东西。
+
+501
+00:27:06,302 --> 00:27:09,120
+It's a rule-based expert systems.
+这是一个基于规则的专家系统。
+
+502
+00:27:09,120 --> 00:27:14,740
+And a program was written at Stanford that did diagnosis of
+斯坦福大学编写了一个程序来诊断
+
+503
+00:27:14,740 --> 00:27:16,520
+bacterial infections of the blood.
+血液中的细菌感染。
+
+504
+00:27:16,520 --> 00:27:21,040
+It turned out to do it better than most doctors, most
+事实证明，它比大多数医生、大多数
+
+505
+00:27:21,040 --> 00:27:22,860
+general practitioners.
+全科医生做得更好。 奇怪的
+
+506
+00:27:22,860 --> 00:27:26,990
+It was never used, curiously enough.
+是，它从未使用过。
+
+507
+00:27:26,990 --> 00:27:31,360
+Because nobody cares what your problem actually is.
+因为没有人关心你的问题到底是什么。
+
+508
+00:27:31,360 --> 00:27:33,420
+They just give you a broad spectrum antibiotic that'll
+他们只是给你一种广谱抗生素，可以
+
+509
+00:27:33,420 --> 00:27:34,670
+kill everything.
+杀死一切。
+
+510
+00:27:36,700 --> 00:27:39,700
+But this late dawn age system, the so-called [INAUDIBLE]
+但是这个黎明时代的系统，即所谓的 [听不清]
+
+511
+00:27:39,700 --> 00:27:46,440
+system, was the system that launched a thousand companies,
+系统，是启动了一千家公司的系统，
+
+512
+00:27:46,440 --> 00:27:48,960
+because people started building expert systems built
+因为人们开始构建
+
+513
+00:27:48,960 --> 00:27:50,040
+on that technology.
+基于该技术的专家系统。
+
+514
+00:27:50,040 --> 00:27:52,130
+Here's that you don't know you used, or that was
+这是您不知道自己使用过的，或者
+
+515
+00:27:52,130 --> 00:27:53,430
+used on your behalf.
+是代表您使用过的。
+
+516
+00:27:53,430 --> 00:27:56,570
+If you go through, for example, the Atlanta airport,
+例如，如果您经过亚特兰大机场，
+
+517
+00:27:56,570 --> 00:27:59,380
+your airplane is parked by a rule-based expert system that
+您的飞机将由一个基于规则的专家系统停放，该系统
+
+518
+00:27:59,380 --> 00:28:03,430
+knows how to park aircraft effectively.
+知道如何有效地停放飞机。
+
+519
+00:28:03,430 --> 00:28:09,841
+It saves Delta Airlines about to $0.5 million a day of jet
+通过更聪明地停放飞机，达美航空公司每天可以节省大约 50 万美元的喷气
+
+520
+00:28:09,841 --> 00:28:13,780
+fuel by being all smarter about how to park them.
+燃料。
+
+521
+00:28:13,780 --> 00:28:15,760
+So that's an example of an expert system that does a
+这是一个专家系统的例子，
+
+522
+00:28:15,760 --> 00:28:17,160
+little bit of good for a lot of people.
+它对很多人都有点好处。
+
+523
+00:28:19,680 --> 00:28:20,600
+There's Deep Blue.
+有深蓝。
+
+524
+00:28:20,600 --> 00:28:27,930
+That takes us to the next stage beyond the age of expert
+这将我们带到了超越专家
+
+525
+00:28:27,930 --> 00:28:30,410
+systems, and the business age.
+系统时代和商业时代的下一个阶段。
+
+526
+00:28:30,410 --> 00:28:33,250
+It takes us into this age here, which I call the
+它把我们带到了这个时代，我称之为
+
+527
+00:28:33,250 --> 00:28:43,260
+bulldozer age, because this is the time when people began to
+推土机时代，因为这是人们开始
+
+528
+00:28:43,260 --> 00:28:46,390
+see that we had at our disposal
+看到我们拥有
+
+529
+00:28:46,390 --> 00:28:48,700
+unlimited amounts of computing.
+无限量计算的时代。
+
+530
+00:28:48,700 --> 00:28:50,880
+And frequently you can substitute computing for
+通常，您可以用计算代替
+
+531
+00:28:50,880 --> 00:28:52,930
+intelligence.
+智能。
+
+532
+00:28:52,930 --> 00:28:56,420
+So no one would say that Deep Blue does anything like what a
+所以没有人会说深蓝做的事情就像
+
+533
+00:28:56,420 --> 00:28:59,230
+human chess master does.
+人类国际象棋大师所做的那样。
+
+534
+00:28:59,230 --> 00:29:04,180
+But nevertheless, Deep Blue, by processing data like a
+但尽管如此，深蓝通过像
+
+535
+00:29:04,180 --> 00:29:06,700
+bulldozer processes gravel, was able to
+推土机处理砾石一样处理数据，还是能够
+
+536
+00:29:06,700 --> 00:29:07,950
+beat the world champion.
+击败世界冠军。
+
+537
+00:29:11,910 --> 00:29:13,100
+So what's the right way?
+那么正确的方法是什么？
+
+538
+00:29:13,100 --> 00:29:15,390
+That's the age we're in right now.
+这就是我们现在所处的时代。
+
+539
+00:29:15,390 --> 00:29:18,420
+I will of course be inducing programs for those ages as we
+当我们讨论这个主题时，我当然会为那些年龄段的人制定计划
+
+540
+00:29:18,420 --> 00:29:19,940
+go through the subject.
+。
+
+541
+00:29:19,940 --> 00:29:22,950
+There is a question of what age we're in right now.
+有一个问题是我们现在处于什么时代。
+
+542
+00:29:22,950 --> 00:29:24,840
+And it's always dangerous to name an age when
+
+
+543
+00:29:24,840 --> 00:29:26,640
+you're in it, I guess.
+我猜，当你身处其中时，说出一个时代总是很危险的。
+
+544
+00:29:26,640 --> 00:29:30,660
+I like to call at the age of the right way.
+我喜欢在正确的年龄打电话。
+
+545
+00:29:30,660 --> 00:29:33,270
+And this is an age when we begin to realize that that
+这是一个我们开始意识到上面的
+
+546
+00:29:33,270 --> 00:29:36,750
+definition up there is actually a little incomplete,
+定义实际上有点不完整的时代，
+
+547
+00:29:36,750 --> 00:29:41,630
+because much of our intelligence has to do not
+因为我们的大部分智力
+
+548
+00:29:41,630 --> 00:29:47,920
+with thinking, perception, and action acting separately, but
+与思考、感知和行动无关，而是
+
+549
+00:29:47,920 --> 00:29:55,510
+with loops that tie all those together.
+与将所有这些联系在一起的循环有关。
+
+550
+00:29:55,510 --> 00:29:57,490
+We had one example with Africa.
+我们有一个非洲的例子。
+
+551
+00:29:57,490 --> 00:30:02,270
+Here's another example drawn from a program that has been
+这是另一个示例，该示例取自我的实验室中一直
+
+552
+00:30:02,270 --> 00:30:04,960
+under development, and continues to be, in my
+在开发并继续开发的程序
+
+553
+00:30:04,960 --> 00:30:06,210
+laboratory.
+。
+
+554
+00:30:11,490 --> 00:30:13,500
+We're going to ask the system to imagine something.
+我们将要求系统想象一些东西。
+
+555
+00:30:18,670 --> 00:30:19,610
+SYSTEM: OK.
+系统：好的。
+
+556
+00:30:19,610 --> 00:30:22,406
+I will imagine that a ball falls into a bowl.
+我会想象一个球掉进碗里。
+
+557
+00:30:33,098 --> 00:30:33,584
+OK.
+好的。
+
+558
+00:30:33,584 --> 00:30:38,930
+I will imagine that a man runs into a woman.
+我会想象一个男人遇到一个女人。
+
+559
+00:30:38,930 --> 00:30:40,240
+PATRICK WINSTON: You see, it does the best that it can if
+PATRICK WINSTON：你看，如果
+
+560
+00:30:40,240 --> 00:30:43,440
+it doesn't have a good memory of what these situations
+它对这些情况
+
+561
+00:30:43,440 --> 00:30:45,005
+actually involve.
+实际涉及的内容没有很好的记忆，它会尽力而为。
+
+562
+00:30:45,005 --> 00:30:48,130
+But having imagined the scene it can then--
+但是想象一下场景之后它可以——
+
+563
+00:30:48,130 --> 00:30:48,620
+SYSTEM: Yes.
+系统：是的。
+
+564
+00:30:48,620 --> 00:30:52,110
+I have learned from experience that contact between a man and
+我从经验中了解到，男人和女人之间的接触是
+
+565
+00:30:52,110 --> 00:30:56,240
+a woman appeared because a man runs into a woman.
+因为男人遇到女人而出现的。
+
+566
+00:30:56,240 --> 00:30:58,110
+PATRICK WINSTON: Having imagined the scene, it can
+PATRICK WINSTON：在想象了场景之后，它可以
+
+567
+00:30:58,110 --> 00:31:01,740
+then read the answers using its visual apparatus on the
+使用
+
+568
+00:31:01,740 --> 00:31:03,580
+scene that it imagined.
+它想象的场景中的视觉设备来阅读答案。
+
+569
+00:31:03,580 --> 00:31:06,530
+So just like what you did with Africa, only now it's working
+所以就像你对非洲所做的那样，只是现在它正在
+
+570
+00:31:06,530 --> 00:31:08,790
+with its own visual memory, using visual programs.
+使用自己的视觉记忆，使用视觉程序。
+
+571
+00:31:12,026 --> 00:31:12,507
+SYSTEM: OK.
+系统：好的。
+
+572
+00:31:12,507 --> 00:31:17,330
+I will imagine that a man gives a ball to a man.
+我会想象一个男人给一个男人一个球。
+
+573
+00:31:17,330 --> 00:31:21,050
+PATRICK WINSTON: I know this looks like slugs, but they're
+PATRICK WINSTON：我知道这看起来像蛞蝓，但他们
+
+574
+00:31:21,050 --> 00:31:22,300
+actually distinguished professors.
+实际上是杰出的教授。
+
+575
+00:31:26,500 --> 00:31:27,750
+It always does the best it can.
+它总是尽力而为。
+
+576
+00:31:30,465 --> 00:31:31,451
+SYSTEM: OK.
+系统：好的。
+
+577
+00:31:31,451 --> 00:31:33,600
+I will imagine that a man flies.
+我会想象一个人会飞。
+
+578
+00:31:39,560 --> 00:31:41,480
+PATRICK WINSTON: It's the best that it can do.
+PATRICK WINSTON：这是它所能做的最好的。
+
+579
+00:31:47,870 --> 00:31:51,920
+So that concludes our discussion of the history.
+我们对历史的讨论到此结束。 随着学期的展开
+
+580
+00:31:51,920 --> 00:31:54,240
+And I've provided you with a little bit of a glimpse of
+，我已经为您提供了一些
+
+581
+00:31:54,240 --> 00:31:57,880
+what we're going to look at as the semester unfolds.
+我们将要研究的内容的一瞥。
+
+582
+00:31:57,880 --> 00:32:00,410
+Yes, Chris?
+是的，克里斯？
+
+583
+00:32:00,410 --> 00:32:03,880
+CHRIS: Is it actually a demonstration of something?
+克里斯：它实际上是在展示什么吗？
+
+584
+00:32:03,880 --> 00:32:06,200
+Does it have a large database of videos?
+它有一个庞大的视频数据库吗？
+
+585
+00:32:06,200 --> 00:32:08,676
+PATRICK WINSTON: No, it has a small database videos.
+PATRICK WINSTON：不，它有一个小型数据库视频。
+
+586
+00:32:08,676 --> 00:32:13,480
+CHRIS: But it's intelligently picking among them based on--
+CHRIS：但它是根据--
+
+587
+00:32:13,480 --> 00:32:16,140
+PATRICK WINSTON: Based on their content.
+PATRICK WINSTON：根据他们的内容明智地在其中挑选的。
+
+588
+00:32:16,140 --> 00:32:20,570
+So if you say imagine that a student gave a ball to another
+所以如果你说想象一个学生给了另一个学生一个球
+
+589
+00:32:20,570 --> 00:32:23,170
+student, it imagines that.
+，它就是想象出来的。
+
+590
+00:32:23,170 --> 00:32:26,430
+You say, now does the other student have the ball?
+你说，现在其他学生有球吗？
+
+591
+00:32:26,430 --> 00:32:27,590
+Does the other student take the ball?
+其他学生接球了吗？
+
+592
+00:32:27,590 --> 00:32:30,030
+It can answer those questions because it can review the same
+它可以回答这些问题，因为它可以查看同一
+
+593
+00:32:30,030 --> 00:32:33,250
+video and see the take as well as the give in the same video.
+视频并查看同一视频中的取舍。
+
+594
+00:32:35,760 --> 00:32:42,840
+So now we have to think about why we ought to be optimistic
+所以现在我们必须思考为什么我们应该对未来保持
+
+595
+00:32:42,840 --> 00:32:44,460
+about the future.
+乐观。
+
+596
+00:32:44,460 --> 00:32:47,210
+Because we've had a long history here, and we haven't
+因为我们这里历史悠久，我们还没有
+
+597
+00:32:47,210 --> 00:32:48,830
+solved the problem.
+解决问题。
+
+598
+00:32:48,830 --> 00:32:51,350
+But one reason why we can feel optimistic about future is
+但我们对未来感到乐观的一个原因是
+
+599
+00:32:51,350 --> 00:32:54,580
+because all of our friends have been on the march.
+因为我们所有的朋友都在前进。
+
+600
+00:32:54,580 --> 00:32:57,950
+And our friends include the cognitive psychologists, the
+我们的朋友包括认知心理学家、
+
+601
+00:32:57,950 --> 00:32:58,930
+[? developmental ?]
+[? 发展？]
+
+602
+00:32:58,930 --> 00:33:02,200
+psychologists, the linguists, sometimes the philosophers,
+心理学家，语言学家，有时是哲学家
+
+603
+00:33:02,200 --> 00:33:03,450
+and especially the paleoanthropologists.
+，尤其是古人类学家。
+
+604
+00:33:06,040 --> 00:33:09,430
+Because it is becoming increasingly clear why we're
+因为越来越清楚为什么我们
+
+605
+00:33:09,430 --> 00:33:12,780
+actually different from the chimpanzees, and how we got to
+实际上与黑猩猩不同，以及我们如何
+
+606
+00:33:12,780 --> 00:33:14,690
+be that way.
+成为那样。
+
+607
+00:33:14,690 --> 00:33:19,910
+The high school idea is that we evolved through slow,
+高中的理念是我们通过缓慢、
+
+608
+00:33:19,910 --> 00:33:23,540
+gradual, and continuous improvement.
+渐进和持续的改进而进化。
+
+609
+00:33:23,540 --> 00:33:25,730
+But that doesn't seem to be the way it happened.
+但事情似乎并非如此。
+
+610
+00:33:25,730 --> 00:33:30,210
+There are some characteristics of our species that are
+在指导像我这样的人的活动时，我们物种的一些特征可以提供
+
+611
+00:33:30,210 --> 00:33:34,010
+informative when it comes to guiding the activities of
+丰富的信息
+
+612
+00:33:34,010 --> 00:33:36,120
+people like me.
+。
+
+613
+00:33:36,120 --> 00:33:37,950
+And here's what the story seems to be
+这就是
+
+614
+00:33:37,950 --> 00:33:40,600
+from the fossil record.
+化石记录中的故事。
+
+615
+00:33:40,600 --> 00:33:45,330
+First of all, we humans have been around for maybe 200,000
+首先，以我们目前的解剖形式，我们人类已经存在了大约 20
+
+616
+00:33:45,330 --> 00:33:49,210
+years in our present anatomical form.
+万年。
+
+617
+00:33:49,210 --> 00:33:53,140
+If someone walked through the door right now from 200,000
+如果有人现在从 20 万
+
+618
+00:33:53,140 --> 00:34:00,990
+years ago, I imagine they would be dirty,
+年前走进这扇门，我想他们会很脏，
+
+619
+00:34:00,990 --> 00:34:03,750
+but other than that--
+但除此之外——
+
+620
+00:34:03,750 --> 00:34:05,100
+probably naked, too--
+可能也赤身裸体——
+
+621
+00:34:05,100 --> 00:34:08,070
+other than that, you wouldn't be able to tell the
+除此之外，你将无法
+
+622
+00:34:08,070 --> 00:34:09,320
+difference, especially at MIT.
+区分，尤其是在麻省理工学院 .
+
+623
+00:34:15,840 --> 00:34:21,900
+And so the ensuing 150,000 years was a period in which we
+所以接下来的 150,000 年是一个我们
+
+624
+00:34:21,900 --> 00:34:25,159
+humans didn't actually amount to much.
+人类实际上并不多的时期。
+
+625
+00:34:25,159 --> 00:34:30,070
+But somehow, shortly before 50,000 years ago, some small
+但不知何故，在50,000 年前不久，
+
+626
+00:34:30,070 --> 00:34:34,500
+group of us developed a capability that separated us
+我们中的一小部分人发展了一种能力，将我们
+
+627
+00:34:34,500 --> 00:34:37,520
+from all other species.
+与所有其他物种区分开来。
+
+628
+00:34:37,520 --> 00:34:40,409
+It was an accident of evolution.
+这是进化的意外。
+
+629
+00:34:40,409 --> 00:34:43,310
+And these accidents may or may not happen, but it happened to
+这些事故可能会发生也可能不会发生，但它恰好
+
+630
+00:34:43,310 --> 00:34:45,199
+produce us.
+产生了我们。
+
+631
+00:34:45,199 --> 00:34:47,920
+It's also the case that we probably necked down as a
+情况也是如此，我们作为一个物种可能缩小
+
+632
+00:34:47,920 --> 00:34:50,600
+species to a few thousand, or maybe even a few hundred
+到几千，甚至几百个
+
+633
+00:34:50,600 --> 00:34:55,219
+individuals, something which made these accidental changes,
+个体，这使得这些偶然的变化，
+
+634
+00:34:55,219 --> 00:34:57,210
+accidental evolutionary products,
+偶然的进化产物，
+
+635
+00:34:57,210 --> 00:35:00,500
+more capable of sticking.
+更有能力坚持下去。
+
+636
+00:35:00,500 --> 00:35:02,820
+This leads us to speculate on what it was that happened
+这使我们推测
+
+637
+00:35:02,820 --> 00:35:04,750
+50,000 years ago.
+50,000 年前发生了什么。
+
+638
+00:35:04,750 --> 00:35:10,520
+And paleoanthropologists, Noam Chomsky, a lot of people
+和古人类学家诺姆·乔姆斯基（NoamChomsky）一样，很多人
+
+639
+00:35:10,520 --> 00:35:12,580
+reached similar conclusions.
+也得出了类似的结论。
+
+640
+00:35:12,580 --> 00:35:15,050
+And that conclusion is--
+这个结论是——
+
+641
+00:35:15,050 --> 00:35:16,700
+I'll quote Chomsky.
+我会引用乔姆斯基的话。
+
+642
+00:35:16,700 --> 00:35:18,990
+He's the voice of authority.
+他是权威的声音。
+
+643
+00:35:18,990 --> 00:35:22,020
+"It seems that shortly before 50,000 years ago, some small
+“似乎在五万年前不久，
+
+644
+00:35:22,020 --> 00:35:26,040
+group of us acquired the ability to take two concepts,
+我们中的一小部分人获得了将两个
+
+645
+00:35:26,040 --> 00:35:29,020
+and combine them to make a third concept, without
+概念结合起来形成第三个概念的能力，而不会
+
+646
+00:35:29,020 --> 00:35:33,540
+disturbing the original two concepts, without limit." And
+干扰原来的两个概念，没有限制。”
+
+647
+00:35:33,540 --> 00:35:37,110
+from a perspective of an AI person like me, what Chomsky
+从像我这样的人工智能人的角度来看，乔姆斯基
+
+648
+00:35:37,110 --> 00:35:39,490
+seems to be saying is, we learned how to begin to
+似乎在说，我们学会了如何开始
+
+649
+00:35:39,490 --> 00:35:42,270
+describe things, in a way that was intimately
+描述事物，以一种
+
+650
+00:35:42,270 --> 00:35:43,790
+connected with language.
+与语言密切相关的方式。
+
+651
+00:35:43,790 --> 00:35:46,360
+And that, in the end, is what separates us from the
+最后，这就是我们与
+
+652
+00:35:46,360 --> 00:35:49,150
+chimpanzees.
+黑猩猩的区别。
+
+653
+00:35:49,150 --> 00:35:50,790
+So you might say, well let's just study language.
+所以你可能会说，好吧，让我们学习语言吧。
+
+654
+00:35:50,790 --> 00:35:53,580
+No, you can't do that, because we think with our eyes.
+不，你不能那样做，因为我们用眼睛思考。
+
+655
+00:35:53,580 --> 00:35:55,510
+So language does two things.
+所以语言做了两件事。
+
+656
+00:35:55,510 --> 00:35:57,790
+Number one, it enables us to make descriptions.
+第一，它使我们能够进行描述。
+
+657
+00:35:57,790 --> 00:36:00,040
+Descriptions enable us to tell stories.
+描述使我们能够讲述故事。
+
+658
+00:36:00,040 --> 00:36:02,400
+And storytelling and story understanding is what all of
+讲故事和理解故事是所有
+
+659
+00:36:02,400 --> 00:36:03,730
+education is about.
+教育的目的。
+
+660
+00:36:03,730 --> 00:36:04,810
+That's going up.
+那正在上升。
+
+661
+00:36:04,810 --> 00:36:09,370
+And going down enables us to marshal the resources of our
+下降使我们能够整合我们感知系统的资源
+
+662
+00:36:09,370 --> 00:36:12,950
+perceptual systems, and even command our perceptual systems
+，甚至命令我们的感知
+
+663
+00:36:12,950 --> 00:36:17,450
+to imagine things we've never seen.
+系统想象我们从未见过的事物。
+
+664
+00:36:17,450 --> 00:36:20,120
+So here's an example.
+所以这里有一个例子。
+
+665
+00:36:20,120 --> 00:36:22,420
+Imagine running down the street with a
+想象一下提着
+
+666
+00:36:22,420 --> 00:36:24,640
+full bucket of water.
+满满一桶水在街上奔跑。
+
+667
+00:36:24,640 --> 00:36:25,890
+What happens?
+怎么了？
+
+668
+00:36:27,810 --> 00:36:29,100
+Your leg gets wet.
+你的腿湿了。
+
+669
+00:36:29,100 --> 00:36:30,780
+The water sloshes out.
+水溅出来了。
+
+670
+00:36:30,780 --> 00:36:34,600
+You'll never find that fact anywhere on the web.
+你永远不会在网络上的任何地方找到这个事实。
+
+671
+00:36:34,600 --> 00:36:37,470
+You've probably never been told that that's what happens
+你可能从来没有被告知，
+
+672
+00:36:37,470 --> 00:36:39,910
+when you run down the street with a full bucket of water.
+当你带着满满一桶水跑到街上时会发生这种情况。
+
+673
+00:36:39,910 --> 00:36:43,400
+But you easily imagine this scenario, and you know what's
+但是您很容易想象这种情况，并且您知道
+
+674
+00:36:43,400 --> 00:36:43,990
+going to happen.
+会发生什么。
+
+675
+00:36:43,990 --> 00:36:47,150
+There was internal imagination simulation.
+有内部想象模拟。
+
+676
+00:36:47,150 --> 00:36:49,030
+We're never going to understand human intelligence
+在我们能够理解之前，我们永远不会理解人类的智能
+
+677
+00:36:49,030 --> 00:36:51,670
+until we can understand that.
+。
+
+678
+00:36:51,670 --> 00:36:52,540
+Here's another example.
+这是另一个例子。
+
+679
+00:36:52,540 --> 00:36:53,670
+Imagine running down the street with a
+想象一下带着
+
+680
+00:36:53,670 --> 00:36:55,620
+full bucket of nickels?
+满满一桶镍币在街上奔跑？
+
+681
+00:36:55,620 --> 00:36:56,870
+What happens?
+怎么了？
+
+682
+00:36:59,460 --> 00:37:00,415
+Nickels weigh a lot.
+镍很重。
+
+683
+00:37:00,415 --> 00:37:01,395
+You're going to be bent over.
+你会弯腰的。
+
+684
+00:37:01,395 --> 00:37:03,850
+You're going to stagger.
+你会摇摇晃晃的。
+
+685
+00:37:03,850 --> 00:37:05,690
+But nobody ever told you that.
+但从来没有人告诉过你。
+
+686
+00:37:05,690 --> 00:37:08,080
+You won't find it anywhere on the web.
+你不会在网络上的任何地方找到它。
+
+687
+00:37:08,080 --> 00:37:10,720
+So language is at the center of things because it enables
+所以语言是事物的中心，因为它使
+
+688
+00:37:10,720 --> 00:37:14,380
+storytelling going up, and marshalling the resources of
+讲故事上升，并整合感知装置的资源
+
+689
+00:37:14,380 --> 00:37:18,240
+the perceptual apparatus, going down.
+，下降。
+
+690
+00:37:18,240 --> 00:37:20,950
+And that's where we're going to finish the subject the
+这就是我们要
+
+691
+00:37:20,950 --> 00:37:23,320
+semester, by trying to understand more about that
+通过尝试更多地了解这种
+
+692
+00:37:23,320 --> 00:37:25,950
+phenomenon.
+现象来完成这个学期的主题。
+
+693
+00:37:25,950 --> 00:37:28,150
+So that concludes everything I wanted to say about the
+至此，我想说的关于
+
+694
+00:37:28,150 --> 00:37:30,520
+material and the subject.
+材料和主题的一切都结束了。
+
+695
+00:37:30,520 --> 00:37:32,290
+Now I want to turn my attention a little bit to how
+现在我想把注意力转移到
+
+696
+00:37:32,290 --> 00:37:34,090
+we are going to operate the subject.
+我们将如何操作这个主题上。
+
+697
+00:37:34,090 --> 00:37:36,915
+Because there are many characteristics of the subject
+因为该主题
+
+698
+00:37:36,915 --> 00:37:38,715
+that are confusing.
+有许多令人困惑的特征。
+
+699
+00:37:43,610 --> 00:37:46,840
+First of all, we have four kinds of
+首先，我们
+
+700
+00:37:46,840 --> 00:37:48,180
+activities in the course.
+在课程中有四种活动。
+
+701
+00:38:17,930 --> 00:38:22,870
+And each of these has a different purpose.
+而且每一个都有不同的目的。
+
+702
+00:38:39,580 --> 00:38:40,850
+So I did the lectures.
+所以我做了讲座。
+
+703
+00:38:40,850 --> 00:38:43,910
+And the lectures are supposed to be an hour about
+讲座应该是一个小时，
+
+704
+00:38:43,910 --> 00:38:46,740
+introducing the material and the big picture.
+介绍材料和大局。
+
+705
+00:38:46,740 --> 00:38:48,880
+They're about powerful ideas.
+它们是关于强大的想法。
+
+706
+00:38:52,138 --> 00:38:56,060
+They're about the experience side of the course.
+它们是关于课程的体验方面的。
+
+707
+00:38:56,060 --> 00:38:59,130
+Let me step aside and make a remark.
+让我靠边说一下。
+
+708
+00:38:59,130 --> 00:39:00,390
+MIT is about two things.
+麻省理工学院有两件事。
+
+709
+00:39:00,390 --> 00:39:06,200
+It's about skill building, and it's about big ideas.
+这是关于技能的培养，是关于伟大的想法。
+
+710
+00:39:06,200 --> 00:39:10,120
+So you can build a skill at home, or at Dartmouth, or at
+所以你可以在家里、达特茅斯、
+
+711
+00:39:10,120 --> 00:39:13,830
+Harvard, or Princeton, or all those kinds of places.
+哈佛、普林斯顿或所有这些地方培养技能。
+
+712
+00:39:13,830 --> 00:39:16,280
+But the experience you can only get at MIT.
+但是你只能在麻省理工学院获得经验。
+
+713
+00:39:16,280 --> 00:39:18,000
+I know everybody there is to know in artificial
+我知道每个人都知道
+
+714
+00:39:18,000 --> 00:39:18,940
+intelligence.
+人工智能。
+
+715
+00:39:18,940 --> 00:39:20,190
+I can tell you about how they think.
+我可以告诉你他们的想法。
+
+716
+00:39:20,190 --> 00:39:21,250
+I can tell you about how I think.
+我可以告诉你我的想法。
+
+717
+00:39:21,250 --> 00:39:22,620
+And that's something you're not going to
+这是您在
+
+718
+00:39:22,620 --> 00:39:25,120
+get any other place.
+其他任何地方都无法获得的东西。
+
+719
+00:39:25,120 --> 00:39:29,640
+So that's my role, as I see it, in giving these lectures.
+在我看来，这就是我在进行这些讲座时的角色。
+
+720
+00:39:29,640 --> 00:39:34,160
+Recitations are four buttressing and expanding on
+背诵是对材料的四个支撑和扩展
+
+721
+00:39:34,160 --> 00:39:37,430
+the material, and providing a venue that's small enough for
+，并提供一个足够小的
+
+722
+00:39:37,430 --> 00:39:38,680
+discussion.
+讨论场所。
+
+723
+00:39:40,540 --> 00:39:42,200
+Mega recitations are [? a usual ?]
+超级朗诵是[？ 一个通常的？]
+
+724
+00:39:42,200 --> 00:39:43,380
+components of the course.
+课程的组成部分。
+
+725
+00:39:43,380 --> 00:39:46,230
+They're taught at the same hour on Fridays.
+他们在周五的同一时间上课。
+
+726
+00:39:46,230 --> 00:39:48,100
+Mark Seifter, my graduate student,
+我的研究生 Mark Seifter
+
+727
+00:39:48,100 --> 00:39:49,510
+will be teaching those.
+将教授这些。
+
+728
+00:39:49,510 --> 00:39:53,140
+And those are wrapped around past quiz problems.
+这些都围绕着过去的测验问题。
+
+729
+00:39:53,140 --> 00:39:55,700
+And Mark will show you how to work them.
+马克会告诉你如何使用它们。
+
+730
+00:39:55,700 --> 00:40:00,050
+It's very important component to the subject.
+这是该主题非常重要的组成部分。
+
+731
+00:40:00,050 --> 00:40:02,400
+And finally the tutorials are about helping
+最后，教程是关于帮助
+
+732
+00:40:02,400 --> 00:40:04,890
+you with the homework.
+您完成作业的。
+
+733
+00:40:04,890 --> 00:40:09,160
+So you might say to me, well, do I really
+所以你可能会对我说，好吧，我真的
+
+734
+00:40:09,160 --> 00:40:11,590
+need to go to class?
+需要去上课吗？
+
+735
+00:40:11,590 --> 00:40:15,170
+I like to say that the answer is, only if you like to pass
+我想说答案是，只有当你喜欢
+
+736
+00:40:15,170 --> 00:40:17,870
+the subject.
+通过主题时。
+
+737
+00:40:17,870 --> 00:40:19,920
+But you are MIT students.
+但你们是麻省理工学院的学生。
+
+738
+00:40:19,920 --> 00:40:22,190
+And MIT people always like to look at the data.
+麻省理工学院的人总是喜欢看数据。
+
+739
+00:40:26,150 --> 00:40:29,640
+So this is a scattergram we made after the subject was
+所以这是我们去年秋天讲完这门课后做的散点图
+
+740
+00:40:29,640 --> 00:40:33,010
+taught last fall, which shows the relationship between
+，它显示
+
+741
+00:40:33,010 --> 00:40:38,680
+attendance at lectures and the grades awarded in the course.
+了听课和课程成绩之间的关系。
+
+742
+00:40:38,680 --> 00:40:40,820
+And if you're not sure what that all means, here's the
+如果你不确定这一切意味着什么，这里是
+
+743
+00:40:40,820 --> 00:40:42,070
+regression line.
+回归线。
+
+744
+00:40:46,160 --> 00:40:50,400
+So that information is a little suspect for two
+所以这个信息有点可疑，有两个
+
+745
+00:40:50,400 --> 00:40:55,520
+reasons, one of which is we asked people to self report on
+原因，其中一个是我们要求人们自我报告
+
+746
+00:40:55,520 --> 00:40:58,330
+how many lectures they thought they attended.
+他们认为他们参加了多少讲座。
+
+747
+00:40:58,330 --> 00:41:02,340
+And our mechanism for assigning these numerical
+我们分配这些数字
+
+748
+00:41:02,340 --> 00:41:03,590
+grades is a little weird.
+等级的机制有点奇怪。
+
+749
+00:41:06,560 --> 00:41:08,470
+And there's a third thing, too, and that is, one must
+还有第三件事，那就是
+
+750
+00:41:08,470 --> 00:41:12,860
+never confuse correlation with cause.
+永远不要将相关性与原因混为一谈。
+
+751
+00:41:12,860 --> 00:41:15,150
+You can think of other explanations for why that
+对于该
+
+752
+00:41:15,150 --> 00:41:21,230
+trend line goes up, different from whether it has something
+趋势线为何上升，您可以考虑其他解释，与它
+
+753
+00:41:21,230 --> 00:41:25,840
+to do with lectures producing good grades.
+是否与产生好成绩的讲座有关。
+
+754
+00:41:25,840 --> 00:41:28,070
+You might ask how I feel about the people up there on the
+你可能会问我对
+
+755
+00:41:28,070 --> 00:41:30,580
+other upper left hand corner.
+另一个左上角的人感觉如何。
+
+756
+00:41:30,580 --> 00:41:32,970
+There are one or two people who were near the top of the
+有一两个人接近主题的顶部
+
+757
+00:41:32,970 --> 00:41:37,190
+subject who didn't go to class at all.
+，根本没有去上课。
+
+758
+00:41:37,190 --> 00:41:40,890
+And I have mixed feelings about that.
+我对此有复杂的感觉。
+
+759
+00:41:40,890 --> 00:41:41,550
+You're adults.
+你们是成年人。
+
+760
+00:41:41,550 --> 00:41:43,460
+It's your call.
+这是你的电话。
+
+761
+00:41:43,460 --> 00:41:46,490
+On the other hand, I wish that if that's what you do
+另一方面，我希望如果这是你在麻省理工学院
+
+762
+00:41:46,490 --> 00:41:49,780
+habitually in all the subjects you take at MIT, that you
+学习的所有科目的习惯做法，你
+
+763
+00:41:49,780 --> 00:41:52,450
+would resign and go somewhere else, and let somebody else
+会辞职并去其他地方，让其他人
+
+764
+00:41:52,450 --> 00:41:53,780
+take their slot.
+占据他们的位置。
+
+765
+00:41:53,780 --> 00:41:57,050
+Because you're not benefiting from the powerful ideas, and
+因为你没有从强大的想法
+
+766
+00:41:57,050 --> 00:41:58,930
+the other kinds of things that involve
+以及其他涉及
+
+767
+00:41:58,930 --> 00:42:01,150
+interaction with faculty.
+与教师互动的事情中受益。
+
+768
+00:42:01,150 --> 00:42:02,350
+So it can be done.
+所以可以做到。
+
+769
+00:42:02,350 --> 00:42:03,310
+But I don't recommend it.
+但我不推荐它。
+
+770
+00:42:03,310 --> 00:42:06,970
+By the way, all of the four activities that we have here
+顺便说一句，我们在这里的所有四项活动都
+
+771
+00:42:06,970 --> 00:42:08,440
+show similar regression lines.
+显示出相似的回归线。
+
+772
+00:42:11,280 --> 00:42:12,930
+But what about that five point scale?
+但是那个五点量表呢？
+
+773
+00:42:12,930 --> 00:42:14,940
+Let me explain how that works to you.
+让我解释一下它是如何对你起作用的。
+
+774
+00:42:14,940 --> 00:42:18,060
+We love to have people ask us what the class
+我们喜欢让人们
+
+775
+00:42:18,060 --> 00:42:20,430
+average is on a quiz.
+在测验中问我们班级平均水平是多少。
+
+776
+00:42:20,430 --> 00:42:23,480
+Because that's when we get to use our blank stare.
+因为那是我们开始使用空白凝视的时候。
+
+777
+00:42:23,480 --> 00:42:26,180
+Because we have no idea what the class average
+因为我们不知道任何测验的班级平均
+
+778
+00:42:26,180 --> 00:42:28,740
+ever is on any quiz.
+水平。
+
+779
+00:42:28,740 --> 00:42:29,990
+Here's what we do.
+这就是我们所做的。
+
+780
+00:42:46,110 --> 00:42:48,660
+Like everybody else, we start off with a score
+和其他人一样，我们一开始的分数是
+
+781
+00:42:48,660 --> 00:42:50,680
+from zero to 100.
+从 0 到 100。
+
+782
+00:42:50,680 --> 00:42:54,750
+But then we say to ourselves, what score would you get if
+但后来我们对自己说，如果
+
+783
+00:42:54,750 --> 00:42:57,260
+you had a thorough understanding of the material?
+你对材料有透彻的理解，你会得到多少分？
+
+784
+00:42:57,260 --> 00:43:00,400
+And we say, well, for this particular exam, it's this
+我们说，好吧，对于这个特殊的考试，这个
+
+785
+00:43:00,400 --> 00:43:02,480
+number right here.
+数字就在这里。
+
+786
+00:43:02,480 --> 00:43:04,630
+And what score would you get if you had a good
+如果你对材料有很好的
+
+787
+00:43:04,630 --> 00:43:05,500
+understanding of the material?
+理解，你会得到什么分数？
+
+788
+00:43:05,500 --> 00:43:07,340
+That's that score.
+就是这个分数。
+
+789
+00:43:07,340 --> 00:43:10,040
+And what happens if you're down here is that you're
+如果你在这里会发生什么是你正在
+
+790
+00:43:10,040 --> 00:43:12,670
+following off the edge of the range in which we think you
+跟随我们认为你
+
+791
+00:43:12,670 --> 00:43:14,940
+need to do more work.
+需要做更多工作的范围的边缘。
+
+792
+00:43:14,940 --> 00:43:18,830
+So what we do is, we say that if you're in this range here--
+所以我们所做的是，我们说，如果你在这个范围内——
+
+793
+00:43:18,830 --> 00:43:21,520
+following MIT convention with GPAs and stuff,
+遵循 MIT 约定的 GPA 和其他东西，
+
+794
+00:43:21,520 --> 00:43:23,440
+that gets you a five.
+那你就得了 5 分。
+
+795
+00:43:23,440 --> 00:43:25,300
+If you're in this range down here, there's a
+如果你在这个范围内，就会
+
+796
+00:43:25,300 --> 00:43:28,170
+sharp drop off to four.
+急剧下降到四。
+
+797
+00:43:28,170 --> 00:43:29,710
+If you're in this range down here, there's a
+如果你在这个范围内，就会
+
+798
+00:43:29,710 --> 00:43:33,070
+sharp fall off to three.
+急剧下降到三个。
+
+799
+00:43:33,070 --> 00:43:34,950
+So that means if you're in the middle of one of those
+因此，这意味着如果您处于其中一个高原的中间，那么
+
+800
+00:43:34,950 --> 00:43:37,790
+plateaus there's no point in arguing with this.
+与此争论是没有意义的。
+
+801
+00:43:37,790 --> 00:43:40,550
+Because it's not going to do you any good.
+因为这对你没有任何好处。
+
+802
+00:43:40,550 --> 00:43:43,020
+We have these boundaries where we think performance break
+我们有这些边界，我们认为是性能
+
+803
+00:43:43,020 --> 00:43:45,430
+points are.
+断点所在。
+
+804
+00:43:45,430 --> 00:43:47,870
+So you say, well that seems a little harsh.
+所以你说，嗯，这似乎有点苛刻。
+
+805
+00:43:47,870 --> 00:43:49,850
+Blah, blah, blah, blah, blah, and start arguing.
+废话，废话，废话，废话，废话，然后开始争论。
+
+806
+00:43:49,850 --> 00:43:53,560
+But then we will come back with a second major innovation
+但随后我们将带着课程中的第二个重大创新回来
+
+807
+00:43:53,560 --> 00:43:54,860
+we have in the course.
+。
+
+808
+00:43:54,860 --> 00:44:00,300
+That is that your grade is calculated in several parts.
+那就是你的成绩是分几个部分计算的。
+
+809
+00:44:00,300 --> 00:44:06,970
+Part one is the max of your grade on Q1, and
+第一部分是Q1 的最高分，也是期末考试的第一
+
+810
+00:44:06,970 --> 00:44:09,830
+part one of the final.
+部分。
+
+811
+00:44:09,830 --> 00:44:12,780
+So in other words, you get two shots at everything.
+所以换句话说，你在任何事情上都有两枪。
+
+812
+00:44:12,780 --> 00:44:18,080
+So if you have complete glorious undeniable horrible F
+因此，如果您在第一次测验中获得了完全光荣的不可否认的可怕 F
+
+813
+00:44:18,080 --> 00:44:21,540
+on the first quiz, it gets erased on the final if you do
+，那么如果您在决赛的
+
+814
+00:44:21,540 --> 00:44:23,910
+well on that part of the final.
+那部分表现出色，它就会在决赛中被抹去。
+
+815
+00:44:23,910 --> 00:44:25,590
+So each quiz has a corresponding
+所以每个测验
+
+816
+00:44:25,590 --> 00:44:27,080
+mirror on the final.
+在决赛上都有对应的镜子。
+
+817
+00:44:27,080 --> 00:44:32,680
+You get the max of the score you got on those two pieces.
+你得到你在这两件上得到的最高分。
+
+818
+00:44:32,680 --> 00:44:36,540
+And now you say to me, I'm an MIT student.
+现在你对我说，我是麻省理工学院的学生。
+
+819
+00:44:36,540 --> 00:44:38,066
+I have a lot of guts.
+我有很大的胆量。
+
+820
+00:44:38,066 --> 00:44:39,740
+I'm only going to take the final.
+我只会参加决赛。
+
+821
+00:44:44,020 --> 00:44:46,060
+It has been done.
+它已经完成。
+
+822
+00:44:46,060 --> 00:44:49,400
+We don't recommend it.
+我们不推荐它。
+
+823
+00:44:49,400 --> 00:44:51,970
+And the reason we don't recommend it is that we don't
+我们不推荐它的原因是我们不
+
+824
+00:44:51,970 --> 00:44:53,730
+expect everybody to do all of the final.
+希望每个人都完成所有决赛。
+
+825
+00:44:53,730 --> 00:44:55,740
+So there would be a lot of time pressure if you had to do
+因此，如果您必须完成
+
+826
+00:44:55,740 --> 00:45:00,200
+all of the final, all five parts of the final.
+所有决赛，决赛的所有五个部分，将会有很大的时间压力。
+
+827
+00:45:00,200 --> 00:45:02,890
+So we have four quizzes.
+所以我们有四个测验。
+
+828
+00:45:02,890 --> 00:45:05,590
+And the final has a fifth part because there's some material
+期末考试有第五部分，因为
+
+829
+00:45:05,590 --> 00:45:08,710
+that we teach you after the last date on which we can give
+在最后日期之后我们会教给你一些材料，我们可以
+
+830
+00:45:08,710 --> 00:45:11,010
+you a final by institute rules.
+根据学院规则为你提供期末考试。
+
+831
+00:45:11,010 --> 00:45:12,050
+But that's roughly how it works.
+但这大致就是它的工作原理。
+
+832
+00:45:12,050 --> 00:45:16,690
+And you can read about more of the details in the FAQ on the
+您可以在主题主页上的常见问题解答中阅读更多详细信息
+
+833
+00:45:16,690 --> 00:45:17,940
+subject homepage.
+。
+
+834
+00:45:19,910 --> 00:45:21,050
+So now we're almost done.
+所以现在我们差不多完成了。
+
+835
+00:45:21,050 --> 00:45:24,190
+I just want to talk a little bit about how we're going to
+我只是想谈谈接下来几天我们将如何
+
+836
+00:45:24,190 --> 00:45:27,840
+communicate with you in the next few days, while we're
+与您沟通，同时我们
+
+837
+00:45:27,840 --> 00:45:29,710
+getting ourselves organized.
+正在整理自己。
+
+838
+00:45:29,710 --> 00:45:32,560
+So, number one-- if I could ask the TAs to help me pass
+所以，第一——如果我可以请助教帮我把
+
+839
+00:45:32,560 --> 00:45:34,570
+these out--
+这些传出去——
+
+840
+00:45:34,570 --> 00:45:37,890
+we need to schedule you into tutorials.
+我们需要安排你参加教程。
+
+841
+00:45:37,890 --> 00:45:39,970
+So we're going to ask you to fill out this form, and give
+因此，我们将要求您填写此表格，并
+
+842
+00:45:39,970 --> 00:45:41,220
+it to us before you leave.
+在您离开之前将其交给我们。
+
+843
+00:45:44,250 --> 00:45:48,910
+So you'll be hearing from us once we do the sort.
+因此，一旦我们进行排序，您就会收到我们的来信。
+
+844
+00:45:48,910 --> 00:45:58,100
+There's the issue of whether we're going to have ordinary
+问题是我们这周是要进行普通的
+
+845
+00:45:58,100 --> 00:46:00,500
+recitation and a mega recitation this week.
+朗诵和大型的朗诵。
+
+846
+00:46:00,500 --> 00:46:01,460
+So pay attention.
+所以要注意。
+
+847
+00:46:01,460 --> 00:46:03,630
+Otherwise, you're going to be stranded in a classroom with
+否则，你将被困在教室里
+
+848
+00:46:03,630 --> 00:46:04,990
+nothing to do.
+无所事事。 这周
+
+849
+00:46:04,990 --> 00:46:07,450
+We're not going to have any regular recitations this week.
+我们不会有任何定期的朗诵。
+
+850
+00:46:10,010 --> 00:46:11,410
+Are we having regular recitation this week,
+我们这周有定期朗诵
+
+851
+00:46:11,410 --> 00:46:11,720
+[INAUDIBLE]?
+吗，[听不清]？
+
+852
+00:46:11,720 --> 00:46:14,270
+No.
+不。
+
+853
+00:46:14,270 --> 00:46:19,890
+We may, and probably will, have a mega recitation this
+我们可能而且可能会在
+
+854
+00:46:19,890 --> 00:46:24,480
+week that's devoted to a Python review.
+本周举行一场专门针对 Python 评论的大型朗诵会。
+
+855
+00:46:24,480 --> 00:46:27,810
+Now we know that there are many of you who are
+现在我们知道有很多人在周五
+
+856
+00:46:27,810 --> 00:46:31,250
+celebrating a religious holiday on Friday, and so we
+庆祝宗教节日，因此我们
+
+857
+00:46:31,250 --> 00:46:34,680
+will be putting a lot of resources online so you can
+将在网上放置大量资源，以便您可以
+
+858
+00:46:34,680 --> 00:46:38,060
+get that review in another way.
+通过另一种方式获得该评论。
+
+859
+00:46:38,060 --> 00:46:42,740
+We probably will have a Python review on Friday.
+我们可能会在周五进行 Python评测。
+
+860
+00:46:42,740 --> 00:46:45,640
+And we ask that you look at our home page for further
+随着一周的进行，我们要求您查看我们的主页以获取更多
+
+861
+00:46:45,640 --> 00:46:49,520
+information about that as the week progresses.
+信息。
+
+862
+00:46:49,520 --> 00:46:50,640
+So that's all folks.
+所以这就是所有的人。
+
+863
+00:46:50,640 --> 00:46:52,470
+That concludes what we're going to do today.
+我们今天要做的事情到此结束。
+
+864
+00:46:52,470 --> 00:46:56,750
+And as soon as you give us your form, we're through.
+只要你给我们你的表格，我们就完成了。

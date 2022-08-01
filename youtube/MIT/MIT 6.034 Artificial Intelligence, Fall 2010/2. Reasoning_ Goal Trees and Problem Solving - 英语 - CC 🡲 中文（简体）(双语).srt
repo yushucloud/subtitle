@@ -1,0 +1,2124 @@
+1
+00:00:08,119 --> 00:00:11,380
+What we're going to talk about today, is goals.
+今天我们要讲的，是目标。
+
+2
+00:00:11,389 --> 00:00:17,550
+So just by way of a little warm up exercise, I'd like you to look at that integration problem
+因此，通过一些热身练习，我希望你看看
+
+3
+00:00:17,550 --> 00:00:40,750
+over there. The one that's disappeared.
+那边的集成问题。 消失的那个。
+
+4
+00:00:40,750 --> 00:00:47,840
+So the question is, can you do it in your head? Probably not. The question is, if a
+所以问题是，你能在你的头脑中做到这一点吗？ 可能不是。 问题是，如果一个
+
+5
+00:00:47,840 --> 00:00:55,260
+program can do that, is a program, in any sense of the word, intelligent? That's a background
+程序可以做到这一点，那么程序，在任何意义上，是智能的吗？ 这
+
+6
+00:00:55,260 --> 00:00:58,880
+task I'd like you to work on as I talk today.
+是我今天讲话时希望你完成的一项背景任务。
+
+7
+00:00:58,880 --> 00:01:01,000
+So today we're going to be modeling a little bit of human
+所以今天我们将模拟一些人类
+
+8
+00:01:01,000 --> 00:01:02,720
+problem solving, the kind that
+问题的解决方法，
+
+9
+00:01:02,720 --> 00:01:07,100
+is required when you do symbolic integration. Now, you all learned how to do that. You may
+当你进行符号集成时需要这种方法。现在，你们都学会了如何做到这一点。 你
+
+10
+00:01:07,100 --> 00:01:10,579
+not be able to do that particular problem anymore, but you all learned how to integrate
+可能无法再做那个特定的问题，但你们都学会了如何
+
+11
+00:01:10,579 --> 00:01:16,950
+in high school 1801, or something like that. The question is, how did you do it, and is
+融入高中 1801 或类似的东西。问题是，你是怎么做到的，以及
+
+12
+00:01:16,950 --> 00:01:22,539
+the problem solving technique that we are trying to model by building a program that
+我们试图通过构建一个进行符号集成的程序来建模的问题解决技术
+
+13
+00:01:22,539 --> 00:01:29,610
+does symbolic integration, is that a common kind of description of what people do when
+，是人们在解决问题时所做的一种常见描述
+
+14
+00:01:29,610 --> 00:01:31,110
+they solve problems.
+。
+
+15
+00:01:31,110 --> 00:01:34,120
+So the answer to the question is, yes. The kind of problem solving you'll see
+所以这个问题的答案是，是的。 您今天将看到的解决问题的
+
+16
+00:01:34,150 --> 00:01:39,280
+today is like generating tests, which you saw last time. It's a very common kind of
+方法就像您上次看到的生成测试一样。 这是一种非常常见的
+
+17
+00:01:39,280 --> 00:01:44,799
+problem solving that we all engage in, that we all engage in without thinking about it,
+解决问题的方法，我们都在参与，我们都在不考虑它的情况下参与，
+
+18
+00:01:44,799 --> 00:01:46,650
+and without having a name for it.
+也没有为它命名。
+
+19
+00:01:46,650 --> 00:01:51,470
+But once we get a name for it, we'll get power over it. And then we'll be able to deploy
+但是一旦我们得到它的名字，我们就会得到控制它的权力。 然后我们将能够部署
+
+20
+00:01:51,470 --> 00:01:55,658
+it, and it will become a skill. We'll not just witness it, we'll not just understand
+它，它将成为一项技能。 我们不会只是目睹它，我们不会只是理解
+
+21
+00:01:55,658 --> 00:02:00,950
+it, we'll use it instinctively, as a skill.
+它，我们会本能地使用它，作为一种技能。
+
+22
+00:02:00,950 --> 00:02:04,650
+So there you are, you've got that problem, there's your problem, and what do you do to
+所以你来了，你有那个问题，你的问题，你怎么
+
+23
+00:02:04,650 --> 00:02:12,060
+solve it? I don't know, look it up in a table? You'll never find it in a table because of
+解决它？ 不知道，在表格里查一下？因为那个减号和那个 5，你永远不会在表格中找到它
+
+24
+00:02:12,060 --> 00:02:21,670
+that minus sign and that 5. So you're going to have to do something better than that.
+。所以你将不得不做一些比这更好的事情。
+
+25
+00:02:21,670 --> 00:02:26,640
+So what you're going to do, is what you always do when you see a problem like that. You try
+所以你要做的就是当你看到这样的问题时你总是做的。 您
+
+26
+00:02:26,640 --> 00:02:31,090
+to apply a transform, and make it into a different problem that's easier to solve. And eventually,
+尝试应用转换，并将其变成更容易解决的不同问题。 最终，
+
+27
+00:02:31,090 --> 00:02:38,040
+what you hope is that you'll simplify it sufficiently, that the pieces that you've simplified to
+你希望你能充分简化它，你已经简化的部分
+
+28
+00:02:38,040 --> 00:02:44,450
+will be found in some small table of integrals. So how long is this table? It's not the case
+将在一些小的积分表中找到。那么这张桌子有多长呢？
+
+29
+00:02:44,450 --> 00:02:48,690
+that we're going to look at a table with 388 elements, because this is not a big table
+我们不是要查看一个包含 388 个元素的表，因为这不是一个大
+
+30
+00:02:48,690 --> 00:02:52,860
+of integrals. This is what a freshman might have in a freshman's head, after taking a
+的积分表。 这是一个新生在
+
+31
+00:02:52,860 --> 00:02:55,739
+course in integral calculus.
+学习了积分微积分课程后可能会想到的。
+
+32
+00:02:55,739 --> 00:03:00,400
+One of the interesting questions is, how many elements have to be in that table to get an
+一个有趣的问题是，该表中必须有多少元素才能
+
+33
+00:03:00,400 --> 00:03:05,180
+A in the course? We're interested in how much knowledge is involved, that's one of the elements
+在课程中获得 A？ 我们感兴趣的是涉及到多少知识，这
+
+34
+00:03:05,180 --> 00:03:09,980
+of catechism that I've listed over there, that will be part of the gold star ideas suite
+是我在那里列出的要理问答的要素之一，这将成为当天的金星创意套件
+
+35
+00:03:09,980 --> 00:03:12,400
+of the day.
+的一部分。
+
+36
+00:03:12,400 --> 00:03:19,769
+So we'd like to take that problem, and find a way to make it into another problem that's
+所以我们想解决这个问题，并找到一种方法将其变成另一个
+
+37
+00:03:19,769 --> 00:03:25,800
+more likely, or closer to being found in the table. So what we're going to do is very simple,
+更有可能或更接近于在表格中找到的问题。 所以我们要做的非常简单，
+
+38
+00:03:25,800 --> 00:03:31,720
+graphically. We're going to take the problem we're given, and convert it into another problem
+图形化。 我们将处理我们给出的问题，并将其转换为另一个
+
+39
+00:03:31,720 --> 00:03:35,579
+that's simpler. And we're going to give that process and name, and we're going to call
+更简单的问题。 我们将给出该过程和名称，我们将
+
+40
+00:03:35,579 --> 00:03:46,900
+it problem reduction.
+称之为问题减少。
+
+41
+00:03:46,900 --> 00:03:54,269
+And so, in the world of integral calculus, there are all sorts of simple methods, simple
+所以，在积分学的世界里，有各种简单的方法，简单的
+
+42
+00:03:54,269 --> 00:04:00,010
+transformations, we can try that will take a hard problem and make it into an easier
+变换，我们可以尝试把难的问题变成更容易的
+
+43
+00:04:00,010 --> 00:04:07,659
+problem. And some of these transformations are extremely simple and always safe. Some
+问题。 其中一些转换非常简单且始终安全。
+
+44
+00:04:07,659 --> 00:04:12,629
+of them are just, well let's try it and see what happens. But some of them are safe, and
+其中一些只是，让我们尝试一下，看看会发生什么。 但是其中一些是安全的，
+
+45
+00:04:12,629 --> 00:04:18,879
+I'd like to make a short list of safe transformations right now.
+我现在想列出一个安全转换的简短列表。
+
+46
+00:04:18,879 --> 00:04:25,490
+Now I'm going to be going into some detail. And that detail will be grungy. And the question
+现在我将详细介绍。而且那个细节会很蹩脚。 问题
+
+47
+00:04:25,490 --> 00:04:30,159
+is, why do I do it? And it's educational philosophy, is why I do it. So here's the educational
+是，我为什么要这样做？ 这是教育理念，是我这样做的原因。 这就是教育
+
+48
+00:04:30,159 --> 00:04:38,110
+philosophy. At one level, you want to have a skill. But if you're going to have a skill,
+理念。 在一个层面上，你想拥有一项技能。 但是，如果您要掌握一项技能，
+
+49
+00:04:38,110 --> 00:04:47,629
+you have to understand it. So if you're going to have a skill you have to understand it
+则必须了解它。 因此，如果您要掌握一项技能，则必须将其理解低
+
+50
+00:04:47,629 --> 00:04:54,330
+one level down. If you're going to understand it, you have to have witnessed it on a level
+一级。 如果你要理解它，你必须在比这更低的层次上见证它
+
+51
+00:04:54,330 --> 00:04:56,389
+lower than that.
+。
+
+52
+00:04:56,389 --> 00:05:00,569
+So I'm not just going to talk about the idea of problem reduction, because if I were just
+所以我不只是谈论减少问题的想法，因为如果我
+
+53
+00:05:00,569 --> 00:05:05,969
+going to do that, then we could all go home now. So I'm going to show you a particular
+只是这样做，那么我们现在都可以回家了。 因此，我将向您展示它的一个特定
+
+54
+00:05:05,969 --> 00:05:10,919
+example of it, so you understand it better, and I'm going to show you the detail at an
+示例，以便您更好地理解它，并且我将向您展示
+
+55
+00:05:10,919 --> 00:05:15,199
+even lower level than that. So you will witness the stuff that makes it possible, to understand
+比这更低级别的细节。 因此，您将见证使之成为可能的东西，了解
+
+56
+00:05:15,199 --> 00:05:19,419
+the stuff that makes it possible, to build a skill. So that's why I'm going through the
+使之成为可能的东西，并建立技能。 所以这就是为什么我要通过
+
+57
+00:05:19,419 --> 00:05:21,539
+grungy detail.
+蹩脚的细节。
+
+58
+00:05:21,539 --> 00:05:27,349
+So I don't know, let's see. Maybe we can get some hints from that example, but I wonder
+所以我不知道，让我们看看。 也许我们可以从那个例子中得到一些提示，但我想知道
+
+59
+00:05:27,349 --> 00:05:34,569
+if somebody could volunteer a simple transformation that always is a good thing to do. Yes, Sebastian.
+是否有人可以自愿进行一个简单的转换，这总是一件好事。 是的，塞巴斯蒂安。
+
+60
+00:05:34,569 --> 00:05:35,729
+AUDIENCE: Take the constants out.
+听众：去掉常数。
+
+61
+00:05:35,729 --> 00:05:41,819
+SPEAKER 1: Take the constants out. So we'll make that number two. And we'll say that the
+SPEAKER 1：取出常数。 所以我们将把它排在第二位。 我们会说
+
+62
+00:05:41,819 --> 00:05:53,680
+integral c f of x dx is equal to c times the integral f of x dx. Other suggestions? Yes.
+x dx 的积分 c f 等于 c 乘以 x dx 的积分 f。 其他建议？ 是的。
+
+63
+00:05:53,680 --> 00:05:56,449
+AUDIENCE: Trig substitution.
+听众：三角替换。
+
+64
+00:05:56,449 --> 00:06:03,569
+SPEAKER 1: Trig substitution. Now this is-- no, that's for day two. We don't do trig substitution
+扬声器 1：三角替换。 现在这是 -不，这是第二天的。 我们不会
+
+65
+00:06:03,569 --> 00:06:10,229
+here under stuff that's safe, always works, never any doubt, there are simpler things.
+在安全、始终有效、毫无疑问的东西下进行三角替换，还有更简单的东西。
+
+66
+00:06:10,229 --> 00:06:17,319
+These are the safe transformations. What you're giving me is a heuristic transformation. Often
+这些是安全的转换。 你给我的是启发式转换。 通常
+
+67
+00:06:17,319 --> 00:06:22,779
+is helpful, doesn't necessarily always work. We're going to divide our transformations
+是有帮助的，不一定总是有效的。我们将把我们的转换
+
+68
+00:06:22,779 --> 00:06:26,729
+into those two categories. So I need another safe one.
+分为这两类。 所以我需要另一个安全的。
+
+69
+00:06:26,729 --> 00:06:29,830
+AUDIENCE: [INAUDIBLE]
+听众：[听不清]
+
+70
+00:06:29,830 --> 00:06:37,740
+SPEAKER 1: The architects are sitting over there. Divided not only by nationality, but
+发言者 1：建筑师们坐在那边。 不仅按国籍划分，而且
+
+71
+00:06:37,740 --> 00:06:40,020
+by course. What?
+按课程划分。 什么？
+
+72
+00:06:40,020 --> 00:06:43,280
+AUDIENCE: The sum of integrals is the integral of the sum.
+听众：积分的总和是总和的积分。
+
+73
+00:06:43,280 --> 00:07:05,360
+SPEAKER 1: The sum of integrals is the integral of the sum. Now what's missing? What's number
+SPEAKER 1：积分之和是总和的积分。 现在缺少什么？ 什么是
+
+74
+00:07:05,360 --> 00:07:11,220
+one? You're probably thinking it's already there, because you've given me the transformation
+第一？ 你可能认为它已经存在，因为你给了我
+
+75
+00:07:11,229 --> 00:07:16,159
+that involves a constant. And you can think of minus 1 as a constant.
+一个涉及常数的转换。 您可以将负 1 视为一个常数。
+
+76
+00:07:16,159 --> 00:07:20,270
+But whether you use a separate transformation or not, of course depends on how you represent
+但是，是否使用单独的转换当然取决于您如何
+
+77
+00:07:20,270 --> 00:07:25,889
+the knowledge. And all of this knowledge, all of this whole thing, was written in an
+表示知识。 所有这些知识，所有这一切，都是用
+
+78
+00:07:25,889 --> 00:07:32,749
+early form of Lisp. As a consequence, the way in which minus was represented is different
+Lisp 的早期形式编写的。 因此，表示负的方式与
+
+79
+00:07:32,749 --> 00:07:38,069
+from the way minus 1 is represented. So we need one more transformation. Or rather, Jim
+表示负 1 的方式不同。 所以我们需要再一次转变。 或者更确切地说，Jim
+
+80
+00:07:38,069 --> 00:07:42,469
+Slagle needed one more transformation, when he wrote his famous transformation program.
+Slagle 在编写他著名的转换程序时需要再进行一次转换。
+
+81
+00:07:42,469 --> 00:07:53,599
+And that was that if you have the integral of minus f of x, that's equal to, minus the
+那就是如果你有x 的负 f 的积分，那就等于，减去
+
+82
+00:07:53,599 --> 00:07:56,989
+integral of f of x.
+x 的 f 的积分。
+
+83
+00:07:56,989 --> 00:08:01,099
+So that almost completes our safe transformation set. There's one more that I'm going to supply
+这样就几乎完成了我们的安全转换集。 我还要给
+
+84
+00:08:01,099 --> 00:08:05,800
+you, because I don't think you'd guess it. Why should you? It's number four. There are
+你一个，因为我想你不会猜到的。你为什么要？ 是第四个。 还有
+
+85
+00:08:05,800 --> 00:08:11,489
+more than this, this is a sample. And these are the ones we're going to need in order
+更多，这是一个样本。 这些是我们为了解决这个问题而需要的
+
+86
+00:08:11,489 --> 00:08:14,989
+to solve that problem, by way of illustration.
+，通过说明。
+
+87
+00:08:14,989 --> 00:08:24,439
+So the fourth one is that, if you have the integral of p of x, over q of x, then you
+所以第四个是，如果你有x 的 p 在 x 的 q 上的积分，那么你
+
+88
+00:08:24,439 --> 00:08:31,159
+divide. If you can reach way back into high school and figure out how to divide polynomials.
+除法。 如果您可以回到高中并弄清楚如何划分多项式。
+
+89
+00:08:31,159 --> 00:08:37,179
+But if the degree of the numerator is greater than the degree of the denominator, then it's
+但是如果分子的次数大于分母的次数，那
+
+90
+00:08:37,179 --> 00:08:42,120
+a knee-jerk always win, you must do it, divide it out.
+就是下意识的总是赢，你必须这样做，把它分开。
+
+91
+00:08:42,120 --> 00:08:50,259
+So this, then, forms the core of an integration program, that will integrate almost nothing.
+因此，这构成了集成程序的核心，它几乎不会集成任何内容。
+
+92
+00:08:50,259 --> 00:08:56,490
+But actually, almost nothing is integrable anyway, so it's a good head start. So let's
+但实际上，几乎没有什么是可积的，所以这是一个很好的开始。 因此，让
+
+93
+00:08:56,490 --> 00:09:05,620
+see how we would put this into some kind of procedure. Some kind of framework for deploying
+我们看看如何将其放入某种程序中。 某种用于部署
+
+94
+00:09:05,620 --> 00:09:12,600
+the knowledge that we're beginning to develop.
+我们开始开发的知识的框架。
+
+95
+00:09:12,600 --> 00:09:32,920
+What we're going to do is, apply all safe transforms. That's our first step. Then we're
+我们要做的是，应用所有安全转换。 这是我们的第一步。 然后我们
+
+96
+00:09:32,920 --> 00:09:52,440
+going to look in the table, and then we're going to do a test to see if we're done. And
+将查看表格，然后我们将进行测试，看看我们是否完成了。
+
+97
+00:09:52,440 --> 00:10:02,400
+if we are, we report success. But, we're not likely to get done with just that stuff.
+如果我们是，我们报告成功。 但是，我们不可能只完成这些东西。
+
+98
+00:10:02,410 --> 00:10:10,000
+But you know what, there was one transformation up here, which breaks my little diagram. Which
+但是你知道吗，这里有一个转变，打破了我的小图表。 哪
+
+99
+00:10:10,000 --> 00:10:19,709
+one is it? It's the third one, right? Because this picture does not reflect what happens
+一个？ 是第三个吧？ 因为这张图片没有反映
+
+100
+00:10:19,709 --> 00:10:24,680
+when you apply number three. Because it breaks the problem up, not into just one problem,
+当你应用第三个时会发生什么。 因为它把问题分解，不仅仅是一个问题，
+
+101
+00:10:24,680 --> 00:10:33,240
+but into a whole bunch. So we have to extend our graphical device for talking about this
+而是一大堆问题。 所以我们必须扩展我们的图形设备来讨论
+
+102
+00:10:33,240 --> 00:10:47,220
+by a little bit, and show what is called an "and node".
+这个问题，并显示所谓的“和节点”。
+
+103
+00:10:47,220 --> 00:10:55,230
+So we've got a program core, we've got a table of integrals, we've got a few transformations,
+所以我们有一个程序核心，我们有一个积分表，我们有一些转换，
+
+104
+00:10:55,230 --> 00:10:59,810
+we've got an architecture, a way of putting that stuff together. And now we can try it
+我们有一个架构，一种将这些东西放在一起的方法。 现在我们可以
+
+105
+00:10:59,810 --> 00:11:06,370
+out on our sample problem. So let's have a go at that.
+在我们的示例问题上进行尝试。 因此，让我们尝试一下。
+
+106
+00:11:06,370 --> 00:11:20,149
+Let's see, this one immediately transforms into 5x to the fourth over 1 minus x squared
+让我们看看，这个立即转换为 5x 到 1 减去 x 平方
+
+107
+00:11:20,149 --> 00:11:28,649
+to the 5/2 dx. And that in turn, immediately transforms into the integral of x to the fourth
+到 5/2 dx 的四分之一。 反过来，它立即转换为 x 对 4 的积分，
+
+108
+00:11:28,649 --> 00:11:36,620
+over 1 minus x squared to the 5/2, dx.
+超过 1 减去 x 的 5/2 平方，dx。
+
+109
+00:11:36,620 --> 00:11:42,699
+This program, by the way, is a dawn-age program. This was written by a nearly blind, and subsequently
+顺便说一句，这个程序是一个黎明时代的程序。这是很久以前的 1960 年，一位几乎失明，后来
+
+110
+00:11:42,699 --> 00:11:48,319
+completely blind, graduate student by the name of James Slagle in 1960, a long time
+完全失明的研究生 James Slagle 写的
+
+111
+00:11:48,319 --> 00:11:54,509
+ago. The reason I gave it to you today is because, that by describing it, I am giving
+。 我今天给你的原因是，通过描述它，我给
+
+112
+00:11:54,509 --> 00:12:01,079
+you a one-lecture course in artificial intelligence. He anticipated so much of the subsequent 20
+你上了一门人工智能课程。在接下来的 20 年里，他对未来的 20
+
+113
+00:12:01,079 --> 00:12:08,689
+years, that talking about his program, which is possible in one day, is a miniature introduction
+年充满了期待，以至于谈论他的计划，这可能在一天之内成为可能，是
+
+114
+00:12:08,689 --> 00:12:10,389
+to the whole field.
+对整个领域的一个缩影。
+
+115
+00:12:10,389 --> 00:12:17,899
+So Slagle, as he was doing this on an antique computer, almost no memory, almost no speed,
+所以Slagle，当他在一台古董电脑上做这件事时，几乎没有记忆，几乎没有速度，
+
+116
+00:12:17,899 --> 00:12:25,019
+only slightly faster than mice running around on a treadmill. He was able to write a program
+只比在跑步机上跑来跑去的老鼠快一点。 他能够编写一个
+
+117
+00:12:25,019 --> 00:12:31,769
+that did extremely well when benchmarked against freshmen. And the way you benchmark against
+在与新生进行基准测试时表现非常出色的程序。 当然，你对大一学生进行基准测试的方式
+
+118
+00:12:31,769 --> 00:12:39,249
+freshman, of course, is you give it an examination, drawn from the previous MIT finals for four
+是你给它一个考试，从之前四五年的麻省理工总决赛中抽取
+
+119
+00:12:39,249 --> 00:12:46,100
+or five years, the hardest problems. And this was the hardest problem that it solved.
+，最难的问题。 这是它解决的最困难的问题。
+
+120
+00:12:46,100 --> 00:12:51,769
+So at this point, with what we've got so far, we would be stuck. We have no transformation
+所以在这一点上，就我们目前所拥有的而言，我们会被卡住。 我们没有
+
+121
+00:12:51,769 --> 00:12:59,540
+that can take us further, so we need something else. And what we need by way of something
+可以带我们走得更远的转变，所以我们需要别的东西。 通过其他方式，我们需要的
+
+122
+00:12:59,540 --> 00:13:08,939
+else, is some transformations that we will describe as-- perhaps we'll call them, heuristic
+是一些我们将描述为的转换——也许我们会称它们为启发式
+
+123
+00:13:08,939 --> 00:13:20,279
+transformations. A funny word, meaning a method that often works isn't guaranteed to work.
+转换。 一个有趣的词，意思是经常有效的方法并不能保证有效。
+
+124
+00:13:20,279 --> 00:13:27,540
+It's not an algorithm in the usual sense that we talk about algorithms. But rather, it's
+我们所说的算法不是通常意义上的算法。 但更确切地说，这是
+
+125
+00:13:27,540 --> 00:13:29,430
+an attempt.
+一种尝试。
+
+126
+00:13:29,430 --> 00:13:35,519
+So these things I'm going to talk about now, are sometimes useful, not always useful. Sometimes
+所以我现在要谈的这些东西，有时有用，但并不总是有用。 有时
+
+127
+00:13:35,519 --> 00:13:42,209
+take you into a blind alley, don' always work. But you can't get an A in calculus without
+会把你带入死胡同，不要总是工作。但是你不能在不
+
+128
+00:13:42,209 --> 00:13:49,379
+knowing some of them. So you said, some kind of trig substitution. So here is some kind
+知道其中一些的情况下在微积分中获得 A。 所以你说，某种三角替换。 所以这是
+
+129
+00:13:49,379 --> 00:13:56,329
+of trig substitution. We'll call this heuristic transformation A.
+某种三角替换。 我们将这种启发式变换称为 A。
+
+130
+00:13:56,329 --> 00:14:10,790
+You have a function sine x, cosine x, tangent of x, cotangent of x, secant of x, and cosecant
+您有一个函数正弦 x、余弦 x、x 的正切、x 的余切、x 的割线和 x 的余割线
+
+131
+00:14:10,790 --> 00:14:20,899
+of x. And we all know from high school trigonometry, that we can rewrite that as a function of
+。 我们都从高中三角学中知道，我们可以将其重写为
+
+132
+00:14:20,899 --> 00:14:36,990
+sine x, and cosine x. Or we can rewrite that as a function of tangent of x, and cosecant
+正弦 x 和余弦 x 的函数。 或者我们可以将其重写为 x 的正切和 x 的余割
+
+133
+00:14:36,990 --> 00:14:51,550
+of x. Or we can rewrite that as function of cotangent of x, and the secant of x. So that's
+的函数。 或者我们可以将其重写为 x 的余切和 x 的割线的函数。 所以这是
+
+134
+00:14:51,550 --> 00:14:57,089
+a transmission from trigonometric form, into another trigonometric form. It's not always
+从三角函数形式到另一种三角函数形式的转换。 这并不总是
+
+135
+00:14:57,089 --> 00:15:02,990
+a good idea, sometimes it helps.
+一个好主意，有时它会有所帮助。
+
+136
+00:15:02,990 --> 00:15:25,370
+Well that's just part one of our suite of heuristic transformations. Stop. There are
+这只是我们启发式转换套件的一部分。 停止。 为了解决问题
+
+137
+00:15:25,370 --> 00:15:32,459
+others that we need to have in our repertoire, in order to solve the problem. One of them
+，我们需要在我们的曲目中拥有其他内容。 其中一个
+
+138
+00:15:32,459 --> 00:15:38,629
+is a family of transformations, which I'll show you only one. It goes like this, if you
+是一系列转换，我将只向您展示一个。 它是这样的，如果你
+
+139
+00:15:38,629 --> 00:15:53,899
+have the integral of a function, of the tangent of x, then you can rewrite that as the integral
+有一个函数的积分，x 的正切，那么你可以将它重写为
+
+140
+00:15:53,899 --> 00:16:05,850
+of a function of y over 1 plus y squared dy. So that's a transformation from a trigonometric
+y 在 1 加上 y 平方 dy 上的函数的积分。所以这是从三角函数
+
+141
+00:16:05,850 --> 00:16:11,360
+form into a polynomial form. So it gets rid of all that trigonometric garbage we don't
+形式到多项式形式的转换。 所以它摆脱了所有我们不想处理的三角函数垃圾
+
+142
+00:16:11,360 --> 00:16:17,319
+want to deal with. And there's a whole family of things like that, just as there's a family
+。 有一整套这样的东西，就像有一整套
+
+143
+00:16:17,319 --> 00:16:22,699
+of transformations like so, but this is enough to give you flavor.
+这样的转变，但这足以给你带来味道。
+
+144
+00:16:22,699 --> 00:16:30,949
+Now there's a C that we need as well. And that's going to be your proper knee-jerk reaction
+现在我们也需要一个 C。 当您看到 1 减去 x 平方的形式时，这将是您正确的下意识反应
+
+145
+00:16:30,949 --> 00:16:39,640
+when you see something of the form 1 minus x squared. What do you do when you see that?
+。 当你看到它时你会怎么做？
+
+146
+00:16:39,640 --> 00:16:40,660
+AUDIENCE: [INAUDIBLE]
+观众：[听不清]那
+
+147
+00:16:40,660 --> 00:16:41,940
+What's that Rhana?
+是什么Rhana？
+
+148
+00:16:41,940 --> 00:16:44,340
+Rhana: 1 + 6  * 1 - 6
+Rhana：1 + 6 * 1 - 6
+
+149
+00:16:44,380 --> 00:16:49,180
+Well wait a second. We could do that. But there's another thing we can do.
+等一下。 我们可以这样做。但我们还可以做另一件事。
+
+150
+00:16:49,180 --> 00:16:57,260
+Christian, have you got something you can suggest? Where's our Hungarian? Our Turk,
+克里斯蒂安，你有什么可以建议的吗？ 我们的匈牙利人在哪里？ 我们的土耳其人，
+
+151
+00:16:57,260 --> 00:17:02,460
+our young Turk. Yeah, what do you think?
+我们年轻的土耳其人。 是啊，你怎么看？
+
+152
+00:17:02,460 --> 00:17:07,060
+AUDIENCE: I actually don't remember. I mean, I think it might have been 10.
+听众：我其实不记得了。 我的意思是，我想可能是 10。
+
+153
+00:17:07,060 --> 00:17:11,859
+SPEAKER 1: Well, let's see. Cosine squared plus sine squared equals 1. So, what's that
+发言者 1：好吧，让我们看看。 余弦平方加上正弦平方等于 1。那么，这
+
+154
+00:17:11,859 --> 00:17:22,060
+suggest to you? So it suggests that we make a transformation that involves x equals sine
+对您有什么建议？ 所以它建议我们进行一个涉及 x 等于 sine y 的变换
+
+155
+00:17:22,060 --> 00:17:27,640
+y. So [? Silla ?] doesn't actually have to remember that anymore because going forward,
+。 所以 [？  Silla ?] 实际上不必再记住这一点，因为今后
+
+156
+00:17:27,648 --> 00:17:31,640
+she will never have to integrate anything personally in her life, she can just simulate
+她将永远不必亲自将任何东西融入她的生活中，她只需
+
+157
+00:17:31,640 --> 00:17:49,010
+the program.
+模拟程序即可。
+
+158
+00:17:49,010 --> 00:17:53,760
+So these go from polynomial form, back into trigonometric form. So you have three of these
+所以这些从多项式形式回到三角函数形式。 所以你有这些
+
+159
+00:17:53,760 --> 00:17:59,289
+heuristic transformations. We've got four safe transformations. Let's see if we can
+启发式转换中的三个。 我们有四个安全的转换。 让我们看看我们是否可以
+
+160
+00:17:59,289 --> 00:18:11,160
+make any progress on our integration problem.
+在集成问题上取得任何进展。
+
+161
+00:18:11,160 --> 00:18:19,600
+OK so keeping track of what we've been using, this is safe transformation number one, this
+好的，所以跟踪我们一直在使用的东西，这是第一安全转换，这
+
+162
+00:18:19,610 --> 00:18:24,890
+is safe transformation number two. What do we do next? We decided there were no more
+是第二安全转换。我们接下来要做什么？ 我们决定不再
+
+163
+00:18:24,890 --> 00:18:31,190
+safe transformations that apply. But now we can look at our heuristic transformations
+有适用的安全转换。 但是现在我们可以看看我们的启发式转换
+
+164
+00:18:31,190 --> 00:18:35,150
+and behold, we see what?
+，瞧，我们看到了什么？
+
+165
+00:18:35,150 --> 00:18:35,820
+AUDIENCE: C
+听众：C
+
+166
+00:18:35,820 --> 00:18:36,920
+SPEAKER 1: What?
+发言者 1：什么？
+
+167
+00:18:36,920 --> 00:18:38,460
+AUDIENCE: Applying transformation C.
+听众：应用变换 C。
+
+168
+00:18:38,470 --> 00:18:50,710
+SPEAKER 1: Transformation C suggests that we do x equals the sine y.
+演讲者 1：变换 C 表明我们做 x 等于 sine y。
+
+169
+00:18:50,710 --> 00:18:57,490
+And now we get the integral of sine to the
+现在我们得到正弦对
+
+170
+00:18:57,490 --> 00:19:11,380
+fourth y over cosine to the fourth y dy, right. All good, I see some confused, worried, concerned
+第四个 y 的积分，余弦对第四个 y dy 的积分，对。一切都好，我看到一些困惑、担心、担心的
+
+171
+00:19:11,380 --> 00:19:19,320
+looks. Maybe I've made a mistake, perhaps I should use notes. Well no, wait a minute.
+表情。 也许我犯了一个错误，也许我应该使用笔记。 不，等一下。
+
+172
+00:19:19,320 --> 00:19:26,429
+For those of you who have a concerned look, remember that if x equals a sine y, then dx
+对于那些关心的人，请记住，如果 x 等于 sine y，则 dx
+
+173
+00:19:26,429 --> 00:19:33,940
+is equal to cosine y dy. That's why it's cosine to the fourth not cosine to the fifth, as
+等于 cosine y dy。 这就是为什么它是第四次的余弦而不是第五次的余弦，正如
+
+174
+00:19:33,940 --> 00:19:38,580
+you were perhaps thinking it might be.
+您可能认为的那样。
+
+175
+00:19:38,580 --> 00:19:45,880
+So now we've made some progress. We look at this, we say, are there any safe transformations
+所以现在我们已经取得了一些进展。 我们看看这个，我们说，是否有
+
+176
+00:19:45,880 --> 00:19:52,450
+that apply? And the answer is, no. Now we look for a heuristic transformation that might
+任何适用的安全转换？ 答案是，不。 现在我们寻找一个可能适用的启发式变换
+
+177
+00:19:52,450 --> 00:19:58,029
+apply, and I say, what do you see? Which one? What's that?
+，我说，你看到了什么？ 哪一个？那是什么？
+
+178
+00:19:58,029 --> 00:20:05,880
+AUDIENCE: [INAUDIBLE].
+听众：[听不清]。
+
+179
+00:20:05,880 --> 00:20:09,740
+SPEAKER 1: She said something unintelligible, but what she probably said is, that this looks
+演讲者 1：她说了一些难以理解的话，但她可能说的是，这看起来
+
+180
+00:20:09,750 --> 00:20:17,029
+like a pattern that might match with the heuristic transformation A, right? Because we have a
+像是一个可能与启发式变换 A 匹配的模式，对吧？ 因为我们有一个
+
+181
+00:20:17,029 --> 00:20:22,320
+function in which the variable is buried, universally in sines, or cosines, or tangents,
+函数，其中变量被掩埋，普遍存在于正弦、或余弦、或正切、
+
+182
+00:20:22,320 --> 00:20:27,649
+or cotangents, or secants, or cosecants. And we know we can rewrite that in one of three
+或余切、或正割或余割中。我们知道我们可以用三种方式之一重写它
+
+183
+00:20:27,649 --> 00:20:35,549
+ways. It's already written as a function of sine and cosine. But we can also rewrite that
+。 它已经写成正弦和余弦的函数。 但是我们也可以
+
+184
+00:20:35,549 --> 00:20:41,809
+in terms of tangent and cosecant. Or cotangent and secant.
+用正切和余割来重写它。 或余切和割线。
+
+185
+00:20:41,809 --> 00:20:50,370
+So when we do that, we can go this way, and we can get the integral of 1 over the cotangent
+所以当我们这样做时，我们可以这样走，我们可以得到 1 在
+
+186
+00:20:50,370 --> 00:21:03,120
+of x dx. That's g3 up there. Or we can do it down this path, and get the integral of
+x dx 的余切上的积分。 上面是g3。 或者我们可以沿着这条路做，得到
+
+187
+00:21:03,120 --> 00:21:11,200
+tangent of x dx. And of course, those are both to the fourth.
+x dx 的正切积分。 当然，这些都是第四个。
+
+188
+00:21:11,200 --> 00:21:23,140
+But know what, I've broken my little graphical diagram again. Where did it go, it's disappeared.
+但是知道吗，我又把我的小图形图弄坏了。 去了哪里，消失了。
+
+189
+00:21:23,140 --> 00:21:35,100
+There it is. How have I broken it? Because with transformation A, I've introduced a possibility
+它在那里。 我怎么破了？ 因为通过转换 A，我引入了一种可能性
+
+190
+00:21:35,110 --> 00:21:39,220
+that a particular problem can be transformed into more than one kind of problem, any of
+，即一个特定的问题可以转换为不止一种问题，其中任何
+
+191
+00:21:39,220 --> 00:21:43,470
+which will be the solution to my problem.
+一种都可以解决我的问题。
+
+192
+00:21:43,470 --> 00:22:00,740
+So far I've got an and node, but now I've got to introduce an or node. Because now we
+到目前为止，我已经有了一个 and 节点，但现在我必须介绍一个 or 节点。 因为现在我们
+
+193
+00:22:00,740 --> 00:22:04,210
+have an example of something that can be solved one of two different ways, and we don't care
+有一个可以用两种不同方法之一解决的例子，我们不在乎
+
+194
+00:22:04,210 --> 00:22:10,399
+which one it is. Now you'll notice that there's already some confusion here, because how can
+它是哪一种。 现在您会注意到这里已经有些混乱了，因为
+
+195
+00:22:10,399 --> 00:22:13,970
+you tell the difference between an and node and an or node. So the universal convention
+您如何区分 an and 节点和 an or 节点之间的区别。 所以通用约定
+
+196
+00:22:13,970 --> 00:22:20,190
+is, you draw an arc over the and nodes. And that makes it look like an A, so it's easy
+是，在 和 节点上画一条弧线。这使它看起来像一个A，所以很
+
+197
+00:22:20,190 --> 00:22:22,850
+to remember. So those are and nodes.
+容易记住。 所以那些是和节点。
+
+198
+00:22:22,850 --> 00:22:30,200
+And now, we have the method of problem reduction, and this is sometimes called a problem reduction
+现在，我们有了问题缩减的方法，这有时被称为问题缩减
+
+199
+00:22:30,200 --> 00:22:45,750
+tree. Sometimes it's called an and/or tree, and sometimes it's called a goal tree, because
+树。 有时它被称为和/或树，有时它被称为目标树，因为
+
+200
+00:22:45,750 --> 00:22:53,100
+this tree of problems is a tree that shows how our goals are related to one another.
+这棵问题树是一棵树，它显示了我们的目标如何相互关联。
+
+201
+00:22:53,100 --> 00:22:57,800
+So these are items for your vocabulary that are all synonymous. Problem reduction tree,
+所以这些都是你的词汇表的同义词。 问题减少树，
+
+202
+00:22:57,809 --> 00:23:02,200
+and/or tree, goal tree, all the same thing. Now you have a name for it, you've got some
+和/或树，目标树，都是一样的。现在你有了它的名字，你对它有一些
+
+203
+00:23:02,200 --> 00:23:11,279
+power over it. So when we get a situation like this, unlike the previous situation,
+权力。 所以当我们遇到这样的情况时，与之前的情况不同
+
+204
+00:23:11,279 --> 00:23:31,880
+which we suggested might come up in transformation A. Let's see, we've got one, two, C, and this
+，我们建议在转换 A 中可能会出现这种情况。让我们看看，我们有一个，两个，C，这个
+
+205
+00:23:31,880 --> 00:23:40,010
+one is A, it's an or node. Which one of these problems do we work on?
+是 A，它是一个或节点。我们要解决这些问题中的哪一个？
+
+206
+00:23:40,010 --> 00:23:45,360
+Well Slegle, who considered himself to be modeling a freshman, modeling the intelligence
+好吧，Slegle，他认为自己是在为新生做模特，
+
+207
+00:23:45,360 --> 00:23:52,200
+of a freshman, modeling something that, after all, you have to be pretty smart to do, right.
+在为新生的智力建模，在做一些你必须非常聪明才能做的事情，对吧。
+
+208
+00:23:52,200 --> 00:23:57,460
+Most people don't know how to do integration. Everybody at MIT knows how to do integration.
+大多数人不知道如何进行集成。麻省理工学院的每个人都知道如何进行集成。
+
+209
+00:23:57,460 --> 00:24:00,100
+You would think that somebody, therefore, that knows how to do integration is pretty
+因此，您会认为知道如何进行集成的人非常
+
+210
+00:24:00,100 --> 00:24:03,980
+smart. What would a smart person do, when faced with this choice?
+聪明。 一个聪明的人在面对这个选择时会怎么做？
+
+211
+00:24:03,980 --> 00:24:12,669
+Well, a smart person would say, which of these two problems is easier? So how do you think
+好吧，聪明的人会说，这两个问题哪个更容易？ 那么，您认为
+
+212
+00:24:12,669 --> 00:24:21,800
+you might determine which of two, or many algebraic expressions is the easiest to integrate?
+如何确定两个或多个代数表达式中的哪一个最容易集成？
+
+213
+00:24:21,800 --> 00:24:22,960
+What's your name?
+你叫什么名字？
+
+214
+00:24:22,960 --> 00:24:24,120
+AUDIENCE: Andrew Carrol.
+听众：安德鲁·卡罗尔。
+
+215
+00:24:24,120 --> 00:24:26,500
+SPEAKER 1: Andrew, what do you think?
+发言者 1：安德鲁，你怎么看？
+
+216
+00:24:26,500 --> 00:24:28,039
+AUDIENCE: Based on whichever one feels more familiar.
+听众：基于感觉更熟悉的那个。
+
+217
+00:24:28,039 --> 00:24:30,010
+SPEAKER 1: Feels.
+发言者 1：感觉。
+
+218
+00:24:30,010 --> 00:24:31,809
+AUDIENCE: Yes.
+听众：是的。
+
+219
+00:24:31,809 --> 00:24:32,340
+SPEAKER 1: Feels.
+发言者 1：感觉。
+
+220
+00:24:32,340 --> 00:24:32,570
+AUDIENCE: You asked, how would I decide.
+听众：你问，我将如何决定。
+
+221
+00:24:32,570 --> 00:24:34,760
+SPEAKER 1: Yeah, how would you decide? How would you feel it?
+发言者 1：是的，你会如何决定？你会怎么想？
+
+222
+00:24:34,760 --> 00:24:37,990
+AUDIENCE: I would feel that the tangent is more familiar.
+听众：我觉得切线比较熟悉。
+
+223
+00:24:37,990 --> 00:24:39,679
+SPEAKER 1: Which one?
+演讲者 1：哪一个？
+
+224
+00:24:39,679 --> 00:24:42,850
+AUDIENCE: I feel that the tangent [INAUDIBLE].
+听众：我觉得切线[听不清]。
+
+225
+00:24:42,850 --> 00:24:44,409
+SPEAKER 1: Yeah, but I wonder how we could make it a little bit more precise, this idea
+演讲者 1：是的，但我想知道我们如何才能使它更精确一点，这种
+
+226
+00:24:44,409 --> 00:24:52,349
+of simplicity. The young Turk has a suggestion. What?
+简单的想法。 年轻的土耳其人有一个建议。什么？
+
+227
+00:24:52,349 --> 00:24:57,969
+AUDIENCE: I had a suggestion until you said this idea of simplicity. So then I realized
+听众：我有一个建议，直到你说这个简单的想法。 所以后来我
+
+228
+00:24:57,969 --> 00:25:02,909
+that what I was about to suggest wasn't going to clarify simplicity, but I was going to
+意识到我要建议的并不是要澄清简单性，而是我
+
+229
+00:25:02,909 --> 00:25:09,280
+say, whichever one we've had more encounters with, or more experience with.
+要说的是，无论我们遇到过更多的人，还是有更多的经验。
+
+230
+00:25:09,289 --> 00:25:12,410
+SPEAKER 1: Yeah, if there was something here with a hyperbolic tangent, you might say,
+演讲者 1：是的，如果这里有什么东西是双曲正切，你可能会说，
+
+231
+00:25:12,419 --> 00:25:15,950
+well, stay away from that. [? Yinid ?]?
+好吧，远离那个。  [？ 伊尼德？]？
+
+232
+00:25:15,950 --> 00:25:21,399
+AUDIENCE: To which one of those the easier transformation is applied on the next step.
+听众：下一步将应用更容易的转换。
+
+233
+00:25:21,399 --> 00:25:24,819
+SPEAKER 1: Like, somebody do a little look ahead, and see which kind of thing would be
+演讲者 1：比如，有人向前看，看看你旁边会出现哪种东西
+
+234
+00:25:24,820 --> 00:25:29,640
+next to you? I don't know, maybe. Oh, we've got lots of people, all at the same time.
+？ 我不知道，也许吧。 哦，我们有很多人，都在同一时间。
+
+235
+00:25:29,640 --> 00:25:33,200
+I don't know all your names yet. Shoot. Erica, I know you.
+我还不知道你所有的名字。 射击。 艾丽卡，我认识你。
+
+236
+00:25:33,200 --> 00:25:35,840
+AUDIENCE: What's look it up in the table and see [INAUDIBLE].
+听众：在表格中查找什么，看看[听不清]。
+
+237
+00:25:35,840 --> 00:25:40,300
+SPEAKER 1: Oh, you could look it up in the table and see if something is in it, you could
+发言者 1：哦，你可以在表里查一下，看看里面有没有东西，你可以
+
+238
+00:25:40,300 --> 00:25:46,840
+do that. But this is tangent to the fourth, so that's not in the table. Ariel?
+这样做。 但这与第四个相切，所以不在表格中。 爱丽儿？
+
+239
+00:25:46,840 --> 00:25:49,620
+AUDIENCE: I choose the one without the reciprocal.
+听众：我选择没有倒数的那个。
+
+240
+00:25:49,620 --> 00:25:50,800
+SPEAKER 1: Why?
+演讲者 1：为什么？
+
+241
+00:25:50,800 --> 00:25:57,740
+AUDIENCE: It is because when people see one it's like, oh man, it jut not going to work.
+听众：这是因为当人们看到一个时，就像，哦，伙计，它根本不起作用。
+
+242
+00:25:57,740 --> 00:26:00,120
+SPEAKER 1: Yeah, we're on the right track. Claire?
+发言者 1：是的，我们走在正确的轨道上。克莱尔？
+
+243
+00:26:00,120 --> 00:26:03,480
+AUDIENCE: On an extremely simple level, I choose whichever one has the least symbols
+听众：在一个非常简单的层面上，我选择其中符号最少的一个
+
+244
+00:26:03,480 --> 00:26:04,680
+in it.
+。
+
+245
+00:26:04,680 --> 00:26:07,060
+SPEAKER 1: The fewest symbols in it. Now we're really getting somewhere, because you can
+SPEAKER 1：其中最少的符号。 现在我们真的到了某个地方，因为你可以
+
+246
+00:26:07,060 --> 00:26:12,640
+measure that, right, there's a little program Why Brett, there you are.
+测量它，对，有一个小程序为什么 Brett，你在那儿。
+
+247
+00:26:12,640 --> 00:26:19,800
+AUDIENCE: I would say, every [INAUDIBLE] expression can be written as, having a number of functions,
+听众：我想说，每个 [听不清] 表达式都可以写成，有许多函数，
+
+248
+00:26:19,800 --> 00:26:23,500
+we could say all these functions, multiplied together, divided, and you can just choose
+我们可以说所有这些函数，相乘，相除，你可以
+
+249
+00:26:23,500 --> 00:26:26,980
+with the least amount of [? iterations ?].
+用最少的 [? 迭代？]。
+
+250
+00:26:26,980 --> 00:26:31,760
+SPEAKER 1: Well I heard it, perhaps others didn't but what Brett said, is he suggested
+演讲者 1：嗯，我听说了，也许其他人没有，但 Brett 说的是，他
+
+251
+00:26:31,769 --> 00:26:38,040
+that we should measure depth of functional composition. So the number of symbols may
+建议我们应该测量功能组合的深度。 所以符号的数量可能
+
+252
+00:26:38,040 --> 00:26:42,779
+not matter, because if you have x plus x plus x plus x, out to a hundred, that would not
+无关紧要，因为如果你有 x 加 x 加x 加 x，到一百个，那
+
+253
+00:26:42,779 --> 00:26:49,620
+be hard to integrate. But if you've got something that is really deeply nested under a lot of
+将不难整合。 但是，如果你有一些真正深深嵌套在许多功能组合下的东西
+
+254
+00:26:49,620 --> 00:26:54,860
+functional compositions, that could be a problem. And that's in fact, what Slegle decided to
+，那可能是个问题。事实上，这正是 Slegle
+
+255
+00:26:54,860 --> 00:27:00,440
+use, after trying several alternatives.
+在尝试了几种替代方案后决定使用的。
+
+256
+00:27:00,440 --> 00:27:06,370
+So if we measure the depth of the functional composition, this is the winner, and we put
+因此，如果我们衡量功能组合的深度，这是赢家，我们
+
+257
+00:27:06,370 --> 00:27:11,399
+the other one on the shelf, at least for the moment. And now we have tangent to the fourth
+将另一个放在架子上，至少目前是这样。 现在我们与第四个
+
+258
+00:27:11,399 --> 00:27:18,809
+x dx. Do I need the safe transformation supply? No. Which of the-- you know something has
+x dx 相切。 我需要安全的转换供应吗？不。哪一个——你知道必须应用一些东西
+
+259
+00:27:18,809 --> 00:27:24,440
+to apply, otherwise it wouldn't be up here as an example. So what of the heuristic transformation
+，否则它不会在这里作为例子。 那么启发式转换
+
+260
+00:27:24,440 --> 00:27:25,289
+supply? Elliott.
+供应呢？ 艾略特。
+
+261
+00:27:25,289 --> 00:27:26,460
+AUDIENCE: [INAUDIBLE]
+听众：[听不清]
+
+262
+00:27:26,460 --> 00:27:30,240
+SPEAKER 1: Yeah, B bravo. Military background or something like that. Maybe
+发言者 1：是的，B bravo。 军事背景之类的。 也许
+
+263
+00:27:30,240 --> 00:27:38,160
+he flies airplanes. OK so B says, it is in fact a function of the tangent. And when we
+他会开飞机。 好的，B 说，它实际上是切线的函数。 当我们
+
+264
+00:27:38,169 --> 00:27:43,529
+do that, we've got to make a substitution, that y is equal to the tangent. So that means
+这样做时，我们必须进行替换，即 y 等于正切。 所以这
+
+265
+00:27:43,529 --> 00:27:55,799
+that this becomes the integral of y to the fourth over 1 plus y squared. And that's by
+意味着这成为 y对 1 加上 y 平方的四次积分。 那是通过
+
+266
+00:27:55,799 --> 00:28:08,059
+transformation B, and the transformation is y equals tangent of x. The tangent-- I guess
+变换B，变换是y等于x的正切。 切线——我想
+
+267
+00:28:08,059 --> 00:28:17,450
+I've lost track of the fact that I've already transformed a y, but relabeling doesn't matter.
+我已经忘记了我已经转换了 y 的事实，但是重新标记并不重要。
+
+268
+00:28:17,450 --> 00:28:25,769
+All right so that's progress, maybe. But don't see this in any of the heuristic transformations,
+好吧，也许这就是进步。 但是在任何启发式转换中都看不到这一点，
+
+269
+00:28:25,769 --> 00:28:30,340
+what do I do now? I didn't have to look in the heuristic transformations, because one
+我现在该怎么办？ 我不必查看启发式转换，因为其中
+
+270
+00:28:30,340 --> 00:28:39,370
+of the safe transformations applies. Because this thing is a rational function and the
+一种安全转换适用。 因为这个东西是有理函数，
+
+271
+00:28:39,370 --> 00:28:44,120
+degree of the numerator is greater that the degree of the denominator, so I have to divide.
+分子的次数大于分母的次数，所以我要除法。
+
+272
+00:28:44,120 --> 00:28:52,240
+And when I divide, and that by the way is number four, I get what? Is anybody good high
+当我分裂时，顺便说一句，这是第四个，我得到什么？ 有没有好的
+
+273
+00:28:52,240 --> 00:28:53,960
+school algebra that can help me out with that?
+高中代数可以帮助我解决这个问题？
+
+274
+00:28:53,960 --> 00:28:59,740
+AUDIENCE: Y squared minus 2 plus negative 2 over 1 plus y squared
+听众：Y 的平方负 2 加上负2 加 1 的平方加上 y 的平方
+
+275
+00:28:59,740 --> 00:29:15,679
+SPEAKER 1: Exactly, y squared minus 1 plus 1 over 1 plus y squared, I think. Now what?
+发言者 1：我认为，确切地说，y 的平方负1 加上 1 的平方加上 y 的平方。 怎么办？
+
+276
+00:29:15,679 --> 00:29:31,009
+Now we're really getting close to getting through this, because that is a sum. And by
+现在我们真的快要解决这个问题了，因为这是一个总和。 并且
+
+277
+00:29:31,009 --> 00:29:38,070
+virtue of the fact that it's a sum, that divides into three pieces, and the top piece is the
+由于它是一个和，分为三部分，顶部
+
+278
+00:29:38,070 --> 00:29:44,399
+integral of y squared, the middle piece is the integral of minus 1, and the bottom piece
+是y平方的积分，中间是负1的积分，底部
+
+279
+00:29:44,399 --> 00:29:51,929
+is the integral of 1 over 1 plus y squared dy in all cases.
+是1加1的积分 y在所有情况下都是 dy 的平方。
+
+280
+00:29:51,929 --> 00:30:06,929
+Gosh, if I look this up, I've found it. That's up there, that's letter B. So I'm done with
+天哪，如果我查一下，我已经找到了。 那在上面，那是字母B。所以我已经完成
+
+281
+00:30:06,929 --> 00:30:16,409
+that. This one I can transform again, by virtue of 1, and now I get the integral dy. That's
+了。 这个我可以再次转换，凭借 1，现在我得到积分 dy。
+
+282
+00:30:16,409 --> 00:30:24,750
+in there, that's B as well. As this one, I don't know. But I'd better keep track of what
+在那里，那也是B。 作为这个，我不知道。 但我最好跟踪
+
+283
+00:30:24,750 --> 00:30:27,669
+I'm doing here. This is in the and node, so I've got to do all of those. I can't give
+我在这里所做的事情。 这是在 and 节点中，所以我必须做所有这些。 我不能
+
+284
+00:30:27,669 --> 00:30:38,139
+up on that last thing. And that and transformation is transformation number 3. So this is in
+放弃最后一件事。 那和转换是转换编号 3。所以这是
+
+285
+00:30:38,139 --> 00:30:46,710
+the table, this is in the table, we still have this to do, but that's C, heuristic transformation
+在表中，这是在表中，我们仍然需要这样做，但那是 C，启发式转换
+
+286
+00:30:46,710 --> 00:30:58,659
+C. We have 1, plus y squared, then with the transformation C, with y-- this is y squared--
+C。我们有 1，加上 y 的平方，然后是转换 C  , y-- 这是 y 的平方
+
+287
+00:30:58,659 --> 00:31:09,149
+y equals tangent of z And then we get to the integral of dz and that's in the table and,
+-- y 等于 z 的正切 然后我们得到dz 的积分，这在表格中，
+
+288
+00:31:09,149 --> 00:31:10,889
+we're done.
+我们就完成了。
+
+289
+00:31:10,889 --> 00:31:16,120
+So now we've solved the problem. It's the hardest problem that appeared in that half
+所以现在我们已经解决了这个问题。 这是
+
+290
+00:31:16,120 --> 00:31:24,009
+decade on MIT 18 01 finals. This is exactly the problem that was given, except that it
+MIT 18 01总决赛这五年出现的最难的问题。这正是给出的问题，只是它
+
+291
+00:31:24,009 --> 00:31:30,080
+started here. I put the other two pieces on just to illustrate a couple of the transformations.
+从这里开始。 我把另外两件放在上面只是为了说明一些转换。
+
+292
+00:31:30,080 --> 00:31:35,480
+But that's a problem that it solved.
+但这是它解决的问题。
+
+293
+00:31:35,480 --> 00:31:42,320
+And now that we've seen an example, we can finish up what we talked about a little bit
+现在我们已经看到了一个例子，我们可以完成我们之前谈到的与这个东西
+
+294
+00:31:42,320 --> 00:31:51,779
+ago, having to do with the architecture of this thing. So far, all we've done is talk
+的架构有关的内容。 到目前为止，我们所做的只是
+
+295
+00:31:51,779 --> 00:31:58,039
+about the safe transformations, but now we know that if we're not done, we need to find
+谈论安全转换，但现在我们知道，如果我们还没有完成，我们需要找到
+
+296
+00:31:58,040 --> 00:32:06,860
+a problem to work on
+一个问题来
+
+297
+00:32:06,860 --> 00:32:17,159
+using that depth of functional composition business. And then after that we apply heuristic
+使用函数组合业务的深度。 然后我们应用启发式
+
+298
+00:32:17,159 --> 00:32:28,819
+transformation.
+变换。
+
+299
+00:32:28,820 --> 00:32:31,540
+And the way Slagle designed his program is,
+Slagle设计他的程序的方式是，
+
+300
+00:32:31,540 --> 00:32:34,600
+he found just one problem to work on, did one transformation,
+他只发现一个问题需要解决，进行一次转换，
+
+301
+00:32:34,610 --> 00:32:38,600
+then went back around the loop. Because these heuristic transformations are a little harder
+然后返回循环。 因为这些启发式变换
+
+302
+00:32:38,600 --> 00:32:44,679
+to apply than the safe ones. So I'll given you an accurate portrayal of what this program
+比安全变换更难应用。 所以我会给你一个准确的描述这个程序做了什么
+
+303
+00:32:44,679 --> 00:32:51,169
+did, except for one thing. Which I would like, now, to go back and patch up. And that thing
+，除了一件事。 我现在想回去修补。 那东西
+
+304
+00:32:51,169 --> 00:33:09,009
+is over here. What to do with something like this. Well we got to that in a board that's
+就在这里。 像这样的事情该怎么办。 好吧，我们在一个消失的板上
+
+305
+00:33:09,009 --> 00:33:15,350
+disappeared, but when we tried to deal with this, we had to find a heuristic transformation.
+解决了这个问题，但是当我们试图处理这个问题时，我们必须找到一个启发式转换。
+
+306
+00:33:15,350 --> 00:33:20,289
+And when we decided to work on this, it must have been the case that this was the simplest
+当我们决定着手解决这个问题时，一定是因为这
+
+307
+00:33:20,289 --> 00:33:24,370
+problem at a leaf node that has not yet been solved.
+是叶节点上尚未解决的最简单问题。
+
+308
+00:33:24,370 --> 00:33:32,559
+So what's the functional composition depth of this? It's 3. Back over here, we have something
+那么这个的功能组合深度是多少呢？ 是 3。回到这里，
+
+309
+00:33:32,559 --> 00:33:37,649
+that has a depth of functional composition of 2. So when the program actually ran on
+我们有一个功能组合深度为 2 的东西。所以当程序实际运行
+
+310
+00:33:37,649 --> 00:33:44,029
+this particular problem, it stopped a few inches short of the finish line, And went
+这个特定问题时，它在距离终点线几英寸的地方停了下来，然后
+
+311
+00:33:44,029 --> 00:33:48,720
+back and screwed around with that other problem for a little bit, before it gave up and came
+回去搞砸了 其他问题有点，在它放弃并
+
+312
+00:33:48,720 --> 00:33:50,919
+back here.
+回到这里之前。
+
+313
+00:33:50,919 --> 00:33:55,669
+So it's always looking across the whole tree, the leaves of the tree. Whenever it has to
+所以它总是看着整棵树，树的叶子。 每当它必须
+
+314
+00:33:55,669 --> 00:33:59,970
+find a place to work on with the heuristic transformation, it happened to look at all
+找到一个地方进行启发式转换时，它碰巧会查看所有
+
+315
+00:33:59,970 --> 00:34:04,159
+the leaves of the tree that had not yet been dealt with, tried to find the easiest one,
+尚未处理的树的叶子，试图找到最简单的叶子
+
+316
+00:34:04,159 --> 00:34:08,550
+and that could involve a lot of backing up and starting over on a branch of the tree
+，这可能涉及大量备份并从
+
+317
+00:34:08,550 --> 00:34:14,710
+that it had previously ignored. A small detail, not a particularly important one.
+它之前忽略的树枝上重新开始。 一个小细节，不是特别重要的。
+
+318
+00:34:14,710 --> 00:34:35,620
+Now where are we. We've got that guy there. We've got our complete architecture. We've
+现在我们在哪里。 我们有那个人在那里。我们已经有了完整的架构。 我们已经
+
+319
+00:34:35,620 --> 00:34:44,300
+got our solved problem. And now we can start reflecting on what we've done. We can say,
+解决了问题。 现在我们可以开始反思我们做了什么。 例如，我们可以说，这是
+
+320
+00:34:44,300 --> 00:34:49,900
+for example, how good an integration program is this? And the answer is, it was pretty
+一个多好的集成程序？ 答案是，它非常
+
+321
+00:34:49,900 --> 00:34:57,970
+good. This machine that Slagle was using was a machine that was over in building 26. And
+好。  Slagle 使用的这台机器是 26 号楼的一台机器。
+
+322
+00:34:57,970 --> 00:35:01,900
+we were so proud of it, that it was behind glass, and you could go there and watch the
+我们为它感到非常自豪，它在玻璃后面，你可以去那里观看
+
+323
+00:35:01,900 --> 00:35:10,610
+tape spin, it was really a delight. 32k of memory, that's 32k of memory. It's amazing
+磁带旋转，这真的是一种乐趣。  32k内存，也就是 32k 内存。 令人惊讶的
+
+324
+00:35:10,610 --> 00:35:17,440
+that he was able to do anything with a machine of that size.
+是，他能够用这么大的机器做任何事情。
+
+325
+00:35:17,440 --> 00:35:29,740
+Let's see, let's get us a clean one. Can't do board geometry and talk at the same
+让我们看看，让我们给我们一个干净的。不能同时做板几何和说话
+
+326
+00:35:29,740 --> 00:35:40,220
+time. We can now ask some questions about how well the program performed. It was given
+。 我们现在可以问一些关于程序执行情况的问题。 它给出了
+
+327
+00:35:40,220 --> 00:35:49,000
+56 of the hardest problems, and it got 54 right. What happened when it didn't get the
+56 个最难的问题，它得到了 54 个正确的问题。 当它没有得到其他两个时发生了什么
+
+328
+00:35:49,000 --> 00:35:55,310
+other two? Well, you might be right if you said, oh it probably ran out of memory, since
+？ 好吧，如果你说，哦，它可能内存不足，你可能是对的，因为
+
+329
+00:35:55,310 --> 00:36:01,280
+it had 32k. But in fact, it just was lacking 2 transformations that were needed, in order
+它有 32k。 但实际上，它只是缺少2 次转换，
+
+330
+00:36:01,280 --> 00:36:09,930
+to solve the whole entire set of final quiz problems. So when a program fails, that's
+以解决整套最终测验问题。 因此，当程序失败时，这
+
+331
+00:36:09,930 --> 00:36:15,270
+often the most interesting question you can ask. This is an exception. This failed for
+通常是您可以提出的最有趣的问题。 这是一个例外。
+
+332
+00:36:15,270 --> 00:36:20,670
+uninteresting reasons on 2 of the 56 problems that it was given to.
+在给出的 56 个问题中，有 2 个因无趣的原因而失败。
+
+333
+00:36:20,670 --> 00:36:30,750
+And now the next question you can say is, what is the depth of the tree in the maximal
+现在你可以说的下一个问题是，在最大情况下，树的深度是
+
+334
+00:36:30,750 --> 00:36:36,370
+case? And the answer is, it's that case we just worked out. And since I've once again
+多少？ 答案是，我们刚刚解决的就是这种情况。 既然我又一次
+
+335
+00:36:36,370 --> 00:36:42,880
+lost the whole tree, I'll tell you that it's depth was 7 when you take off that minus 5.
+失去了整棵树，我会告诉你，当你去掉负5时，它的深度是7。
+
+336
+00:36:42,880 --> 00:36:51,090
+So in the worst case, this thing had to get down seven levels.
+所以在最坏的情况下，这东西必须下降七层。
+
+337
+00:36:51,090 --> 00:37:00,380
+That's the worst case, a more interesting question is what was the average depth? And
+这是最坏的情况，一个更有趣的问题是平均深度是多少？
+
+338
+00:37:00,380 --> 00:37:09,900
+that was approximately 3. And now we're beginning to say something, not only about Slagle's
+那大约是 3。现在我们开始谈论一些事情，不仅是关于 Slagle
+
+339
+00:37:09,900 --> 00:37:16,450
+model of how a freshman works, but we're beginning to say something about the nature of the domain.
+的新生如何工作的模型，而且我们开始谈论领域的性质。
+
+340
+00:37:16,450 --> 00:37:21,980
+In the domain of calculus problems, integrals expressions that are given to freshman, in
+在微积分问题领域，给新生的积分表达式，在
+
+341
+00:37:21,980 --> 00:37:29,670
+that domain, the average depth of problem reduction needed to solve the problem was
+那个领域，解决问题所需的问题减少的平均深度是
+
+342
+00:37:29,670 --> 00:37:35,270
+3. So that's not very complicated. If it were 10, you would say, wow, how can anybody ever
+3。所以这不是很复杂。 如果是10，你会说，哇，怎么会有人
+
+343
+00:37:35,270 --> 00:37:42,260
+do those problems? If it were 5, you'd say, well only people destined to be math professors
+做这些问题？ 如果是 5，你会说，只有注定要成为数学教授的人才
+
+344
+00:37:42,260 --> 00:37:48,590
+are going to get anything right. If it's 3, us ordinary mortals can do a pretty good job.
+会做对。 如果是3，我们普通凡人可以做得很好。
+
+345
+00:37:48,590 --> 00:38:06,040
+Another question of even greater interest is, how many branches were unused? Here's
+另一个更令人感兴趣的问题是，有多少分支未被使用？ 这是
+
+346
+00:38:06,040 --> 00:38:10,910
+a branch that turned out to be unused, it didn't pursue that. And so you might say,
+一个被证明没有使用的分支，它没有追求那个。 所以你可能会说
+
+347
+00:38:10,910 --> 00:38:17,850
+well maybe there are a lot of unused branches. Maybe you have to be pretty smart about your
+，也许有很多未使用的分支。也许您必须非常聪明
+
+348
+00:38:17,850 --> 00:38:21,160
+method for determining what problem to work on, because otherwise you'll go down a lot
+地确定要解决的问题的方法，因为否则您将陷入
+
+349
+00:38:21,160 --> 00:38:23,580
+of rat holes.
+很多麻烦。
+
+350
+00:38:23,580 --> 00:38:30,250
+And guess what, here's another statement about the domain. In the domain of problems that
+猜猜看，这是关于域的另一种说法。 在新生可以解决的问题领域中
+
+351
+00:38:30,250 --> 00:38:38,060
+freshmen could work on a final, the number of unused branches is about 1. So that means
+，未使用的分支数量约为 1。这意味着
+
+352
+00:38:38,060 --> 00:38:45,690
+this tree keeps itself together, and doesn't run down to a very large, bushy, useless tree.
+这棵树保持在一起，不会变成一棵非常大的、浓密的、无用的树。
+
+353
+00:38:45,690 --> 00:38:52,320
+So this means that the depth of functional composition, which Brett suggested as a technique
+所以这意味着功能组合的深度，布雷特建议作为
+
+354
+00:38:52,320 --> 00:38:59,750
+for recognizing the right problem work on, was a choice that didn't actually matter.
+一种识别正确问题工作的技术，是一个实际上并不重要的选择。
+
+355
+00:38:59,750 --> 00:39:05,710
+Because the tree doesn't grow deep, it doesn't go broad. It doesn't matter what you use to
+因为树长不深，所以不宽。 您使用
+
+356
+00:39:05,710 --> 00:39:10,110
+decide what to work on, because in the worst case, you'll just generate a couple of extra,
+什么来决定要处理什么并不重要，因为在最坏的情况下，您只会生成几个额外的
+
+357
+00:39:10,110 --> 00:39:14,150
+useless nodes. But they very quickly run to find a dead end, so you don't have to do anything
+无用节点。 但他们很快就会跑到死胡同，所以你不必对他们做
+
+358
+00:39:14,150 --> 00:39:19,020
+more with them.
+更多的事情。
+
+359
+00:39:19,020 --> 00:39:24,280
+So now the next thing we need to do is back even further away from this program, and ask
+所以现在我们需要做的下一件事是远离这个项目，问
+
+360
+00:39:24,280 --> 00:39:29,370
+ourselves some questions about the nature of what we've been doing. And that brings
+自己一些关于我们一直在做的事情的性质的问题。 这让
+
+361
+00:39:29,370 --> 00:39:34,170
+me to the things I've got on that upper right-hand board. One of those things as a catechism
+我想到了我在右上角的板上的东西。 其中之一是与知识有关的教理问答
+
+362
+00:39:34,170 --> 00:39:37,020
+having to do with knowledge.
+。
+
+363
+00:39:37,020 --> 00:39:41,050
+And what we've done informally as we went through this program was, we've asked questions
+在我们完成这个项目时，我们非正式地做的是，我们提出了一些问题，
+
+364
+00:39:41,050 --> 00:39:48,530
+such as, what kind of knowledge is involved in doing this? Well knowledge about transformation.
+例如，做这件事涉及到什么样的知识？ 关于转型的好知识。
+
+365
+00:39:48,530 --> 00:39:54,770
+Knowledge about how goal trees work and when we're done with a problem. Knowledge about
+关于目标树如何工作以及我们何时完成问题的知识。 关于
+
+366
+00:39:54,770 --> 00:39:59,520
+what things don't need to be transformed, because you can look them up in a table. That's
+哪些东西不需要转换的知识，因为您可以在表格中查找它们。 这
+
+367
+00:39:59,520 --> 00:40:05,890
+the kind of knowledge that is involved in doing 18 01. And if you do 18 0 circuit theory,
+就是做 18 01 所涉及的知识。如果你做 18 0 电路理论、
+
+368
+00:40:05,890 --> 00:40:11,020
+6 0 circuit theory or 6 0 Maxwell's equations, this is the same thing.
+6 0 电路理论或 6 0 麦克斯韦方程组，这是同样的事情。
+
+369
+00:40:11,020 --> 00:40:14,020
+You have to ask questions of this sort,
+你必须问这类问题，
+
+370
+00:40:14,030 --> 00:40:17,430
+about the nature of the knowledge involved, and question number one is always, what kind
+关于所涉及知识的性质，第一个问题总是，涉及什么样
+
+371
+00:40:17,430 --> 00:40:23,440
+of knowledge is involved? Is it Kirchhoff's laws, Maxwell's equations, what is it?
+的知识？ 是基尔霍夫定律，麦克斯韦方程，是什么？
+
+372
+00:40:23,440 --> 00:40:27,440
+The next question is, how is the knowledge represented? And our answers here are, well
+下一个问题是，知识是如何表示的？ 我们在这里的答案是，
+
+373
+00:40:27,440 --> 00:40:32,700
+all this stuff, ultimately was represented in list best expressions. Some of the
+所有这些东西，最终都以列表最佳表达式表示。 一些
+
+374
+00:40:32,700 --> 00:40:37,040
+knowledge was recorded in a table [? of best ?] expressions to show what transformations
+知识被记录在一个表中[？ 最好的?] 表达式来显示有哪些转换
+
+375
+00:40:37,040 --> 00:40:43,930
+there are. There was a similar table of integrals. Knowledge about goal trees was embedded in
+。 有一个类似的积分表。关于目标树的知识嵌入
+
+376
+00:40:43,930 --> 00:40:49,970
+the procedure, so it was procedurally represented. And so for each of the categories of knowledge,
+在程序中，因此它在程序上被表示出来。因此，对于每个类别的知识，
+
+377
+00:40:49,970 --> 00:40:56,550
+there's a way it gets represented. How is it used? Straightforward, transformations
+都有一种表示方式。它是如何使用的？ 直截了当，
+
+378
+00:40:56,550 --> 00:41:02,390
+are used to make the problem simpler. The table is used to trim off and to serve as
+转换用于使问题更简单。桌子用于修剪并用作
+
+379
+00:41:02,390 --> 00:41:06,530
+the bottom of the tree. Those are the ways in which the knowledge is used.
+树的底部。 这些是使用知识的方式。
+
+380
+00:41:06,530 --> 00:41:13,440
+And then there's the question of course of, how much knowledge is required. Something
+然后当然是需要多少知识的问题。
+
+381
+00:41:13,440 --> 00:41:19,180
+that's useful to know if it's late at night, you have 2 finals the next day, and you're
+知道是否深夜有用的东西，第二天你有2个期末，你
+
+382
+00:41:19,180 --> 00:41:24,640
+not sure which course you should study. So how much knowledge might you suppose was actually
+不确定你应该学习哪门课程。那么你认为这个程序实际上包含了多少知识
+
+383
+00:41:24,640 --> 00:41:29,960
+in this program? I've shown you a glimpse of the kind of knowledge that's involved in
+呢？ 我已经向您展示了该计划所涉及的知识类型
+
+384
+00:41:29,960 --> 00:41:34,710
+the program. I've answered a little bit of question 5, what exactly. But how much knowledge
+。 我已经回答了一点问题5，究竟是什么。 但是
+
+385
+00:41:34,710 --> 00:41:36,910
+was involved. You might be surprised by the answer.
+涉及到多少知识。 你可能会对答案感到惊讶。
+
+386
+00:41:36,910 --> 00:41:44,540
+First of all, the table of integrals. I've listed only 3 things there. There are lots
+首先是积分表。 我在那里只列出了 3 件事。
+
+387
+00:41:44,540 --> 00:41:50,770
+of other things you can think of, like integral of e to the x is e to the x. But in the end,
+你可以想到很多其他的事情，比如e 对 x 的积分就是 e 对 x 的积分。 但最后，
+
+388
+00:41:50,770 --> 00:41:58,310
+what Slagle found is, a table only 26 elements was enough to solve all of these problems.
+Slagle 发现，一张只有 26 个元素的表格足以解决所有这些问题。
+
+389
+00:41:58,310 --> 00:42:11,320
+How about the transformations here, the safe ones, about 12. How about the heuristic ones,
+这里的转换怎么样，安全的，大约 12。启发式的怎么样，
+
+390
+00:42:11,320 --> 00:42:17,490
+about 12. So just a few bits and pieces of knowledge, here and there, are sufficient
+大约 12。所以，这里和那里的一些点点滴滴的知识，就足以
+
+391
+00:42:17,490 --> 00:42:22,370
+to do everything you need to do, in order to do the integration problems on a calculus
+完成你需要做的一切，为了做 微积分期末的积分问题
+
+392
+00:42:22,370 --> 00:42:25,520
+final. That was a surprise.
+。 那是一个惊喜。
+
+393
+00:42:25,520 --> 00:42:31,140
+Another surprise of a similar kind, also about knowledge, is that the relationship between
+另一个类似的惊喜，也是关于知识的，是
+
+394
+00:42:31,140 --> 00:42:40,400
+the method to be used, and the characteristics of the problem, was almost a diagonal table.
+要使用的方法和问题的特征之间的关系几乎是一个对角线表。
+
+395
+00:42:40,400 --> 00:42:46,850
+That means that you could, in this domain, make the right transformation almost all the
+这意味着，在这个领域，
+
+396
+00:42:46,850 --> 00:42:52,300
+time if you're a little bit smart, and never back up. That was an observation made by Joel
+只要你稍微聪明一点，你几乎可以一直做出正确的转变，而且从不支持。 这是乔尔摩西的观察
+
+397
+00:42:52,300 --> 00:42:58,210
+Moses, who became subsequently our provost here at MIT for a while. And he wrote a program
+，他后来成为我们在麻省理工学院的教务长一段时间。 他编写了一个
+
+398
+00:42:58,210 --> 00:43:05,760
+that could solve anything. It would beat the most dedicated mathematicians at integration.
+可以解决任何问题的程序。 它会在积分方面击败最敬业的数学家。
+
+399
+00:43:05,760 --> 00:43:08,610
+And its descendents are in MATLAB today.
+它的后代今天在 MATLAB 中。
+
+400
+00:43:08,610 --> 00:43:12,570
+But this is how it all works. And now you can write one of these things yourself. Partly
+但这就是一切。 现在你可以自己写这些东西之一。 部分
+
+401
+00:43:12,570 --> 00:43:18,300
+because you now have this catechism. This is the kind of stuff you should ask any time
+是因为你现在有这个要理问答。 这是
+
+402
+00:43:18,300 --> 00:43:24,320
+you're dealing with a new domain. It will make you smarter. And this is of course, meta
+您在处理新域时应该询问的问题。 它会让你更聪明。 这当然是元
+
+403
+00:43:24,320 --> 00:43:30,970
+knowledge, this is knowledge about knowledge. So this tired aphorism isn't quite what we
+知识，这是关于知识的知识。因此，这句乏味的格言并不是
+
+404
+00:43:30,970 --> 00:43:43,810
+are going to complete ourselves with. We're going to say that knowledge about knowledge
+我们要完成的。 我们要说，关于知识的知识
+
+405
+00:43:43,810 --> 00:43:45,850
+is where the real power is.
+才是真正的力量所在。
+
+406
+00:43:45,850 --> 00:43:52,790
+Now there's one final thing that this program does for us. It tells us something about our
+现在这个程序为我们做了最后一件事。 它告诉我们一些关于我们
+
+407
+00:43:52,790 --> 00:43:58,280
+appreciation of what it means to be intelligent. You know that in the beginning of this hour,
+对聪明意味着什么的欣赏。你知道，在这一个小时的开始，
+
+408
+00:43:58,280 --> 00:44:04,260
+I asked you to think about whether a program that could do symbolic integration would be,
+我让你想一想，一个可以进行符号积分的程序
+
+409
+00:44:04,260 --> 00:44:12,480
+in any way, or should be considered to any degree, intelligent. And I'm imagining that
+在任何方面，或者在任何程度上都应该被认为是智能的。 而且我在想象，
+
+410
+00:44:12,480 --> 00:44:17,820
+even in these days of MATLAB, and whatnot, many of you said well, yes, I learned how
+即使在 MATLAB 的这些日子里，你们中的许多人都说好，是的，我
+
+411
+00:44:17,820 --> 00:44:23,190
+to do that at MIT, or late in high school, so it must be smart.
+在 MIT 或高中后期学会了如何做到这一点，所以它一定很聪明。
+
+412
+00:44:23,190 --> 00:44:29,410
+But now that we've completed this discussion, I also expect that your feeling of intelligence
+但是既然我们已经完成了这个讨论，我也希望你
+
+413
+00:44:29,410 --> 00:44:34,740
+in this program is somewhat diminished. Because what happens is that, when we understand how
+对这个程序的智能感觉有所减弱。 因为发生的事情是，当我们了解
+
+414
+00:44:34,740 --> 00:44:39,890
+something works, it's intelligence seems to vanish. You've seen this in your friends,
+某事物的运作方式时，它的智能似乎就消失了。 你在你的朋友那里看到过，
+
+415
+00:44:39,890 --> 00:44:46,740
+right? They solve some problem, they seem super smart. Then they tell you how they did
+对吧？ 他们解决了一些问题，他们看起来超级聪明。 然后他们告诉你他们是怎么做到的
+
+416
+00:44:46,740 --> 00:44:50,830
+it, and they don't seem so smart anymore.
+，他们似乎不再那么聪明了。
+
+417
+00:44:50,830 --> 00:44:59,860
+So let's conclude our discussion today was a little story. A long time ago I was talking
+所以让我们结束我们今天的讨论是一个小故事。 很久以前，我
+
+418
+00:44:59,860 --> 00:45:08,030
+with a student who said, computers cannot be intelligent. And I said, OK, maybe you're
+和一个学生交谈，他说，计算机不可能是智能的。 我说，好吧，也许你是
+
+419
+00:45:08,030 --> 00:45:12,100
+right, but let me show you this program. So I showed him the integration program, working
+对的，但让我给你看这个程序。 所以我向他展示了集成程序
+
+420
+00:45:12,100 --> 00:45:18,580
+on problems like this. And after I showed him a couple of those examples, he says, well,
+，解决了这样的问题。 在我给他看了几个这样的例子之后，他说，
+
+421
+00:45:18,580 --> 00:45:23,460
+all right, I guess maybe they can be intelligent. I'm learning how to do that, and it's not
+好吧，我想他们可能很聪明。我正在学习如何做到这一点，这并不
+
+422
+00:45:23,460 --> 00:45:30,830
+always easy. Then I made a fatal mistake. I said let me show you how it works, and we
+总是那么容易。 然后我犯了一个致命的错误。我说让我告诉你它是如何工作的，我们
+
+423
+00:45:30,830 --> 00:45:35,280
+spent an hour going through it like this. And at the end of that time, he turned to
+花了一个小时来研究它。到最后，他转身对
+
+424
+00:45:35,280 --> 00:45:42,050
+me and said, I take it back, it's not intelligent after all. It does integration the same way
+我说，我收回来，毕竟不聪明。 它以与我相同的方式进行集成
+
+425
+00:45:42,050 --> 00:45:44,840
+I do.
+。
