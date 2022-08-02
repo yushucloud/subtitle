@@ -1,0 +1,974 @@
+1
+00:00:00,320 --> 00:00:04,640
+meet bob bob is an exceptionally average guy who currently works in the taco bell
+认识鲍勃 鲍勃是一个非常普通的人，目前在塔可钟
+
+2
+00:00:04,640 --> 00:00:08,000
+industry he's got some programming skills he learned on youtube but has no
+行业工作，他有一些他在 youtube 上学到的编程技能，但
+
+3
+00:00:08,000 --> 00:00:12,320
+connections no social media following no college degree and no trending apps on
+没有人脉，没有大学学位，没有社交媒体，也没有出于某种原因在应用商店上流行的应用
+
+4
+00:00:12,320 --> 00:00:15,519
+the app store for some reason he wants to work in the tech industry where he
+程序 在科技行业工作，他
+
+5
+00:00:15,519 --> 00:00:18,400
+can stare at a computer screen for 10 hours per day googling how to get his
+可以每天盯着电脑屏幕 10 个小时谷歌搜索如何让他的代码
+
+6
+00:00:18,400 --> 00:00:22,160
+code to work in today's video we'll look at 10 powerful strategies that can help
+工作 在今天的视频中，我们将看到10 个强大的策略，可以帮助你和
+
+7
+00:00:22,160 --> 00:00:27,519
+you and bob land a six figure job by the end of 2022 and i give you my 100 money
+鲍勃找到一份六位数的工作2022 年底，我给你我的 100
+
+8
+00:00:27,519 --> 00:00:31,199
+back guarantee all i ask is that you like the video and subscribe and give me
+退款保证我只要求你喜欢这个视频并订阅并
+
+9
+00:00:31,199 --> 00:00:34,480
+10 of your salary before we get started i want to point out that i've been
+在我们开始之前给我你工资的 10我想指出我已经
+
+10
+00:00:34,480 --> 00:00:38,160
+working independently for about a decade so to make this video i reached out to a
+独立工作了大约十年因此，为了制作这个视频，我联系了大型大型公司和初创公司的
+
+11
+00:00:38,160 --> 00:00:42,160
+few different hiring managers both at big mega corporations and startups to
+几位不同的招聘经理，以
+
+12
+00:00:42,160 --> 00:00:45,120
+figure out what the decision makers are actually looking for especially when
+了解决策者真正在寻找什么，尤其是在
+
+13
+00:00:45,120 --> 00:00:49,200
+hiring a self-taught programmer with no prior experience as of today the job
+聘请自学成才的程序员时 迄今为止没有任何经验 就业
+
+14
+00:00:49,200 --> 00:00:52,719
+market is likely stronger than it's ever been before there's all kinds of stories
+市场可能比以往任何时候都更强劲有各种各样的故事
+
+15
+00:00:52,719 --> 00:00:56,160
+of people quitting their jobs in the great resignation only to land a much
+，人们在大辞职中辞职，只是为了找到一份高
+
+16
+00:00:56,160 --> 00:00:59,280
+higher paying job because there's a massive shortage of talent that spans
+得多的工作，因为人才严重短缺。
+
+17
+00:00:59,280 --> 00:01:02,640
+across many industries it's really weird and i've never seen anything like this
+行业这真的很奇怪，我以前从未见过这样的事情，
+
+18
+00:01:02,640 --> 00:01:05,760
+before it's great if you're looking for a new job but there may be some warning
+如果你正在寻找一份新工作，这很好，但可能会有一些警告
+
+19
+00:01:05,760 --> 00:01:09,200
+signs on the horizon many of the top publicly traded tech companies have seen
+信号，许多顶级上市科技公司已经看到
+
+20
+00:01:09,200 --> 00:01:12,479
+their stock prices quietly crash over the last few months companies like
+他们的股票价格悄然暴跌在过去的几个月里，像
+
+21
+00:01:12,479 --> 00:01:16,560
+twilio and cloudflare are down 50 from their highs of last year a lot of big
+twilio 和 cloudflare 这样的公司比去年的高点下跌了 50美元，很多大笔
+
+22
+00:01:16,560 --> 00:01:19,840
+money is moving out of profitless tech companies and generally that's not a
+资金正在从无利可图的科技公司撤出，通常这
+
+23
+00:01:19,840 --> 00:01:23,840
+good sign for tech jobs but that's just a short-term concern over the long term
+对科技工作来说不是一个好兆头，但这只是一个短期的担忧 从长远来看，
+
+24
+00:01:23,840 --> 00:01:27,360
+i think tech is one of the safest and best places you could possibly work the
+我认为科技是你可能工作的最安全和最好的地方之一，
+
+25
+00:01:27,360 --> 00:01:30,240
+first thing you'll need is the right attitude getting a high paying job in
+你需要的第一件事是正确的态度，在科技领域获得一份高薪工作
+
+26
+00:01:30,240 --> 00:01:33,920
+tech is hard there's a lot of overly optimistic marketing bs out there that
+很难有很多过于乐观的营销bs
+
+27
+00:01:33,920 --> 00:01:36,720
+might make you think you just go to a boot camp for a few weeks and
+可能会让你认为你只是去一个新兵训练营几个星期，
+
+28
+00:01:36,720 --> 00:01:39,439
+immediately after you're making a hundred thousand dollars there are some
+在你赚了十万美元之后，有一些
+
+29
+00:01:39,439 --> 00:01:42,720
+success stories that go like that but for the most part it's a very difficult
+成功的故事就是这样，但是 在大多数情况下，这是一项非常困难的
+
+30
+00:01:42,720 --> 00:01:46,720
+grind that requires you to be highly motivated and highly persistent to put
+工作，需要您具有高度的积极性和高度的毅力，才能将
+
+31
+00:01:46,720 --> 00:01:50,720
+things in perspective lambda school who recently changed its name to the bloom
+事情放在最近更名为布卢姆理工学院的 lambda 学校中，
+
+32
+00:01:50,720 --> 00:01:55,360
+institute of technology i wonder why they did that charges 22 000 in tuition
+我想知道他们为什么这样做，收取 22 000 的学费，
+
+33
+00:01:55,360 --> 00:01:59,280
+but guarantees a job earning 50 000 after you graduate that's about what a
+但保证了 毕业后收入 50 000 的工作就是关于
+
+34
+00:01:59,280 --> 00:02:02,640
+taco bell manager makes what they teach you is the same stuff you can learn here
+taco bell 经理所做的事情 他们教给你的东西与你可以在 youtube 上学到的东西相同
+
+35
+00:02:02,640 --> 00:02:05,920
+on youtube but they support you by making you hirable the same thing i'm
+，但他们通过让你受雇来支持你，就像我
+
+36
+00:02:05,920 --> 00:02:09,200
+trying to teach you on youtube for free right now now if you don't get a job
+试图在 youtube 上教你的东西一样 现在免费，如果您
+
+37
+00:02:09,200 --> 00:02:13,840
+after the program they will refund 110 of the tuition however in order to
+在课程结束后没有找到工作，他们将退还 110的学费，但是为了
+
+38
+00:02:13,840 --> 00:02:17,520
+qualify for that you'll need to spend a year applying to 10 jobs per week
+获得资格，您需要花一年时间申请 10 个工作 k 联系
+
+39
+00:02:17,520 --> 00:02:20,640
+reaching out to 10 professionals for networking and making at least five
+10 位专业人士进行网络交流，并至少做出 5 次
+
+40
+00:02:20,640 --> 00:02:24,879
+github contributions that means you'll need to apply to at least 520 jobs and
+github 贡献，这意味着您需要申请至少 520 个工作，并且
+
+41
+00:02:24,879 --> 00:02:28,239
+be rejected from every single one they know it's a grind and you should have
+被他们知道的每一个工作都拒绝，而且您
+
+42
+00:02:28,239 --> 00:02:31,440
+the same mindset when going into it yourself independently but on the bright
+在进入时应该有相同的心态自己独立，但从好的
+
+43
+00:02:31,440 --> 00:02:34,879
+side it's definitely achievable if you work hard at it and accept the fact that
+方面来说，如果你努力工作并接受这样一个事实，
+
+44
+00:02:34,879 --> 00:02:37,840
+you're probably going to have to face a lot of rejection before you finally do
+在你最终找到工作之前你可能不得不面对很多拒绝
+
+45
+00:02:37,840 --> 00:02:41,360
+land a job i'd recommend subscribing to the dorian develops youtube channel who
+我建议订阅多利安，这绝对是可以实现的 开发 youtube 频道，
+
+46
+00:02:41,360 --> 00:02:44,800
+has a recent video about his story about landing a job as a self-taught
+最近有一段视频讲述了他作为一名自学成才的程序员找到一份工作的故事，
+
+47
+00:02:44,800 --> 00:02:48,400
+programmer it took him about a year now let's move on to strategy 2. live in the
+他花了大约一年的时间现在让我们继续讨论策略 2。住在
+
+48
+00:02:48,400 --> 00:02:52,959
+united states specifically in new york city the bay area or seattle in the 2021
+美国，特别是纽约市湾区或西雅图 在 2021 年
+
+49
+00:02:52,959 --> 00:02:57,440
+stack overflow survey the median salary for engineers is well below 100k in the
+堆栈溢出调查中，美国工程师的工资中位数远低于 10 万，
+
+50
+00:02:57,440 --> 00:03:01,680
+united states though it jumps up to about 130k a few weeks ago i posted a
+尽管几周前它跃升至约 13 万，我
+
+51
+00:03:01,680 --> 00:03:06,080
+poll on this channel that has a 150 000 responses yet only 11 percent are making
+在此频道上发布了一项民意调查，该频道有 15 万r 响应，但只有 11% 的人收入
+
+52
+00:03:06,080 --> 00:03:09,680
+more than 100k sadly where you live really does make a big difference so
+超过 10 万，可悲的是，你住的地方确实有很大的不同，所以现在
+
+53
+00:03:09,680 --> 00:03:13,120
+keep your expectations in line with your region now the key to getting hired is
+让你的期望与你所在的地区保持一致被录用的关键
+
+54
+00:03:13,120 --> 00:03:16,319
+to make yourself valuable think of it from the eyes of the employer why would
+是让自己有价值从雇主的角度思考为什么
+
+55
+00:03:16,319 --> 00:03:19,280
+they actually want to hire you what value would you add to the team to the
+他们真的想雇用你吗你会给团队增加什么价值
+
+56
+00:03:19,280 --> 00:03:23,040
+product to the company etc most tech companies don't actually make any money
+给公司的产品等等 大多数科技公司实际上并不赚钱，
+
+57
+00:03:23,040 --> 00:03:26,239
+but the general idea of employment is that the employer can make a profit off
+但就业的一般概念是雇主可以
+
+58
+00:03:26,239 --> 00:03:29,840
+of your labor the question becomes how do we make you desirable to these
+从你的劳动中获利 问题变成了我们如何让你成为这些
+
+59
+00:03:29,840 --> 00:03:33,120
+potential employers there are many things you can start doing today in
+潜在雇主的理想人在战略三中你今天可以开始做很多事情
+
+60
+00:03:33,120 --> 00:03:36,159
+strategy three we'll look at twitter there's a whole subculture out there
+我们会看看推特有一个叫做科技推特的整个亚
+
+61
+00:03:36,159 --> 00:03:39,519
+called tech twitter and i've seen tons of people land a job simply by adding
+文化我已经看到很多人登陆了 只需通过
+
+62
+00:03:39,519 --> 00:03:42,879
+value to this tech twitter community there's a pretty simple formula for
+为这个技术推特社区增加价值来工作，有一个非常简单的公式来
+
+63
+00:03:42,879 --> 00:03:46,319
+growing a twitter account to get started follow the influential people that you
+增加推特帐户以开始关注你
+
+64
+00:03:46,319 --> 00:03:49,440
+want to be hired by then create a profile that's totally transparent that
+想在那时被雇用的有影响力的人 创建一个完全透明的个人资料，表明
+
+65
+00:03:49,440 --> 00:03:52,480
+you're on a journey to land your first job in tech then you can start
+您正在寻找第一份技术工作，然后您可以开始
+
+66
+00:03:52,480 --> 00:03:55,840
+responding to other people's tweets with encouragement and positivity people will
+以鼓励和积极的态度回应其他人的推文人们会
+
+67
+00:03:55,840 --> 00:03:59,040
+think hey bob's a really nice guy i want to see him succeed and i'm going to
+认为嘿，鲍勃是一个非常好的人，我希望看到他成功，我 '我会
+
+68
+00:03:59,040 --> 00:04:02,000
+follow him to watch it happen from there you need to hack the out of the
+跟着他从那里观察它发生的情况，每当你学到新东西时，你需要破解 twitter 算法的狗屎
+
+69
+00:04:02,000 --> 00:04:05,120
+twitter algorithm whenever you learn something new post a thread about it if
+，如果
+
+70
+00:04:05,120 --> 00:04:08,319
+you have any good code tips use carbon to create a snippet and post it with a
+你有任何好的代码提示，请发布一个关于它的线程，使用carbon 创建一个片段并发布它
+
+71
+00:04:08,319 --> 00:04:11,599
+bunch of emojis you'll also want to create lists with resources for
+一堆表情符号，您还需要为开发人员创建资源列表，
+
+72
+00:04:11,599 --> 00:04:14,400
+developers like the best youtube channels to learn programming and make
+例如学习编程的最佳 youtube频道，并
+
+73
+00:04:14,400 --> 00:04:18,000
+sure you put fireship as number one it also helps to tweet out open-ended
+确保将 fireship 放在首位，它还有助于发布开放式
+
+74
+00:04:18,000 --> 00:04:21,120
+questions and to come up with your own memes the majority of my twitter growth
+问题并提出自己的问题模因 我的推特增长的大部分都是模因
+
+75
+00:04:21,120 --> 00:04:24,080
+has been the result of memes if you're serious you should be tweeting every
+的结果 如果你是认真的，你应该每天
+
+76
+00:04:24,080 --> 00:04:27,759
+single day like multiple times per day one account i followed tweets an average
+都发推文，比如每天多次发推文一个帐户我平均
+
+77
+00:04:27,759 --> 00:04:32,560
+of 37 times per day which generates an average of 277 new followers per day you
+每个人关注推文 37 次每天平均产生 277 个新追随者的一天，你
+
+78
+00:04:32,560 --> 00:04:36,000
+don't need to be that prolific but just try to be consistent more importantly
+不需要那么多产，但更重要的是尽量保持一致，
+
+79
+00:04:36,000 --> 00:04:39,199
+though don't screw things up by saying something
+尽管不要说一些迟钝的事情，
+
+80
+00:04:39,199 --> 00:04:42,720
+like if you tweet out man my code is being right now somebody with a
+比如你在推特上说我的代码被迟钝了 现在，
+
+81
+00:04:42,720 --> 00:04:45,360
+lot of followers who thinks they're a lot more important than they really are
+有很多追随者认为他们比实际更重要的人
+
+82
+00:04:45,360 --> 00:04:48,400
+might call you out and then everybody will dog pile on you and at that point
+可能会叫你出来，然后每个人都会对你大发雷霆，那时
+
+83
+00:04:48,400 --> 00:04:51,520
+your journey into tech will be over before it started now that you know how
+你的科技之旅将在你开始之前就结束了 知道 twitter 是如何
+
+84
+00:04:51,520 --> 00:04:55,040
+twitter works let's move into strategy four linkedin there are tons of
+运作的 让我们进入策略四linkedin 在linkedin 上有大量
+
+85
+00:04:55,040 --> 00:04:59,040
+recruiters on linkedin who can help you get a job in tech but remember bob
+招聘人员可以帮助你在技术领域找到工作，但请记住，bob
+
+86
+00:04:59,040 --> 00:05:02,240
+doesn't have any connections in tech yet so how does he even get started with
+还没有任何技术方面的人脉，所以他是如何开始使用
+
+87
+00:05:02,240 --> 00:05:05,759
+linkedin well the first thing you can do is find people you look up to and send
+linkedin 的呢？ 你可以做的就是找到你仰慕的人，然后给
+
+88
+00:05:05,759 --> 00:05:08,400
+them a message that you're looking to get into tech and that you would like to
+他们发一条信息，告诉他们你想进入科技行业，你想
+
+89
+00:05:08,400 --> 00:05:11,360
+connect most humans are actually pretty nice and will connect with you no
+联系大多数人实际上都很好，会和你联系没
+
+90
+00:05:11,360 --> 00:05:14,720
+problem feel free to make me your first connection if you'd like also join
+问题如果您想加入您感兴趣
+
+91
+00:05:14,720 --> 00:05:17,199
+groups for the different technologies that you're interested in and
+的不同技术的小组，请随时让我成为您的第一个联系人，并
+
+92
+00:05:17,199 --> 00:05:20,479
+participate in them if possible you can also build your network by posting
+尽可能参与其中您还可以通过发布内容来建立您的网络
+
+93
+00:05:20,479 --> 00:05:23,919
+content you can actually just reuse the content you've been using for threads on
+您实际上可以重复使用您的内容 一直在 twitter 上使用线程
+
+94
+00:05:23,919 --> 00:05:27,600
+twitter and post it to linkedin now that you have your linkedin network going we
+并将其发布到 linkedin既然您的linkedin 网络正在运行，我们
+
+95
+00:05:27,600 --> 00:05:30,960
+can talk about the most important social site in github as a self-taught
+可以谈论 github 中最重要的社交网站作为自学成才的
+
+96
+00:05:30,960 --> 00:05:34,240
+programmer it's very important that you at least have something going on in your
+程序员，您至少有一些事情在您的
+
+97
+00:05:34,240 --> 00:05:37,759
+github in a perfect world you have commits every single day not only to
+github 在一个完美的世界中，你每天都提交不仅是
+
+98
+00:05:37,759 --> 00:05:41,360
+your own project but to many other open source projects out there that's not
+你自己的项目，还有许多其他开源项目，这不是
+
+99
+00:05:41,360 --> 00:05:44,880
+very realistic but it's important to be consistent and that's exactly why lambda
+很现实，但保持一致很重要，这正是 lambda
+
+100
+00:05:44,880 --> 00:05:48,479
+school or bloom institute of technology requires that you make five github
+学校或布卢姆理工学院要求你的原因 每周向雇主做出 5 次 github
+
+101
+00:05:48,479 --> 00:05:52,000
+contributions per week to an employer it shows that you're capable of writing
+贡献，这表明你有能力
+
+102
+00:05:52,000 --> 00:05:55,039
+code every day which tends to be a pretty important part of the job if
+每天编写代码，这往往是 j 的一个非常重要的部分 ob 如果
+
+103
+00:05:55,039 --> 00:05:58,319
+you're just getting started one of the easiest ways to contribute is to look
+您刚刚开始，最简单的贡献方法之一是
+
+104
+00:05:58,319 --> 00:06:02,720
+for typos in the documentation fireship io for example is open source and you
+在文档中查找拼写错误 fireshipio 例如是开源的，
+
+105
+00:06:02,720 --> 00:06:06,639
+can find all kinds of typos in it if you fix it and send a pull request you can
+如果您修复它并向您发送拉取请求，您可以在其中找到各种拼写错误 当您开始使用更多开源库时
+
+106
+00:06:06,639 --> 00:06:09,759
+easily add that contribution to your timeline as you start using more open
+，可以轻松地将该贡献添加到您的时间线中
+
+107
+00:06:09,759 --> 00:06:13,440
+source libraries don't be afraid to open issues when you find problems and if you
+当您发现问题时不要害怕打开问题，如果您
+
+108
+00:06:13,440 --> 00:06:17,520
+want to contribute look for issues that are tagged with good first issue it is
+想贡献，请查找标记为第一个问题的问题，这
+
+109
+00:06:17,520 --> 00:06:20,479
+true that you're kind of working for free here but doing so will make your
+是真的在这里免费工作，但这样做会让你的
+
+110
+00:06:20,479 --> 00:06:24,160
+github profile much stronger and it's just great experience as a developer in
+github 个人资料更加强大，这只是作为开发人员的绝佳体验，
+
+111
+00:06:24,160 --> 00:06:27,360
+fact if you don't have fun doing this kind of stuff then maybe a career as a
+事实上，如果你不喜欢做这种事情，那么
+
+112
+00:06:27,360 --> 00:06:30,880
+software engineer isn't the best career path now that your github is impressive
+软件工程师的职业可能不是 最好的职业道路 既然你的 github 令人印象深刻
+
+113
+00:06:30,880 --> 00:06:34,800
+it's time to build a personal project because bob is a developer that nobody
+，是时候建立一个个人项目了，因为 bob 是一个没有人
+
+114
+00:06:34,800 --> 00:06:37,759
+knows he needs to show employers that he can actually build something that's
+知道他需要向雇主展示他实际上可以建立一些
+
+115
+00:06:37,759 --> 00:06:41,120
+non-trivial ideally something that will blow people's minds that cannot be
+不平凡的东西的开发人员，理想的东西是会让人们大吃一惊，不能
+
+116
+00:06:41,120 --> 00:06:45,440
+ignored you are much better off having one really awesome app than 10 mediocre
+忽视你最好拥有一个非常棒的应用程序而不是 10 个平庸的
+
+117
+00:06:45,440 --> 00:06:48,880
+apps quality is much better than quantity when it comes to your portfolio
+应用程序 质量比数量要好 就你的投资组合而言
+
+118
+00:06:48,880 --> 00:06:52,479
+the engineering manager who hires you is likely a much better programmer than you
+，雇用你的工程经理可能比你更好的程序员
+
+119
+00:06:52,479 --> 00:06:55,360
+are they'll be able to tell if your portfolio is filled with a bunch of
+他们 将能够判断您的作品集是否充满了
+
+120
+00:06:55,360 --> 00:06:58,960
+cookie cutter projects recreated from tutorials on youtube give yourself three
+从 youtube 上的教程重新创建的一堆千篇一律的项目，给自己 3
+
+121
+00:06:58,960 --> 00:07:02,319
+to six months to build something that is truly impressive one example is the
+到 6 个月的时间来构建真正令人印象深刻的东西一个例子
+
+122
+00:07:02,319 --> 00:07:07,120
+portfolio of bruno simon he used 3js to build an interactive 3d landscape to
+是 bruno simon 的作品集，他使用 3js构建了一个
+
+123
+00:07:07,120 --> 00:07:10,240
+showcase his work the reaction from other developers should be something
+展示他的作品的交互式 3d 风景其他开发人员的反应应该是
+
+124
+00:07:10,240 --> 00:07:13,680
+like wow that would not be an easy app to pull off it's so good that i want to
+类似哇 这不是一个容易实现的应用程序它非常好，以至于我想
+
+125
+00:07:13,680 --> 00:07:17,039
+include it in my youtube video building an app is one thing but the next
+将它包含在我的 youtube 视频中 构建应用程序是一回事，但下一个
+
+126
+00:07:17,039 --> 00:07:20,800
+strategy is to build this app in public what i mean by that is you should
+策略 是在公共场合构建这个应用程序我的意思是你应该
+
+127
+00:07:20,800 --> 00:07:24,240
+transparently document the entire process while you spend the next few
+透明地记录整个过程，同时你在接下来的
+
+128
+00:07:24,240 --> 00:07:27,280
+months building something awesome the most common way to do that is by
+几个月里构建一些东西 ng太棒了，最常见的方法是
+
+129
+00:07:27,280 --> 00:07:31,520
+blogging there are many sites out there like dev2 and medium to create your own
+写博客，有很多网站，比如dev2和medium，可以轻松创建自己的
+
+130
+00:07:31,520 --> 00:07:35,759
+blog easily but i would highly recommend blogging on your own custom built site
+博客，但我强烈建议在你自己的定制网站上写博客，
+
+131
+00:07:35,759 --> 00:07:39,759
+in my opinion a custom site expresses more passion about the craft of web
+在我看来，定制网站表达了更多的热情
+
+132
+00:07:39,759 --> 00:07:43,039
+development in addition to blogging you'll also want to be documenting the
+除了写博客之外，您还希望
+
+133
+00:07:43,039 --> 00:07:46,319
+process on linkedin and twitter and you may even consider starting your own
+在linkedin 和 twitter 上记录该过程，您甚至可以考虑
+
+134
+00:07:46,319 --> 00:07:49,759
+youtube channel building in public is extremely powerful because it creates a
+在公共场合开始自己的 youtube 频道建设非常强大，因为它创建了一个
+
+135
+00:07:49,759 --> 00:07:52,639
+feedback loop you don't otherwise get when you're just working alone in your
+反馈循环，否则您不会这样做当你一个人在你
+
+136
+00:07:52,639 --> 00:07:56,080
+mom's basement there's a whole community of startups who are building in public
+妈妈的地下室工作时，有一整个社区的初创公司都在公开建设，
+
+137
+00:07:56,080 --> 00:07:58,879
+you should give them feedback on their products and in return they'll do the
+你应该给他们关于他们的产品的反馈，作为回报，他们也会做
+
+138
+00:07:58,879 --> 00:08:02,720
+same to make your project better in fact you might even consider monetizing your
+同样的事情来让你的项目变得更好，事实上你甚至可能 考虑将您的项目货币化，
+
+139
+00:08:02,720 --> 00:08:05,360
+project because if you build something really good you might end up
+因为如果您构建了非常好的东西，您最终可能会不
+
+140
+00:08:05,360 --> 00:08:08,960
+accidentally creating a job for yourself one example of a success story is
+小心为自己创造了一份工作，成功案例的一个例子就是
+
+141
+00:08:08,960 --> 00:08:12,560
+superhuman an email application that charges thirty dollars per month that
+超级 人工创建一个每月收费 30 美元的电子邮件应用程序，它
+
+142
+00:08:12,560 --> 00:08:15,919
+was built in public they got tons of great feedback from potential customers
+是公开构建的，他们在构建产品时从潜在客户那里获得了大量的反馈
+
+143
+00:08:15,919 --> 00:08:18,720
+while building the product and you can do the same thing with your personal
+，您可以
+
+144
+00:08:18,720 --> 00:08:22,479
+brand while looking for a job now we can move into strategy eight real life
+在寻找工作时对您的个人品牌做同样的事情，现在我们可以进入战略 八个现实生活中的
+
+145
+00:08:22,479 --> 00:08:25,919
+networking where you actually have to like look at people's faces and say
+网络，你实际上必须喜欢看人们的脸，
+
+146
+00:08:25,919 --> 00:08:29,280
+words to them and stuff as an introvert this has never come easy for me but what
+对他们说些什么，作为一个内向的人，这对我来说从来都不是一件容易的事，但
+
+147
+00:08:29,280 --> 00:08:32,880
+i can tell you is that some of the best business contacts i have come from real
+我可以告诉你的是，我来自真实的一些最好的商业联系
+
+148
+00:08:32,880 --> 00:08:36,800
+life interactions believe it or not zoom or the metaverse doesn't replace the
+生活互动信不信由你缩放或虚拟世界并不能取代
+
+149
+00:08:36,800 --> 00:08:42,240
+magic of face-to-face human interaction i'm here live that's not i'm not a cat
+面对面人类互动的魔力
+
+150
+00:08:42,240 --> 00:08:45,839
+the pandemic has ruined this in a lot of ways but traditionally the best way to
+
+
+151
+00:08:45,839 --> 00:08:49,360
+meet people locally is through meetups all you have to do is find your local
+在当地结识人的最佳方式是通过聚会你所要做的就是在那里找到你当地的
+
+152
+00:08:49,360 --> 00:08:52,399
+programming meetup show up there and eat some free pizza and maybe you'll meet
+编程聚会并吃一些免费的披萨，也许你会遇到
+
+153
+00:08:52,399 --> 00:08:55,120
+someone important that can help you down the road now the other thing i'd
+可以帮助你的重要人物 d 现在我建议的另一件事
+
+154
+00:08:55,120 --> 00:08:58,880
+recommend is attending conferences it's more expensive but a lot of hiring
+是参加会议，它更贵，但是很多招聘
+
+155
+00:08:58,880 --> 00:09:01,920
+managers and employees attend these things and they're often looking for
+经理和员工都会参加这些活动，他们经常寻找对
+
+156
+00:09:01,920 --> 00:09:05,120
+people to hire who are interested in their tech stack learning the basic
+他们的技术堆栈感兴趣的人来学习
+
+157
+00:09:05,120 --> 00:09:08,880
+skill of introducing yourself and making small talk can go a really long way when
+介绍自己的基本技能 在找到一份工作时，进行闲聊可以有很长的路要走，
+
+158
+00:09:08,880 --> 00:09:11,920
+it comes to landing a job you just have to get in a room with the right people
+你只需要和合适的人一起进入一个房间，
+
+159
+00:09:11,920 --> 00:09:15,360
+they say it's not what you know but who you know speaking of which another
+他们说这不是你知道的，而是你认识的人谈论另一个
+
+160
+00:09:15,360 --> 00:09:19,200
+powerful strategy is to get a mentor which is much easier to do when you make
+强大的策略是获得一个当你在现实生活中建立联系时，更容易做到的导师可能是
+
+161
+00:09:19,200 --> 00:09:22,880
+a real-life connection it might be a person with 20 years of experience or a
+一个有 20 年经验的
+
+162
+00:09:22,880 --> 00:09:26,080
+person that's just one step ahead of you who just landed their first job it's
+人，或者是一个比你领先一步的人，他刚刚找到了第一份工作
+
+163
+00:09:26,080 --> 00:09:29,519
+extremely valuable to have a person in the industry who you can have an honest
+。可以
+
+164
+00:09:29,519 --> 00:09:32,399
+conversation with you're likely making many mistakes that you don't even
+与您进行诚实对话的行业可能会犯许多您甚至没有
+
+165
+00:09:32,399 --> 00:09:36,320
+realize having a mentor who can validate or criticize the things you're doing is
+意识到的错误拥有可以验证或批评您正在做的事情的导师
+
+166
+00:09:36,320 --> 00:09:39,440
+much faster than actually making those mistakes and learning from them one by
+比实际上要快得多 犯这些错误并从他们中一一学习
+
+167
+00:09:39,440 --> 00:09:42,480
+one most boot camps will give you a mentor and that's one of the main things
+大多数新兵训练营会给你一个导师，这是
+
+168
+00:09:42,480 --> 00:09:45,760
+you pay them for but you'd be surprised at how many people out there will mentor
+你付钱给他们的主要事情之一，但你会惊讶于有多少人会
+
+169
+00:09:45,760 --> 00:09:48,800
+you for free because at one point they were in your shoes and people are more
+免费指导你，因为在某一时刻他们在你的鞋子里，人们
+
+170
+00:09:48,800 --> 00:09:52,560
+altruistic than you might think and that brings me to strategy number 10 be a
+比你想象的更无私，这让我想到了第 10 条策略，
+
+171
+00:09:52,560 --> 00:09:55,920
+good fit as you start applying for jobs you'll mostly hear crickets but if
+当你开始申请工作时，你会听到蟋蟀的声音，但
+
+172
+00:09:55,920 --> 00:09:58,800
+you're lucky you'll get a phone interview and then be rejected the next
+如果幸运的话，你会得到一部电话面试，然后第二天被拒绝，
+
+173
+00:09:58,800 --> 00:10:02,480
+day the natural reaction here is to be sad and to feel worthless or you might
+这里的自然反应是悲伤和感到一文不值，或者你可能
+
+174
+00:10:02,480 --> 00:10:05,839
+be angry at the company or think the interviewer treated you unfairly but the
+会对公司生气或认为面试官对你不公平，但
+
+175
+00:10:05,839 --> 00:10:09,600
+reality is that rejection is just the story you tell yourself the best way to
+现实是拒绝只是你告诉自己最好的故事
+
+176
+00:10:09,600 --> 00:10:13,200
+respond to it is accept it as part of life and selfishly see what you can gain
+回应它的方法是接受它作为生活的一部分，并自私地看看你能从中
+
+177
+00:10:13,200 --> 00:10:16,880
+from it maybe ask for feedback or guidance to help you do better next time
+获得什么，也许会寻求反馈或指导，以帮助你下次做得更好
+
+178
+00:10:16,880 --> 00:10:19,839
+what you'll notice about successful people is that they're persistent they
+，你会注意到成功人士是他们坚持不懈
+
+179
+00:10:19,839 --> 00:10:23,600
+fail over and over again without caring until finally something works now the
+一次又一次地失败而不关心，直到现在终于有东西可以工作了
+
+180
+00:10:23,600 --> 00:10:26,640
+other thing to keep in mind is that a company won't hire you based on your
+另一件事要记住的是，一家公司不会仅根据您的
+
+181
+00:10:26,640 --> 00:10:29,920
+technical skill alone i mean it definitely helps but they also want to
+技术技能雇用您，我的意思是这肯定有帮助，但他们也想
+
+182
+00:10:29,920 --> 00:10:33,120
+make sure that you fit into their company culture as a candidate they want
+确保您适合 他们的公司文化 作为候选人 他们希望
+
+183
+00:10:33,120 --> 00:10:36,160
+you to embrace their core values and make sure that you'll fit into their
+你接受他们的核心价值观并确保你在面试之前适应他们的
+
+184
+00:10:36,160 --> 00:10:39,519
+management leadership style before you interview you should understand the
+管理领导风格你应该了解
+
+185
+00:10:39,519 --> 00:10:42,959
+company's core values and look at their social media profiles to see what kind
+公司的核心价值观并查看他们的社交媒体资料以了解什么样
+
+186
+00:10:42,959 --> 00:10:45,680
+of messaging they're putting out there make sure you align with their values
+的信息 他们要确保你与他们的价值观保持一致，
+
+187
+00:10:45,680 --> 00:10:48,640
+unless you want to hate your job for the next 10 years and then try to mold
+除非你想在接下来的 10 年里讨厌你的工作，然后试着把自己塑造
+
+188
+00:10:48,640 --> 00:10:51,839
+yourself into the candidate that they're looking for i'd recommend also checking
+成他们正在寻找的候选人，我建议你也
+
+189
+00:10:51,839 --> 00:10:55,200
+out danny thompson's youtube channel who has a short video that explains this
+去看看 danny thompson 的 youtube 频道有一个简短的视频，
+
+190
+00:10:55,200 --> 00:10:58,880
+really well in detail and with that you have 10 strategies that can help you
+非常详细地解释了这一点，并且你有 10 种策略可以帮助你
+
+191
+00:10:58,880 --> 00:11:02,160
+land a job you don't need to use all of these but each one can get you a little
+找到一份工作，你不需要使用所有这些，但每个都在 e 可以让你
+
+192
+00:11:02,160 --> 00:11:06,000
+bit closer to landing a six figure tech job in addition you'll also need to
+更接近于找到一份六位数的技术工作，此外，你还需要
+
+193
+00:11:06,000 --> 00:11:09,519
+learn how to code and how to master the technical interview but don't worry i
+学习如何编码以及如何掌握技术面试，但别担心，我
+
+194
+00:11:09,519 --> 00:11:12,880
+have upcoming videos on those topics as well make sure you're subscribed so you
+还有关于这些主题的即将发布的视频，请确保 你订阅了，所以你
+
+195
+00:11:12,880 --> 00:11:18,240
+don't miss them thanks for watching and i will see you in the next one
+不会错过他们感谢收看，我会在下一个看到你

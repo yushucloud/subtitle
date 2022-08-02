@@ -1,0 +1,275 @@
+the single worst moment of my life was the moment i was born i wish that were
+
+true but as a software engineer i've experienced far worse things during
+
+technical interviews if you're lucky enough to survive tutorial hell before
+
+the age of 25 and find a way to impress the algorithms that automatically read
+
+your resume you get dropped into a high-stakes life or death game with a
+
+six-figure salary on one side and orbeez on the other you can tell yourself the
+
+interview process is broken and maybe it is but like most things in life you
+
+can't control it and just have to play the game in today's video you will
+
+experience the psychological rollercoaster ride that is the technical
+
+interview along the way you'll learn the secrets to high pressure problem solving
+
+on the spot and how to impress the interviewer even if you totally suck at
+
+writing code to make this hyper-realistic i've invited a special
+
+guest who's conducted hundreds of interviews in the real world let the
+
+story begin
+
+it's been a long difficult year of hashtag learn to code i've turned down
+
+dates with beautiful women stopped doing flat earth research and even cancelled
+
+netflix all for the opportunity to stare at a computer screen for the rest of my
+
+life thanks to this awesome video i watched on youtube i finally landed an
+
+interview with big scary tech corporation i've got dozens of leak code
+
+questions and a bunch of half finished udemy courses under my belt nothing can
+
+stand in my way now i'm about to jump on this call and change my life forever
+
+hello mr fireship my name is the primes in welcome to hell welcome to hell
+
+i'm just kidding i'll be conducting your interview today you know let's just get
+
+straight into it i'm going to ask you actually a classic question it's called
+
+fizzbuzz i want you to print out numbers 1 through 100 but if it's divisible by 3
+
+i want you to print out fizz if a number is divisible by 5 please print out buzz
+
+but if it's divisible by both 3 and 5 please print out fizz and buzz fizzbuzz
+
+how cliche is that i mean i just built my own compiler in javascript last night
+
+this is too easy
+
+wait a minute i have no idea what i'm doing here hash map link list mom mom
+
+why am i so dumb wait directed graph i i can't do it i'm just going to tell them
+
+i can't do it binary tree i'm an imposter i'm blacking out a few moments
+
+later uh mr fireship before we write any code
+
+uh let's just talk about the problem how would you kind of approach a problem
+
+like this you know what i think i've already failed this interview which
+
+means i don't care anymore and magically when i stop caring the anxiety goes away
+
+screw the code let's just talk about the problem okay so it looks like we have
+
+three conditions here and when we have conditions we use a conditional
+
+statement like if one way i could represent this is with a flowchart on a
+
+whiteboard or if that's not an option i might start by writing some pseudocode
+
+because i don't want to worry about syntax or boilerplate before i even know
+
+what i'm going to implement for each iteration of a loop we have a number if
+
+it's divisible by 3 and 5 we print fizzbuzz otherwise if it's divisible by
+
+3 we print fizz or if it's divisible by 5 we print buzz and finally just print
+
+the number if none of these are true wow so this is actually a very simple
+
+problem when we take the time to break it down i was totally overthinking it i
+
+was expecting something with a really complex solution because this is big
+
+scary tech corporation after all you know i can't give you the answers but i
+
+do really want to see you succeed so feel free to ask questions as we go
+
+along that solution looks pretty good so how would you take that and turn it into
+
+code i'm most comfortable in javascript so i'll go ahead and use that for the
+
+implementation first we'll need a loop that iterates 100 times as i'm writing
+
+this code i'm not thinking about getting things done quickly but rather i'm
+
+taking my time and making sure i fully understand the requirements before
+
+wasting my time writing a bunch of code that i'll have to correct later what's
+
+really important is that i think out loud and explain my decisions throughout
+
+the process normally i like to use four each for loops but in this case i'm
+
+going to use a traditional for loop and not four each because i happen to know
+
+that four will result in better performance now even if what i'm saying
+
+isn't totally correct it's important for the interviewer to understand my
+
+problem-solving process saying something is almost always better than saying
+
+nothing at all unless of course you say some dumb ass in which case it may be
+
+optimal to just shut the [ __ ] up before you set foot into the thunderdome you
+
+should practice literally saying everything out loud as you solve a
+
+problem personally i hate talking while i write code and it just takes a lot of
+
+practice to get comfortable with this follow the abc rule i just made up which
+
+doesn't mean always be coding but always be chatting another tip is that if you
+
+get confused and freeze up don't just sit there but try to come up with a
+
+question the longer you sit there and stare at the headlights the more likely
+
+you are to lose your composure can't have anyone freak out out there okay
+
+we've gotta keep our composure we've gone too far there's too much to lose
+
+composure i'm a little confused here so i might ask a question like should the
+
+program take an input and return an answer for a specific index or should it
+
+always iterate over all 100 answers good question a loop is just fine now i
+
+feel like i'm going in the right direction so what i'll do next is create
+
+a few conditional statements that line up to what i sketched out on the
+
+whiteboard now the tricky thing about fizzbuzz is determining if one number is
+
+a multiple of another number i guess i could divide by the target number and if
+
+it's an integer it's a match but if it's a decimal then it's not a match that
+
+should work so when it's 3 will log fizz when it's 5 will lock buzz but if it's
+
+false on both of these then we'll just console log the number yeah i think that
+
+looks good let's go ahead and use bun to run it just to show off my knowledge of
+
+blazingly fast javascript tooling and yes it works perfectly i'm a goddamn
+
+genius interesting what can you do without magical type conversion do you
+
+know what modulo is ah man he's not impressed at all i'm such a loser modulo
+
+i've never even heard that word in my life oh wait are you talking about the
+
+remainder operator in javascript yeah you do have the modulo operator correct
+
+why don't you give it a try yeah that would make more sense here what it does
+
+is give us the remainder when doing division so if that number is 0 then we
+
+know that it's a multiple of whatever number we're trying to divide by that
+
+gives us a solution that isn't so dependent on the loosely type nature of
+
+javascript it's usually a good idea to avoid language specific magic the
+
+interviewer might be a c developer with 50 years of experience who's going to
+
+think your clever little javascript tricks are mid af the modulo operator is
+
+available in basically every language so it's best to stick with that this is
+
+looking pretty good but can you make fizzbuzz print on a single line oh yeah
+
+that's kind of not correct is it okay i think i have an idea but i remember
+
+reading this article that's messing with my head right now that said the else
+
+keyword is an anti-pattern maybe i should stop believing everything i read
+
+on the internet let's give it a try and talk through it we'll first check for
+
+the fizz buzz condition then use if else a couple times to check for fizz and
+
+buzz and then finally we'll use else to log the number itself not only does this
+
+put fizz buzz on a single line but the code is just more simple now in fact i
+
+don't think it can get any better oh that looks correct now what happened if
+
+i wanted to add some more conditions let's say 7 is bass how are you going to
+
+deal with that ah man i knew it else statements really are garbage always
+
+believe everything you read on the internet it's never failed me when you
+
+have a lot of conditions to check one thing you generally want to do is try to
+
+extract the data out of that statement we can easily do that here by defining a
+
+variable for the thing we want to print now we could set up a switch statement
+
+to check all the different conditions but i think using if is just as good if
+
+not better as you can see here i have github copilot enabled but let's just
+
+keep that on the download because i really need this job now instead of
+
+console logging here we'll just mutate the variable this allows us to eliminate
+
+the fizz buzz check and can also scale better if we decide to add additional
+
+words to it impressive very nice impressively very nice
+
+blazingly correct now how would you describe the performance of your
+
+algorithm i would describe it as strong to quite strong as you can see when i
+
+run it there's almost no lag time because my holistic approach is so
+
+blazingly fast well that's one way to describe it i was more talking about big
+
+o time complexity oh yeah i guess i should have studied big o a little
+
+better before doing this interview
+
+if the fizzbuzz game were to go on forever i'd say we have linear time
+
+complexity or o of n however technically the game is only played for 100 steps
+
+which would simplify down to 01 or constant time
+
+wow i can't believe it's been an hour already i blacked out where the hell am
+
+i is this heaven oh hey congratulations you've got the job here's your offer
+
+sheet with a 400 000 salary and the job is fully remote with unlimited vacation
+
+time your first task you'll be working on is changing all of the blue buttons
+
+to a slightly different color blue wow i can't believe it i've spent the
+
+last two years pouring my blood sweat and tears into this and my mom is going
+
+to be so proud hold on just one second
+
+[Music] uh
+
+it looks like we've just implemented a hiring freeze
+
+um i'm gonna have to rescind that offer congratulations now you know how to bomb
+
+your technical interview just like me make sure to subscribe to the primogen
+
+for more awesome developer content thanks for watching and i will see you
+
+in the next one
